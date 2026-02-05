@@ -4,9 +4,9 @@
         "en": "February 5",
         "zh": "2月5日"
     },
-    "time_utc": "2026-02-05 09:37",
+    "time_utc": "2026-02-05 10:34",
     "weekday": 3,
-    "issue_id": 923,
+    "issue_id": 924,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -14,8 +14,8 @@
             "title": "ERNIE 5.0 Technical Report",
             "url": "https://huggingface.co/papers/2602.04705",
             "abstract": "ERNIE 5.0 is a production-scale trillion-parameter autoregressive model that unifies multimodal understanding and generation through sparse MoE architecture and elastic training.  \t\t\t\t\tAI-generated summary \t\t\t\t In this report, we introduce ERNIE 5.0, a natively autoregressive foundation model desinged for unified multimodal understanding and generation across text, image, video, and audio. All modalities are trained from scratch under a unified next-group-of-tokens prediction objective, based on an ultra-sparse mixture-of-experts (MoE) architecture with modality-agnostic expert routing. To address practical challenges in large-scale deployment under diverse resource constraints, ERNIE 5.0 adopts a novel elastic training paradigm. Within a single pre-training run, the model learns a family of sub-models with varying depths, expert capacities, and routing sparsity, enabling flexible trade-offs among performance, model size, and inference latency in memory- or time-constrained scenarios. Moreover, we systematically address the challenges of scaling reinforcement learning to unified foundation models, thereby guaranteeing efficient and stable post-training under ultra-sparse MoE architectures and diverse multimodal settings. Extensive experiments demonstrate that ERNIE 5.0 achieves strong and balanced performance across multiple modalities. To the best of our knowledge, among publicly disclosed models, ERNIE 5.0 represents the first production-scale realization of a trillion-parameter unified autoregressive model that supports both multimodal understanding and generation. To facilitate further research, we present detailed visualizations of modality-agnostic expert routing in the unified model, alongside comprehensive empirical analysis of elastic training, aiming to offer profound insights to the community.",
-            "score": 169,
-            "issue_id": 923,
+            "score": 178,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -35,8 +35,8 @@
             "title": "Training Data Efficiency in Multimodal Process Reward Models",
             "url": "https://huggingface.co/papers/2602.04145",
             "abstract": "Training multimodal process reward models efficiently through balanced-information scoring that prioritizes label mixture and reliability while achieving full-data performance with only 10% of training data.  \t\t\t\t\tAI-generated summary \t\t\t\t Multimodal Process Reward Models (MPRMs) are central to step-level supervision for visual reasoning in MLLMs. Training MPRMs typically requires large-scale Monte Carlo (MC)-annotated corpora, incurring substantial training cost. This paper studies the data efficiency for MPRM training.Our preliminary experiments reveal that MPRM training quickly saturates under random subsampling of the training data, indicating substantial redundancy within existing MC-annotated corpora.To explain this, we formalize a theoretical framework and reveal that informative gradient updates depend on two factors: label mixtures of positive/negative steps and label reliability (average MC scores of positive steps). Guided by these insights, we propose the Balanced-Information Score (BIS), which prioritizes both mixture and reliability based on existing MC signals at the rollout level, without incurring any additional cost. Across two backbones (InternVL2.5-8B and Qwen2.5-VL-7B) on VisualProcessBench, BIS-selected subsets consistently match and even surpass the full-data performance at small fractions. Notably, the BIS subset reaches full-data performance using only 10% of the training data, improving over random subsampling by a relative 4.1%.",
-            "score": 56,
-            "issue_id": 923,
+            "score": 57,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -56,8 +56,8 @@
             "title": "OmniSIFT: Modality-Asymmetric Token Compression for Efficient Omni-modal Large Language Models",
             "url": "https://huggingface.co/papers/2602.04804",
             "abstract": "OmniSIFT is a modality-asymmetric token compression framework for Omni-LLMs that reduces computational overhead through spatio-temporal video pruning and vision-guided audio selection while maintaining superior performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Omni-modal Large Language Models (Omni-LLMs) have demonstrated strong capabilities in audio-video understanding tasks. However, their reliance on long multimodal token sequences leads to substantial computational overhead. Despite this challenge, token compression methods designed for Omni-LLMs remain limited. To bridge this gap, we propose OmniSIFT (Omni-modal Spatio-temporal Informed Fine-grained Token compression), a modality-asymmetric token compression framework tailored for Omni-LLMs. Specifically, OmniSIFT adopts a two-stage compression strategy: (i) a spatio-temporal video pruning module that removes video redundancy arising from both intra-frame structure and inter-frame overlap, and (ii) a vision-guided audio selection module that filters audio tokens. The entire framework is optimized end-to-end via a differentiable straight-through estimator. Extensive experiments on five representative benchmarks demonstrate the efficacy and robustness of OmniSIFT. Notably, for Qwen2.5-Omni-7B, OmniSIFT introduces only 4.85M parameters while maintaining lower latency than training-free baselines such as OmniZip. With merely 25% of the original token context, OmniSIFT consistently outperforms all compression baselines and even surpasses the performance of the full-token model on several tasks.",
-            "score": 35,
-            "issue_id": 923,
+            "score": 36,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -78,7 +78,7 @@
             "url": "https://huggingface.co/papers/2602.03560",
             "abstract": "Hybrid Sparse Attention architecture interleaves full and sparse attention layers, using full attention output to guide sparse layer token selection and cache reuse for improved efficiency and performance.  \t\t\t\t\tAI-generated summary \t\t\t\t This work introduces Hybrid Sparse Attention (HySparse), a new architecture that interleaves each full attention layer with several sparse attention layers. While conceptually simple, HySparse strategically derives each sparse layer's token selection and KV caches directly from the preceding full attention layer. This architecture resolves two fundamental limitations of prior sparse attention methods. First, conventional approaches typically rely on additional proxies to predict token importance, introducing extra complexity and potentially suboptimal performance. In contrast, HySparse uses the full attention layer as a precise oracle to identify important tokens. Second, existing sparse attention designs often reduce computation without saving KV cache. HySparse enables sparse attention layers to reuse the full attention KV cache, thereby reducing both computation and memory. We evaluate HySparse on both 7B dense and 80B MoE models. Across all settings, HySparse consistently outperforms both full attention and hybrid SWA baselines. Notably, in the 80B MoE model with 49 total layers, only 5 layers employ full attention, yet HySparse achieves substantial performance gains while reducing KV cache storage by nearly 10x.",
             "score": 29,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-03",
             "pub_date_card": {
                 "ru": "3 февраля",
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2602.02958",
             "abstract": "Quant VideoGen addresses KV cache memory limitations in autoregressive video diffusion models through semantic-aware smoothing and progressive residual quantization, achieving significant memory reduction with minimal latency impact.  \t\t\t\t\tAI-generated summary \t\t\t\t Despite rapid progress in autoregressive video diffusion, an emerging system algorithm bottleneck limits both deployability and generation capability: KV cache memory. In autoregressive video generation models, the KV cache grows with generation history and quickly dominates GPU memory, often exceeding 30 GB, preventing deployment on widely available hardware. More critically, constrained KV cache budgets restrict the effective working memory, directly degrading long horizon consistency in identity, layout, and motion. To address this challenge, we present Quant VideoGen (QVG), a training free KV cache quantization framework for autoregressive video diffusion models. QVG leverages video spatiotemporal redundancy through Semantic Aware Smoothing, producing low magnitude, quantization friendly residuals. It further introduces Progressive Residual Quantization, a coarse to fine multi stage scheme that reduces quantization error while enabling a smooth quality memory trade off. Across LongCat Video, HY WorldPlay, and Self Forcing benchmarks, QVG establishes a new Pareto frontier between quality and memory efficiency, reducing KV cache memory by up to 7.0 times with less than 4% end to end latency overhead while consistently outperforming existing baselines in generation quality.",
             "score": 29,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-03",
             "pub_date_card": {
                 "ru": "3 февраля",
@@ -115,12 +115,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2602.04515",
+            "title": "EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models",
+            "url": "https://huggingface.co/papers/2602.04515",
+            "abstract": "EgoActor is a unified vision-language model that translates high-level instructions into precise humanoid robot actions through integrated perception and execution across simulated and real-world environments.  \t\t\t\t\tAI-generated summary \t\t\t\t Deploying humanoid robots in real-world settings is fundamentally challenging, as it demands tight integration of perception, locomotion, and manipulation under partial-information observations and dynamically changing environments. As well as transitioning robustly between sub-tasks of different types. Towards addressing these challenges, we propose a novel task - EgoActing, which requires directly grounding high-level instructions into various, precise, spatially aware humanoid actions. We further instantiate this task by introducing EgoActor, a unified and scalable vision-language model (VLM) that can predict locomotion primitives (e.g., walk, turn, move sideways, change height), head movements, manipulation commands, and human-robot interactions to coordinate perception and execution in real-time. We leverage broad supervision over egocentric RGB-only data from real-world demonstrations, spatial reasoning question-answering, and simulated environment demonstrations, enabling EgoActor to make robust, context-aware decisions and perform fluent action inference (under 1s) with both 8B and 4B parameter models. Extensive evaluations in both simulated and real-world environments demonstrate that EgoActor effectively bridges abstract task planning and concrete motor execution, while generalizing across diverse tasks and unseen environments.",
+            "score": 28,
+            "issue_id": 924,
+            "pub_date": "2026-02-04",
+            "pub_date_card": {
+                "ru": "4 февраля",
+                "en": "February 4",
+                "zh": "2月4日"
+            },
+            "hash": "bea7b12e4a91de7b",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.04515.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2602.02402",
             "title": "SoMA: A Real-to-Sim Neural Simulator for Robotic Soft-body Manipulation",
             "url": "https://huggingface.co/papers/2602.02402",
             "abstract": "SoMA is a 3D Gaussian Splat simulator that enables stable, long-horizon manipulation of soft bodies by coupling deformable dynamics, environmental forces, and robot actions in a unified latent neural space.  \t\t\t\t\tAI-generated summary \t\t\t\t Simulating deformable objects under rich interactions remains a fundamental challenge for real-to-sim robot manipulation, with dynamics jointly driven by environmental effects and robot actions. Existing simulators rely on predefined physics or data-driven dynamics without robot-conditioned control, limiting accuracy, stability, and generalization. This paper presents SoMA, a 3D Gaussian Splat simulator for soft-body manipulation. SoMA couples deformable dynamics, environmental forces, and robot joint actions in a unified latent neural space for end-to-end real-to-sim simulation. Modeling interactions over learned Gaussian splats enables controllable, stable long-horizon manipulation and generalization beyond observed trajectories without predefined physical models. SoMA improves resimulation accuracy and generalization on real-world robot manipulation by 20%, enabling stable simulation of complex tasks such as long-horizon cloth folding.",
-            "score": 27,
-            "issue_id": 923,
+            "score": 28,
+            "issue_id": 924,
             "pub_date": "2026-02-02",
             "pub_date_card": {
                 "ru": "2 февраля",
@@ -141,7 +162,7 @@
             "url": "https://huggingface.co/papers/2602.04634",
             "abstract": "Multi-agent systems using reinforcement learning enable parallel information seeking with scalable orchestration, achieving performance comparable to larger single agents.  \t\t\t\t\tAI-generated summary \t\t\t\t Recent advancements in Large Language Models (LLMs) have largely focused on depth scaling, where a single agent solves long-horizon problems with multi-turn reasoning and tool use. However, as tasks grow broader, the key bottleneck shifts from individual competence to organizational capability. In this work, we explore a complementary dimension of width scaling with multi-agent systems to address broad information seeking. Existing multi-agent systems often rely on hand-crafted workflows and turn-taking interactions that fail to parallelize work effectively. To bridge this gap, we propose WideSeek-R1, a lead-agent-subagent framework trained via multi-agent reinforcement learning (MARL) to synergize scalable orchestration and parallel execution. By utilizing a shared LLM with isolated contexts and specialized tools, WideSeek-R1 jointly optimizes the lead agent and parallel subagents on a curated dataset of 20k broad information-seeking tasks. Extensive experiments show that WideSeek-R1-4B achieves an item F1 score of 40.0% on the WideSearch benchmark, which is comparable to the performance of single-agent DeepSeek-R1-671B. Furthermore, WideSeek-R1-4B exhibits consistent performance gains as the number of parallel subagents increases, highlighting the effectiveness of width scaling.",
             "score": 26,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -157,33 +178,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2602.04515",
-            "title": "EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models",
-            "url": "https://huggingface.co/papers/2602.04515",
-            "abstract": "EgoActor is a unified vision-language model that translates high-level instructions into precise humanoid robot actions through integrated perception and execution across simulated and real-world environments.  \t\t\t\t\tAI-generated summary \t\t\t\t Deploying humanoid robots in real-world settings is fundamentally challenging, as it demands tight integration of perception, locomotion, and manipulation under partial-information observations and dynamically changing environments. As well as transitioning robustly between sub-tasks of different types. Towards addressing these challenges, we propose a novel task - EgoActing, which requires directly grounding high-level instructions into various, precise, spatially aware humanoid actions. We further instantiate this task by introducing EgoActor, a unified and scalable vision-language model (VLM) that can predict locomotion primitives (e.g., walk, turn, move sideways, change height), head movements, manipulation commands, and human-robot interactions to coordinate perception and execution in real-time. We leverage broad supervision over egocentric RGB-only data from real-world demonstrations, spatial reasoning question-answering, and simulated environment demonstrations, enabling EgoActor to make robust, context-aware decisions and perform fluent action inference (under 1s) with both 8B and 4B parameter models. Extensive evaluations in both simulated and real-world environments demonstrate that EgoActor effectively bridges abstract task planning and concrete motor execution, while generalizing across diverse tasks and unseen environments.",
-            "score": 25,
-            "issue_id": 923,
-            "pub_date": "2026-02-04",
-            "pub_date_card": {
-                "ru": "4 февраля",
-                "en": "February 4",
-                "zh": "2月4日"
-            },
-            "hash": "bea7b12e4a91de7b",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2602.04515.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2602.02196",
             "title": "TIDE: Trajectory-based Diagnostic Evaluation of Test-Time Improvement in LLM Agents",
             "url": "https://huggingface.co/papers/2602.02196",
             "abstract": "Test-Time Improvement (TTI) in autonomous LLM agents involves iterative environmental interaction that enhances performance, but current evaluation methods inadequately capture task optimization efficiency and memory utilization.  \t\t\t\t\tAI-generated summary \t\t\t\t Recent advances in autonomous LLM agents demonstrate their ability to improve performance through iterative interaction with the environment. We define this paradigm as Test-Time Improvement (TTI). However, the mechanisms under how and why TTI succeed or fail remain poorly understood, and existing evaluation metrics fail to capture their task optimization efficiency, behavior adaptation after erroneous actions, and the specific utility of working memory for task completion. To address these gaps, we propose Test-time Improvement Diagnostic Evaluation (TIDE), an agent-agnostic and environment-agnostic framework that decomposes TTI into three comprehensive and interconnected dimensions. The framework measures (1) the overall temporal dynamics of task completion and (2) identifies whether performance is primarily constrained by recursive looping behaviors or (3) by burdensome accumulated memory. Through extensive experiments across diverse agents and environments, TIDE highlights that improving agent performance requires more than scaling internal reasoning, calling for explicitly optimizing the interaction dynamics between the agent and the environment.",
             "score": 25,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-02",
             "pub_date_card": {
                 "ru": "2 февраля",
@@ -204,7 +204,7 @@
             "url": "https://huggingface.co/papers/2602.03510",
             "abstract": "Text conditioning in DiT-based models is enhanced through a unified normalized convex fusion framework that optimizes multi-layer LLM hidden states via depth-wise semantic routing, improving text-image alignment and compositional generation.  \t\t\t\t\tAI-generated summary \t\t\t\t Recent DiT-based text-to-image models increasingly adopt LLMs as text encoders, yet text conditioning remains largely static and often utilizes only a single LLM layer, despite pronounced semantic hierarchy across LLM layers and non-stationary denoising dynamics over both diffusion time and network depth. To better match the dynamic process of DiT generation and thereby enhance the diffusion model's generative capability, we introduce a unified normalized convex fusion framework equipped with lightweight gates to systematically organize multi-layer LLM hidden states via time-wise, depth-wise, and joint fusion. Experiments establish Depth-wise Semantic Routing as the superior conditioning strategy, consistently improving text-image alignment and compositional generation (e.g., +9.97 on the GenAI-Bench Counting task). Conversely, we find that purely time-wise fusion can paradoxically degrade visual generation fidelity. We attribute this to a train-inference trajectory mismatch: under classifier-free guidance, nominal timesteps fail to track the effective SNR, causing semantically mistimed feature injection during inference. Overall, our results position depth-wise routing as a strong and effective baseline and highlight the critical need for trajectory-aware signals to enable robust time-dependent conditioning.",
             "score": 23,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-03",
             "pub_date_card": {
                 "ru": "3 февраля",
@@ -225,7 +225,7 @@
             "url": "https://huggingface.co/papers/2602.04879",
             "abstract": "DPPO addresses limitations in PPO for LLM fine-tuning by replacing ratio clipping with direct policy divergence constraints, improving training stability and efficiency.  \t\t\t\t\tAI-generated summary \t\t\t\t Reinforcement learning (RL) has become a cornerstone for fine-tuning Large Language Models (LLMs), with Proximal Policy Optimization (PPO) serving as the de facto standard algorithm. Despite its ubiquity, we argue that the core ratio clipping mechanism in PPO is structurally ill-suited for the large vocabularies inherent to LLMs. PPO constrains policy updates based on the probability ratio of sampled tokens, which serves as a noisy single-sample Monte Carlo estimate of the true policy divergence. This creates a sub-optimal learning dynamic: updates to low-probability tokens are aggressively over-penalized, while potentially catastrophic shifts in high-probability tokens are under-constrained, leading to training inefficiency and instability. To address this, we propose Divergence Proximal Policy Optimization (DPPO), which substitutes heuristic clipping with a more principled constraint based on a direct estimate of policy divergence (e.g., Total Variation or KL). To avoid huge memory footprint, we introduce the efficient Binary and Top-K approximations to capture the essential divergence with negligible overhead. Extensive empirical evaluations demonstrate that DPPO achieves superior training stability and efficiency compared to existing methods, offering a more robust foundation for RL-based LLM fine-tuning.",
             "score": 22,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -246,7 +246,7 @@
             "url": "https://huggingface.co/papers/2601.22954",
             "abstract": "Residual Context Diffusion (RCD) enhances diffusion large language models by recycling discarded token information through contextual residuals, improving accuracy with minimal computational overhead.  \t\t\t\t\tAI-generated summary \t\t\t\t Diffusion Large Language Models (dLLMs) have emerged as a promising alternative to purely autoregressive language models because they can decode multiple tokens in parallel. However, state-of-the-art block-wise dLLMs rely on a \"remasking\" mechanism that decodes only the most confident tokens and discards the rest, effectively wasting computation. We demonstrate that recycling computation from the discarded tokens is beneficial, as these tokens retain contextual information useful for subsequent decoding iterations. In light of this, we propose Residual Context Diffusion (RCD), a module that converts these discarded token representations into contextual residuals and injects them back for the next denoising step. RCD uses a decoupled two-stage training pipeline to bypass the memory bottlenecks associated with backpropagation. We validate our method on both long CoT reasoning (SDAR) and short CoT instruction following (LLaDA) models. We demonstrate that a standard dLLM can be efficiently converted to the RCD paradigm with merely ~1 billion tokens. RCD consistently improves frontier dLLMs by 5-10 points in accuracy with minimal extra computation overhead across a wide range of benchmarks. Notably, on the most challenging AIME tasks, RCD nearly doubles baseline accuracy and attains up to 4-5x fewer denoising steps at equivalent accuracy levels.",
             "score": 21,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-01-30",
             "pub_date_card": {
                 "ru": "30 января",
@@ -262,33 +262,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2602.04575",
-            "title": "Vibe AIGC: A New Paradigm for Content Generation via Agentic Orchestration",
-            "url": "https://huggingface.co/papers/2602.04575",
-            "abstract": "Vibe AIGC introduces a new generative AI paradigm where users provide high-level aesthetic and functional preferences, which are then orchestrated through multi-agent workflows to bridge the gap between human intent and machine execution.  \t\t\t\t\tAI-generated summary \t\t\t\t For the past decade, the trajectory of generative artificial intelligence (AI) has been dominated by a model-centric paradigm driven by scaling laws. Despite significant leaps in visual fidelity, this approach has encountered a ``usability ceiling'' manifested as the Intent-Execution Gap (i.e., the fundamental disparity between a creator's high-level intent and the stochastic, black-box nature of current single-shot models). In this paper, inspired by the Vibe Coding, we introduce the Vibe AIGC, a new paradigm for content generation via agentic orchestration, which represents the autonomous synthesis of hierarchical multi-agent workflows.   Under this paradigm, the user's role transcends traditional prompt engineering, evolving into a Commander who provides a Vibe, a high-level representation encompassing aesthetic preferences, functional logic, and etc. A centralized Meta-Planner then functions as a system architect, deconstructing this ``Vibe'' into executable, verifiable, and adaptive agentic pipelines. By transitioning from stochastic inference to logical orchestration, Vibe AIGC bridges the gap between human imagination and machine execution. We contend that this shift will redefine the human-AI collaborative economy, transforming AI from a fragile inference engine into a robust system-level engineering partner that democratizes the creation of complex, long-horizon digital assets.",
-            "score": 16,
-            "issue_id": 923,
-            "pub_date": "2026-02-04",
-            "pub_date_card": {
-                "ru": "4 февраля",
-                "en": "February 4",
-                "zh": "2月4日"
-            },
-            "hash": "78e831000eb7b72d",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2602.04575.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2602.03907",
             "title": "HY3D-Bench: Generation of 3D Assets",
             "url": "https://huggingface.co/papers/2602.03907",
             "abstract": "HY3D-Bench presents an open-source ecosystem for 3D content creation that provides high-fidelity 3D objects and synthetic assets to advance 3D generation capabilities.  \t\t\t\t\tAI-generated summary \t\t\t\t While recent advances in neural representations and generative models have revolutionized 3D content creation, the field remains constrained by significant data processing bottlenecks. To address this, we introduce HY3D-Bench, an open-source ecosystem designed to establish a unified, high-quality foundation for 3D generation. Our contributions are threefold: (1) We curate a library of 250k high-fidelity 3D objects distilled from large-scale repositories, employing a rigorous pipeline to deliver training-ready artifacts, including watertight meshes and multi-view renderings; (2) We introduce structured part-level decomposition, providing the granularity essential for fine-grained perception and controllable editing; and (3) We bridge real-world distribution gaps via a scalable AIGC synthesis pipeline, contributing 125k synthetic assets to enhance diversity in long-tail categories. Validated empirically through the training of Hunyuan3D-2.1-Small, HY3D-Bench democratizes access to robust data resources, aiming to catalyze innovation across 3D perception, robotics, and digital content creation.",
-            "score": 16,
-            "issue_id": 923,
+            "score": 18,
+            "issue_id": 924,
             "pub_date": "2026-02-03",
             "pub_date_card": {
                 "ru": "3 февраля",
@@ -304,22 +283,22 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2602.03442",
-            "title": "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical Retrieval Interfaces",
-            "url": "https://huggingface.co/papers/2602.03442",
-            "abstract": "Agentic RAG framework enables models to dynamically adapt retrieval decisions across multiple granularities, outperforming traditional approaches while scaling efficiently with model improvements.  \t\t\t\t\tAI-generated summary \t\t\t\t Frontier language models have demonstrated strong reasoning and long-horizon tool-use capabilities. However, existing RAG systems fail to leverage these capabilities. They still rely on two paradigms: (1) designing an algorithm that retrieves passages in a single shot and concatenates them into the model's input, or (2) predefining a workflow and prompting the model to execute it step-by-step. Neither paradigm allows the model to participate in retrieval decisions, preventing efficient scaling with model improvements. In this paper, we introduce A-RAG, an Agentic RAG framework that exposes hierarchical retrieval interfaces directly to the model. A-RAG provides three retrieval tools: keyword search, semantic search, and chunk read, enabling the agent to adaptively search and retrieve information across multiple granularities. Experiments on multiple open-domain QA benchmarks show that A-RAG consistently outperforms existing approaches with comparable or lower retrieved tokens, demonstrating that A-RAG effectively leverages model capabilities and dynamically adapts to different RAG tasks. We further systematically study how A-RAG scales with model size and test-time compute. We will release our code and evaluation suite to facilitate future research. Code and evaluation suite are available at https://github.com/Ayanami0730/arag.",
-            "score": 15,
-            "issue_id": 923,
-            "pub_date": "2026-02-03",
+            "id": "https://huggingface.co/papers/2602.04575",
+            "title": "Vibe AIGC: A New Paradigm for Content Generation via Agentic Orchestration",
+            "url": "https://huggingface.co/papers/2602.04575",
+            "abstract": "Vibe AIGC introduces a new generative AI paradigm where users provide high-level aesthetic and functional preferences, which are then orchestrated through multi-agent workflows to bridge the gap between human intent and machine execution.  \t\t\t\t\tAI-generated summary \t\t\t\t For the past decade, the trajectory of generative artificial intelligence (AI) has been dominated by a model-centric paradigm driven by scaling laws. Despite significant leaps in visual fidelity, this approach has encountered a ``usability ceiling'' manifested as the Intent-Execution Gap (i.e., the fundamental disparity between a creator's high-level intent and the stochastic, black-box nature of current single-shot models). In this paper, inspired by the Vibe Coding, we introduce the Vibe AIGC, a new paradigm for content generation via agentic orchestration, which represents the autonomous synthesis of hierarchical multi-agent workflows.   Under this paradigm, the user's role transcends traditional prompt engineering, evolving into a Commander who provides a Vibe, a high-level representation encompassing aesthetic preferences, functional logic, and etc. A centralized Meta-Planner then functions as a system architect, deconstructing this ``Vibe'' into executable, verifiable, and adaptive agentic pipelines. By transitioning from stochastic inference to logical orchestration, Vibe AIGC bridges the gap between human imagination and machine execution. We contend that this shift will redefine the human-AI collaborative economy, transforming AI from a fragile inference engine into a robust system-level engineering partner that democratizes the creation of complex, long-horizon digital assets.",
+            "score": 16,
+            "issue_id": 924,
+            "pub_date": "2026-02-04",
             "pub_date_card": {
-                "ru": "3 февраля",
-                "en": "February 3",
-                "zh": "2月3日"
+                "ru": "4 февраля",
+                "en": "February 4",
+                "zh": "2月4日"
             },
-            "hash": "317cbc0d4fd16984",
-            "github_url": "https://github.com/Ayanami0730/arag",
-            "github_stars": 11,
-            "pdf_title_img": "assets/pdf/title_img/2602.03442.jpg",
+            "hash": "78e831000eb7b72d",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.04575.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -329,8 +308,8 @@
             "title": "Self-Hinting Language Models Enhance Reinforcement Learning",
             "url": "https://huggingface.co/papers/2602.03143",
             "abstract": "SAGE is an on-policy reinforcement learning framework that enhances GRPO by injecting self-hints during training to increase outcome diversity under sparse rewards, improving alignment of large language models.  \t\t\t\t\tAI-generated summary \t\t\t\t Group Relative Policy Optimization (GRPO) has recently emerged as a practical recipe for aligning large language models with verifiable objectives. However, under sparse terminal rewards, GRPO often stalls because rollouts within a group frequently receive identical rewards, causing relative advantages to collapse and updates to vanish. We propose self-hint aligned GRPO with privileged supervision (SAGE), an on-policy reinforcement learning framework that injects privileged hints during training to reshape the rollout distribution under the same terminal verifier reward. For each prompt x, the model samples a compact hint h (e.g., a plan or decomposition) and then generates a solution τ conditioned on (x,h). Crucially, the task reward R(x,τ) is unchanged; hints only increase within-group outcome diversity under finite sampling, preventing GRPO advantages from collapsing under sparse rewards. At test time, we set h=varnothing and deploy the no-hint policy without any privileged information. Moreover, sampling diverse self-hints serves as an adaptive curriculum that tracks the learner's bottlenecks more effectively than fixed hints from an initial policy or a stronger external model. Experiments over 6 benchmarks with 3 LLMs show that SAGE consistently outperforms GRPO, on average +2.0 on Llama-3.2-3B-Instruct, +1.2 on Qwen2.5-7B-Instruct and +1.3 on Qwen3-4B-Instruct. The code is available at https://github.com/BaohaoLiao/SAGE.",
-            "score": 13,
-            "issue_id": 923,
+            "score": 16,
+            "issue_id": 924,
             "pub_date": "2026-02-03",
             "pub_date_card": {
                 "ru": "3 февраля",
@@ -339,8 +318,29 @@
             },
             "hash": "2755aeac8258da3c",
             "github_url": "https://github.com/BaohaoLiao/SAGE",
-            "github_stars": 4,
+            "github_stars": 6,
             "pdf_title_img": "assets/pdf/title_img/2602.03143.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.03442",
+            "title": "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical Retrieval Interfaces",
+            "url": "https://huggingface.co/papers/2602.03442",
+            "abstract": "Agentic RAG framework enables models to dynamically adapt retrieval decisions across multiple granularities, outperforming traditional approaches while scaling efficiently with model improvements.  \t\t\t\t\tAI-generated summary \t\t\t\t Frontier language models have demonstrated strong reasoning and long-horizon tool-use capabilities. However, existing RAG systems fail to leverage these capabilities. They still rely on two paradigms: (1) designing an algorithm that retrieves passages in a single shot and concatenates them into the model's input, or (2) predefining a workflow and prompting the model to execute it step-by-step. Neither paradigm allows the model to participate in retrieval decisions, preventing efficient scaling with model improvements. In this paper, we introduce A-RAG, an Agentic RAG framework that exposes hierarchical retrieval interfaces directly to the model. A-RAG provides three retrieval tools: keyword search, semantic search, and chunk read, enabling the agent to adaptively search and retrieve information across multiple granularities. Experiments on multiple open-domain QA benchmarks show that A-RAG consistently outperforms existing approaches with comparable or lower retrieved tokens, demonstrating that A-RAG effectively leverages model capabilities and dynamically adapts to different RAG tasks. We further systematically study how A-RAG scales with model size and test-time compute. We will release our code and evaluation suite to facilitate future research. Code and evaluation suite are available at https://github.com/Ayanami0730/arag.",
+            "score": 15,
+            "issue_id": 924,
+            "pub_date": "2026-02-03",
+            "pub_date_card": {
+                "ru": "3 февраля",
+                "en": "February 3",
+                "zh": "2月3日"
+            },
+            "hash": "317cbc0d4fd16984",
+            "github_url": "https://github.com/Ayanami0730/arag",
+            "github_stars": 12,
+            "pdf_title_img": "assets/pdf/title_img/2602.03442.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -351,7 +351,7 @@
             "url": "https://huggingface.co/papers/2601.22859",
             "abstract": "MEnvAgent is a multi-language framework that automates environment construction for software engineering tasks using a planning-execution-verification architecture and environment reuse mechanism, achieving improved performance on a new benchmark and creating the largest open-source polyglot dataset of verifiable Docker environments.  \t\t\t\t\tAI-generated summary \t\t\t\t The evolution of Large Language Model (LLM) agents for software engineering (SWE) is constrained by the scarcity of verifiable datasets, a bottleneck stemming from the complexity of constructing executable environments across diverse languages. To address this, we introduce MEnvAgent, a Multi-language framework for automated Environment construction that facilitates scalable generation of verifiable task instances. MEnvAgent employs a multi-agent Planning-Execution-Verification architecture to autonomously resolve construction failures and integrates a novel Environment Reuse Mechanism that reduces computational overhead by incrementally patching historical environments. Evaluations on MEnvBench, a new benchmark comprising 1,000 tasks across 10 languages, demonstrate that MEnvAgent outperforms baselines, improving Fail-to-Pass (F2P) rates by 8.6% while reducing time costs by 43%. Additionally, we demonstrate the utility of MEnvAgent by constructing MEnvData-SWE, the largest open-source polyglot dataset of realistic verifiable Docker environments to date, alongside solution trajectories that enable consistent performance gains on SWE tasks across a wide range of models. Our code, benchmark, and dataset are available at https://github.com/ernie-research/MEnvAgent.",
             "score": 13,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-01-30",
             "pub_date_card": {
                 "ru": "30 января",
@@ -372,7 +372,7 @@
             "url": "https://huggingface.co/papers/2601.18207",
             "abstract": "Search agents trained on scientific paper corpora demonstrate advanced reasoning capabilities for technical question-answering tasks, outperforming traditional retrieval methods through reinforcement learning with verifiable rewards.  \t\t\t\t\tAI-generated summary \t\t\t\t Search agents are language models (LMs) that reason and search knowledge bases (or the web) to answer questions; recent methods supervise only the final answer accuracy using reinforcement learning with verifiable rewards (RLVR). Most RLVR search agents tackle general-domain QA, which limits their relevance to technical AI systems in science, engineering, and medicine. In this work we propose training agents to search and reason over scientific papers -- this tests technical question-answering, it is directly relevant to real scientists, and the capabilities will be crucial to future AI Scientist systems. Concretely, we release a search corpus of 16 million biomedical paper abstracts and construct a challenging factoid QA dataset called PaperSearchQA with 60k samples answerable from the corpus, along with benchmarks. We train search agents in this environment to outperform non-RL retrieval baselines; we also perform further quantitative analysis and observe interesting agent behaviors like planning, reasoning, and self-verification. Our corpus, datasets, and benchmarks are usable with the popular Search-R1 codebase for RLVR training and released on https://huggingface.co/collections/jmhb/papersearchqa. Finally, our data creation methods are scalable and easily extendable to other scientific domains.",
             "score": 13,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-01-26",
             "pub_date_card": {
                 "ru": "26 января",
@@ -392,8 +392,8 @@
             "title": "VLS: Steering Pretrained Robot Policies via Vision-Language Models",
             "url": "https://huggingface.co/papers/2602.03973",
             "abstract": "Pretrained diffusion and flow-matching policies fail under test-time shifts due to tight coupling with training configurations, prompting the development of Vision-Language Steering (VLS) for training-free inference-time adaptation through vision-language model-guided trajectory steering.  \t\t\t\t\tAI-generated summary \t\t\t\t Why do pretrained diffusion or flow-matching policies fail when the same task is performed near an obstacle, on a shifted support surface, or amid mild clutter? Such failures rarely reflect missing motor skills; instead, they expose a limitation of imitation learning under train-test shifts, where action generation is tightly coupled to training-specific spatial configurations and task specifications. Retraining or fine-tuning to address these failures is costly and conceptually misaligned, as the required behaviors already exist but cannot be selectively adapted at test time. We propose Vision-Language Steering (VLS), a training-free framework for inference-time adaptation of frozen generative robot policies. VLS treats adaptation as an inference-time control problem, steering the sampling process of a pretrained diffusion or flow-matching policy in response to out-of-distribution observation-language inputs without modifying policy parameters. By leveraging vision-language models to synthesize trajectory-differentiable reward functions, VLS guides denoising toward action trajectories that satisfy test-time spatial and task requirements. Across simulation and real-world evaluations, VLS consistently outperforms prior steering methods, achieving a 31% improvement on CALVIN and a 13% gain on LIBERO-PRO. Real-world deployment on a Franka robot further demonstrates robust inference-time adaptation under test-time spatial and semantic shifts. Project page: https://vision-language-steering.github.io/webpage/",
-            "score": 11,
-            "issue_id": 923,
+            "score": 12,
+            "issue_id": 924,
             "pub_date": "2026-02-03",
             "pub_date_card": {
                 "ru": "3 февраля",
@@ -414,7 +414,7 @@
             "url": "https://huggingface.co/papers/2602.04735",
             "abstract": "Data2Behavior predicts unintended model behaviors before training using MDF, a lightweight method that analyzes data features to reveal potential biases without parameter updates.  \t\t\t\t\tAI-generated summary \t\t\t\t Large Language Models (LLMs) can acquire unintended biases from seemingly benign training data even without explicit cues or malicious content. Existing methods struggle to detect such risks before fine-tuning, making post hoc evaluation costly and inefficient. To address this challenge, we introduce Data2Behavior, a new task for predicting unintended model behaviors prior to training. We also propose Manipulating Data Features (MDF), a lightweight approach that summarizes candidate data through their mean representations and injects them into the forward pass of a base model, allowing latent statistical signals in the data to shape model activations and reveal potential biases and safety risks without updating any parameters. MDF achieves reliable prediction while consuming only about 20% of the GPU resources required for fine-tuning. Experiments on Qwen3-14B, Qwen2.5-32B-Instruct, and Gemma-3-12b-it confirm that MDF can anticipate unintended behaviors and provide insight into pre-training vulnerabilities.",
             "score": 10,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -435,7 +435,7 @@
             "url": "https://huggingface.co/papers/2602.04284",
             "abstract": "Agent-Omit is a training framework that enables LLM agents to adaptively omit redundant thoughts and observations during multi-turn interactions, achieving superior effectiveness-efficiency trade-offs compared to existing methods.  \t\t\t\t\tAI-generated summary \t\t\t\t Managing agent thought and observation during multi-turn agent-environment interactions is an emerging strategy to improve agent efficiency. However, existing studies treat the entire interaction trajectories equally, overlooking the thought necessity and observation utility varies across turns. To this end, we first conduct quantitative investigations into how thought and observation affect agent effectiveness and efficiency. Based on our findings, we propose Agent-Omit, a unified training framework that empowers LLM agents to adaptively omit redundant thoughts and observations. Specifically, we first synthesize a small amount of cold-start data, including both single-turn and multi-turn omission scenarios, to fine-tune the agent for omission behaviors. Furthermore, we introduce an omit-aware agentic reinforcement learning approach, incorporating a dual sampling mechanism and a tailored omission reward to incentivize the agent's adaptive omission capability. Theoretically, we prove that the deviation of our omission policy is upper-bounded by KL-divergence. Experimental results on five agent benchmarks show that our constructed Agent-Omit-8B could obtain performance comparable to seven frontier LLM agent, and achieve the best effectiveness-efficiency trade-off than seven efficient LLM agents methods. Our code and data are available at https://github.com/usail-hkust/Agent-Omit.",
             "score": 9,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -456,7 +456,7 @@
             "url": "https://huggingface.co/papers/2602.04816",
             "abstract": "Horizon-LM enables large-model training on single GPUs by redefining CPU-GPU roles and eliminating persistent GPU memory usage through explicit recomputation and pipelined execution.  \t\t\t\t\tAI-generated summary \t\t\t\t The rapid growth of large language models (LLMs) has outpaced the evolution of single-GPU hardware, making model scale increasingly constrained by memory capacity rather than computation. While modern training systems extend GPU memory through distributed parallelism and offloading across CPU and storage tiers, they fundamentally retain a GPU-centric execution paradigm in which GPUs host persistent model replicas and full autograd graphs. As a result, scaling large models remains tightly coupled to multi-GPU clusters, complex distributed runtimes, and unpredictable host memory consumption, creating substantial barriers for node-scale post-training workloads such as instruction tuning, alignment, and domain adaptation. We present Horizon-LM, a memory-centric training system that redefines the roles of CPU and GPU for large-model optimization. Horizon-LM treats host memory as the authoritative parameter store and uses GPUs solely as transient compute engines through a CPU-master, GPU-template execution model. By eliminating persistent GPU-resident modules and autograd graphs, employing explicit recomputation with manual gradient propagation, and introducing a pipelined double-buffered execution engine, Horizon-LM decouples model scale from GPU count and bounds memory usage to the theoretical parameter footprint. On a single H200 GPU with 1.5\\,TB host RAM, Horizon-LM reliably trains models up to 120B parameters. On a standard single A100 machine, Horizon-LM achieves up to 12.2times higher training throughput than DeepSpeed ZeRO-3 with CPU offloading while preserving numerical correctness. Across platforms and scales, Horizon-LM sustains high device utilization and predictable memory growth, demonstrating that host memory, not GPU memory, defines the true feasibility boundary for node-scale large-model training.",
             "score": 8,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -477,7 +477,7 @@
             "url": "https://huggingface.co/papers/2602.01640",
             "abstract": "Agentic automatic evaluation framework automates embodied vision-language model assessment through collaborative agents that reduce evaluation costs and improve ranking accuracy.  \t\t\t\t\tAI-generated summary \t\t\t\t Current embodied VLM evaluation relies on static, expert-defined, manually annotated benchmarks that exhibit severe redundancy and coverage imbalance. This labor intensive paradigm drains computational and annotation resources, inflates costs, and distorts model rankings, ultimately stifling iterative development. To address this, we propose Agentic Automatic Evaluation (A2Eval), the first agentic framework that automates benchmark curation and evaluation through two collaborative agents. The Data Agent autonomously induces capability dimensions and assembles a balanced, compact evaluation suite, while the Eval Agent synthesizes and validates executable evaluation pipelines, enabling fully autonomous, high-fidelity assessment. Evaluated across 10 benchmarks and 13 models, A2Eval compresses evaluation suites by 85%, reduces overall computational costs by 77%, and delivers a 4.6x speedup while preserving evaluation quality. Crucially, A2Eval corrects systematic ranking biases, improves human alignment to Spearman's rho=0.85, and maintains high ranking fidelity (Kendall's tau=0.81), establishing a new standard for high-fidelity, low-cost embodied assessment. Our code and data will be public soon.",
             "score": 7,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-02",
             "pub_date_card": {
                 "ru": "2 февраля",
@@ -497,8 +497,8 @@
             "title": "BatCoder: Self-Supervised Bidirectional Code-Documentation Learning via Back-Translation",
             "url": "https://huggingface.co/papers/2602.02554",
             "abstract": "BatCoder is a self-supervised reinforcement learning framework that jointly optimizes code and documentation generation through back-translation, achieving superior performance on code-related benchmarks.  \t\t\t\t\tAI-generated summary \t\t\t\t Training LLMs for code-related tasks typically depends on high-quality code-documentation pairs, which are costly to curate and often scarce for niche programming languages. We introduce BatCoder, a self-supervised reinforcement learning framework designed to jointly optimize code generation and documentation production. BatCoder employs a back-translation strategy: a documentation is first generated from code, and then the generated documentation is used to reconstruct the original code. The semantic similarity between the original and reconstructed code serves as an implicit reward, enabling reinforcement learning to improve the model's performance both in generating code from documentation and vice versa. This approach allows models to be trained using only code, substantially increasing the available training examples. Evaluated on HumanEval and MBPP with a 7B model, BatCoder achieved 83.5% and 81.0% pass@1, outperforming strong open-source baselines. Moreover, the framework demonstrates consistent scaling with respect to both training corpus size and model capacity.",
-            "score": 6,
-            "issue_id": 923,
+            "score": 7,
+            "issue_id": 924,
             "pub_date": "2026-01-30",
             "pub_date_card": {
                 "ru": "30 января",
@@ -519,7 +519,7 @@
             "url": "https://huggingface.co/papers/2602.04486",
             "abstract": "MLLMs suffer from modality bias in GMNER tasks, which is addressed through a proposed method that enforces cross-modal reasoning via multi-style reasoning schema injection and constraint-guided verifiable optimization.  \t\t\t\t\tAI-generated summary \t\t\t\t Grounded Multimodal Named Entity Recognition (GMNER) aims to extract text-based entities, assign them semantic categories, and ground them to corresponding visual regions. In this work, we explore the potential of Multimodal Large Language Models (MLLMs) to perform GMNER in an end-to-end manner, moving beyond their typical role as auxiliary tools within cascaded pipelines. Crucially, our investigation reveals a fundamental challenge: MLLMs exhibit modality bias, including visual bias and textual bias, which stems from their tendency to take unimodal shortcuts rather than rigorous cross-modal verification. To address this, we propose Modality-aware Consistency Reasoning (MCR), which enforces structured cross-modal reasoning through Multi-style Reasoning Schema Injection (MRSI) and Constraint-guided Verifiable Optimization (CVO). MRSI transforms abstract constraints into executable reasoning chains, while CVO empowers the model to dynamically align its reasoning trajectories with Group Relative Policy Optimization (GRPO). Experiments on GMNER and visual grounding tasks demonstrate that MCR effectively mitigates modality bias and achieves superior performance compared to existing baselines.",
             "score": 5,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -540,7 +540,7 @@
             "url": "https://huggingface.co/papers/2602.02140",
             "abstract": "Unified multimodal models exhibit a persistent gap between understanding and generation capabilities, indicating only surface-level integration rather than deep cognitive convergence.  \t\t\t\t\tAI-generated summary \t\t\t\t Recent advances in unified multimodal models (UMM) have demonstrated remarkable progress in both understanding and generation tasks. However, whether these two capabilities are genuinely aligned and integrated within a single model remains unclear. To investigate this question, we introduce GapEval, a bidirectional benchmark designed to quantify the gap between understanding and generation capabilities, and quantitatively measure the cognitive coherence of the two \"unified\" directions. Each question can be answered in both modalities (image and text), enabling a symmetric evaluation of a model's bidirectional inference capability and cross-modal consistency. Experiments reveal a persistent gap between the two directions across a wide range of UMMs with different architectures, suggesting that current models achieve only surface-level unification rather than deep cognitive convergence of the two. To further explore the underlying mechanism, we conduct an empirical study from the perspective of knowledge manipulation to illustrate the underlying limitations. Our findings indicate that knowledge within UMMs often remains disjoint. The capability emergence and knowledge across modalities are unsynchronized, paving the way for further exploration.",
             "score": 5,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-02",
             "pub_date_card": {
                 "ru": "2 февраля",
@@ -556,12 +556,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2602.03916",
+            "title": "SpatiaLab: Can Vision-Language Models Perform Spatial Reasoning in the Wild?",
+            "url": "https://huggingface.co/papers/2602.03916",
+            "abstract": "SpatiaLab presents a comprehensive benchmark for evaluating vision-language models' spatial reasoning capabilities across realistic, diverse scenarios, revealing significant gaps compared to human performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Spatial reasoning is a fundamental aspect of human cognition, yet it remains a major challenge for contemporary vision-language models (VLMs). Prior work largely relied on synthetic or LLM-generated environments with limited task designs and puzzle-like setups, failing to capture the real-world complexity, visual noise, and diverse spatial relationships that VLMs encounter. To address this, we introduce SpatiaLab, a comprehensive benchmark for evaluating VLMs' spatial reasoning in realistic, unconstrained contexts. SpatiaLab comprises 1,400 visual question-answer pairs across six major categories: Relative Positioning, Depth & Occlusion, Orientation, Size & Scale, Spatial Navigation, and 3D Geometry, each with five subcategories, yielding 30 distinct task types. Each subcategory contains at least 25 questions, and each main category includes at least 200 questions, supporting both multiple-choice and open-ended evaluation. Experiments across diverse state-of-the-art VLMs, including open- and closed-source models, reasoning-focused, and specialized spatial reasoning models, reveal a substantial gap in spatial reasoning capabilities compared with humans. In the multiple-choice setup, InternVL3.5-72B achieves 54.93% accuracy versus 87.57% for humans. In the open-ended setting, all models show a performance drop of around 10-25%, with GPT-5-mini scoring highest at 40.93% versus 64.93% for humans. These results highlight key limitations in handling complex spatial relationships, depth perception, navigation, and 3D geometry. By providing a diverse, real-world evaluation framework, SpatiaLab exposes critical challenges and opportunities for advancing VLMs' spatial reasoning, offering a benchmark to guide future research toward robust, human-aligned spatial understanding. SpatiaLab is available at: https://spatialab-reasoning.github.io/.",
+            "score": 4,
+            "issue_id": 924,
+            "pub_date": "2026-02-03",
+            "pub_date_card": {
+                "ru": "3 февраля",
+                "en": "February 3",
+                "zh": "2月3日"
+            },
+            "hash": "1db96f60865a4e5a",
+            "github_url": "https://github.com/SpatiaLab-Reasoning/SpatiaLab",
+            "github_stars": 1,
+            "pdf_title_img": "assets/pdf/title_img/2602.03916.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2602.02350",
             "title": "Context Learning for Multi-Agent Discussion",
             "url": "https://huggingface.co/papers/2602.02350",
             "abstract": "Multi-Agent Discussion methods suffer from inconsistency due to individual context misalignment, which is addressed through a context learning approach that dynamically generates context instructions for each agent to improve consensus reaching and performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Multi-Agent Discussion (MAD) has garnered increasing attention very recently, where multiple LLM instances collaboratively solve problems via structured discussion. However, we find that current MAD methods easily suffer from discussion inconsistency, LLMs fail to reach a coherent solution, due to the misalignment between their individual contexts.In this paper, we introduce a multi-LLM context learning method (M2CL) that learns a context generator for each agent, capable of dynamically generating context instructions per discussion round via automatic information organization and refinement. Specifically, inspired by our theoretical insights on the context instruction, M2CL train the generators to control context coherence and output discrepancies via a carefully crafted self-adaptive mechanism.It enables LLMs to avoid premature convergence on majority noise and progressively reach the correct consensus. We evaluate M2CL on challenging tasks, including academic reasoning, embodied tasks, and mobile control. The results show that the performance of M2CL significantly surpasses existing methods by 20%--50%, while enjoying favorable transferability and computational efficiency.",
             "score": 3,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-02",
             "pub_date_card": {
                 "ru": "2 февраля",
@@ -582,7 +603,7 @@
             "url": "https://huggingface.co/papers/2602.04805",
             "abstract": "Generative 3D models face challenges in animation rigging, which this work addresses by introducing SkinTokens—a learned discrete representation for skinning weights—and TokenRig, a unified autoregressive framework that models skeletons and skin deformations together, improving rigging accuracy through reinforcement learning.  \t\t\t\t\tAI-generated summary \t\t\t\t The rapid proliferation of generative 3D models has created a critical bottleneck in animation pipelines: rigging. Existing automated methods are fundamentally limited by their approach to skinning, treating it as an ill-posed, high-dimensional regression task that is inefficient to optimize and is typically decoupled from skeleton generation. We posit this is a representation problem and introduce SkinTokens: a learned, compact, and discrete representation for skinning weights. By leveraging an FSQ-CVAE to capture the intrinsic sparsity of skinning, we reframe the task from continuous regression to a more tractable token sequence prediction problem. This representation enables TokenRig, a unified autoregressive framework that models the entire rig as a single sequence of skeletal parameters and SkinTokens, learning the complicated dependencies between skeletons and skin deformations. The unified model is then amenable to a reinforcement learning stage, where tailored geometric and semantic rewards improve generalization to complex, out-of-distribution assets. Quantitatively, the SkinTokens representation leads to a 98%-133% percents improvement in skinning accuracy over state-of-the-art methods, while the full TokenRig framework, refined with RL, enhances bone prediction by 17%-22%. Our work presents a unified, generative approach to rigging that yields higher fidelity and robustness, offering a scalable solution to a long-standing challenge in 3D content creation.",
             "score": 2,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -603,7 +624,7 @@
             "url": "https://huggingface.co/papers/2602.03979",
             "abstract": "Log-probability rewards derived from the reference answer's likelihood outperform binary rewards in chain-of-thought fine-tuning across both verifiable and non-verifiable reasoning benchmarks.  \t\t\t\t\tAI-generated summary \t\t\t\t Fine-tuning large language models (LLMs) on reasoning benchmarks via reinforcement learning requires a specific reward function, often binary, for each benchmark. This comes with two potential limitations: the need to design the reward, and the potentially sparse nature of binary rewards. Here, we systematically investigate rewards derived from the probability or log-probability of emitting the reference answer (or any other prompt continuation present in the data), which have the advantage of not relying on specific verifiers and being available at scale. Several recent works have advocated for the use of similar rewards (e.g., VeriFree, JEPO, RLPR, NOVER). We systematically compare variants of likelihood-based rewards with standard baselines, testing performance both on standard mathematical reasoning benchmarks, and on long-form answers where no external verifier is available. We find that using the log-probability of the reference answer as the reward for chain-of-thought (CoT) learning is the only option that performs well in all setups. This reward is also consistent with the next-token log-likelihood loss used during pretraining. In verifiable settings, log-probability rewards bring comparable or better success rates than reinforcing with standard binary rewards, and yield much better perplexity. In non-verifiable settings, they perform on par with SFT. On the other hand, methods based on probability, such as VeriFree, flatline on non-verifiable settings due to vanishing probabilities of getting the correct answer. Overall, this establishes log-probability rewards as a viable method for CoT fine-tuning, bridging the short, verifiable and long, non-verifiable answer settings.",
             "score": 2,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-03",
             "pub_date_card": {
                 "ru": "3 февраля",
@@ -624,7 +645,7 @@
             "url": "https://huggingface.co/papers/2601.20499",
             "abstract": "Autoregressive video diffusion models suffer from inefficient attention mechanisms that underutilize historical frames, but a new method called Dummy Forcing improves efficiency through heterogeneous memory allocation and dynamic head programming while maintaining quality.  \t\t\t\t\tAI-generated summary \t\t\t\t The autoregressive video diffusion model has recently gained considerable research interest due to its causal modeling and iterative denoising. In this work, we identify that the multi-head self-attention in these models under-utilizes historical frames: approximately 25% heads attend almost exclusively to the current frame, and discarding their KV caches incurs only minor performance degradation. Building upon this, we propose Dummy Forcing, a simple yet effective method to control context accessibility across different heads. Specifically, the proposed heterogeneous memory allocation reduces head-wise context redundancy, accompanied by dynamic head programming to adaptively classify head types. Moreover, we develop a context packing technique to achieve more aggressive cache compression. Without additional training, our Dummy Forcing delivers up to 2.0x speedup over the baseline, supporting video generation at 24.3 FPS with less than 0.5% quality drop. Project page is available at https://csguoh.github.io/project/DummyForcing/.",
             "score": 2,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-01-28",
             "pub_date_card": {
                 "ru": "28 января",
@@ -645,7 +666,7 @@
             "url": "https://huggingface.co/papers/2602.04883",
             "abstract": "PAR is a multi-scale autoregressive framework for protein backbone generation that uses hierarchical structure modeling, autoregressive transformers, and flow-based decoding to produce high-quality protein structures with improved generalization and reduced exposure bias.  \t\t\t\t\tAI-generated summary \t\t\t\t We present protein autoregressive modeling (PAR), the first multi-scale autoregressive framework for protein backbone generation via coarse-to-fine next-scale prediction. Using the hierarchical nature of proteins, PAR generates structures that mimic sculpting a statue, forming a coarse topology and refining structural details over scales. To achieve this, PAR consists of three key components: (i) multi-scale downsampling operations that represent protein structures across multiple scales during training; (ii) an autoregressive transformer that encodes multi-scale information and produces conditional embeddings to guide structure generation; (iii) a flow-based backbone decoder that generates backbone atoms conditioned on these embeddings. Moreover, autoregressive models suffer from exposure bias, caused by the training and the generation procedure mismatch, and substantially degrades structure generation quality. We effectively alleviate this issue by adopting noisy context learning and scheduled sampling, enabling robust backbone generation. Notably, PAR exhibits strong zero-shot generalization, supporting flexible human-prompted conditional generation and motif scaffolding without requiring fine-tuning. On the unconditional generation benchmark, PAR effectively learns protein distributions and produces backbones of high design quality, and exhibits favorable scaling behavior. Together, these properties establish PAR as a promising framework for protein structure generation.",
             "score": 1,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -666,7 +687,7 @@
             "url": "https://huggingface.co/papers/2602.04605",
             "abstract": "RexBERT, a family of BERT-style encoders designed for e-commerce semantics, achieves superior performance on domain-specific tasks through specialized pretraining and high-quality in-domain data.  \t\t\t\t\tAI-generated summary \t\t\t\t Encoder-only transformers remain indispensable in retrieval, classification, and ranking systems where latency, stability, and cost are paramount. Most general purpose encoders, however, are trained on generic corpora with limited coverage of specialized domains. We introduce RexBERT, a family of BERT-style encoders designed specifically for e-commerce semantics. We make three contributions. First, we release Ecom-niverse, a 350 billion token corpus curated from diverse retail and shopping sources. We describe a modular pipeline that isolates and extracts e-commerce content from FineFineWeb and other open web resources, and characterize the resulting domain distribution. Second, we present a reproducible pretraining recipe building on ModernBERT's architectural advances. The recipe consists of three phases: general pre-training, context extension, and annealed domain specialization. Third, we train RexBERT models ranging from 17M to 400M parameters and evaluate them on token classification, semantic similarity, and general natural language understanding tasks using e-commerce datasets. Despite having 2-3x fewer parameters, RexBERT outperforms larger general-purpose encoders and matches or surpasses modern long-context models on domain-specific benchmarks. Our results demonstrate that high quality in-domain data combined with a principled training approach provides a stronger foundation for e-commerce applications than indiscriminate scaling alone.",
             "score": 1,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
@@ -682,22 +703,22 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2602.03916",
-            "title": "SpatiaLab: Can Vision-Language Models Perform Spatial Reasoning in the Wild?",
-            "url": "https://huggingface.co/papers/2602.03916",
-            "abstract": "SpatiaLab presents a comprehensive benchmark for evaluating vision-language models' spatial reasoning capabilities across realistic, diverse scenarios, revealing significant gaps compared to human performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Spatial reasoning is a fundamental aspect of human cognition, yet it remains a major challenge for contemporary vision-language models (VLMs). Prior work largely relied on synthetic or LLM-generated environments with limited task designs and puzzle-like setups, failing to capture the real-world complexity, visual noise, and diverse spatial relationships that VLMs encounter. To address this, we introduce SpatiaLab, a comprehensive benchmark for evaluating VLMs' spatial reasoning in realistic, unconstrained contexts. SpatiaLab comprises 1,400 visual question-answer pairs across six major categories: Relative Positioning, Depth & Occlusion, Orientation, Size & Scale, Spatial Navigation, and 3D Geometry, each with five subcategories, yielding 30 distinct task types. Each subcategory contains at least 25 questions, and each main category includes at least 200 questions, supporting both multiple-choice and open-ended evaluation. Experiments across diverse state-of-the-art VLMs, including open- and closed-source models, reasoning-focused, and specialized spatial reasoning models, reveal a substantial gap in spatial reasoning capabilities compared with humans. In the multiple-choice setup, InternVL3.5-72B achieves 54.93% accuracy versus 87.57% for humans. In the open-ended setting, all models show a performance drop of around 10-25%, with GPT-5-mini scoring highest at 40.93% versus 64.93% for humans. These results highlight key limitations in handling complex spatial relationships, depth perception, navigation, and 3D geometry. By providing a diverse, real-world evaluation framework, SpatiaLab exposes critical challenges and opportunities for advancing VLMs' spatial reasoning, offering a benchmark to guide future research toward robust, human-aligned spatial understanding. SpatiaLab is available at: https://spatialab-reasoning.github.io/.",
+            "id": "https://huggingface.co/papers/2602.04289",
+            "title": "Proxy Compression for Language Modeling",
+            "url": "https://huggingface.co/papers/2602.04289",
+            "abstract": "Proxy compression trains language models on both raw byte sequences and compressed views, enabling efficient training with end-to-end raw-byte inference while maintaining model robustness.  \t\t\t\t\tAI-generated summary \t\t\t\t Modern language models are trained almost exclusively on token sequences produced by a fixed tokenizer, an external lossless compressor often over UTF-8 byte sequences, thereby coupling the model to that compressor. This work introduces proxy compression, an alternative training scheme that preserves the efficiency benefits of compressed inputs while providing an end-to-end, raw-byte interface at inference time. During training, one language model is jointly trained on raw byte sequences and compressed views generated by external compressors; through the process, the model learns to internally align compressed sequences and raw bytes. This alignment enables strong transfer between the two formats, even when training predominantly on compressed inputs which are discarded at inference. Extensive experiments on code language modeling demonstrate that proxy compression substantially improves training efficiency and significantly outperforms pure byte-level baselines given fixed compute budgets. As model scale increases, these gains become more pronounced, and proxy-trained models eventually match or rival tokenizer approaches, all while operating solely on raw bytes and retaining the inherent robustness of byte-level modeling.",
             "score": 1,
-            "issue_id": 923,
-            "pub_date": "2026-02-03",
+            "issue_id": 924,
+            "pub_date": "2026-02-04",
             "pub_date_card": {
-                "ru": "3 февраля",
-                "en": "February 3",
-                "zh": "2月3日"
+                "ru": "4 февраля",
+                "en": "February 4",
+                "zh": "2月4日"
             },
-            "hash": "1db96f60865a4e5a",
-            "github_url": "https://github.com/SpatiaLab-Reasoning/SpatiaLab",
-            "github_stars": 1,
-            "pdf_title_img": "assets/pdf/title_img/2602.03916.jpg",
+            "hash": "8eb67e4751e7216d",
+            "github_url": "https://github.com/LZhengisme/proxy-compression",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.04289.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -708,7 +729,7 @@
             "url": "https://huggingface.co/papers/2602.02341",
             "abstract": "LongVPO is a two-stage Direct Preference Optimization framework that enables short-context vision-language models to understand ultra-long videos through synthetic preference triples and recursive captioning, achieving state-of-the-art performance with minimal human annotation.  \t\t\t\t\tAI-generated summary \t\t\t\t We present LongVPO, a novel two-stage Direct Preference Optimization framework that enables short-context vision-language models to robustly understand ultra-long videos without any long-video annotations. In Stage 1, we synthesize preference triples by anchoring questions to individual short clips, interleaving them with distractors, and applying visual-similarity and question-specificity filtering to mitigate positional bias and ensure unambiguous supervision. We also approximate the reference model's scoring over long contexts by evaluating only the anchor clip, reducing computational overhead. In Stage 2, we employ a recursive captioning pipeline on long videos to generate scene-level metadata, then use a large language model to craft multi-segment reasoning queries and dispreferred responses, aligning the model's preferences through multi-segment reasoning tasks. With only 16K synthetic examples and no costly human labels, LongVPO outperforms the state-of-the-art open-source models on multiple long-video benchmarks, while maintaining strong short-video performance (e.g., on MVBench), offering a scalable paradigm for efficient long-form video understanding.",
             "score": 1,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-02",
             "pub_date_card": {
                 "ru": "2 февраля",
@@ -729,7 +750,7 @@
             "url": "https://huggingface.co/papers/2602.01849",
             "abstract": "Self-rewarding sequential Monte Carlo enables effective sampling of masked diffusion language models by using parallel diffusion processes and trajectory-level confidence signals to improve generation quality.  \t\t\t\t\tAI-generated summary \t\t\t\t This work presents self-rewarding sequential Monte Carlo (SMC), an inference-time scaling algorithm enabling effective sampling of masked diffusion language models (MDLMs). Our algorithm stems from the observation that most existing MDLMs rely on a confidence-based sampling strategy, where only tokens with the highest prediction confidence are preserved at each step. This restricts the generation to a noise-sensitive, greedy decoding paradigm, resulting in an inevitable collapse in the diversity of possible paths. We address this problem by launching multiple interacting diffusion processes in parallel, referred to as particles, for trajectory exploration. Importantly, we introduce the trajectory-level confidence as a self-rewarding signal for assigning particle importance weights. During sampling, particles are iteratively weighted and resampled to systematically steer generation towards globally confident, high-quality samples. Our self-rewarding SMC is verified on various masked diffusion language models and benchmarks, achieving significant improvement without extra training or reward guidance, while effectively converting parallel inference capacity into improved sampling quality. Our code is available at https://github.com/Algolzw/self-rewarding-smc.",
             "score": 1,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-02",
             "pub_date_card": {
                 "ru": "2 февраля",
@@ -750,7 +771,7 @@
             "url": "https://huggingface.co/papers/2602.04547",
             "abstract": "OmniRad is a self-supervised radiological foundation model pretrained on 1.2 million medical images that demonstrates improved performance in classification and segmentation tasks through representation reuse and cross-task transferability.  \t\t\t\t\tAI-generated summary \t\t\t\t Radiological analysis increasingly benefits from pretrained visual representations that can support heterogeneous downstream tasks across imaging modalities. In this work, we introduce OmniRad, a self-supervised radiological foundation model pretrained on 1.2 million medical images, designed with radiology-inspired principles emphasizing representation reuse and cross-task transferability. We evaluate the pretrained encoder under multiple downstream adaptation regimes, including lightweight task-specific adapters with a frozen backbone as well as full end-to-end fine-tuning for classification, allowing us to assess both representation quality and task-specific performance. OmniRad is evaluated on a broad suite of public benchmarks spanning classification and segmentation across multiple modalities. On the MedMNISTv2 collection, OmniRad improves classification F1 by up to 2.05% over competing foundation models. For dense prediction, OmniRad attains mean Dice score improvements across six MedSegBench datasets when using frozen representations. Qualitative analyses and latent-space visualizations suggest improved feature clustering and modality-related separation.",
             "score": 0,
-            "issue_id": 923,
+            "issue_id": 924,
             "pub_date": "2026-02-04",
             "pub_date_card": {
                 "ru": "4 февраля",
