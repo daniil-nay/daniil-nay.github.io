@@ -4,9 +4,9 @@
         "en": "February 17",
         "zh": "2月17日"
     },
-    "time_utc": "2026-02-17 18:47",
+    "time_utc": "2026-02-17 19:43",
     "weekday": 1,
-    "issue_id": 1169,
+    "issue_id": 1170,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -15,7 +15,7 @@
             "url": "https://huggingface.co/papers/2602.10809",
             "abstract": "DeepImageSearch presents an agentic approach to image retrieval that addresses limitations of traditional semantic matching by enabling multi-step reasoning over visual histories through a modular agent framework with dual-memory system.  \t\t\t\t\tAI-generated summary \t\t\t\t Existing multimodal retrieval systems excel at semantic matching but implicitly assume that query-image relevance can be measured in isolation. This paradigm overlooks the rich dependencies inherent in realistic visual streams, where information is distributed across temporal sequences rather than confined to single snapshots. To bridge this gap, we introduce DeepImageSearch, a novel agentic paradigm that reformulates image retrieval as an autonomous exploration task. Models must plan and perform multi-step reasoning over raw visual histories to locate targets based on implicit contextual cues. We construct DISBench, a challenging benchmark built on interconnected visual data. To address the scalability challenge of creating context-dependent queries, we propose a human-model collaborative pipeline that employs vision-language models to mine latent spatiotemporal associations, effectively offloading intensive context discovery before human verification. Furthermore, we build a robust baseline using a modular agent framework equipped with fine-grained tools and a dual-memory system for long-horizon navigation. Extensive experiments demonstrate that DISBench poses significant challenges to state-of-the-art models, highlighting the necessity of incorporating agentic reasoning into next-generation retrieval systems.",
             "score": 25,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-11",
             "pub_date_card": {
                 "ru": "11 февраля",
@@ -36,7 +36,7 @@
             "url": "https://huggingface.co/papers/2602.13949",
             "abstract": "Experiential Reinforcement Learning introduces an explicit experience-reflection-consolidation loop that improves learning efficiency and performance in sparse-reward environments by enabling structured behavioral revision without additional inference costs.  \t\t\t\t\tAI-generated summary \t\t\t\t Reinforcement learning has become the central approach for language models (LMs) to learn from environmental reward or feedback. In practice, the environmental feedback is usually sparse and delayed. Learning from such signals is challenging, as LMs must implicitly infer how observed failures should translate into behavioral changes for future iterations. We introduce Experiential Reinforcement Learning (ERL), a training paradigm that embeds an explicit experience-reflection-consolidation loop into the reinforcement learning process. Given a task, the model generates an initial attempt, receives environmental feedback, and produces a reflection that guides a refined second attempt, whose success is reinforced and internalized into the base policy. This process converts feedback into structured behavioral revision, improving exploration and stabilizing optimization while preserving gains at deployment without additional inference cost. Across sparse-reward control environments and agentic reasoning benchmarks, ERL consistently improves learning efficiency and final performance over strong reinforcement learning baselines, achieving gains of up to +81% in complex multi-step environments and up to +11% in tool-using reasoning tasks. These results suggest that integrating explicit self-reflection into policy training provides a practical mechanism for transforming feedback into durable behavioral improvement.",
             "score": 21,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -57,7 +57,7 @@
             "url": "https://huggingface.co/papers/2602.14234",
             "abstract": "REDSearcher presents a unified framework for optimizing search agents through improved task synthesis, tool-augmented queries, midtraining capability enhancement, and simulated environments to address challenges in long-horizon search tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t Large language models are transitioning from generalpurpose knowledge engines to realworld problem solvers, yet optimizing them for deep search tasks remains challenging. The central bottleneck lies in the extreme sparsity of highquality search trajectories and reward signals, arising from the difficulty of scalable longhorizon task construction and the high cost of interactionheavy rollouts involving external tool calls. To address these challenges, we propose REDSearcher, a unified framework that codesigns complex task synthesis, midtraining, and posttraining for scalable searchagent optimization. Specifically, REDSearcher introduces the following improvements: (1) We frame task synthesis as a dualconstrained optimization, where task difficulty is precisely governed by graph topology and evidence dispersion, allowing scalable generation of complex, highquality tasks. (2) We introduce toolaugmented queries to encourage proactive tool use rather than passive recall.(3) During midtraining, we strengthen core atomic capabilities knowledge, planning, and function calling substantially reducing the cost of collecting highquality trajectories for downstream training. (4) We build a local simulated environment that enables rapid, lowcost algorithmic iteration for reinforcement learning experiments. Across both textonly and multimodal searchagent benchmarks, our approach achieves stateoftheart performance. To facilitate future research on longhorizon search agents, we will release 10K highquality complex text search trajectories, 5K multimodal trajectories and 1K text RL query set, and together with code and model checkpoints.",
             "score": 17,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -78,7 +78,7 @@
             "url": "https://huggingface.co/papers/2602.14265",
             "abstract": "STATe presents an interpretable inference-time compute method that uses discrete textual interventions to generate diverse, high-quality, and explainable text by searching over reasoning patterns rather than relying on stochastic sampling.  \t\t\t\t\tAI-generated summary \t\t\t\t Inference-Time-Compute (ITC) methods like Best-of-N and Tree-of-Thoughts are meant to produce output candidates that are both high-quality and diverse, but their use of high-temperature sampling often fails to achieve meaningful output diversity. Moreover, existing ITC methods offer limited control over how to perform reasoning, which in turn limits their explainability. We present STATe-of-Thoughts (STATe), an interpretable ITC method that searches over high-level reasoning patterns. STATe replaces stochastic sampling with discrete and interpretable textual interventions: a controller selects actions encoding high-level reasoning choices, a generator produces reasoning steps conditioned on those choices, and an evaluator scores candidates to guide search. This structured approach yields three main advantages. First, action-guided textual interventions produce greater response diversity than temperature-based sampling. Second, in a case study on argument generation, STATe's explicit action sequences capture interpretable features that are highly predictive of output quality. Third, estimating the association between performance and action choices allows us to identify promising yet unexplored regions of the action space and steer generation directly toward them. Together, these results establish STATe as a practical framework for generating high-quality, diverse, and interpretable text. Our framework is available at https://github.com/zbambergerNLP/state-of-thoughts.",
             "score": 16,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2602.14492",
             "abstract": "A novel framework called Query-as-Anchor is introduced that transforms user modeling from static encoding to dynamic, query-aware synthesis using large language models with specialized architectures and training methods.  \t\t\t\t\tAI-generated summary \t\t\t\t Industrial-scale user representation learning requires balancing robust universality with acute task-sensitivity. However, existing paradigms primarily yield static, task-agnostic embeddings that struggle to reconcile the divergent requirements of downstream scenarios within unified vector spaces. Furthermore, heterogeneous multi-source data introduces inherent noise and modality conflicts, degrading representation. We propose Query-as-Anchor, a framework shifting user modeling from static encoding to dynamic, query-aware synthesis. To empower Large Language Models (LLMs) with deep user understanding, we first construct UserU, an industrial-scale pre-training dataset that aligns multi-modal behavioral sequences with user understanding semantics, and our Q-Anchor Embedding architecture integrates hierarchical coarse-to-fine encoders into dual-tower LLMs via joint contrastive-autoregressive optimization for query-aware user representation. To bridge the gap between general pre-training and specialized business logic, we further introduce Cluster-based Soft Prompt Tuning to enforce discriminative latent structures, effectively aligning model attention with scenario-specific modalities. For deployment, anchoring queries at sequence termini enables KV-cache-accelerated inference with negligible incremental latency. Evaluations on 10 Alipay industrial benchmarks show consistent SOTA performance, strong scalability, and efficient deployment. Large-scale online A/B testing in Alipay's production system across two real-world scenarios further validates its practical effectiveness. Our code is prepared for public release and will be available at: https://github.com/JhCircle/Q-Anchor.",
             "score": 15,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -120,7 +120,7 @@
             "url": "https://huggingface.co/papers/2602.14699",
             "abstract": "This paper envisions a quantum database (Qute) that treats quantum computation as a first-class execution option. Unlike prior simulation-based methods that either run quantum algorithms on classical machines or adapt existing databases for quantum simulation, Qute instead (i) compiles an extended form of SQL into gate-efficient quantum circuits, (ii) employs a hybrid optimizer to dynamically select between quantum and classical execution plans, (iii) introduces selective quantum indexing, and (iv) designs fidelity-preserving storage to mitigate current qubit constraints. We also present a three-stage evolution roadmap toward quantum-native database. Finally, by deploying Qute on a real quantum processor (origin_wukong), we show that it outperforms a classical baseline at scale, and we release an open-source prototype at https://github.com/weAIDB/Qute.",
             "score": 13,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -141,7 +141,7 @@
             "url": "https://huggingface.co/papers/2602.14367",
             "abstract": "InnoEval is a deep innovation evaluation framework that emulates human-level idea assessment through knowledge-grounded, multi-perspective reasoning with heterogeneous deep knowledge search and multi-dimensional decoupled evaluation.  \t\t\t\t\tAI-generated summary \t\t\t\t The rapid evolution of Large Language Models has catalyzed a surge in scientific idea production, yet this leap has not been accompanied by a matching advance in idea evaluation. The fundamental nature of scientific evaluation needs knowledgeable grounding, collective deliberation, and multi-criteria decision-making. However, existing idea evaluation methods often suffer from narrow knowledge horizons, flattened evaluation dimensions, and the inherent bias in LLM-as-a-Judge. To address these, we regard idea evaluation as a knowledge-grounded, multi-perspective reasoning problem and introduce InnoEval, a deep innovation evaluation framework designed to emulate human-level idea assessment. We apply a heterogeneous deep knowledge search engine that retrieves and grounds dynamic evidence from diverse online sources. We further achieve review consensus with an innovation review board containing reviewers with distinct academic backgrounds, enabling a multi-dimensional decoupled evaluation across multiple metrics. We construct comprehensive datasets derived from authoritative peer-reviewed submissions to benchmark InnoEval. Experiments demonstrate that InnoEval can consistently outperform baselines in point-wise, pair-wise, and group-wise evaluation tasks, exhibiting judgment patterns and consensus highly aligned with human experts.",
             "score": 13,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -161,8 +161,8 @@
             "title": "Data Darwinism Part I: Unlocking the Value of Scientific Data for Pre-training",
             "url": "https://huggingface.co/papers/2602.07824",
             "abstract": "Data Darwinism presents a systematic framework for data-model co-evolution through a ten-level taxonomy, demonstrating that advanced processing techniques significantly improve foundation model performance on scientific text.  \t\t\t\t\tAI-generated summary \t\t\t\t Data quality determines foundation model performance, yet systematic processing frameworks are lacking. We introduce Data Darwinism, a ten-level taxonomy (L0-L9) that conceptualizes data-model co-evolution: advanced models produce superior data for next-generation systems. We validate this on scientific literature by constructing Darwin-Science, a 900B-token corpus (L0-L5). We identify a learnability gap in raw scientific text, which we bridge via L4 (Generative Refinement) and L5 (Cognitive Completion) using frontier LLMs to explicate reasoning and terminology.   To ensure rigorous attribution, we pre-trained daVinci-origin-3B/7B models from scratch, excluding scientific content to create contamination-free baselines. After 600B tokens of continued pre-training, Darwin-Science outperforms baselines by +2.12 (3B) and +2.95 (7B) points across 20+ benchmarks, rising to +5.60 and +8.40 points on domain-aligned tasks. Systematic progression to L5 yields a +1.36 total gain, confirming that higher-level processing unlocks latent data value. We release the Darwin-Science corpus and daVinci-origin models to enable principled, co-evolutionary development.",
-            "score": 12,
-            "issue_id": 1169,
+            "score": 13,
+            "issue_id": 1170,
             "pub_date": "2026-02-08",
             "pub_date_card": {
                 "ru": "8 февраля",
@@ -182,8 +182,8 @@
             "title": "BitDance: Scaling Autoregressive Generative Models with Binary Tokens",
             "url": "https://huggingface.co/papers/2602.14041",
             "abstract": "BitDance is a scalable autoregressive image generator that uses binary visual tokens and diffusion-based methods to achieve efficient high-resolution image generation with improved speed and performance.  \t\t\t\t\tAI-generated summary \t\t\t\t We present BitDance, a scalable autoregressive (AR) image generator that predicts binary visual tokens instead of codebook indices. With high-entropy binary latents, BitDance lets each token represent up to 2^{256} states, yielding a compact yet highly expressive discrete representation. Sampling from such a huge token space is difficult with standard classification. To resolve this, BitDance uses a binary diffusion head: instead of predicting an index with softmax, it employs continuous-space diffusion to generate the binary tokens. Furthermore, we propose next-patch diffusion, a new decoding method that predicts multiple tokens in parallel with high accuracy, greatly speeding up inference. On ImageNet 256x256, BitDance achieves an FID of 1.24, the best among AR models. With next-patch diffusion, BitDance beats state-of-the-art parallel AR models that use 1.4B parameters, while using 5.4x fewer parameters (260M) and achieving 8.7x speedup. For text-to-image generation, BitDance trains on large-scale multimodal tokens and generates high-resolution, photorealistic images efficiently, showing strong performance and favorable scaling. When generating 1024x1024 images, BitDance achieves a speedup of over 30x compared to prior AR models. We release code and models to facilitate further research on AR foundation models. Code and models are available at: https://github.com/shallowdream204/BitDance.",
-            "score": 11,
-            "issue_id": 1169,
+            "score": 12,
+            "issue_id": 1170,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -192,7 +192,7 @@
             },
             "hash": "81405516666aafa5",
             "github_url": "https://github.com/shallowdream204/BitDance",
-            "github_stars": 139,
+            "github_stars": 143,
             "pdf_title_img": "assets/pdf/title_img/2602.14041.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -203,8 +203,8 @@
             "title": "Nanbeige4.1-3B: A Small General Model that Reasons, Aligns, and Acts",
             "url": "https://huggingface.co/papers/2602.13367",
             "abstract": "Nanbeige4.1-3B is a 3B-parameter unified language model that demonstrates superior performance in agentic behavior, code generation, and reasoning compared to larger models through advanced reward modeling and training techniques.  \t\t\t\t\tAI-generated summary \t\t\t\t We present Nanbeige4.1-3B, a unified generalist language model that simultaneously achieves strong agentic behavior, code generation, and general reasoning with only 3B parameters. To the best of our knowledge, it is the first open-source small language model (SLM) to achieve such versatility in a single model. To improve reasoning and preference alignment, we combine point-wise and pair-wise reward modeling, ensuring high-quality, human-aligned responses. For code generation, we design complexity-aware rewards in Reinforcement Learning, optimizing both correctness and efficiency. In deep search, we perform complex data synthesis and incorporate turn-level supervision during training. This enables stable long-horizon tool interactions, allowing Nanbeige4.1-3B to reliably execute up to 600 tool-call turns for complex problem-solving. Extensive experimental results show that Nanbeige4.1-3B significantly outperforms prior models of similar scale, such as Nanbeige4-3B-2511 and Qwen3-4B, even achieving superior performance compared to much larger models, such as Qwen3-30B-A3B. Our results demonstrate that small models can achieve both broad competence and strong specialization simultaneously, redefining the potential of 3B parameter models.",
-            "score": 9,
-            "issue_id": 1169,
+            "score": 10,
+            "issue_id": 1170,
             "pub_date": "2026-02-13",
             "pub_date_card": {
                 "ru": "13 февраля",
@@ -224,8 +224,8 @@
             "title": "UniWeTok: An Unified Binary Tokenizer with Codebook Size 2^{128} for Unified Multimodal Large Language Model",
             "url": "https://huggingface.co/papers/2602.14178",
             "abstract": "UniWeTok introduces a unified discrete tokenizer with a massive binary codebook and novel training techniques to achieve superior performance in image generation and multimodal tasks while reducing computational requirements.  \t\t\t\t\tAI-generated summary \t\t\t\t Unified Multimodal Large Language Models (MLLMs) require a visual representation that simultaneously supports high-fidelity reconstruction, complex semantic extraction, and generative suitability. However, existing visual tokenizers typically struggle to satisfy these conflicting objectives within a single framework. In this paper, we introduce UniWeTok, a unified discrete tokenizer designed to bridge this gap using a massive binary codebook (2^{128}). For training framework, we introduce Pre-Post Distillation and a Generative-Aware Prior to enhance the semantic extraction and generative prior of the discrete tokens. In terms of model architecture, we propose a convolution-attention hybrid architecture with the SigLu activation function. SigLu activation not only bounds the encoder output and stabilizes the semantic distillation process but also effectively addresses the optimization conflict between token entropy loss and commitment loss. We further propose a three-stage training framework designed to enhance UniWeTok's adaptability cross various image resolutions and perception-sensitive scenarios, such as those involving human faces and textual content. On ImageNet, UniWeTok achieves state-of-the-art image generation performance (FID: UniWeTok 1.38 vs. REPA 1.42) while requiring a remarkably low training compute (Training Tokens: UniWeTok 33B vs. REPA 262B). On general-domain, UniWeTok demonstrates highly competitive capabilities across a broad range of tasks, including multimodal understanding, image generation (DPG Score: UniWeTok 86.63 vs. FLUX.1 [Dev] 83.84), and editing (GEdit Overall Score: UniWeTok 5.09 vs. OmniGen 5.06). We release code and models to facilitate community exploration of unified tokenizer and MLLM.",
-            "score": 7,
-            "issue_id": 1169,
+            "score": 8,
+            "issue_id": 1170,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -234,7 +234,7 @@
             },
             "hash": "7c417dc23afb0abb",
             "github_url": "https://github.com/shallowdream204/BitDance",
-            "github_stars": 139,
+            "github_stars": 143,
             "pdf_title_img": "assets/pdf/title_img/2602.14178.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -246,7 +246,7 @@
             "url": "https://huggingface.co/papers/2602.12876",
             "abstract": "A new benchmark called BrowseComp-V3 challenges multimodal large language models with complex, multi-hop reasoning tasks requiring deep search across text and visual modalities, revealing significant gaps in current capabilities.  \t\t\t\t\tAI-generated summary \t\t\t\t Multimodal large language models (MLLMs), equipped with increasingly advanced planning and tool-use capabilities, are evolving into autonomous agents capable of performing multimodal web browsing and deep search in open-world environments. However, existing benchmarks for multimodal browsing remain limited in task complexity, evidence accessibility, and evaluation granularity, hindering comprehensive and reproducible assessments of deep search capabilities. To address these limitations, we introduce BrowseComp-V^3, a novel benchmark consisting of 300 carefully curated and challenging questions spanning diverse domains. The benchmark emphasizes deep, multi-level, and cross-modal multi-hop reasoning, where critical evidence is interleaved across textual and visual modalities within and across web pages. All supporting evidence is strictly required to be publicly searchable, ensuring fairness and reproducibility. Beyond final-answer accuracy, we incorporate an expert-validated, subgoal-driven process evaluation mechanism that enables fine-grained analysis of intermediate reasoning behaviors and systematic characterization of capability boundaries. In addition, we propose OmniSeeker, a unified multimodal browsing agent framework integrating diverse web search and visual perception tools. Comprehensive experiments demonstrate that even state-of-the-art models achieve only 36% accuracy on our benchmark, revealing critical bottlenecks in multimodal information integration and fine-grained perception. Our results highlight a fundamental gap between current model capabilities and robust multimodal deep search in real-world settings.",
             "score": 6,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-13",
             "pub_date_card": {
                 "ru": "13 февраля",
@@ -267,7 +267,7 @@
             "url": "https://huggingface.co/papers/2602.13823",
             "abstract": "A reasoning-driven universal multimodal embedding framework integrates embedder-guided reinforcement learning with traceability chain-of-thought to enhance cross-modal semantic consistency and retrieval performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Leveraging Multimodal Large Language Models (MLLMs) has become pivotal for advancing Universal Multimodal Embeddings (UME) in addressing diverse cross-modal tasks. Recent studies demonstrate that incorporating generative Chain-of-Thought (CoT) reasoning can substantially enhance task-specific representations compared to discriminative methods. However, the generated reasoning CoTs of existing generative embedding methods are limited to the textual analysis of queries and are irrelevant to the retrieval of the targets. To address these limitations, we propose a reasoning-driven UME framework that integrates Embedder-Guided Reinforcement Learning (EG-RL) to optimize the Reasoner to produce evidential Traceability CoT (T-CoT). Our key contributions are threefold: (1) We design an EG-RL framework where the Embedder provides explicit supervision to the Reasoner, ensuring the generated CoT traces are aligned with embedding tasks. (2) We introduce T-CoT, which extracts critical multimodal cues to focus on retrieval-relevant elements and provides multimodal inputs for the Embedder. (3) With limited computational resources, our framework outperforms the pioneering embedding model on both MMEB-V2 and UVRB benchmarks. The integration of multimodal evidence in structured reasoning, paired with retrieval-oriented alignment, effectively strengthens cross-modal semantic consistency and boosts the fine-grained matching capability of the model as well as the generalization across complex scenarios. Our work demonstrates that targeted reasoning optimization can significantly improve multimodal embedding quality, providing a practical and efficient solution for reasoning-driven UME development.",
             "score": 5,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-14",
             "pub_date_card": {
                 "ru": "14 февраля",
@@ -288,7 +288,7 @@
             "url": "https://huggingface.co/papers/2602.14721",
             "abstract": "WebWorld is an open-web simulator trained on over one million interactions that supports long-horizon reasoning and multi-format data, achieving performance comparable to advanced models like Gemini-3-Pro and GPT-4o.  \t\t\t\t\tAI-generated summary \t\t\t\t Web agents require massive trajectories to generalize, yet real-world training is constrained by network latency, rate limits, and safety risks. We introduce WebWorld series, the first open-web simulator trained at scale. While existing simulators are restricted to closed environments with thousands of trajectories, WebWorld leverages a scalable data pipeline to train on 1M+ open-web interactions, supporting reasoning, multi-format data, and long-horizon simulations of 30+ steps. For intrinsic evaluation, we introduce WebWorld-Bench with dual metrics spanning nine dimensions, where WebWorld achieves simulation performance comparable to Gemini-3-Pro. For extrinsic evaluation, Qwen3-14B trained on WebWorld-synthesized trajectories improves by +9.2\\% on WebArena, reaching performance comparable to GPT-4o. WebWorld enables effective inference-time search, outperforming GPT-5 as a world model. Beyond web simulation, WebWorld exhibits cross-domain generalization to code, GUI, and game environments, providing a replicable recipe for world model construction.",
             "score": 4,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -309,7 +309,7 @@
             "url": "https://huggingface.co/papers/2602.13195",
             "abstract": "Conversational image segmentation addresses functional and physical reasoning tasks by introducing a new benchmark and model that combines segmentation priors with language understanding.  \t\t\t\t\tAI-generated summary \t\t\t\t Conversational image segmentation grounds abstract, intent-driven concepts into pixel-accurate masks. Prior work on referring image grounding focuses on categorical and spatial queries (e.g., \"left-most apple\") and overlooks functional and physical reasoning (e.g., \"where can I safely store the knife?\"). We address this gap and introduce Conversational Image Segmentation (CIS) and ConverSeg, a benchmark spanning entities, spatial relations, intent, affordances, functions, safety, and physical reasoning. We also present ConverSeg-Net, which fuses strong segmentation priors with language understanding, and an AI-powered data engine that generates prompt-mask pairs without human supervision. We show that current language-guided segmentation models are inadequate for CIS, while ConverSeg-Net trained on our data engine achieves significant gains on ConverSeg and maintains strong performance on existing language-guided segmentation benchmarks. Project webpage: https://glab-caltech.github.io/converseg/",
             "score": 4,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-13",
             "pub_date_card": {
                 "ru": "13 февраля",
@@ -318,8 +318,29 @@
             },
             "hash": "a8bc4ef47d1edcb3",
             "github_url": "https://github.com/AadSah/ConverSeg",
-            "github_stars": 9,
+            "github_stars": 10,
             "pdf_title_img": "assets/pdf/title_img/2602.13195.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.11574",
+            "title": "Learning to Configure Agentic AI Systems",
+            "url": "https://huggingface.co/papers/2602.11574",
+            "abstract": "Learning per-query agent configurations through reinforcement learning improves task accuracy while reducing computational costs compared to fixed templates and hand-tuned heuristics.  \t\t\t\t\tAI-generated summary \t\t\t\t Configuring LLM-based agent systems involves choosing workflows, tools, token budgets, and prompts from a large combinatorial design space, and is typically handled today by fixed large templates or hand-tuned heuristics. This leads to brittle behavior and unnecessary compute, since the same cumbersome configuration is often applied to both easy and hard input queries. We formulate agent configuration as a query-wise decision problem and introduce ARC (Agentic Resource & Configuration learner), which learns a light-weight hierarchical policy using reinforcement learning to dynamically tailor these configurations. Across multiple benchmarks spanning reasoning and tool-augmented question answering, the learned policy consistently outperforms strong hand-designed and other baselines, achieving up to 25% higher task accuracy while also reducing token and runtime costs. These results demonstrate that learning per-query agent configurations is a powerful alternative to \"one size fits all\" designs.",
+            "score": 4,
+            "issue_id": 1170,
+            "pub_date": "2026-02-12",
+            "pub_date_card": {
+                "ru": "12 февраля",
+                "en": "February 12",
+                "zh": "2月12日"
+            },
+            "hash": "72e2aea860ebab16",
+            "github_url": "https://github.com/somsagar07/Context_Optimization",
+            "github_stars": 2,
+            "pdf_title_img": "assets/pdf/title_img/2602.11574.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -330,7 +351,7 @@
             "url": "https://huggingface.co/papers/2602.14147",
             "abstract": "LaViDa-R1 is a multimodal reasoning diffusion language model that unifies supervised fine-tuning and multi-task reinforcement learning with novel training techniques for enhanced performance across visual reasoning and generation tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t Diffusion language models (dLLMs) recently emerged as a promising alternative to auto-regressive LLMs. The latest works further extended it to multimodal understanding and generation tasks. In this work, we propose LaViDa-R1, a multimodal, general-purpose reasoning dLLM. Unlike existing works that build reasoning dLLMs through task-specific reinforcement learning, LaViDa-R1 incorporates diverse multimodal understanding and generation tasks in a unified manner. In particular, LaViDa-R1 is built with a novel unified post-training framework that seamlessly integrates supervised finetuning (SFT) and multi-task reinforcement learning (RL). It employs several novel training techniques, including answer-forcing, tree search, and complementary likelihood estimation, to enhance effectiveness and scalability. Extensive experiments demonstrate LaViDa-R1's strong performance on a wide range of multimodal tasks, including visual math reasoning, reason-intensive grounding, and image editing.",
             "score": 3,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -351,7 +372,7 @@
             "url": "https://huggingface.co/papers/2602.13344",
             "abstract": "FireRed-Image-Edit uses a diffusion transformer with optimized data curation and training methods to achieve state-of-the-art performance in instruction-based image editing, supported by a comprehensive benchmark and novel techniques for data efficiency and optimization stability.  \t\t\t\t\tAI-generated summary \t\t\t\t We present FireRed-Image-Edit, a diffusion transformer for instruction-based image editing that achieves state-of-the-art performance through systematic optimization of data curation, training methodology, and evaluation design. We construct a 1.6B-sample training corpus, comprising 900M text-to-image and 700M image editing pairs from diverse sources. After rigorous cleaning, stratification, auto-labeling, and two-stage filtering, we retain over 100M high-quality samples balanced between generation and editing, ensuring strong semantic coverage and instruction alignment. Our multi-stage training pipeline progressively builds editing capability via pre-training, supervised fine-tuning, and reinforcement learning. To improve data efficiency, we introduce a Multi-Condition Aware Bucket Sampler for variable-resolution batching and Stochastic Instruction Alignment with dynamic prompt re-indexing. To stabilize optimization and enhance controllability, we propose Asymmetric Gradient Optimization for DPO, DiffusionNFT with layout-aware OCR rewards for text editing, and a differentiable Consistency Loss for identity preservation. We further establish REDEdit-Bench, a comprehensive benchmark spanning 15 editing categories, including newly introduced beautification and low-level enhancement tasks. Extensive experiments on REDEdit-Bench and public benchmarks (ImgEdit and GEdit) demonstrate competitive or superior performance against both open-source and proprietary systems. We release code, models, and the benchmark suite to support future research.",
             "score": 3,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-12",
             "pub_date_card": {
                 "ru": "12 февраля",
@@ -372,7 +393,7 @@
             "url": "https://huggingface.co/papers/2602.14534",
             "abstract": "A unified multimodal motion model trained with supervised fine-tuning and reinforcement learning with verifiable rewards improves human motion understanding and generation through semantic alignment, reasoning coherence, and physical plausibility.  \t\t\t\t\tAI-generated summary \t\t\t\t Human motion understanding and generation are crucial for vision and robotics but remain limited in reasoning capability and test-time planning. We propose MoRL, a unified multimodal motion model trained with supervised fine-tuning and reinforcement learning with verifiable rewards. Our task-specific reward design combines semantic alignment and reasoning coherence for understanding with physical plausibility and text-motion consistency for generation, improving both logical reasoning and perceptual realism. To further enhance inference, we introduce Chain-of-Motion (CoM), a test-time reasoning method that enables step-by-step planning and reflection. We also construct two large-scale CoT datasets, MoUnd-CoT-140K and MoGen-CoT-140K, to align motion sequences with reasoning traces and action descriptions. Experiments on HumanML3D and KIT-ML show that MoRL achieves significant gains over state-of-the-art baselines. Code: https://github.com/AIGeeksGroup/MoRL. Website: https://aigeeksgroup.github.io/MoRL.",
             "score": 2,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -393,7 +414,7 @@
             "url": "https://huggingface.co/papers/2602.14060",
             "abstract": "LM-Lexicon improves definition modeling through data clustering, semantic expert learning, and sparse mixture-of-experts architecture, achieving higher BLEU scores and better expert specialization.  \t\t\t\t\tAI-generated summary \t\t\t\t We introduce LM-Lexicon, an innovative definition modeling approach that incorporates data clustering, semantic expert learning, and model merging using a sparse mixture-of-experts architecture. By decomposing the definition modeling task into specialized semantic domains, where small language models are trained as domain experts, LM-Lexicon achieves substantial improvements (+7% BLEU score compared with the prior state-of-the-art model) over existing methods on five widely used benchmarks. Empirically, we demonstrate that 1) the clustering strategy enables fine-grained expert specialization with nearly 10% improvement in definition quality; 2) the semantic-aware domain-level routing mechanism achieves higher expert efficacy (+1%) than conventional token-level routing; and 3) further performance gains can be obtained through test-time compute and semantic expert scaling. Our work advances definition modeling while providing insights into the development of efficient language models for semantic-intensive applications.",
             "score": 2,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -414,7 +435,7 @@
             "url": "https://huggingface.co/papers/2602.09185",
             "abstract": "AIDev is a large-scale dataset of agent-authored pull requests from real-world GitHub repositories that captures AI coding agent usage in practical software development scenarios.  \t\t\t\t\tAI-generated summary \t\t\t\t AI coding agents are rapidly transforming software engineering by performing tasks such as feature development, debugging, and testing. Despite their growing impact, the research community lacks a comprehensive dataset capturing how these agents are used in real-world projects. To address this gap, we introduce AIDev, a large-scale dataset focused on agent-authored pull requests (Agentic-PRs) in real-world GitHub repositories. AIDev aggregates 932,791 Agentic-PRs produced by five agents: OpenAI Codex, Devin, GitHub Copilot, Cursor, and Claude Code. These PRs span 116,211 repositories and involve 72,189 developers. In addition, AIDev includes a curated subset of 33,596 Agentic-PRs from 2,807 repositories with over 100 stars, providing further information such as comments, reviews, commits, and related issues. This dataset offers a foundation for future research on AI adoption, developer productivity, and human-AI collaboration in the new era of software engineering.   > AI Agent, Agentic AI, Coding Agent, Agentic Coding, Agentic Software Engineering, Agentic Engineering",
             "score": 2,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-09",
             "pub_date_card": {
                 "ru": "9 февраля",
@@ -435,7 +456,7 @@
             "url": "https://huggingface.co/papers/2602.15031",
             "abstract": "Efficient video inpainting framework that focuses computation on masked regions while maintaining global context consistency through a lightweight embedder.  \t\t\t\t\tAI-generated summary \t\t\t\t High-fidelity generative video editing has seen significant quality improvements by leveraging pre-trained video foundation models. However, their computational cost is a major bottleneck, as they are often designed to inefficiently process the full video context regardless of the inpainting mask's size, even for sparse, localized edits. In this paper, we introduce EditCtrl, an efficient video inpainting control framework that focuses computation only where it is needed. Our approach features a novel local video context module that operates solely on masked tokens, yielding a computational cost proportional to the edit size. This local-first generation is then guided by a lightweight temporal global context embedder that ensures video-wide context consistency with minimal overhead. Not only is EditCtrl 10 times more compute efficient than state-of-the-art generative editing methods, it even improves editing quality compared to methods designed with full-attention. Finally, we showcase how EditCtrl unlocks new capabilities, including multi-region editing with text prompts and autoregressive content propagation.",
             "score": 1,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -456,7 +477,7 @@
             "url": "https://huggingface.co/papers/2602.14941",
             "abstract": "AnchorWeave addresses long-term video generation consistency by replacing global 3D scene reconstruction with multiple local geometric memories and a multi-anchor weaving controller to reconcile cross-view inconsistencies.  \t\t\t\t\tAI-generated summary \t\t\t\t Maintaining spatial world consistency over long horizons remains a central challenge for camera-controllable video generation. Existing memory-based approaches often condition generation on globally reconstructed 3D scenes by rendering anchor videos from the reconstructed geometry in the history. However, reconstructing a global 3D scene from multiple views inevitably introduces cross-view misalignment, as pose and depth estimation errors cause the same surfaces to be reconstructed at slightly different 3D locations across views. When fused, these inconsistencies accumulate into noisy geometry that contaminates the conditioning signals and degrades generation quality. We introduce AnchorWeave, a memory-augmented video generation framework that replaces a single misaligned global memory with multiple clean local geometric memories and learns to reconcile their cross-view inconsistencies. To this end, AnchorWeave performs coverage-driven local memory retrieval aligned with the target trajectory and integrates the selected local memories through a multi-anchor weaving controller during generation. Extensive experiments demonstrate that AnchorWeave significantly improves long-term scene consistency while maintaining strong visual quality, with ablation and analysis studies further validating the effectiveness of local geometric conditioning, multi-anchor control, and coverage-driven retrieval.",
             "score": 1,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -465,7 +486,7 @@
             },
             "hash": "b71ab76cdc1b6693",
             "github_url": "https://github.com/wz0919/AnchorWeave",
-            "github_stars": 3,
+            "github_stars": 6,
             "pdf_title_img": "assets/pdf/title_img/2602.14941.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -477,7 +498,7 @@
             "url": "https://huggingface.co/papers/2602.14689",
             "abstract": "Prefill attacks represent a significant and underexplored vulnerability in open-weight language models, affecting major contemporary models despite some resistance from large reasoning models.  \t\t\t\t\tAI-generated summary \t\t\t\t As the capabilities of large language models continue to advance, so does their potential for misuse. While closed-source models typically rely on external defenses, open-weight models must primarily depend on internal safeguards to mitigate harmful behavior. Prior red-teaming research has largely focused on input-based jailbreaking and parameter-level manipulations. However, open-weight models also natively support prefilling, which allows an attacker to predefine initial response tokens before generation begins. Despite its potential, this attack vector has received little systematic attention. We present the largest empirical study to date of prefill attacks, evaluating over 20 existing and novel strategies across multiple model families and state-of-the-art open-weight models. Our results show that prefill attacks are consistently effective against all major contemporary open-weight models, revealing a critical and previously underexplored vulnerability with significant implications for deployment. While certain large reasoning models exhibit some robustness against generic prefilling, they remain vulnerable to tailored, model-specific strategies. Our findings underscore the urgent need for model developers to prioritize defenses against prefill attacks in open-weight LLMs.",
             "score": 1,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -498,7 +519,7 @@
             "url": "https://huggingface.co/papers/2602.12586",
             "abstract": "McDiffuSE enhances Masked Diffusion Models by optimizing slot infilling order through Monte Carlo Tree Search, improving reasoning task performance through strategic exploration of generation sequences.  \t\t\t\t\tAI-generated summary \t\t\t\t While plan-and-infill decoding in Masked Diffusion Models (MDMs) shows promise for mathematical and code reasoning, performance remains highly sensitive to slot infilling order, often yielding substantial output variance. We introduce McDiffuSE, a framework that formulates slot selection as decision making and optimises infilling orders through Monte Carlo Tree Search (MCTS). McDiffuSE uses look-ahead simulations to evaluate partial completions before commitment, systematically exploring the combinatorial space of generation orders. Experiments show an average improvement of 3.2% over autoregressive baselines and 8.0% over baseline plan-and-infill, with notable gains of 19.5% on MBPP and 4.9% on MATH500. Our analysis reveals that while McDiffuSE predominantly follows sequential ordering, incorporating non-sequential generation is essential for maximising performance. We observe that larger exploration constants, rather than increased simulations, are necessary to overcome model confidence biases and discover effective orderings. These findings establish MCTS-based planning as an effective approach for enhancing generation quality in MDMs.",
             "score": 1,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-13",
             "pub_date_card": {
                 "ru": "13 февраля",
@@ -519,7 +540,7 @@
             "url": "https://huggingface.co/papers/2602.11968",
             "abstract": "In this resource paper, we present DHPLT, an open collection of diachronic corpora in 41 diverse languages. DHPLT is based on the web-crawled HPLT datasets; we use web crawl timestamps as the approximate signal of document creation time. The collection covers three time periods: 2011-2015, 2020-2021 and 2024-present (1 million documents per time period for each language). We additionally provide pre-computed word type and token embeddings and lexical substitutions for our chosen target words, while at the same time leaving it open for the other researchers to come up with their own target words using the same datasets. DHPLT aims at filling in the current lack of multilingual diachronic corpora for semantic change modelling (beyond a dozen of high-resource languages). It opens the way for a variety of new experimental setups in this field. All the resources described in this paper are available at https://data.hplt-project.org/three/diachronic/, sorted by language.",
             "score": 1,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-12",
             "pub_date_card": {
                 "ru": "12 февраля",
@@ -540,7 +561,7 @@
             "url": "https://huggingface.co/papers/2602.12299",
             "abstract": "Room acoustics analysis plays a central role in architectural design, audio engineering, speech intelligibility assessment, and hearing research. Despite the availability of standardized metrics such as reverberation time, clarity, and speech transmission index, accessible tools that combine rigorous signal processing with intuitive visualization remain scarce. This paper presents AcoustiVision Pro, an open-source web-based platform for comprehensive room impulse response (RIR) analysis. The system computes twelve distinct acoustic parameters from uploaded or dataset-sourced RIRs, provides interactive 3D visualizations of early reflections, generates frequency-dependent decay characteristics through waterfall plots, and checks compliance against international standards including ANSI S12.60 and ISO 3382. We introduce the accompanying RIRMega and RIRMega Speech datasets hosted on Hugging Face, containing thousands of simulated room impulse responses with full metadata. The platform supports real-time auralization through FFT-based convolution, exports detailed PDF reports suitable for engineering documentation, and provides CSV data export for further analysis. We describe the mathematical foundations underlying each acoustic metric, detail the system architecture, and present preliminary case studies demonstrating the platform's utility across diverse application domains including classroom acoustics, healthcare facility design, and recording studio evaluation.",
             "score": 1,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-11",
             "pub_date_card": {
                 "ru": "11 февраля",
@@ -561,7 +582,7 @@
             "url": "https://huggingface.co/papers/2602.09319",
             "abstract": "A systematic benchmark for evaluating knowledge-extraction attacks on Retrieval-Augmented Generation systems is introduced, covering diverse attack and defense strategies across multiple retrieval and generation models with standardized evaluation protocols.  \t\t\t\t\tAI-generated summary \t\t\t\t Retrieval-Augmented Generation (RAG) has become a cornerstone of knowledge-intensive applications, including enterprise chatbots, healthcare assistants, and agentic memory management. However, recent studies show that knowledge-extraction attacks can recover sensitive knowledge-base content through maliciously crafted queries, raising serious concerns about intellectual property theft and privacy leakage. While prior work has explored individual attack and defense techniques, the research landscape remains fragmented, spanning heterogeneous retrieval embeddings, diverse generation models, and evaluations based on non-standardized metrics and inconsistent datasets. To address this gap, we introduce the first systematic benchmark for knowledge-extraction attacks on RAG systems. Our benchmark covers a broad spectrum of attack and defense strategies, representative retrieval embedding models, and both open- and closed-source generators, all evaluated under a unified experimental framework with standardized protocols across multiple datasets. By consolidating the experimental landscape and enabling reproducible, comparable evaluation, this benchmark provides actionable insights and a practical foundation for developing privacy-preserving RAG systems in the face of emerging knowledge extraction threats. Our code is available here.",
             "score": 1,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-10",
             "pub_date_card": {
                 "ru": "10 февраля",
@@ -582,7 +603,7 @@
             "url": "https://huggingface.co/papers/2602.07673",
             "abstract": "LLM judges exhibit bias toward summaries similar to their own generation, with performance deteriorating as summary overlap with human references decreases across multiple model sizes and architectures.  \t\t\t\t\tAI-generated summary \t\t\t\t Large language model (LLM) judges have often been used alongside traditional, algorithm-based metrics for tasks like summarization because they better capture semantic information, are better at reasoning, and are more robust to paraphrasing. However, LLM judges show biases for length and order among others, and are vulnerable to various adversarial input prompts. While recent studies have looked into these biases, few have analyzed them at a more granular level in relation to a well-defined overlap metric. In this work we provide an LLM judge bias analysis as a function of overlap with human-written responses in the domain of summarization. We test 9 recent LLMs with parameter counts ranging from 1 billion to 12 billion, including variants of Gemma 3 and LLaMA 3. We find that LLM judges increasingly prefer summaries generated by other LLMs over those written by humans as the similarities (as measured by ROUGE and BLEU) between the judged summaries decrease, and this pattern extends to all but one model tested, and exists regardless of the models' own position biases. Additionally, we find that models struggle to judge even summaries with limited overlaps, suggesting that LLM-as-a-judge in the summary domain should rely on techniques beyond a simple comparison.",
             "score": 1,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-07",
             "pub_date_card": {
                 "ru": "7 февраля",
@@ -603,7 +624,7 @@
             "url": "https://huggingface.co/papers/2602.14696",
             "abstract": "Targeted instruction selection for LLM fine-tuning can be improved by systematically analyzing data representation and selection algorithms, with gradient-based representations and greedy round-robin selection performing best at low budgets.  \t\t\t\t\tAI-generated summary \t\t\t\t Instruction fine-tuning of large language models (LLMs) often involves selecting a subset of instruction training data from a large candidate pool, using a small query set from the target task. Despite growing interest, the literature on targeted instruction selection remains fragmented and opaque: methods vary widely in selection budgets, often omit zero-shot baselines, and frequently entangle the contributions of key components. As a result, practitioners lack actionable guidance on selecting instructions for their target tasks. In this work, we aim to bring clarity to this landscape by disentangling and systematically analyzing the two core ingredients: data representation and selection algorithms. Our framework enables controlled comparisons across models, tasks, and budgets. We find that only gradient-based data representations choose subsets whose similarity to the query consistently predicts performance across datasets and models. While no single method dominates, gradient-based representations paired with a greedy round-robin selection algorithm tend to perform best on average at low budgets, but these benefits diminish at larger budgets. Finally, we unify several existing selection algorithms as forms of approximate distance minimization between the selected subset and the query set, and support this view with new generalization bounds. More broadly, our findings provide critical insights and a foundation for more principled data selection in LLM fine-tuning. The code is available at https://github.com/dcml-lab/targeted-instruction-selection.",
             "score": 0,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -624,7 +645,7 @@
             "url": "https://huggingface.co/papers/2602.14560",
             "abstract": "Parameter-mapping sonification of ENSO data preserves dynamical signatures through acoustic phase space analysis, revealing distinct coupling regimes in traditional musical scales.  \t\t\t\t\tAI-generated summary \t\t\t\t Sonification -- the mapping of data to non-speech audio -- offers an underexplored channel for representing complex dynamical systems. We treat El Niño-Southern Oscillation (ENSO), a canonical example of low-dimensional climate chaos, as a test case for culturally-situated sonification evaluated through complex systems diagnostics. Using parameter-mapping sonification of the Niño 3.4 sea surface temperature anomaly index (1870--2024), we encode ENSO variability into two traditional Javanese gamelan pentatonic systems (pelog and slendro) across four composition strategies, then analyze the resulting audio as trajectories in a two-dimensional acoustic phase space. Recurrence-based diagnostics, convex hull geometry, and coupling analysis reveal that the sonification pipeline preserves key dynamical signatures: alternating modes produce the highest trajectory recurrence rates, echoing ENSO's quasi-periodicity; layered polyphonic modes explore the broadest phase space regions; and the two scale families induce qualitatively distinct coupling regimes between spectral brightness and energy -- predominantly anti-phase in pelog but near-independent in slendro. Phase space trajectory analysis provides a rigorous geometric framework for comparing sonification designs within a complex systems context. Perceptual validation remains necessary; we contribute the dynamical systems methodology for evaluating such mappings.",
             "score": 0,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -645,7 +666,7 @@
             "url": "https://huggingface.co/papers/2602.13516",
             "abstract": "Web agents inadvertently disclose user information through both content and behavioral traces, with behavioral oversharing being more prevalent than content oversharing, and this issue persists despite mitigation efforts.  \t\t\t\t\tAI-generated summary \t\t\t\t LLM-powered agents are beginning to automate user's tasks across the open web, often with access to user resources such as emails and calendars. Unlike standard LLMs answering questions in a controlled ChatBot setting, web agents act \"in the wild\", interacting with third parties and leaving behind an action trace. Therefore, we ask the question: how do web agents handle user resources when accomplishing tasks on their behalf across live websites? In this paper, we formalize Natural Agentic Oversharing -- the unintentional disclosure of task-irrelevant user information through an agent trace of actions on the web. We introduce SPILLage, a framework that characterizes oversharing along two dimensions: channel (content vs. behavior) and directness (explicit vs. implicit). This taxonomy reveals a critical blind spot: while prior work focuses on text leakage, web agents also overshare behaviorally through clicks, scrolls, and navigation patterns that can be monitored. We benchmark 180 tasks on live e-commerce sites with ground-truth annotations separating task-relevant from task-irrelevant attributes. Across 1,080 runs spanning two agentic frameworks and three backbone LLMs, we demonstrate that oversharing is pervasive with behavioral oversharing dominates content oversharing by 5x. This effect persists -- and can even worsen -- under prompt-level mitigation. However, removing task-irrelevant information before execution improves task success by up to 17.9%, demonstrating that reducing oversharing improves task success. Our findings underscore that protecting privacy in web agents is a fundamental challenge, requiring a broader view of \"output\" that accounts for what agents do on the web, not just what they type. Our datasets and code are available at https://github.com/jrohsc/SPILLage.",
             "score": 0,
-            "issue_id": 1169,
+            "issue_id": 1170,
             "pub_date": "2026-02-13",
             "pub_date_card": {
                 "ru": "13 февраля",
