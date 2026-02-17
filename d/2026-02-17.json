@@ -4,9 +4,9 @@
         "en": "February 17",
         "zh": "2月17日"
     },
-    "time_utc": "2026-02-17 05:54",
+    "time_utc": "2026-02-17 06:50",
     "weekday": 1,
-    "issue_id": 1157,
+    "issue_id": 1158,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -15,7 +15,7 @@
             "url": "https://huggingface.co/papers/2602.14699",
             "abstract": "This paper envisions a quantum database (Qute) that treats quantum computation as a first-class execution option. Unlike prior simulation-based methods that either run quantum algorithms on classical machines or adapt existing databases for quantum simulation, Qute instead (i) compiles an extended form of SQL into gate-efficient quantum circuits, (ii) employs a hybrid optimizer to dynamically select between quantum and classical execution plans, (iii) introduces selective quantum indexing, and (iv) designs fidelity-preserving storage to mitigate current qubit constraints. We also present a three-stage evolution roadmap toward quantum-native database. Finally, by deploying Qute on a real quantum processor (origin_wukong), we show that it outperforms a classical baseline at scale, and we release an open-source prototype at https://github.com/weAIDB/Qute.",
             "score": 9,
-            "issue_id": 1157,
+            "issue_id": 1158,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -24,8 +24,29 @@
             },
             "hash": "b7c34d2ef559622e",
             "github_url": "https://github.com/weAIDB/Qute",
-            "github_stars": 3,
+            "github_stars": 5,
             "pdf_title_img": "assets/pdf/title_img/2602.14699.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.14492",
+            "title": "Query as Anchor: Scenario-Adaptive User Representation via Large Language Model",
+            "url": "https://huggingface.co/papers/2602.14492",
+            "abstract": "A novel framework called Query-as-Anchor is introduced that transforms user modeling from static encoding to dynamic, query-aware synthesis using large language models with specialized architectures and training methods.  \t\t\t\t\tAI-generated summary \t\t\t\t Industrial-scale user representation learning requires balancing robust universality with acute task-sensitivity. However, existing paradigms primarily yield static, task-agnostic embeddings that struggle to reconcile the divergent requirements of downstream scenarios within unified vector spaces. Furthermore, heterogeneous multi-source data introduces inherent noise and modality conflicts, degrading representation. We propose Query-as-Anchor, a framework shifting user modeling from static encoding to dynamic, query-aware synthesis. To empower Large Language Models (LLMs) with deep user understanding, we first construct UserU, an industrial-scale pre-training dataset that aligns multi-modal behavioral sequences with user understanding semantics, and our Q-Anchor Embedding architecture integrates hierarchical coarse-to-fine encoders into dual-tower LLMs via joint contrastive-autoregressive optimization for query-aware user representation. To bridge the gap between general pre-training and specialized business logic, we further introduce Cluster-based Soft Prompt Tuning to enforce discriminative latent structures, effectively aligning model attention with scenario-specific modalities. For deployment, anchoring queries at sequence termini enables KV-cache-accelerated inference with negligible incremental latency. Evaluations on 10 Alipay industrial benchmarks show consistent SOTA performance, strong scalability, and efficient deployment. Large-scale online A/B testing in Alipay's production system across two real-world scenarios further validates its practical effectiveness. Our code is prepared for public release and will be available at: https://github.com/JhCircle/Q-Anchor.",
+            "score": 8,
+            "issue_id": 1158,
+            "pub_date": "2026-02-16",
+            "pub_date_card": {
+                "ru": "16 февраля",
+                "en": "February 16",
+                "zh": "2月16日"
+            },
+            "hash": "b95785a3057a9ff5",
+            "github_url": "https://github.com/JhCircle/Q-Anchor",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.14492.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -36,7 +57,7 @@
             "url": "https://huggingface.co/papers/2602.14234",
             "abstract": "REDSearcher presents a unified framework for optimizing search agents through improved task synthesis, tool-augmented queries, midtraining capability enhancement, and simulated environments to address challenges in long-horizon search tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t Large language models are transitioning from generalpurpose knowledge engines to realworld problem solvers, yet optimizing them for deep search tasks remains challenging. The central bottleneck lies in the extreme sparsity of highquality search trajectories and reward signals, arising from the difficulty of scalable longhorizon task construction and the high cost of interactionheavy rollouts involving external tool calls. To address these challenges, we propose REDSearcher, a unified framework that codesigns complex task synthesis, midtraining, and posttraining for scalable searchagent optimization. Specifically, REDSearcher introduces the following improvements: (1) We frame task synthesis as a dualconstrained optimization, where task difficulty is precisely governed by graph topology and evidence dispersion, allowing scalable generation of complex, highquality tasks. (2) We introduce toolaugmented queries to encourage proactive tool use rather than passive recall.(3) During midtraining, we strengthen core atomic capabilities knowledge, planning, and function calling substantially reducing the cost of collecting highquality trajectories for downstream training. (4) We build a local simulated environment that enables rapid, lowcost algorithmic iteration for reinforcement learning experiments. Across both textonly and multimodal searchagent benchmarks, our approach achieves stateoftheart performance. To facilitate future research on longhorizon search agents, we will release 10K highquality complex text search trajectories, 5K multimodal trajectories and 1K text RL query set, and together with code and model checkpoints.",
             "score": 6,
-            "issue_id": 1157,
+            "issue_id": 1158,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -52,33 +73,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2602.13823",
-            "title": "Embed-RL: Reinforcement Learning for Reasoning-Driven Multimodal Embeddings",
-            "url": "https://huggingface.co/papers/2602.13823",
-            "abstract": "A reasoning-driven universal multimodal embedding framework integrates embedder-guided reinforcement learning with traceability chain-of-thought to enhance cross-modal semantic consistency and retrieval performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Leveraging Multimodal Large Language Models (MLLMs) has become pivotal for advancing Universal Multimodal Embeddings (UME) in addressing diverse cross-modal tasks. Recent studies demonstrate that incorporating generative Chain-of-Thought (CoT) reasoning can substantially enhance task-specific representations compared to discriminative methods. However, the generated reasoning CoTs of existing generative embedding methods are limited to the textual analysis of queries and are irrelevant to the retrieval of the targets. To address these limitations, we propose a reasoning-driven UME framework that integrates Embedder-Guided Reinforcement Learning (EG-RL) to optimize the Reasoner to produce evidential Traceability CoT (T-CoT). Our key contributions are threefold: (1) We design an EG-RL framework where the Embedder provides explicit supervision to the Reasoner, ensuring the generated CoT traces are aligned with embedding tasks. (2) We introduce T-CoT, which extracts critical multimodal cues to focus on retrieval-relevant elements and provides multimodal inputs for the Embedder. (3) With limited computational resources, our framework outperforms the pioneering embedding model on both MMEB-V2 and UVRB benchmarks. The integration of multimodal evidence in structured reasoning, paired with retrieval-oriented alignment, effectively strengthens cross-modal semantic consistency and boosts the fine-grained matching capability of the model as well as the generalization across complex scenarios. Our work demonstrates that targeted reasoning optimization can significantly improve multimodal embedding quality, providing a practical and efficient solution for reasoning-driven UME development.",
-            "score": 4,
-            "issue_id": 1157,
-            "pub_date": "2026-02-14",
-            "pub_date_card": {
-                "ru": "14 февраля",
-                "en": "February 14",
-                "zh": "2月14日"
-            },
-            "hash": "5066c0e4ca817367",
-            "github_url": "https://github.com/ZoengHN/Embed-RL",
-            "github_stars": 3,
-            "pdf_title_img": "assets/pdf/title_img/2602.13823.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2602.14041",
             "title": "BitDance: Scaling Autoregressive Generative Models with Binary Tokens",
             "url": "https://huggingface.co/papers/2602.14041",
             "abstract": "BitDance is a scalable autoregressive image generator that uses binary visual tokens and diffusion-based methods to achieve efficient high-resolution image generation with improved speed and performance.  \t\t\t\t\tAI-generated summary \t\t\t\t We present BitDance, a scalable autoregressive (AR) image generator that predicts binary visual tokens instead of codebook indices. With high-entropy binary latents, BitDance lets each token represent up to 2^{256} states, yielding a compact yet highly expressive discrete representation. Sampling from such a huge token space is difficult with standard classification. To resolve this, BitDance uses a binary diffusion head: instead of predicting an index with softmax, it employs continuous-space diffusion to generate the binary tokens. Furthermore, we propose next-patch diffusion, a new decoding method that predicts multiple tokens in parallel with high accuracy, greatly speeding up inference. On ImageNet 256x256, BitDance achieves an FID of 1.24, the best among AR models. With next-patch diffusion, BitDance beats state-of-the-art parallel AR models that use 1.4B parameters, while using 5.4x fewer parameters (260M) and achieving 8.7x speedup. For text-to-image generation, BitDance trains on large-scale multimodal tokens and generates high-resolution, photorealistic images efficiently, showing strong performance and favorable scaling. When generating 1024x1024 images, BitDance achieves a speedup of over 30x compared to prior AR models. We release code and models to facilitate further research on AR foundation models. Code and models are available at: https://github.com/shallowdream204/BitDance.",
-            "score": 3,
-            "issue_id": 1157,
+            "score": 4,
+            "issue_id": 1158,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -87,8 +87,29 @@
             },
             "hash": "81405516666aafa5",
             "github_url": "https://github.com/shallowdream204/BitDance",
-            "github_stars": 27,
+            "github_stars": 42,
             "pdf_title_img": "assets/pdf/title_img/2602.14041.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.13823",
+            "title": "Embed-RL: Reinforcement Learning for Reasoning-Driven Multimodal Embeddings",
+            "url": "https://huggingface.co/papers/2602.13823",
+            "abstract": "A reasoning-driven universal multimodal embedding framework integrates embedder-guided reinforcement learning with traceability chain-of-thought to enhance cross-modal semantic consistency and retrieval performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Leveraging Multimodal Large Language Models (MLLMs) has become pivotal for advancing Universal Multimodal Embeddings (UME) in addressing diverse cross-modal tasks. Recent studies demonstrate that incorporating generative Chain-of-Thought (CoT) reasoning can substantially enhance task-specific representations compared to discriminative methods. However, the generated reasoning CoTs of existing generative embedding methods are limited to the textual analysis of queries and are irrelevant to the retrieval of the targets. To address these limitations, we propose a reasoning-driven UME framework that integrates Embedder-Guided Reinforcement Learning (EG-RL) to optimize the Reasoner to produce evidential Traceability CoT (T-CoT). Our key contributions are threefold: (1) We design an EG-RL framework where the Embedder provides explicit supervision to the Reasoner, ensuring the generated CoT traces are aligned with embedding tasks. (2) We introduce T-CoT, which extracts critical multimodal cues to focus on retrieval-relevant elements and provides multimodal inputs for the Embedder. (3) With limited computational resources, our framework outperforms the pioneering embedding model on both MMEB-V2 and UVRB benchmarks. The integration of multimodal evidence in structured reasoning, paired with retrieval-oriented alignment, effectively strengthens cross-modal semantic consistency and boosts the fine-grained matching capability of the model as well as the generalization across complex scenarios. Our work demonstrates that targeted reasoning optimization can significantly improve multimodal embedding quality, providing a practical and efficient solution for reasoning-driven UME development.",
+            "score": 4,
+            "issue_id": 1158,
+            "pub_date": "2026-02-14",
+            "pub_date_card": {
+                "ru": "14 февраля",
+                "en": "February 14",
+                "zh": "2月14日"
+            },
+            "hash": "5066c0e4ca817367",
+            "github_url": "https://github.com/ZoengHN/Embed-RL",
+            "github_stars": 4,
+            "pdf_title_img": "assets/pdf/title_img/2602.13823.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -99,7 +120,7 @@
             "url": "https://huggingface.co/papers/2602.12876",
             "abstract": "A new benchmark called BrowseComp-V3 challenges multimodal large language models with complex, multi-hop reasoning tasks requiring deep search across text and visual modalities, revealing significant gaps in current capabilities.  \t\t\t\t\tAI-generated summary \t\t\t\t Multimodal large language models (MLLMs), equipped with increasingly advanced planning and tool-use capabilities, are evolving into autonomous agents capable of performing multimodal web browsing and deep search in open-world environments. However, existing benchmarks for multimodal browsing remain limited in task complexity, evidence accessibility, and evaluation granularity, hindering comprehensive and reproducible assessments of deep search capabilities. To address these limitations, we introduce BrowseComp-V^3, a novel benchmark consisting of 300 carefully curated and challenging questions spanning diverse domains. The benchmark emphasizes deep, multi-level, and cross-modal multi-hop reasoning, where critical evidence is interleaved across textual and visual modalities within and across web pages. All supporting evidence is strictly required to be publicly searchable, ensuring fairness and reproducibility. Beyond final-answer accuracy, we incorporate an expert-validated, subgoal-driven process evaluation mechanism that enables fine-grained analysis of intermediate reasoning behaviors and systematic characterization of capability boundaries. In addition, we propose OmniSeeker, a unified multimodal browsing agent framework integrating diverse web search and visual perception tools. Comprehensive experiments demonstrate that even state-of-the-art models achieve only 36% accuracy on our benchmark, revealing critical bottlenecks in multimodal information integration and fine-grained perception. Our results highlight a fundamental gap between current model capabilities and robust multimodal deep search in real-world settings.",
             "score": 3,
-            "issue_id": 1157,
+            "issue_id": 1158,
             "pub_date": "2026-02-13",
             "pub_date_card": {
                 "ru": "13 февраля",
@@ -120,7 +141,7 @@
             "url": "https://huggingface.co/papers/2602.14721",
             "abstract": "WebWorld is an open-web simulator trained on over one million interactions that supports long-horizon reasoning and multi-format data, achieving performance comparable to advanced models like Gemini-3-Pro and GPT-4o.  \t\t\t\t\tAI-generated summary \t\t\t\t Web agents require massive trajectories to generalize, yet real-world training is constrained by network latency, rate limits, and safety risks. We introduce WebWorld series, the first open-web simulator trained at scale. While existing simulators are restricted to closed environments with thousands of trajectories, WebWorld leverages a scalable data pipeline to train on 1M+ open-web interactions, supporting reasoning, multi-format data, and long-horizon simulations of 30+ steps. For intrinsic evaluation, we introduce WebWorld-Bench with dual metrics spanning nine dimensions, where WebWorld achieves simulation performance comparable to Gemini-3-Pro. For extrinsic evaluation, Qwen3-14B trained on WebWorld-synthesized trajectories improves by +9.2\\% on WebArena, reaching performance comparable to GPT-4o. WebWorld enables effective inference-time search, outperforming GPT-5 as a world model. Beyond web simulation, WebWorld exhibits cross-domain generalization to code, GUI, and game environments, providing a replicable recipe for world model construction.",
             "score": 2,
-            "issue_id": 1157,
+            "issue_id": 1158,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -141,7 +162,7 @@
             "url": "https://huggingface.co/papers/2602.14534",
             "abstract": "A unified multimodal motion model trained with supervised fine-tuning and reinforcement learning with verifiable rewards improves human motion understanding and generation through semantic alignment, reasoning coherence, and physical plausibility.  \t\t\t\t\tAI-generated summary \t\t\t\t Human motion understanding and generation are crucial for vision and robotics but remain limited in reasoning capability and test-time planning. We propose MoRL, a unified multimodal motion model trained with supervised fine-tuning and reinforcement learning with verifiable rewards. Our task-specific reward design combines semantic alignment and reasoning coherence for understanding with physical plausibility and text-motion consistency for generation, improving both logical reasoning and perceptual realism. To further enhance inference, we introduce Chain-of-Motion (CoM), a test-time reasoning method that enables step-by-step planning and reflection. We also construct two large-scale CoT datasets, MoUnd-CoT-140K and MoGen-CoT-140K, to align motion sequences with reasoning traces and action descriptions. Experiments on HumanML3D and KIT-ML show that MoRL achieves significant gains over state-of-the-art baselines. Code: https://github.com/AIGeeksGroup/MoRL. Website: https://aigeeksgroup.github.io/MoRL.",
             "score": 2,
-            "issue_id": 1157,
+            "issue_id": 1158,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -162,7 +183,7 @@
             "url": "https://huggingface.co/papers/2602.14178",
             "abstract": "UniWeTok introduces a unified discrete tokenizer with a massive binary codebook and novel training techniques to achieve superior performance in image generation and multimodal tasks while reducing computational requirements.  \t\t\t\t\tAI-generated summary \t\t\t\t Unified Multimodal Large Language Models (MLLMs) require a visual representation that simultaneously supports high-fidelity reconstruction, complex semantic extraction, and generative suitability. However, existing visual tokenizers typically struggle to satisfy these conflicting objectives within a single framework. In this paper, we introduce UniWeTok, a unified discrete tokenizer designed to bridge this gap using a massive binary codebook (2^{128}). For training framework, we introduce Pre-Post Distillation and a Generative-Aware Prior to enhance the semantic extraction and generative prior of the discrete tokens. In terms of model architecture, we propose a convolution-attention hybrid architecture with the SigLu activation function. SigLu activation not only bounds the encoder output and stabilizes the semantic distillation process but also effectively addresses the optimization conflict between token entropy loss and commitment loss. We further propose a three-stage training framework designed to enhance UniWeTok's adaptability cross various image resolutions and perception-sensitive scenarios, such as those involving human faces and textual content. On ImageNet, UniWeTok achieves state-of-the-art image generation performance (FID: UniWeTok 1.38 vs. REPA 1.42) while requiring a remarkably low training compute (Training Tokens: UniWeTok 33B vs. REPA 262B). On general-domain, UniWeTok demonstrates highly competitive capabilities across a broad range of tasks, including multimodal understanding, image generation (DPG Score: UniWeTok 86.63 vs. FLUX.1 [Dev] 83.84), and editing (GEdit Overall Score: UniWeTok 5.09 vs. OmniGen 5.06). We release code and models to facilitate community exploration of unified tokenizer and MLLM.",
             "score": 2,
-            "issue_id": 1157,
+            "issue_id": 1158,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -171,7 +192,7 @@
             },
             "hash": "7c417dc23afb0abb",
             "github_url": "https://github.com/shallowdream204/BitDance",
-            "github_stars": 27,
+            "github_stars": 42,
             "pdf_title_img": "assets/pdf/title_img/2602.14178.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -183,7 +204,7 @@
             "url": "https://huggingface.co/papers/2602.14147",
             "abstract": "LaViDa-R1 is a multimodal reasoning diffusion language model that unifies supervised fine-tuning and multi-task reinforcement learning with novel training techniques for enhanced performance across visual reasoning and generation tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t Diffusion language models (dLLMs) recently emerged as a promising alternative to auto-regressive LLMs. The latest works further extended it to multimodal understanding and generation tasks. In this work, we propose LaViDa-R1, a multimodal, general-purpose reasoning dLLM. Unlike existing works that build reasoning dLLMs through task-specific reinforcement learning, LaViDa-R1 incorporates diverse multimodal understanding and generation tasks in a unified manner. In particular, LaViDa-R1 is built with a novel unified post-training framework that seamlessly integrates supervised finetuning (SFT) and multi-task reinforcement learning (RL). It employs several novel training techniques, including answer-forcing, tree search, and complementary likelihood estimation, to enhance effectiveness and scalability. Extensive experiments demonstrate LaViDa-R1's strong performance on a wide range of multimodal tasks, including visual math reasoning, reason-intensive grounding, and image editing.",
             "score": 2,
-            "issue_id": 1157,
+            "issue_id": 1158,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -204,7 +225,7 @@
             "url": "https://huggingface.co/papers/2602.13344",
             "abstract": "FireRed-Image-Edit uses a diffusion transformer with optimized data curation and training methods to achieve state-of-the-art performance in instruction-based image editing, supported by a comprehensive benchmark and novel techniques for data efficiency and optimization stability.  \t\t\t\t\tAI-generated summary \t\t\t\t We present FireRed-Image-Edit, a diffusion transformer for instruction-based image editing that achieves state-of-the-art performance through systematic optimization of data curation, training methodology, and evaluation design. We construct a 1.6B-sample training corpus, comprising 900M text-to-image and 700M image editing pairs from diverse sources. After rigorous cleaning, stratification, auto-labeling, and two-stage filtering, we retain over 100M high-quality samples balanced between generation and editing, ensuring strong semantic coverage and instruction alignment. Our multi-stage training pipeline progressively builds editing capability via pre-training, supervised fine-tuning, and reinforcement learning. To improve data efficiency, we introduce a Multi-Condition Aware Bucket Sampler for variable-resolution batching and Stochastic Instruction Alignment with dynamic prompt re-indexing. To stabilize optimization and enhance controllability, we propose Asymmetric Gradient Optimization for DPO, DiffusionNFT with layout-aware OCR rewards for text editing, and a differentiable Consistency Loss for identity preservation. We further establish REDEdit-Bench, a comprehensive benchmark spanning 15 editing categories, including newly introduced beautification and low-level enhancement tasks. Extensive experiments on REDEdit-Bench and public benchmarks (ImgEdit and GEdit) demonstrate competitive or superior performance against both open-source and proprietary systems. We release code, models, and the benchmark suite to support future research.",
             "score": 2,
-            "issue_id": 1157,
+            "issue_id": 1158,
             "pub_date": "2026-02-12",
             "pub_date_card": {
                 "ru": "12 февраля",
@@ -213,7 +234,7 @@
             },
             "hash": "1f15cbb364c88559",
             "github_url": "https://github.com/FireRedTeam/FireRed-Image-Edit",
-            "github_stars": 381,
+            "github_stars": 383,
             "pdf_title_img": "assets/pdf/title_img/2602.13344.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -224,8 +245,8 @@
             "title": "AIDev: Studying AI Coding Agents on GitHub",
             "url": "https://huggingface.co/papers/2602.09185",
             "abstract": "AIDev is a large-scale dataset of agent-authored pull requests from real-world GitHub repositories that captures AI coding agent usage in practical software development scenarios.  \t\t\t\t\tAI-generated summary \t\t\t\t AI coding agents are rapidly transforming software engineering by performing tasks such as feature development, debugging, and testing. Despite their growing impact, the research community lacks a comprehensive dataset capturing how these agents are used in real-world projects. To address this gap, we introduce AIDev, a large-scale dataset focused on agent-authored pull requests (Agentic-PRs) in real-world GitHub repositories. AIDev aggregates 932,791 Agentic-PRs produced by five agents: OpenAI Codex, Devin, GitHub Copilot, Cursor, and Claude Code. These PRs span 116,211 repositories and involve 72,189 developers. In addition, AIDev includes a curated subset of 33,596 Agentic-PRs from 2,807 repositories with over 100 stars, providing further information such as comments, reviews, commits, and related issues. This dataset offers a foundation for future research on AI adoption, developer productivity, and human-AI collaboration in the new era of software engineering.   > AI Agent, Agentic AI, Coding Agent, Agentic Coding, Agentic Software Engineering, Agentic Engineering",
-            "score": 1,
-            "issue_id": 1157,
+            "score": 2,
+            "issue_id": 1158,
             "pub_date": "2026-02-09",
             "pub_date_card": {
                 "ru": "9 февраля",
@@ -241,12 +262,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2602.12299",
+            "title": "Acoustivision Pro: An Open-Source Interactive Platform for Room Impulse Response Analysis and Acoustic Characterization",
+            "url": "https://huggingface.co/papers/2602.12299",
+            "abstract": "Room acoustics analysis plays a central role in architectural design, audio engineering, speech intelligibility assessment, and hearing research. Despite the availability of standardized metrics such as reverberation time, clarity, and speech transmission index, accessible tools that combine rigorous signal processing with intuitive visualization remain scarce. This paper presents AcoustiVision Pro, an open-source web-based platform for comprehensive room impulse response (RIR) analysis. The system computes twelve distinct acoustic parameters from uploaded or dataset-sourced RIRs, provides interactive 3D visualizations of early reflections, generates frequency-dependent decay characteristics through waterfall plots, and checks compliance against international standards including ANSI S12.60 and ISO 3382. We introduce the accompanying RIRMega and RIRMega Speech datasets hosted on Hugging Face, containing thousands of simulated room impulse responses with full metadata. The platform supports real-time auralization through FFT-based convolution, exports detailed PDF reports suitable for engineering documentation, and provides CSV data export for further analysis. We describe the mathematical foundations underlying each acoustic metric, detail the system architecture, and present preliminary case studies demonstrating the platform's utility across diverse application domains including classroom acoustics, healthcare facility design, and recording studio evaluation.",
+            "score": 1,
+            "issue_id": 1158,
+            "pub_date": "2026-02-11",
+            "pub_date_card": {
+                "ru": "11 февраля",
+                "en": "February 11",
+                "zh": "2月11日"
+            },
+            "hash": "aeb9ba614bf820af",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.12299.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2602.14696",
             "title": "A Critical Look at Targeted Instruction Selection: Disentangling What Matters (and What Doesn't)",
             "url": "https://huggingface.co/papers/2602.14696",
             "abstract": "Targeted instruction selection for LLM fine-tuning can be improved by systematically analyzing data representation and selection algorithms, with gradient-based representations and greedy round-robin selection performing best at low budgets.  \t\t\t\t\tAI-generated summary \t\t\t\t Instruction fine-tuning of large language models (LLMs) often involves selecting a subset of instruction training data from a large candidate pool, using a small query set from the target task. Despite growing interest, the literature on targeted instruction selection remains fragmented and opaque: methods vary widely in selection budgets, often omit zero-shot baselines, and frequently entangle the contributions of key components. As a result, practitioners lack actionable guidance on selecting instructions for their target tasks. In this work, we aim to bring clarity to this landscape by disentangling and systematically analyzing the two core ingredients: data representation and selection algorithms. Our framework enables controlled comparisons across models, tasks, and budgets. We find that only gradient-based data representations choose subsets whose similarity to the query consistently predicts performance across datasets and models. While no single method dominates, gradient-based representations paired with a greedy round-robin selection algorithm tend to perform best on average at low budgets, but these benefits diminish at larger budgets. Finally, we unify several existing selection algorithms as forms of approximate distance minimization between the selected subset and the query set, and support this view with new generalization bounds. More broadly, our findings provide critical insights and a foundation for more principled data selection in LLM fine-tuning. The code is available at https://github.com/dcml-lab/targeted-instruction-selection.",
             "score": 0,
-            "issue_id": 1157,
+            "issue_id": 1158,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -257,6 +299,27 @@
             "github_url": "https://github.com/dcml-lab/targeted-instruction-selection",
             "github_stars": 1,
             "pdf_title_img": "assets/pdf/title_img/2602.14696.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.14560",
+            "title": "Preliminary sonification of ENSO using traditional Javanese gamelan scales",
+            "url": "https://huggingface.co/papers/2602.14560",
+            "abstract": "Parameter-mapping sonification of ENSO data preserves dynamical signatures through acoustic phase space analysis, revealing distinct coupling regimes in traditional musical scales.  \t\t\t\t\tAI-generated summary \t\t\t\t Sonification -- the mapping of data to non-speech audio -- offers an underexplored channel for representing complex dynamical systems. We treat El Niño-Southern Oscillation (ENSO), a canonical example of low-dimensional climate chaos, as a test case for culturally-situated sonification evaluated through complex systems diagnostics. Using parameter-mapping sonification of the Niño 3.4 sea surface temperature anomaly index (1870--2024), we encode ENSO variability into two traditional Javanese gamelan pentatonic systems (pelog and slendro) across four composition strategies, then analyze the resulting audio as trajectories in a two-dimensional acoustic phase space. Recurrence-based diagnostics, convex hull geometry, and coupling analysis reveal that the sonification pipeline preserves key dynamical signatures: alternating modes produce the highest trajectory recurrence rates, echoing ENSO's quasi-periodicity; layered polyphonic modes explore the broadest phase space regions; and the two scale families induce qualitatively distinct coupling regimes between spectral brightness and energy -- predominantly anti-phase in pelog but near-independent in slendro. Phase space trajectory analysis provides a rigorous geometric framework for comparing sonification designs within a complex systems context. Perceptual validation remains necessary; we contribute the dynamical systems methodology for evaluating such mappings.",
+            "score": 0,
+            "issue_id": 1158,
+            "pub_date": "2026-02-16",
+            "pub_date_card": {
+                "ru": "16 февраля",
+                "en": "February 16",
+                "zh": "2月16日"
+            },
+            "hash": "31a42ec97c70307b",
+            "github_url": "https://github.com/sandyherho/suppl-enso-javanese-sonification",
+            "github_stars": 1,
+            "pdf_title_img": "assets/pdf/title_img/2602.14560.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
