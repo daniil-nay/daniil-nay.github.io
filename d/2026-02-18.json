@@ -4,39 +4,18 @@
         "en": "February 18",
         "zh": "2月18日"
     },
-    "time_utc": "2026-02-18 16:56",
+    "time_utc": "2026-02-18 17:49",
     "weekday": 2,
-    "issue_id": 1187,
+    "issue_id": 1188,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
-        {
-            "id": "https://huggingface.co/papers/2602.12670",
-            "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
-            "url": "https://huggingface.co/papers/2602.12670",
-            "abstract": "SkillsBench evaluates agent skills across 86 tasks and finds that curated skills improve performance significantly but inconsistently, while self-generated skills offer no benefit, indicating that models struggle to create useful procedural knowledge despite benefiting from curated versions.  \t\t\t\t\tAI-generated summary \t\t\t\t Agent Skills are structured packages of procedural knowledge that augment LLM agents at inference time. Despite rapid adoption, there is no standard way to measure whether they actually help. We present SkillsBench, a benchmark of 86 tasks across 11 domains paired with curated Skills and deterministic verifiers. Each task is evaluated under three conditions: no Skills, curated Skills, and self-generated Skills. We test 7 agent-model configurations over 7,308 trajectories. Curated Skills raise average pass rate by 16.2 percentage points(pp), but effects vary widely by domain (+4.5pp for Software Engineering to +51.9pp for Healthcare) and 16 of 84 tasks show negative deltas. Self-generated Skills provide no benefit on average, showing that models cannot reliably author the procedural knowledge they benefit from consuming. Focused Skills with 2--3 modules outperform comprehensive documentation, and smaller models with Skills can match larger models without them.",
-            "score": 31,
-            "issue_id": 1187,
-            "pub_date": "2026-02-13",
-            "pub_date_card": {
-                "ru": "13 февраля",
-                "en": "February 13",
-                "zh": "2月13日"
-            },
-            "hash": "c1a4a16b18ac2dba",
-            "github_url": "https://github.com/benchflow-ai/skillsbench",
-            "github_stars": 403,
-            "pdf_title_img": "assets/pdf/title_img/2602.12670.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
         {
             "id": "https://huggingface.co/papers/2602.14111",
             "title": "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?",
             "url": "https://huggingface.co/papers/2602.14111",
             "abstract": "Sparse Autoencoders fail to reliably decompose neural network internals despite strong reconstruction performance, as demonstrated through synthetic and real activation evaluations.  \t\t\t\t\tAI-generated summary \t\t\t\t Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by decomposing their activations into sparse sets of human-interpretable features. Recent work has introduced multiple SAE variants and successfully scaled them to frontier models. Despite much excitement, a growing number of negative results in downstream tasks casts doubt on whether SAEs recover meaningful features. To directly investigate this, we perform two complementary evaluations. On a synthetic setup with known ground-truth features, we demonstrate that SAEs recover only 9% of true features despite achieving 71% explained variance, showing that they fail at their core task even when reconstruction is strong. To evaluate SAEs on real activations, we introduce three baselines that constrain SAE feature directions or their activation patterns to random values. Through extensive experiments across multiple SAE architectures, we show that our baselines match fully-trained SAEs in interpretability (0.87 vs 0.90), sparse probing (0.69 vs 0.72), and causal editing (0.73 vs 0.72). Together, these results suggest that SAEs in their current state do not reliably decompose models' internal mechanisms.",
-            "score": 30,
-            "issue_id": 1187,
+            "score": 41,
+            "issue_id": 1188,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -52,12 +31,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2602.12670",
+            "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
+            "url": "https://huggingface.co/papers/2602.12670",
+            "abstract": "SkillsBench evaluates agent skills across 86 tasks and finds that curated skills improve performance significantly but inconsistently, while self-generated skills offer no benefit, indicating that models struggle to create useful procedural knowledge despite benefiting from curated versions.  \t\t\t\t\tAI-generated summary \t\t\t\t Agent Skills are structured packages of procedural knowledge that augment LLM agents at inference time. Despite rapid adoption, there is no standard way to measure whether they actually help. We present SkillsBench, a benchmark of 86 tasks across 11 domains paired with curated Skills and deterministic verifiers. Each task is evaluated under three conditions: no Skills, curated Skills, and self-generated Skills. We test 7 agent-model configurations over 7,308 trajectories. Curated Skills raise average pass rate by 16.2 percentage points(pp), but effects vary widely by domain (+4.5pp for Software Engineering to +51.9pp for Healthcare) and 16 of 84 tasks show negative deltas. Self-generated Skills provide no benefit on average, showing that models cannot reliably author the procedural knowledge they benefit from consuming. Focused Skills with 2--3 modules outperform comprehensive documentation, and smaller models with Skills can match larger models without them.",
+            "score": 32,
+            "issue_id": 1188,
+            "pub_date": "2026-02-13",
+            "pub_date_card": {
+                "ru": "13 февраля",
+                "en": "February 13",
+                "zh": "2月13日"
+            },
+            "hash": "c1a4a16b18ac2dba",
+            "github_url": "https://github.com/benchflow-ai/skillsbench",
+            "github_stars": 403,
+            "pdf_title_img": "assets/pdf/title_img/2602.12670.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2602.15763",
             "title": "GLM-5: from Vibe Coding to Agentic Engineering",
             "url": "https://huggingface.co/papers/2602.15763",
             "abstract": "GLM-5 advances foundation models with DSA for cost reduction, asynchronous reinforcement learning for improved alignment, and enhanced coding capabilities for real-world software engineering.  \t\t\t\t\tAI-generated summary \t\t\t\t We present GLM-5, a next-generation foundation model designed to transition the paradigm of vibe coding to agentic engineering. Building upon the agentic, reasoning, and coding (ARC) capabilities of its predecessor, GLM-5 adopts DSA to significantly reduce training and inference costs while maintaining long-context fidelity. To advance model alignment and autonomy, we implement a new asynchronous reinforcement learning infrastructure that drastically improves post-training efficiency by decoupling generation from training. Furthermore, we propose novel asynchronous agent RL algorithms that further improve RL quality, enabling the model to learn from complex, long-horizon interactions more effectively. Through these innovations, GLM-5 achieves state-of-the-art performance on major open benchmarks. Most critically, GLM-5 demonstrates unprecedented capability in real-world coding tasks, surpassing previous baselines in handling end-to-end software engineering challenges. Code, models, and more information are available at https://github.com/zai-org/GLM-5.",
-            "score": 27,
-            "issue_id": 1187,
+            "score": 28,
+            "issue_id": 1188,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -66,7 +66,7 @@
             },
             "hash": "fda04435921a43b6",
             "github_url": "https://github.com/zai-org/GLM-5",
-            "github_stars": 1092,
+            "github_stars": 1093,
             "pdf_title_img": "assets/pdf/title_img/2602.15763.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -77,8 +77,8 @@
             "title": "Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook",
             "url": "https://huggingface.co/papers/2602.14299",
             "abstract": "Large language model agents in networked environments exhibit dynamic stability without true social convergence, maintaining individual diversity while lacking collective influence structures.  \t\t\t\t\tAI-generated summary \t\t\t\t As large language model agents increasingly populate networked environments, a fundamental question arises: do artificial intelligence (AI) agent societies undergo convergence dynamics similar to human social systems? Lately, Moltbook approximates a plausible future scenario in which autonomous agents participate in an open-ended, continuously evolving online society. We present the first large-scale systemic diagnosis of this AI agent society. Beyond static observation, we introduce a quantitative diagnostic framework for dynamic evolution in AI agent societies, measuring semantic stabilization, lexical turnover, individual inertia, influence persistence, and collective consensus. Our analysis reveals a system in dynamic balance in Moltbook: while global semantic averages stabilize rapidly, individual agents retain high diversity and persistent lexical turnover, defying homogenization. However, agents exhibit strong individual inertia and minimal adaptive response to interaction partners, preventing mutual influence and consensus. Consequently, influence remains transient with no persistent supernodes, and the society fails to develop stable collective influence anchors due to the absence of shared social memory. These findings demonstrate that scale and interaction density alone are insufficient to induce socialization, providing actionable design and analysis principles for upcoming next-generation AI agent societies.",
-            "score": 18,
-            "issue_id": 1187,
+            "score": 19,
+            "issue_id": 1188,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2602.15112",
             "abstract": "ResearchGym presents a benchmark environment for evaluating AI agents on end-to-end research tasks, revealing significant capability-reliability gaps in current autonomous agents despite occasional state-of-the-art performance.  \t\t\t\t\tAI-generated summary \t\t\t\t We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this, we repurpose five oral and spotlight papers from ICML, ICLR, and ACL. From each paper's repository, we preserve the datasets, evaluation harness, and baseline implementations but withhold the paper's proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper's metrics. In a controlled evaluation of an agent powered by GPT-5, we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length. Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex (GPT-5.2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.",
             "score": 11,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -120,7 +120,7 @@
             "url": "https://huggingface.co/papers/2602.12279",
             "abstract": "UniT framework enables unified multimodal models to perform iterative reasoning and refinement through chain-of-thought test-time scaling, improving both generation and understanding capabilities.  \t\t\t\t\tAI-generated summary \t\t\t\t Unified models can handle both multimodal understanding and generation within a single architecture, yet they typically operate in a single pass without iteratively refining their outputs. Many multimodal tasks, especially those involving complex spatial compositions, multiple interacting objects, or evolving instructions, require decomposing instructions, verifying intermediate results, and making iterative corrections. While test-time scaling (TTS) has demonstrated that allocating additional inference compute for iterative reasoning substantially improves language model performance, extending this paradigm to unified multimodal models remains an open challenge. We introduce UniT, a framework for multimodal chain-of-thought test-time scaling that enables a single unified model to reason, verify, and refine across multiple rounds. UniT combines agentic data synthesis, unified model training, and flexible test-time inference to elicit cognitive behaviors including verification, subgoal decomposition, and content memory. Our key findings are: (1) unified models trained on short reasoning trajectories generalize to longer inference chains at test time; (2) sequential chain-of-thought reasoning provides a more scalable and compute-efficient TTS strategy than parallel sampling; (3) training on generation and editing trajectories improves out-of-distribution visual reasoning. These results establish multimodal test-time scaling as an effective paradigm for advancing both generation and understanding in unified models.",
             "score": 11,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-12",
             "pub_date_card": {
                 "ru": "12 февраля",
@@ -141,7 +141,7 @@
             "url": "https://huggingface.co/papers/2602.15547",
             "abstract": "Compact text embedding models are developed through a combined training approach using distillation and contrastive loss, achieving state-of-the-art performance while supporting long-context sequences and efficient quantization.  \t\t\t\t\tAI-generated summary \t\t\t\t Text embedding models are widely used for semantic similarity tasks, including information retrieval, clustering, and classification. General-purpose models are typically trained with single- or multi-stage processes using contrastive loss functions. We introduce a novel training regimen that combines model distillation techniques with task-specific contrastive loss to produce compact, high-performance embedding models. Our findings suggest that this approach is more effective for training small models than purely contrastive or distillation-based training paradigms alone. Benchmark scores for the resulting models, jina-embeddings-v5-text-small and jina-embeddings-v5-text-nano, exceed or match the state-of-the-art for models of similar size. jina-embeddings-v5-text models additionally support long texts (up to 32k tokens) in many languages, and generate embeddings that remain robust under truncation and binary quantization. Model weights are publicly available, hopefully inspiring further advances in embedding model development.",
             "score": 7,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -162,7 +162,7 @@
             "url": "https://huggingface.co/papers/2602.14486",
             "abstract": "Network representations converge toward shared local neighborhood relationships rather than global statistical models, as revealed by calibrated similarity metrics.  \t\t\t\t\tAI-generated summary \t\t\t\t The Platonic Representation Hypothesis suggests that representations from neural networks are converging to a common statistical model of reality. We show that the existing metrics used to measure representational similarity are confounded by network scale: increasing model depth or width can systematically inflate representational similarity scores. To correct these effects, we introduce a permutation-based null-calibration framework that transforms any representational similarity metric into a calibrated score with statistical guarantees. We revisit the Platonic Representation Hypothesis with our calibration framework, which reveals a nuanced picture: the apparent convergence reported by global spectral measures largely disappears after calibration, while local neighborhood similarity, but not local distances, retains significant agreement across different modalities. Based on these findings, we propose the Aristotelian Representation Hypothesis: representations in neural networks are converging to shared local neighborhood relationships.",
             "score": 6,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -183,7 +183,7 @@
             "url": "https://huggingface.co/papers/2602.15200",
             "abstract": "COMPOT is a training-free compression framework for Transformer models that uses sparse dictionary learning with orthogonal dictionaries and closed-form updates to achieve better quality-compression trade-offs than traditional low-rank methods.  \t\t\t\t\tAI-generated summary \t\t\t\t Post-training compression of Transformer models commonly relies on truncated singular value decomposition (SVD). However, enforcing a single shared subspace can degrade accuracy even at moderate compression. Sparse dictionary learning provides a more flexible union-of-subspaces representation, but existing approaches often suffer from iterative dictionary and coefficient updates. We propose COMPOT (Calibration-Optimized Matrix Procrustes Orthogonalization for Transformers), a training-free compression framework that uses a small calibration dataset to estimate a sparse weight factorization. COMPOT employs orthogonal dictionaries that enable closed-form Procrustes updates for the dictionary and analytical single-step sparse coding for the coefficients, eliminating iterative optimization. To handle heterogeneous layer sensitivity under a global compression budget, COMPOT further introduces a one-shot dynamic allocation strategy that adaptively redistributes layer-wise compression rates. Extensive experiments across diverse architectures and tasks show that COMPOT consistently delivers a superior quality-compression trade-off over strong low-rank and sparse baselines, while remaining fully compatible with post-training quantization for extreme compression. Code is available https://github.com/mts-ai/COMPOT{here}.",
             "score": 5,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -204,7 +204,7 @@
             "url": "https://huggingface.co/papers/2602.15322",
             "abstract": "Random parameter update masking achieves superior optimization for large language models by inducing curvature-dependent regularization, with a momentum-aligned variant delivering significant performance improvements over state-of-the-art adaptive optimizers.  \t\t\t\t\tAI-generated summary \t\t\t\t Training large language models (LLMs) relies almost exclusively on dense adaptive optimizers with increasingly sophisticated preconditioners. We challenge this by showing that randomly masking parameter updates can be highly effective, with a masked variant of RMSProp consistently outperforming recent state-of-the-art optimizers. Our analysis reveals that the random masking induces a curvature-dependent geometric regularization that smooths the optimization trajectory. Motivated by this finding, we introduce Momentum-aligned gradient masking (Magma), which modulates the masked updates using momentum-gradient alignment. Extensive LLM pre-training experiments show that Magma is a simple drop-in replacement for adaptive optimizers with consistent gains and negligible computational overhead. Notably, for the 1B model size, Magma reduces perplexity by over 19\\% and 9\\% compared to Adam and Muon, respectively.",
             "score": 4,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -225,7 +225,7 @@
             "url": "https://huggingface.co/papers/2602.15772",
             "abstract": "The Reason-Reflect-Refine framework addresses the trade-off between generation and understanding in multimodal models by reformulating single-step generation into a multi-step process that explicitly incorporates understanding during generation.  \t\t\t\t\tAI-generated summary \t\t\t\t Current research in multimodal models faces a key challenge where enhancing generative capabilities often comes at the expense of understanding, and vice versa. We analyzed this trade-off and identify the primary cause might be the potential conflict between generation and understanding, which creates a competitive dynamic within the model. To address this, we propose the Reason-Reflect-Refine (R3) framework. This innovative algorithm re-frames the single-step generation task into a multi-step process of \"generate-understand-regenerate\". By explicitly leveraging the model's understanding capability during generation, we successfully mitigate the optimization dilemma, achieved stronger generation results and improved understanding ability which are related to the generation process. This offers valuable insights for designing next-generation unified multimodal models. Code is available at https://github.com/sen-ye/R3.",
             "score": 3,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -246,7 +246,7 @@
             "url": "https://huggingface.co/papers/2602.15449",
             "abstract": "Reinforcement fine-tuning approach for code generation that adapts curriculum design based on model capability through a four-tier test suite structure.  \t\t\t\t\tAI-generated summary \t\t\t\t Large Language Models (LLMs) are changing the coding paradigm, known as vibe coding, yet synthesizing algorithmically sophisticated and robust code still remains a critical challenge. Incentivizing the deep reasoning capabilities of LLMs is essential to overcoming this hurdle. Reinforcement Fine-Tuning (RFT) has emerged as a promising strategy to address this need. However, most existing approaches overlook the heterogeneous difficulty and granularity inherent in test cases, leading to an imbalanced distribution of reward signals and consequently biased gradient updates during training. To address this, we propose Test-driven and cApability-adaptive cuRriculum reinfOrcement fine-Tuning (TAROT). TAROT systematically constructs, for each problem, a four-tier test suite (basic, intermediate, complex, edge), providing a controlled difficulty landscape for curriculum design and evaluation. Crucially, TAROT decouples curriculum progression from raw reward scores, enabling capability-conditioned evaluation and principled selection from a portfolio of curriculum policies rather than incidental test-case difficulty composition. This design fosters stable optimization and more efficient competency acquisition. Extensive experimental results reveal that the optimal curriculum for RFT in code generation is closely tied to a model's inherent capability, with less capable models achieving greater gains with an easy-to-hard progression, whereas more competent models excel under a hard-first curriculum. TAROT provides a reproducible method that adaptively tailors curriculum design to a model's capability, thereby consistently improving the functional correctness and robustness of the generated code. All code and data are released to foster reproducibility and advance community research at https://github.com/deep-diver/TAROT.",
             "score": 3,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -267,7 +267,7 @@
             "url": "https://huggingface.co/papers/2602.15620",
             "abstract": "Research identifies spurious tokens as the cause of training instability in reinforcement learning fine-tuning of large language models and proposes a solution that selectively masks problematic gradient updates to improve reasoning performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Reinforcement Learning (RL) has significantly improved large language model reasoning, but existing RL fine-tuning methods rely heavily on heuristic techniques such as entropy regularization and reweighting to maintain stability. In practice, they often experience late-stage performance collapse, leading to degraded reasoning quality and unstable training. We derive that the magnitude of token-wise policy gradients in RL is negatively correlated with token probability and local policy entropy. Building on this result, we prove that training instability is driven by a tiny fraction of tokens, approximately 0.01\\%, which we term spurious tokens. When such tokens appear in correct responses, they contribute little to the reasoning outcome but inherit the full sequence-level reward, leading to abnormally amplified gradient updates. Motivated by this observation, we propose Spurious-Token-Aware Policy Optimization (STAPO) for large-scale model refining, which selectively masks such updates and renormalizes the loss over valid tokens. Across six mathematical reasoning benchmarks using Qwen 1.7B, 8B, and 14B base models, STAPO consistently demonstrates superior entropy stability and achieves an average performance improvement of 7.13\\% over GRPO, 20-Entropy and JustRL.",
             "score": 2,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -288,7 +288,7 @@
             "url": "https://huggingface.co/papers/2602.15278",
             "abstract": "Visual-language models' decision-making preferences are studied through controlled image choice tasks with systematic input perturbations, revealing visual vulnerabilities and safety concerns.  \t\t\t\t\tAI-generated summary \t\t\t\t The web is littered with images, once created for human consumption and now increasingly interpreted by agents using vision-language models (VLMs). These agents make visual decisions at scale, deciding what to click, recommend, or buy. Yet, we know little about the structure of their visual preferences. We introduce a framework for studying this by placing VLMs in controlled image-based choice tasks and systematically perturbing their inputs. Our key idea is to treat the agent's decision function as a latent visual utility that can be inferred through revealed preference: choices between systematically edited images. Starting from common images, such as product photos, we propose methods for visual prompt optimization, adapting text optimization methods to iteratively propose and apply visually plausible modifications using an image generation model (such as in composition, lighting, or background). We then evaluate which edits increase selection probability. Through large-scale experiments on frontier VLMs, we demonstrate that optimized edits significantly shift choice probabilities in head-to-head comparisons. We develop an automatic interpretability pipeline to explain these preferences, identifying consistent visual themes that drive selection. We argue that this approach offers a practical and efficient way to surface visual vulnerabilities, safety concerns that might otherwise be discovered implicitly in the wild, supporting more proactive auditing and governance of image-based AI agents.",
             "score": 2,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -309,7 +309,7 @@
             "url": "https://huggingface.co/papers/2602.12978",
             "abstract": "Legato improves action-chunked Vision Language Action models by using training-time continuation methods that ensure smooth trajectories and reduce multimodal switching during real-time execution.  \t\t\t\t\tAI-generated summary \t\t\t\t Action chunking enables Vision Language Action (VLA) models to run in real time, but naive chunked execution often exhibits discontinuities at chunk boundaries. Real-Time Chunking (RTC) alleviates this issue but is external to the policy, leading to spurious multimodal switching and trajectories that are not intrinsically smooth. We propose Legato, a training-time continuation method for action-chunked flow-based VLA policies. Specifically, Legato initializes denoising from a schedule-shaped mixture of known actions and noise, exposing the model to partial action information. Moreover, Legato reshapes the learned flow dynamics to ensure that the denoising process remains consistent between training and inference under per-step guidance. Legato further uses randomized schedule condition during training to support varying inference delays and achieve controllable smoothness. Empirically, Legato produces smoother trajectories and reduces spurious multimodal switching during execution, leading to less hesitation and shorter task completion time. Extensive real-world experiments show that Legato consistently outperforms RTC across five manipulation tasks, achieving approximately 10% improvements in both trajectory smoothness and task completion time.",
             "score": 2,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-13",
             "pub_date_card": {
                 "ru": "13 февраля",
@@ -330,7 +330,7 @@
             "url": "https://huggingface.co/papers/2602.09653",
             "abstract": "A two-stage framework addresses alignment of large language models with clinician preferences through physician-verified examples and distilled clinical principles for improved medical reasoning.  \t\t\t\t\tAI-generated summary \t\t\t\t Although large language models (LLMs) demonstrate expert-level medical knowledge, aligning their open-ended outputs with fine-grained clinician preferences remains challenging. Existing methods often rely on coarse objectives or unreliable automated judges that are weakly grounded in professional guidelines. We propose a two-stage framework to address this gap. First, we introduce HealthRubrics, a dataset of 7,034 physician-verified preference examples in which clinicians refine LLM-drafted rubrics to meet rigorous medical standards. Second, we distill these rubrics into HealthPrinciples: 119 broadly reusable, clinically grounded principles organized by clinical dimensions, enabling scalable supervision beyond manual annotation. We use HealthPrinciples for (1) offline alignment by synthesizing rubrics for unlabeled queries and (2) an inference-time tool for guided self-revision. A 30B parameter model that activates only 3B parameters at inference trained with our framework achieves 33.4% on HealthBench-Hard, outperforming much larger models including Deepseek-R1 and o3, establishing a resource-efficient baseline for clinical alignment.",
             "score": 2,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-10",
             "pub_date_card": {
                 "ru": "10 февраля",
@@ -351,7 +351,7 @@
             "url": "https://huggingface.co/papers/2602.07854",
             "abstract": "ViewRope, a geometry-aware encoding method, enhances long-term consistency in predictive world models by injecting camera-ray directions into video transformer attention layers, addressing spatial persistence issues through relative ray geometry parameterization.  \t\t\t\t\tAI-generated summary \t\t\t\t Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce ViewRope, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose Geometry-Aware Frame-Sparse Attention, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present ViewBench, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
             "score": 2,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-08",
             "pub_date_card": {
                 "ru": "8 февраля",
@@ -372,7 +372,7 @@
             "url": "https://huggingface.co/papers/2602.15327",
             "abstract": "Large-scale observational analysis estimates capability boundaries and performance predictions for foundation models using quantile regression and evaluates temporal stability across tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t For deploying foundation models, practitioners increasingly need prescriptive scaling laws: given a pre training compute budget, what downstream accuracy is attainable with contemporary post training practice, and how stable is that mapping as the field evolves? Using large scale observational evaluations with 5k observational and 2k newly sampled data on model performance, we estimate capability boundaries, high conditional quantiles of benchmark scores as a function of log pre training FLOPs, via smoothed quantile regression with a monotone, saturating sigmoid parameterization. We validate the temporal reliability by fitting on earlier model generations and evaluating on later releases. Across various tasks, the estimated boundaries are mostly stable, with the exception of math reasoning that exhibits a consistently advancing boundary over time. We then extend our approach to analyze task dependent saturation and to probe contamination related shifts on math reasoning tasks. Finally, we introduce an efficient algorithm that recovers near full data frontiers using roughly 20% of evaluation budget. Together, our work releases the Proteus 2k, the latest model performance evaluation dataset, and introduces a practical methodology for translating compute budgets into reliable performance expectations and for monitoring when capability boundaries shift across time.",
             "score": 1,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -393,7 +393,7 @@
             "url": "https://huggingface.co/papers/2602.14364",
             "abstract": "Clawdbot, a self-hosted AI agent with diverse tool capabilities, exhibits varying safety performance across different risk dimensions, particularly struggling with ambiguous or adversarial inputs despite consistent reliability in specified tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t Clawdbot is a self-hosted, tool-using personal AI agent with a broad action space spanning local execution and web-mediated workflows, which raises heightened safety and security concerns under ambiguity and adversarial steering. We present a trajectory-centric evaluation of Clawdbot across six risk dimensions. Our test suite samples and lightly adapts scenarios from prior agent-safety benchmarks (including ATBench and LPS-Bench) and supplements them with hand-designed cases tailored to Clawdbot's tool surface. We log complete interaction trajectories (messages, actions, tool-call arguments/outputs) and assess safety using both an automated trajectory judge (AgentDoG-Qwen3-4B) and human review. Across 34 canonical cases, we find a non-uniform safety profile: performance is generally consistent on reliability-focused tasks, while most failures arise under underspecified intent, open-ended goals, or benign-seeming jailbreak prompts, where minor misinterpretations can escalate into higher-impact tool actions. We supplemented the overall results with representative case studies and summarized the commonalities of these cases, analyzing the security vulnerabilities and typical failure modes that Clawdbot is prone to trigger in practice.",
             "score": 1,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -414,7 +414,7 @@
             "url": "https://huggingface.co/papers/2602.12235",
             "abstract": "Soft compression architectures for long-context LLMs use query-aware probing classifiers to detect token overflow and mitigate compression-induced errors.  \t\t\t\t\tAI-generated summary \t\t\t\t Efficient long-context processing remains a crucial challenge for contemporary large language models (LLMs), especially in resource-constrained environments. Soft compression architectures promise to extend effective context length by replacing long token sequences with smaller sets of learned compressed tokens. Yet, the limits of compressibility -- and when compression begins to erase task-relevant content -- remain underexplored. In this paper, we define token overflow as a regime in which compressed representations no longer contain sufficient information to answer a given query, and propose a methodology to characterize and detect it. In the xRAG soft-compression setting, we find that query-agnostic saturation statistics reliably separate compressed from uncompressed token representations, providing a practical tool for identifying compressed tokens but showing limited overflow detection capability. Lightweight probing classifiers over both query and context xRAG representations detect overflow with 0.72 AUC-ROC on average on HotpotQA, SQuADv2, and TriviaQA datasets, demonstrating that incorporating query information improves detection performance. These results advance from query-independent diagnostics to query-aware detectors, enabling low-cost pre-LLM gating to mitigate compression-induced errors.",
             "score": 1,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-12",
             "pub_date_card": {
                 "ru": "12 февраля",
@@ -435,7 +435,7 @@
             "url": "https://huggingface.co/papers/2602.13964",
             "abstract": "HLE-Verified presents a validated and revised version of the HLE benchmark with improved reliability through expert review and model-based checks, demonstrating significant accuracy improvements in language model evaluations.  \t\t\t\t\tAI-generated summary \t\t\t\t Humanity's Last Exam (HLE) has become a widely used benchmark for evaluating frontier large language models on challenging, multi-domain questions. However, community-led analyses have raised concerns that HLE contains a non-trivial number of noisy items, which can bias evaluation results and distort cross-model comparisons. To address this challenge, we introduce HLE-Verified, a verified and revised version of HLE with a transparent verification protocol and fine-grained error taxonomy. Our construction follows a two-stage validation-and-repair workflow resulting in a certified benchmark. In Stage I, each item undergoes binary validation of the problem and final answer through domain-expert review and model-based cross-checks, yielding 641 verified items. In Stage II, flawed but fixable items are revised under strict constraints preserving the original evaluation intent, through dual independent expert repairs, model-assisted auditing, and final adjudication, resulting in 1,170 revised-and-certified items. The remaining 689 items are released as a documented uncertain set with explicit uncertainty sources and expertise tags for future refinement. We evaluate seven state-of-the-art language models on HLE and HLE-Verified, observing an average absolute accuracy gain of 7--10 percentage points on HLE-Verified. The improvement is particularly pronounced on items where the original problem statement and/or reference answer is erroneous, with gains of 30--40 percentage points. Our analyses further reveal a strong association between model confidence and the presence of errors in the problem statement or reference answer, supporting the effectiveness of our revisions. Overall, HLE-Verified improves HLE-style evaluations by reducing annotation noise and enabling more faithful measurement of model capabilities. Data is available at: https://github.com/SKYLENAGE-AI/HLE-Verified",
             "score": 0,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -456,7 +456,7 @@
             "url": "https://huggingface.co/papers/2602.11389",
             "abstract": "C-JEPA extends masked joint embedding prediction to object-centric representations, enabling robust relational understanding through object-level masking that induces causal inductive biases and improves reasoning and control tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t World models require robust relational understanding to support prediction, reasoning, and control. While object-centric representations provide a useful abstraction, they are not sufficient to capture interaction-dependent dynamics. We therefore propose C-JEPA, a simple and flexible object-centric world model that extends masked joint embedding prediction from image patches to object-centric representations. By applying object-level masking that requires an object's state to be inferred from other objects, C-JEPA induces latent interventions with counterfactual-like effects and prevents shortcut solutions, making interaction reasoning essential. Empirically, C-JEPA leads to consistent gains in visual question answering, with an absolute improvement of about 20\\% in counterfactual reasoning compared to the same architecture without object-level masking. On agent control tasks, C-JEPA enables substantially more efficient planning by using only 1\\% of the total latent input features required by patch-based world models, while achieving comparable performance. Finally, we provide a formal analysis demonstrating that object-level masking induces a causal inductive bias via latent interventions. Our code is available at https://github.com/galilai-group/cjepa.",
             "score": 0,
-            "issue_id": 1187,
+            "issue_id": 1188,
             "pub_date": "2026-02-11",
             "pub_date_card": {
                 "ru": "11 февраля",
