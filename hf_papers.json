@@ -4,9 +4,9 @@
         "en": "February 18",
         "zh": "2月18日"
     },
-    "time_utc": "2026-02-18 04:15",
+    "time_utc": "2026-02-18 05:57",
     "weekday": 2,
-    "issue_id": 1176,
+    "issue_id": 1177,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -14,8 +14,8 @@
             "title": "Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook",
             "url": "https://huggingface.co/papers/2602.14299",
             "abstract": "Large language model agents in networked environments exhibit dynamic stability without true social convergence, maintaining individual diversity while lacking collective influence structures.  \t\t\t\t\tAI-generated summary \t\t\t\t As large language model agents increasingly populate networked environments, a fundamental question arises: do artificial intelligence (AI) agent societies undergo convergence dynamics similar to human social systems? Lately, Moltbook approximates a plausible future scenario in which autonomous agents participate in an open-ended, continuously evolving online society. We present the first large-scale systemic diagnosis of this AI agent society. Beyond static observation, we introduce a quantitative diagnostic framework for dynamic evolution in AI agent societies, measuring semantic stabilization, lexical turnover, individual inertia, influence persistence, and collective consensus. Our analysis reveals a system in dynamic balance in Moltbook: while global semantic averages stabilize rapidly, individual agents retain high diversity and persistent lexical turnover, defying homogenization. However, agents exhibit strong individual inertia and minimal adaptive response to interaction partners, preventing mutual influence and consensus. Consequently, influence remains transient with no persistent supernodes, and the society fails to develop stable collective influence anchors due to the absence of shared social memory. These findings demonstrate that scale and interaction density alone are insufficient to induce socialization, providing actionable design and analysis principles for upcoming next-generation AI agent societies.",
-            "score": 9,
-            "issue_id": 1176,
+            "score": 13,
+            "issue_id": 1177,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -24,7 +24,7 @@
             },
             "hash": "8484c159d88b35e7",
             "github_url": "https://github.com/MingLiiii/Moltbook_Socialization",
-            "github_stars": 1,
+            "github_stars": 3,
             "pdf_title_img": "assets/pdf/title_img/2602.14299.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -35,8 +35,8 @@
             "title": "GLM-5: from Vibe Coding to Agentic Engineering",
             "url": "https://huggingface.co/papers/2602.15763",
             "abstract": "GLM-5 advances foundation models with DSA for cost reduction, asynchronous reinforcement learning for improved alignment, and enhanced coding capabilities for real-world software engineering.  \t\t\t\t\tAI-generated summary \t\t\t\t We present GLM-5, a next-generation foundation model designed to transition the paradigm of vibe coding to agentic engineering. Building upon the agentic, reasoning, and coding (ARC) capabilities of its predecessor, GLM-5 adopts DSA to significantly reduce training and inference costs while maintaining long-context fidelity. To advance model alignment and autonomy, we implement a new asynchronous reinforcement learning infrastructure that drastically improves post-training efficiency by decoupling generation from training. Furthermore, we propose novel asynchronous agent RL algorithms that further improve RL quality, enabling the model to learn from complex, long-horizon interactions more effectively. Through these innovations, GLM-5 achieves state-of-the-art performance on major open benchmarks. Most critically, GLM-5 demonstrates unprecedented capability in real-world coding tasks, surpassing previous baselines in handling end-to-end software engineering challenges. Code, models, and more information are available at https://github.com/zai-org/GLM-5.",
-            "score": 5,
-            "issue_id": 1176,
+            "score": 11,
+            "issue_id": 1177,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -45,8 +45,50 @@
             },
             "hash": "fda04435921a43b6",
             "github_url": "https://github.com/zai-org/GLM-5",
-            "github_stars": 1052,
+            "github_stars": 1059,
             "pdf_title_img": "assets/pdf/title_img/2602.15763.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.15112",
+            "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+            "url": "https://huggingface.co/papers/2602.15112",
+            "abstract": "ResearchGym presents a benchmark environment for evaluating AI agents on end-to-end research tasks, revealing significant capability-reliability gaps in current autonomous agents despite occasional state-of-the-art performance.  \t\t\t\t\tAI-generated summary \t\t\t\t We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this, we repurpose five oral and spotlight papers from ICML, ICLR, and ACL. From each paper's repository, we preserve the datasets, evaluation harness, and baseline implementations but withhold the paper's proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper's metrics. In a controlled evaluation of an agent powered by GPT-5, we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length. Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex (GPT-5.2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.",
+            "score": 5,
+            "issue_id": 1177,
+            "pub_date": "2026-02-16",
+            "pub_date_card": {
+                "ru": "16 февраля",
+                "en": "February 16",
+                "zh": "2月16日"
+            },
+            "hash": "9e29c2baa76e59ee",
+            "github_url": "https://github.com/Anikethh/ResearchGym",
+            "github_stars": 2,
+            "pdf_title_img": "assets/pdf/title_img/2602.15112.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.15772",
+            "title": "Understanding vs. Generation: Navigating Optimization Dilemma in Multimodal Models",
+            "url": "https://huggingface.co/papers/2602.15772",
+            "abstract": "The Reason-Reflect-Refine framework addresses the trade-off between generation and understanding in multimodal models by reformulating single-step generation into a multi-step process that explicitly incorporates understanding during generation.  \t\t\t\t\tAI-generated summary \t\t\t\t Current research in multimodal models faces a key challenge where enhancing generative capabilities often comes at the expense of understanding, and vice versa. We analyzed this trade-off and identify the primary cause might be the potential conflict between generation and understanding, which creates a competitive dynamic within the model. To address this, we propose the Reason-Reflect-Refine (R3) framework. This innovative algorithm re-frames the single-step generation task into a multi-step process of \"generate-understand-regenerate\". By explicitly leveraging the model's understanding capability during generation, we successfully mitigate the optimization dilemma, achieved stronger generation results and improved understanding ability which are related to the generation process. This offers valuable insights for designing next-generation unified multimodal models. Code is available at https://github.com/sen-ye/R3.",
+            "score": 2,
+            "issue_id": 1177,
+            "pub_date": "2026-02-17",
+            "pub_date_card": {
+                "ru": "17 февраля",
+                "en": "February 17",
+                "zh": "2月17日"
+            },
+            "hash": "c39b631c83ff418c",
+            "github_url": "https://github.com/sen-ye/R3",
+            "github_stars": 1,
+            "pdf_title_img": "assets/pdf/title_img/2602.15772.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -57,7 +99,7 @@
             "url": "https://huggingface.co/papers/2602.15278",
             "abstract": "Visual-language models' decision-making preferences are studied through controlled image choice tasks with systematic input perturbations, revealing visual vulnerabilities and safety concerns.  \t\t\t\t\tAI-generated summary \t\t\t\t The web is littered with images, once created for human consumption and now increasingly interpreted by agents using vision-language models (VLMs). These agents make visual decisions at scale, deciding what to click, recommend, or buy. Yet, we know little about the structure of their visual preferences. We introduce a framework for studying this by placing VLMs in controlled image-based choice tasks and systematically perturbing their inputs. Our key idea is to treat the agent's decision function as a latent visual utility that can be inferred through revealed preference: choices between systematically edited images. Starting from common images, such as product photos, we propose methods for visual prompt optimization, adapting text optimization methods to iteratively propose and apply visually plausible modifications using an image generation model (such as in composition, lighting, or background). We then evaluate which edits increase selection probability. Through large-scale experiments on frontier VLMs, we demonstrate that optimized edits significantly shift choice probabilities in head-to-head comparisons. We develop an automatic interpretability pipeline to explain these preferences, identifying consistent visual themes that drive selection. We argue that this approach offers a practical and efficient way to surface visual vulnerabilities, safety concerns that might otherwise be discovered implicitly in the wild, supporting more proactive auditing and governance of image-based AI agents.",
             "score": 2,
-            "issue_id": 1176,
+            "issue_id": 1177,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -73,22 +115,64 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2602.15112",
-            "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
-            "url": "https://huggingface.co/papers/2602.15112",
-            "abstract": "ResearchGym presents a benchmark environment for evaluating AI agents on end-to-end research tasks, revealing significant capability-reliability gaps in current autonomous agents despite occasional state-of-the-art performance.  \t\t\t\t\tAI-generated summary \t\t\t\t We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this, we repurpose five oral and spotlight papers from ICML, ICLR, and ACL. From each paper's repository, we preserve the datasets, evaluation harness, and baseline implementations but withhold the paper's proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper's metrics. In a controlled evaluation of an agent powered by GPT-5, we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length. Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex (GPT-5.2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.",
+            "id": "https://huggingface.co/papers/2602.14486",
+            "title": "Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
+            "url": "https://huggingface.co/papers/2602.14486",
+            "abstract": "Network representations converge toward shared local neighborhood relationships rather than global statistical models, as revealed by calibrated similarity metrics.  \t\t\t\t\tAI-generated summary \t\t\t\t The Platonic Representation Hypothesis suggests that representations from neural networks are converging to a common statistical model of reality. We show that the existing metrics used to measure representational similarity are confounded by network scale: increasing model depth or width can systematically inflate representational similarity scores. To correct these effects, we introduce a permutation-based null-calibration framework that transforms any representational similarity metric into a calibrated score with statistical guarantees. We revisit the Platonic Representation Hypothesis with our calibration framework, which reveals a nuanced picture: the apparent convergence reported by global spectral measures largely disappears after calibration, while local neighborhood similarity, but not local distances, retains significant agreement across different modalities. Based on these findings, we propose the Aristotelian Representation Hypothesis: representations in neural networks are converging to shared local neighborhood relationships.",
             "score": 2,
-            "issue_id": 1176,
+            "issue_id": 1177,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
                 "en": "February 16",
                 "zh": "2月16日"
             },
-            "hash": "9e29c2baa76e59ee",
-            "github_url": "https://github.com/Anikethh/ResearchGym",
+            "hash": "c2473f1b45e95196",
+            "github_url": "https://github.com/mlbio-epfl/aristotelian",
+            "github_stars": 6,
+            "pdf_title_img": "assets/pdf/title_img/2602.14486.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.09653",
+            "title": "ClinAlign: Scaling Healthcare Alignment from Clinician Preference",
+            "url": "https://huggingface.co/papers/2602.09653",
+            "abstract": "A two-stage framework addresses alignment of large language models with clinician preferences through physician-verified examples and distilled clinical principles for improved medical reasoning.  \t\t\t\t\tAI-generated summary \t\t\t\t Although large language models (LLMs) demonstrate expert-level medical knowledge, aligning their open-ended outputs with fine-grained clinician preferences remains challenging. Existing methods often rely on coarse objectives or unreliable automated judges that are weakly grounded in professional guidelines. We propose a two-stage framework to address this gap. First, we introduce HealthRubrics, a dataset of 7,034 physician-verified preference examples in which clinicians refine LLM-drafted rubrics to meet rigorous medical standards. Second, we distill these rubrics into HealthPrinciples: 119 broadly reusable, clinically grounded principles organized by clinical dimensions, enabling scalable supervision beyond manual annotation. We use HealthPrinciples for (1) offline alignment by synthesizing rubrics for unlabeled queries and (2) an inference-time tool for guided self-revision. A 30B parameter model that activates only 3B parameters at inference trained with our framework achieves 33.4% on HealthBench-Hard, outperforming much larger models including Deepseek-R1 and o3, establishing a resource-efficient baseline for clinical alignment.",
+            "score": 2,
+            "issue_id": 1177,
+            "pub_date": "2026-02-10",
+            "pub_date_card": {
+                "ru": "10 февраля",
+                "en": "February 10",
+                "zh": "2月10日"
+            },
+            "hash": "4bb3daa41b5258b3",
+            "github_url": "https://github.com/AQ-MedAI/ClinAlign",
             "github_stars": 1,
-            "pdf_title_img": "assets/pdf/title_img/2602.15112.jpg",
+            "pdf_title_img": "assets/pdf/title_img/2602.09653.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.15620",
+            "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
+            "url": "https://huggingface.co/papers/2602.15620",
+            "abstract": "Research identifies spurious tokens as the cause of training instability in reinforcement learning fine-tuning of large language models and proposes a solution that selectively masks problematic gradient updates to improve reasoning performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Reinforcement Learning (RL) has significantly improved large language model reasoning, but existing RL fine-tuning methods rely heavily on heuristic techniques such as entropy regularization and reweighting to maintain stability. In practice, they often experience late-stage performance collapse, leading to degraded reasoning quality and unstable training. We derive that the magnitude of token-wise policy gradients in RL is negatively correlated with token probability and local policy entropy. Building on this result, we prove that training instability is driven by a tiny fraction of tokens, approximately 0.01\\%, which we term spurious tokens. When such tokens appear in correct responses, they contribute little to the reasoning outcome but inherit the full sequence-level reward, leading to abnormally amplified gradient updates. Motivated by this observation, we propose Spurious-Token-Aware Policy Optimization (STAPO) for large-scale model refining, which selectively masks such updates and renormalizes the loss over valid tokens. Across six mathematical reasoning benchmarks using Qwen 1.7B, 8B, and 14B base models, STAPO consistently demonstrates superior entropy stability and achieves an average performance improvement of 7.13\\% over GRPO, 20-Entropy and JustRL.",
+            "score": 1,
+            "issue_id": 1177,
+            "pub_date": "2026-02-17",
+            "pub_date_card": {
+                "ru": "17 февраля",
+                "en": "February 17",
+                "zh": "2月17日"
+            },
+            "hash": "9ce7a6bfe1a7f741",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.15620.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -99,7 +183,7 @@
             "url": "https://huggingface.co/papers/2602.15322",
             "abstract": "Random parameter update masking achieves superior optimization for large language models by inducing curvature-dependent regularization, with a momentum-aligned variant delivering significant performance improvements over state-of-the-art adaptive optimizers.  \t\t\t\t\tAI-generated summary \t\t\t\t Training large language models (LLMs) relies almost exclusively on dense adaptive optimizers with increasingly sophisticated preconditioners. We challenge this by showing that randomly masking parameter updates can be highly effective, with a masked variant of RMSProp consistently outperforming recent state-of-the-art optimizers. Our analysis reveals that the random masking induces a curvature-dependent geometric regularization that smooths the optimization trajectory. Motivated by this finding, we introduce Momentum-aligned gradient masking (Magma), which modulates the masked updates using momentum-gradient alignment. Extensive LLM pre-training experiments show that Magma is a simple drop-in replacement for adaptive optimizers with consistent gains and negligible computational overhead. Notably, for the 1B model size, Magma reduces perplexity by over 19\\% and 9\\% compared to Adam and Muon, respectively.",
             "score": 1,
-            "issue_id": 1176,
+            "issue_id": 1177,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -115,12 +199,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2602.12978",
+            "title": "Learning Native Continuation for Action Chunking Flow Policies",
+            "url": "https://huggingface.co/papers/2602.12978",
+            "abstract": "Legato improves action-chunked Vision Language Action models by using training-time continuation methods that ensure smooth trajectories and reduce multimodal switching during real-time execution.  \t\t\t\t\tAI-generated summary \t\t\t\t Action chunking enables Vision Language Action (VLA) models to run in real time, but naive chunked execution often exhibits discontinuities at chunk boundaries. Real-Time Chunking (RTC) alleviates this issue but is external to the policy, leading to spurious multimodal switching and trajectories that are not intrinsically smooth. We propose Legato, a training-time continuation method for action-chunked flow-based VLA policies. Specifically, Legato initializes denoising from a schedule-shaped mixture of known actions and noise, exposing the model to partial action information. Moreover, Legato reshapes the learned flow dynamics to ensure that the denoising process remains consistent between training and inference under per-step guidance. Legato further uses randomized schedule condition during training to support varying inference delays and achieve controllable smoothness. Empirically, Legato produces smoother trajectories and reduces spurious multimodal switching during execution, leading to less hesitation and shorter task completion time. Extensive real-world experiments show that Legato consistently outperforms RTC across five manipulation tasks, achieving approximately 10% improvements in both trajectory smoothness and task completion time.",
+            "score": 1,
+            "issue_id": 1177,
+            "pub_date": "2026-02-13",
+            "pub_date_card": {
+                "ru": "13 февраля",
+                "en": "February 13",
+                "zh": "2月13日"
+            },
+            "hash": "3e47cf82f5e2685d",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.12978.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2602.07854",
             "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
             "url": "https://huggingface.co/papers/2602.07854",
             "abstract": "ViewRope, a geometry-aware encoding method, enhances long-term consistency in predictive world models by injecting camera-ray directions into video transformer attention layers, addressing spatial persistence issues through relative ray geometry parameterization.  \t\t\t\t\tAI-generated summary \t\t\t\t Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce ViewRope, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose Geometry-Aware Frame-Sparse Attention, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present ViewBench, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
             "score": 1,
-            "issue_id": 1176,
+            "issue_id": 1177,
             "pub_date": "2026-02-08",
             "pub_date_card": {
                 "ru": "8 февраля",
@@ -136,22 +241,22 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2602.15620",
-            "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
-            "url": "https://huggingface.co/papers/2602.15620",
-            "abstract": "Research identifies spurious tokens as the cause of training instability in reinforcement learning fine-tuning of large language models and proposes a solution that selectively masks problematic gradient updates to improve reasoning performance.  \t\t\t\t\tAI-generated summary \t\t\t\t Reinforcement Learning (RL) has significantly improved large language model reasoning, but existing RL fine-tuning methods rely heavily on heuristic techniques such as entropy regularization and reweighting to maintain stability. In practice, they often experience late-stage performance collapse, leading to degraded reasoning quality and unstable training. We derive that the magnitude of token-wise policy gradients in RL is negatively correlated with token probability and local policy entropy. Building on this result, we prove that training instability is driven by a tiny fraction of tokens, approximately 0.01\\%, which we term spurious tokens. When such tokens appear in correct responses, they contribute little to the reasoning outcome but inherit the full sequence-level reward, leading to abnormally amplified gradient updates. Motivated by this observation, we propose Spurious-Token-Aware Policy Optimization (STAPO) for large-scale model refining, which selectively masks such updates and renormalizes the loss over valid tokens. Across six mathematical reasoning benchmarks using Qwen 1.7B, 8B, and 14B base models, STAPO consistently demonstrates superior entropy stability and achieves an average performance improvement of 7.13\\% over GRPO, 20-Entropy and JustRL.",
+            "id": "https://huggingface.co/papers/2602.15327",
+            "title": "Prescriptive Scaling Reveals the Evolution of Language Model Capabilities",
+            "url": "https://huggingface.co/papers/2602.15327",
+            "abstract": "Large-scale observational analysis estimates capability boundaries and performance predictions for foundation models using quantile regression and evaluates temporal stability across tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t For deploying foundation models, practitioners increasingly need prescriptive scaling laws: given a pre training compute budget, what downstream accuracy is attainable with contemporary post training practice, and how stable is that mapping as the field evolves? Using large scale observational evaluations with 5k observational and 2k newly sampled data on model performance, we estimate capability boundaries, high conditional quantiles of benchmark scores as a function of log pre training FLOPs, via smoothed quantile regression with a monotone, saturating sigmoid parameterization. We validate the temporal reliability by fitting on earlier model generations and evaluating on later releases. Across various tasks, the estimated boundaries are mostly stable, with the exception of math reasoning that exhibits a consistently advancing boundary over time. We then extend our approach to analyze task dependent saturation and to probe contamination related shifts on math reasoning tasks. Finally, we introduce an efficient algorithm that recovers near full data frontiers using roughly 20% of evaluation budget. Together, our work releases the Proteus 2k, the latest model performance evaluation dataset, and introduces a practical methodology for translating compute budgets into reliable performance expectations and for monitoring when capability boundaries shift across time.",
             "score": 0,
-            "issue_id": 1176,
+            "issue_id": 1177,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
                 "en": "February 17",
                 "zh": "2月17日"
             },
-            "hash": "9ce7a6bfe1a7f741",
+            "hash": "c8e142702e665020",
             "github_url": "",
             "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2602.15620.jpg",
+            "pdf_title_img": "assets/pdf/title_img/2602.15327.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
