@@ -4,9 +4,9 @@
         "en": "February 19",
         "zh": "2月19日"
     },
-    "time_utc": "2026-02-19 04:14",
+    "time_utc": "2026-02-19 05:55",
     "weekday": 3,
-    "issue_id": 1196,
+    "issue_id": 1197,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -14,8 +14,8 @@
             "title": "SLA2: Sparse-Linear Attention with Learnable Routing and QAT",
             "url": "https://huggingface.co/papers/2602.12675",
             "abstract": "SLA2 improves sparse-linear attention in diffusion models by introducing a learnable router, direct attention formulation, and quantization-aware fine-tuning for enhanced efficiency and quality.  \t\t\t\t\tAI-generated summary \t\t\t\t Sparse-Linear Attention (SLA) combines sparse and linear attention to accelerate diffusion models and has shown strong performance in video generation. However, (i) SLA relies on a heuristic split that assigns computations to the sparse or linear branch based on attention-weight magnitude, which can be suboptimal. Additionally, (ii) after formally analyzing the attention error in SLA, we identify a mismatch between SLA and a direct decomposition into sparse and linear attention. We propose SLA2, which introduces (I) a learnable router that dynamically selects whether each attention computation should use sparse or linear attention, (II) a more faithful and direct sparse-linear attention formulation that uses a learnable ratio to combine the sparse and linear attention branches, and (III) a sparse + low-bit attention design, where low-bit attention is introduced via quantization-aware fine-tuning to reduce quantization error. Experiments show that on video diffusion models, SLA2 can achieve 97% attention sparsity and deliver an 18.6x attention speedup while preserving generation quality.",
-            "score": 19,
-            "issue_id": 1196,
+            "score": 22,
+            "issue_id": 1197,
             "pub_date": "2026-02-13",
             "pub_date_card": {
                 "ru": "13 февраля",
@@ -35,8 +35,8 @@
             "title": "Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation",
             "url": "https://huggingface.co/papers/2602.16705",
             "abstract": "HERO enables humanoid robots to perform object manipulation in diverse real-world environments by combining accurate end-effector control with open-vocabulary vision models for generalizable scene understanding.  \t\t\t\t\tAI-generated summary \t\t\t\t Visual loco-manipulation of arbitrary objects in the wild with humanoid robots requires accurate end-effector (EE) control and a generalizable understanding of the scene via visual inputs (e.g., RGB-D images). Existing approaches are based on real-world imitation learning and exhibit limited generalization due to the difficulty in collecting large-scale training datasets. This paper presents a new paradigm, HERO, for object loco-manipulation with humanoid robots that combines the strong generalization and open-vocabulary understanding of large vision models with strong control performance from simulated training. We achieve this by designing an accurate residual-aware EE tracking policy. This EE tracking policy combines classical robotics with machine learning. It uses a) inverse kinematics to convert residual end-effector targets into reference trajectories, b) a learned neural forward model for accurate forward kinematics, c) goal adjustment, and d) replanning. Together, these innovations help us cut down the end-effector tracking error by 3.2x. We use this accurate end-effector tracker to build a modular system for loco-manipulation, where we use open-vocabulary large vision models for strong visual generalization. Our system is able to operate in diverse real-world environments, from offices to coffee shops, where the robot is able to reliably manipulate various everyday objects (e.g., mugs, apples, toys) on surfaces ranging from 43cm to 92cm in height. Systematic modular and end-to-end tests in simulation and the real world demonstrate the effectiveness of our proposed design. We believe the advances in this paper can open up new ways of training humanoid robots to interact with daily objects.",
-            "score": 11,
-            "issue_id": 1196,
+            "score": 19,
+            "issue_id": 1197,
             "pub_date": "2026-02-18",
             "pub_date_card": {
                 "ru": "18 февраля",
@@ -52,85 +52,22 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2602.16682",
-            "title": "Learning Situated Awareness in the Real World",
-            "url": "https://huggingface.co/papers/2602.16682",
-            "abstract": "SAW-Bench presents a new benchmark for evaluating egocentric situated awareness in multimodal foundation models through real-world video datasets with human-annotated question-answer pairs, focusing on observer-centric spatial reasoning tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t A core aspect of human perception is situated awareness, the ability to relate ourselves to the surrounding physical environment and reason over possible actions in context. However, most existing benchmarks for multimodal foundation models (MFMs) emphasize environment-centric spatial relations (relations among objects in a scene), while largely overlooking observer-centric relationships that require reasoning relative to agent's viewpoint, pose, and motion. To bridge this gap, we introduce SAW-Bench (Situated Awareness in the Real World), a novel benchmark for evaluating egocentric situated awareness using real-world videos. SAW-Bench comprises 786 self-recorded videos captured with Ray-Ban Meta (Gen 2) smart glasses spanning diverse indoor and outdoor environments, and over 2,071 human-annotated question-answer pairs. It probes a model's observer-centric understanding with six different awareness tasks. Our comprehensive evaluation reveals a human-model performance gap of 37.66%, even with the best-performing MFM, Gemini 3 Flash. Beyond this gap, our in-depth analysis uncovers several notable findings; for example, while models can exploit partial geometric cues in egocentric videos, they often fail to infer a coherent camera geometry, leading to systematic spatial reasoning errors. We position SAW-Bench as a benchmark for situated spatial intelligence, moving beyond passive observation to understanding physically grounded, observer-centric dynamics.",
-            "score": 3,
-            "issue_id": 1196,
-            "pub_date": "2026-02-18",
+            "id": "https://huggingface.co/papers/2602.14979",
+            "title": "RynnBrain: Open Embodied Foundation Models",
+            "url": "https://huggingface.co/papers/2602.14979",
+            "abstract": "RynnBrain is an open-source spatiotemporal foundation model for embodied intelligence that unifies perception, reasoning, and planning capabilities across multiple scales and task-specific variants.  \t\t\t\t\tAI-generated summary \t\t\t\t Despite rapid progress in multimodal foundation models, embodied intelligence community still lacks a unified, physically grounded foundation model that integrates perception, reasoning, and planning within real-world spatial-temporal dynamics. We introduce RynnBrain, an open-source spatiotemporal foundation model for embodied intelligence. RynnBrain strengthens four core capabilities in a unified framework: comprehensive egocentric understanding, diverse spatiotemporal localization, physically grounded reasoning, and physics-aware planning. The RynnBrain family comprises three foundation model scales (2B, 8B, and 30B-A3B MoE) and four post-trained variants tailored for downstream embodied tasks (i.e., RynnBrain-Nav, RynnBrain-Plan, and RynnBrain-VLA) or complex spatial reasoning tasks (i.e., RynnBrain-CoP). In terms of extensive evaluations on 20 embodied benchmarks and 8 general vision understanding benchmarks, our RynnBrain foundation models largely outperform existing embodied foundation models by a significant margin. The post-trained model suite further substantiates two key potentials of the RynnBrain foundation model: (i) enabling physically grounded reasoning and planning, and (ii) serving as a strong pretrained backbone that can be efficiently adapted to diverse embodied tasks.",
+            "score": 10,
+            "issue_id": 1197,
+            "pub_date": "2026-02-13",
             "pub_date_card": {
-                "ru": "18 февраля",
-                "en": "February 18",
-                "zh": "2月18日"
+                "ru": "13 февраля",
+                "en": "February 13",
+                "zh": "2月13日"
             },
-            "hash": "6cd97cb7c306d71a",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2602.16682.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2602.15922",
-            "title": "World Action Models are Zero-shot Policies",
-            "url": "https://huggingface.co/papers/2602.15922",
-            "abstract": "DreamZero is a World Action Model that leverages video diffusion to enable better generalization of physical motions across novel environments and embodiments compared to vision-language-action models.  \t\t\t\t\tAI-generated summary \t\t\t\t State-of-the-art Vision-Language-Action (VLA) models excel at semantic generalization but struggle to generalize to unseen physical motions in novel environments. We introduce DreamZero, a World Action Model (WAM) built upon a pretrained video diffusion backbone. Unlike VLAs, WAMs learn physical dynamics by predicting future world states and actions, using video as a dense representation of how the world evolves. By jointly modeling video and action, DreamZero learns diverse skills effectively from heterogeneous robot data without relying on repetitive demonstrations. This results in over 2x improvement in generalization to new tasks and environments compared to state-of-the-art VLAs in real robot experiments. Crucially, through model and system optimizations, we enable a 14B autoregressive video diffusion model to perform real-time closed-loop control at 7Hz. Finally, we demonstrate two forms of cross-embodiment transfer: video-only demonstrations from other robots or humans yield a relative improvement of over 42% on unseen task performance with just 10-20 minutes of data. More surprisingly, DreamZero enables few-shot embodiment adaptation, transferring to a new embodiment with only 30 minutes of play data while retaining zero-shot generalization.",
-            "score": 3,
-            "issue_id": 1196,
-            "pub_date": "2026-02-17",
-            "pub_date_card": {
-                "ru": "17 февраля",
-                "en": "February 17",
-                "zh": "2月17日"
-            },
-            "hash": "7eb519162f3a2c98",
-            "github_url": "https://github.com/dreamzero0/dreamzero",
-            "github_stars": 727,
-            "pdf_title_img": "assets/pdf/title_img/2602.15922.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2602.16666",
-            "title": "Towards a Science of AI Agent Reliability",
-            "url": "https://huggingface.co/papers/2602.16666",
-            "abstract": "Traditional benchmark evaluations of AI agents fail to capture critical reliability issues, prompting the development of comprehensive metrics that assess consistency, robustness, predictability, and safety across multiple dimensions.  \t\t\t\t\tAI-generated summary \t\t\t\t AI agents are increasingly deployed to execute important tasks. While rising accuracy scores on standard benchmarks suggest rapid progress, many agents still continue to fail in practice. This discrepancy highlights a fundamental limitation of current evaluations: compressing agent behavior into a single success metric obscures critical operational flaws. Notably, it ignores whether agents behave consistently across runs, withstand perturbations, fail predictably, or have bounded error severity. Grounded in safety-critical engineering, we provide a holistic performance profile by proposing twelve concrete metrics that decompose agent reliability along four key dimensions: consistency, robustness, predictability, and safety. Evaluating 14 agentic models across two complementary benchmarks, we find that recent capability gains have only yielded small improvements in reliability. By exposing these persistent limitations, our metrics complement traditional evaluations while offering tools for reasoning about how agents perform, degrade, and fail.",
-            "score": 2,
-            "issue_id": 1196,
-            "pub_date": "2026-02-18",
-            "pub_date_card": {
-                "ru": "18 февраля",
-                "en": "February 18",
-                "zh": "2月18日"
-            },
-            "hash": "02fc6538158301f6",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2602.16666.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2602.16493",
-            "title": "MMA: Multimodal Memory Agent",
-            "url": "https://huggingface.co/papers/2602.16493",
-            "abstract": "Multimodal Memory Agent (MMA) improves long-horizon agent performance by dynamically scoring memory reliability and handling visual biases in retrieval-augmented systems.  \t\t\t\t\tAI-generated summary \t\t\t\t Long-horizon multimodal agents depend on external memory; however, similarity-based retrieval often surfaces stale, low-credibility, or conflicting items, which can trigger overconfident errors. We propose Multimodal Memory Agent (MMA), which assigns each retrieved memory item a dynamic reliability score by combining source credibility, temporal decay, and conflict-aware network consensus, and uses this signal to reweight evidence and abstain when support is insufficient. We also introduce MMA-Bench, a programmatically generated benchmark for belief dynamics with controlled speaker reliability and structured text-vision contradictions. Using this framework, we uncover the \"Visual Placebo Effect\", revealing how RAG-based agents inherit latent visual biases from foundation models. On FEVER, MMA matches baseline accuracy while reducing variance by 35.2% and improving selective utility; on LoCoMo, a safety-oriented configuration improves actionable accuracy and reduces wrong answers; on MMA-Bench, MMA reaches 41.18% Type-B accuracy in Vision mode, while the baseline collapses to 0.0% under the same protocol. Code: https://github.com/AIGeeksGroup/MMA.",
-            "score": 2,
-            "issue_id": 1196,
-            "pub_date": "2026-02-18",
-            "pub_date_card": {
-                "ru": "18 февраля",
-                "en": "February 18",
-                "zh": "2月18日"
-            },
-            "hash": "8f25f959db00fa75",
-            "github_url": "https://github.com/AIGeeksGroup/MMA",
-            "github_stars": 3,
-            "pdf_title_img": "assets/pdf/title_img/2602.16493.jpg",
+            "hash": "aa2297877faaba9b",
+            "github_url": "https://github.com/alibaba-damo-academy/RynnBrain",
+            "github_stars": 397,
+            "pdf_title_img": "assets/pdf/title_img/2602.14979.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -140,8 +77,8 @@
             "title": "Multi-agent cooperation through in-context co-player inference",
             "url": "https://huggingface.co/papers/2602.16301",
             "abstract": "Sequence models enable cooperative behavior emergence in multi-agent reinforcement learning through in-context learning without hardcoded assumptions or timescale separation.  \t\t\t\t\tAI-generated summary \t\t\t\t Achieving cooperation among self-interested agents remains a fundamental challenge in multi-agent reinforcement learning. Recent work showed that mutual cooperation can be induced between \"learning-aware\" agents that account for and shape the learning dynamics of their co-players. However, existing approaches typically rely on hardcoded, often inconsistent, assumptions about co-player learning rules or enforce a strict separation between \"naive learners\" updating on fast timescales and \"meta-learners\" observing these updates. Here, we demonstrate that the in-context learning capabilities of sequence models allow for co-player learning awareness without requiring hardcoded assumptions or explicit timescale separation. We show that training sequence model agents against a diverse distribution of co-players naturally induces in-context best-response strategies, effectively functioning as learning algorithms on the fast intra-episode timescale. We find that the cooperative mechanism identified in prior work-where vulnerability to extortion drives mutual shaping-emerges naturally in this setting: in-context adaptation renders agents vulnerable to extortion, and the resulting mutual pressure to shape the opponent's in-context learning dynamics resolves into the learning of cooperative behavior. Our results suggest that standard decentralized reinforcement learning on sequence models combined with co-player diversity provides a scalable path to learning cooperative behaviors.",
-            "score": 2,
-            "issue_id": 1196,
+            "score": 5,
+            "issue_id": 1197,
             "pub_date": "2026-02-18",
             "pub_date_card": {
                 "ru": "18 февраля",
@@ -157,12 +94,96 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2602.14080",
+            "title": "Empty Shelves or Lost Keys? Recall Is the Bottleneck for Parametric Factuality",
+            "url": "https://huggingface.co/papers/2602.14080",
+            "abstract": "LLMs demonstrate near-complete factual encoding but struggle with retrieval accessibility, where errors stem from access limitations rather than knowledge gaps, with reasoning improving recall of encoded information.  \t\t\t\t\tAI-generated summary \t\t\t\t Standard factuality evaluations of LLMs treat all errors alike, obscuring whether failures arise from missing knowledge (empty shelves) or from limited access to encoded facts (lost keys). We propose a behavioral framework that profiles factual knowledge at the level of facts rather than questions, characterizing each fact by whether it is encoded, and then by how accessible it is: cannot be recalled, can be directly recalled, or can only be recalled with inference-time computation (thinking). To support such profiling, we introduce WikiProfile, a new benchmark constructed via an automated pipeline with a prompted LLM grounded in web search. Across 4 million responses from 13 LLMs, we find that encoding is nearly saturated in frontier models on our benchmark, with GPT-5 and Gemini-3 encoding 95--98% of facts. However, recall remains a major bottleneck: many errors previously attributed to missing knowledge instead stem from failures to access it. These failures are systematic and disproportionately affect long-tail facts and reverse questions. Finally, we show that thinking improves recall and can recover a substantial fraction of failures, indicating that future gains may rely less on scaling and more on methods that improve how models utilize what they already encode.",
+            "score": 5,
+            "issue_id": 1197,
+            "pub_date": "2026-02-15",
+            "pub_date_card": {
+                "ru": "15 февраля",
+                "en": "February 15",
+                "zh": "2月15日"
+            },
+            "hash": "eea14212c16b0f99",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.14080.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.15922",
+            "title": "World Action Models are Zero-shot Policies",
+            "url": "https://huggingface.co/papers/2602.15922",
+            "abstract": "DreamZero is a World Action Model that leverages video diffusion to enable better generalization of physical motions across novel environments and embodiments compared to vision-language-action models.  \t\t\t\t\tAI-generated summary \t\t\t\t State-of-the-art Vision-Language-Action (VLA) models excel at semantic generalization but struggle to generalize to unseen physical motions in novel environments. We introduce DreamZero, a World Action Model (WAM) built upon a pretrained video diffusion backbone. Unlike VLAs, WAMs learn physical dynamics by predicting future world states and actions, using video as a dense representation of how the world evolves. By jointly modeling video and action, DreamZero learns diverse skills effectively from heterogeneous robot data without relying on repetitive demonstrations. This results in over 2x improvement in generalization to new tasks and environments compared to state-of-the-art VLAs in real robot experiments. Crucially, through model and system optimizations, we enable a 14B autoregressive video diffusion model to perform real-time closed-loop control at 7Hz. Finally, we demonstrate two forms of cross-embodiment transfer: video-only demonstrations from other robots or humans yield a relative improvement of over 42% on unseen task performance with just 10-20 minutes of data. More surprisingly, DreamZero enables few-shot embodiment adaptation, transferring to a new embodiment with only 30 minutes of play data while retaining zero-shot generalization.",
+            "score": 4,
+            "issue_id": 1197,
+            "pub_date": "2026-02-17",
+            "pub_date_card": {
+                "ru": "17 февраля",
+                "en": "February 17",
+                "zh": "2月17日"
+            },
+            "hash": "7eb519162f3a2c98",
+            "github_url": "https://github.com/dreamzero0/dreamzero",
+            "github_stars": 727,
+            "pdf_title_img": "assets/pdf/title_img/2602.15922.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.16682",
+            "title": "Learning Situated Awareness in the Real World",
+            "url": "https://huggingface.co/papers/2602.16682",
+            "abstract": "SAW-Bench presents a new benchmark for evaluating egocentric situated awareness in multimodal foundation models through real-world video datasets with human-annotated question-answer pairs, focusing on observer-centric spatial reasoning tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t A core aspect of human perception is situated awareness, the ability to relate ourselves to the surrounding physical environment and reason over possible actions in context. However, most existing benchmarks for multimodal foundation models (MFMs) emphasize environment-centric spatial relations (relations among objects in a scene), while largely overlooking observer-centric relationships that require reasoning relative to agent's viewpoint, pose, and motion. To bridge this gap, we introduce SAW-Bench (Situated Awareness in the Real World), a novel benchmark for evaluating egocentric situated awareness using real-world videos. SAW-Bench comprises 786 self-recorded videos captured with Ray-Ban Meta (Gen 2) smart glasses spanning diverse indoor and outdoor environments, and over 2,071 human-annotated question-answer pairs. It probes a model's observer-centric understanding with six different awareness tasks. Our comprehensive evaluation reveals a human-model performance gap of 37.66%, even with the best-performing MFM, Gemini 3 Flash. Beyond this gap, our in-depth analysis uncovers several notable findings; for example, while models can exploit partial geometric cues in egocentric videos, they often fail to infer a coherent camera geometry, leading to systematic spatial reasoning errors. We position SAW-Bench as a benchmark for situated spatial intelligence, moving beyond passive observation to understanding physically grounded, observer-centric dynamics.",
+            "score": 3,
+            "issue_id": 1197,
+            "pub_date": "2026-02-18",
+            "pub_date_card": {
+                "ru": "18 февраля",
+                "en": "February 18",
+                "zh": "2月18日"
+            },
+            "hash": "6cd97cb7c306d71a",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.16682.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.16493",
+            "title": "MMA: Multimodal Memory Agent",
+            "url": "https://huggingface.co/papers/2602.16493",
+            "abstract": "Multimodal Memory Agent (MMA) improves long-horizon agent performance by dynamically scoring memory reliability and handling visual biases in retrieval-augmented systems.  \t\t\t\t\tAI-generated summary \t\t\t\t Long-horizon multimodal agents depend on external memory; however, similarity-based retrieval often surfaces stale, low-credibility, or conflicting items, which can trigger overconfident errors. We propose Multimodal Memory Agent (MMA), which assigns each retrieved memory item a dynamic reliability score by combining source credibility, temporal decay, and conflict-aware network consensus, and uses this signal to reweight evidence and abstain when support is insufficient. We also introduce MMA-Bench, a programmatically generated benchmark for belief dynamics with controlled speaker reliability and structured text-vision contradictions. Using this framework, we uncover the \"Visual Placebo Effect\", revealing how RAG-based agents inherit latent visual biases from foundation models. On FEVER, MMA matches baseline accuracy while reducing variance by 35.2% and improving selective utility; on LoCoMo, a safety-oriented configuration improves actionable accuracy and reduces wrong answers; on MMA-Bench, MMA reaches 41.18% Type-B accuracy in Vision mode, while the baseline collapses to 0.0% under the same protocol. Code: https://github.com/AIGeeksGroup/MMA.",
+            "score": 3,
+            "issue_id": 1197,
+            "pub_date": "2026-02-18",
+            "pub_date_card": {
+                "ru": "18 февраля",
+                "en": "February 18",
+                "zh": "2月18日"
+            },
+            "hash": "8f25f959db00fa75",
+            "github_url": "https://github.com/AIGeeksGroup/MMA",
+            "github_stars": 3,
+            "pdf_title_img": "assets/pdf/title_img/2602.16493.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2602.15989",
             "title": "SAM 3D Body: Robust Full-Body Human Mesh Recovery",
             "url": "https://huggingface.co/papers/2602.15989",
             "abstract": "A promptable 3D human mesh recovery model using a novel parametric representation and encoder-decoder architecture achieves state-of-the-art performance with strong generalization across diverse conditions.  \t\t\t\t\tAI-generated summary \t\t\t\t We introduce SAM 3D Body (3DB), a promptable model for single-image full-body 3D human mesh recovery (HMR) that demonstrates state-of-the-art performance, with strong generalization and consistent accuracy in diverse in-the-wild conditions. 3DB estimates the human pose of the body, feet, and hands. It is the first model to use a new parametric mesh representation, Momentum Human Rig (MHR), which decouples skeletal structure and surface shape. 3DB employs an encoder-decoder architecture and supports auxiliary prompts, including 2D keypoints and masks, enabling user-guided inference similar to the SAM family of models. We derive high-quality annotations from a multi-stage annotation pipeline that uses various combinations of manual keypoint annotation, differentiable optimization, multi-view geometry, and dense keypoint detection. Our data engine efficiently selects and processes data to ensure data diversity, collecting unusual poses and rare imaging conditions. We present a new evaluation dataset organized by pose and appearance categories, enabling nuanced analysis of model behavior. Our experiments demonstrate superior generalization and substantial improvements over prior methods in both qualitative user preference studies and traditional quantitative analysis. Both 3DB and MHR are open-source.",
-            "score": 2,
-            "issue_id": 1196,
+            "score": 3,
+            "issue_id": 1197,
             "pub_date": "2026-02-17",
             "pub_date_card": {
                 "ru": "17 февраля",
@@ -173,6 +194,27 @@
             "github_url": "https://github.com/facebookresearch/sam-3d-body",
             "github_stars": 2618,
             "pdf_title_img": "assets/pdf/title_img/2602.15989.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2602.16666",
+            "title": "Towards a Science of AI Agent Reliability",
+            "url": "https://huggingface.co/papers/2602.16666",
+            "abstract": "Traditional benchmark evaluations of AI agents fail to capture critical reliability issues, prompting the development of comprehensive metrics that assess consistency, robustness, predictability, and safety across multiple dimensions.  \t\t\t\t\tAI-generated summary \t\t\t\t AI agents are increasingly deployed to execute important tasks. While rising accuracy scores on standard benchmarks suggest rapid progress, many agents still continue to fail in practice. This discrepancy highlights a fundamental limitation of current evaluations: compressing agent behavior into a single success metric obscures critical operational flaws. Notably, it ignores whether agents behave consistently across runs, withstand perturbations, fail predictably, or have bounded error severity. Grounded in safety-critical engineering, we provide a holistic performance profile by proposing twelve concrete metrics that decompose agent reliability along four key dimensions: consistency, robustness, predictability, and safety. Evaluating 14 agentic models across two complementary benchmarks, we find that recent capability gains have only yielded small improvements in reliability. By exposing these persistent limitations, our metrics complement traditional evaluations while offering tools for reasoning about how agents perform, degrade, and fail.",
+            "score": 2,
+            "issue_id": 1197,
+            "pub_date": "2026-02-18",
+            "pub_date_card": {
+                "ru": "18 февраля",
+                "en": "February 18",
+                "zh": "2月18日"
+            },
+            "hash": "02fc6538158301f6",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2602.16666.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
