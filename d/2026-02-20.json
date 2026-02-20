@@ -4,39 +4,18 @@
         "en": "February 20",
         "zh": "2月20日"
     },
-    "time_utc": "2026-02-20 05:48",
+    "time_utc": "2026-02-20 06:45",
     "weekday": 4,
-    "issue_id": 1217,
+    "issue_id": 1218,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
-        {
-            "id": "https://huggingface.co/papers/2602.13515",
-            "title": "SpargeAttention2: Trainable Sparse Attention via Hybrid Top-k+Top-p Masking and Distillation Fine-Tuning",
-            "url": "https://huggingface.co/papers/2602.13515",
-            "abstract": "A trainable sparse attention method called SpargeAttention2 is proposed that achieves high sparsity in diffusion models while maintaining generation quality through hybrid masking rules and distillation-inspired fine-tuning.  \t\t\t\t\tAI-generated summary \t\t\t\t Many training-free sparse attention methods are effective for accelerating diffusion models. Recently, several works suggest that making sparse attention trainable can further increase sparsity while preserving generation quality. We study three key questions: (1) when do the two common masking rules, i.e., Top-k and Top-p, fail, and how can we avoid these failures? (2) why can trainable sparse attention reach higher sparsity than training-free methods? (3) what are the limitations of fine-tuning sparse attention using the diffusion loss, and how can we address them? Based on this analysis, we propose SpargeAttention2, a trainable sparse attention method that achieves high sparsity without degrading generation quality. SpargeAttention2 includes (i) a hybrid masking rule that combines Top-k and Top-p for more robust masking at high sparsity, (ii) an efficient trainable sparse attention implementation, and (iii) a distillation-inspired fine-tuning objective to better preserve generation quality during fine-tuning using sparse attention. Experiments on video diffusion models show that SpargeAttention2 reaches 95% attention sparsity and a 16.2x attention speedup while maintaining generation quality, consistently outperforming prior sparse attention methods.",
-            "score": 9,
-            "issue_id": 1217,
-            "pub_date": "2026-02-13",
-            "pub_date_card": {
-                "ru": "13 февраля",
-                "en": "February 13",
-                "zh": "2月13日"
-            },
-            "hash": "2df8fd40471c4cea",
-            "github_url": "https://github.com/thu-ml/SpargeAttn",
-            "github_stars": 939,
-            "pdf_title_img": "assets/pdf/title_img/2602.13515.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
         {
             "id": "https://huggingface.co/papers/2602.16855",
             "title": "Mobile-Agent-v3.5: Multi-platform Fundamental GUI Agents",
             "url": "https://huggingface.co/papers/2602.16855",
             "abstract": "GUI-Owl-1.5 is a multi-platform GUI agent model with varying sizes that achieves superior performance across GUI automation, grounding, tool-calling, and memory tasks through innovations in data pipelines, unified reasoning enhancement, and multi-platform reinforcement learning.  \t\t\t\t\tAI-generated summary \t\t\t\t The paper introduces GUI-Owl-1.5, the latest native GUI agent model that features instruct/thinking variants in multiple sizes (2B/4B/8B/32B/235B) and supports a range of platforms (desktop, mobile, browser, and more) to enable cloud-edge collaboration and real-time interaction. GUI-Owl-1.5 achieves state-of-the-art results on more than 20+ GUI benchmarks on open-source models: (1) on GUI automation tasks, it obtains 56.5 on OSWorld, 71.6 on AndroidWorld, and 48.4 on WebArena; (2) on grounding tasks, it obtains 80.3 on ScreenSpotPro; (3) on tool-calling tasks, it obtains 47.6 on OSWorld-MCP, and 46.8 on MobileWorld; (4) on memory and knowledge tasks, it obtains 75.5 on GUI-Knowledge Bench. GUI-Owl-1.5 incorporates several key innovations: (1) Hybird Data Flywheel: we construct the data pipeline for UI understanding and trajectory generation based on a combination of simulated environments and cloud-based sandbox environments, in order to improve the efficiency and quality of data collection. (2) Unified Enhancement of Agent Capabilities: we use a unified thought-synthesis pipeline to enhance the model's reasoning capabilities, while placing particular emphasis on improving key agent abilities, including Tool/MCP use, memory and multi-agent adaptation; (3) Multi-platform Environment RL Scaling: We propose a new environment RL algorithm, MRPO, to address the challenges of multi-platform conflicts and the low training efficiency of long-horizon tasks. The GUI-Owl-1.5 models are open-sourced, and an online cloud-sandbox demo is available at https://github.com/X-PLUG/MobileAgent.",
-            "score": 7,
-            "issue_id": 1217,
+            "score": 9,
+            "issue_id": 1218,
             "pub_date": "2026-02-15",
             "pub_date_card": {
                 "ru": "15 февраля",
@@ -52,12 +31,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2602.13515",
+            "title": "SpargeAttention2: Trainable Sparse Attention via Hybrid Top-k+Top-p Masking and Distillation Fine-Tuning",
+            "url": "https://huggingface.co/papers/2602.13515",
+            "abstract": "A trainable sparse attention method called SpargeAttention2 is proposed that achieves high sparsity in diffusion models while maintaining generation quality through hybrid masking rules and distillation-inspired fine-tuning.  \t\t\t\t\tAI-generated summary \t\t\t\t Many training-free sparse attention methods are effective for accelerating diffusion models. Recently, several works suggest that making sparse attention trainable can further increase sparsity while preserving generation quality. We study three key questions: (1) when do the two common masking rules, i.e., Top-k and Top-p, fail, and how can we avoid these failures? (2) why can trainable sparse attention reach higher sparsity than training-free methods? (3) what are the limitations of fine-tuning sparse attention using the diffusion loss, and how can we address them? Based on this analysis, we propose SpargeAttention2, a trainable sparse attention method that achieves high sparsity without degrading generation quality. SpargeAttention2 includes (i) a hybrid masking rule that combines Top-k and Top-p for more robust masking at high sparsity, (ii) an efficient trainable sparse attention implementation, and (iii) a distillation-inspired fine-tuning objective to better preserve generation quality during fine-tuning using sparse attention. Experiments on video diffusion models show that SpargeAttention2 reaches 95% attention sparsity and a 16.2x attention speedup while maintaining generation quality, consistently outperforming prior sparse attention methods.",
+            "score": 9,
+            "issue_id": 1218,
+            "pub_date": "2026-02-13",
+            "pub_date_card": {
+                "ru": "13 февраля",
+                "en": "February 13",
+                "zh": "2月13日"
+            },
+            "hash": "2df8fd40471c4cea",
+            "github_url": "https://github.com/thu-ml/SpargeAttn",
+            "github_stars": 940,
+            "pdf_title_img": "assets/pdf/title_img/2602.13515.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2602.14457",
             "title": "Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report v1.5",
             "url": "https://huggingface.co/papers/2602.14457",
             "abstract": "Frontier AI risk analysis assesses critical dimensions including cyber offense, persuasion and manipulation, strategic deception, uncontrolled AI R&D, and self-replication, proposing mitigation strategies for secure deployment of advanced AI systems.  \t\t\t\t\tAI-generated summary \t\t\t\t To understand and identify the unprecedented risks posed by rapidly advancing artificial intelligence (AI) models, Frontier AI Risk Management Framework in Practice presents a comprehensive assessment of their frontier risks. As Large Language Models (LLMs) general capabilities rapidly evolve and the proliferation of agentic AI, this version of the risk analysis technical report presents an updated and granular assessment of five critical dimensions: cyber offense, persuasion and manipulation, strategic deception, uncontrolled AI R\\&D, and self-replication. Specifically, we introduce more complex scenarios for cyber offense. For persuasion and manipulation, we evaluate the risk of LLM-to-LLM persuasion on newly released LLMs. For strategic deception and scheming, we add the new experiment with respect to emergent misalignment. For uncontrolled AI R\\&D, we focus on the ``mis-evolution'' of agents as they autonomously expand their memory substrates and toolsets. Besides, we also monitor and evaluate the safety performance of OpenClaw during the interaction on the Moltbook. For self-replication, we introduce a new resource-constrained scenario. More importantly, we propose and validate a series of robust mitigation strategies to address these emerging threats, providing a preliminary technical and actionable pathway for the secure deployment of frontier AI. This work reflects our current understanding of AI frontier risks and urges collective action to mitigate these challenges.",
             "score": 6,
-            "issue_id": 1217,
+            "issue_id": 1218,
             "pub_date": "2026-02-16",
             "pub_date_card": {
                 "ru": "16 февраля",
@@ -78,7 +78,7 @@
             "url": "https://huggingface.co/papers/2602.16968",
             "abstract": "Dynamic tokenization improves diffusion transformer efficiency by adjusting patch sizes based on content complexity and denoising timestep, achieving significant speedup without quality loss.  \t\t\t\t\tAI-generated summary \t\t\t\t Diffusion Transformers (DiTs) have achieved state-of-the-art performance in image and video generation, but their success comes at the cost of heavy computation. This inefficiency is largely due to the fixed tokenization process, which uses constant-sized patches throughout the entire denoising phase, regardless of the content's complexity. We propose dynamic tokenization, an efficient test-time strategy that varies patch sizes based on content complexity and the denoising timestep. Our key insight is that early timesteps only require coarser patches to model global structure, while later iterations demand finer (smaller-sized) patches to refine local details. During inference, our method dynamically reallocates patch sizes across denoising steps for image and video generation and substantially reduces cost while preserving perceptual generation quality. Extensive experiments demonstrate the effectiveness of our approach: it achieves up to 3.52times and 3.2times speedup on FLUX-1.Dev and Wan 2.1, respectively, without compromising the generation quality and prompt adherence.",
             "score": 4,
-            "issue_id": 1217,
+            "issue_id": 1218,
             "pub_date": "2026-02-19",
             "pub_date_card": {
                 "ru": "19 февраля",
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2602.17270",
             "abstract": "Unified Latents framework learns joint latent representations using diffusion prior regularization and diffusion model decoding, achieving competitive FID scores with reduced training compute.  \t\t\t\t\tAI-generated summary \t\t\t\t We present Unified Latents (UL), a framework for learning latent representations that are jointly regularized by a diffusion prior and decoded by a diffusion model. By linking the encoder's output noise to the prior's minimum noise level, we obtain a simple training objective that provides a tight upper bound on the latent bitrate. On ImageNet-512, our approach achieves competitive FID of 1.4, with high reconstruction quality (PSNR) while requiring fewer training FLOPs than models trained on Stable Diffusion latents. On Kinetics-600, we set a new state-of-the-art FVD of 1.3.",
             "score": 3,
-            "issue_id": 1217,
+            "issue_id": 1218,
             "pub_date": "2026-02-19",
             "pub_date_card": {
                 "ru": "19 февраля",
@@ -115,12 +115,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2602.17259",
+            "title": "FRAPPE: Infusing World Modeling into Generalist Policies via Multiple Future Representation Alignment",
+            "url": "https://huggingface.co/papers/2602.17259",
+            "abstract": "FRAPPE addresses limitations in world modeling for robotics by using parallel progressive expansion to improve representation alignment and reduce error accumulation in predictive models.  \t\t\t\t\tAI-generated summary \t\t\t\t Enabling VLA models to predict environmental dynamics, known as world modeling, has been recognized as essential for improving robotic reasoning and generalization. However, current approaches face two main issues: 1. The training objective forces models to over-emphasize pixel-level reconstruction, which constrains semantic learning and generalization 2. Reliance on predicted future observations during inference often leads to error accumulation. To address these challenges, we introduce Future Representation Alignment via Parallel Progressive Expansion (FRAPPE). Our method adopts a two-stage fine-tuning strategy: In the mid-training phase, the model learns to predict the latent representations of future observations; In the post-training phase, we expand the computational workload in parallel and align the representation simultaneously with multiple different visual foundation models. By significantly improving fine-tuning efficiency and reducing dependence on action-annotated data, FRAPPE provides a scalable and data-efficient pathway to enhance world-awareness in generalist robotic policies. Experiments on the RoboTwin benchmark and real-world tasks demonstrate that FRAPPE outperforms state-of-the-art approaches and shows strong generalization in long-horizon and unseen scenarios.",
+            "score": 1,
+            "issue_id": 1218,
+            "pub_date": "2026-02-19",
+            "pub_date_card": {
+                "ru": "19 февраля",
+                "en": "February 19",
+                "zh": "2月19日"
+            },
+            "hash": "a3cbf174483be5ca",
+            "github_url": "https://github.com/OpenHelix-Team/frappe",
+            "github_stars": 5,
+            "pdf_title_img": "assets/pdf/title_img/2602.17259.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2602.17004",
             "title": "Arcee Trinity Large Technical Report",
             "url": "https://huggingface.co/papers/2602.17004",
             "abstract": "Arcee Trinity models are sparse Mixture-of-Experts architectures with varying parameter counts and activation patterns, utilizing advanced attention mechanisms and training optimizations.  \t\t\t\t\tAI-generated summary \t\t\t\t We present the technical report for Arcee Trinity Large, a sparse Mixture-of-Experts model with 400B total parameters and 13B activated per token. Additionally, we report on Trinity Nano and Trinity Mini, with Trinity Nano having 6B total parameters with 1B activated per token, Trinity Mini having 26B total parameters with 3B activated per token. The models' modern architecture includes interleaved local and global attention, gated attention, depth-scaled sandwich norm, and sigmoid routing for Mixture-of-Experts. For Trinity Large, we also introduce a new MoE load balancing strategy titled Soft-clamped Momentum Expert Bias Updates (SMEBU). We train the models using the Muon optimizer. All three models completed training with zero loss spikes. Trinity Nano and Trinity Mini were pre-trained on 10 trillion tokens, and Trinity Large was pre-trained on 17 trillion tokens. The model checkpoints are available at https://huggingface.co/arcee-ai.",
             "score": 1,
-            "issue_id": 1217,
+            "issue_id": 1218,
             "pub_date": "2026-02-19",
             "pub_date_card": {
                 "ru": "19 февраля",
@@ -141,7 +162,7 @@
             "url": "https://huggingface.co/papers/2602.16928",
             "abstract": "AlphaEvolve, an evolutionary coding agent using large language models, automatically discovers new multiagent learning algorithms for imperfect-information games by evolving regret minimization and population-based training variants.  \t\t\t\t\tAI-generated summary \t\t\t\t Much of the advancement of Multi-Agent Reinforcement Learning (MARL) in imperfect-information games has historically depended on manual iterative refinement of baselines. While foundational families like Counterfactual Regret Minimization (CFR) and Policy Space Response Oracles (PSRO) rest on solid theoretical ground, the design of their most effective variants often relies on human intuition to navigate a vast algorithmic design space. In this work, we propose the use of AlphaEvolve, an evolutionary coding agent powered by large language models, to automatically discover new multiagent learning algorithms. We demonstrate the generality of this framework by evolving novel variants for two distinct paradigms of game-theoretic learning. First, in the domain of iterative regret minimization, we evolve the logic governing regret accumulation and policy derivation, discovering a new algorithm, Volatility-Adaptive Discounted (VAD-)CFR. VAD-CFR employs novel, non-intuitive mechanisms-including volatility-sensitive discounting, consistency-enforced optimism, and a hard warm-start policy accumulation schedule-to outperform state-of-the-art baselines like Discounted Predictive CFR+. Second, in the regime of population based training algorithms, we evolve training-time and evaluation-time meta strategy solvers for PSRO, discovering a new variant, Smoothed Hybrid Optimistic Regret (SHOR-)PSRO. SHOR-PSRO introduces a hybrid meta-solver that linearly blends Optimistic Regret Matching with a smoothed, temperature-controlled distribution over best pure strategies. By dynamically annealing this blending factor and diversity bonuses during training, the algorithm automates the transition from population diversity to rigorous equilibrium finding, yielding superior empirical convergence compared to standard static meta-solvers.",
             "score": 1,
-            "issue_id": 1217,
+            "issue_id": 1218,
             "pub_date": "2026-02-18",
             "pub_date_card": {
                 "ru": "18 февраля",
@@ -162,7 +183,7 @@
             "url": "https://huggingface.co/papers/2602.17365",
             "abstract": "A world model for desktop software that predicts UI state changes through textual description followed by visual synthesis, improving decision quality and execution robustness in computer-using tasks.  \t\t\t\t\tAI-generated summary \t\t\t\t Agents operating in complex software environments benefit from reasoning about the consequences of their actions, as even a single incorrect user interface (UI) operation can derail long, artifact-preserving workflows. This challenge is particularly acute for computer-using scenarios, where real execution does not support counterfactual exploration, making large-scale trial-and-error learning and planning impractical despite the environment being fully digital and deterministic. We introduce the Computer-Using World Model (CUWM), a world model for desktop software that predicts the next UI state given the current state and a candidate action. CUWM adopts a two-stage factorization of UI dynamics: it first predicts a textual description of agent-relevant state changes, and then realizes these changes visually to synthesize the next screenshot. CUWM is trained on offline UI transitions collected from agents interacting with real Microsoft Office applications, and further refined with a lightweight reinforcement learning stage that aligns textual transition predictions with the structural requirements of computer-using environments. We evaluate CUWM via test-time action search, where a frozen agent uses the world model to simulate and compare candidate actions before execution. Across a range of Office tasks, world-model-guided test-time scaling improves decision quality and execution robustness.",
             "score": 0,
-            "issue_id": 1217,
+            "issue_id": 1218,
             "pub_date": "2026-02-19",
             "pub_date_card": {
                 "ru": "19 февраля",
@@ -183,7 +204,7 @@
             "url": "https://huggingface.co/papers/2602.17363",
             "abstract": "Researchers enhance linear attention by simplifying Mamba-2 and improving its architectural components to achieve near-softmax accuracy while maintaining memory efficiency for long sequences.  \t\t\t\t\tAI-generated summary \t\t\t\t Linear attention transformers have become a strong alternative to softmax attention due to their efficiency. However, linear attention tends to be less expressive and results in reduced accuracy compared to softmax attention. To bridge the accuracy gap between softmax attention and linear attention, we manipulate Mamba-2, a very strong linear attention variant. We first simplify Mamba-2 down to its most fundamental and important components, evaluating which specific choices make it most accurate. From this simplified Mamba variant (Mamba-2S), we improve the A-mask and increase the order of the hidden state, resulting in a method, which we call 2Mamba, that is nearly as accurate as softmax attention, yet much more memory efficient for long context lengths. We also investigate elements to Mamba-2 that help surpass softmax attention accuracy. Code is provided for all our experiments",
             "score": 0,
-            "issue_id": 1217,
+            "issue_id": 1218,
             "pub_date": "2026-02-19",
             "pub_date_card": {
                 "ru": "19 февраля",
@@ -204,7 +225,7 @@
             "url": "https://huggingface.co/papers/2602.16802",
             "abstract": "Reference-guided LLM-evaluators enhance LLM alignment by serving as soft verifiers, improving judge accuracy and enabling effective post-training in non-verifiable domains through self-improvement techniques.  \t\t\t\t\tAI-generated summary \t\t\t\t While Reinforcement Learning with Verifiable Rewards (RLVR) has shown strong effectiveness in reasoning tasks, it cannot be directly applied to non-verifiable domains lacking ground-truth verifiers, such as LLM alignment. In this work, we investigate whether reference-guided LLM-evaluators can bridge this gap by serving as soft \"verifiers\". First, we design evaluation protocols that enhance LLM-based evaluators for LLM alignment using reference outputs. Through comprehensive experiments, we show that a reference-guided approach substantially improves the accuracy of less capable LLM-judges using references from frontier models; stronger LLM-judges can also be enhanced by high-quality (i.e., human-written) references. Building on these improved judges, we demonstrate the utility of high-quality references in alignment tuning, where LLMs guided with references are used as judges to self-improve. We show that reference-guided self-improvement yields clear gains over both direct SFT on reference outputs and self-improvement with reference-free judges, achieving performance comparable to training with ArmoRM, a strong finetuned reward model. Specifically, our method achieves 73.1% and 58.7% on AlpacaEval and Arena-Hard with Llama-3-8B-Instruct, and 70.0% and 74.1% with Qwen2.5-7B, corresponding to average absolute gains of +20.2 / +17.1 points over SFT distillation and +5.3 / +3.6 points over reference-free self-improvement on AlpacaEval / Arena-Hard. These results highlight the potential of using reference-guided LLM-evaluators to enable effective LLM post-training in non-verifiable domains.",
             "score": 0,
-            "issue_id": 1217,
+            "issue_id": 1218,
             "pub_date": "2026-02-18",
             "pub_date_card": {
                 "ru": "18 февраля",
@@ -225,7 +246,7 @@
             "url": "https://huggingface.co/papers/2602.13579",
             "abstract": "TactAlign enables transfer of human tactile demonstrations to robots with different embodiments through cross-embodiment tactile alignment without requiring paired data or manual labels.  \t\t\t\t\tAI-generated summary \t\t\t\t Human demonstrations collected by wearable devices (e.g., tactile gloves) provide fast and dexterous supervision for policy learning, and are guided by rich, natural tactile feedback. However, a key challenge is how to transfer human-collected tactile signals to robots despite the differences in sensing modalities and embodiment. Existing human-to-robot (H2R) approaches that incorporate touch often assume identical tactile sensors, require paired data, and involve little to no embodiment gap between human demonstrator and the robots, limiting scalability and generality. We propose TactAlign, a cross-embodiment tactile alignment method that transfers human-collected tactile signals to a robot with different embodiment. TactAlign transforms human and robot tactile observations into a shared latent representation using a rectified flow, without paired datasets, manual labels, or privileged information. Our method enables low-cost latent transport guided by hand-object interaction-derived pseudo-pairs. We demonstrate that TactAlign improves H2R policy transfer across multiple contact-rich tasks (pivoting, insertion, lid closing), generalizes to unseen objects and tasks with human data (less than 5 minutes), and enables zero-shot H2R transfer on a highly dexterous tasks (light bulb screwing).",
             "score": 0,
-            "issue_id": 1217,
+            "issue_id": 1218,
             "pub_date": "2026-02-14",
             "pub_date_card": {
                 "ru": "14 февраля",
