@@ -4,9 +4,9 @@
         "en": "February 23",
         "zh": "2月23日"
     },
-    "time_utc": "2026-02-23 10:43",
+    "time_utc": "2026-02-23 11:35",
     "weekday": 0,
-    "issue_id": 1284,
+    "issue_id": 1285,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -15,7 +15,7 @@
             "url": "https://huggingface.co/papers/2602.10693",
             "abstract": "Abstract VESPO addresses training instability in LLM reinforcement learning by using variational formulation with variance reduction to correct policy divergence without length normalization.  \t\t\t\t\tAI-generated summary Training stability remains a central challenge in reinforcement learning (RL) for large language models (LLMs). Policy staleness, asynchronous training, and mismatches between training and inference engines all cause the behavior policy to diverge from the current policy, risking training collapse. Importance sampling provides a principled correction for this distribution shift but suffers from high variance; existing remedies such as token-level clipping and sequence-level normalization lack a unified theoretical foundation. We propose Variational sEquence-level Soft Policy Optimization (VESPO). By incorporating variance reduction into a variational formulation over proposal distributions, VESPO derives a closed-form reshaping kernel that operates directly on sequence-level importance weights without length normalization. Experiments on mathematical reasoning benchmarks show that VESPO maintains stable training under staleness ratios up to 64x and fully asynchronous execution, and delivers consistent gains across both dense and Mixture-of-Experts models. Code is available at https://github.com/FloyedShen/VESPO",
             "score": 152,
-            "issue_id": 1284,
+            "issue_id": 1285,
             "pub_date": "2026-02-11",
             "pub_date_card": {
                 "ru": "11 февраля",
@@ -35,8 +35,8 @@
             "title": "Does Your Reasoning Model Implicitly Know When to Stop Thinking?",
             "url": "https://huggingface.co/papers/2602.08354",
             "abstract": "Abstract Large reasoning models can implicitly determine optimal stopping points for thinking, which SAGE-RL enhances by incorporating efficient reasoning patterns into pass@1 inference for improved accuracy and efficiency.  \t\t\t\t\tAI-generated summary Recent advancements in large reasoning models (LRMs) have greatly improved their capabilities on complex reasoning tasks through Long Chains of Thought (CoTs). However, this approach often results in substantial redundancy, impairing computational efficiency and causing significant delays in real-time applications. Recent studies show that longer reasoning chains are frequently uncorrelated with correctness and can even be detrimental to accuracy. In a further in-depth analysis of this phenomenon, we surprisingly uncover and empirically verify that LRMs implicitly know the appropriate time to stop thinking, while this capability is obscured by current sampling paradigms. Motivated by this, we introduce SAGE (Self-Aware Guided Efficient Reasoning), a novel sampling paradigm that unleashes this efficient reasoning potential. Furthermore, integrating SAGE as mixed sampling into group-based reinforcement learning (SAGE-RL) enables SAGE-RL to effectively incorporate SAGE-discovered efficient reasoning patterns into standard pass@1 inference, markedly enhancing both the reasoning accuracy and efficiency of LRMs across multiple challenging mathematical benchmarks.",
-            "score": 64,
-            "issue_id": 1284,
+            "score": 68,
+            "issue_id": 1285,
             "pub_date": "2026-02-09",
             "pub_date_card": {
                 "ru": "9 февраля",
@@ -57,7 +57,7 @@
             "url": "https://huggingface.co/papers/2602.18422",
             "abstract": "Abstract A human-centric video world model conditioned on tracked head and hand poses is introduced, enabling dexterous interactions through a bidirectional video diffusion model trained for egocentric virtual environment generation.  \t\t\t\t\tAI-generated summary Extended reality (XR) demands generative models that respond to users' tracked real-world motion, yet current video world models accept only coarse control signals such as text or keyboard input, limiting their utility for embodied interaction. We introduce a human-centric video world model that is conditioned on both tracked head pose and joint-level hand poses. For this purpose, we evaluate existing diffusion transformer conditioning strategies and propose an effective mechanism for 3D head and hand control, enabling dexterous hand--object interactions. We train a bidirectional video diffusion model teacher using this strategy and distill it into a causal, interactive system that generates egocentric virtual environments. We evaluate this generated reality system with human subjects and demonstrate improved task performance as well as a significantly higher level of perceived amount of control over the performed actions compared with relevant baselines.",
             "score": 6,
-            "issue_id": 1284,
+            "issue_id": 1285,
             "pub_date": "2026-02-20",
             "pub_date_card": {
                 "ru": "20 февраля",
@@ -78,7 +78,7 @@
             "url": "https://huggingface.co/papers/2602.18071",
             "abstract": "Abstract EgoPush enables robot manipulation in cluttered environments through perception-driven policy learning that uses object-centric latent spaces and stage-decomposed rewards for long-horizon tasks.  \t\t\t\t\tAI-generated summary Humans can rearrange objects in cluttered environments using egocentric perception, navigating occlusions without global coordinates. Inspired by this capability, we study long-horizon multi-object non-prehensile rearrangement for mobile robots using a single egocentric camera. We introduce EgoPush, a policy learning framework that enables egocentric, perception-driven rearrangement without relying on explicit global state estimation that often fails in dynamic scenes. EgoPush designs an object-centric latent space to encode relative spatial relations among objects, rather than absolute poses. This design enables a privileged reinforcement-learning (RL) teacher to jointly learn latent states and mobile actions from sparse keypoints, which is then distilled into a purely visual student policy. To reduce the supervision gap between the omniscient teacher and the partially observed student, we restrict the teacher's observations to visually accessible cues. This induces active perception behaviors that are recoverable from the student's viewpoint. To address long-horizon credit assignment, we decompose rearrangement into stage-level subproblems using temporally decayed, stage-local completion rewards. Extensive simulation experiments demonstrate that EgoPush significantly outperforms end-to-end RL baselines in success rate, with ablation studies validating each design choice. We further demonstrate zero-shot sim-to-real transfer on a mobile platform in the real world. Code and videos are available at https://ai4ce.github.io/EgoPush/.",
             "score": 2,
-            "issue_id": 1284,
+            "issue_id": 1285,
             "pub_date": "2026-02-20",
             "pub_date_card": {
                 "ru": "20 февраля",
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2602.18432",
             "abstract": "Abstract A causal transformer-based variational autoencoder combined with flow matching enables real-time, spatially-aware conversational motion for embodied agents in virtual reality applications.  \t\t\t\t\tAI-generated summary As embodied agents become central to VR, telepresence, and digital human applications, their motion must go beyond speech-aligned gestures: agents should turn toward users, respond to their movement, and maintain natural gaze. Current methods lack this spatial awareness. We close this gap with the first real-time, fully causal method for spatially-aware conversational motion, deployable on a streaming VR headset. Given a user's position and dyadic audio, our approach produces full-body motion that aligns gestures with speech while orienting the agent according to the user. Our architecture combines a causal transformer-based VAE with interleaved latent tokens for streaming inference and a flow matching model conditioned on user trajectory and audio. To support varying gaze preferences, we introduce a gaze scoring mechanism with classifier-free guidance to decouple learning from control: the model captures natural spatial alignment from data, while users can adjust eye contact intensity at inference time. On the Embody 3D dataset, our method achieves state-of-the-art motion quality at over 300 FPS -- 3x faster than non-causal baselines -- while capturing the subtle spatial dynamics of natural conversation. We validate our approach on a live VR system, bringing spatially-aware conversational agents to real-time deployment. Please see https://evonneng.github.io/sarah/ for details.",
             "score": 1,
-            "issue_id": 1284,
+            "issue_id": 1285,
             "pub_date": "2026-02-20",
             "pub_date_card": {
                 "ru": "20 февраля",
@@ -120,7 +120,7 @@
             "url": "https://huggingface.co/papers/2602.17186",
             "abstract": "Abstract Visual Information Gain metric quantifies the contribution of visual input to prediction uncertainty, enabling selective training that improves visual grounding and reduces language bias in vision-language models.  \t\t\t\t\tAI-generated summary Large Vision Language Models (LVLMs) have achieved remarkable progress, yet they often suffer from language bias, producing answers without relying on visual evidence. While prior work attempts to mitigate this issue through decoding strategies, architectural modifications, or curated instruction data, they typically lack a quantitative measure of how much individual training samples or tokens actually benefit from the image. In this work, we introduce Visual Information Gain (VIG), a perplexity-based metric that measures the reduction in prediction uncertainty provided by visual input. VIG enables fine-grained analysis at both sample and token levels, effectively highlighting visually grounded elements such as colors, spatial relations, and attributes. Leveraging this, we propose a VIG-guided selective training scheme that prioritizes high-VIG samples and tokens. This approach improves visual grounding and mitigates language bias, achieving superior performance with significantly reduced supervision by focusing exclusively on visually informative samples and tokens.",
             "score": 1,
-            "issue_id": 1284,
+            "issue_id": 1285,
             "pub_date": "2026-02-19",
             "pub_date_card": {
                 "ru": "19 февраля",
@@ -141,7 +141,7 @@
             "url": "https://huggingface.co/papers/2602.16742",
             "abstract": "Abstract DeepVision-103K dataset enhances multimodal reasoning capabilities of large models through diverse mathematical content and visual elements.  \t\t\t\t\tAI-generated summary Reinforcement Learning with Verifiable Rewards (RLVR) has been shown effective in enhancing the visual reflection and reasoning capabilities of Large Multimodal Models (LMMs). However, existing datasets are predominantly derived from either small-scale manual construction or recombination of prior resources, which limits data diversity and coverage, thereby constraining further gains in model performance. To this end, we introduce DeepVision-103K, a comprehensive dataset for RLVR training that covers diverse K12 mathematical topics, extensive knowledge points, and rich visual elements. Models trained on DeepVision achieve strong performance on multimodal mathematical benchmarks, and generalize effectively to general multimodal reasoning tasks. Further analysis reveals enhanced visual perception, reflection and reasoning capabilities in trained models, validating DeepVision's effectiveness for advancing multimodal reasoning. Data: https://huggingface.co/datasets/skylenage/DeepVision-103K{this url}.",
             "score": 1,
-            "issue_id": 1284,
+            "issue_id": 1285,
             "pub_date": "2026-02-18",
             "pub_date_card": {
                 "ru": "18 февраля",
@@ -150,7 +150,7 @@
             },
             "hash": "23877a45dc3a3e08",
             "github_url": "https://github.com/SKYLENAGE-AI/DeepVision-103K",
-            "github_stars": 2,
+            "github_stars": 3,
             "pdf_title_img": "assets/pdf/title_img/2602.16742.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -162,7 +162,7 @@
             "url": "https://huggingface.co/papers/2602.18312",
             "abstract": "Abstract Reinforcement learning policies are improved by using action Jacobian penalty to eliminate unrealistic high-frequency signals, with a new Linear Policy Net architecture reducing computational overhead while enabling faster convergence and efficient inference for motion imitation tasks.  \t\t\t\t\tAI-generated summary Reinforcement learning provides a framework for learning control policies that can reproduce diverse motions for simulated characters. However, such policies often exploit unnatural high-frequency signals that are unachievable by humans or physical robots, making them poor representations of real-world behaviors. Existing work addresses this issue by adding a reward term that penalizes a large change in actions over time. This term often requires substantial tuning efforts. We propose to use the action Jacobian penalty, which penalizes changes in action with respect to the changes in simulated state directly through auto differentiation. This effectively eliminates unrealistic high-frequency control signals without task specific tuning. While effective, the action Jacobian penalty introduces significant computational overhead when used with traditional fully connected neural network architectures. To mitigate this, we introduce a new architecture called a Linear Policy Net (LPN) that significantly reduces the computational burden for calculating the action Jacobian penalty during training. In addition, a LPN requires no parameter tuning, exhibits faster learning convergence compared to baseline methods, and can be more efficiently queried during inference time compared to a fully connected neural network. We demonstrate that a Linear Policy Net, combined with the action Jacobian penalty, is able to learn policies that generate smooth signals while solving a number of motion imitation tasks with different characteristics, including dynamic motions such as a backflip and various challenging parkour skills. Finally, we apply this approach to create policies for dynamic motions on a physical quadrupedal robot equipped with an arm.",
             "score": 0,
-            "issue_id": 1284,
+            "issue_id": 1285,
             "pub_date": "2026-02-20",
             "pub_date_card": {
                 "ru": "20 февраля",
