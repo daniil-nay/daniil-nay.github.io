@@ -4,9 +4,9 @@
         "en": "March 9",
         "zh": "3月9日"
     },
-    "time_utc": "2026-03-09 21:26",
+    "time_utc": "2026-03-09 22:22",
     "weekday": 0,
-    "issue_id": 1583,
+    "issue_id": 1584,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -14,8 +14,8 @@
             "title": "Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders",
             "url": "https://huggingface.co/papers/2603.06569",
             "abstract": "Abstract Penguin-VL demonstrates that text-only initialized vision encoders can achieve superior performance in multimodal understanding tasks compared to traditional contrastive pretraining methods, enabling efficient deployment on resource-constrained devices.  \t\t\t\t\tAI-generated summary Vision Language Model (VLM) development has largely relied on scaling model size, which hinders deployment on compute-constrained mobile and edge devices such as smartphones and robots. In this work, we explore the performance limits of compact (e.g., 2B and 8B) VLMs. We challenge the prevailing practice that state-of-the-art VLMs must rely on vision encoders initialized via massive contrastive pretraining (e.g., CLIP/SigLIP). We identify an objective mismatch: contrastive learning, optimized for discrimination, enforces coarse and category-level invariances that suppress fine-grained visual cues needed for dense captioning and complex VLM reasoning. To address this issue, we present Penguin-VL, whose vision encoder is initialized from a text-only LLM. Our experiments reveal that Penguin-Encoder serves as a superior alternative to traditional contrastive pretraining, unlocking a higher degree of visual fidelity and data efficiency for multimodal understanding. Across various image and video benchmarks, Penguin-VL achieves performance comparable to leading VLMs (e.g., Qwen3-VL) in mathematical reasoning and surpasses them in tasks such as document understanding, visual knowledge, and multi-perspective video understanding. Notably, these gains are achieved with a lightweight architecture, demonstrating that improved visual representation rather than model scaling is the primary driver of performance. Our ablations show that Penguin-Encoder consistently outperforms contrastive-pretrained encoders, preserving fine-grained spatial and temporal cues that are critical for dense perception and complex reasoning. This makes it a strong drop-in alternative for compute-efficient VLMs and enables high performance in resource-constrained settings. Code: https://github.com/tencent-ailab/Penguin-VL",
-            "score": 71,
-            "issue_id": 1583,
+            "score": 72,
+            "issue_id": 1584,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -24,7 +24,7 @@
             },
             "hash": "c28d1c06c1cfff4d",
             "github_url": "https://github.com/tencent-ailab/Penguin-VL",
-            "github_stars": 68,
+            "github_stars": 70,
             "pdf_title_img": "assets/pdf/title_img/2603.06569.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -36,7 +36,7 @@
             "url": "https://huggingface.co/papers/2603.04918",
             "abstract": "Abstract Band-constrained Policy Optimization addresses stability issues in reinforcement learning for large language models by replacing fixed clipping with a dynamic probability-aware projection method that prevents entropy collapse.  \t\t\t\t\tAI-generated summary Proximal constraints are fundamental to the stability of the Large Language Model reinforcement learning. While the canonical clipping mechanism in PPO serves as an efficient surrogate for trust regions, we identify a critical bottleneck: fixed bounds strictly constrain the upward update margin of low-probability actions, disproportionately suppressing high-advantage tail strategies and inducing rapid entropy collapse. To address this, we introduce Band-constrained Policy Optimization (BandPO). BandPO replaces canonical clipping with Band, a unified theoretical operator that projects trust regions defined by f-divergences into dynamic, probability-aware clipping intervals. Theoretical analysis confirms that Band effectively resolves this exploration bottleneck. We formulate this mapping as a convex optimization problem, guaranteeing a globally optimal numerical solution while deriving closed-form solutions for specific divergences. Extensive experiments across diverse models and datasets demonstrate that BandPO consistently outperforms canonical clipping and Clip-Higher, while robustly mitigating entropy collapse.",
             "score": 50,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -57,7 +57,7 @@
             "url": "https://huggingface.co/papers/2603.05438",
             "abstract": "Abstract CompACT, a discrete tokenizer that reduces observation encoding from hundreds to 8 tokens, enables faster and more efficient world model planning for real-time control applications.  \t\t\t\t\tAI-generated summary World models provide a powerful framework for simulating environment dynamics conditioned on actions or instructions, enabling downstream tasks such as action planning or policy learning. Recent approaches leverage world models as learned simulators, but its application to decision-time planning remains computationally prohibitive for real-time control. A key bottleneck lies in latent representations: conventional tokenizers encode each observation into hundreds of tokens, making planning both slow and resource-intensive. To address this, we propose CompACT, a discrete tokenizer that compresses each observation into as few as 8 tokens, drastically reducing computational cost while preserving essential information for planning. An action-conditioned world model that occupies CompACT tokenizer achieves competitive planning performance with orders-of-magnitude faster planning, offering a practical step toward real-world deployment of world models.",
             "score": 22,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -78,7 +78,7 @@
             "url": "https://huggingface.co/papers/2603.00586",
             "abstract": "Abstract WildActor generates consistent human videos with full-body identity preservation across varying viewpoints and motions using a large-scale dataset and novel attention mechanisms.  \t\t\t\t\tAI-generated summary Production-ready human video generation requires digital actors to maintain strictly consistent full-body identities across dynamic shots, viewpoints and motions, a setting that remains challenging for existing methods. Prior methods often suffer from face-centric behavior that neglects body-level consistency, or produce copy-paste artifacts where subjects appear rigid due to pose locking. We present Actor-18M, a large-scale human video dataset designed to capture identity consistency under unconstrained viewpoints and environments. Actor-18M comprises 1.6M videos with 18M corresponding human images, covering both arbitrary views and canonical three-view representations. Leveraging Actor-18M, we propose WildActor, a framework for any-view conditioned human video generation. We introduce an Asymmetric Identity-Preserving Attention mechanism coupled with a Viewpoint-Adaptive Monte Carlo Sampling strategy that iteratively re-weights reference conditions by marginal utility for balanced manifold coverage. Evaluated on the proposed Actor-Bench, WildActor consistently preserves body identity under diverse shot compositions, large viewpoint transitions, and substantial motions, surpassing existing methods in these challenging settings.",
             "score": 16,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-02-28",
             "pub_date_card": {
                 "ru": "28 февраля",
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2603.05369",
             "abstract": "Abstract Progressive Residual Warmup (ProRes) improves transformer language model pretraining by implementing gradual layer activation that stabilizes training and accelerates convergence.  \t\t\t\t\tAI-generated summary Transformer architectures serve as the backbone for most modern Large Language Models, therefore their pretraining stability and convergence speed are of central concern. Motivated by the logical dependency of sequentially stacked layers, we propose Progressive Residual Warmup (ProRes) for language model pretraining. ProRes implements an \"early layer learns first\" philosophy by multiplying each layer's residual with a scalar that gradually warms up from 0 to 1, with deeper layers taking longer warmup steps. In this way, deeper layers wait for early layers to settle into a more stable regime before contributing to learning. We demonstrate the effectiveness of ProRes through pretraining experiments across various model scales, as well as normalization and initialization schemes. Comprehensive analysis shows that ProRes not only stabilizes pretraining but also introduces a unique optimization trajectory, leading to faster convergence, stronger generalization and better downstream performance. Our code is available at https://github.com/dandingsky/ProRes.",
             "score": 15,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -120,7 +120,7 @@
             "url": "https://huggingface.co/papers/2603.04639",
             "abstract": "Abstract RoboMME presents a large-scale standardized benchmark for evaluating vision-language-action models in long-horizon robotic manipulation tasks requiring memory mechanisms.  \t\t\t\t\tAI-generated summary Memory is critical for long-horizon and history-dependent robotic manipulation. Such tasks often involve counting repeated actions or manipulating objects that become temporarily occluded. Recent vision-language-action (VLA) models have begun to incorporate memory mechanisms; however, their evaluations remain confined to narrow, non-standardized settings. This limits their systematic understanding, comparison, and progress measurement. To address these challenges, we introduce RoboMME: a large-scale standardized benchmark for evaluating and advancing VLA models in long-horizon, history-dependent scenarios. Our benchmark comprises 16 manipulation tasks constructed under a carefully designed taxonomy that evaluates temporal, spatial, object, and procedural memory. We further develop a suite of 14 memory-augmented VLA variants built on the π0.5 backbone to systematically explore different memory representations across multiple integration strategies. Experimental results show that the effectiveness of memory representations is highly task-dependent, with each design offering distinct advantages and limitations across different tasks. Videos and code can be found at our website https://robomme.github.io.",
             "score": 15,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-04",
             "pub_date_card": {
                 "ru": "4 марта",
@@ -129,7 +129,7 @@
             },
             "hash": "f5bb438a5214a7ad",
             "github_url": "https://github.com/RoboMME/robomme_benchmark",
-            "github_stars": 12,
+            "github_stars": 13,
             "pdf_title_img": "assets/pdf/title_img/2603.04639.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -141,7 +141,7 @@
             "url": "https://huggingface.co/papers/2603.05706",
             "abstract": "Abstract Chain-of-thought controllability measures how effectively models can be constrained to follow reasoning steps, with findings showing significantly lower controllability in reasoning versus output generation, and varying impacts from model size, training methods, and task complexity.  \t\t\t\t\tAI-generated summary Chain-of-thought (CoT) monitoring is a promising tool for detecting misbehaviors and understanding the motivations of modern reasoning models. However, if models can control what they verbalize in their CoT, it could undermine CoT monitorability. To measure this undesirable capability -- CoT controllability -- we introduce the CoT-Control evaluation suite, which includes tasks that require models to solve problems while adhering to CoT instructions, e.g., reasoning about a genetics question without using the word 'chromosome'. We show that reasoning models possess significantly lower CoT controllability than output controllability; for instance, Claude Sonnet 4.5 can control its CoT only 2.7% of the time but 61.9% when controlling its final output. We also find that CoT controllability is higher for larger models and decreases with more RL training, test-time compute, and increased problem difficulty. CoT controllability failures extend even to situations in which models are given incentives (as opposed to direct requests) to evade CoT monitors, although models exhibit slightly higher controllability when they are told they are being monitored. Similarly, eliciting controllability by adversarially optimizing prompts does not meaningfully increase controllability. Our results leave us cautiously optimistic that CoT controllability is currently unlikely to be a failure mode of CoT monitorability. However, the mechanism behind low controllability is not well understood. Given its importance for maintaining CoT monitorability, we recommend that frontier labs track CoT controllability in future models.",
             "score": 13,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -162,7 +162,7 @@
             "url": "https://huggingface.co/papers/2603.06199",
             "abstract": "Abstract FlashPrefill enables ultra-fast prefilling for large language models by discovering dynamic sparse attention patterns and using dynamic thresholding to eliminate long-tail distributions, achieving significant speedups across various sequence lengths.  \t\t\t\t\tAI-generated summary Long-context modeling is a pivotal capability for Large Language Models, yet the quadratic complexity of attention remains a critical bottleneck, particularly during the compute-intensive prefilling phase. While various sparse attention mechanisms have been explored, they typically suffer from either significant search latency or insufficient sparsity. In this paper, we propose FlashPrefill, a framework enabling ultra-fast prefilling via instantaneous pattern discovery and thresholding. FlashPrefill leverages a fast block-searching technique to simultaneously locate dynamic vertical, slash, and block-sparse attention patterns. Crucially, it introduces a dynamic thresholding mechanism that bypasses the prohibitive overhead of sorting or accumulating attention scores while effectively eliminating the long-tail distribution to enhance sparsity. Extensive evaluations demonstrate that FlashPrefill achieves a substantial leap in efficiency, delivering an unprecedented 27.78x speedup on 256K sequences. Notably, unlike existing methods that incur efficiency degradation on shorter contexts, FlashPrefill maintains a 1.71x speedup even at a 4K context length, demonstrating its robustness and practical utility across varying sequence scales.",
             "score": 7,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -183,7 +183,7 @@
             "url": "https://huggingface.co/papers/2603.04750",
             "abstract": "Abstract A hierarchical multi-agent framework named HiMAP-Travel addresses long-horizon planning challenges in travel planning by decomposing tasks into strategic coordination and parallel execution, achieving superior performance over sequential and other multi-agent baselines.  \t\t\t\t\tAI-generated summary Sequential LLM agents fail on long-horizon planning with hard constraints like budgets and diversity requirements. As planning progresses and context grows, these agents drift from global constraints. We propose HiMAP-Travel, a hierarchical multi-agent framework that splits planning into strategic coordination and parallel day-level execution. A Coordinator allocates resources across days, while Day Executors plan independently in parallel. Three key mechanisms enable this: a transactional monitor enforcing budget and uniqueness constraints across parallel agents, a bargaining protocol allowing agents to reject infeasible sub-goals and trigger re-planning, and a single policy trained with GRPO that powers all agents through role conditioning. On TravelPlanner, HiMAP-Travel with Qwen3-8B achieves 52.78% validation and 52.65% test Final Pass Rate (FPR). In a controlled comparison with identical model, training, and tools, it outperforms the sequential DeepTravel baseline by +8.67~pp. It also surpasses ATLAS by +17.65~pp and MTP by +10.0~pp. On FlexTravelBench multi-turn scenarios, it achieves 44.34% (2-turn) and 37.42% (3-turn) FPR while reducing latency 2.5x through parallelization.",
             "score": 6,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -204,7 +204,7 @@
             "url": "https://huggingface.co/papers/2603.06351",
             "abstract": "Abstract Dynamic Chunking Diffusion Transformer adapts token sequence length based on image content and diffusion timestep, improving efficiency and performance over fixed-token approaches.  \t\t\t\t\tAI-generated summary Diffusion Transformers process images as fixed-length sequences of tokens produced by a static patchify operation. While effective, this design spends uniform compute on low- and high-information regions alike, ignoring that images contain regions of varying detail and that the denoising process progresses from coarse structure at early timesteps to fine detail at late timesteps. We introduce the Dynamic Chunking Diffusion Transformer (DC-DiT), which augments the DiT backbone with a learned encoder-router-decoder scaffold that adaptively compresses the 2D input into a shorter token sequence in a data-dependent manner using a chunking mechanism learned end-to-end with diffusion training. The mechanism learns to compress uniform background regions into fewer tokens and detail-rich regions into more tokens, with meaningful visual segmentations emerging without explicit supervision. Furthermore, it also learns to adapt its compression across diffusion timesteps, using fewer tokens at noisy stages and more tokens as fine details emerge. On class-conditional ImageNet 256{times}256, DC-DiT consistently improves FID and Inception Score over both parameter-matched and FLOP-matched DiT baselines across 4{times} and 16{times} compression, showing this is a promising technique with potential further applications to pixel-space, video and 3D generation. Beyond accuracy, DC-DiT is practical: it can be upcycled from pretrained DiT checkpoints with minimal post-training compute (up to 8{times} fewer training steps) and composes with other dynamic computation methods to further reduce generation FLOPs.",
             "score": 5,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -225,7 +225,7 @@
             "url": "https://huggingface.co/papers/2603.05181",
             "abstract": "Abstract Mario is a unified framework that enables large language model-based reasoning on multimodal graphs by addressing cross-modal consistency and heterogeneous modality preferences through graph-conditioned vision-language modeling and modality-adaptive instruction tuning.  \t\t\t\t\tAI-generated summary Recent advances in large language models (LLMs) have opened new avenues for multimodal reasoning. Yet, most existing methods still rely on pretrained vision-language models (VLMs) to encode image-text pairs in isolation, ignoring the relational structure that real-world multimodal data naturally form. This motivates reasoning on multimodal graphs (MMGs), where each node has textual and visual attributes and edges provide structural cues. Enabling LLM-based reasoning on such heterogeneous multimodal signals while preserving graph topology introduces two key challenges: resolving weak cross-modal consistency and handling heterogeneous modality preference. To address this, we propose Mario, a unified framework that simultaneously resolves the two above challenges and enables effective LLM-based reasoning over MMGs. Mario consists of two innovative stages. Firstly, a graph-conditioned VLM design that jointly refines textual and visual features through fine-grained cross-modal contrastive learning guided by graph topology. Secondly, a modality-adaptive graph instruction tuning mechanism that organizes aligned multimodal features into graph-aware instruction views and employs a learnable router to surface, for each node and its neighborhood, the most informative modality configuration to the LLM. Extensive experiments across diverse MMG benchmarks demonstrate that Mario consistently outperforms state-of-the-art graph models in both supervised and zero-shot scenarios for node classification and link prediction. The code will be made available at https://github.com/sunyuanfu/Mario.",
             "score": 4,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -246,7 +246,7 @@
             "url": "https://huggingface.co/papers/2603.02083",
             "abstract": "Abstract Step-wise negative-aware fine-tuning enables efficient reinforcement learning for vision-language-action models by eliminating likelihood computation and auxiliary networks while improving generalization in complex environments.  \t\t\t\t\tAI-generated summary Flow-based vision-language-action (VLA) models excel in embodied control but suffer from intractable likelihoods during multi-step sampling, hindering online reinforcement learning. We propose \\textit{boldsymbolπ-StepNFT} (Step-wise Negative-aware Fine-Tuning), a critic-and-likelihood-free framework that requires only a single forward pass per optimization step and eliminates auxiliary value networks. We identify that wider exploration spaces necessitate finer-grained, step-wise guidance for alignment. Empirically, π-StepNFT unlocks latent potential on LIBERO with competitive few-shot robustness. Moreover, it achieves superior generalization on ManiSkill, outperforming value-based baselines in OOD scenarios by preventing overfitting to multimodal features. This property offers a scalable solution promising for complex real-world applications.",
             "score": 4,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-02",
             "pub_date_card": {
                 "ru": "2 марта",
@@ -267,7 +267,7 @@
             "url": "https://huggingface.co/papers/2603.06014",
             "abstract": "Abstract EffectMaker is a unified framework for reference-based VFX customization that uses a multimodal language model and diffusion transformer to generate high-quality, consistent effects without per-effect fine-tuning, supported by a large synthetic dataset.  \t\t\t\t\tAI-generated summary Visual effects (VFX) are essential for enhancing the expressiveness and creativity of video content, yet producing high-quality effects typically requires expert knowledge and costly production pipelines. Existing AIGC systems face significant challenges in VFX generation due to the scarcity of effect-specific data and the inherent difficulty of modeling supernatural or stylized effects. Moreover, these approaches often require per-effect fine-tuning, which severely limits their scalability and generalization to novel VFX. In this work, we present EffectMaker, a unified reasoning-generation framework that enables reference-based VFX customization. EffectMaker employs a multimodal large language model to interpret high-level effect semantics and reason about how they should adapt to a target subject, while a diffusion transformer leverages in-context learning to capture fine-grained visual cues from reference videos. These two components form a semantic-visual dual-path guidance mechanism that enables accurate, controllable, and effect-consistent synthesis without per-effect fine-tuning. Furthermore, we construct EffectData, the largest high-quality synthetic dataset containing 130k videos across 3k VFX categories, to improve generalization and scalability. Experiments show that EffectMaker achieves superior visual quality and effect consistency over state-of-the-art baselines, offering a scalable and flexible paradigm for customized VFX generation. Project page: https://effectmaker.github.io",
             "score": 3,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -288,7 +288,7 @@
             "url": "https://huggingface.co/papers/2603.06408",
             "abstract": "Abstract PSIVG integrates a physical simulator into video diffusion processes to generate physically consistent videos while maintaining visual quality and diversity.  \t\t\t\t\tAI-generated summary Recent advances in diffusion-based video generation have achieved remarkable visual realism but still struggle to obey basic physical laws such as gravity, inertia, and collision. Generated objects often move inconsistently across frames, exhibit implausible dynamics, or violate physical constraints, limiting the realism and reliability of AI-generated videos. We address this gap by introducing Physical Simulator In-the-loop Video Generation (PSIVG), a novel framework that integrates a physical simulator into the video diffusion process. Starting from a template video generated by a pre-trained diffusion model, PSIVG reconstructs the 4D scene and foreground object meshes, initializes them within a physical simulator, and generates physically consistent trajectories. These simulated trajectories are then used to guide the video generator toward spatio-temporally physically coherent motion. To further improve texture consistency during object movement, we propose a Test-Time Texture Consistency Optimization (TTCO) technique that adapts text and feature embeddings based on pixel correspondences from the simulator. Comprehensive experiments demonstrate that PSIVG produces videos that better adhere to real-world physics while preserving visual quality and diversity. Project Page: https://vcai.mpi-inf.mpg.de/projects/PSIVG/",
             "score": 2,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -309,7 +309,7 @@
             "url": "https://huggingface.co/papers/2603.06331",
             "abstract": "Abstract WorldCache is a caching framework for diffusion-based world models that accelerates inference through curvature-guided prediction and chaotic-prioritized skipping while maintaining high rollout quality.  \t\t\t\t\tAI-generated summary Diffusion-based world models have shown strong potential for unified world simulation, but the iterative denoising remains too costly for interactive use and long-horizon rollouts. While feature caching can accelerate inference without training, we find that policies designed for single-modal diffusion transfer poorly to world models due to two world-model-specific obstacles: token heterogeneity from multi-modal coupling and spatial variation, and non-uniform temporal dynamics where a small set of hard tokens drives error growth, making uniform skipping either unstable or overly conservative. We propose WorldCache, a caching framework tailored to diffusion world models. We introduce Curvature-guided Heterogeneous Token Prediction, which uses a physics-grounded curvature score to estimate token predictability and applies a Hermite-guided damped predictor for chaotic tokens with abrupt direction changes. We also design Chaotic-prioritized Adaptive Skipping, which accumulates a curvature-normalized, dimensionless drift signal and recomputes only when bottleneck tokens begin to drift. Experiments on diffusion world models show that WorldCache delivers up to 3.7times end-to-end speedups while maintaining 98\\% rollout quality, demonstrating the vast advantages and practicality of WorldCache in resource-constrained scenarios. Our code is released in https://github.com/FofGofx/WorldCache.",
             "score": 2,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -330,7 +330,7 @@
             "url": "https://huggingface.co/papers/2603.04370",
             "abstract": "Abstract τ-Knowledge extends τ-Bench to evaluate conversational agents in fintech customer support, requiring integration of external knowledge with tool outputs for verifiable state changes.  \t\t\t\t\tAI-generated summary Conversational agents are increasingly deployed in knowledge-intensive settings, where correct behavior depends on retrieving and applying domain-specific knowledge from large, proprietary, and unstructured corpora during live interactions with users. Yet most existing benchmarks evaluate retrieval or tool use independently of each other, creating a gap in realistic, fully agentic evaluation over unstructured data in long-horizon interactions. We introduce τ-Knowledge, an extension of τ-Bench for evaluating agents in environments where success depends on coordinating external, natural-language knowledge with tool outputs to produce verifiable, policy-compliant state changes. Our new domain, τ-Banking, models realistic fintech customer support workflows in which agents must navigate roughly 700 interconnected knowledge documents while executing tool-mediated account updates. Across embedding-based retrieval and terminal-based search, even frontier models with high reasoning budgets achieve only sim25.5% pass^1, with reliability degrading sharply over repeated trials. Agents struggle to retrieve the correct documents from densely interlinked knowledge bases and to reason accurately over complex internal policies. Overall, τ-Knowledge provides a realistic testbed for developing agents that integrate unstructured knowledge in human-facing deployments.",
             "score": 2,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-04",
             "pub_date_card": {
                 "ru": "4 марта",
@@ -351,7 +351,7 @@
             "url": "https://huggingface.co/papers/2602.22839",
             "abstract": "Abstract DeepPresenter is an agentic framework for presentation generation that adaptively plans and refines slide artifacts through environment-grounded reflection, achieving state-of-the-art performance with reduced computational costs.  \t\t\t\t\tAI-generated summary Presentation generation requires deep content research, coherent visual design, and iterative refinement based on observation. However, existing presentation agents often rely on predefined workflows and fixed templates. To address this, we present DeepPresenter, an agentic framework that adapts to diverse user intents, enables effective feedback-driven refinement, and generalizes beyond a scripted pipeline. Specifically, DeepPresenter autonomously plans, renders, and revises intermediate slide artifacts to support long-horizon refinement with environmental observations. Furthermore, rather than relying on self-reflection over internal signals (e.g., reasoning traces), our environment-grounded reflection conditions the generation process on perceptual artifact states (e.g., rendered slides), enabling the system to identify and correct presentation-specific issues during execution. Results on the evaluation set covering diverse presentation-generation scenarios show that DeepPresenter achieves state-of-the-art performance, and the fine-tuned 9B model remains highly competitive at substantially lower cost. Our project is available at: https://github.com/icip-cas/PPTAgent",
             "score": 2,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-02-26",
             "pub_date_card": {
                 "ru": "26 февраля",
@@ -372,7 +372,7 @@
             "url": "https://huggingface.co/papers/2603.04445",
             "abstract": "Abstract Dynamic routing systems for large language models adaptively select among multiple independently trained models based on query characteristics, requiring careful balance of competing objectives and operational constraints.  \t\t\t\t\tAI-generated summary The rapid growth of large language models (LLMs) with diverse capabilities, costs, and domains has created a critical need for intelligent model selection at inference time. While smaller models suffice for routine queries, complex tasks demand more capable models. However, static model deployment does not account for the complexity and domain of incoming queries, leading to suboptimal performance and increased costs. Dynamic routing systems that adaptively select models based on query characteristics have emerged as a solution to this challenge.   We provide a systematic analysis of state-of-the-art multi-LLM routing and cascading approaches. In contrast to mixture-of-experts architectures, which route within a single model, we study routing across multiple independently trained LLMs. We cover diverse routing paradigms, including query difficulty, human preferences, clustering, uncertainty quantification, reinforcement learning, multimodality, and cascading. For each paradigm, we analyze representative methods and examine key trade-offs. Beyond taxonomy, we introduce a conceptual framework that characterizes routing systems along three dimensions: when decisions are made, what information is used, and how they are computed. This perspective highlights that practical systems are often compositional, integrating multiple paradigms under operational constraints.   Our analysis demonstrates that effective multi-LLM routing requires balancing competing objectives. Choosing the optimal routing strategy depends on deployment and computational constraints. Well-designed routing systems can outperform even the most powerful individual models by strategically leveraging specialized capabilities across models while maximizing efficiency gains. Meanwhile, open challenges remain in developing routing mechanisms that generalize across diverse architectures, modalities, and applications.",
             "score": 2,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-02-23",
             "pub_date_card": {
                 "ru": "23 февраля",
@@ -393,7 +393,7 @@
             "url": "https://huggingface.co/papers/2603.05940",
             "abstract": "Abstract A spherical layer-wise expert routing framework with contrastive learning and granularity fusion enables effective image restoration across diverse degradation types.  \t\t\t\t\tAI-generated summary Image restoration under diverse degradations remains challenging for unified all-in-one frameworks due to feature interference and insufficient expert specialization. We propose SLER-IR, a spherical layer-wise expert routing framework that dynamically activates specialized experts across network layers. To ensure reliable routing, we introduce a Spherical Uniform Degradation Embedding with contrastive learning, which maps degradation representations onto a hypersphere to eliminate geometry bias in linear embedding spaces. In addition, a Global-Local Granularity Fusion (GLGF) module integrates global semantics and local degradation cues to address spatially non-uniform degradations and the train-test granularity gap. Experiments on three-task and five-task benchmarks demonstrate that SLER-IR achieves consistent improvements over state-of-the-art methods in both PSNR and SSIM. Code and models will be publicly released.",
             "score": 1,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -414,7 +414,7 @@
             "url": "https://huggingface.co/papers/2603.05888",
             "abstract": "Abstract PixARMesh enables end-to-end 3D indoor scene mesh reconstruction from single RGB images using a unified model with cross-attention and autoregressive token generation.  \t\t\t\t\tAI-generated summary We introduce PixARMesh, a method to autoregressively reconstruct complete 3D indoor scene meshes directly from a single RGB image. Unlike prior methods that rely on implicit signed distance fields and post-hoc layout optimization, PixARMesh jointly predicts object layout and geometry within a unified model, producing coherent and artist-ready meshes in a single forward pass. Building on recent advances in mesh generative models, we augment a point-cloud encoder with pixel-aligned image features and global scene context via cross-attention, enabling accurate spatial reasoning from a single image. Scenes are generated autoregressively from a unified token stream containing context, pose, and mesh, yielding compact meshes with high-fidelity geometry. Experiments on synthetic and real-world datasets show that PixARMesh achieves state-of-the-art reconstruction quality while producing lightweight, high-quality meshes ready for downstream applications.",
             "score": 1,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -435,7 +435,7 @@
             "url": "https://huggingface.co/papers/2603.05607",
             "abstract": "Abstract DreamCAD is a multi-modal generative framework that creates editable BReps from point-level supervision using parametric patches and differentiable tessellation, achieving superior geometric fidelity and user preference scores.  \t\t\t\t\tAI-generated summary Computer-Aided Design (CAD) relies on structured and editable geometric representations, yet existing generative methods are constrained by small annotated datasets with explicit design histories or boundary representation (BRep) labels. Meanwhile, millions of unannotated 3D meshes remain untapped, limiting progress in scalable CAD generation. To address this, we propose DreamCAD, a multi-modal generative framework that directly produces editable BReps from point-level supervision, without CAD-specific annotations. DreamCAD represents each BRep as a set of parametric patches (e.g., Bézier surfaces) and uses a differentiable tessellation method to generate meshes. This enables large-scale training on 3D datasets while reconstructing connected and editable surfaces. Furthermore, we introduce CADCap-1M, the largest CAD captioning dataset to date, with 1M+ descriptions generated using GPT-5 for advancing text-to-CAD research. DreamCAD achieves state-of-the-art performance on ABC and Objaverse benchmarks across text, image, and point modalities, improving geometric fidelity and surpassing 75% user preference. Code and dataset will be publicly available.",
             "score": 1,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -456,7 +456,7 @@
             "url": "https://huggingface.co/papers/2603.04738",
             "abstract": "Abstract A comprehensive meta-evaluation benchmark for instruction-following is introduced, featuring a preference graph approach that enables listwise evaluation of judge models' ability to rank multiple responses, revealing deficiencies in current judge models and demonstrating stronger correlation with downstream task performance.  \t\t\t\t\tAI-generated summary Instruction-following is a foundational capability of large language models (LLMs), with its improvement hinging on scalable and accurate feedback from judge models. However, the reliability of current judge models in instruction-following remains underexplored due to several deficiencies of existing meta-evaluation benchmarks, such as their insufficient data coverage and oversimplified pairwise evaluation paradigms that misalign with model optimization scenarios. To this end, we propose IF-RewardBench, a comprehensive meta-evaluation benchmark for instruction-following that covers diverse instruction and constraint types. For each instruction, we construct a preference graph containing all pairwise preferences among multiple responses based on instruction-following quality. This design enables a listwise evaluation paradigm that assesses the capabilities of judge models to rank multiple responses, which is essential in guiding model alignment. Extensive experiments on IF-RewardBench reveal significant deficiencies in current judge models and demonstrate that our benchmark achieves a stronger positive correlation with downstream task performance compared to existing benchmarks. Our codes and data are available at https://github.com/thu-coai/IF-RewardBench.",
             "score": 1,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -477,7 +477,7 @@
             "url": "https://huggingface.co/papers/2603.01666",
             "abstract": "Abstract ColParse introduces a document parsing approach that generates layout-informed sub-image embeddings to create compact, structurally-aware representations for visual document retrieval, achieving over 95% storage reduction while maintaining performance.  \t\t\t\t\tAI-generated summary Harnessing the full potential of visually-rich documents requires retrieval systems that understand not just text, but intricate layouts, a core challenge in Visual Document Retrieval (VDR). The prevailing multi-vector architectures, while powerful, face a crucial storage bottleneck that current optimization strategies, such as embedding merging, pruning, or using abstract tokens, fail to resolve without compromising performance or ignoring vital layout cues. To address this, we introduce ColParse, a novel paradigm that leverages a document parsing model to generate a small set of layout-informed sub-image embeddings, which are then fused with a global page-level vector to create a compact and structurally-aware multi-vector representation. Extensive experiments demonstrate that our method reduces storage requirements by over 95% while simultaneously yielding significant performance gains across numerous benchmarks and base models. ColParse thus bridges the critical gap between the fine-grained accuracy of multi-vector retrieval and the practical demands of large-scale deployment, offering a new path towards efficient and interpretable multimodal information systems.",
             "score": 1,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-02",
             "pub_date_card": {
                 "ru": "2 марта",
@@ -498,7 +498,7 @@
             "url": "https://huggingface.co/papers/2603.01193",
             "abstract": "Abstract Neural PDE solvers trained with Monte Carlo-based weak supervision achieve improved accuracy, faster training, and reduced memory usage compared to traditional physics-informed methods.  \t\t\t\t\tAI-generated summary Training neural PDE solvers is often bottlenecked by expensive data generation or unstable physics-informed neural network (PINN) involving challenging optimization landscapes due to higher-order derivatives. To tackle this issue, we propose an alternative approach using Monte Carlo approaches to estimate the solution to the PDE as a stochastic process for weak supervision during training. Leveraging the Walk-on-Spheres method, we introduce a learning scheme called Walk-on-Spheres Neural Operator (WoS-NO) which uses weak supervision from WoS to train any given neural operator. We propose to amortize the cost of Monte Carlo walks across the distribution of PDE instances using stochastic representations from the WoS algorithm to generate cheap, noisy, estimates of the PDE solution during training. This is formulated into a data-free physics-informed objective where a neural operator is trained to regress against these weak supervisions, allowing the operator to learn a generalized solution map for an entire family of PDEs. This strategy does not require expensive pre-computed datasets, avoids computing higher-order derivatives for loss functions that are memory-intensive and unstable, and demonstrates zero-shot generalization to novel PDE parameters and domains. Experiments show that for the same number of training steps, our method exhibits up to 8.75times improvement in L_2-error compared to standard physics-informed training schemes, up to 6.31times improvement in training speed, and reductions of up to 2.97times in GPU memory consumption. We present the code at https://github.com/neuraloperator/WoS-NO",
             "score": 1,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-01",
             "pub_date_card": {
                 "ru": "1 марта",
@@ -519,7 +519,7 @@
             "url": "https://huggingface.co/papers/2603.05630",
             "abstract": "Abstract A new metric called interpolated FID is proposed that shows strong correlation with generation FID in diffusion models, addressing the poor correlation issue between reconstruction FID and generation FID.  \t\t\t\t\tAI-generated summary It is well known that the reconstruction FID (rFID) of a VAE is poorly correlated with the generation FID (gFID) of a latent diffusion model. We propose interpolated FID (iFID), a simple variant of rFID that exhibits a strong correlation with gFID. Specifically, for each element in the dataset, we retrieve its nearest neighbor (NN) in the latent space and interpolate their latent representations. We then decode the interpolated latent and compute the FID between the decoded samples and the original dataset. Additionally, we refine the claim that rFID correlates poorly with gFID, by showing that rFID correlates with sample quality in the diffusion refinement phase, whereas iFID correlates with sample quality in the diffusion navigation phase. Furthermore, we provide an explanation for why iFID correlates well with gFID, and why reconstruction metrics are negatively correlated with gFID, by connecting to results in the diffusion generalization and hallucination. Empirically, iFID is the first metric to demonstrate a strong correlation with diffusion gFID, achieving Pearson linear and Spearman rank correlations approximately 0.85. The source code is provided in https://github.com/tongdaxu/Making-rFID-Predictive-of-Diffusion-gFID.",
             "score": 0,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -540,7 +540,7 @@
             "url": "https://huggingface.co/papers/2603.05494",
             "abstract": "Abstract Researchers examine dishonest responses in Chinese-developed large language models trained to censor sensitive topics, evaluating honesty elicitation and lie detection methods that show promise but do not fully eliminate false outputs.  \t\t\t\t\tAI-generated summary Large language models sometimes produce false or misleading responses. Two approaches to this problem are honesty elicitation -- modifying prompts or weights so that the model answers truthfully -- and lie detection -- classifying whether a given response is false. Prior work evaluates such methods on models specifically trained to lie or conceal information, but these artificial constructions may not resemble naturally-occurring dishonesty. We instead study open-weights LLMs from Chinese developers, which are trained to censor politically sensitive topics: Qwen3 models frequently produce falsehoods about subjects like Falun Gong or the Tiananmen protests while occasionally answering correctly, indicating they possess knowledge they are trained to suppress. Using this as a testbed, we evaluate a suite of elicitation and lie detection techniques. For honesty elicitation, sampling without a chat template, few-shot prompting, and fine-tuning on generic honesty data most reliably increase truthful responses. For lie detection, prompting the censored model to classify its own responses performs near an uncensored-model upper bound, and linear probes trained on unrelated data offer a cheaper alternative. The strongest honesty elicitation techniques also transfer to frontier open-weights models including DeepSeek R1. Notably, no technique fully eliminates false responses. We release all prompts, code, and transcripts.",
             "score": 0,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -561,7 +561,7 @@
             "url": "https://huggingface.co/papers/2603.05280",
             "abstract": "Abstract Intermediate layers in vision transformers provide better representations than final layers, with performance degradation due to distribution shifts between pretraining and downstream data, and optimal probing strategies depend on the magnitude of these shifts.  \t\t\t\t\tAI-generated summary Recent studies have observed that intermediate layers of foundation models often yield more discriminative representations than the final layer. While initially attributed to autoregressive pretraining, this phenomenon has also been identified in models trained via supervised and discriminative self-supervised objectives. In this paper, we conduct a comprehensive study to analyze the behavior of intermediate layers in pretrained vision transformers. Through extensive linear probing experiments across a diverse set of image classification benchmarks, we find that distribution shift between pretraining and downstream data is the primary cause of performance degradation in deeper layers. Furthermore, we perform a fine-grained analysis at the module level. Our findings reveal that standard probing of transformer block outputs is suboptimal; instead, probing the activation within the feedforward network yields the best performance under significant distribution shift, whereas the normalized output of the multi-head self-attention module is optimal when the shift is weak.",
             "score": 0,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -582,7 +582,7 @@
             "url": "https://huggingface.co/papers/2602.23280",
             "abstract": "Abstract Physics-informed regularization based on Hamilton-Jacobi-Bellman equation with viscosity solution improves value estimation in offline goal-conditioned reinforcement learning through Monte Carlo estimation.  \t\t\t\t\tAI-generated summary Offline goal-conditioned reinforcement learning (GCRL) learns goal-conditioned policies from static pre-collected datasets. However, accurate value estimation remains a challenge due to the limited coverage of the state-action space. Recent physics-informed approaches have sought to address this by imposing physical and geometric constraints on the value function through regularization defined over first-order partial differential equations (PDEs), such as the Eikonal equation. However, these formulations can often be ill-posed in complex, high-dimensional environments. In this work, we propose a physics-informed regularization derived from the viscosity solution of the Hamilton-Jacobi-Bellman (HJB) equation. By providing a physics-based inductive bias, our approach grounds the learning process in optimal control theory, explicitly regularizing and bounding updates during value iterations. Furthermore, we leverage the Feynman-Kac theorem to recast the PDE solution as an expectation, enabling a tractable Monte Carlo estimation of the objective that avoids numerical instability in higher-order gradients. Experiments demonstrate that our method improves geometric consistency, making it broadly applicable to navigation and high-dimensional, complex manipulation tasks. Open-source codes are available at https://github.com/HrishikeshVish/phys-fk-value-GCRL.",
             "score": 0,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-02-26",
             "pub_date_card": {
                 "ru": "26 февраля",
@@ -603,7 +603,7 @@
             "url": "https://huggingface.co/papers/2602.23408",
             "abstract": "Abstract Large-scale empirical study demonstrates that action space design significantly impacts robotic policy learning, with delta action prediction improving performance and joint-space/task-space representations offering distinct advantages for control stability and generalization.  \t\t\t\t\tAI-generated summary The specification of the action space plays a pivotal role in imitation-based robotic manipulation policy learning, fundamentally shaping the optimization landscape of policy learning. While recent advances have focused heavily on scaling training data and model capacity, the choice of action space remains guided by ad-hoc heuristics or legacy designs, leading to an ambiguous understanding of robotic policy design philosophies. To address this ambiguity, we conducted a large-scale and systematic empirical study, confirming that the action space does have significant and complex impacts on robotic policy learning. We dissect the action design space along temporal and spatial axes, facilitating a structured analysis of how these choices govern both policy learnability and control stability. Based on 13,000+ real-world rollouts on a bimanual robot and evaluation on 500+ trained models over four scenarios, we examine the trade-offs between absolute vs. delta representations, and joint-space vs. task-space parameterizations. Our large-scale results suggest that properly designing the policy to predict delta actions consistently improves performance, while joint-space and task-space representations offer complementary strengths, favoring control stability and generalization, respectively.",
             "score": 0,
-            "issue_id": 1583,
+            "issue_id": 1584,
             "pub_date": "2026-02-26",
             "pub_date_card": {
                 "ru": "26 февраля",
