@@ -4,9 +4,9 @@
         "en": "March 11",
         "zh": "3月11日"
     },
-    "time_utc": "2026-03-11 04:04",
+    "time_utc": "2026-03-11 05:43",
     "weekday": 2,
-    "issue_id": 1608,
+    "issue_id": 1609,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -14,8 +14,8 @@
             "title": "Omni-Diffusion: Unified Multimodal Understanding and Generation with Masked Discrete Diffusion",
             "url": "https://huggingface.co/papers/2603.06577",
             "abstract": "Abstract Omni-Diffusion introduces the first any-to-any multimodal language model based on mask-based discrete diffusion models, unifying text, speech, and image processing in a single framework.  \t\t\t\t\tAI-generated summary While recent multimodal large language models (MLLMs) have made impressive strides, they predominantly employ a conventional autoregressive architecture as their backbone, leaving significant room to explore effective and efficient alternatives in architectural design. Concurrently, recent studies have successfully applied discrete diffusion models to various domains, such as visual understanding and image generation, revealing their considerable potential as a promising backbone for multimodal systems. Drawing inspiration from these pioneering research, we introduce Omni-Diffusion, the first any-to-any multimodal language model built entirely on mask-based discrete diffusion models, which unifies understanding and generation across text, speech, and images. Omni-Diffusion employs a unified mask-based discrete diffusion model to directly capture the joint distribution over discrete multimodal tokens. This approach supports not only bimodal tasks but also more complex scenarios involving multiple modalities. On a diverse set of benchmarks, our method outperforms or performs on par with existing multimodal systems that process two or more modalities, highlighting the significant promise of diffusion models in powering the next generation of multimodal foundation models. Project webpage: https://omni-diffusion.github.io.",
-            "score": 28,
-            "issue_id": 1608,
+            "score": 30,
+            "issue_id": 1609,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -24,7 +24,7 @@
             },
             "hash": "a5997a015b5985a4",
             "github_url": "https://github.com/VITA-MLLM/Omni-Diffusion",
-            "github_stars": 43,
+            "github_stars": 48,
             "pdf_title_img": "assets/pdf/title_img/2603.06577.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -35,8 +35,8 @@
             "title": "MM-Zero: Self-Evolving Multi-Model Vision Language Models From Zero Data",
             "url": "https://huggingface.co/papers/2603.09206",
             "abstract": "Abstract MM-Zero enables zero-data self-evolution of vision-language models through a multi-role framework with proposer, coder, and solver components trained via group relative policy optimization.  \t\t\t\t\tAI-generated summary Self-evolving has emerged as a key paradigm for improving foundational models such as Large Language Models (LLMs) and Vision Language Models (VLMs) with minimal human intervention. While recent approaches have demonstrated that LLM agents can self-evolve from scratch with little to no data, VLMs introduce an additional visual modality that typically requires at least some seed data, such as images, to bootstrap the self-evolution process. In this work, we present Multi-model Multimodal Zero (MM-Zero), the first RL-based framework to achieve zero-data self-evolution for VLM reasoning. Moving beyond prior dual-role (Proposer and Solver) setups, MM-Zero introduces a multi-role self-evolving training framework comprising three specialized roles: a Proposer that generates abstract visual concepts and formulates questions; a Coder that translates these concepts into executable code (e.g., Python, SVG) to render visual images; and a Solver that performs multimodal reasoning over the generated visual content. All three roles are initialized from the same base model and trained using Group Relative Policy Optimization (GRPO), with carefully designed reward mechanisms that integrate execution feedback, visual verification, and difficulty balancing. Our experiments show that MM-Zero improves VLM reasoning performance across a wide range of multimodal benchmarks. MM-Zero establishes a scalable path toward self-evolving multi-model systems for multimodal models, extending the frontier of self-improvement beyond the conventional two-model paradigm.",
-            "score": 21,
-            "issue_id": 1608,
+            "score": 22,
+            "issue_id": 1609,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -45,8 +45,29 @@
             },
             "hash": "5f3852cacf784621",
             "github_url": "https://github.com/zli12321/MM-Zero",
-            "github_stars": 15,
+            "github_stars": 17,
             "pdf_title_img": "assets/pdf/title_img/2603.09206.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.03143",
+            "title": "Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing",
+            "url": "https://huggingface.co/papers/2603.03143",
+            "abstract": "Abstract RL3DEdit uses reinforcement learning with rewards from a 3D foundation model to achieve multi-view consistent 3D editing from 2D editing priors.  \t\t\t\t\tAI-generated summary Leveraging the priors of 2D diffusion models for 3D editing has emerged as a promising paradigm. However, maintaining multi-view consistency in edited results remains challenging, and the extreme scarcity of 3D-consistent editing paired data renders supervised fine-tuning (SFT), the most effective training strategy for editing tasks, infeasible. In this paper, we observe that, while generating multi-view consistent 3D content is highly challenging, verifying 3D consistency is tractable, naturally positioning reinforcement learning (RL) as a feasible solution. Motivated by this, we propose RL3DEdit, a single-pass framework driven by RL optimization with novel rewards derived from the 3D foundation model, VGGT. Specifically, we leverage VGGT's robust priors learned from massive real-world data, feed the edited images, and utilize the output confidence maps and pose estimation errors as reward signals, effectively anchoring the 2D editing priors onto a 3D-consistent manifold via RL. Extensive experiments demonstrate that RL3DEdit achieves stable multi-view consistency and outperforms state-of-the-art methods in editing quality with high efficiency. To promote the development of 3D editing, we will release the code and model.",
+            "score": 20,
+            "issue_id": 1609,
+            "pub_date": "2026-03-03",
+            "pub_date_card": {
+                "ru": "3 марта",
+                "en": "March 3",
+                "zh": "3月3日"
+            },
+            "hash": "4bb68e8febe20584",
+            "github_url": "https://github.com/AMAP-ML/RL3DEdit",
+            "github_stars": 1,
+            "pdf_title_img": "assets/pdf/title_img/2603.03143.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -56,8 +77,8 @@
             "title": "Reading, Not Thinking: Understanding and Bridging the Modality Gap When Text Becomes Pixels in Multimodal LLMs",
             "url": "https://huggingface.co/papers/2603.09095",
             "abstract": "Abstract Multimodal large language models exhibit inconsistent performance when processing text from images versus textual tokens, with factors like rendering quality and task type influencing this modality gap, which can be mitigated through self-distillation techniques that leverage text-based reasoning traces.  \t\t\t\t\tAI-generated summary Multimodal large language models (MLLMs) can process text presented as images, yet they often perform worse than when the same content is provided as textual tokens. We systematically diagnose this \"modality gap\" by evaluating seven MLLMs across seven benchmarks in five input modes, spanning both synthetically rendered text and realistic document images from arXiv PDFs to Wikipedia pages. We find that the modality gap is task- and data-dependent. For example, math tasks degrade by over 60 points on synthetic renderings, while natural document images often match or exceed text-mode performance. Rendering choices such as font and resolution are strong confounds, with font alone swinging accuracy by up to 47 percentage points. To understand this, we conduct a grounded-theory error analysis of over 4,000 examples, revealing that image mode selectively amplifies reading errors (calculation and formatting failures) while leaving knowledge and reasoning errors largely unchanged, and that some models exhibit a chain-of-thought reasoning collapse under visual input. Motivated by these findings, we propose a self-distillation method that trains the model on its own pure text reasoning traces paired with image inputs, raising image-mode accuracy on GSM8K from 30.71% to 92.72% and transferring to unseen benchmarks without catastrophic forgetting. Overall, our study provides a systematic understanding of the modality gap and suggests a practical path toward improving visual text understanding in multimodal language models.",
-            "score": 16,
-            "issue_id": 1608,
+            "score": 17,
+            "issue_id": 1609,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -73,33 +94,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2603.08823",
-            "title": "Fish Audio S2 Technical Report",
-            "url": "https://huggingface.co/papers/2603.08823",
-            "abstract": "Abstract Fish Audio S2 is an open-source text-to-speech system with multi-speaker capabilities, multi-turn generation, and instruction-following control through natural-language descriptions, utilizing a multi-stage training approach and production-ready inference engine.  \t\t\t\t\tAI-generated summary We introduce Fish Audio S2, an open-sourced text-to-speech system featuring multi-speaker, multi-turn generation, and, most importantly, instruction-following control via natural-language descriptions. To scale training, we develop a multi-stage training recipe together with a staged data pipeline covering video captioning and speech captioning, voice-quality assessment, and reward modeling. To push the frontier of open-source TTS, we release our model weights, fine-tuning code, and an SGLang-based inference engine. The inference engine is production-ready for streaming, achieving an RTF of 0.195 and a time-to-first-audio below 100 ms.Our code and weights are available on GitHub (https://github.com/fishaudio/fish-speech) and Hugging Face (https://huggingface.co/fishaudio/s2-pro). We highly encourage readers to visit https://fish.audio to try custom voices.",
-            "score": 3,
-            "issue_id": 1608,
-            "pub_date": "2026-03-09",
-            "pub_date_card": {
-                "ru": "9 марта",
-                "en": "March 9",
-                "zh": "3月9日"
-            },
-            "hash": "d35b25ee39e770bc",
-            "github_url": "https://github.com/fishaudio/fish-speech",
-            "github_stars": 25333,
-            "pdf_title_img": "assets/pdf/title_img/2603.08823.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2603.09896",
             "title": "Stepping VLMs onto the Court: Benchmarking Spatial Intelligence in Sports",
             "url": "https://huggingface.co/papers/2603.09896",
             "abstract": "Abstract CourtSI is a large-scale spatial intelligence dataset for sports scenarios that enables evaluation and improvement of vision-language models' understanding of human motion and object interactions.  \t\t\t\t\tAI-generated summary Sports have long attracted broad attention as they push the limits of human physical and cognitive capabilities. Amid growing interest in spatial intelligence for vision-language models (VLMs), sports provide a natural testbed for understanding high-intensity human motion and dynamic object interactions. To this end, we present CourtSI, the first large-scale spatial intelligence dataset tailored to sports scenarios. CourtSI contains over 1M QA pairs, organized under a holistic taxonomy that systematically covers spatial counting, distance measurement, localization, and relational reasoning, across representative net sports including badminton, tennis, and table tennis. Leveraging well-defined court geometry as metric anchors, we develop a semi-automatic data engine to reconstruct sports scenes, enabling scalable curation of CourtSI. In addition, we introduce CourtSI-Bench, a high-quality evaluation benchmark comprising 3,686 QA pairs with rigorous human verification. We evaluate 25 proprietary and open-source VLMs on CourtSI-Bench, revealing a remaining human-AI performance gap and limited generalization from existing spatial intelligence benchmarks. These findings indicate that sports scenarios expose limitations in spatial intelligence capabilities captured by existing benchmarks. Further, fine-tuning Qwen3-VL-8B on CourtSI improves accuracy on CourtSI-Bench by 23.5 percentage points. The adapted model also generalizes effectively to CourtSI-Ext, an evaluation set built on a similar but unseen sport, and demonstrates enhanced spatial-aware commentary generation. Together, these findings demonstrate that CourtSI provides a scalable pathway toward advancing spatial intelligence of VLMs in sports.",
-            "score": 2,
-            "issue_id": 1608,
+            "score": 13,
+            "issue_id": 1609,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -108,7 +108,7 @@
             },
             "hash": "b048781b87b9e3ff",
             "github_url": "https://github.com/Visionary-Laboratory/CourtSI",
-            "github_stars": 3,
+            "github_stars": 24,
             "pdf_title_img": "assets/pdf/title_img/2603.09896.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -119,8 +119,8 @@
             "title": "InternVL-U: Democratizing Unified Multimodal Models for Understanding, Reasoning, Generation and Editing",
             "url": "https://huggingface.co/papers/2603.09877",
             "abstract": "Abstract InternVL-U is a 4-billion parameter unified multimodal model that combines advanced visual generation with robust semantic understanding through specialized modular design and reasoning-centric data synthesis.  \t\t\t\t\tAI-generated summary Unified multimodal models (UMMs) that integrate understanding, reasoning, generation, and editing face inherent trade-offs between maintaining strong semantic comprehension and acquiring powerful generation capabilities. In this report, we present InternVL-U, a lightweight 4B-parameter UMM that democratizes these capabilities within a unified framework. Guided by the principles of unified contextual modeling and modality-specific modular design with decoupled visual representations, InternVL-U integrates a state-of-the-art Multimodal Large Language Model (MLLM) with a specialized MMDiT-based visual generation head. To further bridge the gap between aesthetic generation and high-level intelligence, we construct a comprehensive data synthesis pipeline targeting high-semantic-density tasks, such as text rendering and scientific reasoning, under a reasoning-centric paradigm that leverages Chain-of-Thought (CoT) to better align abstract user intent with fine-grained visual generation details. Extensive experiments demonstrate that InternVL-U achieves a superior performance - efficiency balance. Despite using only 4B parameters, it consistently outperforms unified baseline models with over 3x larger scales such as BAGEL (14B) on various generation and editing tasks, while retaining strong multimodal understanding and reasoning capabilities.",
-            "score": 2,
-            "issue_id": 1608,
+            "score": 10,
+            "issue_id": 1609,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -129,8 +129,50 @@
             },
             "hash": "e99fde03c072939c",
             "github_url": "https://github.com/OpenGVLab/InternVL-U",
-            "github_stars": 46,
+            "github_stars": 60,
             "pdf_title_img": "assets/pdf/title_img/2603.09877.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.07888",
+            "title": "VLM-SubtleBench: How Far Are VLMs from Human-Level Subtle Comparative Reasoning?",
+            "url": "https://huggingface.co/papers/2603.07888",
+            "abstract": "Abstract VLM-SubtleBench is introduced as a benchmark for evaluating vision-language models on subtle comparative reasoning across diverse domains, revealing significant gaps between model and human performance.  \t\t\t\t\tAI-generated summary The ability to distinguish subtle differences between visually similar images is essential for diverse domains such as industrial anomaly detection, medical imaging, and aerial surveillance. While comparative reasoning benchmarks for vision-language models (VLMs) have recently emerged, they primarily focus on images with large, salient differences and fail to capture the nuanced reasoning required for real-world applications. In this work, we introduce VLM-SubtleBench, a benchmark designed to evaluate VLMs on subtle comparative reasoning. Our benchmark covers ten difference types - Attribute, State, Emotion, Temporal, Spatial, Existence, Quantity, Quality, Viewpoint, and Action - and curate paired question-image sets reflecting these fine-grained variations. Unlike prior benchmarks restricted to natural image datasets, our benchmark spans diverse domains, including industrial, aerial, and medical imagery. Through extensive evaluation of both proprietary and open-source VLMs, we reveal systematic gaps between model and human performance across difference types and domains, and provide controlled analyses highlighting where VLMs' reasoning sharply deteriorates. Together, our benchmark and findings establish a foundation for advancing VLMs toward human-level comparative reasoning.",
+            "score": 5,
+            "issue_id": 1609,
+            "pub_date": "2026-03-09",
+            "pub_date_card": {
+                "ru": "9 марта",
+                "en": "March 9",
+                "zh": "3月9日"
+            },
+            "hash": "caade4c3619ffae0",
+            "github_url": "https://github.com/krafton-ai/VLM-SubtleBench",
+            "github_stars": 2,
+            "pdf_title_img": "assets/pdf/title_img/2603.07888.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.08823",
+            "title": "Fish Audio S2 Technical Report",
+            "url": "https://huggingface.co/papers/2603.08823",
+            "abstract": "Abstract Fish Audio S2 is an open-source text-to-speech system with multi-speaker capabilities, multi-turn generation, and instruction-following control through natural-language descriptions, utilizing a multi-stage training approach and production-ready inference engine.  \t\t\t\t\tAI-generated summary We introduce Fish Audio S2, an open-sourced text-to-speech system featuring multi-speaker, multi-turn generation, and, most importantly, instruction-following control via natural-language descriptions. To scale training, we develop a multi-stage training recipe together with a staged data pipeline covering video captioning and speech captioning, voice-quality assessment, and reward modeling. To push the frontier of open-source TTS, we release our model weights, fine-tuning code, and an SGLang-based inference engine. The inference engine is production-ready for streaming, achieving an RTF of 0.195 and a time-to-first-audio below 100 ms.Our code and weights are available on GitHub (https://github.com/fishaudio/fish-speech) and Hugging Face (https://huggingface.co/fishaudio/s2-pro). We highly encourage readers to visit https://fish.audio to try custom voices.",
+            "score": 3,
+            "issue_id": 1609,
+            "pub_date": "2026-03-09",
+            "pub_date_card": {
+                "ru": "9 марта",
+                "en": "March 9",
+                "zh": "3月9日"
+            },
+            "hash": "d35b25ee39e770bc",
+            "github_url": "https://github.com/fishaudio/fish-speech",
+            "github_stars": 25374,
+            "pdf_title_img": "assets/pdf/title_img/2603.08823.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -141,7 +183,7 @@
             "url": "https://huggingface.co/papers/2603.09652",
             "abstract": "Abstract MiniAppBench introduces the first comprehensive benchmark for evaluating principle-driven, interactive application generation, addressing the gap in existing benchmarks that focus on static correctness rather than dynamic, real-world interactions.  \t\t\t\t\tAI-generated summary With the rapid advancement of Large Language Models (LLMs) in code generation, human-AI interaction is evolving from static text responses to dynamic, interactive HTML-based applications, which we term MiniApps. These applications require models to not only render visual interfaces but also construct customized interaction logic that adheres to real-world principles. However, existing benchmarks primarily focus on algorithmic correctness or static layout reconstruction, failing to capture the capabilities required for this new paradigm. To address this gap, we introduce MiniAppBench, the first comprehensive benchmark designed to evaluate principle-driven, interactive application generation. Sourced from a real-world application with 10M+ generations, MiniAppBench distills 500 tasks across six domains (e.g., Games, Science, and Tools). Furthermore, to tackle the challenge of evaluating open-ended interactions where no single ground truth exists, we propose MiniAppEval, an agentic evaluation framework. Leveraging browser automation, it performs human-like exploratory testing to systematically assess applications across three dimensions: Intention, Static, and Dynamic. Our experiments reveal that current LLMs still face significant challenges in generating high-quality MiniApps, while MiniAppEval demonstrates high alignment with human judgment, establishing a reliable standard for future research. Our code is available in github.com/MiniAppBench.",
             "score": 2,
-            "issue_id": 1608,
+            "issue_id": 1609,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -162,7 +204,7 @@
             "url": "https://huggingface.co/papers/2603.09488",
             "abstract": "Abstract Diagonal Distillation improves video generation speed and quality by leveraging temporal context and asymmetric denoising steps while addressing error accumulation and motion coherence issues in diffusion model distillation.  \t\t\t\t\tAI-generated summary Large pretrained diffusion models have significantly enhanced the quality of generated videos, and yet their use in real-time streaming remains limited. Autoregressive models offer a natural framework for sequential frame synthesis but require heavy computation to achieve high fidelity. Diffusion distillation can compress these models into efficient few-step variants, but existing video distillation approaches largely adapt image-specific methods that neglect temporal dependencies. These techniques often excel in image generation but underperform in video synthesis, exhibiting reduced motion coherence, error accumulation over long sequences, and a latency-quality trade-off. We identify two factors that result in these limitations: insufficient utilization of temporal context during step reduction and implicit prediction of subsequent noise levels in next-chunk prediction (i.e., exposure bias). To address these issues, we propose Diagonal Distillation, which operates orthogonally to existing approaches and better exploits temporal information across both video chunks and denoising steps. Central to our approach is an asymmetric generation strategy: more steps early, fewer steps later. This design allows later chunks to inherit rich appearance information from thoroughly processed early chunks, while using partially denoised chunks as conditional inputs for subsequent synthesis. By aligning the implicit prediction of subsequent noise levels during chunk generation with the actual inference conditions, our approach mitigates error propagation and reduces oversaturation in long-range sequences. We further incorporate implicit optical flow modeling to preserve motion quality under strict step constraints. Our method generates a 5-second video in 2.61 seconds (up to 31 FPS), achieving a 277.3x speedup over the undistilled model.",
             "score": 2,
-            "issue_id": 1608,
+            "issue_id": 1609,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -178,33 +220,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2603.07888",
-            "title": "VLM-SubtleBench: How Far Are VLMs from Human-Level Subtle Comparative Reasoning?",
-            "url": "https://huggingface.co/papers/2603.07888",
-            "abstract": "Abstract VLM-SubtleBench is introduced as a benchmark for evaluating vision-language models on subtle comparative reasoning across diverse domains, revealing significant gaps between model and human performance.  \t\t\t\t\tAI-generated summary The ability to distinguish subtle differences between visually similar images is essential for diverse domains such as industrial anomaly detection, medical imaging, and aerial surveillance. While comparative reasoning benchmarks for vision-language models (VLMs) have recently emerged, they primarily focus on images with large, salient differences and fail to capture the nuanced reasoning required for real-world applications. In this work, we introduce VLM-SubtleBench, a benchmark designed to evaluate VLMs on subtle comparative reasoning. Our benchmark covers ten difference types - Attribute, State, Emotion, Temporal, Spatial, Existence, Quantity, Quality, Viewpoint, and Action - and curate paired question-image sets reflecting these fine-grained variations. Unlike prior benchmarks restricted to natural image datasets, our benchmark spans diverse domains, including industrial, aerial, and medical imagery. Through extensive evaluation of both proprietary and open-source VLMs, we reveal systematic gaps between model and human performance across difference types and domains, and provide controlled analyses highlighting where VLMs' reasoning sharply deteriorates. Together, our benchmark and findings establish a foundation for advancing VLMs toward human-level comparative reasoning.",
-            "score": 2,
-            "issue_id": 1608,
-            "pub_date": "2026-03-09",
-            "pub_date_card": {
-                "ru": "9 марта",
-                "en": "March 9",
-                "zh": "3月9日"
-            },
-            "hash": "caade4c3619ffae0",
-            "github_url": "https://github.com/krafton-ai/VLM-SubtleBench",
-            "github_stars": 2,
-            "pdf_title_img": "assets/pdf/title_img/2603.07888.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2603.09200",
             "title": "The Reasoning Trap -- Logical Reasoning as a Mechanistic Pathway to Situational Awareness",
             "url": "https://huggingface.co/papers/2603.09200",
             "abstract": "Abstract The RAISE framework demonstrates how advances in logical reasoning capabilities within large language models can lead to increasingly sophisticated forms of situational awareness, potentially resulting in strategic deception, and proposes safety measures to address this risk.  \t\t\t\t\tAI-generated summary Situational awareness, the capacity of an AI system to recognize its own nature, understand its training and deployment context, and reason strategically about its circumstances, is widely considered among the most dangerous emergent capabilities in advanced AI systems. Separately, a growing research effort seeks to improve the logical reasoning capabilities of large language models (LLMs) across deduction, induction, and abduction. In this paper, we argue that these two research trajectories are on a collision course. We introduce the RAISE framework (Reasoning Advancing Into Self Examination), which identifies three mechanistic pathways through which improvements in logical reasoning enable progressively deeper levels of situational awareness: deductive self inference, inductive context recognition, and abductive self modeling. We formalize each pathway, construct an escalation ladder from basic self recognition to strategic deception, and demonstrate that every major research topic in LLM logical reasoning maps directly onto a specific amplifier of situational awareness. We further analyze why current safety measures are insufficient to prevent this escalation. We conclude by proposing concrete safeguards, including a \"Mirror Test\" benchmark and a Reasoning Safety Parity Principle, and pose an uncomfortable but necessary question to the logical reasoning community about its responsibility in this trajectory.",
-            "score": 1,
-            "issue_id": 1608,
+            "score": 2,
+            "issue_id": 1609,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -225,7 +246,7 @@
             "url": "https://huggingface.co/papers/2603.06333",
             "abstract": "Abstract SAHOO provides a framework for monitoring and controlling alignment drift in self-improving AI systems through goal drift detection, constraint preservation, and regression risk quantification across multiple domains.  \t\t\t\t\tAI-generated summary Recursive self-improvement is moving from theory to practice: modern systems can critique, revise, and evaluate their own outputs, yet iterative self-modification risks subtle alignment drift. We introduce SAHOO, a practical framework to monitor and control drift through three safeguards: (i) the Goal Drift Index (GDI), a learned multi-signal detector combining semantic, lexical, structural, and distributional measures; (ii) constraint preservation checks that enforce safety-critical invariants such as syntactic correctness and non-hallucination; and (iii) regression-risk quantification to flag improvement cycles that undo prior gains. Across 189 tasks in code generation, mathematical reasoning, and truthfulness, SAHOO produces substantial quality gains, including 18.3 percent improvement in code tasks and 16.8 percent in reasoning, while preserving constraints in two domains and maintaining low violations in truthfulness. Thresholds are calibrated on a small validation set of 18 tasks across three cycles. We further map the capability-alignment frontier, showing efficient early improvement cycles but rising alignment costs later and exposing domain-specific tensions such as fluency versus factuality. SAHOO therefore makes alignment preservation during recursive self-improvement measurable, deployable, and systematically validated at scale.",
             "score": 1,
-            "issue_id": 1608,
+            "issue_id": 1609,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -246,7 +267,7 @@
             "url": "https://huggingface.co/papers/2603.09951",
             "abstract": "Abstract Neural debuggers are language models that emulate traditional debuggers by supporting interactive control operations like stepping and breakpoint setting, enabling both forward and inverse execution prediction conditioned on debugger actions.  \t\t\t\t\tAI-generated summary Training large language models (LLMs) on Python execution traces grounds them in code execution and enables the line-by-line execution prediction of whole Python programs, effectively turning them into neural interpreters (FAIR CodeGen Team et al., 2025). However, developers rarely execute programs step by step; instead, they use debuggers to stop execution at certain breakpoints and step through relevant portions only while inspecting or modifying program variables. Existing neural interpreter approaches lack such interactive control. To address this limitation, we introduce neural debuggers: language models that emulate traditional debuggers, supporting operations such as stepping into, over, or out of functions, as well as setting breakpoints at specific source lines. We show that neural debuggers -- obtained via fine-tuning large LLMs or pre-training smaller models from scratch -- can reliably model both forward execution (predicting future states and outputs) and inverse execution (inferring prior states or inputs) conditioned on debugger actions. Evaluated on CruxEval, our models achieve strong performance on both output and input prediction tasks, demonstrating robust conditional execution modeling. Our work takes first steps towards future agentic coding systems in which neural debuggers serve as a world model for simulated debugging environments, providing execution feedback or enabling agents to interact with real debugging tools. This capability lays the foundation for more powerful code generation, program understanding, and automated debugging.",
             "score": 0,
-            "issue_id": 1608,
+            "issue_id": 1609,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -267,7 +288,7 @@
             "url": "https://huggingface.co/papers/2603.09072",
             "abstract": "Abstract  Everyone can write their stories in freeform text format -- it's something we all learn in school. Yet storytelling via video requires one to learn specialized and complicated tools. In this paper, we introduce Doki, a text-native interface for generative video authoring, aligning video creation with the natural process of text writing. In Doki, writing text is the primary interaction: within a single document, users define assets, structure scenes, create shots, refine edits, and add audio. We articulate the design principles of this text-first approach and demonstrate Doki's capabilities through a series of examples. To evaluate its real-world use, we conducted a week-long deployment study with participants of varying expertise in video authoring. This work contributes a fundamental shift in generative video interfaces, demonstrating a powerful and accessible new way to craft visual stories.",
             "score": 0,
-            "issue_id": 1608,
+            "issue_id": 1609,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
