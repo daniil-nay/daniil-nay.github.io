@@ -4,9 +4,9 @@
         "en": "March 12",
         "zh": "3月12日"
     },
-    "time_utc": "2026-03-12 14:04",
+    "time_utc": "2026-03-12 14:50",
     "weekday": 3,
-    "issue_id": 1637,
+    "issue_id": 1638,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -15,7 +15,7 @@
             "url": "https://huggingface.co/papers/2603.10165",
             "abstract": "Abstract OpenClaw-RL framework enables policy learning from diverse next-state signals across multiple interaction modalities using asynchronous training with PRM judges and hindsight-guided distillation.  \t\t\t\t\tAI-generated summary Every agent interaction generates a next-state signal, namely the user reply, tool output, terminal or GUI state change that follows each action, yet no existing agentic RL system recovers it as a live, online learning source. We present OpenClaw-RL, a framework built on a simple observation: next-state signals are universal, and policy can learn from all of them simultaneously. Personal conversations, terminal executions, GUI interactions, SWE tasks, and tool-call traces are not separate training problems. They are all interactions that can be used to train the same policy in the same loop. Next-state signals encode two forms of information: evaluative signals, which indicate how well the action performed and are extracted as scalar rewards via a PRM judge; and directive signals, which indicate how the action should have been different and are recovered through Hindsight-Guided On-Policy Distillation (OPD). We extract textual hints from the next state, construct an enhanced teacher context, and provide token-level directional advantage supervision that is richer than any scalar reward. Due to the asynchronous design, the model serves live requests, the PRM judges ongoing interactions, and the trainer updates the policy at the same time, with zero coordination overhead between them. Applied to personal agents, OpenClaw-RL enables an agent to improve simply by being used, recovering conversational signals from user re-queries, corrections, and explicit feedback. Applied to general agents, the same infrastructure supports scalable RL across terminal, GUI, SWE, and tool-call settings, where we additionally demonstrate the utility of process rewards. Code: https://github.com/Gen-Verse/OpenClaw-RL",
             "score": 51,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -24,7 +24,7 @@
             },
             "hash": "338e5c7b9e3c034a",
             "github_url": "https://github.com/Gen-Verse/OpenClaw-RL",
-            "github_stars": 1960,
+            "github_stars": 1971,
             "pdf_title_img": "assets/pdf/title_img/2603.10165.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -36,7 +36,7 @@
             "url": "https://huggingface.co/papers/2603.09229",
             "abstract": "Abstract Flash-kmeans enables efficient online k-means clustering on GPUs through novel kernel-level optimizations that eliminate I/O bottlenecks and reduce atomic write contention.  \t\t\t\t\tAI-generated summary k-means has historically been positioned primarily as an offline processing primitive, typically used for dataset organization or embedding preprocessing rather than as a first-class component in online systems. In this work, we revisit this classical algorithm under the lens of modern AI system design and enable k-means as an online primitive. We point out that existing GPU implementations of k-means remain fundamentally bottlenecked by low-level system constraints rather than theoretical algorithmic complexity. Specifically, the assignment stage suffers from a severe IO bottleneck due to the massive explicit materialization of the N times K distance matrix in High Bandwidth Memory (HBM). Simultaneously, the centroid update stage is heavily penalized by hardware-level atomic write contention caused by irregular, scatter-style token aggregations. To bridge this performance gap, we propose flash-kmeans, an IO-aware and contention-free k-means implementation for modern GPU workloads. Flash-kmeans introduces two core kernel-level innovations: (1) FlashAssign, which fuses distance computation with an online argmin to completely bypass intermediate memory materialization; (2) sort-inverse update, which explicitly constructs an inverse mapping to transform high-contention atomic scatters into high-bandwidth, segment-level localized reductions. Furthermore, we integrate algorithm-system co-designs, including chunked-stream overlap and cache-aware compile heuristics, to ensure practical deployability. Extensive evaluations on NVIDIA H200 GPUs demonstrate that flash-kmeans achieves up to 17.9times end-to-end speedup over best baselines, while outperforming industry-standard libraries like cuML and FAISS by 33times and over 200times, respectively.",
             "score": 31,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -45,7 +45,7 @@
             },
             "hash": "9fedcff2fe070443",
             "github_url": "https://github.com/svg-project/flash-kmeans",
-            "github_stars": 160,
+            "github_stars": 161,
             "pdf_title_img": "assets/pdf/title_img/2603.09229.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -57,7 +57,7 @@
             "url": "https://huggingface.co/papers/2603.09827",
             "abstract": "Abstract Multi-agent systems require understanding multiple long-horizon egocentric videos simultaneously, necessitating new benchmarks and models for system-level comprehension.  \t\t\t\t\tAI-generated summary As embodied models become powerful, humans will collaborate with multiple embodied AI agents at their workplace or home in the future. To ensure better communication between human users and the multi-agent system, it is crucial to interpret incoming information from agents in parallel and refer to the appropriate context for each query. Existing challenges include effectively compressing and communicating high volumes of individual sensory inputs in the form of video and correctly aggregating multiple egocentric videos to construct system-level memory. In this work, we first formally define a novel problem of understanding multiple long-horizon egocentric videos simultaneously collected from embodied agents. To facilitate research in this direction, we introduce MultiAgent-EgoQA (MA-EgoQA), a benchmark designed to systemically evaluate existing models in our scenario. MA-EgoQA provides 1.7k questions unique to multiple egocentric streams, spanning five categories: social interaction, task coordination, theory-of-mind, temporal reasoning, and environmental interaction. We further propose a simple baseline model for MA-EgoQA named EgoMAS, which leverages shared memory across embodied agents and agent-wise dynamic retrieval. Through comprehensive evaluation across diverse baselines and EgoMAS on MA-EgoQA, we find that current approaches are unable to effectively handle multiple egocentric streams, highlighting the need for future advances in system-level understanding across the agents. The code and benchmark are available at https://ma-egoqa.github.io.",
             "score": 21,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -78,7 +78,7 @@
             "url": "https://huggingface.co/papers/2603.10160",
             "abstract": "Abstract Researchers address imbalance in routing weights of Mixture-of-LoRAs models by proposing Reinforcement Routing (ReMix), which uses non-learnable weights and reinforcement learning techniques to improve model expressiveness and performance.  \t\t\t\t\tAI-generated summary Low-rank adapters (LoRAs) are a parameter-efficient finetuning technique that injects trainable low-rank matrices into pretrained models to adapt them to new tasks. Mixture-of-LoRAs models expand neural networks efficiently by routing each layer input to a small subset of specialized LoRAs of the layer. Existing Mixture-of-LoRAs routers assign a learned routing weight to each LoRA to enable end-to-end training of the router. Despite their empirical promise, we observe that the routing weights are typically extremely imbalanced across LoRAs in practice, where only one or two LoRAs often dominate the routing weights. This essentially limits the number of effective LoRAs and thus severely hinders the expressive power of existing Mixture-of-LoRAs models. In this work, we attribute this weakness to the nature of learnable routing weights and rethink the fundamental design of the router. To address this critical issue, we propose a new router designed that we call Reinforcement Routing for Mixture-of-LoRAs (ReMix). Our key idea is using non-learnable routing weights to ensure all active LoRAs to be equally effective, with no LoRA dominating the routing weights. However, our routers cannot be trained directly via gradient descent due to our non-learnable routing weights. Hence, we further propose an unbiased gradient estimator for the router by employing the reinforce leave-one-out (RLOO) technique, where we regard the supervision loss as the reward and the router as the policy in reinforcement learning. Our gradient estimator also enables to scale up training compute to boost the predictive performance of our ReMix. Extensive experiments demonstrate that our proposed ReMix significantly outperform state-of-the-art parameter-efficient finetuning methods under a comparable number of activated parameters.",
             "score": 14,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2603.08068",
             "abstract": "Abstract In-Context Reinforcement Learning (ICRL) enables large language models to effectively use external tools through a reinforcement learning-only framework that eliminates the need for costly supervised fine-tuning by gradually reducing in-context examples during training.  \t\t\t\t\tAI-generated summary While large language models (LLMs) exhibit strong reasoning abilities, their performance on complex tasks is often constrained by the limitations of their internal knowledge. A compelling approach to overcome this challenge is to augment these models with external tools -- such as Python interpreters for mathematical computations or search engines for retrieving factual information. However, enabling models to use these tools effectively remains a significant challenge. Existing methods typically rely on cold-start pipelines that begin with supervised fine-tuning (SFT), followed by reinforcement learning (RL). These approaches often require substantial amounts of labeled data for SFT, which is expensive to annotate or synthesize. In this work, we propose In-Context Reinforcement Learning (ICRL), an RL-only framework that eliminates the need for SFT by leveraging few-shot prompting during the rollout stage of RL. Specifically, ICRL introduces in-context examples within the rollout prompts to teach the model how to invoke external tools. Furthermore, as training progresses, the number of in-context examples is gradually reduced, eventually reaching a zero-shot setting where the model learns to call tools independently. We conduct extensive experiments across a range of reasoning and tool-use benchmarks. Results show that ICRL achieves state-of-the-art performance, demonstrating its effectiveness as a scalable, data-efficient alternative to traditional SFT-based pipelines.",
             "score": 14,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-09",
             "pub_date_card": {
                 "ru": "9 марта",
@@ -120,7 +120,7 @@
             "url": "https://huggingface.co/papers/2603.07392",
             "abstract": "Abstract Online Adaptation to Continual Knowledge Streams (OAKS) benchmark evaluates how well language models adapt to dynamically changing information in real-time contexts through streaming datasets with evolving facts.  \t\t\t\t\tAI-generated summary LLMs operating in dynamic real-world contexts often encounter knowledge that evolves continuously or emerges incrementally. To remain accurate and effective, models must adapt to newly arriving information on the fly. We introduce Online Adaptation to Continual Knowledge Streams(OAKS) to evaluate this capability, establishing a benchmark for online adaptation over streaming, continually updating knowledge. Specifically, the benchmark is structured as a sequence of fine-grained context chunks where facts change dynamically across time intervals. OAKS comprises two datasets: OAKS-BABI and OAKS-Novel, where individual facts evolve multiple times across context chunks. These datasets include dense annotations to measure whether models track changes accurately. Evaluating 14 models with varied inference approaches, we observe significant limitations in current methodologies. Both state-of-the-art models and agentic memory systems fail to adapt robustly on OAKS, demonstrating delays in state-tracking and susceptibility to distraction within streaming environments.",
             "score": 13,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-08",
             "pub_date_card": {
                 "ru": "8 марта",
@@ -140,8 +140,8 @@
             "title": "LLM2Vec-Gen: Generative Embeddings from Large Language Models",
             "url": "https://huggingface.co/papers/2603.10913",
             "abstract": "Abstract LLM2Vec-Gen introduces a self-supervised method for text embedding that represents model responses through trainable special tokens, achieving superior performance on MTEB while reducing harmful content and improving reasoning capabilities.  \t\t\t\t\tAI-generated summary LLM-based text embedders typically encode the semantic content of their input. However, embedding tasks require mapping diverse inputs to similar outputs. Typically, this input-output is addressed by training embedding models with paired data using contrastive learning. In this work, we propose a novel self-supervised approach, LLM2Vec-Gen, which adopts a different paradigm: rather than encoding the input, we learn to represent the model's potential response. Specifically, we add trainable special tokens to the LLM's vocabulary, append them to input, and optimize them to represent the LLM's response in a fixed-length sequence. Training is guided by the LLM's own completion for the query, along with an unsupervised embedding teacher that provides distillation targets. This formulation helps to bridge the input-output gap and transfers LLM capabilities such as safety alignment and reasoning to embedding tasks. Crucially, the LLM backbone remains frozen and training requires only unlabeled queries. LLM2Vec-Gen achieves state-of-the-art self-supervised performance on the Massive Text Embedding Benchmark (MTEB), improving by 9.3% over the best unsupervised embedding teacher. We also observe up to 43.2% reduction in harmful content retrieval and 29.3% improvement in reasoning capabilities for embedding tasks. Finally, the learned embeddings are interpretable and can be decoded into text to reveal their semantic content.",
-            "score": 9,
-            "issue_id": 1637,
+            "score": 12,
+            "issue_id": 1638,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -150,7 +150,7 @@
             },
             "hash": "a40149eec6ccd28d",
             "github_url": "https://github.com/McGill-NLP/llm2vec-gen",
-            "github_stars": 11,
+            "github_stars": 15,
             "pdf_title_img": "assets/pdf/title_img/2603.10913.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -162,7 +162,7 @@
             "url": "https://huggingface.co/papers/2603.08561",
             "abstract": "Abstract RetroAgent enhances LLM-based agents through online reinforcement learning with self-reflection mechanisms that provide both numerical and language-based intrinsic feedback for improved exploration and knowledge retrieval.  \t\t\t\t\tAI-generated summary Large language model (LLM)-based agents trained with reinforcement learning (RL) have shown strong potential on complex interactive tasks. However, standard RL paradigms favor static problem-solving over continuous adaptation: agents often converge to suboptimal strategies due to insufficient exploration, while learned knowledge remains implicit within parameters rather than explicitly retrievable, limiting effective experiential learning. To address these limitations, we introduce RetroAgent, an online RL framework that empowers agents to master complex interactive environments not just by solving, but by evolving. Concretely, RetroAgent features a hindsight self-reflection mechanism that produces dual intrinsic feedback: (1) intrinsic numerical feedback that that tracks incremental subtask completion relative to prior attempts, rewarding promising explorations, and (2) intrinsic language feedback that distills reusable lessons into a memory buffer, retrieved via our proposed Similarity & Utility-Aware Upper Confidence Bound (SimUtil-UCB) strategy balancing relevance, utility, and exploration to effectively leverage past experiences. Extensive experiments on two model families across four challenging agentic tasks demonstrate that RetroAgent significantly outperforms existing methods, achieving state-of-the-art results -- e.g., surpassing Group Relative Policy Optimization (GRPO)-trained agents by +18.3% on ALFWorld, +15.4% on WebShop, +27.1% on Sokoban, and +8.9% on MineSweeper -- while exhibiting strong test-time adaptation and generalization to out-of-distribution scenarios.",
             "score": 9,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-09",
             "pub_date_card": {
                 "ru": "9 марта",
@@ -171,7 +171,7 @@
             },
             "hash": "fcfabd9190347713",
             "github_url": "https://github.com/zhangxy-2019/RetroAgent",
-            "github_stars": 0,
+            "github_stars": 1,
             "pdf_title_img": "assets/pdf/title_img/2603.08561.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -183,7 +183,7 @@
             "url": "https://huggingface.co/papers/2603.10757",
             "abstract": "Abstract MLLMs struggle with STEM visual reasoning due to perceptual limitations rather than reasoning deficiencies, and enhancing perception through code-as-perception paradigms improves performance.  \t\t\t\t\tAI-generated summary When MLLMs fail at Science, Technology, Engineering, and Mathematics (STEM) visual reasoning, a fundamental question arises: is it due to perceptual deficiencies or reasoning limitations? Through systematic scaling analysis that independently scales perception and reasoning components, we uncover a critical insight: scaling perception consistently outperforms scaling reasoning. This reveals perception as the true lever limiting current STEM visual reasoning. Motivated by this insight, our work focuses on systematically enhancing the perception capabilities of MLLMs by establishing code as a powerful perceptual medium--executable code provides precise semantics that naturally align with the structured nature of STEM visuals. Specifically, we construct ICC-1M, a large-scale dataset comprising 1M Image-Caption-Code triplets that materializes this code-as-perception paradigm through two complementary approaches: (1) Code-Grounded Caption Generation treats executable code as ground truth for image captions, eliminating the hallucinations inherent in existing knowledge distillation methods; (2) STEM Image-to-Code Translation prompts models to generate reconstruction code, mitigating the ambiguity of natural language for perception enhancement. To validate this paradigm, we further introduce STEM2Code-Eval, a novel benchmark that directly evaluates visual perception in STEM domains. Unlike existing work relying on problem-solving accuracy as a proxy that only measures problem-relevant understanding, our benchmark requires comprehensive visual comprehension through executable code generation for image reconstruction, providing deterministic and verifiable assessment. Code is available at https://github.com/TongkunGuan/Qwen-CodePercept.",
             "score": 8,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -204,7 +204,7 @@
             "url": "https://huggingface.co/papers/2603.10705",
             "abstract": "Abstract PRISM-Δ extracts discriminative steering directions by decomposing cross-covariance differences, uses softplus weights for attention heads, and extends to value representations for improved long-context retrieval performance.  \t\t\t\t\tAI-generated summary Prompt highlighting steers a large language model to prioritize user-specified text spans during generation. A key challenge is extracting steering directions that capture the difference between relevant and irrelevant contexts, rather than shared structural patterns common to both. We propose PRISM-Δ (Projection-based Relevance-Informed Steering Method), which decomposes the difference between positive and negative cross-covariance matrices to maximize discriminative energy while eliminating shared directions. Each attention head receives a continuous softplus importance weight, letting weak-but-useful heads contribute at reduced strength. The framework extends naturally to Value representations, capturing content-channel signal that Key-only methods leave unused. Across four benchmarks and five models, PRISM-Δ matches or exceeds the best existing method on 19 of 20 configurations, with relative gains up to +10.6%, while halving the fluency cost of steering. PRISM-Δ also scales to long-context retrieval, outperforming the best existing method by up to +4.8% relative gain. PRISM-Δ is compatible with FlashAttention and adds negligible memory overhead.",
             "score": 8,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -225,7 +225,7 @@
             "url": "https://huggingface.co/papers/2603.10848",
             "abstract": "Abstract Adaptive value estimation method combines pretrained prior with empirical rollouts using real-time statistical testing to reduce variance and improve reinforcement learning performance under sparse sampling conditions.  \t\t\t\t\tAI-generated summary In Reinforcement Learning with Verifiable Rewards (RLVR), constructing a robust advantage baseline is critical for policy gradients, effectively guiding the policy model to reinforce desired behaviors. Recent research has introduced Generalist Value Models (such as V_0), which achieve pre-trained value estimation by explicitly encoding model capabilities in-context, eliminating the need to synchronously update the value model alongside the policy model. In this paper, we propose V_{0.5}, which adaptively fuses the baseline predicted by such value model (acting as a prior) with the empirical mean derived from sparse rollouts. This constructs a robust baseline that balances computational efficiency with extremely low variance. Specifically, we introduce a real-time statistical testing and dynamic budget allocation. This balances the high variance caused by sparse sampling against the systematic bias (or hallucinations) inherent in the value model's prior. By constructing a hypothesis test to evaluate the prior's reliability in real-time, the system dynamically allocates additional rollout budget on demand. This mechanism minimizes the baseline estimator's Mean Squared Error (MSE), guaranteeing stable policy gradients, even under extreme sparsity with a group size of 4. Extensive evaluations across six mathematical reasoning benchmarks demonstrate that V_{0.5} significantly outperforms GRPO and DAPO, achieving faster convergence and over some 10% performance improvement.",
             "score": 5,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -246,7 +246,7 @@
             "url": "https://huggingface.co/papers/2603.10744",
             "abstract": "Abstract Diffusion Transformers face high computational costs during iterative sampling, which this work addresses by introducing a spatial-domain acceleration framework that uses sparse anchor tokens and deterministic micro-flows to achieve significant speedup with minimal performance loss.  \t\t\t\t\tAI-generated summary Diffusion Transformers have established a new state-of-the-art in image synthesis, but the high computational cost of iterative sampling severely hampers their practical deployment. While existing acceleration methods often focus on the temporal domain, they overlook the substantial spatial redundancy inherent in the generative process, where global structures emerge long before fine-grained details are formed. The uniform computational treatment of all spatial regions represents a critical inefficiency. In this paper, we introduce Just-in-Time (JiT), a novel training-free framework that addresses this challenge by acceleration in the spatial domain. JiT formulates a spatially approximated generative ordinary differential equation (ODE) that drives the full latent state evolution based on computations from a dynamically selected, sparse subset of anchor tokens. To ensure seamless transitions as new tokens are incorporated to expand the dimensions of the latent state, we propose a deterministic micro-flow, a simple and effective finite-time ODE that maintains both structural coherence and statistical correctness. Extensive experiments on the state-of-the-art FLUX.1-dev model demonstrate that JiT achieves up to a 7x speedup with nearly lossless performance, significantly outperforming existing acceleration methods and establishing a new and superior trade-off between inference speed and generation fidelity.",
             "score": 5,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -262,33 +262,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2603.04597",
-            "title": "Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning",
-            "url": "https://huggingface.co/papers/2603.04597",
-            "abstract": "Abstract Language feedback is leveraged in reinforcement learning to improve exploration efficiency and sample utilization through grouped critique aggregation and joint generation-refinement optimization.  \t\t\t\t\tAI-generated summary Large language models (LLMs) typically receive diverse natural language (NL) feedback through interaction with the environment. However, current reinforcement learning (RL) algorithms rely solely on scalar rewards, leaving the rich information in NL feedback underutilized and leading to inefficient exploration. In this work, we propose GOLF, an RL framework that explicitly exploits group-level language feedback to guide targeted exploration through actionable refinements. GOLF aggregates two complementary feedback sources: (i) external critiques that pinpoint errors or propose targeted fixes, and (ii) intra-group attempts that supply alternative partial ideas and diverse failure patterns. These group-level feedbacks are aggregated to produce high-quality refinements, which are adaptively injected into training as off-policy scaffolds to provide targeted guidance in sparse-reward regions. Meanwhile, GOLF jointly optimizes generation and refinement within a unified RL loop, creating a virtuous cycle that continuously improves both capabilities. Experiments on both verifiable and non-verifiable benchmarks show that GOLF achieves superior performance and exploration efficiency, achieving 2.2times improvements in sample efficiency compared to RL methods trained solely on scalar rewards. Code is available at https://github.com/LuckyyySTA/GOLF.",
-            "score": 4,
-            "issue_id": 1637,
-            "pub_date": "2026-03-04",
-            "pub_date_card": {
-                "ru": "4 марта",
-                "en": "March 4",
-                "zh": "3月4日"
-            },
-            "hash": "acd552ec1b70873d",
-            "github_url": "https://github.com/LuckyyySTA/GOLF",
-            "github_stars": 6,
-            "pdf_title_img": "assets/pdf/title_img/2603.04597.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2603.09723",
             "title": "RbtAct: Rebuttal as Supervision for Actionable Review Feedback Generation",
             "url": "https://huggingface.co/papers/2603.09723",
             "abstract": "Abstract Researchers developed RbtAct, a method that uses rebuttal responses to improve the actionability of AI-generated peer-review feedback by training a language model to produce specific, implementable comments based on paper content and defined perspectives.  \t\t\t\t\tAI-generated summary Large language models (LLMs) are increasingly used across the scientific workflow, including to draft peer-review reports. However, many AI-generated reviews are superficial and insufficiently actionable, leaving authors without concrete, implementable guidance and motivating the gap this work addresses. We propose RbtAct, which targets actionable review feedback generation and places existing peer review rebuttal at the center of learning. Rebuttals show which reviewer comments led to concrete revisions or specific plans, and which were only defended. Building on this insight, we leverage rebuttal as implicit supervision to directly optimize a feedback generator for actionability. To support this objective, we propose a new task called perspective-conditioned segment-level review feedback generation, in which the model is required to produce a single focused comment based on the complete paper and a specified perspective such as experiments and writing. We also build a large dataset named RMR-75K that maps review segments to the rebuttal segments that address them, with perspective labels and impact categories that order author uptake. We then train the Llama-3.1-8B-Instruct model with supervised fine-tuning on review segments followed by preference optimization using rebuttal derived pairs. Experiments with human experts and LLM-as-a-judge show consistent gains in actionability and specificity over strong baselines while maintaining grounding and relevance.",
-            "score": 3,
-            "issue_id": 1637,
+            "score": 4,
+            "issue_id": 1638,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -304,12 +283,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2603.04597",
+            "title": "Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning",
+            "url": "https://huggingface.co/papers/2603.04597",
+            "abstract": "Abstract Language feedback is leveraged in reinforcement learning to improve exploration efficiency and sample utilization through grouped critique aggregation and joint generation-refinement optimization.  \t\t\t\t\tAI-generated summary Large language models (LLMs) typically receive diverse natural language (NL) feedback through interaction with the environment. However, current reinforcement learning (RL) algorithms rely solely on scalar rewards, leaving the rich information in NL feedback underutilized and leading to inefficient exploration. In this work, we propose GOLF, an RL framework that explicitly exploits group-level language feedback to guide targeted exploration through actionable refinements. GOLF aggregates two complementary feedback sources: (i) external critiques that pinpoint errors or propose targeted fixes, and (ii) intra-group attempts that supply alternative partial ideas and diverse failure patterns. These group-level feedbacks are aggregated to produce high-quality refinements, which are adaptively injected into training as off-policy scaffolds to provide targeted guidance in sparse-reward regions. Meanwhile, GOLF jointly optimizes generation and refinement within a unified RL loop, creating a virtuous cycle that continuously improves both capabilities. Experiments on both verifiable and non-verifiable benchmarks show that GOLF achieves superior performance and exploration efficiency, achieving 2.2times improvements in sample efficiency compared to RL methods trained solely on scalar rewards. Code is available at https://github.com/LuckyyySTA/GOLF.",
+            "score": 4,
+            "issue_id": 1638,
+            "pub_date": "2026-03-04",
+            "pub_date_card": {
+                "ru": "4 марта",
+                "en": "March 4",
+                "zh": "3月4日"
+            },
+            "hash": "acd552ec1b70873d",
+            "github_url": "https://github.com/LuckyyySTA/GOLF",
+            "github_stars": 6,
+            "pdf_title_img": "assets/pdf/title_img/2603.04597.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2603.08754",
             "title": "Hindsight Credit Assignment for Long-Horizon LLM Agents",
             "url": "https://huggingface.co/papers/2603.08754",
             "abstract": "Abstract HCAPO addresses credit assignment challenges in LLM agents through hindsight credit assignment and multi-scale advantage mechanisms, improving performance in long-horizon tasks.  \t\t\t\t\tAI-generated summary Large Language Model (LLM) agents often face significant credit assignment challenges in long-horizon, multi-step tasks due to sparse rewards. Existing value-free methods, such as Group Relative Policy Optimization (GRPO), encounter two fundamental bottlenecks: inaccurate step-level Q-value estimation and misaligned value baselines for intermediate states. To address these limitations, we introduce HCAPO, the first framework to integrate hindsight credit assignment into LLM agents. HCAPO leverages the LLM itself as a post-hoc critic to refine step-level Q-values through hindsight reasoning. Furthermore, HCAPO's multi-scale advantage mechanism effectively supplements the inaccurate value baselines at critical decision states. Evaluations across three challenging benchmarks, including WebShop and ALFWorld, demonstrate that HCAPO consistently outperforms state-of-the-art RL methods. Notably, HCAPO achieves a 7.7% improvement in success rate on WebShop and a 13.8% on ALFWorld over GRPO using the Qwen2.5-7B-Instruct model. These results indicate that HCAPO significantly enhances exploration efficiency, promotes concise decision-making, and ensures scalability in complex, long-horizon tasks.",
             "score": 3,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-07",
             "pub_date_card": {
                 "ru": "7 марта",
@@ -330,7 +330,7 @@
             "url": "https://huggingface.co/papers/2603.11042",
             "abstract": "Abstract V2M-Zero enables video-to-music generation with improved temporal alignment by using modality-specific event curves derived from pretrained encoders, achieving superior audio quality and synchronization without paired training data.  \t\t\t\t\tAI-generated summary Generating music that temporally aligns with video events is challenging for existing text-to-music models, which lack fine-grained temporal control. We introduce V2M-Zero, a zero-pair video-to-music generation approach that outputs time-aligned music for video. Our method is motivated by a key observation: temporal synchronization requires matching when and how much change occurs, not what changes. While musical and visual events differ semantically, they exhibit shared temporal structure that can be captured independently within each modality. We capture this structure through event curves computed from intra-modal similarity using pretrained music and video encoders. By measuring temporal change within each modality independently, these curves provide comparable representations across modalities. This enables a simple training strategy: fine-tune a text-to-music model on music-event curves, then substitute video-event curves at inference without cross-modal training or paired data. Across OES-Pub, MovieGenBench-Music, and AIST++, V2M-Zero achieves substantial gains over paired-data baselines: 5-21% higher audio quality, 13-15% better semantic alignment, 21-52% improved temporal synchronization, and 28% higher beat alignment on dance videos. We find similar results via a large crowd-source subjective listening test. Overall, our results validate that temporal alignment through within-modality features, rather than paired cross-modal supervision, is effective for video-to-music generation. Results are available at https://genjib.github.io/v2m_zero/",
             "score": 2,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -346,12 +346,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2603.10145",
+            "title": "Lost in Backpropagation: The LM Head is a Gradient Bottleneck",
+            "url": "https://huggingface.co/papers/2603.10145",
+            "abstract": "Abstract The softmax bottleneck in neural language models creates both expressivity and optimization issues by compressing gradients through rank-deficient output layers, leading to inefficient training dynamics.  \t\t\t\t\tAI-generated summary The last layer of neural language models (LMs) projects output features of dimension D to logits in dimension V, the size of the vocabulary, where usually D ll V. This mismatch is known to raise risks of limited expressivity in neural LMs, creating a so-called softmax bottleneck. We show the softmax bottleneck is not only an expressivity bottleneck but also an optimization bottleneck. Backpropagating V-dimensional gradients through a rank-D linear layer induces unavoidable compression, which alters the training feedback provided to the vast majority of the parameters. We present a theoretical analysis of this phenomenon and measure empirically that 95-99% of the gradient norm is suppressed by the output layer, resulting in vastly suboptimal update directions. We conduct controlled pretraining experiments showing that the gradient bottleneck makes trivial patterns unlearnable, and drastically affects the training dynamics of LLMs. We argue that this inherent flaw contributes to training inefficiencies at scale independently of the model architecture, and raises the need for new LM head designs.",
+            "score": 2,
+            "issue_id": 1638,
+            "pub_date": "2026-03-10",
+            "pub_date_card": {
+                "ru": "10 марта",
+                "en": "March 10",
+                "zh": "3月10日"
+            },
+            "hash": "f1539c6620235531",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2603.10145.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2603.10702",
             "title": "UniCom: Unified Multimodal Modeling via Compressed Continuous Semantic Representations",
             "url": "https://huggingface.co/papers/2603.10702",
             "abstract": "Abstract UniCom presents a unified multimodal framework that uses compressed continuous representations to improve visual understanding and generation while maintaining image consistency and controllability.  \t\t\t\t\tAI-generated summary Current unified multimodal models typically rely on discrete visual tokenizers to bridge the modality gap. However, discretization inevitably discards fine-grained semantic information, leading to suboptimal performance in visual understanding tasks. Conversely, directly modeling continuous semantic representations (e.g., CLIP, SigLIP) poses significant challenges in high-dimensional generative modeling, resulting in slow convergence and training instability. To resolve this dilemma, we introduce UniCom, a unified framework that harmonizes multimodal understanding and generation via compressed continuous representation. We empirically demonstrate that reducing channel dimension is significantly more effective than spatial downsampling for both reconstruction and generation. Accordingly, we design an attention-based semantic compressor to distill dense features into a compact unified representation. Furthermore, we validate that the transfusion architecture surpasses query-based designs in convergence and consistency. Experiments demonstrate that UniCom achieves state-of-the-art generation performance among unified models. Notably, by preserving rich semantic priors, it delivers exceptional controllability in image editing and maintains image consistency even without relying on VAE.",
             "score": 1,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -372,7 +393,7 @@
             "url": "https://huggingface.co/papers/2603.10377",
             "abstract": "Abstract Causal Concept Graphs leverage sparse autoencoders and differentiable structure learning to identify causal relationships between concepts in language models, demonstrating superior causal fidelity compared to alternative methods.  \t\t\t\t\tAI-generated summary Sparse autoencoders can localize where concepts live in language models, but not how they interact during multi-step reasoning. We propose Causal Concept Graphs (CCG): a directed acyclic graph over sparse, interpretable latent features, where edges capture learned causal dependencies between concepts. We combine task-conditioned sparse autoencoders for concept discovery with DAGMA-style differentiable structure learning for graph recovery and introduce the Causal Fidelity Score (CFS) to evaluate whether graph-guided interventions induce larger downstream effects than random ones. On ARC-Challenge, StrategyQA, and LogiQA with GPT-2 Medium, across five seeds (n{=}15 paired runs), CCG achieves CFS=5.654pm0.625, outperforming ROME-style tracing (3.382pm0.233), SAE-only ranking (2.479pm0.196), and a random baseline (1.032pm0.034), with p<0.0001 after Bonferroni correction. Learned graphs are sparse (5-6\\% edge density), domain-specific, and stable across seeds.",
             "score": 1,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -388,33 +409,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2603.10145",
-            "title": "Lost in Backpropagation: The LM Head is a Gradient Bottleneck",
-            "url": "https://huggingface.co/papers/2603.10145",
-            "abstract": "Abstract The softmax bottleneck in neural language models creates both expressivity and optimization issues by compressing gradients through rank-deficient output layers, leading to inefficient training dynamics.  \t\t\t\t\tAI-generated summary The last layer of neural language models (LMs) projects output features of dimension D to logits in dimension V, the size of the vocabulary, where usually D ll V. This mismatch is known to raise risks of limited expressivity in neural LMs, creating a so-called softmax bottleneck. We show the softmax bottleneck is not only an expressivity bottleneck but also an optimization bottleneck. Backpropagating V-dimensional gradients through a rank-D linear layer induces unavoidable compression, which alters the training feedback provided to the vast majority of the parameters. We present a theoretical analysis of this phenomenon and measure empirically that 95-99% of the gradient norm is suppressed by the output layer, resulting in vastly suboptimal update directions. We conduct controlled pretraining experiments showing that the gradient bottleneck makes trivial patterns unlearnable, and drastically affects the training dynamics of LLMs. We argue that this inherent flaw contributes to training inefficiencies at scale independently of the model architecture, and raises the need for new LM head designs.",
-            "score": 1,
-            "issue_id": 1637,
-            "pub_date": "2026-03-10",
-            "pub_date_card": {
-                "ru": "10 марта",
-                "en": "March 10",
-                "zh": "3月10日"
-            },
-            "hash": "f1539c6620235531",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2603.10145.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2603.10101",
             "title": "CLIPO: Contrastive Learning in Policy Optimization Generalizes RLVR",
             "url": "https://huggingface.co/papers/2603.10101",
             "abstract": "Abstract Contrastive Learning mechanism integrated into Policy Optimization enhances LLM reasoning by regularizing correct reasoning paths and reducing hallucinations.  \t\t\t\t\tAI-generated summary Reinforcement Learning with Verifiable Rewards (RLVR) has significantly advanced the reasoning capacity of Large Language Models (LLMs). However, RLVR solely relies on final answers as outcome rewards, neglecting the correctness of intermediate reasoning steps. Training on these process-wrong but outcome-correct rollouts can lead to hallucination and answer-copying, severely undermining the model's generalization and robustness. To address this, we incorporate a Contrastive Learning mechanism into the Policy Optimization (CLIPO) to generalize the RLVR process. By optimizing a contrastive loss over successful rollouts, CLIPO steers the LLM to capture the invariant structure shared across correct reasoning paths. This provides a more robust cross-trajectory regularization than the original single-path supervision in RLVR, effectively mitigating step-level reasoning inconsistencies and suppressing hallucinatory artifacts. In experiments, CLIPO consistently improves multiple RLVR baselines across diverse reasoning benchmarks, demonstrating uniform improvements in generalization and robustness for policy optimization of LLMs. Our code and training recipes are available at https://github.com/Qwen-Applications/CLIPO.",
             "score": 1,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -435,7 +435,7 @@
             "url": "https://huggingface.co/papers/2603.10098",
             "abstract": "Abstract Code-Space Response Oracles replace traditional neural network policies with human-readable code generated by large language models, enabling interpretable and explainable multi-agent reinforcement learning.  \t\t\t\t\tAI-generated summary Recent advances in multi-agent reinforcement learning, particularly Policy-Space Response Oracles (PSRO), have enabled the computation of approximate game-theoretic equilibria in increasingly complex domains. However, these methods rely on deep reinforcement learning oracles that produce `black-box' neural network policies, making them difficult to interpret, trust or debug. We introduce Code-Space Response Oracles (CSRO), a novel framework that addresses this challenge by replacing RL oracles with Large Language Models (LLMs). CSRO reframes the best response computation as a code generation task, prompting an LLM to generate policies directly as human-readable code. This approach not only yields inherently interpretable policies but also leverages the LLM's pretrained knowledge to discover complex, human-like strategies. We explore multiple ways to construct and enhance an LLM-based oracle: zero-shot prompting, iterative refinement and AlphaEvolve, a distributed LLM-based evolutionary system. We demonstrate that CSRO achieves performance competitive with baselines while producing a diverse set of explainable policies. Our work presents a new perspective on multi-agent learning, shifting the focus from optimizing opaque policy parameters to synthesizing interpretable algorithmic behavior.",
             "score": 1,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
@@ -456,7 +456,7 @@
             "url": "https://huggingface.co/papers/2603.05757",
             "abstract": "Abstract A data-free framework aligns video generative model outputs with vision-language model constraints for improved robotic manipulation, achieving higher success rates through constraint-guided selection and trajectory optimization.  \t\t\t\t\tAI-generated summary Video generative models (VGMs) pretrained on large-scale internet data can produce temporally coherent rollout videos that capture rich object dynamics, offering a compelling foundation for zero-shot robotic manipulation. However, VGMs often produce physically implausible rollouts, and converting their pixel-space motion into robot actions through geometric retargeting further introduces cumulative errors from imperfect depth estimation and keypoint tracking. To address these challenges, we present , a data-free framework that aligns VGM outputs with compositional constraints generated by vision-language models (VLMs) at inference time. The key insight is that VLMs offer a capability complementary to VGMs: structured spatial reasoning that can identify the physical constraints critical to the success and safety of manipulation execution. Given a language instruction,  uses a VLM to automatically extract a set of compositional constraints capturing task-specific requirements, which are then applied at two stages: (1) constraint-guided rollout selection, which scores and filters a batch of VGM rollouts to retain the most physically plausible candidate, and (2) constraint-based trajectory optimization, which uses the selected rollout as initialization and refines the robot trajectory under the same constraint set to correct retargeting errors. We evaluate  on six real-robot manipulation tasks requiring precise, constraint-sensitive execution, improving the overall success rate by 43.3\\% points over the strongest baseline without any task-specific training data.",
             "score": 1,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -477,7 +477,7 @@
             "url": "https://huggingface.co/papers/2603.05711",
             "abstract": "Abstract A novel one-stage depth completion framework that uses scale-prompting adaptation of pretrained monocular depth estimation models to handle varying depth sparsity and irregular distributions more efficiently than existing methods.  \t\t\t\t\tAI-generated summary Accurate, dense depth estimation is crucial for robotic perception, but commodity sensors often yield sparse or incomplete measurements due to hardware limitations. Existing RGBD-fused depth completion methods learn priors jointly conditioned on training RGB distribution and specific depth patterns, limiting domain generalization and robustness to various depth patterns. Recent efforts leverage monocular depth estimation (MDE) models to introduce domain-general geometric priors, but current two-stage integration strategies relying on explicit relative-to-metric alignment incur additional computation and introduce structured distortions. To this end, we present Any2Full, a one-stage, domain-general, and pattern-agnostic framework that reformulates completion as a scale-prompting adaptation of a pretrained MDE model. To address varying depth sparsity levels and irregular spatial distributions, we design a Scale-Aware Prompt Encoder. It distills scale cues from sparse inputs into unified scale prompts, guiding the MDE model toward globally scale-consistent predictions while preserving its geometric priors. Extensive experiments demonstrate that Any2Full achieves superior robustness and efficiency. It outperforms OMNI-DC by 32.2\\% in average AbsREL and delivers a 1.4times speedup over PriorDA with the same MDE backbone, establishing a new paradigm for universal depth completion. Codes and checkpoints are available at https://github.com/zhiyuandaily/Any2Full.",
             "score": 1,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-05",
             "pub_date_card": {
                 "ru": "5 марта",
@@ -498,7 +498,7 @@
             "url": "https://huggingface.co/papers/2603.09482",
             "abstract": "Abstract StyleVLA is a physics-informed vision-language-action framework that generates diverse and physically plausible driving trajectories by combining kinematic constraints with continuous regression, outperforming proprietary models on specialized autonomous driving tasks.  \t\t\t\t\tAI-generated summary Vision Language Models (VLMs) bridge visual perception and linguistic reasoning. In Autonomous Driving (AD), this synergy has enabled Vision Language Action (VLA) models, which translate high-level multimodal understanding into driving behaviors, typically represented as future trajectories. However, existing VLA models mainly generate generic collision-free trajectories. Beyond collision avoidance, adapting to diverse driving styles (e.g., sporty, comfortable) is essential for personalized driving. Moreover, many methods treat trajectory generation as naive token prediction, which can produce kinematically infeasible actions. To address these limitations, we present StyleVLA, a physics-informed VLA framework for generating diverse and physically plausible driving behaviors. We introduce a hybrid loss that combines a kinematic consistency constraint with a continuous regression head to improve trajectory feasibility. To train StyleVLA, built on Qwen3-VL-4B, we construct a large-scale instruction dataset with over 1.2k scenarios, 76k Bird's Eye View (BEV) samples, and 42k First Person View (FPV) samples, with ground-truth trajectories for five driving styles and natural-language instructions. Experiments show that our 4B-parameter StyleVLA significantly outperforms proprietary models (e.g., Gemini-3-Pro) and state-of-the-art VLA models. Using a composite driving score measuring success rate, physical feasibility, and style adherence, StyleVLA achieves 0.55 on BEV and 0.51 on FPV, versus 0.32 and 0.35 for Gemini-3-Pro. These results show that a specialized, physics-informed, lightweight model can surpass closed-source models on domain-specific tasks.",
             "score": 0,
-            "issue_id": 1637,
+            "issue_id": 1638,
             "pub_date": "2026-03-10",
             "pub_date_card": {
                 "ru": "10 марта",
