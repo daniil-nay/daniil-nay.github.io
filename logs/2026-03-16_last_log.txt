@@ -1,0 +1,52 @@
+[15.03.2026 23:34] Read previous papers.
+[15.03.2026 23:34] Generating top page (month).
+[15.03.2026 23:34] Writing top page (month).
+[16.03.2026 01:46] Read previous papers.
+[16.03.2026 01:46] Get feed.
+[16.03.2026 01:46] Extract page data from URL. URL: https://huggingface.co/papers/2603.12572
+[16.03.2026 01:46] Extract page data from URL. URL: https://huggingface.co/papers/2603.13023
+[16.03.2026 01:46] GitHub API response 404 for https://api.github.com/repos/GAIR-NLP/OpenSWE
+[16.03.2026 01:46] Updating GitHub stars.
+[16.03.2026 01:46] GitHub API response 404 for https://api.github.com/repos/GAIR-NLP/OpenSWE
+[16.03.2026 01:46] Obtaining deleted papers (sometimes HF Daily Papers move some articles from today to past days).
+[16.03.2026 01:46] Downloading and parsing papers (pdf, html). Total: 2.
+[16.03.2026 01:46] Downloading and parsing paper https://huggingface.co/papers/2603.12572.
+[16.03.2026 01:46] Downloading paper 2603.12572 from https://arxiv.org/pdf/2603.12572v1...
+[16.03.2026 01:46] Extracting affiliations from text.
+[16.03.2026 01:46] Gigachat request. Model: GigaChat. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"6 2 0 2 3 1 ] . [ 1 2 7 5 2 1 . 3 0 6 2 : r LMEB: Long-horizon Memory Embedding Benchmark Xinping Zhao1,2, Xinshuo Hu, Jiaxin Xu1, Danyu Tang1, Xin Zhang1, Mengjia Zhou1, Yan Zhong3, Yao Zhou, Zifei Shan, Meishan Zhang1, Baotian Hu1,2, Min Zhang1,2 1Harbin Institute of Technology (Shenzhen); 2Shenzhen Loop Area Institute (SLAI); 3Peking University zhaoxinping@stu.hit.edu.cn, mason.zms@gmail.com hubaotian@hit.edu.cn, zhangmin2021@hit.edu.cn "
+[16.03.2026 01:46] Failed to download and parse paper https://huggingface.co/papers/2603.12572: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[16.03.2026 01:46] Downloading and parsing paper https://huggingface.co/papers/2603.13023.
+[16.03.2026 01:46] Downloading paper 2603.13023 from https://arxiv.org/pdf/2603.13023v1...
+[16.03.2026 01:46] Extracting affiliations from text.
+[16.03.2026 01:46] Gigachat request. Model: GigaChat. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"daVinci-Env: Open SWE Environment Synthesis at Scale Dayuan Fu*1,3 Shenyu Wu*2,3 Yunze Wu*2,3 Zerui Peng*2,3 Yaxing Huang*2,3 Mohan Jiang1,2 Lin Zhang2,3 Yukun Li2 Jiarui Hu1 Liming Liu1 Ji Zeng2,3 Jie Sun1 Jinlong Hou1 Pengfei Liu1,2,3 1SII 2SJTU 3GAIR "
+[16.03.2026 01:46] Failed to download and parse paper https://huggingface.co/papers/2603.13023: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[16.03.2026 01:46] Enriching papers with extra data.
+[16.03.2026 01:46] ********************************************************************************
+[16.03.2026 01:46] Abstract 0. Abstract A new benchmark evaluates embedding models' ability to handle long-horizon memory retrieval tasks, revealing that performance in traditional passage retrieval does not generalize to complex memory retrieval scenarios.  					AI-generated summary Memory embeddings are crucial for memory-augme...
+[16.03.2026 01:46] ********************************************************************************
+[16.03.2026 01:46] Abstract 1. Abstract OpenSWE presents the largest transparent framework for software engineering agent training, featuring 45,320 executable environments and achieving state-of-the-art performance on SWE-bench Verified.  					AI-generated summary Training capable software engineering (SWE) agents demands large-...
+[16.03.2026 01:46] Read previous papers.
+[16.03.2026 01:46] Generating reviews via LLM API.
+[16.03.2026 01:46] Querying the API.
+[16.03.2026 01:46] Gigachat request. Model: GigaChat. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract A new benchmark evaluates embedding models' ability to handle long-horizon memory retrieval tasks, revealing that performance in traditional passage retrieval does not generalize to complex memory retrieval scenarios.  					AI-generated summary Memory embeddings are crucial for memory-augmented systems, such as OpenClaw, but their evaluation is underexplored in current text embedding benchmarks, which narrowly focus on traditional passage retrieval and fail to assess models' ability to handle long-horizon memory retrieval tasks involving fragmented, context-dependent, and temporally distant information. To address this, we introduce the Long-horizon Memory Embedding Benchmark (LMEB), a comprehensive framework that evaluates embedding models' capabilities in handling complex, long-horizon memory retrieval tasks. LMEB spans 22 datasets and 193 zero-shot retrieval tasks across 4 memory types: episodic, dialogue, semantic, and procedural, with both AI-generated and human-annotated data. These memory types differ in terms of level of abstraction and temporal dependency, capturing distinct aspects of memory retrieval that reflect the diverse challenges of the real world. We evaluate 15 widely used embedding models, ranging from hundreds of millions to ten billion parameters. The results reveal that (1) LMEB provides a reasonable level of difficulty; (2) Larger models do not always perform better; (3) LMEB and MTEB exhibit orthogonality. This suggests that the field has yet to converge on a universal model capable of excelling across all memory retrieval tasks, and that performance in traditional passage retrieval may not generalize to long-horizon memory retrieval. In summary, by providing a standardized and reproducible evaluation framework, LMEB fills a crucial gap in memory embedding evaluation, driving further advancements in text embedding for handling long-term, context-dependent memory retrieval. LMEB is available at https://github.com/KaLM-Embedding/LMEB.
+[16.03.2026 01:46] Error getting data: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[16.03.2026 01:46] Querying the API.
+[16.03.2026 01:46] Gigachat request. Model: GigaChat. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract OpenSWE presents the largest transparent framework for software engineering agent training, featuring 45,320 executable environments and achieving state-of-the-art performance on SWE-bench Verified.  					AI-generated summary Training capable software engineering (SWE) agents demands large-scale, executable, and verifiable environments that provide dynamic feedback loops for iterative code editing, test execution, and solution refinement. However, existing open-source datasets remain limited in scale and repository diversity, while industrial solutions are opaque with unreleased infrastructure, creating a prohibitive barrier for most academic research groups. We present OpenSWE, the largest fully transparent framework for SWE agent training in Python, comprising 45,320 executable Docker environments spanning over 12.8k repositories, with all Dockerfiles, evaluation scripts, and infrastructure fully open-sourced for reproducibility. OpenSWE is built through a multi-agent synthesis pipeline deployed across a 64-node distributed cluster, automating repository exploration, Dockerfile construction, evaluation script generation, and iterative test analysis. Beyond scale, we propose a quality-centric filtering pipeline that characterizes the inherent difficulty of each environment, filtering out instances that are either unsolvable or insufficiently challenging and retaining only those that maximize learning efficiency. With 891K spent on environment construction and an additional 576K on trajectory sampling and difficulty-aware curation, the entire project represents a total investment of approximately $1.47 million, yielding about 13,000 curated trajectories from roughly 9,000 quality guaranteed environments. Extensive experiments validate OpenSWE's effectiveness: OpenSWE-32B and OpenSWE-72B achieve 62.4% and 66.0% on SWE-bench Verified, establishing SOTA among Qwen2.5 series. Moreover, SWE-focused training yields substantial out-of-domain improvements, including up to 12 points on mathematical reasoning and 5 points on science benchmarks, without degrading factual recall.
+[16.03.2026 01:46] Error getting data: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[16.03.2026 01:46] Renaming data file.
+[16.03.2026 01:46] Renaming previous data. hf_papers.json to ./d/2026-03-16.json
+[16.03.2026 01:46] Saving new data file.
+[16.03.2026 01:46] Generating page.
+[16.03.2026 01:46] Renaming previous page.
+[16.03.2026 01:46] Renaming previous data. index.html to ./d/2026-03-16.html
+[16.03.2026 01:46] Writing result.
+[16.03.2026 01:46] Renaming log file.
+[16.03.2026 01:46] Renaming previous data. log.txt to ./logs/2026-03-16_last_log.txt
