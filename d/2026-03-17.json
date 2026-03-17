@@ -4,18 +4,39 @@
         "en": "March 17",
         "zh": "3月17日"
     },
-    "time_utc": "2026-03-17 04:11",
+    "time_utc": "2026-03-17 05:54",
     "weekday": 1,
-    "issue_id": 1728,
+    "issue_id": 1729,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
+        {
+            "id": "https://huggingface.co/papers/2603.14473",
+            "title": "AI Can Learn Scientific Taste",
+            "url": "https://huggingface.co/papers/2603.14473",
+            "abstract": "Abstract  Great scientists have strong judgement and foresight, closely tied to what we call scientific taste. Here, we use the term to refer to the capacity to judge and propose research ideas with high potential impact. However, most relative research focuses on improving an AI scientist's executive capability, while enhancing an AI's scientific taste remains underexplored. In this work, we propose Reinforcement Learning from Community Feedback (RLCF), a training paradigm that uses large-scale community signals as supervision, and formulate scientific taste learning as a preference modeling and alignment problem. For preference modeling, we train Scientific Judge on 700K field- and time-matched pairs of high- vs. low-citation papers to judge ideas. For preference alignment, using Scientific Judge as a reward model, we train a policy model, Scientific Thinker, to propose research ideas with high potential impact. Experiments show Scientific Judge outperforms SOTA LLMs (e.g., GPT-5.2, Gemini 3 Pro) and generalizes to future-year test, unseen fields, and peer-review preference. Furthermore, Scientific Thinker proposes research ideas with higher potential impact than baselines. Our findings show that AI can learn scientific taste, marking a key step toward reaching human-level AI scientists.",
+            "score": 52,
+            "issue_id": 1729,
+            "pub_date": "2026-03-15",
+            "pub_date_card": {
+                "ru": "15 марта",
+                "en": "March 15",
+                "zh": "3月15日"
+            },
+            "hash": "5653284bb836b249",
+            "github_url": "https://github.com/tongjingqi/AI-Can-Learn-Scientific-Taste",
+            "github_stars": 36,
+            "pdf_title_img": "assets/pdf/title_img/2603.14473.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
         {
             "id": "https://huggingface.co/papers/2603.15583",
             "title": "Grounding World Simulation Models in a Real-World Metropolis",
             "url": "https://huggingface.co/papers/2603.15583",
             "abstract": "Abstract  What if a world simulation model could render not an imagined environment but a city that actually exists? Prior generative world models synthesize visually plausible yet artificial environments by imagining all content. We present Seoul World Model (SWM), a city-scale world model grounded in the real city of Seoul. SWM anchors autoregressive video generation through retrieval-augmented conditioning on nearby street-view images. However, this design introduces several challenges, including temporal misalignment between retrieved references and the dynamic target scene, limited trajectory diversity and data sparsity from vehicle-mounted captures at sparse intervals. We address these challenges through cross-temporal pairing, a large-scale synthetic dataset enabling diverse camera trajectories, and a view interpolation pipeline that synthesizes coherent training videos from sparse street-view images. We further introduce a Virtual Lookahead Sink to stabilize long-horizon generation by continuously re-grounding each chunk to a retrieved image at a future location. We evaluate SWM against recent video world models across three cities: Seoul, Busan, and Ann Arbor. SWM outperforms existing methods in generating spatially faithful, temporally consistent, long-horizon videos grounded in actual urban environments over trajectories reaching hundreds of meters, while supporting diverse camera movements and text-prompted scenario variations.",
-            "score": 30,
-            "issue_id": 1728,
+            "score": 51,
+            "issue_id": 1729,
             "pub_date": "2026-03-16",
             "pub_date_card": {
                 "ru": "16 марта",
@@ -23,9 +44,30 @@
                 "zh": "3月16日"
             },
             "hash": "83b9767a04e8e83a",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "img/title_stub.png",
+            "github_url": "https://github.com/naver-ai/seoul-world-model",
+            "github_stars": 35,
+            "pdf_title_img": "assets/pdf/title_img/2603.15583.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.15594",
+            "title": "OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data",
+            "url": "https://huggingface.co/papers/2603.15594",
+            "abstract": "Abstract  Deep search capabilities have become an indispensable competency for frontier Large Language Model (LLM) agents, yet the development of high-performance search agents remains dominated by industrial giants due to a lack of transparent, high-quality training data. This persistent data scarcity has fundamentally hindered the progress of the broader research community in developing and innovating within this domain. To bridge this gap, we introduce OpenSeeker, the first fully open-source search agent (i.e., model and data) that achieves frontier-level performance through two core technical innovations: (1) Fact-grounded scalable controllable QA synthesis, which reverse-engineers the web graph via topological expansion and entity obfuscation to generate complex, multi-hop reasoning tasks with controllable coverage and complexity. (2) Denoised trajectory synthesis, which employs a retrospective summarization mechanism to denoise the trajectory, therefore promoting the teacher LLMs to generate high-quality actions. Experimental results demonstrate that OpenSeeker, trained (a single training run) on only 11.7k synthesized samples, achieves state-of-the-art performance across multiple benchmarks including BrowseComp, BrowseComp-ZH, xbench-DeepSearch, and WideSearch. Notably, trained with simple SFT, OpenSeeker significantly outperforms the second-best fully open-source agent DeepDive (e.g., 29.5% v.s. 15.3% on BrowseComp), and even surpasses industrial competitors such as Tongyi DeepResearch (trained via extensive continual pre-training, SFT, and RL) on BrowseComp-ZH (48.4% v.s. 46.7%). We fully open-source the complete training dataset and the model weights to democratize frontier search agent research and foster a more transparent, collaborative ecosystem.",
+            "score": 45,
+            "issue_id": 1729,
+            "pub_date": "2026-03-16",
+            "pub_date_card": {
+                "ru": "16 марта",
+                "en": "March 16",
+                "zh": "3月16日"
+            },
+            "hash": "46dcf51a769b2ee6",
+            "github_url": "https://github.com/rui-ye/OpenSeeker",
+            "github_stars": 24,
+            "pdf_title_img": "assets/pdf/title_img/2603.15594.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -35,8 +77,8 @@
             "title": "Safe and Scalable Web Agent Learning via Recreated Websites",
             "url": "https://huggingface.co/papers/2603.10505",
             "abstract": "Abstract VeriEnv enables safe and scalable training of web agents by creating synthetic, verifiable environments from real websites through language model-based cloning.  \t\t\t\t\tAI-generated summary Training autonomous web agents is fundamentally limited by the environments they learn from: real-world websites are unsafe to explore, hard to reset, and rarely provide verifiable feedback. We propose VeriEnv, a framework that treats language models as environment creators, automatically cloning real-world websites into fully executable, verifiable synthetic environments. By exposing controlled internal access via a Python SDK, VeriEnv enables agents to self-generate tasks with deterministic, programmatically verifiable rewards, eliminating reliance on heuristic or LLM-based judges. This design decouples agent learning from unsafe real-world interaction while enabling scalable self-evolution through environment expansion. Through experiments on web agent benchmarks, we show that agents trained with VeriEnv generalize to unseen websites, achieve site-specific mastery through self-evolving training, and benefit from scaling the number of training environments. Code and resources will be released at https://github.com/kyle8581/VeriEnv upon acceptance.",
-            "score": 10,
-            "issue_id": 1728,
+            "score": 13,
+            "issue_id": 1729,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -52,12 +94,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2603.15612",
+            "title": "HSImul3R: Physics-in-the-Loop Reconstruction of Simulation-Ready Human-Scene Interactions",
+            "url": "https://huggingface.co/papers/2603.15612",
+            "abstract": "Abstract HSImul3R presents a unified framework for 3D reconstruction of human-scene interactions that bridges the perception-simulation gap through physics-grounded bidirectional optimization and reinforcement learning.  \t\t\t\t\tAI-generated summary We present HSImul3R, a unified framework for simulation-ready 3D reconstruction of human-scene interactions (HSI) from casual captures, including sparse-view images and monocular videos. Existing methods suffer from a perception-simulation gap: visually plausible reconstructions often violate physical constraints, leading to instability in physics engines and failure in embodied AI applications. To bridge this gap, we introduce a physically-grounded bi-directional optimization pipeline that treats the physics simulator as an active supervisor to jointly refine human dynamics and scene geometry. In the forward direction, we employ Scene-targeted Reinforcement Learning to optimize human motion under dual supervision of motion fidelity and contact stability. In the reverse direction, we propose Direct Simulation Reward Optimization, which leverages simulation feedback on gravitational stability and interaction success to refine scene geometry. We further present HSIBench, a new benchmark with diverse objects and interaction scenarios. Extensive experiments demonstrate that HSImul3R produces the first stable, simulation-ready HSI reconstructions and can be directly deployed to real-world humanoid robots.",
+            "score": 12,
+            "issue_id": 1729,
+            "pub_date": "2026-03-16",
+            "pub_date_card": {
+                "ru": "16 марта",
+                "en": "March 16",
+                "zh": "3月16日"
+            },
+            "hash": "5e9f9eb6ea44f1aa",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2603.15612.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2603.15478",
             "title": "ViFeEdit: A Video-Free Tuner of Your Video Diffusion Transformer",
             "url": "https://huggingface.co/papers/2603.15478",
             "abstract": "Abstract  Diffusion Transformers (DiTs) have demonstrated remarkable scalability and quality in image and video generation, prompting growing interest in extending them to controllable generation and editing tasks. However, compared to the image counterparts, progress in video control and editing remains limited, mainly due to the scarcity of paired video data and the high computational cost of training video diffusion models. To address this issue, in this paper, we propose a video-free tuning framework termed ViFeEdit for video diffusion transformers. Without requiring any forms of video training data, ViFeEdit achieves versatile video generation and editing, adapted solely with 2D images. At the core of our approach is an architectural reparameterization that decouples spatial independence from the full 3D attention in modern video diffusion transformers, which enables visually faithful editing while maintaining temporal consistency with only minimal additional parameters. Moreover, this design operates in a dual-path pipeline with separate timestep embeddings for noise scheduling, exhibiting strong adaptability to diverse conditioning signals. Extensive experiments demonstrate that our method delivers promising results of controllable video generation and editing with only minimal training on 2D image data. Codes are available https://github.com/Lexie-YU/ViFeEdit.",
-            "score": 9,
-            "issue_id": 1728,
+            "score": 12,
+            "issue_id": 1729,
             "pub_date": "2026-03-16",
             "pub_date_card": {
                 "ru": "16 марта",
@@ -66,92 +129,8 @@
             },
             "hash": "d4ae68012629ac1f",
             "github_url": "https://github.com/Lexie-YU/ViFeEdit",
-            "github_stars": 10,
-            "pdf_title_img": "img/title_stub.png",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2603.14473",
-            "title": "AI Can Learn Scientific Taste",
-            "url": "https://huggingface.co/papers/2603.14473",
-            "abstract": "Abstract  Great scientists have strong judgement and foresight, closely tied to what we call scientific taste. Here, we use the term to refer to the capacity to judge and propose research ideas with high potential impact. However, most relative research focuses on improving an AI scientist's executive capability, while enhancing an AI's scientific taste remains underexplored. In this work, we propose Reinforcement Learning from Community Feedback (RLCF), a training paradigm that uses large-scale community signals as supervision, and formulate scientific taste learning as a preference modeling and alignment problem. For preference modeling, we train Scientific Judge on 700K field- and time-matched pairs of high- vs. low-citation papers to judge ideas. For preference alignment, using Scientific Judge as a reward model, we train a policy model, Scientific Thinker, to propose research ideas with high potential impact. Experiments show Scientific Judge outperforms SOTA LLMs (e.g., GPT-5.2, Gemini 3 Pro) and generalizes to future-year test, unseen fields, and peer-review preference. Furthermore, Scientific Thinker proposes research ideas with higher potential impact than baselines. Our findings show that AI can learn scientific taste, marking a key step toward reaching human-level AI scientists.",
-            "score": 8,
-            "issue_id": 1728,
-            "pub_date": "2026-03-15",
-            "pub_date_card": {
-                "ru": "15 марта",
-                "en": "March 15",
-                "zh": "3月15日"
-            },
-            "hash": "5653284bb836b249",
-            "github_url": "https://github.com/tongjingqi/AI-Can-Learn-Scientific-Taste",
-            "github_stars": 8,
-            "pdf_title_img": "assets/pdf/title_img/2603.14473.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2603.15558",
-            "title": "Panoramic Affordance Prediction",
-            "url": "https://huggingface.co/papers/2603.15558",
-            "abstract": "Abstract  Affordance prediction serves as a critical bridge between perception and action in embodied AI. However, existing research is confined to pinhole camera models, which suffer from narrow Fields of View (FoV) and fragmented observations, often missing critical holistic environmental context. In this paper, we present the first exploration into Panoramic Affordance Prediction, utilizing 360-degree imagery to capture global spatial relationships and holistic scene understanding. To facilitate this novel task, we first introduce PAP-12K, a large-scale benchmark dataset containing over 1,000 ultra-high-resolution (12k, 11904 x 5952) panoramic images with over 12k carefully annotated QA pairs and affordance masks. Furthermore, we propose PAP, a training-free, coarse-to-fine pipeline inspired by the human foveal visual system to tackle the ultra-high resolution and severe distortion inherent in panoramic images. PAP employs recursive visual routing via grid prompting to progressively locate targets, applies an adaptive gaze mechanism to rectify local geometric distortions, and utilizes a cascaded grounding pipeline to extract precise instance-level masks. Experimental results on PAP-12K reveal that existing affordance prediction methods designed for standard perspective images suffer severe performance degradation and fail due to the unique challenges of panoramic vision. In contrast, PAP framework effectively overcomes these obstacles, significantly outperforming state-of-the-art baselines and highlighting the immense potential of panoramic perception for robust embodied intelligence.",
-            "score": 4,
-            "issue_id": 1728,
-            "pub_date": "2026-03-16",
-            "pub_date_card": {
-                "ru": "16 марта",
-                "en": "March 16",
-                "zh": "3月16日"
-            },
-            "hash": "cfe55d462ffe61fc",
-            "github_url": "https://github.com/EnVision-Research/PAP",
-            "github_stars": 23,
-            "pdf_title_img": "img/title_stub.png",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2603.12146",
-            "title": "FlashMotion: Few-Step Controllable Video Generation with Trajectory Guidance",
-            "url": "https://huggingface.co/papers/2603.12146",
-            "abstract": "Abstract  Recent advances in trajectory-controllable video generation have achieved remarkable progress. Previous methods mainly use adapter-based architectures for precise motion control along predefined trajectories. However, all these methods rely on a multi-step denoising process, leading to substantial time redundancy and computational overhead. While existing video distillation methods successfully distill multi-step generators into few-step, directly applying these approaches to trajectory-controllable video generation results in noticeable degradation in both video quality and trajectory accuracy. To bridge this gap, we introduce FlashMotion, a novel training framework designed for few-step trajectory-controllable video generation. We first train a trajectory adapter on a multi-step video generator for precise trajectory control. Then, we distill the generator into a few-step version to accelerate video generation. Finally, we finetune the adapter using a hybrid strategy that combines diffusion and adversarial objectives, aligning it with the few-step generator to produce high-quality, trajectory-accurate videos. For evaluation, we introduce FlashBench, a benchmark for long-sequence trajectory-controllable video generation that measures both video quality and trajectory accuracy across varying numbers of foreground objects. Experiments on two adapter architectures show that FlashMotion surpasses existing video distillation methods and previous multi-step models in both visual quality and trajectory consistency.",
-            "score": 3,
-            "issue_id": 1728,
-            "pub_date": "2026-03-12",
-            "pub_date_card": {
-                "ru": "12 марта",
-                "en": "March 12",
-                "zh": "3月12日"
-            },
-            "hash": "146f41ab76077625",
-            "github_url": "https://github.com/quanhaol/FlashMotion",
-            "github_stars": 25,
-            "pdf_title_img": "assets/pdf/title_img/2603.12146.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2603.14145",
-            "title": "MMOU: A Massive Multi-Task Omni Understanding and Reasoning Benchmark for Long and Complex Real-World Videos",
-            "url": "https://huggingface.co/papers/2603.14145",
-            "abstract": "Abstract  Multimodal Large Language Models (MLLMs) have shown strong performance in visual and audio understanding when evaluated in isolation. However, their ability to jointly reason over omni-modal (visual, audio, and textual) signals in long and complex videos remains largely unexplored. We introduce MMOU, a new benchmark designed to systematically evaluate multimodal understanding and reasoning under these challenging, real-world conditions. MMOU consists of 15,000 carefully curated questions paired with 9038 web-collected videos of varying length, spanning diverse domains and exhibiting rich, tightly coupled audio-visual content. The benchmark covers 13 fundamental skill categories, all of which require integrating evidence across modalities and time. All questions are manually annotated across multiple turns by professional annotators, ensuring high quality and reasoning fidelity. We evaluate 20+ state-of-the-art open-source and proprietary multimodal models on MMOU. The results expose substantial performance gaps: the best closed-source model achieves only 64.2% accuracy, while the strongest open-source model reaches just 46.8%. Our results highlight the challenges of long-form omni-modal understanding, revealing that current models frequently fail to apply even fundamental skills in long videos. Through detailed analysis, we further identify systematic failure modes and provide insights into where and why current models break.",
-            "score": 2,
-            "issue_id": 1728,
-            "pub_date": "2026-03-14",
-            "pub_date_card": {
-                "ru": "14 марта",
-                "en": "March 14",
-                "zh": "3月14日"
-            },
-            "hash": "5f985fef8c252047",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2603.14145.jpg",
+            "github_stars": 14,
+            "pdf_title_img": "assets/pdf/title_img/2603.15478.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -161,8 +140,8 @@
             "title": "WebVR: Benchmarking Multimodal LLMs for WebPage Recreation from Videos via Human-Aligned Visual Rubrics",
             "url": "https://huggingface.co/papers/2603.13391",
             "abstract": "Abstract  Existing web-generation benchmarks rely on text prompts or static screenshots as input. However, videos naturally convey richer signals such as interaction flow, transition timing, and motion continuity, which are essential for faithful webpage recreation. Despite this potential, video-conditioned webpage generation remains largely unexplored, with no dedicated benchmark for this task. To fill this gap, we introduce WebVR, a benchmark that evaluates whether MLLMs can faithfully recreate webpages from demonstration videos. WebVR contains 175 webpages across diverse categories, all constructed through a controlled synthesis pipeline rather than web crawling, ensuring varied and realistic demonstrations without overlap with existing online pages. We also design a fine-grained, human-aligned visual rubric that evaluates the generated webpages across multiple dimensions. Experiments on 19 models reveal substantial gaps in recreating fine-grained style and motion quality, while the rubric-based automatic evaluation achieves 96% agreement with human preferences. We release the dataset, evaluation toolkit, and baseline results to support future research on video-to-webpage generation.",
-            "score": 1,
-            "issue_id": 1728,
+            "score": 9,
+            "issue_id": 1729,
             "pub_date": "2026-03-11",
             "pub_date_card": {
                 "ru": "11 марта",
@@ -178,12 +157,96 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2603.15558",
+            "title": "Panoramic Affordance Prediction",
+            "url": "https://huggingface.co/papers/2603.15558",
+            "abstract": "Abstract  Affordance prediction serves as a critical bridge between perception and action in embodied AI. However, existing research is confined to pinhole camera models, which suffer from narrow Fields of View (FoV) and fragmented observations, often missing critical holistic environmental context. In this paper, we present the first exploration into Panoramic Affordance Prediction, utilizing 360-degree imagery to capture global spatial relationships and holistic scene understanding. To facilitate this novel task, we first introduce PAP-12K, a large-scale benchmark dataset containing over 1,000 ultra-high-resolution (12k, 11904 x 5952) panoramic images with over 12k carefully annotated QA pairs and affordance masks. Furthermore, we propose PAP, a training-free, coarse-to-fine pipeline inspired by the human foveal visual system to tackle the ultra-high resolution and severe distortion inherent in panoramic images. PAP employs recursive visual routing via grid prompting to progressively locate targets, applies an adaptive gaze mechanism to rectify local geometric distortions, and utilizes a cascaded grounding pipeline to extract precise instance-level masks. Experimental results on PAP-12K reveal that existing affordance prediction methods designed for standard perspective images suffer severe performance degradation and fail due to the unique challenges of panoramic vision. In contrast, PAP framework effectively overcomes these obstacles, significantly outperforming state-of-the-art baselines and highlighting the immense potential of panoramic perception for robust embodied intelligence.",
+            "score": 8,
+            "issue_id": 1729,
+            "pub_date": "2026-03-16",
+            "pub_date_card": {
+                "ru": "16 марта",
+                "en": "March 16",
+                "zh": "3月16日"
+            },
+            "hash": "cfe55d462ffe61fc",
+            "github_url": "https://github.com/EnVision-Research/PAP",
+            "github_stars": 26,
+            "pdf_title_img": "img/title_stub.png",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.15031",
+            "title": "Attention Residuals",
+            "url": "https://huggingface.co/papers/2603.15031",
+            "abstract": "Abstract  Residual connections with PreNorm are standard in modern LLMs, yet they accumulate all layer outputs with fixed unit weights. This uniform aggregation causes uncontrolled hidden-state growth with depth, progressively diluting each layer's contribution. We propose Attention Residuals (AttnRes), which replaces this fixed accumulation with softmax attention over preceding layer outputs, allowing each layer to selectively aggregate earlier representations with learned, input-dependent weights. To address the memory and communication overhead of attending over all preceding layer outputs for large-scale model training, we introduce Block AttnRes, which partitions layers into blocks and attends over block-level representations, reducing the memory footprint while preserving most of the gains of full AttnRes. Combined with cache-based pipeline communication and a two-phase computation strategy, Block AttnRes becomes a practical drop-in replacement for standard residual connections with minimal overhead.   Scaling law experiments confirm that the improvement is consistent across model sizes, and ablations validate the benefit of content-dependent depth-wise selection. We further integrate AttnRes into the Kimi Linear architecture (48B total / 3B activated parameters) and pre-train on 1.4T tokens, where AttnRes mitigates PreNorm dilution, yielding more uniform output magnitudes and gradient distribution across depth, and improves downstream performance across all evaluated tasks.",
+            "score": 8,
+            "issue_id": 1729,
+            "pub_date": "2026-03-16",
+            "pub_date_card": {
+                "ru": "16 марта",
+                "en": "March 16",
+                "zh": "3月16日"
+            },
+            "hash": "3c2bdb6b971624f7",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2603.15031.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.14145",
+            "title": "MMOU: A Massive Multi-Task Omni Understanding and Reasoning Benchmark for Long and Complex Real-World Videos",
+            "url": "https://huggingface.co/papers/2603.14145",
+            "abstract": "Abstract  Multimodal Large Language Models (MLLMs) have shown strong performance in visual and audio understanding when evaluated in isolation. However, their ability to jointly reason over omni-modal (visual, audio, and textual) signals in long and complex videos remains largely unexplored. We introduce MMOU, a new benchmark designed to systematically evaluate multimodal understanding and reasoning under these challenging, real-world conditions. MMOU consists of 15,000 carefully curated questions paired with 9038 web-collected videos of varying length, spanning diverse domains and exhibiting rich, tightly coupled audio-visual content. The benchmark covers 13 fundamental skill categories, all of which require integrating evidence across modalities and time. All questions are manually annotated across multiple turns by professional annotators, ensuring high quality and reasoning fidelity. We evaluate 20+ state-of-the-art open-source and proprietary multimodal models on MMOU. The results expose substantial performance gaps: the best closed-source model achieves only 64.2% accuracy, while the strongest open-source model reaches just 46.8%. Our results highlight the challenges of long-form omni-modal understanding, revealing that current models frequently fail to apply even fundamental skills in long videos. Through detailed analysis, we further identify systematic failure modes and provide insights into where and why current models break.",
+            "score": 4,
+            "issue_id": 1729,
+            "pub_date": "2026-03-14",
+            "pub_date_card": {
+                "ru": "14 марта",
+                "en": "March 14",
+                "zh": "3月14日"
+            },
+            "hash": "5f985fef8c252047",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2603.14145.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.12146",
+            "title": "FlashMotion: Few-Step Controllable Video Generation with Trajectory Guidance",
+            "url": "https://huggingface.co/papers/2603.12146",
+            "abstract": "Abstract  Recent advances in trajectory-controllable video generation have achieved remarkable progress. Previous methods mainly use adapter-based architectures for precise motion control along predefined trajectories. However, all these methods rely on a multi-step denoising process, leading to substantial time redundancy and computational overhead. While existing video distillation methods successfully distill multi-step generators into few-step, directly applying these approaches to trajectory-controllable video generation results in noticeable degradation in both video quality and trajectory accuracy. To bridge this gap, we introduce FlashMotion, a novel training framework designed for few-step trajectory-controllable video generation. We first train a trajectory adapter on a multi-step video generator for precise trajectory control. Then, we distill the generator into a few-step version to accelerate video generation. Finally, we finetune the adapter using a hybrid strategy that combines diffusion and adversarial objectives, aligning it with the few-step generator to produce high-quality, trajectory-accurate videos. For evaluation, we introduce FlashBench, a benchmark for long-sequence trajectory-controllable video generation that measures both video quality and trajectory accuracy across varying numbers of foreground objects. Experiments on two adapter architectures show that FlashMotion surpasses existing video distillation methods and previous multi-step models in both visual quality and trajectory consistency.",
+            "score": 4,
+            "issue_id": 1729,
+            "pub_date": "2026-03-12",
+            "pub_date_card": {
+                "ru": "12 марта",
+                "en": "March 12",
+                "zh": "3月12日"
+            },
+            "hash": "146f41ab76077625",
+            "github_url": "https://github.com/quanhaol/FlashMotion",
+            "github_stars": 25,
+            "pdf_title_img": "assets/pdf/title_img/2603.12146.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2603.13364",
             "title": "FineRMoE: Dimension Expansion for Finer-Grained Expert with Its Upcycling Approach",
             "url": "https://huggingface.co/papers/2603.13364",
             "abstract": "Abstract  As revealed by the scaling law of fine-grained MoE, model performance ceases to be improved once the granularity of the intermediate dimension exceeds the optimal threshold, limiting further gains from single-dimension fine-grained design. To address this bottleneck, we propose FineRMoE (FineR-Grained MoE), an architecture that extends fine-grained expert design to both intermediate and output dimensions, aiming to enhance expert specialization beyond the single-dimension limit. We further introduce a bi-level sparse forward computation paradigm and a specialized routing mechanism to govern the activation. In addition, to obviate the prohibitive cost of training FineRMoE from scratch, we devise a generalized upcycling method to build FineRMoE in a cost-effective manner. Extensive experiments demonstrate the superior performance achieved by FineRMoE across ten standard benchmarks. Compared with the strongest baseline, FineRMoE achieves 6 times higher parameter efficiency, 281 times lower prefill latency, and 136 timese higher decoding throughput during inference.",
-            "score": 1,
-            "issue_id": 1728,
+            "score": 4,
+            "issue_id": 1729,
             "pub_date": "2026-03-09",
             "pub_date_card": {
                 "ru": "9 марта",
@@ -192,8 +255,71 @@
             },
             "hash": "830b806adba232fa",
             "github_url": "https://github.com/liaoning97/FineRMoE",
-            "github_stars": 5,
+            "github_stars": 8,
             "pdf_title_img": "assets/pdf/title_img/2603.13364.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.12529",
+            "title": "TERMINATOR: Learning Optimal Exit Points for Early Stopping in Chain-of-Thought Reasoning",
+            "url": "https://huggingface.co/papers/2603.12529",
+            "abstract": "Abstract TERMINATOR is an early-exit method for large reasoning models that reduces unnecessary computation by identifying optimal reasoning lengths for efficient chain-of-thought reasoning.  \t\t\t\t\tAI-generated summary Large Reasoning Models (LRMs) achieve impressive performance on complex reasoning tasks via Chain-of-Thought (CoT) reasoning, which enables them to generate intermediate thinking tokens before arriving at the final answer. However, LRMs often suffer from significant overthinking, spending excessive compute time even after the answer is generated early on. Prior work has identified the existence of an optimal reasoning length such that truncating reasoning at this point significantly shortens CoT outputs with virtually no change in performance. However, determining optimal CoT lengths for practical datasets is highly non-trivial as they are fully task and model-dependent. In this paper, we precisely address this and design TERMINATOR, an early-exit strategy for LRMs at inference to mitigate overthinking. The central idea underpinning TERMINATOR is that the first arrival of an LRM's final answer is often predictable, and we leverage these first answer positions to create a novel dataset of optimal reasoning lengths to train TERMINATOR. Powered by this approach, TERMINATOR achieves significant reductions in CoT lengths of 14%-55% on average across four challenging practical datasets: MATH-500, AIME 2025, HumanEval, and GPQA, whilst outperforming current state-of-the-art methods.",
+            "score": 3,
+            "issue_id": 1729,
+            "pub_date": "2026-03-13",
+            "pub_date_card": {
+                "ru": "13 марта",
+                "en": "March 13",
+                "zh": "3月13日"
+            },
+            "hash": "94fdb8836b3ecbb3",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2603.12529.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.15611",
+            "title": "Code-A1: Adversarial Evolving of Code LLM and Test LLM via Reinforcement Learning",
+            "url": "https://huggingface.co/papers/2603.15611",
+            "abstract": "Abstract  Reinforcement learning for code generation relies on verifiable rewards from unit test pass rates. Yet high-quality test suites are scarce, existing datasets offer limited coverage, and static rewards fail to adapt as models improve. Recent self-play methods unify code and test generation in a single model, but face a inherent dilemma: white-box access leads to self-collusion where the model produces trivial tests for easy rewards, yet black-box restriction yields generic tests that miss implementation-specific bugs. We introduce Code-A1, an adversarial co-evolution framework that jointly optimizes a Code LLM and a Test LLM with opposing objectives. The Code LLM is rewarded for passing more tests, while the Test LLM is rewarded for exposing more defects. This architectural separation eliminates self-collusion risks and safely enables white-box test generation, where the Test LLM can inspect candidate code to craft targeted adversarial tests. We further introduce a Mistake Book mechanism for experience replay and a composite reward balancing test validity with adversarial difficulty. Experiments on Qwen2.5-Coder models demonstrate that Code-A1 achieves code generation performance matching or exceeding models trained on human-annotated tests, while significantly improving test generation capability.",
+            "score": 1,
+            "issue_id": 1729,
+            "pub_date": "2026-03-16",
+            "pub_date_card": {
+                "ru": "16 марта",
+                "en": "March 16",
+                "zh": "3月16日"
+            },
+            "hash": "620a8574adb416c1",
+            "github_url": "https://github.com/ZJU-REAL/Code-A1",
+            "github_stars": 3,
+            "pdf_title_img": "assets/pdf/title_img/2603.15611.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.12743",
+            "title": "MoKus: Leveraging Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization",
+            "url": "https://huggingface.co/papers/2603.12743",
+            "abstract": "Abstract Knowledge-aware concept customization binds textual knowledge to visual concepts through a two-stage framework that learns visual anchors and updates textual knowledge for high-fidelity generation, supported by a new benchmark and cross-modal transfer capabilities.  \t\t\t\t\tAI-generated summary Concept customization typically binds rare tokens to a target concept. Unfortunately, these approaches often suffer from unstable performance as the pretraining data seldom contains these rare tokens. Meanwhile, these rare tokens fail to convey the inherent knowledge of the target concept. Consequently, we introduce Knowledge-aware Concept Customization, a novel task aiming at binding diverse textual knowledge to target visual concepts. This task requires the model to identify the knowledge within the text prompt to perform high-fidelity customized generation. Meanwhile, the model should efficiently bind all the textual knowledge to the target concept. Therefore, we propose MoKus, a novel framework for knowledge-aware concept customization. Our framework relies on a key observation: cross-modal knowledge transfer, where modifying knowledge within the text modality naturally transfers to the visual modality during generation. Inspired by this observation, MoKus contains two stages: (1) In visual concept learning, we first learn the anchor representation to store the visual information of the target concept. (2) In textual knowledge updating, we update the answer for the knowledge queries to the anchor representation, enabling high-fidelity customized generation. To further comprehensively evaluate our proposed MoKus on the new task, we introduce the first benchmark for knowledge-aware concept customization: KnowCusBench. Extensive evaluations have demonstrated that MoKus outperforms state-of-the-art methods. Moreover, the cross-model knowledge transfer allows MoKus to be easily extended to other knowledge-aware applications like virtual concept creation and concept erasure. We also demonstrate the capability of our method to achieve improvements on world knowledge benchmarks.",
+            "score": 1,
+            "issue_id": 1729,
+            "pub_date": "2026-03-13",
+            "pub_date_card": {
+                "ru": "13 марта",
+                "en": "March 13",
+                "zh": "3月13日"
+            },
+            "hash": "574c99583564832f",
+            "github_url": "https://github.com/HKUST-LongGroup/MoKus",
+            "github_stars": 3,
+            "pdf_title_img": "assets/pdf/title_img/2603.12743.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -204,7 +330,7 @@
             "url": "https://huggingface.co/papers/2603.14313",
             "abstract": "Abstract  Federal Open Market Committee (FOMC) statements are a major source of monetary-policy information, and even subtle changes in their wording can move global financial markets. A central task is therefore to measure the hawkish--dovish stance conveyed in these texts. Existing approaches typically treat stance detection as a standard classification problem, labeling each statement in isolation. However, the interpretation of monetary-policy communication is inherently relative: market reactions depend not only on the tone of a statement, but also on how that tone shifts across meetings. We introduce Delta-Consistent Scoring (DCS), an annotation-free framework that maps frozen large language model (LLM) representations to continuous stance scores by jointly modeling absolute stance and relative inter-meeting shifts. Rather than relying on manual hawkish--dovish labels, DCS uses consecutive meetings as a source of self-supervision. It learns an absolute stance score for each statement and a relative shift score between consecutive statements. A delta-consistency objective encourages changes in absolute scores to align with the relative shifts. This allows DCS to recover a temporally coherent stance trajectory without manual labels. Across four LLM backbones, DCS consistently outperforms supervised probes and LLM-as-judge baselines, achieving up to 71.1% accuracy on sentence-level hawkish--dovish classification. The resulting meeting-level scores are also economically meaningful: they correlate strongly with inflation indicators and are significantly associated with Treasury yield movements. Overall, the results suggest that LLM representations encode monetary-policy signals that can be recovered through relative temporal structure.",
             "score": 0,
-            "issue_id": 1728,
+            "issue_id": 1729,
             "pub_date": "2026-03-15",
             "pub_date_card": {
                 "ru": "15 марта",
@@ -215,6 +341,27 @@
             "github_url": "https://github.com/yixuantt/DeltaConsistentScoring",
             "github_stars": 0,
             "pdf_title_img": "assets/pdf/title_img/2603.14313.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2603.13428",
+            "title": "EvoClaw: Evaluating AI Agents on Continuous Software Evolution",
+            "url": "https://huggingface.co/papers/2603.13428",
+            "abstract": "Abstract  With AI agents increasingly deployed as long-running systems, it becomes essential to autonomously construct and continuously evolve customized software to enable interaction within dynamic environments. Yet, existing benchmarks evaluate agents on isolated, one-off coding tasks, neglecting the temporal dependencies and technical debt inherent in real-world software evolution. To bridge this gap, we introduce DeepCommit, an agentic pipeline that reconstructs verifiable Milestone DAGs from noisy commit logs, where milestones are defined as semantically cohesive development goals. These executable sequences enable EvoClaw, a novel benchmark that requires agents to sustain system integrity and limit error accumulation, dimensions of long-term software evolution largely missing from current benchmarks. Our evaluation of 12 frontier models across 4 agent frameworks reveals a critical vulnerability: overall performance scores drop significantly from >80% on isolated tasks to at most 38% in continuous settings, exposing agents' profound struggle with long-term maintenance and error propagation.",
+            "score": 0,
+            "issue_id": 1729,
+            "pub_date": "2026-03-13",
+            "pub_date_card": {
+                "ru": "13 марта",
+                "en": "March 13",
+                "zh": "3月13日"
+            },
+            "hash": "6858cff907d51ec3",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2603.13428.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
