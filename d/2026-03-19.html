@@ -1211,7 +1211,7 @@
         
         function updateTimeDiffs() {
             const timeDiff = document.getElementById('timeDiff');
-            timeDiff.innerHTML = '🔄 ' + getTimeDiff('2026-03-19 18:46',lang=currentLang);
+            timeDiff.innerHTML = '🔄 ' + getTimeDiff('2026-03-19 19:42',lang=currentLang);
         }
         function updateSortingOptions() {
             const sortingLabels = {
@@ -1268,14 +1268,14 @@
         } 
         function hideNextLink(format) {
             if (format === 'monthly') {
-                if (isCurrentMonth('2026-03-19 18:46')) {
+                if (isCurrentMonth('2026-03-19 19:42')) {
                     const element = document.getElementById('nav-next');
                     if (element) {    
                         element.style.display = 'none';
                     }
                 }
             } else {            
-                if (isToday('2026-03-19 18:46')) {
+                if (isToday('2026-03-19 19:42')) {
                     const element = document.getElementById('nav-next');
                     if (element) {    
                         element.style.display = 'none';
