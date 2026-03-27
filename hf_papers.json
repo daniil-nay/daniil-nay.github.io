@@ -4,9 +4,9 @@
         "en": "March 27",
         "zh": "3月27日"
     },
-    "time_utc": "2026-03-27 07:56",
+    "time_utc": "2026-03-27 08:43",
     "weekday": 4,
-    "issue_id": 1925,
+    "issue_id": 1926,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -14,8 +14,8 @@
             "title": "Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale",
             "url": "https://huggingface.co/papers/2603.25040",
             "abstract": "Abstract Intern-S1-Pro is a one-trillion-parameter scientific multimodal foundation model that enhances general and scientific capabilities through advanced agent functionalities and specialized task mastery across multiple scientific disciplines.  AI-generated summary We introduce Intern-S1-Pro, the first one-trillion-parameter scientific multimodal foundation model. Scaling to this unprecedented size, the model delivers a comprehensive enhancement across both general and scientific domains. Beyond stronger reasoning and image-text understanding capabilities, its intelligence is augmented with advanced agent capabilities. Simultaneously, its scientific expertise has been vastly expanded to master over 100 specialized tasks across critical science fields, including chemistry, materials, life sciences, and earth sciences. Achieving this massive scale is made possible by the robust infrastructure support of XTuner and LMDeploy, which facilitates highly efficient Reinforcement Learning (RL) training at the 1-trillion parameter level while ensuring strict precision consistency between training and inference. By seamlessly integrating these advancements, Intern-S1-Pro further fortifies the fusion of general and specialized intelligence, working as a Specializable Generalist, demonstrating its position in the top tier of open-source models for general capabilities, while outperforming proprietary models in the depth of specialized scientific tasks.",
-            "score": 45,
-            "issue_id": 1925,
+            "score": 47,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -35,8 +35,8 @@
             "title": "PixelSmile: Toward Fine-Grained Facial Expression Editing",
             "url": "https://huggingface.co/papers/2603.25728",
             "abstract": "Abstract A diffusion framework called PixelSmile is proposed for fine-grained facial expression editing that achieves better disentanglement and identity preservation through symmetric joint training and contrastive learning.  AI-generated summary Fine-grained facial expression editing has long been limited by intrinsic semantic overlap. To address this, we construct the Flex Facial Expression (FFE) dataset with continuous affective annotations and establish FFE-Bench to evaluate structural confusion, editing accuracy, linear controllability, and the trade-off between expression editing and identity preservation. We propose PixelSmile, a diffusion framework that disentangles expression semantics via fully symmetric joint training. PixelSmile combines intensity supervision with contrastive learning to produce stronger and more distinguishable expressions, achieving precise and stable linear expression control through textual latent interpolation. Extensive experiments demonstrate that PixelSmile achieves superior disentanglement and robust identity preservation, confirming its effectiveness for continuous, controllable, and fine-grained expression editing, while naturally supporting smooth expression blending.",
-            "score": 39,
-            "issue_id": 1925,
+            "score": 42,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -45,7 +45,7 @@
             },
             "hash": "038e99731dff30a1",
             "github_url": "https://github.com/Ammmob/PixelSmile",
-            "github_stars": 29,
+            "github_stars": 30,
             "pdf_title_img": "assets/pdf/title_img/2603.25728.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -56,8 +56,8 @@
             "title": "RealRestorer: Towards Generalizable Real-World Image Restoration with Large-Scale Image Editing Models",
             "url": "https://huggingface.co/papers/2603.25502",
             "abstract": "Abstract A large-scale dataset and open-source model are developed to improve image restoration performance and close the gap with closed-source alternatives, with a dedicated benchmark for real-world degradation evaluation.  AI-generated summary Image restoration under real-world degradations is critical for downstream tasks such as autonomous driving and object detection. However, existing restoration models are often limited by the scale and distribution of their training data, resulting in poor generalization to real-world scenarios. Recently, large-scale image editing models have shown strong generalization ability in restoration tasks, especially for closed-source models like Nano Banana Pro, which can restore images while preserving consistency. Nevertheless, achieving such performance with those large universal models requires substantial data and computational costs. To address this issue, we construct a large-scale dataset covering nine common real-world degradation types and train a state-of-the-art open-source model to narrow the gap with closed-source alternatives. Furthermore, we introduce RealIR-Bench, which contains 464 real-world degraded images and tailored evaluation metrics focusing on degradation removal and consistency preservation. Extensive experiments demonstrate our model ranks first among open-source methods, achieving state-of-the-art performance.",
-            "score": 23,
-            "issue_id": 1925,
+            "score": 28,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -66,7 +66,7 @@
             },
             "hash": "10015843daaf8c28",
             "github_url": "https://github.com/yfyang007/RealRestorer",
-            "github_stars": 17,
+            "github_stars": 25,
             "pdf_title_img": "assets/pdf/title_img/2603.25502.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -77,8 +77,8 @@
             "title": "MACRO: Advancing Multi-Reference Image Generation with Structured Long-Context Data",
             "url": "https://huggingface.co/papers/2603.25319",
             "abstract": "Abstract A large-scale dataset and benchmark are introduced to address limitations in multi-reference image generation by providing structured long-context supervision and standardized evaluation protocols.  AI-generated summary Generating images conditioned on multiple visual references is critical for real-world applications such as multi-subject composition, narrative illustration, and novel view synthesis, yet current models suffer from severe performance degradation as the number of input references grows. We identify the root cause as a fundamental data bottleneck: existing datasets are dominated by single- or few-reference pairs and lack the structured, long-context supervision needed to learn dense inter-reference dependencies. To address this, we introduce MacroData, a large-scale dataset of 400K samples, each containing up to 10 reference images, systematically organized across four complementary dimensions -- Customization, Illustration, Spatial reasoning, and Temporal dynamics -- to provide comprehensive coverage of the multi-reference generation space. Recognizing the concurrent absence of standardized evaluation protocols, we further propose MacroBench, a benchmark of 4,000 samples that assesses generative coherence across graded task dimensions and input scales. Extensive experiments show that fine-tuning on MacroData yields substantial improvements in multi-reference generation, and ablation studies further reveal synergistic benefits of cross-task co-training and effective strategies for handling long-context complexity. The dataset and benchmark will be publicly released.",
-            "score": 15,
-            "issue_id": 1925,
+            "score": 18,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -87,7 +87,7 @@
             },
             "hash": "2deb4c847883f52a",
             "github_url": "https://github.com/HKU-MMLab/Macro",
-            "github_stars": 19,
+            "github_stars": 22,
             "pdf_title_img": "assets/pdf/title_img/2603.25319.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2603.24755",
             "abstract": "Abstract Software development is iterative, yet agentic coding benchmarks overwhelmingly evaluate single-shot solutions against complete specifications. Code can pass the test suite but become progressively harder to extend. Recent iterative benchmarks attempt to close this gap, but constrain the agent's design decisions too tightly to faithfully measure how code quality shapes future extensions. We introduce SlopCodeBench, a language-agnostic benchmark comprising 20 problems and 93 checkpoints, in which agents repeatedly extend their own prior solutions under evolving specifications that force architectural decisions without prescribing internal structure. We track two trajectory-level quality signals: verbosity, the fraction of redundant or duplicated code, and structural erosion, the share of complexity mass concentrated in high-complexity functions. No agent solves any problem end-to-end across 11 models; the highest checkpoint solve rate is 17.2%. Quality degrades steadily: erosion rises in 80% of trajectories and verbosity in 89.8%. Against 48 open-source Python repositories, agent code is 2.2x more verbose and markedly more eroded. Tracking 20 of those repositories over time shows that human code stays flat, while agent code deteriorates with each iteration. A prompt-intervention study shows that initial quality can be improved, but it does not halt degradation. These results demonstrate that pass-rate benchmarks systematically undermeasure extension robustness, and that current agents lack the design discipline iterative software development demands.  AI-generated summary Software development is iterative, yet agentic coding benchmarks overwhelmingly evaluate single-shot solutions against complete specifications. Code can pass the test suite but become progressively harder to extend. Recent iterative benchmarks attempt to close this gap, but constrain the agent's design decisions too tightly to faithfully measure how code quality shapes future extensions. We introduce SlopCodeBench, a language-agnostic benchmark comprising 20 problems and 93 checkpoints, in which agents repeatedly extend their own prior solutions under evolving specifications that force architectural decisions without prescribing internal structure. We track two trajectory-level quality signals: verbosity, the fraction of redundant or duplicated code, and structural erosion, the share of complexity mass concentrated in high-complexity functions. No agent solves any problem end-to-end across 11 models; the highest checkpoint solve rate is 17.2%. Quality degrades steadily: erosion rises in 80% of trajectories and verbosity in 89.8%. Against 48 open-source Python repositories, agent code is 2.2x more verbose and markedly more eroded. Tracking 20 of those repositories over time shows that human code stays flat, while agent code deteriorates with each iteration. A prompt-intervention study shows that initial quality can be improved, but it does not halt degradation. These results demonstrate that pass-rate benchmarks systematically undermeasure extension robustness, and that current agents lack the design discipline iterative software development demands.",
             "score": 9,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-25",
             "pub_date_card": {
                 "ru": "25 марта",
@@ -119,8 +119,8 @@
             "title": "MSA: Memory Sparse Attention for Efficient End-to-End Memory Model Scaling to 100M Tokens",
             "url": "https://huggingface.co/papers/2603.23516",
             "abstract": "Abstract Memory Sparse Attention (MSA) enables large language models to process extremely long contexts with linear complexity and high efficiency through innovations like sparse attention and document-wise RoPE.  AI-generated summary Long-term memory is a cornerstone of human intelligence. Enabling AI to process lifetime-scale information remains a long-standing pursuit in   the field. Due to the constraints of full-attention architectures, the effective context length of large language models (LLMs) is typically   limited to 1M tokens. Existing approaches, such as hybrid linear attention, fixed-size memory states (e.g., RNNs), and external storage   methods like RAG or agent systems, attempt to extend this limit. However, they often suffer from severe precision degradation and rapidly   increasing latency as context length grows, an inability to dynamically modify memory content, or a lack of end-to-end optimization. These   bottlenecks impede complex scenarios like large-corpus summarization, Digital Twins, and long-history agent reasoning, while limiting memory   capacity and slowing inference. We present Memory Sparse Attention (MSA), an end-to-end trainable, efficient, and massively scalable memory   model framework. Through core innovations including scalable sparse attention and document-wise RoPE, MSA achieves linear complexity in both   training and inference while maintaining exceptional stability, exhibiting less than 9% degradation when scaling from 16K to 100M tokens.   Furthermore, KV cache compression, combined with Memory Parallel, enables 100M-token inference on 2xA800 GPUs. We also propose Memory   Interleaving to facilitate complex multi-hop reasoning across scattered memory segments. MSA significantly surpasses frontier LLMs,   state-of-the-art RAG systems, and leading memory agents in long-context benchmarks. These results demonstrate that by decoupling memory   capacity from reasoning, MSA provides a scalable foundation to endow general-purpose models with intrinsic, lifetime-scale memory.",
-            "score": 8,
-            "issue_id": 1925,
+            "score": 9,
+            "issue_id": 1926,
             "pub_date": "2026-03-06",
             "pub_date_card": {
                 "ru": "6 марта",
@@ -129,7 +129,7 @@
             },
             "hash": "0395e9106b6ff65e",
             "github_url": "https://github.com/EverMind-AI/MSA",
-            "github_stars": 2230,
+            "github_stars": 2234,
             "pdf_title_img": "assets/pdf/title_img/2603.23516.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -141,7 +141,7 @@
             "url": "https://huggingface.co/papers/2603.25551",
             "abstract": "Abstract Voxtral TTS is a multilingual text-to-speech model that generates natural speech from short reference audio using a hybrid architecture combining semantic token generation and flow-matching for acoustic tokens.  AI-generated summary We introduce Voxtral TTS, an expressive multilingual text-to-speech model that generates natural speech from as little as 3 seconds of reference audio. Voxtral TTS adopts a hybrid architecture that combines auto-regressive generation of semantic speech tokens with flow-matching for acoustic tokens. These tokens are encoded and decoded with Voxtral Codec, a speech tokenizer trained from scratch with a hybrid VQ-FSQ quantization scheme. In human evaluations conducted by native speakers, Voxtral TTS is preferred for multilingual voice cloning due to its naturalness and expressivity, achieving a 68.4\\% win rate over ElevenLabs Flash v2.5. We release the model weights under a CC BY-NC license.",
             "score": 5,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -162,7 +162,7 @@
             "url": "https://huggingface.co/papers/2603.25744",
             "abstract": "Abstract Multi-Resolution Fusion enables vision foundation models to leverage complementary inductive biases from different resolutions without architectural modifications or additional training.  AI-generated summary Vision Foundation Models (VFMs) have become the cornerstone of modern computer vision, offering robust representations across a wide array of tasks. While recent advances allow these models to handle varying input sizes during training, inference typically remains restricted to a single, fixed scale. This prevalent single-scale paradigm overlooks a fundamental property of visual perception: varying resolutions offer complementary inductive biases, where low-resolution views excel at global semantic recognition and high-resolution views are essential for fine-grained refinement. In this work, we propose Multi-Resolution Fusion (MuRF), a simple yet universally effective strategy to harness this synergy at inference time. Instead of relying on a single view, MuRF constructs a unified representation by processing an image at multiple resolutions through a frozen VFM and fusing the resulting features. The universality of MuRF is its most compelling attribute. It is not tied to a specific architecture, serving instead as a fundamental, training-free enhancement to visual representation. We empirically validate this by applying MuRF to a broad spectrum of critical computer vision tasks across multiple distinct VFM families - primarily DINOv2, but also demonstrating successful generalization to contrastive models like SigLIP2.",
             "score": 4,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -183,7 +183,7 @@
             "url": "https://huggingface.co/papers/2603.14366",
             "abstract": "Abstract Representation alignment fails for pixel-space diffusion transformers due to information asymmetry, but PixelREPA addresses this by transforming alignment targets and using masked transformer adapters to improve training convergence and image quality.  AI-generated summary Representation Alignment (REPA) has emerged as a simple way to accelerate Diffusion Transformers training in latent space. At the same time, pixel-space diffusion transformers such as Just image Transformers (JiT) have attracted growing attention because they remove a dependency on a pretrained tokenizer, and then avoid the reconstruction bottleneck of latent diffusion. This paper shows that the REPA can fail for JiT. REPA yields worse FID for JiT as training proceeds and collapses diversity on image subsets that are tightly clustered in the representation space of pretrained semantic encoder on ImageNet. We trace the failure to an information asymmetry: denoising occurs in the high dimensional image space, while the semantic target is strongly compressed, making direct regression a shortcut objective. We propose PixelREPA, which transforms the alignment target and constrains alignment with a Masked Transformer Adapter that combines a shallow transformer adapter with partial token masking. PixelREPA improves both training convergence and final quality. PixelREPA reduces FID from 3.66 to 3.17 for JiT-B/16 and improves Inception Score (IS) from 275.1 to 284.6 on ImageNet 256 times 256, while achieving > 2times faster convergence. Finally, PixelREPA-H/16 achieves FID=1.81 and IS=317.2. Our code is available at https://github.com/kaist-cvml/PixelREPA.",
             "score": 4,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-15",
             "pub_date_card": {
                 "ru": "15 марта",
@@ -204,7 +204,7 @@
             "url": "https://huggingface.co/papers/2603.25745",
             "abstract": "Abstract LGTM is a feed-forward framework that enables high-fidelity 4K novel view synthesis by predicting compact Gaussian primitives with per-primitive textures, decoupling geometric complexity from rendering resolution.  AI-generated summary Existing feed-forward 3D Gaussian Splatting methods predict pixel-aligned primitives, leading to a quadratic growth in primitive count as resolution increases. This fundamentally limits their scalability, making high-resolution synthesis such as 4K intractable. We introduce LGTM (Less Gaussians, Texture More), a feed-forward framework that overcomes this resolution scaling barrier. By predicting compact Gaussian primitives coupled with per-primitive textures, LGTM decouples geometric complexity from rendering resolution. This approach enables high-fidelity 4K novel view synthesis without per-scene optimization, a capability previously out of reach for feed-forward methods, all while using significantly fewer Gaussian primitives. Project page: https://yxlao.github.io/lgtm/",
             "score": 2,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -225,7 +225,7 @@
             "url": "https://huggingface.co/papers/2603.25702",
             "abstract": "Abstract S2D2 is a training-free self-speculative decoding framework that improves the accuracy-speed tradeoff in block-diffusion language models by combining parallel block generation with autoregressive verification.  AI-generated summary Block-diffusion language models offer a promising path toward faster-than-autoregressive generation by combining block-wise autoregressive decoding with within-block parallel denoising. However, in the few-step regime needed for practical acceleration, standard confidence-thresholded decoding is often brittle: aggressive thresholds hurt quality, while conservative thresholds require unnecessary denoising steps. Existing approaches that address this issue either require additional training or incur extra test-time compute. We present S2D2, a training-free self-speculative decoding framework for block-diffusion language models. Our key observation is that a block-diffusion model becomes autoregressive when the block size is reduced to one, allowing the same pretrained model to act as both drafter and verifier. S2D2 inserts a speculative verification step into standard block-diffusion decoding and uses lightweight routing policies to decide when verification is worth its cost. This yields a hybrid decoding trajectory in which diffusion proposes tokens in parallel, while the autoregressive mode acts as a local sequence-level critic. Across three mainstream block-diffusion families, S2D2 consistently improves the accuracy-speed tradeoff over strong confidence-thresholding baselines. On SDAR, we observe up to 4.7times speedup over autoregressive decoding, and up to 1.57times over a tuned dynamic decoding baseline while improving accuracy by up to 4.5 points. On LLaDA2.1-Mini, S2D2 remains complementary to built-in self-correction, including a conservative setting where it is 4.4times faster than the static baseline with slightly higher accuracy.",
             "score": 2,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -246,7 +246,7 @@
             "url": "https://huggingface.co/papers/2603.24943",
             "abstract": "Abstract FinMCP-Bench is a comprehensive benchmark for evaluating large language models on financial problem-solving through tool invocation and reasoning across multiple complexity levels.  AI-generated summary This paper introduces FinMCP-Bench, a novel benchmark for evaluating large language models (LLMs) in solving real-world financial problems through tool invocation of financial model context protocols. FinMCP-Bench contains 613 samples spanning 10 main scenarios and 33 sub-scenarios, featuring both real and synthetic user queries to ensure diversity and authenticity. It incorporates 65 real financial MCPs and three types of samples, single tool, multi-tool, and multi-turn, allowing evaluation of models across different levels of task complexity. Using this benchmark, we systematically assess a range of mainstream LLMs and propose metrics that explicitly measure tool invocation accuracy and reasoning capabilities. FinMCP-Bench provides a standardized, practical, and challenging testbed for advancing research on financial LLM agents.",
             "score": 2,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -267,7 +267,7 @@
             "url": "https://huggingface.co/papers/2603.23883",
             "abstract": "Abstract A multimodal framework for biological species identification that aligns visual, textual, and acoustic data to learn unified representations capturing species-level semantics beyond traditional taxonomy.  AI-generated summary Understanding animal species from multimodal data poses an emerging challenge at the intersection of computer vision and ecology. While recent biological models, such as BioCLIP, have demonstrated strong alignment between images and textual taxonomic information for species identification, the integration of the audio modality remains an open problem. We propose BioVITA, a novel visual-textual-acoustic alignment framework for biological applications. BioVITA involves (i) a training dataset, (ii) a representation model, and (iii) a retrieval benchmark. First, we construct a large-scale training dataset comprising 1.3 million audio clips and 2.3 million images, covering 14,133 species annotated with 34 ecological trait labels. Second, building upon BioCLIP2, we introduce a two-stage training framework to effectively align audio representations with visual and textual representations. Third, we develop a cross-modal retrieval benchmark that covers all possible directional retrieval across the three modalities (i.e., image-to-audio, audio-to-text, text-to-image, and their reverse directions), with three taxonomic levels: Family, Genus, and Species. Extensive experiments demonstrate that our model learns a unified representation space that captures species-level semantics beyond taxonomy, advancing multimodal biodiversity understanding. The project page is available at: https://dahlian00.github.io/BioVITA_Page/",
             "score": 2,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-25",
             "pub_date_card": {
                 "ru": "25 марта",
@@ -288,7 +288,7 @@
             "url": "https://huggingface.co/papers/2603.25741",
             "abstract": "Abstract Vega is a unified Vision-Language-World-Action model that combines autoregressive and diffusion paradigms for instruction-based driving planning and trajectory generation.  AI-generated summary Vision-language-action models have reshaped autonomous driving to incorporate languages into the decision-making process. However, most existing pipelines only utilize the language modality for scene descriptions or reasoning and lack the flexibility to follow diverse user instructions for personalized driving. To address this, we first construct a large-scale driving dataset (InstructScene) containing around 100,000 scenes annotated with diverse driving instructions with the corresponding trajectories. We then propose a unified Vision-Language-World-Action model, Vega, for instruction-based generation and planning. We employ the autoregressive paradigm to process visual inputs (vision) and language instructions (language) and the diffusion paradigm to generate future predictions (world modeling) and trajectories (action). We perform joint attention to enable interactions between the modalities and use individual projection layers for different modalities for more capabilities. Extensive experiments demonstrate that our method not only achieves superior planning performance but also exhibits strong instruction-following abilities, paving the way for more intelligent and personalized driving systems.",
             "score": 0,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -309,7 +309,7 @@
             "url": "https://huggingface.co/papers/2603.25718",
             "abstract": "Abstract Epitaxial single crystalline metal halide perovskites enable reversible photoluminescence control through gate voltage modulation, achieving high external quantum efficiencies in large-area thin-film devices.  AI-generated summary We demonstrate an all solid state semiconductor device, based on epitaxial single crystalline metal halide perovskites, enabling reversible control of a perovskite photoluminescence with a gate voltage. Fundamentally distinct from electroluminescent diodes, such a photoluminescence field effect transistor uses the gate electric field to electrostatically modulate the interfacial density of mobile charges, thereby affecting the radiative and nonradiative recombination channels of photocarriers. Varying the gate voltage in such transistors efficiently changes the rate of nonradiative interfacial recombination and modulates the photoluminescence intensity by 65 to 98 percent (depending on temperature). At favorable gating, nearly complete elimination of non-radiative losses can be achieved. This functionality, coupled with the strong visible-range absorption and emission, possible due to the high absorption coefficient, as well as controllable thickness and macroscopically homogeneous morphology of epitaxial perovskite films, leads to high external photoluminescence quantum efficiencies realized in large-area, thin-film devices. Such high-efficiency, scalable, electrostatically tunable optoelectronic switches broaden the potential applications of metal-halide perovskites in photonics and optoelectronics.",
             "score": 0,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-26",
             "pub_date_card": {
                 "ru": "26 марта",
@@ -318,7 +318,7 @@
             },
             "hash": "06bf63f728f7213b",
             "github_url": "https://github.com/H-EmbodVis/HyDRA",
-            "github_stars": 19,
+            "github_stars": 21,
             "pdf_title_img": "assets/pdf/title_img/2603.25718.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -330,7 +330,7 @@
             "url": "https://huggingface.co/papers/2603.21768",
             "abstract": "Abstract Deep learning model for precipitation nowcasting that combines radar imagery with meteorological forecasts through frequency-domain fusion techniques to improve long-term forecasting accuracy.  AI-generated summary Precipitation nowcasting is critical for disaster mitigation and aviation safety. However, radar-only models frequently suffer from a lack of large-scale atmospheric context, leading to performance degradation at longer lead times. While integrating meteorological variables predicted by weather foundation models offers a potential remedy, existing architectures fail to reconcile the profound representational heterogeneities between radar imagery and meteorological data. To bridge this gap, we propose PW-FouCast, a novel frequency-domain fusion framework that leverages Pangu-Weather forecasts as spectral priors within a Fourier-based backbone. Our architecture introduces three key innovations: (i) Pangu-Weather-guided Frequency Modulation to align spectral magnitudes and phases with meteorological priors; (ii) Frequency Memory to correct phase discrepancies and preserve temporal evolution; and (iii) Inverted Frequency Attention to reconstruct high-frequency details typically lost in spectral filtering. Extensive experiments on the SEVIR and MeteoNet benchmarks demonstrate that PW-FouCast achieves state-of-the-art performance, effectively extending the reliable forecast horizon while maintaining structural fidelity. Our code is available at https://github.com/Onemissed/PW-FouCast.",
             "score": 0,
-            "issue_id": 1925,
+            "issue_id": 1926,
             "pub_date": "2026-03-23",
             "pub_date_card": {
                 "ru": "23 марта",
