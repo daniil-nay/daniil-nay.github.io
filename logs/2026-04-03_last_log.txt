@@ -1,0 +1,30 @@
+[02.04.2026 23:32] Read previous papers.
+[02.04.2026 23:32] Generating top page (month).
+[02.04.2026 23:32] Writing top page (month).
+[03.04.2026 01:44] Read previous papers.
+[03.04.2026 01:44] Get feed.
+[03.04.2026 01:44] Extract page data from URL. URL: https://huggingface.co/papers/2604.02268
+[03.04.2026 01:44] Updating GitHub stars.
+[03.04.2026 01:44] Obtaining deleted papers (sometimes HF Daily Papers move some articles from today to past days).
+[03.04.2026 01:44] Downloading and parsing papers (pdf, html). Total: 1.
+[03.04.2026 01:44] Downloading and parsing paper https://huggingface.co/papers/2604.02268.
+[03.04.2026 01:46] Failed to download and parse paper https://huggingface.co/papers/2604.02268: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=&id_list=2604.02268&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+[03.04.2026 01:46] Enriching papers with extra data.
+[03.04.2026 01:46] ********************************************************************************
+[03.04.2026 01:46] Abstract 0. Abstract SKILL0 enables LLM agents to internalize skills during training, allowing zero-shot autonomous behavior through a dynamic curriculum that reduces contextual overhead while improving task performance.  AI-generated summary Agent skills, structured packages of procedural knowledge and executa...
+[03.04.2026 01:46] Read previous papers.
+[03.04.2026 01:46] Generating reviews via LLM API.
+[03.04.2026 01:46] Querying the API.
+[03.04.2026 01:46] Gigachat request. Model: GigaChat. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract SKILL0 enables LLM agents to internalize skills during training, allowing zero-shot autonomous behavior through a dynamic curriculum that reduces contextual overhead while improving task performance.  AI-generated summary Agent skills, structured packages of procedural knowledge and executable resources that agents dynamically load at inference time, have become a reliable mechanism for augmenting LLM agents. Yet inference-time skill augmentation is fundamentally limited: retrieval noise introduces irrelevant guidance, injected skill content imposes substantial token overhead, and the model never truly acquires the knowledge it merely follows. We ask whether skills can instead be internalized into model parameters, enabling zero-shot autonomous behavior without any runtime skill retrieval. We introduce SKILL0, an in-context reinforcement learning framework designed for skill internalization. SKILL0 introduces a training-time curriculum that begins with full skill context and progressively withdraws it. Skills are grouped offline by category and rendered with interaction history into a compact visual context, teaching he model tool invocation and multi-turn task completion. A Dynamic Curriculum then evaluates each skill file's on-policy helpfulness, retaining only those from which the current policy still benefits within a linearly decaying budget, until the agent operates in a fully zero-shot setting. Extensive agentic experiments demonstrate that SKILL0 achieves substantial improvements over the standard RL baseline (+9.7\% for ALFWorld and +6.6\% for Search-QA), while maintaining a highly efficient context of fewer than 0.5k tokens per step. Our code is available at https://github.com/ZJU-REAL/SkillZero.
+[03.04.2026 01:46] Error getting data: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[03.04.2026 01:46] Renaming data file.
+[03.04.2026 01:46] Renaming previous data. hf_papers.json to ./d/2026-04-03.json
+[03.04.2026 01:46] Saving new data file.
+[03.04.2026 01:46] Generating page.
+[03.04.2026 01:46] Renaming previous page.
+[03.04.2026 01:46] Renaming previous data. index.html to ./d/2026-04-03.html
+[03.04.2026 01:46] Writing result.
+[03.04.2026 01:46] Renaming log file.
+[03.04.2026 01:46] Renaming previous data. log.txt to ./logs/2026-04-03_last_log.txt
