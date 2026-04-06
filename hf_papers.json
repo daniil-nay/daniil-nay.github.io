@@ -4,9 +4,9 @@
         "en": "April 6",
         "zh": "4月6日"
     },
-    "time_utc": "2026-04-06 14:08",
+    "time_utc": "2026-04-06 15:40",
     "weekday": 0,
-    "issue_id": 2117,
+    "issue_id": 2118,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -15,7 +15,7 @@
             "url": "https://huggingface.co/papers/2604.02317",
             "abstract": "Abstract A simple sliding-window approach using recent video frames outperforms complex memory-based streaming video understanding methods, revealing trade-offs between real-time perception and long-term memory capabilities.  AI-generated summary Recent streaming video understanding methods increasingly rely on complex memory mechanisms to handle long video streams. We challenge this trend with a simple finding: a sliding-window baseline that feeds only the most recent N frames to an off-the-shelf VLM already matches or surpasses published streaming models. We formalize this baseline as SimpleStream and evaluate it against 13 major offline and online video LLM baselines on OVO-Bench and StreamingBench. Despite its simplicity, SimpleStream delivers consistently strong performance. With only 4 recent frames, it reaches 67.7% average accuracy on OVO-Bench and 80.59% on StreamingBench. Controlled ablations further show that the value of longer context is backbone-dependent rather than uniformly increasing with model scale, and reveal a consistent perception-memory trade-off: adding more historical context can improve recall, but often weakens real-time perception. This suggests that stronger memory, retrieval, or compression modules should not be taken as evidence of progress unless they clearly outperform SimpleStream under the same protocol. We therefore argue that future streaming benchmarks should separate recent-scene perception from long-range memory, so that performance improvements from added complexity can be evaluated more clearly.",
             "score": 50,
-            "issue_id": 2117,
+            "issue_id": 2118,
             "pub_date": "2026-04-02",
             "pub_date_card": {
                 "ru": "2 апреля",
@@ -24,7 +24,7 @@
             },
             "hash": "5a3a2c6716e57ea6",
             "github_url": "https://github.com/EvolvingLMMs-Lab/SimpleStream",
-            "github_stars": 46,
+            "github_stars": 45,
             "pdf_title_img": "assets/pdf/title_img/2604.02317.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -35,8 +35,8 @@
             "title": "Self-Distilled RLVR",
             "url": "https://huggingface.co/papers/2604.03128",
             "abstract": "Abstract RLSD combines reinforcement learning with verifiable rewards and self-distillation to achieve stable training with fine-grained updates and reliable policy direction from environmental feedback.  AI-generated summary On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This paradigm selects a larger model as the teacher to provide dense, fine-grained signals for each sampled trajectory, in contrast to reinforcement learning with verifiable rewards (RLVR), which only obtains sparse signals from verifiable outcomes in the environment. Recently, the community has explored on-policy self-distillation (OPSD), where the same model serves as both teacher and student, with the teacher receiving additional privileged information such as reference answers to enable self-evolution. This paper demonstrates that learning signals solely derived from the privileged teacher result in severe information leakage and unstable long-term training. Accordingly, we identify the optimal niche for self-distillation and propose RLSD (RLVR with Self-Distillation). Specifically, we leverage self-distillation to obtain token-level policy differences for determining fine-grained update magnitudes, while continuing to use RLVR to derive reliable update directions from environmental feedback (e.g., response correctness). This enables RLSD to simultaneously harness the strengths of both RLVR and OPSD, achieving a higher convergence ceiling and superior training stability.",
-            "score": 30,
-            "issue_id": 2117,
+            "score": 34,
+            "issue_id": 2118,
             "pub_date": "2026-04-03",
             "pub_date_card": {
                 "ru": "3 апреля",
@@ -57,7 +57,7 @@
             "url": "https://huggingface.co/papers/2604.02870",
             "abstract": "Abstract Token-level warping in vision-language models demonstrates superior stability and semantic coherence for viewpoint transformation compared to pixel-wise methods, achieving better visual reasoning performance.  AI-generated summary Can warping tokens, rather than pixels, help multimodal large language models (MLLMs) understand how a scene appears from a nearby viewpoint? While MLLMs perform well on visual reasoning, they remain fragile to viewpoint changes, as pixel-wise warping is highly sensitive to small depth errors and often introduces geometric distortions. Drawing on theories of mental imagery that posit part-level structural representations as the basis for human perspective transformation, we examine whether image tokens in ViT-based MLLMs serve as an effective substrate for viewpoint changes. We compare forward and backward warping, finding that backward token warping, which defines a dense grid on the target view and retrieves a corresponding source-view token for each grid point, achieves greater stability and better preserves semantic coherence under viewpoint shifts. Experiments on our proposed ViewBench benchmark demonstrate that token-level warping enables MLLMs to reason reliably from nearby viewpoints, consistently outperforming all baselines including pixel-wise warping approaches, spatially fine-tuned MLLMs, and a generative warping method.",
             "score": 19,
-            "issue_id": 2117,
+            "issue_id": 2118,
             "pub_date": "2026-04-03",
             "pub_date_card": {
                 "ru": "3 апреля",
@@ -66,7 +66,7 @@
             },
             "hash": "f7353e99eae1f6b3",
             "github_url": "https://github.com/KAIST-Visual-AI-Group/Token-Warping-MLLM",
-            "github_stars": 9,
+            "github_stars": 10,
             "pdf_title_img": "assets/pdf/title_img/2604.02870.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -78,7 +78,7 @@
             "url": "https://huggingface.co/papers/2604.03016",
             "abstract": "Abstract A new benchmark evaluates multimodal agentic capabilities by verifying tool usage and process efficiency rather than just final answers, revealing significant challenges in real-world multimodal problem-solving.  AI-generated summary Multimodal Large Language Models (MLLMs) are evolving from passive observers into active agents, solving problems through Visual Expansion (invoking visual tools) and Knowledge Expansion (open-web search). However, existing evaluations fall short: they lack flexible tool integration, test visual and search tools separately, and evaluate primarily by final answers. Consequently, they cannot verify if tools were actually invoked, applied correctly, or used efficiently. To address this, we introduce Agentic-MME, a process-verified benchmark for Multimodal Agentic Capabilities. It contains 418 real-world tasks across 6 domains and 3 difficulty levels to evaluate capability synergy, featuring over 2,000 stepwise checkpoints that average 10+ person-hours of manual annotation per task. Each task includes a unified evaluation framework supporting sandboxed code and APIs, alongside a human reference trajectory annotated with stepwise checkpoints along dual-axis: S-axis and V-axis. To enable true process-level verification, we audit fine-grained intermediate states rather than just final answers, and quantify efficiency via an overthinking metric relative to human trajectories. Experimental results show the best model, Gemini3-pro, achieves 56.3% overall accuracy, which falls significantly to 23.0% on Level-3 tasks, underscoring the difficulty of real-world multimodal agentic problem solving.",
             "score": 18,
-            "issue_id": 2117,
+            "issue_id": 2118,
             "pub_date": "2026-04-03",
             "pub_date_card": {
                 "ru": "3 апреля",
@@ -94,12 +94,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2603.27183",
+            "title": "Communicating about Space: Language-Mediated Spatial Integration Across Partial Views",
+            "url": "https://huggingface.co/papers/2603.27183",
+            "abstract": "Abstract MLLMs demonstrate limited capability in collaborative spatial communication tasks, achieving only 72% accuracy compared to humans' 95%, with models struggling to build consistent shared mental models unlike human dialogues that become more specific during convergence.  AI-generated summary Humans build shared spatial understanding by communicating partial, viewpoint-dependent observations. We ask whether Multimodal Large Language Models (MLLMs) can do the same, aligning distinct egocentric views through dialogue to form a coherent, allocentric mental model of a shared environment. To study this systematically, we introduce COSMIC, a benchmark for Collaborative Spatial Communication. In this setting, two static MLLM agents observe a 3D indoor environment from different viewpoints and exchange natural-language messages to solve spatial queries. COSMIC contains 899 diverse scenes and 1250 question-answer pairs spanning five tasks. We find a consistent capability hierarchy, MLLMs are most reliable at identifying shared anchor objects across views, perform worse on relational reasoning, and largely fail at building globally consistent maps, performing near chance, even for the frontier models. Moreover, we find thinking capability yields consistent gains in anchor grounding, but is insufficient for higher-level spatial communication. To contextualize model behavior, we additionally collect 250 human-human dialogues. Humans achieve 95% aggregate accuracy, leaving significant room for improvement for even the best performing model Gemini-3-Pro-Thinking which achieves 72% aggregate accuracy. Moreover, human conversations become increasingly specific as partners converge on a shared mental model, whereas model dialogues continue to explore new possibilities rather than converging, consistent with a limited ability to build and maintain a robust shared mental model. Our code and data is available at https://github.com/ankursikarwar/Cosmic",
+            "score": 7,
+            "issue_id": 2118,
+            "pub_date": "2026-03-28",
+            "pub_date_card": {
+                "ru": "28 марта",
+                "en": "March 28",
+                "zh": "3月28日"
+            },
+            "hash": "1071fcfecb8d3eb5",
+            "github_url": "https://github.com/ankursikarwar/Cosmic",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2603.27183.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2604.03144",
             "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
             "url": "https://huggingface.co/papers/2604.03144",
             "abstract": "Abstract Industrial software development lacks expert reasoning traces for hardware constraints, so a model was trained on error-driven reasoning chains and domain-specific execution traces to generate high-quality code reasoning and performance.  AI-generated summary Industrial software development across chip design, GPU optimization, and embedded systems lacks expert reasoning traces showing how engineers reason about hardware constraints and timing semantics. In this work, we propose InCoder-32B-Thinking, trained on the data from the Error-driven Chain-of-Thought (ECoT) synthesis framework with an industrial code world model (ICWM) to generate reasoning traces. Specifically, ECoT generates reasoning chains by synthesizing the thinking content from multi-turn dialogue with environmental error feedback, explicitly modeling the error-correction process. ICWM is trained on domain-specific execution traces from Verilog simulation, GPU profiling, etc., learns the causal dynamics of how code affects hardware behavior, and enables self-verification by predicting execution outcomes before actual compilation. All synthesized reasoning traces are validated through domain toolchains, creating training data matching the natural reasoning depth distribution of industrial tasks. Evaluation on 14 general (81.3% on LiveCodeBench v5) and 9 industrial benchmarks (84.0% in CAD-Coder and 38.0% on KernelBench) shows InCoder-32B-Thinking achieves top-tier open-source results across all domains.GPU Optimization",
             "score": 4,
-            "issue_id": 2117,
+            "issue_id": 2118,
             "pub_date": "2026-04-03",
             "pub_date_card": {
                 "ru": "3 апреля",
@@ -120,7 +141,7 @@
             "url": "https://huggingface.co/papers/2604.01487",
             "abstract": "Abstract Human-centered agentic social networks pose unique privacy challenges where multi-agent coordination and information mediation create persistent leakage pressures despite explicit privacy protections.  AI-generated summary With the rise of personalized, persistent LLM agent frameworks such as OpenClaw, human-centered agentic social networks in which teams of collaborative AI agents serve individual users in a social network across multiple domains are becoming a reality. This setting creates novel privacy challenges: agents must coordinate across domain boundaries, mediate between humans, and interact with other users' agents, all while protecting sensitive personal information. While prior work has evaluated multi-agent coordination and privacy preservation, the dynamics and privacy risks of human-centered agentic social networks remain unexplored. To this end, we introduce AgentSocialBench, the first benchmark to systematically evaluate privacy risk in this setting, comprising scenarios across seven categories spanning dyadic and multi-party interactions, grounded in realistic user profiles with hierarchical sensitivity labels and directed social graphs. Our experiments reveal that privacy in agentic social networks is fundamentally harder than in single-agent settings: (1) cross-domain and cross-user coordination creates persistent leakage pressure even when agents are explicitly instructed to protect information, (2) privacy instructions that teach agents how to abstract sensitive information paradoxically cause them to discuss it more (we call it abstraction paradox). These findings underscore that current LLM agents lack robust mechanisms for privacy preservation in human-centered agentic social networks, and that new approaches beyond prompt engineering are needed to make agent-mediated social coordination safe for real-world deployment.",
             "score": 3,
-            "issue_id": 2117,
+            "issue_id": 2118,
             "pub_date": "2026-04-01",
             "pub_date_card": {
                 "ru": "1 апреля",
@@ -141,7 +162,7 @@
             "url": "https://huggingface.co/papers/2604.02947",
             "abstract": "Abstract Computer-use agents present unique safety challenges due to their ability to perform sequences of actions that appear harmless individually but collectively cause harm, necessitating benchmarks like AgentHazard for evaluation.  AI-generated summary Computer-use agents extend language models from text generation to persistent action over tools, files, and execution environments. Unlike chat systems, they maintain state across interactions and translate intermediate outputs into concrete actions. This creates a distinct safety challenge in that harmful behavior may emerge through sequences of individually plausible steps, including intermediate actions that appear locally acceptable but collectively lead to unauthorized actions. We present AgentHazard, a benchmark for evaluating harmful behavior in computer-use agents. AgentHazard contains 2,653 instances spanning diverse risk categories and attack strategies. Each instance pairs a harmful objective with a sequence of operational steps that are locally legitimate but jointly induce unsafe behavior. The benchmark evaluates whether agents can recognize and interrupt harm arising from accumulated context, repeated tool use, intermediate actions, and dependencies across steps. We evaluate AgentHazard on Claude Code, OpenClaw, and IFlow using mostly open or openly deployable models from the Qwen3, Kimi, GLM, and DeepSeek families. Our experimental results indicate that current systems remain highly vulnerable. In particular, when powered by Qwen3-Coder, Claude Code exhibits an attack success rate of 73.63\\%, suggesting that model alignment alone does not reliably guarantee the safety of autonomous agents.",
             "score": 2,
-            "issue_id": 2117,
+            "issue_id": 2118,
             "pub_date": "2026-04-03",
             "pub_date_card": {
                 "ru": "3 апреля",
@@ -162,7 +183,7 @@
             "url": "https://huggingface.co/papers/2604.02368",
             "abstract": "Abstract XpertBench presents a comprehensive benchmark for evaluating large language models across professional domains using expert-curated tasks and a novel LLM-based evaluation approach called ShotJudge.  AI-generated summary As Large Language Models (LLMs) exhibit plateauing performance on conventional benchmarks, a pivotal challenge persists: evaluating their proficiency in complex, open-ended tasks characterizing genuine expert-level cognition. Existing frameworks suffer from narrow domain coverage, reliance on generalist tasks, or self-evaluation biases. To bridge this gap, we present XpertBench, a high-fidelity benchmark engineered to assess LLMs across authentic professional domains. XpertBench consists of 1,346 meticulously curated tasks across 80 categories, spanning finance, healthcare, legal services, education, and dual-track research (STEM and Humanities). These tasks are derived from over 1,000 submissions by domain experts--including researchers from elite institutions and practitioners with extensive clinical or industrial experience--ensuring superior ecological validity. Each task uses detailed rubrics with mostly 15-40 weighted checkpoints to assess professional rigor. To facilitate scalable yet human-aligned assessment, we introduce ShotJudge, a novel evaluation paradigm that employs LLM judges calibrated with expert few-shot exemplars to mitigate self-rewarding biases. Our empirical evaluation of state-of-the-art LLMs reveals a pronounced performance ceiling: even leading models achieve a peak success rate of only ~66%, with a mean score around 55%. Models also exhibit domain-specific divergence, showing non-overlapping strengths in quantitative reasoning versus linguistic synthesis.. These findings underscore a significant \"expert-gap\" in current AI systems and establish XpertBench as a critical instrument for navigating the transition from general-purpose assistants to specialized professional collaborators.",
             "score": 2,
-            "issue_id": 2117,
+            "issue_id": 2118,
             "pub_date": "2026-03-27",
             "pub_date_card": {
                 "ru": "27 марта",
@@ -178,12 +199,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2604.03118",
+            "title": "Salt: Self-Consistent Distribution Matching with Cache-Aware Training for Fast Video Generation",
+            "url": "https://huggingface.co/papers/2604.03118",
+            "abstract": "Abstract Video generation models are distilled using self-consistent distribution matching to improve quality under extreme inference constraints, with cache-aware training enhancing real-time autoregressive generation.  AI-generated summary Distilling video generation models to extremely low inference budgets (e.g., 2--4 NFEs) is crucial for real-time deployment, yet remains challenging. Trajectory-style consistency distillation often becomes conservative under complex video dynamics, yielding an over-smoothed appearance and weak motion. Distribution matching distillation (DMD) can recover sharp, mode-seeking samples, but its local training signals do not explicitly regularize how denoising updates compose across timesteps, making composed rollouts prone to drift. To overcome this challenge, we propose Self-Consistent Distribution Matching Distillation (SC-DMD), which explicitly regularizes the endpoint-consistent composition of consecutive denoising updates. For real-time autoregressive video generation, we further treat the KV cache as a quality parameterized condition and propose Cache-Distribution-Aware training. This training scheme applies SC-DMD over multi-step rollouts and introduces a cache-conditioned feature alignment objective that steers low-quality outputs toward high-quality references. Across extensive experiments on both non-autoregressive backbones (e.g., Wan~2.1) and autoregressive real-time paradigms (e.g., Self Forcing), our method, dubbed Salt, consistently improves low-NFE video generation quality while remaining compatible with diverse KV-cache memory mechanisms. Source code will be released at https://github.com/XingtongGe/Salt{https://github.com/XingtongGe/Salt}.",
+            "score": 1,
+            "issue_id": 2118,
+            "pub_date": "2026-04-03",
+            "pub_date_card": {
+                "ru": "3 апреля",
+                "en": "April 3",
+                "zh": "4月3日"
+            },
+            "hash": "43341168ed6de1a9",
+            "github_url": "https://github.com/XingtongGe/Salt",
+            "github_stars": 2,
+            "pdf_title_img": "assets/pdf/title_img/2604.03118.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2604.03231",
             "title": "CoME-VL: Scaling Complementary Multi-Encoder Vision-Language Learning",
             "url": "https://huggingface.co/papers/2604.03231",
             "abstract": "Abstract A vision-language model fusion framework combines contrastive and self-supervised visual encoders using entropy-guided aggregation and RoPE-enhanced attention to improve visual understanding and grounding tasks.  AI-generated summary Recent vision-language models (VLMs) typically rely on a single vision encoder trained with contrastive image-text objectives, such as CLIP-style pretraining. While contrastive encoders are effective for cross-modal alignment and retrieval, self-supervised visual encoders often capture richer dense semantics and exhibit stronger robustness on recognition and understanding tasks. In this work, we investigate how to scale the fusion of these complementary visual representations for vision-language modeling. We propose CoME-VL: Complementary Multi-Encoder Vision-Language, a modular fusion framework that integrates a contrastively trained vision encoder with a self-supervised DINO encoder. Our approach performs representation-level fusion by (i) entropy-guided multi-layer aggregation with orthogonality-constrained projections to reduce redundancy, and (ii) RoPE-enhanced cross-attention to align heterogeneous token grids and produce compact fused visual tokens. The fused tokens can be injected into a decoder-only LLM with minimal changes to standard VLM pipelines. Extensive experiments across diverse vision-language benchmarks demonstrate that CoME-VL consistently outperforms single-encoder baselines. In particular, we observe an average improvement of 4.9% on visual understanding tasks and 5.4% on grounding tasks. Our method achieves state-of-the-art performance on RefCOCO for detection while improving over the baseline by a large margin. Finally, we conduct ablation studies on layer merging, non-redundant feature mixing, and fusion capacity to evaluate how complementary contrastive and self-supervised signals affect VLM performance.",
             "score": 1,
-            "issue_id": 2117,
+            "issue_id": 2118,
             "pub_date": "2026-04-03",
             "pub_date_card": {
                 "ru": "3 апреля",
@@ -204,7 +246,7 @@
             "url": "https://huggingface.co/papers/2603.22078",
             "abstract": "Abstract World action models demonstrate superior robustness in robot action planning compared to vision-language-action models, achieving higher success rates on benchmark datasets under various perturbations.  AI-generated summary Robot action planning in the real world is challenging as it requires not only understanding the current state of the environment but also predicting how it will evolve in response to actions. Vision-language-action (VLA), which repurpose large-scale vision-language models for robot action generation using action experts, have achieved notable success across a variety of robotic tasks. Nevertheless, their performance remains constrained by the scope of their training data, exhibiting limited generalization to unseen scenarios and vulnerability to diverse contextual perturbations. More recently, world models have been revisited as an alternative to VLAs. These models, referred to as world action models (WAMs), are built upon world models that are trained on large corpora of video data to predict future states. With minor adaptations, their latent representation can be decoded into robot actions. It has been suggested that their explicit dynamic prediction capacity, combined with spatiotemporal priors acquired from web-scale video pretraining, enables WAMs to generalize more effectively than VLAs. In this paper, we conduct a comparative study of prominent state-of-the-art VLA policies and recently released WAMs. We evaluate their performance on the LIBERO-Plus and RoboTwin 2.0-Plus benchmarks under various visual and language perturbations. Our results show that WAMs achieve strong robustness, with LingBot-VA reaching 74.2% success rate on RoboTwin 2.0-Plus and Cosmos-Policy achieving 82.2% on LIBERO-Plus. While VLAs such as π_{0.5} can achieve comparable robustness on certain tasks, they typically require extensive training with diverse robotic datasets and varied learning objectives. Hybrid approaches that partially incorporate video-based dynamic learning exhibit intermediate robustness, highlighting the importance of how video priors are integrated.",
             "score": 1,
-            "issue_id": 2117,
+            "issue_id": 2118,
             "pub_date": "2026-04-01",
             "pub_date_card": {
                 "ru": "1 апреля",
