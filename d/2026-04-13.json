@@ -4,18 +4,39 @@
         "en": "April 13",
         "zh": "4月13日"
     },
-    "time_utc": "2026-04-13 01:58",
+    "time_utc": "2026-04-13 04:58",
     "weekday": 0,
-    "issue_id": 2231,
+    "issue_id": 2232,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
+        {
+            "id": "https://huggingface.co/papers/2604.07413",
+            "title": "FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios",
+            "url": "https://huggingface.co/papers/2604.07413",
+            "abstract": "Abstract FORGE introduces a high-quality multimodal manufacturing dataset with fine-grained domain semantics to evaluate MLLMs on real-world tasks, revealing that domain-specific knowledge rather than visual grounding limits performance, and demonstrating that supervised fine-tuning on structured annotations significantly improves accuracy.  AI-generated summary The manufacturing sector is increasingly adopting Multimodal Large Language Models (MLLMs) to transition from simple perception to autonomous execution, yet current evaluations fail to reflect the rigorous demands of real-world manufacturing environments. Progress is hindered by data scarcity and a lack of fine-grained domain semantics in existing datasets. To bridge this gap, we introduce FORGE. Wefirst construct a high-quality multimodal dataset that combines real-world 2D images and 3D point clouds, annotated with fine-grained domain semantics (e.g., exact model numbers). We then evaluate 18 state-of-the-art MLLMs across three manufacturing tasks, namely workpiece verification, structural surface inspection, and assembly verification, revealing significant performance gaps. Counter to conventional understanding, the bottleneck analysis shows that visual grounding is not the primary limiting factor. Instead, insufficient domain-specific knowledge is the key bottleneck, setting a clear direction for future research. Beyond evaluation, we show that our structured annotations can serve as an actionable training resource: supervised fine-tuning of a compact 3B-parameter model on our data yields up to 90.8% relative improvement in accuracy on held-out manufacturing scenarios, providing preliminary evidence for a practical pathway toward domain-adapted manufacturing MLLMs. The code and datasets are available at https://ai4manufacturing.github.io/forge-web.",
+            "score": 38,
+            "issue_id": 2232,
+            "pub_date": "2026-04-08",
+            "pub_date_card": {
+                "ru": "8 апреля",
+                "en": "April 8",
+                "zh": "4月8日"
+            },
+            "hash": "7f13dab98c57d627",
+            "github_url": "https://github.com/AI4Manufacturing/FORGE",
+            "github_stars": 5,
+            "pdf_title_img": "assets/pdf/title_img/2604.07413.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
         {
             "id": "https://huggingface.co/papers/2604.06870",
             "title": "RefineAnything: Multimodal Region-Specific Refinement for Perfect Local Details",
             "url": "https://huggingface.co/papers/2604.06870",
             "abstract": "Abstract A multimodal diffusion-based model called RefineAnything is presented for region-specific image refinement that preserves backgrounds while enhancing local details, using a focus-and-refine strategy and boundary-aware loss functions.  AI-generated summary We introduce region-specific image refinement as a dedicated problem setting: given an input image and a user-specified region (e.g., a scribble mask or a bounding box), the goal is to restore fine-grained details while keeping all non-edited pixels strictly unchanged. Despite rapid progress in image generation, modern models still frequently suffer from local detail collapse (e.g., distorted text, logos, and thin structures). Existing instruction-driven editing models emphasize coarse-grained semantic edits and often either overlook subtle local defects or inadvertently change the background, especially when the region of interest occupies only a small portion of a fixed-resolution input. We present RefineAnything, a multimodal diffusion-based refinement model that supports both reference-based and reference-free refinement. Building on a counter-intuitive observation that crop-and-resize can substantially improve local reconstruction under a fixed VAE input resolution, we propose Focus-and-Refine, a region-focused refinement-and-paste-back strategy that improves refinement effectiveness and efficiency by reallocating the resolution budget to the target region, while a blended-mask paste-back guarantees strict background preservation. We further introduce a boundary-aware Boundary Consistency Loss to reduce seam artifacts and improve paste-back naturalness. To support this new setting, we construct Refine-30K (20K reference-based and 10K reference-free samples) and introduce RefineEval, a benchmark that evaluates both edited-region fidelity and background consistency. On RefineEval, RefineAnything achieves strong improvements over competitive baselines and near-perfect background preservation, establishing a practical solution for high-precision local refinement. Project Page: https://limuloo.github.io/RefineAnything/.",
-            "score": 3,
-            "issue_id": 2231,
+            "score": 18,
+            "issue_id": 2232,
             "pub_date": "2026-04-08",
             "pub_date_card": {
                 "ru": "8 апреля",
@@ -24,7 +45,7 @@
             },
             "hash": "631c101f0b777eaa",
             "github_url": "https://github.com/limuloo/RefineAnything",
-            "github_stars": 12,
+            "github_stars": 24,
             "pdf_title_img": "assets/pdf/title_img/2604.06870.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -35,8 +56,8 @@
             "title": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
             "url": "https://huggingface.co/papers/2604.08995",
             "abstract": "Abstract Matrix-Game 3.0 enhances interactive video generation through memory-augmented diffusion models that achieve real-time 720p video synthesis with long-term temporal consistency.  AI-generated summary With the advancement of interactive video generation, diffusion models have increasingly demonstrated their potential as world models. However, existing approaches still struggle to simultaneously achieve memory-enabled long-term temporal consistency and high-resolution real-time generation, limiting their applicability in real-world scenarios. To address this, we present Matrix-Game 3.0, a memory-augmented interactive world model designed for 720p real-time longform video generation. Building upon Matrix-Game 2.0, we introduce systematic improvements across data, model, and inference. First, we develop an upgraded industrial-scale infinite data engine that integrates Unreal Engine-based synthetic data, large-scale automated collection from AAA games, and real-world video augmentation to produce high-quality Video-Pose-Action-Prompt quadruplet data at scale. Second, we propose a training framework for long-horizon consistency: by modeling prediction residuals and re-injecting imperfect generated frames during training, the base model learns self-correction; meanwhile, camera-aware memory retrieval and injection enable the base model to achieve long horizon spatiotemporal consistency. Third, we design a multi-segment autoregressive distillation strategy based on Distribution Matching Distillation (DMD), combined with model quantization and VAE decoder pruning, to achieve efficient real-time inference. Experimental results show that Matrix-Game 3.0 achieves up to 40 FPS real-time generation at 720p resolution with a 5B model, while maintaining stable memory consistency over minute-long sequences. Scaling up to a 2x14B model further improves generation quality, dynamics, and generalization. Our approach provides a practical pathway toward industrial-scale deployable world models.",
-            "score": 0,
-            "issue_id": 2231,
+            "score": 16,
+            "issue_id": 2232,
             "pub_date": "2026-04-10",
             "pub_date_card": {
                 "ru": "10 апреля",
@@ -46,7 +67,154 @@
             "hash": "52ec8dc0bd3b775c",
             "github_url": "",
             "github_stars": 0,
-            "pdf_title_img": "img/title_stub.png",
+            "pdf_title_img": "assets/pdf/title_img/2604.08995.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.08626",
+            "title": "WildDet3D: Scaling Promptable 3D Detection in the Wild",
+            "url": "https://huggingface.co/papers/2604.08626",
+            "abstract": "Abstract A unified 3D object detection framework with a large-scale dataset enables open-world detection with multiple prompt types and geometric cue integration.  AI-generated summary Understanding objects in 3D from a single image is a cornerstone of spatial intelligence. A key step toward this goal is monocular 3D object detection--recovering the extent, location, and orientation of objects from an input RGB image. To be practical in the open world, such a detector must generalize beyond closed-set categories, support diverse prompt modalities, and leverage geometric cues when available. Progress is hampered by two bottlenecks: existing methods are designed for a single prompt type and lack a mechanism to incorporate additional geometric cues, and current 3D datasets cover only narrow categories in controlled environments, limiting open-world transfer. In this work we address both gaps. First, we introduce WildDet3D, a unified geometry-aware architecture that natively accepts text, point, and box prompts and can incorporate auxiliary depth signals at inference time. Second, we present WildDet3D-Data, the largest open 3D detection dataset to date, constructed by generating candidate 3D boxes from existing 2D annotations and retaining only human-verified ones, yielding over 1M images across 13.5K categories in diverse real-world scenes. WildDet3D establishes a new state-of-the-art across multiple benchmarks and settings. In the open-world setting, it achieves 22.6/24.8 AP3D on our newly introduced WildDet3D-Bench with text and box prompts. On Omni3D, it reaches 34.2/36.4 AP3D with text and box prompts, respectively. In zero-shot evaluation, it achieves 40.3/48.9 ODS on Argoverse 2 and ScanNet. Notably, incorporating depth cues at inference time yields substantial additional gains (+20.7 AP on average across settings).",
+            "score": 15,
+            "issue_id": 2232,
+            "pub_date": "2026-04-09",
+            "pub_date_card": {
+                "ru": "9 апреля",
+                "en": "April 9",
+                "zh": "4月9日"
+            },
+            "hash": "11909fa71ef190ba",
+            "github_url": "https://github.com/allenai/WildDet3D",
+            "github_stars": 231,
+            "pdf_title_img": "assets/pdf/title_img/2604.08626.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.08644",
+            "title": "EXAONE 4.5 Technical Report",
+            "url": "https://huggingface.co/papers/2604.08644",
+            "abstract": "Abstract EXAONE 4.5 is an open-weight vision language model that integrates a visual encoder into EXAONE 4.0, achieving enhanced document understanding and general language capabilities through targeted data curation and extended context length.  AI-generated summary This technical report introduces EXAONE 4.5, the first open-weight vision language model released by LG AI Research. EXAONE 4.5 is architected by integrating a dedicated visual encoder into the existing EXAONE 4.0 framework, enabling native multimodal pretraining over both visual and textual modalities. The model is trained on large-scale data with careful curation, particularly emphasizing document-centric corpora that align with LG's strategic application domains. This targeted data design enables substantial performance gains in document understanding and related tasks, while also delivering broad improvements across general language capabilities. EXAONE 4.5 extends context length up to 256K tokens, facilitating long-context reasoning and enterprise-scale use cases. Comparative evaluations demonstrate that EXAONE 4.5 achieves competitive performance in general benchmarks while outperforming state-of-the-art models of similar scale in document understanding and Korean contextual reasoning. As part of LG's ongoing effort toward practical industrial deployment, EXAONE 4.5 is designed to be continuously extended with additional domains and application scenarios to advance AI for a better life.",
+            "score": 14,
+            "issue_id": 2232,
+            "pub_date": "2026-04-09",
+            "pub_date_card": {
+                "ru": "9 апреля",
+                "en": "April 9",
+                "zh": "4月9日"
+            },
+            "hash": "4714066ab78664b5",
+            "github_url": "https://github.com/LG-AI-EXAONE/EXAONE-4.5",
+            "github_stars": 27,
+            "pdf_title_img": "assets/pdf/title_img/2604.08644.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.09450",
+            "title": "ECHO: Efficient Chest X-ray Report Generation with One-step Block Diffusion",
+            "url": "https://huggingface.co/papers/2604.09450",
+            "abstract": "Abstract ECHO is an efficient diffusion-based vision-language model for chest X-ray report generation that achieves faster inference through direct conditional distillation and response-asymmetric diffusion training while maintaining high clinical accuracy.  AI-generated summary Chest X-ray report generation (CXR-RG) has the potential to substantially alleviate radiologists' workload. However, conventional autoregressive vision--language models (VLMs) suffer from high inference latency due to sequential token decoding. Diffusion-based models offer a promising alternative through parallel generation, but they still require multiple denoising iterations. Compressing multi-step denoising to a single step could further reduce latency, but often degrades textual coherence due to the mean-field bias introduced by token-factorized denoisers. To address this challenge, we propose ECHO, an efficient diffusion-based VLM (dVLM) for chest X-ray report generation. ECHO enables stable one-step-per-block inference via a novel Direct Conditional Distillation (DCD) framework, which mitigates the mean-field limitation by constructing unfactorized supervision from on-policy diffusion trajectories to encode joint token dependencies. In addition, we introduce a Response-Asymmetric Diffusion (RAD) training strategy that further improves training efficiency while maintaining model effectiveness. Extensive experiments demonstrate that ECHO surpasses state-of-the-art autoregressive methods, improving RaTE and SemScore by 64.33\\% and 60.58\\% respectively, while achieving an 8times inference speedup without compromising clinical accuracy.",
+            "score": 5,
+            "issue_id": 2232,
+            "pub_date": "2026-04-10",
+            "pub_date_card": {
+                "ru": "10 апреля",
+                "en": "April 10",
+                "zh": "4月10日"
+            },
+            "hash": "0f9c0a56b744adcb",
+            "github_url": "https://github.com/clf28/ECHO",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.09450.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.04415",
+            "title": "Structured Causal Video Reasoning via Multi-Objective Alignment",
+            "url": "https://huggingface.co/papers/2604.04415",
+            "abstract": "Abstract Video-LLMs trained on structured event facts with causal relationships outperform existing methods on complex video understanding tasks requiring precise temporal inference.  AI-generated summary Human understanding of video dynamics is typically grounded in a structured mental representation of entities, actions, and temporal relations, rather than relying solely on immediate deductive reasoning. In contrast, existing Video-LLMs largely depend on unstructured video reasoning, where critical visual evidence is embedded in verbose textual descriptions and temporal causality is often weakly modeled. This leads to inefficient processes and fragile causal inference. To bridge this cognitive gap, we propose constructing a compact representation of salient events and their causal relationships, which we name Structured Event Facts, prior to the reasoning stage. This structured prior serves as an explicit constraint to promote concise and causally grounded reasoning, while also making intermediate evidence easier to verify. To effectively train models on such structured facts, we introduce CausalFact-60K and a four-stage training pipeline comprising facts alignment, format warm-start, thinking warm-start, and reinforcement learning-based post-training. During RL stage, we find that this framework introduces competing objectives, as structural completeness and causal fidelity must be balanced against reasoning length, making it difficult to optimize. We address this challenge by formulating the optimization as a Multi-Objective Reinforcement Learning (MORL) problem and explicitly optimizing toward the Pareto-Frontier to balance these trade-offs. As a result, we introduce Factum-4B, which yields more reliable reasoning and delivers stronger performance on challenging video understanding tasks requiring fine-grained temporal inference.",
+            "score": 5,
+            "issue_id": 2232,
+            "pub_date": "2026-04-06",
+            "pub_date_card": {
+                "ru": "6 апреля",
+                "en": "April 6",
+                "zh": "4月6日"
+            },
+            "hash": "e5aeb50600332655",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.04415.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.09168",
+            "title": "ELT: Elastic Looped Transformers for Visual Generation",
+            "url": "https://huggingface.co/papers/2604.09168",
+            "abstract": "Abstract Elastic Looped Transformers utilize recurrent transformer architecture with weight-sharing and intra-loop self-distillation to achieve parameter-efficient visual generation with adjustable computational cost and generation quality.  AI-generated summary We introduce Elastic Looped Transformers (ELT), a highly parameter-efficient class of visual generative models based on a recurrent transformer architecture. While conventional generative models rely on deep stacks of unique transformer layers, our approach employs iterative, weight-shared transformer blocks to drastically reduce parameter counts while maintaining high synthesis quality. To effectively train these models for image and video generation, we propose the idea of Intra-Loop Self Distillation (ILSD), where student configurations (intermediate loops) are distilled from the teacher configuration (maximum training loops) to ensure consistency across the model's depth in a single training step. Our framework yields a family of elastic models from a single training run, enabling Any-Time inference capability with dynamic trade-offs between computational cost and generation quality, with the same parameter count. ELT significantly shifts the efficiency frontier for visual synthesis. With 4times reduction in parameter count under iso-inference-compute settings, ELT achieves a competitive FID of 2.0 on class-conditional ImageNet 256 times 256 and FVD of 72.8 on class-conditional UCF-101.",
+            "score": 3,
+            "issue_id": 2232,
+            "pub_date": "2026-04-10",
+            "pub_date_card": {
+                "ru": "10 апреля",
+                "en": "April 10",
+                "zh": "4月10日"
+            },
+            "hash": "c9c941b7fa3dad2f",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.09168.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.09531",
+            "title": "VisionFoundry: Teaching VLMs Visual Perception with Synthetic Images",
+            "url": "https://huggingface.co/papers/2604.09531",
+            "abstract": "Abstract VisionFoundry generates synthetic visual question answering data using large language models and text-to-image prompts to improve visual perception tasks in vision-language models.  AI-generated summary Vision-language models (VLMs) still struggle with visual perception tasks such as spatial understanding and viewpoint recognition. One plausible contributing factor is that natural image datasets provide limited supervision for low-level visual skills. This motivates a practical question: can targeted synthetic supervision, generated from only a task keyword such as Depth Order, address these weaknesses? To investigate this question, we introduce VisionFoundry, a task-aware synthetic data generation pipeline that takes only the task name as input and uses large language models (LLMs) to generate questions, answers, and text-to-image (T2I) prompts, then synthesizes images with T2I models and verifies consistency with a proprietary VLM, requiring no reference images or human annotation. Using VisionFoundry, we construct VisionFoundry-10K, a synthetic visual question answering (VQA) dataset containing 10k image-question-answer triples spanning 10 tasks. Models trained on VisionFoundry-10K achieve substantial improvements on visual perception benchmarks: +7% on MMVP and +10% on CV-Bench-3D, while preserving broader capabilities and showing favorable scaling behavior as data size increases. Our results suggest that limited task-targeted supervision is an important contributor to this bottleneck and that synthetic supervision is a promising path toward more systematic training for VLMs.",
+            "score": 3,
+            "issue_id": 2232,
+            "pub_date": "2026-04-10",
+            "pub_date_card": {
+                "ru": "10 апреля",
+                "en": "April 10",
+                "zh": "4月10日"
+            },
+            "hash": "7df0a1e56fa7d86b",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.09531.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.09544",
+            "title": "Large Language Models Generate Harmful Content Using a Distinct, Unified Mechanism",
+            "url": "https://huggingface.co/papers/2604.09544",
+            "abstract": "Abstract Targeted weight pruning reveals that large language models have a compact, coherent internal structure for harmful content generation that differs from benign capabilities and contributes to emergent misalignment during fine-tuning.  AI-generated summary Large language models (LLMs) undergo alignment training to avoid harmful behaviors, yet the resulting safeguards remain brittle: jailbreaks routinely bypass them, and fine-tuning on narrow domains can induce ``emergent misalignment'' that generalizes broadly. Whether this brittleness reflects a fundamental lack of coherent internal organization for harmfulness remains unclear. Here we use targeted weight pruning as a causal intervention to probe the internal organization of harmfulness in LLMs. We find that harmful content generation depends on a compact set of weights that are general across harm types and distinct from benign capabilities. Aligned models exhibit a greater compression of harm generation weights than unaligned counterparts, indicating that alignment reshapes harmful representations internally--despite the brittleness of safety guardrails at the surface level. This compression explains emergent misalignment: if weights of harmful capabilities are compressed, fine-tuning that engages these weights in one domain can trigger broad misalignment. Consistent with this, pruning harm generation weights in a narrow domain substantially reduces emergent misalignment. Notably, LLMs harmful generation capability is dissociated from how they recognize and explain such content. Together, these results reveal a coherent internal structure for harmfulness in LLMs that may serve as a foundation for more principled approaches to safety.",
+            "score": 0,
+            "issue_id": 2232,
+            "pub_date": "2026-04-10",
+            "pub_date_card": {
+                "ru": "10 апреля",
+                "en": "April 10",
+                "zh": "4月10日"
+            },
+            "hash": "64eac262157e6edc",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.09544.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -57,7 +225,7 @@
             "url": "https://huggingface.co/papers/2604.09201",
             "abstract": "Abstract A Vision-Language-Camera model called CT-1 generates videos with accurate camera control by learning camera trajectories through diffusion transformers and wavelet regularization loss.  AI-generated summary Camera-controllable video generation aims to synthesize videos with flexible and physically plausible camera movements. However, existing methods either provide imprecise camera control from text prompts or rely on labor-intensive manual camera trajectory parameters, limiting their use in automated scenarios. To address these issues, we propose a novel Vision-Language-Camera model, termed CT-1 (Camera Transformer 1), a specialized model designed to transfer spatial reasoning knowledge to video generation by accurately estimating camera trajectories. Built upon vision-language modules and a Diffusion Transformer model, CT-1 employs a Wavelet-based Regularization Loss in the frequency domain to effectively learn complex camera trajectory distributions. These trajectories are integrated into a video diffusion model to enable spatially aware camera control that aligns with user intentions. To facilitate the training of CT-1, we design a dedicated data curation pipeline and construct CT-200K, a large-scale dataset containing over 47M frames. Experimental results demonstrate that our framework successfully bridges the gap between spatial reasoning and video synthesis, yielding faithful and high-quality camera-controllable videos and improving camera control accuracy by 25.7% over prior methods.",
             "score": 0,
-            "issue_id": 2231,
+            "issue_id": 2232,
             "pub_date": "2026-04-10",
             "pub_date_card": {
                 "ru": "10 апреля",
@@ -66,71 +234,29 @@
             },
             "hash": "e704222813dd2e4b",
             "github_url": "https://github.com/gulucaptain/Camera-Transformer-1",
-            "github_stars": 1,
+            "github_stars": 2,
             "pdf_title_img": "assets/pdf/title_img/2604.09201.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
         },
         {
-            "id": "https://huggingface.co/papers/2604.09168",
-            "title": "ELT: Elastic Looped Transformers for Visual Generation",
-            "url": "https://huggingface.co/papers/2604.09168",
-            "abstract": "Abstract Elastic Looped Transformers utilize recurrent transformer architecture with weight-sharing and intra-loop self-distillation to achieve parameter-efficient visual generation with adjustable computational cost and generation quality.  AI-generated summary We introduce Elastic Looped Transformers (ELT), a highly parameter-efficient class of visual generative models based on a recurrent transformer architecture. While conventional generative models rely on deep stacks of unique transformer layers, our approach employs iterative, weight-shared transformer blocks to drastically reduce parameter counts while maintaining high synthesis quality. To effectively train these models for image and video generation, we propose the idea of Intra-Loop Self Distillation (ILSD), where student configurations (intermediate loops) are distilled from the teacher configuration (maximum training loops) to ensure consistency across the model's depth in a single training step. Our framework yields a family of elastic models from a single training run, enabling Any-Time inference capability with dynamic trade-offs between computational cost and generation quality, with the same parameter count. ELT significantly shifts the efficiency frontier for visual synthesis. With 4times reduction in parameter count under iso-inference-compute settings, ELT achieves a competitive FID of 2.0 on class-conditional ImageNet 256 times 256 and FVD of 72.8 on class-conditional UCF-101.",
+            "id": "https://huggingface.co/papers/2604.07786",
+            "title": "Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video",
+            "url": "https://huggingface.co/papers/2604.07786",
+            "abstract": "Abstract A novel cross-modal emotion transfer approach generates expressive talking face videos by modeling emotion semantic vectors between speech and visual feature spaces, achieving superior emotion accuracy compared to existing methods.  AI-generated summary Talking face generation has gained significant attention as a core application of generative models. To enhance the expressiveness and realism of synthesized videos, emotion editing in talking face video plays a crucial role. However, existing approaches often limit expressive flexibility and struggle to generate extended emotions. Label-based methods represent emotions with discrete categories, which fail to capture a wide range of emotions. Audio-based methods can leverage emotionally rich speech signals - and even benefit from expressive text-to-speech (TTS) synthesis - but they fail to express the target emotions because emotions and linguistic contents are entangled in emotional speeches. Images-based methods, on the other hand, rely on target reference images to guide emotion transfer, yet they require high-quality frontal views and face challenges in acquiring reference data for extended emotions (e.g., sarcasm). To address these limitations, we propose Cross-Modal Emotion Transfer (C-MET), a novel approach that generates facial expressions based on speeches by modeling emotion semantic vectors between speech and visual feature spaces. C-MET leverages a large-scale pretrained audio encoder and a disentangled facial expression encoder to learn emotion semantic vectors that represent the difference between two different emotional embeddings across modalities. Extensive experiments on the MEAD and CREMA-D datasets demonstrate that our method improves emotion accuracy by 14% over state-of-the-art methods, while generating expressive talking face videos - even for unseen extended emotions. Code, checkpoint, and demo are available at https://chanhyeok-choi.github.io/C-MET/",
             "score": 0,
-            "issue_id": 2231,
-            "pub_date": "2026-04-10",
-            "pub_date_card": {
-                "ru": "10 апреля",
-                "en": "April 10",
-                "zh": "4月10日"
-            },
-            "hash": "c9c941b7fa3dad2f",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "img/title_stub.png",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2604.09531",
-            "title": "VisionFoundry: Teaching VLMs Visual Perception with Synthetic Images",
-            "url": "https://huggingface.co/papers/2604.09531",
-            "abstract": "Abstract VisionFoundry generates synthetic visual question answering data using large language models and text-to-image prompts to improve visual perception tasks in vision-language models.  AI-generated summary Vision-language models (VLMs) still struggle with visual perception tasks such as spatial understanding and viewpoint recognition. One plausible contributing factor is that natural image datasets provide limited supervision for low-level visual skills. This motivates a practical question: can targeted synthetic supervision, generated from only a task keyword such as Depth Order, address these weaknesses? To investigate this question, we introduce VisionFoundry, a task-aware synthetic data generation pipeline that takes only the task name as input and uses large language models (LLMs) to generate questions, answers, and text-to-image (T2I) prompts, then synthesizes images with T2I models and verifies consistency with a proprietary VLM, requiring no reference images or human annotation. Using VisionFoundry, we construct VisionFoundry-10K, a synthetic visual question answering (VQA) dataset containing 10k image-question-answer triples spanning 10 tasks. Models trained on VisionFoundry-10K achieve substantial improvements on visual perception benchmarks: +7% on MMVP and +10% on CV-Bench-3D, while preserving broader capabilities and showing favorable scaling behavior as data size increases. Our results suggest that limited task-targeted supervision is an important contributor to this bottleneck and that synthetic supervision is a promising path toward more systematic training for VLMs.",
-            "score": 0,
-            "issue_id": 2231,
-            "pub_date": "2026-04-10",
-            "pub_date_card": {
-                "ru": "10 апреля",
-                "en": "April 10",
-                "zh": "4月10日"
-            },
-            "hash": "7df0a1e56fa7d86b",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "img/title_stub.png",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2604.08644",
-            "title": "EXAONE 4.5 Technical Report",
-            "url": "https://huggingface.co/papers/2604.08644",
-            "abstract": "Abstract EXAONE 4.5 is an open-weight vision language model that integrates a visual encoder into EXAONE 4.0, achieving enhanced document understanding and general language capabilities through targeted data curation and extended context length.  AI-generated summary This technical report introduces EXAONE 4.5, the first open-weight vision language model released by LG AI Research. EXAONE 4.5 is architected by integrating a dedicated visual encoder into the existing EXAONE 4.0 framework, enabling native multimodal pretraining over both visual and textual modalities. The model is trained on large-scale data with careful curation, particularly emphasizing document-centric corpora that align with LG's strategic application domains. This targeted data design enables substantial performance gains in document understanding and related tasks, while also delivering broad improvements across general language capabilities. EXAONE 4.5 extends context length up to 256K tokens, facilitating long-context reasoning and enterprise-scale use cases. Comparative evaluations demonstrate that EXAONE 4.5 achieves competitive performance in general benchmarks while outperforming state-of-the-art models of similar scale in document understanding and Korean contextual reasoning. As part of LG's ongoing effort toward practical industrial deployment, EXAONE 4.5 is designed to be continuously extended with additional domains and application scenarios to advance AI for a better life.",
-            "score": 0,
-            "issue_id": 2231,
+            "issue_id": 2232,
             "pub_date": "2026-04-09",
             "pub_date_card": {
                 "ru": "9 апреля",
                 "en": "April 9",
                 "zh": "4月9日"
             },
-            "hash": "4714066ab78664b5",
-            "github_url": "https://github.com/LG-AI-EXAONE/EXAONE-4.5",
-            "github_stars": 24,
-            "pdf_title_img": "img/title_stub.png",
+            "hash": "a631746c107ae137",
+            "github_url": "https://github.com/ChanHyeok-Choi/C-MET",
+            "github_stars": 2,
+            "pdf_title_img": "assets/pdf/title_img/2604.07786.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
