@@ -134,5 +134,26 @@
                 "desc": "本论文介绍了视频现实测试基准，旨在评估AI生成的ASMR视频的真实感和检测能力。研究表明，即使是最先进的模型也能欺骗视觉语言模型（VLMs）和人类，显示出在感知真实感和音视频一致性方面的局限性。该基准通过精心挑选的真实ASMR视频，测试音视频紧密结合下的感知真实感。实验结果显示，最佳生成模型Veo3.1-Fast能够欺骗大多数VLMs，且其检测准确率远低于人类专家。"
             }
         }
+    },
+    {
+        "id": "https://huggingface.co/papers/2604.11784",
+        "title": "ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents",
+        "url": "https://huggingface.co/papers/2604.11784",
+        "abstract": "Abstract ClawGUI presents an open-source framework that addresses key challenges in GUI agent development through unified reinforcement learning, standardized evaluation, and cross-platform deployment capabilities.  AI-generated summary GUI agents drive applications through their visual interfaces instead of programmatic APIs, interacting with arbitrary software via taps, swipes, and keystrokes, reaching a long tail of applications that CLI-based agents cannot. Yet progress in this area is bottlenecked less by modeling capacity than by the absence of a coherent full-stack infrastructure: online RL training suffers from environment instability and closed pipelines, evaluation protocols drift silently across works, and trained agents rarely reach real users on real devices. We present ClawGUI, an open-source framework addressing these three gaps within a single harness. ClawGUI-RL provides the first open-source GUI agent RL infrastructure with validated support for both parallel virtual environments and real physical devices, integrating GiGPO with a Process Reward Model for dense step-level supervision. ClawGUI-Eval enforces a fully standardized evaluation pipeline across 6 benchmarks and 11+ models, achieving 95.8\\% reproduction against official baselines. ClawGUI-Agent brings trained agents to Android, HarmonyOS, and iOS through 12+ chat platforms with hybrid CLI-GUI control and persistent personalized memory. Trained end to end within this pipeline, ClawGUI-2B achieves 17.1\\% Success Rate on MobileWorld GUI-Only, outperforming the same-scale MAI-UI-2B baseline by 6.0\\%.",
+        "score": 22,
+        "issue_id": 2247,
+        "pub_date": "2026-04-13",
+        "pub_date_card": {
+            "ru": "13 апреля",
+            "en": "April 13",
+            "zh": "4月13日"
+        },
+        "hash": "7504e965f671770e",
+        "github_url": "",
+        "github_stars": 0,
+        "pdf_title_img": "assets/pdf/title_img/2604.11784.jpg",
+        "data": {
+            "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+        }
     }
 ]
