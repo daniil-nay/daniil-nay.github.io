@@ -1,0 +1,30 @@
+[13.04.2026 23:42] Read previous papers.
+[13.04.2026 23:42] Generating top page (month).
+[13.04.2026 23:42] Writing top page (month).
+[14.04.2026 01:53] Read previous papers.
+[14.04.2026 01:53] Get feed.
+[14.04.2026 01:53] Extract page data from URL. URL: https://huggingface.co/papers/2604.10949
+[14.04.2026 01:53] Updating GitHub stars.
+[14.04.2026 01:53] Obtaining deleted papers (sometimes HF Daily Papers move some articles from today to past days).
+[14.04.2026 01:53] Downloading and parsing papers (pdf, html). Total: 1.
+[14.04.2026 01:53] Downloading and parsing paper https://huggingface.co/papers/2604.10949.
+[14.04.2026 01:53] Failed to download and parse paper https://huggingface.co/papers/2604.10949: 
+[14.04.2026 01:53] Enriching papers with extra data.
+[14.04.2026 01:53] ********************************************************************************
+[14.04.2026 01:53] Abstract 0. Abstract Unified multimodal models suffer from pseudo-unification due to asymmetric encoding and split response patterns, requiring consistent information flow for genuine multimodal synergy.  AI-generated summary Unified multimodal models (UMMs) were designed to combine the reasoning ability of lar...
+[14.04.2026 01:53] Read previous papers.
+[14.04.2026 01:53] Generating reviews via LLM API.
+[14.04.2026 01:53] Querying the API.
+[14.04.2026 01:53] Gigachat request. Model: GigaChat. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract Unified multimodal models suffer from pseudo-unification due to asymmetric encoding and split response patterns, requiring consistent information flow for genuine multimodal synergy.  AI-generated summary Unified multimodal models (UMMs) were designed to combine the reasoning ability of large language models (LLMs) with the generation capability of vision models. In practice, however, this synergy remains elusive: UMMs fail to transfer LLM-like reasoning to image synthesis and exhibit divergent response behaviors. We term this phenomenon pseudo-unification. Diagnosing its internal causes is important, but existing probing methods either lack model-internal insight or ignore prompt-response dependencies. To address these limitations, we propose an information-theoretic probing framework that jointly analyzes how UMMs encode inputs and generate outputs. Applied to ten representative UMMs, our framework reveals that pseudo-unification stems from a dual divergence: (i) Modality-Asymmetric Encoding, where vision and language follow different entropy trajectories, and (ii) Pattern-Split Response, where text generation exhibits high-entropy creativity while image synthesis enforces low-entropy fidelity. Only models that unify both sides (e.g., via contextual prediction) achieve more genuine unification, enabling stronger reasoning-based text-to-image generation even with fewer parameters. Our work provides the first model-internal probing of unification, demonstrating that real multimodal synergy requires consistency in information flow, not just shared parameters.
+[14.04.2026 01:53] Error getting data: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[14.04.2026 01:53] Renaming data file.
+[14.04.2026 01:53] Renaming previous data. hf_papers.json to ./d/2026-04-14.json
+[14.04.2026 01:53] Saving new data file.
+[14.04.2026 01:53] Generating page.
+[14.04.2026 01:53] Renaming previous page.
+[14.04.2026 01:53] Renaming previous data. index.html to ./d/2026-04-14.html
+[14.04.2026 01:53] Writing result.
+[14.04.2026 01:53] Renaming log file.
+[14.04.2026 01:53] Renaming previous data. log.txt to ./logs/2026-04-14_last_log.txt
