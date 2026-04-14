@@ -4,9 +4,9 @@
         "en": "April 14",
         "zh": "4月14日"
     },
-    "time_utc": "2026-04-14 16:58",
+    "time_utc": "2026-04-14 18:04",
     "weekday": 1,
-    "issue_id": 2253,
+    "issue_id": 2254,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -15,7 +15,7 @@
             "url": "https://huggingface.co/papers/2604.08570",
             "abstract": "Abstract QuanBench+ evaluates large language models on quantum code generation across multiple frameworks using functional testing and repair-based feedback, revealing significant progress but persistent dependence on framework-specific knowledge.  AI-generated summary Large Language Models (LLMs) are increasingly used for code generation, yet quantum code generation is still evaluated mostly within single frameworks, making it difficult to separate quantum reasoning from framework familiarity. We introduce QuanBench+, a unified benchmark spanning Qiskit, PennyLane, and Cirq, with 42 aligned tasks covering quantum algorithms, gate decomposition, and state preparation.   We evaluate models with executable functional tests, report Pass@1 and Pass@5, and use KL-divergence-based acceptance for probabilistic outputs. We additionally study Pass@1 after feedback-based repair, where a model may revise code after a runtime error or wrong answer. Across frameworks, the strongest one-shot scores reach 59.5% in Qiskit, 54.8% in Cirq, and 42.9% in PennyLane; with feedback-based repair, the best scores rise to 83.3%, 76.2%, and 66.7%, respectively. These results show clear progress, but also that reliable multi-framework quantum code generation remains unsolved and still depends strongly on framework-specific knowledge.",
             "score": 102,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-03-25",
             "pub_date_card": {
                 "ru": "25 марта",
@@ -36,7 +36,7 @@
             "url": "https://huggingface.co/papers/2604.11297",
             "abstract": "Abstract MEDS is a memory-enhanced dynamic reward shaping framework that improves sampling diversity in reinforcement learning for large language models by identifying and penalizing recurrent error patterns through clustering of historical behavioral signals.  AI-generated summary Despite the success of reinforcement learning for large language models, a common failure mode is reduced sampling diversity, where the policy repeatedly generates similar erroneous behaviors. Classical entropy regularization encourages randomness under the current policy, but does not explicitly discourage recurrent failure patterns across rollouts. We propose MEDS, a Memory-Enhanced Dynamic reward Shaping framework that incorporates historical behavioral signals into reward design. By storing and leveraging intermediate model representations, we capture features of past rollouts and use density-based clustering to identify frequently recurring error patterns. Rollouts assigned to more prevalent error clusters are penalized more heavily, encouraging broader exploration while reducing repeated mistakes. Across five datasets and three base models, MEDS consistently improves average performance over existing baselines, achieving gains of up to 4.13 pass@1 points and 4.37 pass@128 points. Additional analyses using both LLM-based annotations and quantitative diversity metrics show that MEDS increases behavioral diversity during sampling.",
             "score": 78,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -45,7 +45,7 @@
             },
             "hash": "04b817bb0f1b4512",
             "github_url": "https://github.com/Linxi000/MEDS",
-            "github_stars": 89,
+            "github_stars": 90,
             "pdf_title_img": "assets/pdf/title_img/2604.11297.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -57,7 +57,7 @@
             "url": "https://huggingface.co/papers/2604.11804",
             "abstract": "Abstract OmniShow is an end-to-end framework for human-object interaction video generation that effectively integrates multiple modalities through unified conditioning and attention mechanisms while addressing data scarcity via decoupled training strategies.  AI-generated summary In this work, we study Human-Object Interaction Video Generation (HOIVG), which aims to synthesize high-quality human-object interaction videos conditioned on text, reference images, audio, and pose. This task holds significant practical value for automating content creation in real-world applications, such as e-commerce demonstrations, short video production, and interactive entertainment. However, existing approaches fail to accommodate all these requisite conditions. We present OmniShow, an end-to-end framework tailored for this practical yet challenging task, capable of harmonizing multimodal conditions and delivering industry-grade performance. To overcome the trade-off between controllability and quality, we introduce Unified Channel-wise Conditioning for efficient image and pose injection, and Gated Local-Context Attention to ensure precise audio-visual synchronization. To effectively address data scarcity, we develop a Decoupled-Then-Joint Training strategy that leverages a multi-stage training process with model merging to efficiently harness heterogeneous sub-task datasets. Furthermore, to fill the evaluation gap in this field, we establish HOIVG-Bench, a dedicated and comprehensive benchmark for HOIVG. Extensive experiments demonstrate that OmniShow achieves overall state-of-the-art performance across various multimodal conditioning settings, setting a solid standard for the emerging HOIVG task.",
             "score": 54,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -66,7 +66,7 @@
             },
             "hash": "34f7d09fda93442b",
             "github_url": "https://github.com/Correr-Zhou/OmniShow",
-            "github_stars": 60,
+            "github_stars": 63,
             "pdf_title_img": "assets/pdf/title_img/2604.11804.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -77,8 +77,8 @@
             "title": "Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation",
             "url": "https://huggingface.co/papers/2604.10098",
             "abstract": "Abstract Transformers face challenges from Attention Sink phenomenon where excessive attention focuses on uninformative tokens, impacting interpretability and performance, necessitating comprehensive research survey addressing fundamental usage, mechanistic understanding, and strategic mitigation approaches.  AI-generated summary As the foundational architecture of modern machine learning, Transformers have driven remarkable progress across diverse AI domains. Despite their transformative impact, a persistent challenge across various Transformers is Attention Sink (AS), in which a disproportionate amount of attention is focused on a small subset of specific yet uninformative tokens. AS complicates interpretability, significantly affecting the training and inference dynamics, and exacerbates issues such as hallucinations. In recent years, substantial research has been dedicated to understanding and harnessing AS. However, a comprehensive survey that systematically consolidates AS-related research and offers guidance for future advancements remains lacking. To address this gap, we present the first survey on AS, structured around three key dimensions that define the current research landscape: Fundamental Utilization, Mechanistic Interpretation, and Strategic Mitigation. Our work provides a pivotal contribution by clarifying key concepts and guiding researchers through the evolution and trends of the field. We envision this survey as a definitive resource, empowering researchers and practitioners to effectively manage AS within the current Transformer paradigm, while simultaneously inspiring innovative advancements for the next generation of Transformers. The paper list of this work is available at https://github.com/ZunhaiSu/Awesome-Attention-Sink.",
-            "score": 52,
-            "issue_id": 2253,
+            "score": 53,
+            "issue_id": 2254,
             "pub_date": "2026-04-11",
             "pub_date_card": {
                 "ru": "11 апреля",
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2604.09132",
             "abstract": "Abstract SATO introduces a novel token ordering strategy for autoregressive transformers that preserves edge flow and semantic layout in mesh generation through triangle strip-based sequences.  AI-generated summary Recent advancements in autoregressive transformers have demonstrated remarkable potential for generating artist-quality meshes. However, the token ordering strategies employed by existing methods typically fail to meet professional artist standards, where coordinate-based sorting yields inefficiently long sequences, and patch-based heuristics disrupt the continuous edge flow and structural regularity essential for high-quality modeling. To address these limitations, we propose Strips as Tokens (SATO), a novel framework with a token ordering strategy inspired by triangle strips. By constructing the sequence as a connected chain of faces that explicitly encodes UV boundaries, our method naturally preserves the organized edge flow and semantic layout characteristic of artist-created meshes. A key advantage of this formulation is its unified representation, enabling the same token sequence to be decoded into either a triangle or quadrilateral mesh. This flexibility facilitates joint training on both data types: large-scale triangle data provides fundamental structural priors, while high-quality quad data enhances the geometric regularity of the outputs. Extensive experiments demonstrate that SATO consistently outperforms prior methods in terms of geometric quality, structural coherence, and UV segmentation.",
             "score": 43,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-10",
             "pub_date_card": {
                 "ru": "10 апреля",
@@ -108,7 +108,7 @@
             },
             "hash": "392b7897defa77f2",
             "github_url": "https://github.com/Xrvitd/SATO",
-            "github_stars": 65,
+            "github_stars": 67,
             "pdf_title_img": "assets/pdf/title_img/2604.09132.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -120,7 +120,7 @@
             "url": "https://huggingface.co/papers/2604.08121",
             "abstract": "Abstract Uni-ViGU presents a generation-centric approach to unified multimodal video understanding and generation by extending video generation as a foundation through unified flow matching and bidirectional training mechanisms.  AI-generated summary Unified multimodal models integrating visual understanding and generation face a fundamental challenge: visual generation incurs substantially higher computational costs than understanding, particularly for video. This imbalance motivates us to invert the conventional paradigm: rather than extending understanding-centric MLLMs to support generation, we propose Uni-ViGU, a framework that unifies video generation and understanding by extending a video generator as the foundation. We introduce a unified flow method that performs continuous flow matching for video and discrete flow matching for text within a single process, enabling coherent multimodal generation. We further propose a modality-driven MoE-based framework that augments Transformer blocks with lightweight layers for text generation while preserving generative priors. To repurpose generation knowledge for understanding, we design a bidirectional training mechanism with two stages: Knowledge Recall reconstructs input prompts to leverage learned text-video correspondences, while Capability Refinement fine-tunes on detailed captions to establish discriminative shared representations. Experiments demonstrate that Uni-ViGU achieves competitive performance on both video generation and understanding, validating generation-centric architectures as a scalable path toward unified multimodal intelligence. Project Page and Code: https://fr0zencrane.github.io/uni-vigu-page/.",
             "score": 37,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-09",
             "pub_date_card": {
                 "ru": "9 апреля",
@@ -141,7 +141,7 @@
             "url": "https://huggingface.co/papers/2604.10949",
             "abstract": "Abstract Unified multimodal models suffer from pseudo-unification due to asymmetric encoding and split response patterns, requiring consistent information flow for genuine multimodal synergy.  AI-generated summary Unified multimodal models (UMMs) were designed to combine the reasoning ability of large language models (LLMs) with the generation capability of vision models. In practice, however, this synergy remains elusive: UMMs fail to transfer LLM-like reasoning to image synthesis and exhibit divergent response behaviors. We term this phenomenon pseudo-unification. Diagnosing its internal causes is important, but existing probing methods either lack model-internal insight or ignore prompt-response dependencies. To address these limitations, we propose an information-theoretic probing framework that jointly analyzes how UMMs encode inputs and generate outputs. Applied to ten representative UMMs, our framework reveals that pseudo-unification stems from a dual divergence: (i) Modality-Asymmetric Encoding, where vision and language follow different entropy trajectories, and (ii) Pattern-Split Response, where text generation exhibits high-entropy creativity while image synthesis enforces low-entropy fidelity. Only models that unify both sides (e.g., via contextual prediction) achieve more genuine unification, enabling stronger reasoning-based text-to-image generation even with fewer parameters. Our work provides the first model-internal probing of unification, demonstrating that real multimodal synergy requires consistency in information flow, not just shared parameters.",
             "score": 35,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -157,33 +157,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2604.11641",
-            "title": "CodeTracer: Towards Traceable Agent States",
-            "url": "https://huggingface.co/papers/2604.11641",
-            "abstract": "Abstract CodeTracer is a tracing architecture that analyzes code agent execution by reconstructing state transitions and localizing failures in complex multi-stage workflows.  AI-generated summary Code agents are advancing rapidly, but debugging them is becoming increasingly difficult. As frameworks orchestrate parallel tool calls and multi-stage workflows over complex tasks, making the agent's state transitions and error propagation hard to observe. In these runs, an early misstep can trap the agent in unproductive loops or even cascade into fundamental errors, forming hidden error chains that make it hard to tell when the agent goes off track and why. Existing agent tracing analyses either focus on simple interaction or rely on small-scale manual inspection, which limits their scalability and usefulness for real coding workflows. We present CodeTracer, a tracing architecture that parses heterogeneous run artifacts through evolving extractors, reconstructs the full state transition history as a hierarchical trace tree with persistent memory, and performs failure onset localization to pinpoint the failure origin and its downstream chain. To enable systematic evaluation, we construct CodeTraceBench from a large collection of executed trajectories generated by four widely used code agent frameworks on diverse code tasks (e.g., bug fixing, refactoring, and terminal interaction), with supervision at both the stage and step levels for failure localization. Experiments show that CodeTracer substantially outperforms direct prompting and lightweight baselines, and that replaying its diagnostic signals consistently recovers originally failed runs under matched budgets. Our code and data are publicly available.",
-            "score": 27,
-            "issue_id": 2253,
-            "pub_date": "2026-04-13",
-            "pub_date_card": {
-                "ru": "13 апреля",
-                "en": "April 13",
-                "zh": "4月13日"
-            },
-            "hash": "d0c4301b0ed28740",
-            "github_url": "https://github.com/NJU-LINK/CodeTracer",
-            "github_stars": 4,
-            "pdf_title_img": "assets/pdf/title_img/2604.11641.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2604.11201",
             "title": "CocoaBench: Evaluating Unified Digital Agents in the Wild",
             "url": "https://huggingface.co/papers/2604.11201",
             "abstract": "Abstract A new benchmark called CocoaBench evaluates unified digital agents on complex, multi-capability tasks requiring vision, search, and coding integration, revealing significant room for improvement in current agent systems.  AI-generated summary LLM agents now perform strongly in software engineering, deep research, GUI automation, and various other applications, while recent agent scaffolds and models are increasingly integrating these capabilities into unified systems. Yet, most evaluations still test these capabilities in isolation, which leaves a gap for more diverse use cases that require agents to combine different capabilities. We introduce CocoaBench, a benchmark for unified digital agents built from human-designed, long-horizon tasks that require flexible composition of vision, search, and coding. Tasks are specified only by an instruction and an automatic evaluation function over the final output, enabling reliable and scalable evaluation across diverse agent infrastructures. We also present CocoaAgent, a lightweight shared scaffold for controlled comparison across model backbones. Experiments show that current agents remain far from reliable on CocoaBench, with the best evaluated system achieving only 45.1% success rate. Our analysis further points to substantial room for improvement in reasoning and planning, tool use and execution, and visual grounding.",
-            "score": 26,
-            "issue_id": 2253,
+            "score": 27,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -199,12 +178,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2604.11641",
+            "title": "CodeTracer: Towards Traceable Agent States",
+            "url": "https://huggingface.co/papers/2604.11641",
+            "abstract": "Abstract CodeTracer is a tracing architecture that analyzes code agent execution by reconstructing state transitions and localizing failures in complex multi-stage workflows.  AI-generated summary Code agents are advancing rapidly, but debugging them is becoming increasingly difficult. As frameworks orchestrate parallel tool calls and multi-stage workflows over complex tasks, making the agent's state transitions and error propagation hard to observe. In these runs, an early misstep can trap the agent in unproductive loops or even cascade into fundamental errors, forming hidden error chains that make it hard to tell when the agent goes off track and why. Existing agent tracing analyses either focus on simple interaction or rely on small-scale manual inspection, which limits their scalability and usefulness for real coding workflows. We present CodeTracer, a tracing architecture that parses heterogeneous run artifacts through evolving extractors, reconstructs the full state transition history as a hierarchical trace tree with persistent memory, and performs failure onset localization to pinpoint the failure origin and its downstream chain. To enable systematic evaluation, we construct CodeTraceBench from a large collection of executed trajectories generated by four widely used code agent frameworks on diverse code tasks (e.g., bug fixing, refactoring, and terminal interaction), with supervision at both the stage and step levels for failure localization. Experiments show that CodeTracer substantially outperforms direct prompting and lightweight baselines, and that replaying its diagnostic signals consistently recovers originally failed runs under matched budgets. Our code and data are publicly available.",
+            "score": 27,
+            "issue_id": 2254,
+            "pub_date": "2026-04-13",
+            "pub_date_card": {
+                "ru": "13 апреля",
+                "en": "April 13",
+                "zh": "4月13日"
+            },
+            "hash": "d0c4301b0ed28740",
+            "github_url": "https://github.com/NJU-LINK/CodeTracer",
+            "github_stars": 4,
+            "pdf_title_img": "assets/pdf/title_img/2604.11641.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2604.10480",
             "title": "Tracing the Roots: A Multi-Agent Framework for Uncovering Data Lineage in Post-Training LLMs",
             "url": "https://huggingface.co/papers/2604.10480",
             "abstract": "Abstract Lineage analysis reveals structural patterns and systemic issues in LLM dataset evolution, enabling more diverse and controlled data curation through lineage-aware sampling approaches.  AI-generated summary Post-training data plays a pivotal role in shaping the capabilities of Large Language Models (LLMs), yet datasets are often treated as isolated artifacts, overlooking the systemic connections that underlie their evolution. To disentangle these complex relationships, we introduce the concept of data lineage to the LLM ecosystem and propose an automated multi-agent framework to reconstruct the evolutionary graph of dataset development. Through large-scale lineage analysis, we characterize domain-specific structural patterns, such as vertical refinement in math-oriented datasets and horizontal aggregation in general-domain corpora. Moreover, we uncover pervasive systemic issues, including structural redundancy induced by implicit dataset intersections and the propagation of benchmark contamination along lineage paths. To demonstrate the practical value of lineage analysis for data construction, we leverage the reconstructed lineage graph to create a lineage-aware diversity-oriented dataset. By anchoring instruction sampling at upstream root sources, this approach mitigates downstream homogenization and hidden redundancy, yielding a more diverse post-training corpus. We further highlight lineage-centric analysis as an efficient and robust topological alternative to sample-level dataset comparison for large-scale data ecosystems. By grounding data construction in explicit lineage structures, our work advances post-training data curation toward a more systematic and controllable paradigm.",
             "score": 14,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-12",
             "pub_date_card": {
                 "ru": "12 апреля",
@@ -225,7 +225,7 @@
             "url": "https://huggingface.co/papers/2604.11035",
             "abstract": "Abstract Introspective Diffusion Language Models address quality gaps with autoregressive models by enforcing introspective consistency through novel decoding algorithms and optimized inference engines.  AI-generated summary Diffusion language models promise parallel generation, yet still lag behind autoregressive (AR) models in quality. We stem this gap to a failure of introspective consistency: AR models agree with their own generations, while DLMs often do not. We define the introspective acceptance rate, which measures whether a model accepts its previously generated tokens. This reveals why AR training has a structural advantage: causal masking and logit shifting implicitly enforce introspective consistency. Motivated by this observation, we introduce Introspective Diffusion Language Model (I-DLM), a paradigm that retains diffusion-style parallel decoding while inheriting the introspective consistency of AR training. I-DLM uses a novel introspective strided decoding (ISD) algorithm, which enables the model to verify previously generated tokens while advancing new ones in the same forward pass. From a systems standpoint, we build I-DLM inference engine on AR-inherited optimizations and further customize it with a stationary-batch scheduler. To the best of our knowledge, I-DLM is the first DLM to match the quality of its same-scale AR counterpart while outperforming prior DLMs in both model quality and practical serving efficiency across 15 benchmarks. It reaches 69.6 on AIME-24 and 45.7 on LiveCodeBench-v6, exceeding LLaDA-2.1-mini (16B) by more than 26 and 15 points, respectively. Beyond quality, I-DLM is designed for the growing demand of large-concurrency serving, delivering about 3x higher throughput than prior state-of-the-art DLMs.",
             "score": 12,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -234,7 +234,7 @@
             },
             "hash": "1092f4e17ba368ff",
             "github_url": "https://github.com/Introspective-Diffusion/I-DLM",
-            "github_stars": 59,
+            "github_stars": 63,
             "pdf_title_img": "assets/pdf/title_img/2604.11035.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -246,7 +246,7 @@
             "url": "https://huggingface.co/papers/2604.10905",
             "abstract": "Abstract Audio Flamingo Next represents a significant advancement in audio-language modeling with enhanced understanding capabilities, extended audio input lengths, and novel temporal reasoning mechanisms.  AI-generated summary We present Audio Flamingo Next (AF-Next), the next-generation and most capable large audio-language model in the Audio Flamingo series, designed to advance understanding and reasoning over speech, environmental sounds and music. Compared to Audio Flamingo 3, AF-Next introduces: (i) a stronger foundational audio-language model that significantly improves accuracy across diverse audio understanding tasks; (ii) scalable strategies for constructing large-scale audio understanding and reasoning data beyond existing academic benchmarks; (iii) support for long and complex audio inputs up to 30 minutes; and (iv) Temporal Audio Chain-of-Thought, a new reasoning paradigm that explicitly grounds intermediate reasoning steps to timestamps in long audio, enabling fine-grained temporal alignment and improved interpretability. To enable these capabilities, we first conduct a systematic analysis of Audio Flamingo 3 to identify key gaps in audio understanding and reasoning. We then curate and scale new large-scale datasets totaling over 1 million hours to address these limitations and expand the existing AudioSkills-XL, LongAudio-XL, AF-Think and AF-Chat datasets. AF-Next is trained using a curriculum-based strategy spanning pre-training, mid-training and post-training stages. Extensive experiments across 20 audio understanding and reasoning benchmarks, including challenging long-audio tasks, show that AF-Next outperforms similarly sized open models by large margins and remains highly competitive with and sometimes surpasses, much larger open-weight and closed models. Beyond benchmark performance, AF-Next exhibits strong real-world utility and transfers well to unseen tasks, highlighting its robustness and generalization ability. In addition to all data, code and methods, we open-source 3 variants of AF-Next, including AF-Next-Instruct, AF-Next-Think and AF-Next-Captioner.",
             "score": 11,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -267,7 +267,7 @@
             "url": "https://huggingface.co/papers/2604.11805",
             "abstract": "Abstract Physics simulators enable large language models to develop physical reasoning capabilities through synthetic data generation and reinforcement learning, achieving zero-shot transfer to real-world benchmarks.  AI-generated summary We have witnessed remarkable advances in LLM reasoning capabilities with the advent of DeepSeek-R1. However, much of this progress has been fueled by the abundance of internet question-answer (QA) pairs, a major bottleneck going forward, since such data is limited in scale and concentrated mainly in domains like mathematics. In contrast, other sciences such as physics lack large-scale QA datasets to effectively train reasoning-capable models. In this work, we show that physics simulators can serve as a powerful alternative source of supervision for training LLMs for physical reasoning. We generate random scenes in physics engines, create synthetic question-answer pairs from simulated interactions, and train LLMs using reinforcement learning on this synthetic data. Our models exhibit zero-shot sim-to-real transfer to real-world physics benchmarks: for example, training solely on synthetic simulated data improves performance on IPhO (International Physics Olympiad) problems by 5-10 percentage points across model sizes. These results demonstrate that physics simulators can act as scalable data generators, enabling LLMs to acquire deep physical reasoning skills beyond the limitations of internet-scale QA data. Code available at: https://sim2reason.github.io/.",
             "score": 11,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -288,7 +288,7 @@
             "url": "https://huggingface.co/papers/2604.11259",
             "abstract": "Abstract Mobile GUI agents using MLLMs can execute complex tasks while addressing privacy personalization through trajectory-induced preference optimization that improves persona alignment and task executability.  AI-generated summary Mobile GUI agents powered by Multimodal Large Language Models (MLLMs) can execute complex tasks on mobile devices. Despite this progress, most existing systems still optimize task success or efficiency, neglecting users' privacy personalization. In this paper, we study the often-overlooked problem of agent personalization. We observe that personalization can induce systematic structural heterogeneity in execution trajectories. For example, privacy-first users often prefer protective actions, e.g., refusing permissions, logging out, and minimizing exposure, leading to logically different execution trajectories from utility-first users. Such variable-length and structurally different trajectories make standard preference optimization unstable and less informative. To address this issue, we propose Trajectory Induced Preference Optimization (TIPO), which uses preference-intensity weighting to emphasize key privacy-related steps and padding gating to suppress alignment noise. Results on our Privacy Preference Dataset show that TIPO improves persona alignment and distinction while preserving strong task executability, achieving 65.60% SR, 46.22 Compliance, and 66.67% PD, outperforming existing optimization methods across various GUI tasks. The code and dataset will be publicly released at https://github.com/Zhixin-L/TIPO.",
             "score": 9,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -309,7 +309,7 @@
             "url": "https://huggingface.co/papers/2604.10030",
             "abstract": "Abstract Video diffusion models struggle with temporal control and semantic coherence in multi-event sequences, but a new inference-time method enables fine-grained temporal control through cross-attention penalties that improve alignment and reduce semantic interference.  AI-generated summary Video diffusion models have achieved remarkable progress in generating high-quality videos. However, these models struggle to represent the temporal succession of multiple events in real-world videos and lack explicit mechanisms to control when semantic concepts appear, how long they persist, and the order in which multiple events occur. Such control is especially important for movie-grade video synthesis, where coherent storytelling depends on precise timing, duration, and transitions between events. When using a single paragraph-style prompt to describe a sequence of complex events, models often exhibit semantic entanglement, where concepts intended for different moments in the video bleed into one another, resulting in poor text-video alignment. To address these limitations, we propose Prompt Relay, an inference-time, plug-and-play method to enable fine-grained temporal control in multi-event video generation, requiring no architectural modifications and no additional computational overhead. Prompt Relay introduces a penalty into the cross-attention mechanism, so that each temporal segment attends only to its assigned prompt, allowing the model to represent one semantic concept at a time and thereby improving temporal prompt alignment, reducing semantic interference, and enhancing visual quality.",
             "score": 9,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-11",
             "pub_date_card": {
                 "ru": "11 апреля",
@@ -325,12 +325,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2604.11753",
+            "title": "Agentic Aggregation for Parallel Scaling of Long-Horizon Agentic Tasks",
+            "url": "https://huggingface.co/papers/2604.11753",
+            "abstract": "Abstract AggAgent enables efficient parallel test-time scaling for long-horizon agentic tasks by aggregating trajectories through a lightweight agent that navigates and synthesizes information on demand.  AI-generated summary We study parallel test-time scaling for long-horizon agentic tasks such as agentic search and deep research, where multiple rollouts are generated in parallel and aggregated into a final response. While such scaling has proven effective for chain-of-thought reasoning, agentic tasks pose unique challenges: trajectories are long, multi-turn, and tool-augmented, and outputs are often open-ended. Aggregating only final answers discards rich information from trajectories, while concatenating all trajectories exceeds the model's context window. To address this, we propose AggAgent, an aggregation agent that treats parallel trajectories as an environment. We equip it with lightweight tools to inspect candidate solutions and search across trajectories, enabling it to navigate and synthesize information on demand. Across six benchmarks and three model families (GLM-4.7, Qwen3.5, MiniMax-M2.5), AggAgent outperforms all existing aggregation methods-by up to 5.3% absolute on average and 10.3% on two deep research tasks-while adding minimal overhead, as the aggregation cost remains bounded by a single agentic rollout. Our findings establish agentic aggregation as an effective and cost-efficient approach to parallel test-time scaling.",
+            "score": 8,
+            "issue_id": 2254,
+            "pub_date": "2026-04-13",
+            "pub_date_card": {
+                "ru": "13 апреля",
+                "en": "April 13",
+                "zh": "4月13日"
+            },
+            "hash": "82b522f5fff5984c",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.11753.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2604.09459",
             "title": "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models",
             "url": "https://huggingface.co/papers/2604.09459",
             "abstract": "Abstract Credit assignment methods for reinforcement learning with large language models are categorized by granularity and methodology, with distinct approaches emerging for reasoning versus agentic settings.  AI-generated summary Reinforcement learning (RL) for large language models (LLMs) increasingly relies on sparse, outcome-level rewards -- yet determining which actions within a long trajectory caused the outcome remains difficult. This credit assignment (CA) problem manifests in two regimes: reasoning RL, where credit must be distributed across tokens and steps within a single chain-of-thought generation (500--30K+ tokens); and agentic RL, where multi-turn environment interaction introduces stochastic transitions, partial observability, and horizons of 100+ turns (100K--1M tokens), making episode-level credit increasingly uninformative.   We survey 47 CA methods (41 core, 6 adjacent enablers) published between 2024 and early 2026, organizing them in a two-dimensional taxonomy by assignment granularity (token, segment, step, turn, multi-agent) and methodology (Monte Carlo, temporal difference, model-based, game-theoretic, information-theoretic). Beyond the survey itself, we contribute three reusable resources: (1) a structured, machine-readable paper inventory with taxonomy labels, baseline families, and evidence levels; (2) a reporting checklist for future CA papers, validated against the reviewed literature to identify systematic methodological gaps; and (3) a benchmark protocol specification with task families, metadata requirements, and controlled bifurcation tasks, accompanied by a method selection decision tree.   Our synthesis suggests that the shift from reasoning to agentic RL complicates and reshapes the credit assignment landscape: reasoning CA is maturing around process reward models and critic-free group comparison, while agentic CA is driving genuinely new approaches -- hindsight counterfactual analysis, privileged asymmetric critics, and turn-level MDP reformulations -- that have no direct precedent in reasoning RL.",
             "score": 7,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -351,7 +372,7 @@
             "url": "https://huggingface.co/papers/2604.09557",
             "abstract": "Abstract Speculative Decoding evaluation requires diverse workloads to accurately measure performance, which existing benchmarks lack, prompting the introduction of SPEED-Bench for standardized assessment across semantic domains and serving regimes.  AI-generated summary Speculative Decoding (SD) has emerged as a critical technique for accelerating Large Language Model (LLM) inference. Unlike deterministic system optimizations, SD performance is inherently data-dependent, meaning that diverse and representative workloads are essential for accurately measuring its effectiveness. Existing benchmarks suffer from limited task diversity, inadequate support for throughput-oriented evaluation, and a reliance on high-level implementations that fail to reflect production environments. To address this, we introduce SPEED-Bench, a comprehensive suite designed to standardize SD evaluation across diverse semantic domains and realistic serving regimes. SPEED-Bench offers a carefully curated Qualitative data split, selected by prioritizing semantic diversity across the data samples. Additionally, it includes a Throughput data split, allowing speedup evaluation across a range of concurrencies, from latency-sensitive low-batch settings to throughput-oriented high-load scenarios. By integrating with production engines like vLLM and TensorRT-LLM, SPEED-Bench allows practitioners to analyze system behaviors often masked by other benchmarks. We highlight this by quantifying how synthetic inputs overestimate real-world throughput, identifying batch-size dependent optimal draft lengths and biases in low-diversity data, and analyzing the caveats of vocabulary pruning in state-of-the-art drafters. We release SPEED-Bench to establish a unified evaluation standard for practical comparisons of SD algorithms.",
             "score": 7,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-02-10",
             "pub_date_card": {
                 "ru": "10 февраля",
@@ -367,33 +388,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2604.11753",
-            "title": "Agentic Aggregation for Parallel Scaling of Long-Horizon Agentic Tasks",
-            "url": "https://huggingface.co/papers/2604.11753",
-            "abstract": "Abstract AggAgent enables efficient parallel test-time scaling for long-horizon agentic tasks by aggregating trajectories through a lightweight agent that navigates and synthesizes information on demand.  AI-generated summary We study parallel test-time scaling for long-horizon agentic tasks such as agentic search and deep research, where multiple rollouts are generated in parallel and aggregated into a final response. While such scaling has proven effective for chain-of-thought reasoning, agentic tasks pose unique challenges: trajectories are long, multi-turn, and tool-augmented, and outputs are often open-ended. Aggregating only final answers discards rich information from trajectories, while concatenating all trajectories exceeds the model's context window. To address this, we propose AggAgent, an aggregation agent that treats parallel trajectories as an environment. We equip it with lightweight tools to inspect candidate solutions and search across trajectories, enabling it to navigate and synthesize information on demand. Across six benchmarks and three model families (GLM-4.7, Qwen3.5, MiniMax-M2.5), AggAgent outperforms all existing aggregation methods-by up to 5.3% absolute on average and 10.3% on two deep research tasks-while adding minimal overhead, as the aggregation cost remains bounded by a single agentic rollout. Our findings establish agentic aggregation as an effective and cost-efficient approach to parallel test-time scaling.",
-            "score": 5,
-            "issue_id": 2253,
-            "pub_date": "2026-04-13",
-            "pub_date_card": {
-                "ru": "13 апреля",
-                "en": "April 13",
-                "zh": "4月13日"
-            },
-            "hash": "82b522f5fff5984c",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2604.11753.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2604.11778",
             "title": "General365: Benchmarking General Reasoning in Large Language Models Across Diverse and Challenging Tasks",
             "url": "https://huggingface.co/papers/2604.11778",
             "abstract": "Abstract Large language models demonstrate limited general reasoning capabilities despite strong domain-specific performance, as revealed by a new benchmark assessing K-12 level reasoning across diverse problem types.  AI-generated summary Contemporary large language models (LLMs) have demonstrated remarkable reasoning capabilities, particularly in specialized domains like mathematics and physics. However, their ability to generalize these reasoning skills to more general and broader contexts--often termed general reasoning--remains under-explored. Unlike domain-specific reasoning, general reasoning relies less on expert knowledge but still presents formidable reasoning challenges, such as complex constraints, nested logical branches, and semantic interference. To address this gap, we introduce General365, a benchmark specifically designed to assess general reasoning in LLMs. By restricting background knowledge to a K-12 level, General365 explicitly decouples reasoning from specialized expertise. The benchmark comprises 365 seed problems and 1,095 variant problems across eight categories, ensuring both high difficulty and diversity. Evaluations across 26 leading LLMs reveal that even the top-performing model achieves only 62.8% accuracy, in stark contrast to the near-perfect performances of LLMs in math and physics benchmarks. These results suggest that the reasoning abilities of current LLMs are heavily domain-dependent, leaving significant room for improvement in broader applications. We envision General365 as a catalyst for advancing LLM reasoning beyond domain-specific tasks toward robust, general-purpose real-world scenarios. Code, Dataset, and Leaderboard: https://general365.github.io",
             "score": 5,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -414,7 +414,7 @@
             "url": "https://huggingface.co/papers/2604.10688",
             "abstract": "Abstract SCOPE enhances on-policy distillation by adapting supervision paths based on trajectory correctness, using teacher-perplexity-weighted KL distillation for incorrect trajectories and student-perplexity-weighted MLE for correct ones, achieving superior reasoning performance.  AI-generated summary On-policy reinforcement learning has become the dominant paradigm for reasoning alignment in large language models, yet its sparse, outcome-level rewards make token-level credit assignment notoriously difficult. On-Policy Distillation (OPD) alleviates this by introducing dense, token-level KL supervision from a teacher model, but typically applies this supervision uniformly across all rollouts, ignoring fundamental differences in signal quality. We propose Signal-Calibrated On-Policy Distillation Enhancement (SCOPE), a dual-path adaptive training framework that routes on-policy rollouts by correctness into two complementary supervision paths. For incorrect trajectories, SCOPE performs teacher-perplexity-weighted KL distillation to prioritize instances where the teacher demonstrates genuine corrective capability, while down-weighting unreliable guidance. For correct trajectories, it applies student-perplexity-weighted MLE to concentrate reinforcement on low-confidence samples at the capability boundary rather than over-reinforcing already mastered ones. Both paths employ a group-level normalization to adaptively calibrate weight distributions, accounting for the intrinsic difficulty variance across prompts. Extensive experiments on six reasoning benchmarks show that SCOPE achieves an average relative improvement of 11.42% in Avg@32 and 7.30% in Pass@32 over competitive baselines, demonstrating its consistent effectiveness.",
             "score": 5,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-12",
             "pub_date_card": {
                 "ru": "12 апреля",
@@ -435,7 +435,7 @@
             "url": "https://huggingface.co/papers/2604.10333",
             "abstract": "Abstract A computational model called Zero-shot Visual World Model demonstrates how children can efficiently learn physical world understanding from limited first-person experiences, generating competent behavior across multiple benchmarks while mimicking developmental patterns and brain-like representations.  AI-generated summary Young children demonstrate early abilities to understand their physical world, estimating depth, motion, object coherence, interactions, and many other aspects of physical scene understanding. Children are both data-efficient and flexible cognitive systems, creating competence despite extremely limited training data, while generalizing to myriad untrained tasks -- a major challenge even for today's best AI systems. Here we introduce a novel computational hypothesis for these abilities, the Zero-shot Visual World Model (ZWM). ZWM is based on three principles: a sparse temporally-factored predictor that decouples appearance from dynamics; zero-shot estimation through approximate causal inference; and composition of inferences to build more complex abilities. We show that ZWM can be learned from the first-person experience of a single child, rapidly generating competence across multiple physical understanding benchmarks. It also broadly recapitulates behavioral signatures of child development and builds brain-like internal representations. Our work presents a blueprint for efficient and flexible learning from human-scale data, advancing both a computational account for children's early physical understanding and a path toward data-efficient AI systems.",
             "score": 5,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-11",
             "pub_date_card": {
                 "ru": "11 апреля",
@@ -456,7 +456,7 @@
             "url": "https://huggingface.co/papers/2604.02340",
             "abstract": "Abstract Masked diffusion language models can be accelerated through strategic replacement of full models with smaller ones during specific denoising steps, achieving reduced computational costs with minimal impact on generation quality.  AI-generated summary Recent advances in masked diffusion language models (MDLMs) narrow the quality gap to autoregressive LMs, but their sampling remains expensive because generation requires many full-sequence denoising passes with a large Transformer and, unlike autoregressive decoding, cannot benefit from KV caching. In this work, we exploit the flexibility of the diffusion framework and study model scheduling, where a smaller MDLM replaces the full model at a subset of denoising steps. Across models trained on OpenWebText and LM1B, we show that early and late denoising steps are substantially more robust to such replacement than middle steps, enabling up to a 17% reduction in FLOPs with only modest degradation in generative perplexity under both unconditional and prefix-conditional generation, while preserving sample diversity. We support these findings with a step-importance analysis based on loss and KL divergence between small and large models across timesteps, as well as an exhaustive search over coarse step segments, both of which identify the middle of the diffusion trajectory as most sensitive consistently across datasets. Our results suggest that simple, architecture-agnostic scheduling rules can significantly accelerate MDLM sampling while largely preserving generation quality.",
             "score": 4,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-11",
             "pub_date_card": {
                 "ru": "11 апреля",
@@ -477,7 +477,7 @@
             "url": "https://huggingface.co/papers/2604.11521",
             "abstract": "Abstract Continuous adversarial flow models improve image generation by using an adversarial objective with a learned discriminator to better align samples with target distributions, achieving superior results on ImageNet and text-to-image tasks.  AI-generated summary We propose continuous adversarial flow models, a type of continuous-time flow model trained with an adversarial objective. Unlike flow matching, which uses a fixed mean-squared-error criterion, our approach introduces a learned discriminator to guide training. This change in objective induces a different generalized distribution, which empirically produces samples that are better aligned with the target data distribution. Our method is primarily proposed for post-training existing flow-matching models, although it can also train models from scratch. On the ImageNet 256px generation task, our post-training substantially improves the guidance-free FID of latent-space SiT from 8.26 to 3.63 and of pixel-space JiT from 7.17 to 3.57. It also improves guided generation, reducing FID from 2.06 to 1.53 for SiT and from 1.86 to 1.80 for JiT. We further evaluate our approach on text-to-image generation, where it achieves improved results on both the GenEval and DPG benchmarks.",
             "score": 3,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -498,7 +498,7 @@
             "url": "https://huggingface.co/papers/2604.11547",
             "abstract": "Abstract MedSSR enhances medical reasoning in large language models through knowledge-enhanced data synthesis and semi-supervised reinforcement learning, improving performance on rare disease tasks while reducing reliance on expensive reasoning trace distillation.  AI-generated summary While large language models hold promise for complex medical applications, their development is hindered by the scarcity of high-quality reasoning data. To address this issue, existing approaches typically distill chain-of-thought reasoning traces from large proprietary models via supervised fine-tuning, then conduct reinforcement learning (RL). These methods exhibit limited improvement on underrepresented domains like rare diseases while incurring substantial costs from generating complex reasoning chains. To efficiently enhance medical reasoning, we propose MedSSR, a Medical Knowledge-enhanced data Synthesis and Semi-supervised Reinforcement learning framework. Our framework first employs rare disease knowledge to synthesize distribution-controllable reasoning questions. We then utilize the policy model itself to generate high-quality pseudo-labels. This enables a two-stage, intrinsic-to-extrinsic training paradigm: self-supervised RL on the pseudo-labeled synthetic data, followed by supervised RL on the human-annotated real data. MedSSR scales model training efficiently without relying on costly trace distillation. Extensive experiments on Qwen and Llama demonstrate that our method outperforms existing methods across ten medical benchmarks, achieving up to +5.93% gain on rare-disease tasks. Our code is available at https://github.com/tdlhl/MedSSR.",
             "score": 3,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -519,7 +519,7 @@
             "url": "https://huggingface.co/papers/2604.10799",
             "abstract": "Abstract The Bielik v3 PL series achieves improved language-specific performance through specialized Polish tokenization, FOCUS-based embeddings, and multi-stage training with supervised fine-tuning, direct preference optimization, and reinforcement learning.  AI-generated summary The development of the Bielik v3 PL series, encompassing both the 7B and 11B parameter variants, represents a significant milestone in the field of language-specific large language model (LLM) optimization. While general-purpose models often demonstrate impressive multilingual capabilities, they frequently suffer from a fundamental architectural inefficiency: the use of universal tokenizers. These tokenizers, typically designed to cover a broad spectrum of languages, often fail to capture the morphological nuances of specific languages like Polish, leading to higher fertility ratios, increased inference costs, and restricted effective context windows. This report details the transition from the universal Mistral-based tokenization to a dedicated Polish-optimized vocabulary for the Bielik v3 models, exploring the FOCUS-based embedding initialization, the multi-stage pretraining curriculum, and the subsequent post-training alignment involving Supervised Fine-Tuning, Direct Preference Optimization, and Reinforcement Learning through Group Relative Policy Optimization with verifiable rewards.",
             "score": 3,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-12",
             "pub_date_card": {
                 "ru": "12 апреля",
@@ -540,7 +540,7 @@
             "url": "https://huggingface.co/papers/2604.11716",
             "abstract": "Abstract SWE-AGILE addresses reasoning limitations in software engineering by using dynamic context management to balance detailed analysis with computational efficiency.  AI-generated summary Prior representative ReAct-style approaches in autonomous Software Engineering (SWE) typically lack the explicit System-2 reasoning required for deep analysis and handling complex edge cases. While recent reasoning models demonstrate the potential of extended Chain-of-Thought (CoT), applying them to the multi-turn SWE task creates a fundamental dilemma: retaining full reasoning history leads to context explosion and ``Lost-in-the-Middle'' degradation, while discarding it would force the agent to redundantly re-reason at every step. To address these challenges, we propose SWE-AGILE, a novel software agent framework designed to bridge the gap between reasoning depth, efficiency, and context constraints. SWE-AGILE introduces a Dynamic Reasoning Context strategy, maintaining a ``sliding window'' of detailed reasoning for immediate continuity to prevent redundant re-analyzing, while compressing historical reasoning content into concise Reasoning Digests. Empirically, SWE-AGILE sets a new standard for 7B-8B models on SWE-Bench-Verified using only 2.2k trajectories and 896 tasks. Code is available at https://github.com/KDEGroup/SWE-AGILE.",
             "score": 2,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -561,7 +561,7 @@
             "url": "https://huggingface.co/papers/2604.11446",
             "abstract": "Abstract A nonlinear extrapolation framework for reinforcement learning with verifiable rewards in large language models that reduces computational overhead by modeling rank-1 parameter trajectories through LoRA training and predictor-based prediction-extend processes.  AI-generated summary Recently, scaling reinforcement learning with verifiable rewards (RLVR) for large language models (LLMs) has emerged as an effective training paradigm for significantly improving model capabilities, which requires guiding the model to perform extensive exploration and learning, leading to substantial computational overhead and becoming a key challenge. To reduce the number of training steps, Prior work performs linear extrapolation of model parameters. However, the dynamics of model parameter updates during RLVR training remain insufficiently understood. To further investigate the evolution of LLMs during RLVR training, we conduct empirical experiments and find that the rank-1 subspace of the model does not evolve linearly, and its dominance over the original parameters is further amplified during LoRA training. Based on the above insights, we propose the Nonlinear Extrapolation of low-rank trajectories (NExt), a novel framework that models and extrapolates low-rank parameter trajectories in a nonlinear manner. Concretely, we first train the model using LoRA and extract the rank-1 subspace of parameter differences at multiple training steps, which is then used for the subsequent nonlinear extrapolation. Afterward, we utilized the extracted rank-1 subspace to train a predictor, which can model the trajectory of parameter updates during RLVR, and then perform the predict-extend process to extrapolate model parameters, achieving the acceleration of RLVR. To further study and understand NExt, we conduct comprehensive experiments that demonstrate the effectiveness and robustness of the method. Our method reduces computational overhead by approximately 37.5\\% while remaining compatible with a wide range of RLVR algorithms and tasks. We release our code in https://github.com/RUCAIBox/NExt.",
             "score": 2,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -582,7 +582,7 @@
             "url": "https://huggingface.co/papers/2604.10425",
             "abstract": "Abstract A new hierarchical, multi-view benchmark called DiningBench is introduced to evaluate vision-language models on fine-grained food classification, nutrition estimation, and visual question answering, revealing current models' limitations in fine-grained visual discrimination and nutritional reasoning.  AI-generated summary Recent advancements in Vision-Language Models (VLMs) have revolutionized general visual understanding. However, their application in the food domain remains constrained by benchmarks that rely on coarse-grained categories, single-view imagery, and inaccurate metadata. To bridge this gap, we introduce DiningBench, a hierarchical, multi-view benchmark designed to evaluate VLMs across three levels of cognitive complexity: Fine-Grained Classification, Nutrition Estimation, and Visual Question Answering. Unlike previous datasets, DiningBench comprises 3,021 distinct dishes with an average of 5.27 images per entry, incorporating fine-grained \"hard\" negatives from identical menus and rigorous, verification-based nutritional data. We conduct an extensive evaluation of 29 state-of-the-art open-source and proprietary models. Our experiments reveal that while current VLMs excel at general reasoning, they struggle significantly with fine-grained visual discrimination and precise nutritional reasoning. Furthermore, we systematically investigate the impact of multi-view inputs and Chain-of-Thought reasoning, identifying five primary failure modes. DiningBench serves as a challenging testbed to drive the next generation of food-centric VLM research. All codes are released in https://github.com/meituan/DiningBench.",
             "score": 2,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-12",
             "pub_date_card": {
                 "ru": "12 апреля",
@@ -603,7 +603,7 @@
             "url": "https://huggingface.co/papers/2604.10784",
             "abstract": "Abstract TorchUMM presents a unified codebase for evaluating and analyzing multimodal models across understanding, generation, and editing tasks with standardized protocols and diverse datasets.  AI-generated summary Recent advances in unified multimodal models (UMMs) have led to a proliferation of architectures capable of understanding, generating, and editing across visual and textual modalities. However, developing a unified framework for UMMs remains challenging due to the diversity of model architectures and the heterogeneity of training paradigms and implementation details. In this paper, we present TorchUMM, the first unified codebase for comprehensive evaluation, analysis, and post-training across diverse UMM backbones, tasks, and datasets. TorchUMM supports a broad spectrum of models covering a wide range of scales and design paradigms. Our benchmark encompasses three core task dimensions: multimodal understanding, generation, and editing, and integrates both established and novel datasets to evaluate perception, reasoning, compositionality, and instruction-following abilities. By providing a unified interface and standardized evaluation protocols, TorchUMM enables fair and reproducible comparisons across heterogeneous models and fosters deeper insights into their strengths and limitations, facilitating the development of more capable unified multimodal systems. Code is available at: https://github.com/AIFrontierLab/TorchUMM.",
             "score": 2,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-12",
             "pub_date_card": {
                 "ru": "12 апреля",
@@ -612,7 +612,7 @@
             },
             "hash": "bd3ab2fe19fcbf81",
             "github_url": "https://github.com/AIFrontierLab/TorchUMM",
-            "github_stars": 35,
+            "github_stars": 38,
             "pdf_title_img": "assets/pdf/title_img/2604.10784.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -624,7 +624,7 @@
             "url": "https://huggingface.co/papers/2604.08921",
             "abstract": "Abstract TAIHRI is a vision-language model designed for egocentric human-robot interaction that enables precise 3D keypoint localization through 2D keypoint reasoning and next token prediction.  AI-generated summary Accurate 3D human keypoints localization is a critical technology enabling robots to achieve natural and safe physical interaction with users. Conventional 3D human keypoints estimation methods primarily focus on the whole-body reconstruction quality relative to the root joint. However, in practical human-robot interaction (HRI) scenarios, robots are more concerned with the precise metric-scale spatial localization of task-relevant body parts under the egocentric camera 3D coordinate. We propose TAIHRI, the first Vision-Language Model (VLM) tailored for close-range HRI perception, capable of understanding users' motion commands and directing the robot's attention to the most task-relevant keypoints. By quantizing 3D keypoints into a finite interaction space, TAIHRI precisely localize the 3D spatial coordinates of critical body parts by 2D keypoint reasoning via next token prediction, and seamlessly adapt to downstream tasks such as natural language control or global space human mesh recovery. Experiments on egocentric interaction benchmarks demonstrate that TAIHRI achieves superior estimation accuracy for task-critical body parts. We believe TAIHRI opens new research avenues in the field of embodied human-robot interaction. Code is available at: https://github.com/Tencent/TAIHRI.",
             "score": 2,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-10",
             "pub_date_card": {
                 "ru": "10 апреля",
@@ -640,12 +640,54 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2604.08706",
+            "title": "Efficient RL Training for LLMs with Experience Replay",
+            "url": "https://huggingface.co/papers/2604.08706",
+            "abstract": "Abstract Experience replay techniques for large language model post-training balance staleness variance and computational costs while maintaining performance and policy entropy.  AI-generated summary While Experience Replay - the practice of storing rollouts and reusing them multiple times during training - is a foundational technique in general RL, it remains largely unexplored in LLM post-training due to the prevailing belief that fresh, on-policy data is essential for high performance. In this work, we challenge this assumption. We present a systematic study of replay buffers for LLM post-training, formalizing the optimal design as a trade-off between staleness-induced variance, sample diversity and the high computational cost of generation. We show that strict on-policy sampling is suboptimal when generation is expensive. Empirically, we show that a well-designed replay buffer can drastically reduce inference compute without degrading - and in some cases even improving - final model performance, while preserving policy entropy.",
+            "score": 2,
+            "issue_id": 2254,
+            "pub_date": "2026-04-09",
+            "pub_date_card": {
+                "ru": "9 апреля",
+                "en": "April 9",
+                "zh": "4月9日"
+            },
+            "hash": "78b1574d749da54b",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.08706.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.11666",
+            "title": "Playing Along: Learning a Double-Agent Defender for Belief Steering via Theory of Mind",
+            "url": "https://huggingface.co/papers/2604.11666",
+            "abstract": "Abstract Large language models face challenges in theory-of-mind reasoning for adversarial interactions, but reinforcement learning-trained AI double agents demonstrate improved belief manipulation and theory-of-mind capabilities through bidirectional reward optimization.  AI-generated summary As large language models (LLMs) become the engine behind conversational systems, their ability to reason about the intentions and states of their dialogue partners (i.e., form and use a theory-of-mind, or ToM) becomes increasingly critical for safe interaction with potentially adversarial partners. We propose a novel privacy-themed ToM challenge, ToM for Steering Beliefs (ToM-SB), in which a defender must act as a Double Agent to steer the beliefs of an attacker with partial prior knowledge within a shared universe. To succeed on ToM-SB, the defender must engage with and form a ToM of the attacker, with a goal of fooling the attacker into believing they have succeeded in extracting sensitive information. We find that strong frontier models like Gemini3-Pro and GPT-5.4 struggle on ToM-SB, often failing to fool attackers in hard scenarios with partial attacker prior knowledge, even when prompted to reason about the attacker's beliefs (ToM prompting). To close this gap, we train models on ToM-SB to act as AI Double Agents using reinforcement learning, testing both fooling and ToM rewards. Notably, we find a bidirectionally emergent relationship between ToM and attacker-fooling: rewarding fooling success alone improves ToM, and rewarding ToM alone improves fooling. Across four attackers with different strengths, six defender methods, and both in-distribution and out-of-distribution (OOD) evaluation, we find that gains in ToM and attacker-fooling are well-correlated, highlighting belief modeling as a key driver of success on ToM-SB. AI Double Agents that combine both ToM and fooling rewards yield the strongest fooling and ToM performance, outperforming Gemini3-Pro and GPT-5.4 with ToM prompting on hard scenarios. We also show that ToM-SB and AI Double Agents can be extended to stronger attackers, demonstrating generalization to OOD settings and the upgradability of our task.",
+            "score": 1,
+            "issue_id": 2254,
+            "pub_date": "2026-04-13",
+            "pub_date_card": {
+                "ru": "13 апреля",
+                "en": "April 13",
+                "zh": "4月13日"
+            },
+            "hash": "33632a04bc31c319",
+            "github_url": "https://github.com/The-Inscrutable-X/AIDoubleAgentDefenders",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.11666.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2604.11737",
             "title": "Learning Long-term Motion Embeddings for Efficient Kinematics Generation",
             "url": "https://huggingface.co/papers/2604.11737",
             "abstract": "Abstract Efficient motion generation is achieved through compressed motion embeddings and conditional flow-matching models that produce realistic long-term motions from text prompts or spatial inputs.  AI-generated summary Understanding and predicting motion is a fundamental component of visual intelligence. Although modern video models exhibit strong comprehension of scene dynamics, exploring multiple possible futures through full video synthesis remains prohibitively inefficient. We model scene dynamics orders of magnitude more efficiently by directly operating on a long-term motion embedding that is learned from large-scale trajectories obtained from tracker models. This enables efficient generation of long, realistic motions that fulfill goals specified via text prompts or spatial pokes. To achieve this, we first learn a highly compressed motion embedding with a temporal compression factor of 64x. In this space, we train a conditional flow-matching model to generate motion latents conditioned on task descriptions. The resulting motion distributions outperform those of both state-of-the-art video models and specialized task-specific approaches.",
             "score": 1,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -666,7 +708,7 @@
             "url": "https://huggingface.co/papers/2604.11491",
             "abstract": "Abstract ADD is a multi-bit image watermarking method that uses linear combination and inner product operations for embedding and decoding, achieving high accuracy and efficiency compared to existing approaches.  AI-generated summary As generative models enable rapid creation of high-fidelity images, societal concerns about misinformation and authenticity have intensified. A promising remedy is multi-bit image watermarking, which embeds a multi-bit message into an image so that a verifier can later detect whether the image is generated by someone and further identify the source by decoding the embedded message. Existing approaches often fall short in capacity, resilience to common image distortions, and theoretical justification. To address these limitations, we propose ADD (Add, Dot, Decode), a multi-bit image watermarking method with two stages: learning a watermark to be linearly combined with the multi-bit message and added to the image, and decoding through inner products between the watermarked image and the learned watermark. On the standard MS-COCO benchmark, we demonstrate that for the challenging task of 48-bit watermarking, ADD achieves 100\\% decoding accuracy, with performance dropping by at most 2\\% under a wide range of image distortions, substantially smaller than the 14\\% average drop of state-of-the-art methods. In addition, ADD achieves substantial computational gains, with 2-fold faster embedding and 7.4-fold faster decoding than the fastest existing method. We further provide a theoretical analysis explaining why the learned watermark and the corresponding decoding rule are effective.",
             "score": 1,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -687,7 +729,7 @@
             "url": "https://huggingface.co/papers/2604.10628",
             "abstract": "Abstract A curated LilyPond dataset and adapted CodeBERT model demonstrate that expert-curated small datasets can outperform large noisy corpora for music understanding tasks.  AI-generated summary Symbolic music research has relied almost exclusively on MIDI-based datasets; text-based engraving formats such as LilyPond remain unexplored for music understanding. We present BMdataset, a musicologically curated dataset of 393 LilyPond scores (2,646 movements) transcribed by experts directly from original Baroque manuscripts, with metadata covering composer, musical form, instrumentation, and sectional attributes. Building on this resource, we introduce LilyBERT (weights can be found at https://huggingface.co/csc-unipd/lilybert), a CodeBERT-based encoder adapted to symbolic music through vocabulary extension with 115 LilyPond-specific tokens and masked language model pre-training. Linear probing on the out-of-domain Mutopia corpus shows that, despite its modest size (~90M tokens), fine-tuning on BMdataset alone outperforms continuous pre-training on the full PDMX corpus (~15B tokens) for both composer and style classification, demonstrating that small, expertly curated datasets can be more effective than large, noisy corpora for music understanding. Combining broad pre-training with domain-specific fine-tuning yields the best results overall (84.3% composer accuracy), confirming that the two data regimes are complementary. We release the dataset, tokenizer, and model to establish a baseline for representation learning on LilyPond.",
             "score": 1,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-12",
             "pub_date_card": {
                 "ru": "12 апреля",
@@ -708,7 +750,7 @@
             "url": "https://huggingface.co/papers/2604.10718",
             "abstract": "Abstract SciPredict benchmark reveals that large language models struggle to accurately predict scientific experiment outcomes and cannot reliably assess prediction confidence, unlike human experts who show better calibration and performance when experiments are deemed predictable.  AI-generated summary Accelerating scientific discovery requires the identification of which experiments would yield the best outcomes before committing resources to costly physical validation. While existing benchmarks evaluate LLMs on scientific knowledge and reasoning, their ability to predict experimental outcomes - a task where AI could significantly exceed human capabilities - remains largely underexplored. We introduce SciPredict, a benchmark comprising 405 tasks derived from recent empirical studies in 33 specialized sub-fields of physics, biology, and chemistry. SciPredict addresses two critical questions: (a) can LLMs predict the outcome of scientific experiments with sufficient accuracy? and (b) can such predictions be reliably used in the scientific research process? Evaluations reveal fundamental limitations on both fronts. Model accuracies are 14-26% and human expert performance is approx20%. Although some frontier models exceed human performance model accuracy is still far below what would enable reliable experimental guidance. Even within the limited performance, models fail to distinguish reliable predictions from unreliable ones, achieving only approx20% accuracy regardless of their confidence or whether they judge outcomes as predictable without physical experimentation. Human experts, in contrast, demonstrate strong calibration: their accuracy increases from approx5% to approx80% as they deem outcomes more predictable without conducting the experiment. SciPredict establishes a rigorous framework demonstrating that superhuman performance in experimental science requires not just better predictions, but better awareness of prediction reliability. For reproducibility all our data and code are provided at https://github.com/scaleapi/scipredict",
             "score": 1,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-12",
             "pub_date_card": {
                 "ru": "12 апреля",
@@ -729,7 +771,7 @@
             "url": "https://huggingface.co/papers/2604.11004",
             "abstract": "Abstract Researchers introduce a novel approach to image assessment by representing image pairs as structured distortion graphs that capture region-level degradation information, challenging existing multimodal models' ability to understand fine-grained visual differences.  AI-generated summary In this work, we introduce a new perspective on comparative image assessment by representing an image pair as a structured composition of its regions. In contrast, existing methods focus on whole image analysis, while implicitly relying on region-level understanding. We extend the intra-image notion of a scene graph to inter-image, and propose a novel task of Distortion Graph (DG). DG treats paired images as a structured topology grounded in regions, and represents dense degradation information such as distortion type, severity, comparison and quality score in a compact interpretable graph structure. To realize the task of learning a distortion graph, we contribute (i) a region-level dataset, PandaSet, (ii) a benchmark suite, PandaBench, with varying region-level difficulty, and (iii) an efficient architecture, Panda, to generate distortion graphs. We demonstrate that PandaBench poses a significant challenge for state-of-the-art multimodal large language models (MLLMs) as they fail to understand region-level degradations even when fed with explicit region cues. We show that training on PandaSet or prompting with DG elicits region-wise distortion understanding, opening a new direction for fine-grained, structured pairwise image assessment.",
             "score": 0,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -750,7 +792,7 @@
             "url": "https://huggingface.co/papers/2604.04385",
             "abstract": "Abstract The study reveals that policy routing in alignment-trained language models involves attention gates and amplifier heads that control safety responses, with the routing mechanism being early-committing and transferable across model scales.  AI-generated summary This paper localizes the policy routing mechanism in alignment-trained language models. An intermediate-layer attention gate reads detected content and triggers deeper amplifier heads that boost the signal toward refusal. In smaller models the gate and amplifier are single heads; at larger scale they become bands of heads across adjacent layers. The gate contributes under 1% of output DLA, but interchange testing (p<0.001) and knockout cascade confirm it is causally necessary. Interchange screening at n>=120 detects the same motif in twelve models from six labs (2B to 72B), though specific heads differ by lab. Per-head ablation weakens up to 58x at 72B and misses gates that interchange identifies; interchange is the only reliable audit at scale. Modulating the detection-layer signal continuously controls policy from hard refusal through evasion to factual answering. On safety prompts the same intervention turns refusal into harmful guidance, showing the safety-trained capability is gated by routing rather than removed. Thresholds vary by topic and by input language, and the circuit relocates across generations within a family while behavioral benchmarks register no change. Routing is early-commitment: the gate commits at its own layer before deeper layers finish processing the input. Under an in-context substitution cipher, gate interchange necessity collapses 70 to 99% across three models and the model switches to puzzle-solving. Injecting the plaintext gate activation into the cipher forward pass restores 48% of refusals in Phi-4-mini, localizing the bypass to the routing interface. A second method, cipher contrast analysis, uses plain/cipher DLA differences to map the full cipher-sensitive routing circuit in O(3n) forward passes. Any encoding that defeats detection-layer pattern matching bypasses the policy regardless of whether deeper layers reconstruct the content.",
             "score": 0,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -771,7 +813,7 @@
             "url": "https://huggingface.co/papers/2604.11152",
             "abstract": "Abstract SHARE models are causal language models pre-trained specifically for social sciences and humanities that match general-purpose model performance while MIRROR provides a text review interface that preserves critical engagement without generating content.  AI-generated summary This intermediate technical report introduces the SHARE family of base models and the MIRROR user interface. The SHARE models are the first causal language models fully pretrained by and for the social sciences and humanities (SSH). Their performance in modelling SSH texts is close to that of general purpose models (Phi-4) which use 100 times more tokens, as shown by our custom SSH Cloze benchmark. The MIRROR user interface is designed for reviewing text inputs from the SSH disciplines while preserving critical engagement. By prototyping a generative AI interface that does not generate any text, we propose a way to harness the capabilities of the SHARE models without compromising the integrity of SSH principles and norms.",
             "score": 0,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -792,7 +834,7 @@
             "url": "https://huggingface.co/papers/2604.11290",
             "abstract": "Abstract Effective multilingual teacher models for synthetic data generation are identified through systematic evaluation of data quality metrics rather than model size alone, with findings showing that prompt diversity and response fluency better predict student model performance.  AI-generated summary Synthesizing supervised finetuning (SFT) data from language models (LMs) to teach smaller models multilingual tasks has become increasingly common. However, teacher model selection is often ad hoc, typically defaulting to the largest available option, even though such models may have significant capability gaps in non-English languages. This practice can result in poor-quality synthetic data and suboptimal student downstream performance. In this work, we systematically characterize what makes an effective multilingual teacher. We measure intrinsic measures of data quality with extrinsic student model performance in a metric we call Polyglot Score; evaluating 10 LMs across 6 typologically diverse languages, generating over 1.4M SFT examples and training 240 student models. Among the models tested, Gemma 3 27B and Aya Expanse 32B emerge as consistently effective teachers across different student base model families. Further analyses reveal that model scale alone does not significantly predict teacher effectiveness; instead, data qualities such as prompt diversity, length, and response fluency capture over 93.3% of variance in intrinsic data quality and predict student performance. Finally, we provide practical recommendations, including matching the model families of teacher-student pairs and translating from or responding to existing prompts, which can yield improvements for less-resourced languages. We hope that our work advances data-centric research in multilingual synthetic data and LM development.",
             "score": 0,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -808,33 +850,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2604.11666",
-            "title": "Playing Along: Learning a Double-Agent Defender for Belief Steering via Theory of Mind",
-            "url": "https://huggingface.co/papers/2604.11666",
-            "abstract": "Abstract Large language models face challenges in theory-of-mind reasoning for adversarial interactions, but reinforcement learning-trained AI double agents demonstrate improved belief manipulation and theory-of-mind capabilities through bidirectional reward optimization.  AI-generated summary As large language models (LLMs) become the engine behind conversational systems, their ability to reason about the intentions and states of their dialogue partners (i.e., form and use a theory-of-mind, or ToM) becomes increasingly critical for safe interaction with potentially adversarial partners. We propose a novel privacy-themed ToM challenge, ToM for Steering Beliefs (ToM-SB), in which a defender must act as a Double Agent to steer the beliefs of an attacker with partial prior knowledge within a shared universe. To succeed on ToM-SB, the defender must engage with and form a ToM of the attacker, with a goal of fooling the attacker into believing they have succeeded in extracting sensitive information. We find that strong frontier models like Gemini3-Pro and GPT-5.4 struggle on ToM-SB, often failing to fool attackers in hard scenarios with partial attacker prior knowledge, even when prompted to reason about the attacker's beliefs (ToM prompting). To close this gap, we train models on ToM-SB to act as AI Double Agents using reinforcement learning, testing both fooling and ToM rewards. Notably, we find a bidirectionally emergent relationship between ToM and attacker-fooling: rewarding fooling success alone improves ToM, and rewarding ToM alone improves fooling. Across four attackers with different strengths, six defender methods, and both in-distribution and out-of-distribution (OOD) evaluation, we find that gains in ToM and attacker-fooling are well-correlated, highlighting belief modeling as a key driver of success on ToM-SB. AI Double Agents that combine both ToM and fooling rewards yield the strongest fooling and ToM performance, outperforming Gemini3-Pro and GPT-5.4 with ToM prompting on hard scenarios. We also show that ToM-SB and AI Double Agents can be extended to stronger attackers, demonstrating generalization to OOD settings and the upgradability of our task.",
-            "score": 0,
-            "issue_id": 2253,
-            "pub_date": "2026-04-13",
-            "pub_date_card": {
-                "ru": "13 апреля",
-                "en": "April 13",
-                "zh": "4月13日"
-            },
-            "hash": "33632a04bc31c319",
-            "github_url": "https://github.com/The-Inscrutable-X/AIDoubleAgentDefenders",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2604.11666.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2604.10039",
             "title": "Counting to Four is still a Chore for VLMs",
             "url": "https://huggingface.co/papers/2604.10039",
             "abstract": "Abstract Vision-language models exhibit counting failures due to reduced visual evidence utilization in later language layers, which can be mitigated through modality attention share interventions.  AI-generated summary Vision--language models (VLMs) have achieved impressive performance on complex multimodal reasoning tasks, yet they still fail on simple grounding skills such as object counting. Existing evaluations mostly assess only final outputs, offering limited insight into where these failures arise inside the model. In this work, we present an empirical study of VLM counting behavior through both behavioral and mechanistic analysis. We introduce COUNTINGTRICKS, a controlled evaluation suite of simple shape-based counting cases designed to expose vulnerabilities under different patchification layouts and adversarial prompting conditions. Using attention analysis and component-wise probing, we show that count-relevant visual evidence is strongest in the modality projection stage but degrades substantially in later language layers, where models become more susceptible to text priors. Motivated by this finding, we further evaluate Modality Attention Share (MAS), a lightweight intervention that encourages a minimum budget of visual attention during answer generation. Our results suggest that counting failures in VLMs stem not only from visual perception limits, but also from the underuse of visual evidence during language-stage reasoning. Code and dataset will be released at https://github.com/leduy99/-CVPRW26-Modality-Attention-Share.",
             "score": 0,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-11",
             "pub_date_card": {
                 "ru": "11 апреля",
@@ -855,7 +876,7 @@
             "url": "https://huggingface.co/papers/2604.09212",
             "abstract": "Abstract A modular framework called SPASM is presented for generating stable multi-turn dialogues with consistent personas, addressing issues like persona drift and echoing through a perspective-agnostic context projection method.  AI-generated summary Large language models are increasingly deployed in multi-turn settings such as tutoring, support, and counseling, where reliability depends on preserving consistent roles, personas, and goals across long horizons. This requirement becomes critical when LLMs are used to generate synthetic dialogues for training and evaluation, since LLM--LLM conversations can accumulate identity-related failures such as persona drift, role confusion, and \"echoing\", where one agent gradually mirrors its partner. We introduce SPASM (Stable Persona-driven Agent Simulation for Multi-turn dialogue generation), a modular, stability-first framework that decomposes simulation into (i) persona creation via schema sampling, plausibility validation, and natural-language persona crafting, (ii) Client--Responder dialogue generation, and (iii) termination detection for coherent stopping. To improve long-horizon stability without changing model weights, we propose Egocentric Context Projection (ECP): dialogue history is stored in a perspective-agnostic representation and deterministically projected into each agent's egocentric view before generation. Across three LLM backbones (GPT-4o-mini, DeepSeek-V3.2, Qwen-Plus) and nine Client--Responder pairings, we construct a dataset of 4,500 personas and 45,000 conversations (500 personas X 10 conversations per pairing). Ablations show ECP substantially reduces persona drift and, under human validation, eliminates echoing; embedding analyses recover persona structure and reveal strong responder-driven interaction geometry. Our code is available at https://github.com/lhannnn/SPASM.",
             "score": 0,
-            "issue_id": 2253,
+            "issue_id": 2254,
             "pub_date": "2026-04-10",
             "pub_date_card": {
                 "ru": "10 апреля",
