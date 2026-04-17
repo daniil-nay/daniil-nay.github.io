@@ -1,0 +1,35 @@
+[16.04.2026 23:40] Read previous papers.
+[16.04.2026 23:40] Generating top page (month).
+[16.04.2026 23:40] Writing top page (month).
+[17.04.2026 01:53] Read previous papers.
+[17.04.2026 01:53] Get feed.
+[17.04.2026 01:53] Extract page data from URL. URL: https://huggingface.co/papers/2604.07466
+[17.04.2026 01:53] Updating GitHub stars.
+[17.04.2026 01:53] Obtaining deleted papers (sometimes HF Daily Papers move some articles from today to past days).
+[17.04.2026 01:53] Downloading and parsing papers (pdf, html). Total: 1.
+[17.04.2026 01:53] Downloading and parsing paper https://huggingface.co/papers/2604.07466.
+[17.04.2026 01:53] Downloading paper 2604.07466 from https://arxiv.org/pdf/2604.07466v2...
+[17.04.2026 01:53] Extracting affiliations from text.
+[17.04.2026 01:53] Gigachat request. Model: GigaChat. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"Cross-Tokenizer LLM Distillation through Byte-Level Interface Avyav Kumar Singh1*, Yen-Chen Wu1*, Alexandru Cioba1, Alberto Bernacchia1, Davide Buffelli1, 1MediaTek Research, Cambridge (United Kingdom) Correspondence: davide.buffelli@mtkresearch.com 6 2 0 2 3 1 ] . [ 2 6 6 4 7 0 . 4 0 6 2 : r a "
+[17.04.2026 01:53] Failed to download and parse paper https://huggingface.co/papers/2604.07466: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[17.04.2026 01:53] Enriching papers with extra data.
+[17.04.2026 01:53] ********************************************************************************
+[17.04.2026 01:53] Abstract 0. Abstract Byte-Level Distillation enables cross-tokenizer knowledge transfer by operating at the byte level, achieving competitive performance compared to complex existing methods.  AI-generated summary Cross-tokenizer distillation (CTD), the transfer of knowledge from a teacher to a student language...
+[17.04.2026 01:53] Read previous papers.
+[17.04.2026 01:53] Generating reviews via LLM API.
+[17.04.2026 01:53] Querying the API.
+[17.04.2026 01:53] Gigachat request. Model: GigaChat. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract Byte-Level Distillation enables cross-tokenizer knowledge transfer by operating at the byte level, achieving competitive performance compared to complex existing methods.  AI-generated summary Cross-tokenizer distillation (CTD), the transfer of knowledge from a teacher to a student language model when the two use different tokenizers, remains a largely unsolved problem. Existing approaches rely on heuristic strategies to align mismatched vocabularies, introducing considerable complexity. In this paper, we propose a simple but effective baseline called Byte-Level Distillation (BLD) which enables CTD by operating at a common interface across tokenizers: the byte level. In more detail, we convert the teacher's output distribution to byte-level probabilities, attach a lightweight byte-level decoder head to the student, and distill through this shared byte-level interface. Despite its simplicity, BLD performs competitively with--and on several benchmarks surpasses--significantly more sophisticated CTD methods, across a range of distillation tasks with models from 1B to 8B parameters. Our results suggest that the byte level is a natural common ground for cross-tokenizer knowledge transfer, while also highlighting that consistent improvements across all tasks and benchmarks remain elusive, underscoring that CTD is still an open problem.
+[17.04.2026 01:53] Error getting data: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[17.04.2026 01:53] Renaming data file.
+[17.04.2026 01:53] Renaming previous data. hf_papers.json to ./d/2026-04-17.json
+[17.04.2026 01:53] Saving new data file.
+[17.04.2026 01:53] Generating page.
+[17.04.2026 01:53] Renaming previous page.
+[17.04.2026 01:53] Renaming previous data. index.html to ./d/2026-04-17.html
+[17.04.2026 01:53] Writing result.
+[17.04.2026 01:53] Renaming log file.
+[17.04.2026 01:53] Renaming previous data. log.txt to ./logs/2026-04-17_last_log.txt
