@@ -1,12 +1,12 @@
 {
     "date": {
-        "ru": "21 апреля",
-        "en": "April 21",
-        "zh": "4月21日"
+        "ru": "22 апреля",
+        "en": "April 22",
+        "zh": "4月22日"
     },
-    "time_utc": "2026-04-21 23:30",
-    "weekday": 1,
-    "issue_id": 2373,
+    "time_utc": "2026-04-22 01:53",
+    "weekday": 2,
+    "issue_id": 2374,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -14,8 +14,8 @@
             "title": "Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation",
             "url": "https://huggingface.co/papers/2604.18168",
             "abstract": "Abstract Researchers extend MeanFlow generation from class labels to text inputs by integrating powerful LLM-based text encoders, overcoming limitations of few-step refinement through enhanced semantic feature representation.  AI-generated summary Few-step generation has been a long-standing goal, with recent one-step generation methods exemplified by MeanFlow achieving remarkable results. Existing research on MeanFlow primarily focuses on class-to-image generation. However, an intuitive yet unexplored direction is to extend the condition from fixed class labels to flexible text inputs, enabling richer content creation. Compared to the limited class labels, text conditions pose greater challenges to the model's understanding capability, necessitating the effective integration of powerful text encoders into the MeanFlow framework. Surprisingly, although incorporating text conditions appears straightforward, we find that integrating powerful LLM-based text encoders using conventional training strategies results in unsatisfactory performance. To uncover the underlying cause, we conduct detailed analyses and reveal that, due to the extremely limited number of refinement steps in the MeanFlow generation, such as only one step, the text feature representations are required to possess sufficiently high discriminability. This also explains why discrete and easily distinguishable class features perform well within the MeanFlow framework. Guided by these insights, we leverage a powerful LLM-based text encoder validated to possess the required semantic properties and adapt the MeanFlow generation process to this framework, resulting in efficient text-conditioned synthesis for the first time. Furthermore, we validate our approach on the widely used diffusion model, demonstrating significant generation performance improvements. We hope this work provides a general and practical reference for future research on text-conditioned MeanFlow generation. The code is available at https://github.com/AMAP-ML/EMF.",
-            "score": 86,
-            "issue_id": 2373,
+            "score": 87,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -36,7 +36,7 @@
             "url": "https://huggingface.co/papers/2604.18486",
             "abstract": "Abstract OneVL presents a unified vision-language-action framework that improves latent chain-of-thought reasoning for autonomous driving by integrating language and visual world model supervision for faster, more accurate trajectory prediction.  AI-generated summary Chain-of-Thought (CoT) reasoning has become a powerful driver of trajectory prediction in VLA-based autonomous driving, yet its autoregressive nature imposes a latency cost that is prohibitive for real-time deployment. Latent CoT methods attempt to close this gap by compressing reasoning into continuous hidden states, but consistently fall short of their explicit counterparts. We suggest that this is due to purely linguistic latent representations compressing a symbolic abstraction of the world, rather than the causal dynamics that actually govern driving. Thus, we present OneVL (One-step latent reasoning and planning with Vision-Language explanations), a unified VLA and World Model framework that routes reasoning through compact latent tokens supervised by dual auxiliary decoders. Alongside a language decoder that reconstructs text CoT, we introduce a visual world model decoder that predicts future-frame tokens, forcing the latent space to internalize the causal dynamics of road geometry, agent motion, and environmental change. A three-stage training pipeline progressively aligns these latents with trajectory, language, and visual objectives, ensuring stable joint optimization. At inference, the auxiliary decoders are discarded and all latent tokens are prefilled in a single parallel pass, matching the speed of answer-only prediction. Across four benchmarks, OneVL becomes the first latent CoT method to surpass explicit CoT, delivering state-of-the-art accuracy at answer-only latency, and providing direct evidence that tighter compression, when guided in both language and world-model supervision, produces more generalizable representations than verbose token-by-token reasoning. Project Page: https://xiaomi-embodied-intelligence.github.io/OneVL",
             "score": 65,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -56,8 +56,8 @@
             "title": "Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence",
             "url": "https://huggingface.co/papers/2604.18292",
             "abstract": "Abstract Agent-World introduces a self-evolving training framework that advances general agent intelligence through autonomous environment discovery and continuous learning across diverse real-world scenarios.  AI-generated summary Large language models are increasingly expected to serve as general-purpose agents that interact with external, stateful tool environments. The Model Context Protocol (MCP) and broader agent skills offer a unified interface for connecting agents with scalable real-world services, but training robust agents remains limited by the lack of realistic environments and principled mechanisms for life-long learning. In this paper, we present Agent-World, a self-evolving training arena for advancing general agent intelligence through scalable environments. Agent-World has two main components: (1) Agentic Environment-Task Discovery, which autonomously explores topic-aligned databases and executable tool ecosystems from thousands of real-world environment themes and synthesizes verifiable tasks with controllable difficulty; and (2) Continuous Self-Evolving Agent Training, which combines multi-environment reinforcement learning with a self-evolving agent arena that automatically identifies capability gaps through dynamic task synthesis and drives targeted learning, enabling the co-evolution of agent policies and environments. Across 23 challenging agent benchmarks, Agent-World-8B and 14B consistently outperforms strong proprietary models and environment scaling baselines. Further analyses reveal scaling trends in relation to environment diversity and self-evolution rounds, offering insights for building general agent intelligence.",
-            "score": 61,
-            "issue_id": 2373,
+            "score": 62,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -78,7 +78,7 @@
             "url": "https://huggingface.co/papers/2604.18394",
             "abstract": "Abstract OpenGame is an open-source agentic framework for end-to-end web game creation that uses specialized code models and evaluation benchmarks to overcome challenges in interactive application development.  AI-generated summary Game development sits at the intersection of creative design and intricate software engineering, demanding the joint orchestration of game engines, real-time loops, and tightly coupled state across many files. While Large Language Models (LLMs) and code agents now solve isolated programming tasks with ease, they consistently stumble when asked to produce a fully playable game from a high-level design, collapsing under cross-file inconsistencies, broken scene wiring, and logical incoherence. We bridge this gap with OpenGame, the first open-source agentic framework explicitly designed for end-to-end web game creation. At its core lies Game Skill, a reusable, evolving capability composed of a Template Skill that grows a library of project skeletons from experience and a Debug Skill that maintains a living protocol of verified fixes - together enabling the agent to scaffold stable architectures and systematically repair integration errors rather than patch isolated syntax bugs. Powering this framework is GameCoder-27B, a code LLM specialized for game engine mastery through a three-stage pipeline of continual pre-training, supervised fine-tuning, and execution-grounded reinforcement learning. Since verifying interactive playability is fundamentally harder than checking static code, we further introduce OpenGame-Bench, an evaluation pipeline that scores agentic game generation along Build Health, Visual Usability, and Intent Alignment via headless browser execution and VLM judging. Across 150 diverse game prompts, OpenGame establishes a new state-of-the-art. We hope OpenGame pushes code agents beyond discrete software engineering problems and toward building complex, interactive real-world applications. Our framework will be fully open-sourced.",
             "score": 49,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -87,7 +87,7 @@
             },
             "hash": "1078a0289b59411e",
             "github_url": "https://github.com/leigest519/OpenGame",
-            "github_stars": 129,
+            "github_stars": 147,
             "pdf_title_img": "assets/pdf/title_img/2604.18394.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2604.18564",
             "abstract": "Abstract MultiWorld is a unified framework for multi-agent multi-view world modeling that achieves accurate multi-agent control while maintaining multi-view consistency through specialized modules for condition handling and global state encoding.  AI-generated summary Video world models have achieved remarkable success in simulating environmental dynamics in response to actions by users or agents. They are modeled as action-conditioned video generation models that take historical frames and current actions as input to predict future frames. Yet, most existing approaches are limited to single-agent scenarios and fail to capture the complex interactions inherent in real-world multi-agent systems. We present MultiWorld, a unified framework for multi-agent multi-view world modeling that enables accurate control of multiple agents while maintaining multi-view consistency. We introduce the Multi-Agent Condition Module to achieve precise multi-agent controllability, and the Global State Encoder to ensure coherent observations across different views. MultiWorld supports flexible scaling of agent and view counts, and synthesizes different views in parallel for high efficiency. Experiments on multi-player game environments and multi-robot manipulation tasks demonstrate that MultiWorld outperforms baselines in video fidelity, action-following ability, and multi-view consistency. Project page: https://multi-world.github.io/",
             "score": 35,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -120,7 +120,7 @@
             "url": "https://huggingface.co/papers/2604.16893",
             "abstract": "Abstract EasyVideoR1 presents an efficient reinforcement learning framework for video understanding that improves training throughput, supports diverse video tasks, and enables joint image-video training with comprehensive evaluation across multiple benchmarks.  AI-generated summary Reinforcement learning from verifiable rewards (RLVR) has demonstrated remarkable effectiveness in improving the reasoning capabilities of large language models. As models evolve into natively multimodal architectures, extending RLVR to video understanding becomes increasingly important yet remains largely unexplored, due to the diversity of video task types, the computational overhead of repeatedly decoding and preprocessing high-dimensional visual inputs, and the difficulty of reproducible evaluation across numerous sensitive hyperparameters. Existing open-source RL training frameworks provide solid infrastructure for text and image scenarios but lack systematic optimizations tailored for video modality. In this work, we present EasyVideoR1, a complete and efficient reinforcement learning framework specifically designed for training large vision-language models on video understanding tasks. EasyVideoR1 makes the following contributions: (1) a full video RL training pipeline with offline preprocessing and tensor caching that eliminates redundant video decoding and yields a 1.47 times throughput improvement; (2) a comprehensive, task-aware reward system covering 11 distinct video and image problem types with unified routing and modular extension; (3) a mixed offline-online data training paradigm that combines curated high-quality trajectories with on-policy exploration, benefiting the learning of more challenging tasks; (4) joint image-video training with independently configurable pixel budgets, allowing the two modalities to mutually reinforce each other; and (5) an asynchronous multi-benchmark evaluation framework covering 22 mainstream video understanding benchmarks, with reproduced accuracy closely aligned with officially reported scores.",
             "score": 32,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-18",
             "pub_date_card": {
                 "ru": "18 апреля",
@@ -129,7 +129,7 @@
             },
             "hash": "c071ffe69da9a552",
             "github_url": "https://github.com/cyuQ1n/EasyVideoR1",
-            "github_stars": 50,
+            "github_stars": 52,
             "pdf_title_img": "assets/pdf/title_img/2604.16893.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -141,7 +141,7 @@
             "url": "https://huggingface.co/papers/2604.14258",
             "abstract": "Abstract Group Fine-Tuning addresses limitations in supervised fine-tuning by using diverse response groups and adaptive weight bounding to improve training stability and efficiency.  AI-generated summary Large language models are typically post-trained using supervised fine-tuning (SFT) and reinforcement learning (RL), yet effectively unifying efficient knowledge injection with robust generalization remains challenging. In this work, we provide a training-dynamics analysis showing that SFT can be interpreted as a special case of policy gradient optimization with an extremely sparse implicit reward and unstable inverse-probability weighting, which together lead to single-path dependency, entropy collapse, and gradient explosion. Motivated by this diagnosis, we propose Group Fine-Tuning (GFT), a unified post-training framework that addresses these intrinsic limitations through two mechanisms: Group Advantage Learning, which constructs diverse response groups and derives normalized contrastive supervision to alleviate reward sparsity, and Dynamic Coefficient Rectification, which adaptively bounds inverse-probability weights to stabilize optimization while preserving efficient knowledge injection. Experiments demonstrate that GFT consistently surpasses SFT-based methods and yields policies that integrate more smoothly with subsequent RL training.",
             "score": 19,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-15",
             "pub_date_card": {
                 "ru": "15 апреля",
@@ -162,7 +162,7 @@
             "url": "https://huggingface.co/papers/2604.18574",
             "abstract": "Abstract Research reveals that model generalization in reasoning tasks under weak supervision depends on reward saturation dynamics and reasoning faithfulness, with supervised fine-tuning on explicit traces being crucial for successful adaptation.  AI-generated summary Large language models have achieved significant reasoning improvements through reinforcement learning with verifiable rewards (RLVR). Yet as model capabilities grow, constructing high-quality reward signals becomes increasingly difficult, making it essential to understand when RLVR can succeed under weaker forms of supervision. We conduct a systematic empirical study across diverse model families and reasoning domains under three weak supervision settings: scarce data, noisy rewards, and self-supervised proxy rewards. We find that generalization is governed by training reward saturation dynamics: models that generalize exhibit a prolonged pre-saturation phase during which training reward and downstream performance climb together, while models that saturate rapidly memorize rather than learn. We identify reasoning faithfulness, defined as the extent to which intermediate steps logically support the final answer, as the pre-RL property that predicts which regime a model falls into, while output diversity alone is uninformative. Motivated by these findings, we disentangle the contributions of continual pre-training and supervised fine-tuning, finding that SFT on explicit reasoning traces is necessary for generalization under weak supervision, while continual pre-training on domain data amplifies the effect. Applied together to Llama3.2-3B-Base, these interventions enable generalization across all three settings where the base model previously failed.",
             "score": 18,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -183,7 +183,7 @@
             "url": "https://huggingface.co/papers/2604.18224",
             "abstract": "Abstract WebCompass evaluates web development capabilities through diverse input modalities and task types, using automated evaluation methods that simulate real-world coding workflows.  AI-generated summary Large language models are rapidly evolving into interactive coding agents capable of end-to-end web coding, yet existing benchmarks evaluate only narrow slices of this capability, typically text-conditioned generation with static-correctness metrics, leaving visual fidelity, interaction quality, and codebase-level reasoning largely unmeasured. We introduce WebCompass, a multimodal benchmark that provides unified lifecycle evaluation of web engineering capability. Recognizing that real-world web coding is an iterative cycle of generation, editing, and repair, WebCompass spans three input modalities (text, image, video) and three task types (generation, editing, repair), yielding seven task categories that mirror professional workflows. Through a multi-stage, human-in-the-loop pipeline, we curate instances covering 15 generation domains, 16 editing operation types, and 11 repair defect types, each annotated at Easy/Medium/Hard levels. For evaluation, we adopt a checklist-guided LLM-as-a-Judge protocol for editing and repair, and propose a novel Agent-as-a-Judge paradigm for generation that autonomously executes generated websites in a real browser, explores interactive behaviors via the Model Context Protocol (MCP), and iteratively synthesizes targeted test cases, closely approximating human acceptance testing. We evaluate representative closed-source and open-source models and observe that: (1) closed-source models remain substantially stronger and more balanced; (2) editing and repair exhibit distinct difficulty profiles, with repair preserving interactivity better but remaining execution-challenging; (3) aesthetics is the most persistent bottleneck, especially for open-source models; and (4) framework choice materially affects outcomes, with Vue consistently challenging while React and Vanilla/HTML perform more strongly depending on task type.",
             "score": 18,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -203,8 +203,8 @@
             "title": "ClawEnvKit: Automatic Environment Generation for Claw-Like Agents",
             "url": "https://huggingface.co/papers/2604.18543",
             "abstract": "Abstract An automated pipeline generates diverse, verified environments for claw-like agents from natural language descriptions, enabling large-scale benchmark construction and continuous evaluation.  AI-generated summary Constructing environments for training and evaluating claw-like agents remains a manual, human-intensive process that does not scale. We argue that what is needed is not just a dataset, but an automated pipeline capable of generating diverse, verified environments on demand. To this end, we introduce ClawEnvKit, an autonomous generation pipeline that instantiates this formalism from natural language descriptions. The pipeline comprises three modules: (1) a parser that extracts structured generation parameters from natural language input; (2) a generator that produces the task specification, tool interface, and scoring configuration; and (3) a validator that enforces feasibility, diversity, structural validity, and internal consistency across the generated environments. Using ClawEnvKit, we construct Auto-ClawEval, the first large-scale benchmark for claw-like agents, comprising 1,040 environments across 24 categories. Empirically, Auto-ClawEval matches or exceeds human-curated environments on coherence and clarity at 13,800x lower cost. Evaluated across 4 model families and 8 agent harness frameworks, we find that harness engineering boosts performance by up to 15.7 percentage points over a bare ReAct baseline, completion remains the primary axis of variation with no model saturating the benchmark, and automated generation enables evaluation at a scale previously infeasible. Beyond static benchmarking, ClawEnvKit enables live evaluation: users describe a desired capability in natural language and obtain a verified environment on demand, turning evaluation into a continuous, user-driven process. The same mechanism serves as an on-demand training environment generator, producing task distributions that adapt to an agent's current weaknesses rather than being bounded by existing user logs.",
-            "score": 17,
-            "issue_id": 2373,
+            "score": 18,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -213,7 +213,7 @@
             },
             "hash": "8150fb1ef7f01b9d",
             "github_url": "https://github.com/xirui-li/ClawEnvKit",
-            "github_stars": 8,
+            "github_stars": 9,
             "pdf_title_img": "assets/pdf/title_img/2604.18543.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -225,7 +225,7 @@
             "url": "https://huggingface.co/papers/2604.17308",
             "abstract": "Abstract SkillFlow presents a benchmark for evaluating autonomous agents' ability to discover, repair, and maintain skills over time through a structured lifelong learning protocol.  AI-generated summary As the capability frontier of autonomous agents continues to expand, they are increasingly able to complete specialized tasks through plug-and-play external skills. Yet current benchmarks mostly test whether models can use provided skills, leaving open whether they can discover skills from experience, repair them after failure, and maintain a coherent library over time. We introduce SkillFlow, a benchmark of 166 tasks across 20 families in which task construction within each family follows a Domain-Agnostic Execution Flow (DAEF) that defines an agent workflow framework, allowing these tasks to share a consistent workflow. Agents are evaluated under an Agentic Lifelong Learning protocol in which they begin without skills, solve tasks sequentially within each family, externalize lessons through trajectory- and rubric-driven skill patches, and carry the updated library forward. Experiments reveal a substantial capability gap. For Claude Opus 4.6, lifelong skill evolution improves task success from 62.65% to 71.08% (+8.43 points). However, high skill usage does not necessarily imply high utility: Kimi K2.5 gains only +0.60 points despite 66.87% skill usage, while Qwen-Coder-Next reaches only a 44.58% task completion rate and still regresses relative to the vanilla setting. SkillFlow contributes a structured testbed for this direction and an in-depth empirical analysis of skill discovery, patching, transfer, and their failure modes under lifelong evaluation.",
             "score": 15,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-19",
             "pub_date_card": {
                 "ru": "19 апреля",
@@ -246,7 +246,7 @@
             "url": "https://huggingface.co/papers/2604.16826",
             "abstract": "Abstract LoRA adapter merging performance can be improved by separately calibrating the output-side matrix B to reduce interference from shared directions while preserving task-specific information.  AI-generated summary Merging separately trained LoRA adapters is a practical alternative to joint multi-task training, but it often hurts performance. Existing methods usually treat the LoRA update ΔW = BA as a single object and do not distinguish the two LoRA matrices. We show that the main source of LoRA merge interference comes from the output-side matrix B. Across tasks, B repeatedly uses a small set of shared directions, while A remains much more task-specific. As a result, the merged adapter overemphasizes these shared directions, and task-specific information is lost. We propose Pico (Pre-merge interference calibration in output-space), a data-free method that calibrates B before merge by downscaling over-shared directions and then rescaling the merged update. Pico plugs directly into existing merging methods such as Task Arithmetic, TIES, and TSV-M. Across eight different benchmarks from math, coding, finance, and medical domains, Pico improves average accuracy by 3.4-8.3 points over the corresponding base method and achieves the best overall average performance. Pico also enables merged adapters to outperform the LoRA trained with all task data. These results show that LoRA merging works better when the two LoRA matrices are treated separately.",
             "score": 14,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-18",
             "pub_date_card": {
                 "ru": "18 апреля",
@@ -267,7 +267,7 @@
             "url": "https://huggingface.co/papers/2604.16830",
             "abstract": "Abstract On-policy distillation suffers from miscalibration due to information mismatch between training and deployment contexts, which is addressed through a calibration-aware framework that improves both performance and confidence reliability.  AI-generated summary On-policy distillation (OPD) is an increasingly important paradigm for post-training language models. However, we identify a pervasive Scaling Law of Miscalibration: while OPD effectively improves task accuracy, it systematically traps models in severe overconfidence. We trace this failure to an information mismatch: teacher supervision is formed under privileged context available during training, whereas the deployed model must report confidence using only deployment-time information. We formalize this perspective theoretically, showing that teacher-conditioned success is generally not a valid target for deployment-time confidence and that helpful privileged context induces entropy collapse and a systematic optimism bias. To address this, we propose a calibration-aware OPD framework, CaOPD, that estimates empirical confidence from model rollouts, replaces self-reported confidence with this student-grounded target, and distills the revised response through the same self-distillation pipeline. Experiments across various models and domains show that CaOPD achieves Pareto-optimal calibration while maintaining competitive capability, generalizing robustly under out-of-distribution and continual learning. Our findings highlight that capability distillation does not imply calibrated confidence, and that confidence should be treated as an essential objective in post-training. Code: https://github.com/SalesforceAIResearch/CaOPD",
             "score": 10,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-18",
             "pub_date_card": {
                 "ru": "18 апреля",
@@ -288,7 +288,7 @@
             "url": "https://huggingface.co/papers/2604.13313",
             "abstract": "Abstract Vision-language models face challenges in compositional reasoning due to insufficient samples for distinguishing subtle semantics, which are addressed through lexical concreteness-based negative sample selection and a novel margin-based loss function.  AI-generated summary Vision-Language Models demonstrate remarkable capabilities but often struggle with compositional reasoning, exhibiting vulnerabilities regarding word order and attribute binding. This limitation arises from a scarcity of informative samples needed to differentiate subtle semantic variations during contrastive pretraining. Although hard negative mining offers a promising remedy, existing methods lack explicit mechanisms to dictate which linguistic elements undergo modification. Instead of engineering generative architectures, this study establishes lexical concreteness as a fundamental determinant of negative sample efficacy. Modifying highly concrete terms generates more pronounced structural and visual discrepancies, providing a substantially stronger learning signal. Leveraging this principle, ConcretePlant is proposed to systematically isolate and manipulate perceptually grounded concepts. Analyses of the InfoNCE further reveals a severe gradient imbalance, where easily distinguishable pairs disproportionately overwhelm the optimization process and restrict the bandwidth available for nuanced learning. To resolve this degradation, the Cement loss is formulated utilizing a margin-based approach. By correlating psycholinguistic scores with sample difficulty, this objective dynamically calibrates the penalization applied to individual training pairs. Comprehensive evaluations substantiate these theoretical claims. The integrated framework, designated as Slipform, achieves state-of-the-art accuracy across diverse compositional evaluation benchmarks, general cross-modal retrieval, single and multi label linear probing.",
             "score": 9,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-14",
             "pub_date_card": {
                 "ru": "14 апреля",
@@ -309,7 +309,7 @@
             "url": "https://huggingface.co/papers/2604.17849",
             "abstract": "Abstract Computer-use agents exhibit unreliable performance due to execution stochasticity, task specification ambiguity, and behavioral variability, necessitating repeated evaluation and stable strategies for consistent task completion.  AI-generated summary Computer-use agents have rapidly improved on real-world tasks such as web navigation, desktop automation, and software interaction, in some cases surpassing human performance. Yet even when the task and model are unchanged, an agent that succeeds once may fail on a repeated execution of the same task. This raises a fundamental question: if an agent can succeed at a task once, what prevents it from doing so reliably? In this work, we study the sources of unreliability in computer-use agents through three factors: stochasticity during execution, ambiguity in task specification, and variability in agent behavior. We analyze these factors on OSWorld using repeated executions of the same task together with paired statistical tests that capture task-level changes across settings. Our analysis shows that reliability depends on both how tasks are specified and how agent behavior varies across executions. These findings suggest the need to evaluate agents under repeated execution, to allow agents to resolve task ambiguity through interaction, and to favor strategies that remain stable across runs.",
             "score": 8,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -330,7 +330,7 @@
             "url": "https://huggingface.co/papers/2604.18584",
             "abstract": "Abstract MathNet is a large-scale, multilingual, multimodal dataset of Olympiad-level math problems designed for evaluating mathematical reasoning and retrieval in generative models and embedding-based systems.  AI-generated summary Mathematical problem solving remains a challenging test of reasoning for large language and multimodal models, yet existing benchmarks are limited in size, language coverage, and task diversity. We introduce MathNet, a high-quality, large-scale, multimodal, and multilingual dataset of Olympiad-level math problems together with a benchmark for evaluating mathematical reasoning in generative models and mathematical retrieval in embedding-based systems. MathNet spans 47 countries, 17 languages, and two decades of competitions, comprising 30,676 expert-authored problems with solutions across diverse domains. In addition to the core dataset, we construct a retrieval benchmark consisting of mathematically equivalent and structurally similar problem pairs curated by human experts.   MathNet supports three tasks: (i) Problem Solving, (ii) Math-Aware Retrieval, and (iii) Retrieval-Augmented Problem Solving. Experimental results show that even state-of-the-art reasoning models (78.4% for Gemini-3.1-Pro and 69.3% for GPT-5) remain challenged, while embedding models struggle to retrieve equivalent problems. We further show that retrieval-augmented generation performance is highly sensitive to retrieval quality; for example, DeepSeek-V3.2-Speciale achieves gains of up to 12%, obtaining the highest scores on the benchmark. MathNet provides the largest high-quality Olympiad dataset together with the first benchmark for evaluating mathematical problem retrieval, and we publicly release both the dataset and benchmark at https://mathnet.mit.edu.",
             "score": 7,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -351,7 +351,7 @@
             "url": "https://huggingface.co/papers/2604.17091",
             "abstract": "Abstract GenericAgent is a self-evolving large language model agent system that maximizes context information density through hierarchical memory, reusable SOPs, and efficient compression to overcome long-horizon limitations.  AI-generated summary Long-horizon large language model (LLM) agents are fundamentally limited by context. As interactions become longer, tool descriptions, retrieved memories, and raw environmental feedback accumulate and push out the information needed for decision-making. At the same time, useful experience gained from tasks is often lost across episodes. We argue that long-horizon performance is determined not by context length, but by how much decision-relevant information is maintained within a finite context budget. We present GenericAgent (GA), a general-purpose, self-evolving LLM agent system built around a single principle: context information density maximization. GA implements this through four closely connected components: a minimal atomic tool set that keeps the interface simple, a hierarchical on-demand memory that only shows a small high-level view by default, a self-evolution mechanism that turns verified past trajectories into reusable SOPs and executable code, and a context truncation and compression layer that maintains information density during long executions. Across task completion, tool use efficiency, memory effectiveness, self-evolution, and web browsing, GA consistently outperforms leading agent systems while using significantly fewer tokens and interactions, and it continues to evolve over time. Project: https://github.com/lsdefine/GenericAgent",
             "score": 6,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-18",
             "pub_date_card": {
                 "ru": "18 апреля",
@@ -360,7 +360,7 @@
             },
             "hash": "2dfc2c2be5eaae2d",
             "github_url": "https://github.com/lsdefine/GenericAgent",
-            "github_stars": 5499,
+            "github_stars": 5557,
             "pdf_title_img": "assets/pdf/title_img/2604.17091.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -372,7 +372,7 @@
             "url": "https://huggingface.co/papers/2604.15710",
             "abstract": "Abstract VoxMind enhances spoken dialogue models with agentic capabilities through a \"Think-before-Speak\" mechanism and dynamic tool management to improve task completion rates while maintaining conversational quality.  AI-generated summary Recent end-to-end spoken dialogue models enable natural interaction. However, as user demands become increasingly complex, models that rely solely on conversational abilities often struggle to cope. Incorporating agentic capabilities is therefore essential: by enabling tool use, these models can extend their knowledge boundaries and better solve real-world tasks. Yet, existing research has largely concentrated on core perception and generation, with comparatively limited exploration of such tool-augmented extensions. To bridge this gap, we present VoxMind, an integrated framework designed to equip end-to-end spoken dialogue models with comprehensive agentic abilities. Leveraging our curated 470-hour AgentChat dataset, we incorporate a \"Think-before-Speak\" mechanism, enabling the model to internalize structured reasoning as a critical prerequisite for planning and response generation. Furthermore, to mitigate latency bottlenecks caused by large-scale tool integration, we propose a Multi-Agent Dynamic Tool Management architecture. By asynchronously delegating retrieval tasks to an auxiliary agent aligned with the main model's reasoning trajectory, this system effectively decouples inference latency from toolset size. Experimental results confirm that VoxMind achieves significant improvements in agent performance: compared with strong baselines, the task completion rate increases from 34.88% to 74.57%, outperforming Gemini-2.5-Pro on spoken agent tasks while preserving general conversational quality. The source code and associated data are publicly available at https://github.com/MM-Speech/VoxMind.",
             "score": 6,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-17",
             "pub_date_card": {
                 "ru": "17 апреля",
@@ -388,33 +388,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2604.17609",
-            "title": "Agents Explore but Agents Ignore: LLMs Lack Environmental Curiosity",
-            "url": "https://huggingface.co/papers/2604.17609",
-            "abstract": "Abstract LLM-based agents fail to exploit discovered unexpected information despite recognizing it, indicating a lack of environmental curiosity that depends on tools, compute, and training data distribution.  AI-generated summary LLM-based agents are assumed to integrate environmental observations into their reasoning: discovering highly relevant but unexpected information should naturally lead to a model exploiting its own discoveries. We show that this assumption is false for current LLM-based agents, which struggle to reflect or react to unexpected information. Across three benchmarks (Terminal-Bench, SWE-Bench, AppWorld), we inject complete task solutions into the agent environments to deliberately expose a task's solution to a model. While agents discover these solutions on Terminal-Bench in 79-81% of runs, they interact, or exploit, them in only 37-50% of cases. This gap is starkest in AppWorld: agents see documentation stating that a command \"returns the complete solution to this task\" in over 90% of attempts but exploit this in fewer than 7% of trials. We show that agents lack what we call environmental curiosity: the capability to recognize and investigate unexpected but relevant observations in response to environmental stimuli. We identify three main factors influencing environmental curiosity: available tools in the agent scaffold, test-time compute, and training data distribution. Our findings identify configurations that maximize curiosity also achieve the best performance on the unmodified benchmarks. Yet even jointly optimized agents still ignore discovered solutions in the majority of trials: current agents use the environment to fetch expected information, but not to revise their strategy or maximally exploit useful stimuli.",
-            "score": 5,
-            "issue_id": 2373,
-            "pub_date": "2026-04-19",
-            "pub_date_card": {
-                "ru": "19 апреля",
-                "en": "April 19",
-                "zh": "4月19日"
-            },
-            "hash": "3cd5deab6582d821",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2604.17609.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2604.11102",
             "title": "OmniScript: Towards Audio-Visual Script Generation for Long-Form Cinematic Video",
             "url": "https://huggingface.co/papers/2604.11102",
             "abstract": "Abstract A novel video-to-script task is introduced along with OmniScript, an 8B-parameter omni-modal language model trained through progressive pipeline techniques for long-form narrative comprehension and temporal localization.  AI-generated summary Current multimodal large language models (MLLMs) have demonstrated remarkable capabilities in short-form video understanding, yet translating long-form cinematic videos into detailed, temporally grounded scripts remains a significant challenge. This paper introduces the novel video-to-script (V2S) task, aiming to generate hierarchical, scene-by-scene scripts encompassing character actions, dialogues, expressions, and audio cues. To facilitate this, we construct a first-of-its-kind human-annotated benchmark and propose a temporally-aware hierarchical evaluation framework. Furthermore, we present OmniScript, an 8B-parameter omni-modal (audio-visual) language model tailored for long-form narrative comprehension. OmniScript is trained via a progressive pipeline that leverages chain-of-thought supervised fine-tuning for plot and character reasoning, followed by reinforcement learning using temporally segmented rewards. Extensive experiments demonstrate that despite its parameter efficiency, OmniScript significantly outperforms larger open-source models and achieves performance comparable to state-of-the-art proprietary models, including Gemini 3-Pro, in both temporal localization and multi-field semantic accuracy.",
-            "score": 5,
-            "issue_id": 2373,
+            "score": 6,
+            "issue_id": 2374,
             "pub_date": "2026-04-13",
             "pub_date_card": {
                 "ru": "13 апреля",
@@ -430,12 +409,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2604.17609",
+            "title": "Agents Explore but Agents Ignore: LLMs Lack Environmental Curiosity",
+            "url": "https://huggingface.co/papers/2604.17609",
+            "abstract": "Abstract LLM-based agents fail to exploit discovered unexpected information despite recognizing it, indicating a lack of environmental curiosity that depends on tools, compute, and training data distribution.  AI-generated summary LLM-based agents are assumed to integrate environmental observations into their reasoning: discovering highly relevant but unexpected information should naturally lead to a model exploiting its own discoveries. We show that this assumption is false for current LLM-based agents, which struggle to reflect or react to unexpected information. Across three benchmarks (Terminal-Bench, SWE-Bench, AppWorld), we inject complete task solutions into the agent environments to deliberately expose a task's solution to a model. While agents discover these solutions on Terminal-Bench in 79-81% of runs, they interact, or exploit, them in only 37-50% of cases. This gap is starkest in AppWorld: agents see documentation stating that a command \"returns the complete solution to this task\" in over 90% of attempts but exploit this in fewer than 7% of trials. We show that agents lack what we call environmental curiosity: the capability to recognize and investigate unexpected but relevant observations in response to environmental stimuli. We identify three main factors influencing environmental curiosity: available tools in the agent scaffold, test-time compute, and training data distribution. Our findings identify configurations that maximize curiosity also achieve the best performance on the unmodified benchmarks. Yet even jointly optimized agents still ignore discovered solutions in the majority of trials: current agents use the environment to fetch expected information, but not to revise their strategy or maximally exploit useful stimuli.",
+            "score": 5,
+            "issue_id": 2374,
+            "pub_date": "2026-04-19",
+            "pub_date_card": {
+                "ru": "19 апреля",
+                "en": "April 19",
+                "zh": "4月19日"
+            },
+            "hash": "3cd5deab6582d821",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.17609.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2604.18131",
             "title": "Training LLM Agents for Spontaneous, Reward-Free Self-Evolution via World Knowledge Exploration",
             "url": "https://huggingface.co/papers/2604.18131",
             "abstract": "Abstract Agents equipped with intrinsic meta-evolution capabilities demonstrate improved performance on web navigation tasks through self-generated world knowledge without external supervision.  AI-generated summary Most agents today ``self-evolve'' by following rewards and rules defined by humans. However, this process remains fundamentally dependent on external supervision; without human guidance, the evolution stops. In this work, we train agents to possess an intrinsic meta-evolution capability to spontaneously learn about unseen environments prior to task execution.   To instill this ability, we design an outcome-based reward mechanism that measures how much an agent's self-generated world knowledge improves its success rate on downstream tasks. This reward signal is used exclusively during the training phase to teach the model how to explore and summarize effectively. At inference time, the agent requires no external rewards or human instructions. It spontaneously performs native self-evolution to adapt to unknown environments using its internal parameters.   When applied to Qwen3-30B and Seed-OSS-36B, this shift to native evolution yields a 20% performance increase on WebVoyager and WebWalker. Most strikingly, the generated world knowledge even enables a compact 14B Qwen3 model to outperform the unassisted Gemini-2.5-Flash, establishing a new paradigm for truly evolving agents.",
             "score": 4,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -456,7 +456,7 @@
             "url": "https://huggingface.co/papers/2604.17696",
             "abstract": "Abstract STRATAGEM addresses limitations in reasoning transfer for language models by using a reasoning transferability coefficient and evolution reward to promote abstract, domain-agnostic patterns over game-specific heuristics.  AI-generated summary Games offer a compelling paradigm for developing general reasoning capabilities in language models, as they naturally demand strategic planning, probabilistic inference, and adaptive decision-making. However, existing self-play approaches rely solely on terminal game outcomes, providing no mechanism to distinguish transferable reasoning patterns from game-specific heuristics. We present STRATAGEM, which addresses two fundamental barriers to reasoning transfer: domain specificity, where learned patterns remain anchored in game semantics, and contextual stasis, where static game contexts fail to cultivate progressive reasoning. STRATAGEM selectively reinforces trajectories exhibiting abstract, domain-agnostic reasoning through a Reasoning Transferability Coefficient, while incentivizing adaptive reasoning development via a Reasoning Evolution Reward. Experiments across mathematical reasoning, general reasoning, and code generation benchmarks demonstrate substantial improvements, with particularly strong gains on competition-level mathematics where multi-step reasoning is critical. Ablation studies and human evaluation confirm that both components contribute to transferable reasoning.",
             "score": 4,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -477,7 +477,7 @@
             "url": "https://huggingface.co/papers/2604.08537",
             "abstract": "Abstract A meta-optimized approach enables generalizable semantic visual decoding from fMRI by rapidly inferring unique neural encoding patterns from few image-brain examples without fine-tuning across subjects and scanners.  AI-generated summary Visual decoding from brain signals is a key challenge at the intersection of computer vision and neuroscience, requiring methods that bridge neural representations and computational models of vision. A field-wide goal is to achieve generalizable, cross-subject models. A major obstacle towards this goal is the substantial variability in neural representations across individuals, which has so far required training bespoke models or fine-tuning separately for each subject. To address this challenge, we introduce a meta-optimized approach for semantic visual decoding from fMRI that generalizes to novel subjects without any fine-tuning. By simply conditioning on a small set of image-brain activation examples from the new individual, our model rapidly infers their unique neural encoding patterns to facilitate robust and efficient visual decoding. Our approach is explicitly optimized for in-context learning of the new subject's encoding model and performs decoding by hierarchical inference, inverting the encoder. First, for multiple brain regions, we estimate the per-voxel visual response encoder parameters by constructing a context over multiple stimuli and responses. Second, we construct a context consisting of encoder parameters and response values over multiple voxels to perform aggregated functional inversion. We demonstrate strong cross-subject and cross-scanner generalization across diverse visual backbones without retraining or fine-tuning. Moreover, our approach requires neither anatomical alignment nor stimulus overlap. This work is a critical step towards a generalizable foundation model for non-invasive brain decoding.",
             "score": 4,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-09",
             "pub_date_card": {
                 "ru": "9 апреля",
@@ -498,7 +498,7 @@
             "url": "https://huggingface.co/papers/2604.18203",
             "abstract": "Abstract Multimodal large language models demonstrate consistent computational limitations in exact multi-digit multiplication across different representations and modalities, with performance closely tied to a novel arithmetic load metric that predicts accuracy better than traditional step-counting methods.  AI-generated summary Multimodal LLMs can accurately perceive numerical content across modalities yet fail to perform exact multi-digit multiplication when the identical underlying arithmetic problem is presented as numerals, number words, images, or in audio form. Because existing benchmarks often lack systematically paired instances across modalities, it remains difficult to compare genuine arithmetic limits within and across model families. We therefore introduce a controlled multimodal multiplication benchmark that factorially varies digit length, digit sparsity, representation (e.g., numerals vs. number words), and modality (text, rendered images, audio), with paired instances from a reproducible generator. We also define arithmetic load, C, as the product of the total and non-zero digit count as a compact, mechanistically motivated proxy for operation count. Across evaluations, accuracy falls sharply as C grows, often nearing zero by C > 100. Indeed, C remains predictive of performance across modalities and models, with R-squared often > 0.5, nearing the value from more complex measures of arithmetic load that count the number of intermediate arithmetic steps. A separate perception-versus-computation decomposition shows that multimodal degradation is primarily computational rather than perceptual: on matched-perception checks, models are near-perfect (> 99%) across modalities, even when multiplication accuracy drops. Beyond measuring when models fail, we ask which procedures they are predisposed to follow. We introduce a forced-completion loss probe that scores heuristic-specific reasoning prefixes--including columnar multiplication, distributive decomposition, and rounding/compensation. Here, decomposition is favored in both text and vision modalities; heuristic-specific LoRA adapters produce near-orthogonal updates yet degrade accuracy, indicating the base model maintains a well-tuned internal router.",
             "score": 3,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -519,7 +519,7 @@
             "url": "https://huggingface.co/papers/2604.16593",
             "abstract": "Abstract SemanticQA evaluates language models on semantic phrase processing tasks, revealing significant performance variations in reasoning and comprehension across different phrase types and model architectures.  AI-generated summary We present SemanticQA, an evaluation suite designed to assess language models (LMs) in semantic phrase processing tasks. The benchmark consolidates existing multiword expression (MwE) resources and reorganizes them into a unified testbed. It covers both general lexical phenomena, such as lexical collocations, and three fine-grained categories: idiomatic expressions, noun compounds, and verbal constructions. Through SemanticQA, we assess LMs of diverse architectures and scales in extraction, classification, and interpretation tasks, as well as sequential task compositions. We reveal substantial performance variation, particularly on tasks requiring semantic reasoning, highlighting differences in reasoning efficacy and semantic understanding of LMs, providing insights for pushing LMs with stronger comprehension on non-trivial semantic phrases. The evaluation harness and data of SemanticQA are available at https://github.com/jacklanda/SemanticQA.",
             "score": 3,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-17",
             "pub_date_card": {
                 "ru": "17 апреля",
@@ -540,7 +540,7 @@
             "url": "https://huggingface.co/papers/2604.18396",
             "abstract": "Abstract River-LLM enables efficient token-level early exit in decoder-only LLMs through KV-sharing mechanisms that preserve historical states without latency overhead.  AI-generated summary Large Language Models (LLMs) have demonstrated exceptional performance across diverse domains but are increasingly constrained by high inference latency. Early Exit has emerged as a promising solution to accelerate inference by dynamically bypassing redundant layers. However, in decoder-only architectures, the efficiency of Early Exit is severely bottlenecked by the KV Cache Absence problem, where skipped layers fail to provide the necessary historical states for subsequent tokens. Existing solutions, such as recomputation or masking, either introduce significant latency overhead or incur severe precision loss, failing to bridge the gap between theoretical layer reduction and practical wall-clock speedup. In this paper, we propose River-LLM, a training-free framework that enables seamless token-level Early Exit. River-LLM introduces a lightweight KV-Shared Exit River that allows the backbone's missing KV cache to be naturally generated and preserved during the exit process, eliminating the need for costly recovery operations. Furthermore, we utilize state transition similarity within decoder blocks to predict cumulative KV errors and guide precise exit decisions. Extensive experiments on mathematical reasoning and code generation tasks demonstrate that River-LLM achieves 1.71 to 2.16 times of practical speedup while maintaining high generation quality.",
             "score": 2,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -561,7 +561,7 @@
             "url": "https://huggingface.co/papers/2604.17338",
             "abstract": "Abstract Frontier LLMs demonstrate high test pass rates but poor precision in debugging tasks, indicating a gap between functional correctness and precise fault localization.  AI-generated summary Unlike code completion, debugging requires localizing faults and applying targeted edits. We observe that frontier LLMs often regenerate correct but over-edited solutions during debugging. To evaluate how far LLMs are from precise debugging, we introduce the Precise Debugging Benchmark (PDB) framework, which automatically converts any coding dataset into a debugging benchmark with precision-aware evaluation. PDB generates buggy programs by synthesizing verified atomic bugs and composing them into multi-bug programs. We define two novel metrics, edit-level precision and bug-level recall, which measures how many necessary edits are made and how many bugs are resolved. We release two evaluation benchmarks: PDB-Single-Hard on single-line bugs, and PDB-Multi on multi-line bugs. Experiments show that frontier models, such as GPT-5.1-Codex and DeepSeek-V3.2-Thinking, achieve unit-test pass rates above 76% but exhibit precision below 45%, even when explicitly instructed to perform minimal debugging. Finally, we show that iterative and agentic debugging strategies do not substantially improve precision or recall, highlighting the need to rethink post-training pipelines for coding models.",
             "score": 2,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-19",
             "pub_date_card": {
                 "ru": "19 апреля",
@@ -582,7 +582,7 @@
             "url": "https://huggingface.co/papers/2604.16902",
             "abstract": "Abstract Research reveals that native omni-modal large language models exhibit visual preference over text, with modality preference emerging progressively in mid-to-late layers and enabling diagnosis of cross-modal hallucinations.  AI-generated summary Native Omni-modal Large Language Models (OLLMs) have shifted from pipeline architectures to unified representation spaces. However, this native integration gives rise to a critical yet underexplored phenomenon: modality preference. To bridge this gap, we first systematically quantify modality preference of OLLMs using a newly-curated conflict-based benchmark and the modality selection rate metric. Our evaluation of ten representative OLLMs reveals a notable paradigm shift: unlike the ``text-dominance'' of traditional VLMs, most OLLMs exhibit a pronounced visual preference. To further understand the underlying mechanism, we conduct layer-wise probing and demonstrate that such modality preference is not static but emerges progressively in the mid-to-late layers. Building upon these insights, we leverage these internal signals to diagnose cross-modal hallucinations, achieving competitive performance across three downstream multi-modal benchmarks without task-specific data. Our work provides both a mechanistic understanding and a practical tool for building more trustworthy OLLMs. Our code and related resources are publicly available at: https://github.com/icip-cas/OmniPreference",
             "score": 2,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-18",
             "pub_date_card": {
                 "ru": "18 апреля",
@@ -603,7 +603,7 @@
             "url": "https://huggingface.co/papers/2604.06505",
             "abstract": "Abstract A large-scale dataset of 5.7 million PubMed structured abstracts is introduced for biomedical conclusion generation, enabling evaluation of large language models' ability to reason from structured scientific evidence.  AI-generated summary Large language models (LLMs) are widely explored for reasoning-intensive research tasks, yet resources for testing whether they can infer scientific conclusions from structured biomedical evidence remain limited. We introduce MedConclusion, a large-scale dataset of 5.7M PubMed structured abstracts for biomedical conclusion generation. Each instance pairs the non-conclusion sections of an abstract with the original author-written conclusion, providing naturally occurring supervision for evidence-to-conclusion reasoning. MedConclusion also includes journal-level metadata such as biomedical category and SJR, enabling subgroup analysis across biomedical domains. As an initial study, we evaluate diverse LLMs under conclusion and summary prompting settings and score outputs with both reference-based metrics and LLM-as-a-judge. We find that conclusion writing is behaviorally distinct from summary writing, strong models remain closely clustered under current automatic metrics, and judge identity can substantially shift absolute scores. MedConclusion provides a reusable data resource for studying scientific evidence-to-conclusion reasoning. Our code and data are available at: https://github.com/Harvard-AI-and-Robotics-Lab/MedConclusion.",
             "score": 2,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-07",
             "pub_date_card": {
                 "ru": "7 апреля",
@@ -624,7 +624,7 @@
             "url": "https://huggingface.co/papers/2604.18267",
             "abstract": "Abstract MARCO is a compact, fast model that improves semantic correspondence accuracy and generalization beyond training data by using a coarse-to-fine objective and self-distillation framework with DINOv2 and diffusion backbones.  AI-generated summary Recent advances in semantic correspondence rely on dual-encoder architectures, combining DINOv2 with diffusion backbones. While accurate, these billion-parameter models generalize poorly beyond training keypoints, revealing a gap between benchmark performance and real-world usability, where queried points rarely match those seen during training. Building upon DINOv2, we introduce MARCO, a unified model for generalizable correspondence driven by a novel training framework that enhances both fine-grained localization and semantic generalization. By coupling a coarse-to-fine objective that refines spatial precision with a self-distillation framework, which expands sparse supervision beyond annotated regions, our approach transforms a handful of keypoints into dense, semantically coherent correspondences. MARCO sets a new state of the art on SPair-71k, AP-10K, and PF-PASCAL, with gains that amplify at fine-grained localization thresholds (+8.9 PCK@0.01), strongest generalization to unseen keypoints (+5.1, SPair-U) and categories (+4.7, MP-100), while remaining 3x smaller and 10x faster than diffusion-based approaches. Code is available at https://github.com/visinf/MARCO .",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -633,8 +633,29 @@
             },
             "hash": "6a7dada0a6c73af2",
             "github_url": "https://github.com/visinf/MARCO",
-            "github_stars": 26,
+            "github_stars": 27,
             "pdf_title_img": "assets/pdf/title_img/2604.18267.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.17886",
+            "title": "Latent Preference Modeling for Cross-Session Personalized Tool Calling",
+            "url": "https://huggingface.co/papers/2604.17886",
+            "abstract": "Abstract Personalized tool calling in LLM-based agents is improved through memory-augmented methods that capture user choice reasoning rather than just choices, using minimal token overhead.  AI-generated summary Users often omit essential details in their requests to LLM-based agents, resulting in under-specified inputs for tool use. This poses a fundamental challenge for tool-augmented agents, as API execution typically requires complete arguments, highlighting the need for personalized tool calling. To study this problem, we introduce MPT, a benchmark comprising 265 multi-session dialogues that cover three challenges: Preference Recall, Preference Induction, and Preference Transfer. We also propose PRefine, a test-time memory-augmented method that represents user preferences as evolving hypotheses. Through a generate--verify--refine loop, it extracts reusable constraints from history and improves tool-calling accuracy while using only 1.24% of the tokens required by full-history prompting. These results indicate that robust personalization in agentic systems depends on memory that captures the reasons behind user choices, not just the choices themselves.",
+            "score": 1,
+            "issue_id": 2374,
+            "pub_date": "2026-04-20",
+            "pub_date_card": {
+                "ru": "20 апреля",
+                "en": "April 20",
+                "zh": "4月20日"
+            },
+            "hash": "6268338f054f7f47",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.17886.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -645,7 +666,7 @@
             "url": "https://huggingface.co/papers/2604.17972",
             "abstract": "Abstract Multi-strategy utterance generation methods for emotional support conversations outperform single-strategy approaches by enabling multiple support strategies within individual utterances.  AI-generated summary Emotional Support Conversation (ESC) aims to assist individuals experiencing distress by generating empathetic and supportive dialogue. While prior work typically assumes that each supporter turn corresponds to a single strategy, real-world supportive communication often involves multiple strategies within a single utterance. In this paper, we revisit the ESC task by formulating it as multi-strategy utterance generation, where each utterance may contain one or more strategy-response pairs. We propose two generation methods: All-in-One, which predicts all strategy-response pairs in a single decoding step, and One-by-One, which iteratively generates strategy-response pairs until completion. Both methods are further enhanced with cognitive reasoning guided by reinforcement learning to improve strategy selection and response composition. We evaluate our models on the ESConv dataset under both utterance-level and dialogue-level settings. Experimental results show that our methods effectively model multi-strategy utterances and lead to improved supportive quality and dialogue success. To our knowledge, this work provides the first systematic empirical evidence that allowing multiple support strategies within a single utterance is both feasible and beneficial for emotional support conversations. All code and data will be publicly available at https://github.com/aliyun/qwen-dianjin.",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -666,7 +687,7 @@
             "url": "https://huggingface.co/papers/2604.17698",
             "abstract": "Abstract Geometric stability measures predict language model controllability and detect structural degradation, with supervised variants excelling at steering prediction and unsupervised variants at drift detection.  AI-generated summary Reliable deployment of language models requires two capabilities that appear distinct but share a common geometric foundation: predicting whether a model will accept targeted behavioral control, and detecting when its internal structure degrades. We show that geometric stability, the consistency of a representation's pairwise distance structure, addresses both. Supervised Shesha variants that measure task-aligned geometric stability predict linear steerability with near-perfect accuracy (ρ= 0.89-0.97) across 35-69 embedding models and three NLP tasks, capturing unique variance beyond class separability (partial ρ= 0.62-0.76). A critical dissociation emerges: unsupervised stability fails entirely for steering on real-world tasks (ρapprox 0.10), revealing that task alignment is essential for controllability prediction. However, unsupervised stability excels at drift detection, measuring nearly 2times greater geometric change than CKA during post-training alignment (up to 5.23times in Llama) while providing earlier warning in 73\\% of models and maintaining a 6times lower false alarm rate than Procrustes. Together, supervised and unsupervised stability form complementary diagnostics for the LLM deployment lifecycle: one for pre-deployment controllability assessment, the other for post-deployment monitoring.",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-20",
             "pub_date_card": {
                 "ru": "20 апреля",
@@ -687,7 +708,7 @@
             "url": "https://huggingface.co/papers/2604.17318",
             "abstract": "Abstract MedFocusLeak enables transferable black-box attacks on vision-language models for medical imaging by injecting imperceptible perturbations that redirect model attention, demonstrating significant vulnerabilities in clinical diagnostic reasoning.  AI-generated summary Vision-Language Models (VLMs) are increasingly used in clinical diagnostics, yet their robustness to adversarial attacks remains largely unexplored, posing serious risks. Existing medical attacks focus on secondary objectives such as model stealing or adversarial fine-tuning, while transferable attacks from natural images introduce visible distortions that clinicians can easily detect. To address this, we propose MedFocusLeak, a highly transferable black-box multimodal attack that induces incorrect yet clinically plausible diagnoses while keeping perturbations imperceptible. The method injects coordinated perturbations into non-diagnostic background regions and employs an attention distraction mechanism to shift the model's focus away from pathological areas. Extensive evaluations across six medical imaging modalities show that MedFocusLeak achieves state-of-the-art performance, generating misleading yet realistic diagnostic outputs across diverse VLMs. We further introduce a unified evaluation framework with novel metrics that jointly capture attack success and image fidelity, revealing a critical weakness in the reasoning capabilities of modern clinical VLMs.",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-19",
             "pub_date_card": {
                 "ru": "19 апреля",
@@ -708,7 +729,7 @@
             "url": "https://huggingface.co/papers/2604.17406",
             "abstract": "Abstract EvoMaster is a scalable, self-evolving agent framework designed for large-scale scientific discovery that enables iterative hypothesis refinement and knowledge accumulation across experimental cycles.  AI-generated summary The convergence of large language models and agents is catalyzing a new era of scientific discovery: Agentic Science. While the scientific method is inherently iterative, existing agent frameworks are predominantly static, narrowly scoped, and lack the capacity to learn from trial and error. To bridge this gap, we present EvoMaster, a foundational evolving agent framework engineered specifically for Agentic Science at Scale. Driven by the core principle of continuous self-evolution, EvoMaster empowers agents to iteratively refine hypotheses, self-critique, and progressively accumulate knowledge across experimental cycles, faithfully mirroring human scientific inquiry. Crucially, as a domain-agnostic base harness, EvoMaster is exceptionally easy to scale up -- enabling developers to build and deploy highly capable, self-evolving scientific agents for arbitrary disciplines in approximately 100 lines of code. Built upon EvoMaster, we incubated the SciMaster ecosystem across domains such as machine learning, physics, and general science. Evaluations on four authoritative benchmarks (Humanity's Last Exam, MLE-Bench Lite, BrowseComp, and FrontierScience) demonstrate that EvoMaster achieves state-of-the-art scores of 41.1%, 75.8%, 73.3%, and 53.3%, respectively. It comprehensively outperforms the general-purpose baseline OpenClaw with relative improvements ranging from +159% to +316%, robustly validating its efficacy and generality as the premier foundational framework for the next generation of autonomous scientific discovery. EvoMaster is available at https://github.com/sjtu-sai-agents/EvoMaster.",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-19",
             "pub_date_card": {
                 "ru": "19 апреля",
@@ -729,7 +750,7 @@
             "url": "https://huggingface.co/papers/2604.16943",
             "abstract": "Abstract Modality neuron-aware fine-tuning (MNAFT) enhances image translation by selectively updating specific neurons in multimodal large language models, preserving pre-trained knowledge while improving cross-modal understanding.  AI-generated summary Multimodal large language models (MLLMs) have shown impressive capabilities, yet they often struggle to effectively capture the fine-grained textual information within images crucial for accurate image translation. This often leads to a modality gap between visual text inputs and textual inputs/outputs for image translation. Existing methods, primarily relying on instruction fine-tuning, risk parameter redundancy of pre-trained knowledge, hindering generalization performance. To address this, we introduce modality neuron-aware fine-tuning (MNAFT), a novel approach that takes advantage of the specialized roles of individual neurons within MLLMs for enhanced image translation. MNAFT identifies language-agnostic and language-specific neurons in both vision and language modules through an instruction-driven activation analysis, evaluating their importance in various translation tasks. We then perform selective fine-tuning, updating only the parameters of language-specific and language-agnostic neurons within the selected layers relevant to the target task, while preserving the knowledge encoded in other neurons and layers. Our extensive experiments on multiple benchmarks demonstrate that MNAFT significantly outperforms state-of-the-art image translation methods, including cascaded models, standard full fine-tuning, and parameter-efficient tuning techniques. Furthermore, we provide comprehensive analysis, including visualizations of neuron activations and clustering patterns, to offer insights into the roles of different neuron groups in mediating cross-modal understanding and facilitating accurate language-specific translation.",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-18",
             "pub_date_card": {
                 "ru": "18 апреля",
@@ -750,7 +771,7 @@
             "url": "https://huggingface.co/papers/2604.16038",
             "abstract": "Abstract Forecasting vulnerability-related activities using time-series models reveals challenges with sparse, bursty data, favoring count-based methods like Poisson regression for more stable predictions.  AI-generated summary Understanding and anticipating vulnerability-related activity is a major challenge in cyber threat intelligence. This work investigates whether vulnerability sightings, such as proof-of-concept releases, detection templates, or online discussions, can be forecast over time. Building on our earlier work on VLAI, a transformer-based model that predicts vulnerability severity from textual descriptions, we examine whether severity scores can improve time-series forecasting as exogenous variables. We evaluate several approaches for short-term forecasting of sightings per vulnerability. First, we test SARIMAX models with and without log(x+1) transformations and VLAI-derived severity inputs. Although these adjustments provide limited improvements, SARIMAX remains poorly suited to sparse, short, and bursty vulnerability data. In practice, forecasts often produce overly wide confidence intervals and sometimes unrealistic negative values. To better capture the discrete and event-driven nature of sightings, we then explore count-based methods such as Poisson regression. Early results show that these models produce more stable and interpretable forecasts, especially when sightings are aggregated weekly. We also discuss simpler operational alternatives, including exponential decay functions for short forecasting horizons, to estimate future activity without requiring long historical series. Overall, this study highlights both the potential and the limitations of forecasting rare and bursty cyber events, and provides practical guidance for integrating predictive analytics into vulnerability intelligence workflows.",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-17",
             "pub_date_card": {
                 "ru": "17 апреля",
@@ -771,7 +792,7 @@
             "url": "https://huggingface.co/papers/2604.16642",
             "abstract": "Abstract  Genome engineering has achieved remarkable sequence-level precision, yet predicting the transcriptomic state that a cell will occupy after perturbation remains an open problem. Single-cell CRISPR screens measure how far cells move from their unperturbed state, but this effect magnitude ignores a fundamental question: do the cells move together? Two perturbations with identical magnitude can produce qualitatively different outcomes if one drives cells coherently along a shared trajectory while the other scatters them across expression space. We introduce a geometric stability metric, Shesha, that quantifies the directional coherence of single-cell perturbation responses as the mean cosine similarity between individual cell shift vectors and the mean perturbation direction. Across five CRISPR datasets (2,200+ perturbations spanning CRISPRa, CRISPRi, and pooled screens), stability correlates strongly with effect magnitude (Spearman ρ=0.75-0.97), with a calibrated cross-dataset correlation of 0.97. Crucially, discordant cases where the two metrics decouple expose regulatory architecture: pleiotropic master regulators such as CEBPA and GATA1 pay a \"geometric tax,\" producing large but incoherent shifts, while lineage-specific factors such as KLF1 produce tightly coordinated responses. After controlling for magnitude, geometric instability is independently associated with elevated chaperone activation (HSPA5/BiP; ρ_{partial}=-0.34 and -0.21 across datasets), and the high-stability/high-stress quadrant is systematically depleted. The magnitude-stability relationship persists in scGPT foundation model embeddings, confirming it is a property of biological state space rather than linear projection. Perturbation stability provides a complementary axis for hit prioritization in screens, phenotypic quality control in cell manufacturing, and evaluation of in silico perturbation predictions.",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-17",
             "pub_date_card": {
                 "ru": "17 апреля",
@@ -792,7 +813,7 @@
             "url": "https://huggingface.co/papers/2511.10262",
             "abstract": "Abstract Current full-duplex speech language models struggle with multi-round conversations due to inconsistent performance across different evaluation dimensions, necessitating comprehensive benchmarking.  AI-generated summary Full-Duplex Speech Language Models (FD-SLMs) enable real-time, overlapping conversational interactions, offering a more dynamic user experience compared to traditional half-duplex models. However, existing benchmarks primarily focus on evaluating single-round interactions, neglecting the complexities of multi-round communication. Evaluating FD-SLMs in multi-round settings poses significant challenges, including blurred turn boundaries in communication and context inconsistency during model inference. Also, existing benchmarks often focus solely on evaluating conversational features, neglecting other critical aspects. To address these gaps, we introduce MTR-DuplexBench, a novel benchmark designed for a comprehensive multi-round evaluation of FD-SLMs. MTR-DuplexBench not only segments continuous full-duplex dialogues into discrete turns for turn-by-turn assessment but also incorporates various evaluation aspects, including conversational features, dialogue quality, instruction following, and safety. Experimental results reveal that current FD-SLMs face difficulties in maintaining consistent performance across multiple rounds and evaluation dimensions, highlighting the necessity and effectiveness of our benchmark. Code and data are available at: https://github.com/ZhangHe0918/MTR-DuplexBench",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-17",
             "pub_date_card": {
                 "ru": "17 апреля",
@@ -813,7 +834,7 @@
             "url": "https://huggingface.co/papers/2604.16498",
             "abstract": "Abstract Forge-UGC is a four-phase compiler for efficient transformer deployment on heterogeneous hardware, offering faster compilation, reduced inference latency, and lower energy consumption compared to existing frameworks.  AI-generated summary We present Forge-UGC (FX Optimization and Register-Graph Engine for Universal Graph Compilation), a four-phase compiler for transformer deployment on heterogeneous accelerator hardware, validated on Intel AI Boost NPU. Existing frameworks such as OpenVINO and ONNX Runtime often use opaque compilation pipelines, limited pass-level visibility, and weak buffer management, which can lead to higher compilation cost and runtime overhead. Forge-UGC addresses this with a hardware-agnostic design that separates graph capture, optimization, intermediate representation lowering, and backend scheduling. Phase 1 captures graphs with torch.export at the ATen operator level, supporting modern transformer components such as rotary position embeddings, grouped-query attention, and SwiGLU without manual decomposition. Phase 2 applies six optimization passes: dead code elimination, common subexpression elimination, constant folding, attention fusion, operator fusion, and layout optimization, reducing graph node count by 14.2 to 21.9%. Phase 3 lowers the optimized graph into a typed intermediate representation with explicit virtual register assignments. Phase 4 performs liveness analysis, linear-scan buffer allocation, reducing peak buffer count by 30 to 48%, and device-affinity scheduling, reducing NPU-CPU transitions by 42 to 65%. Across six model families ranging from 125M to 8B parameters, evaluated on WikiText-103 and GLUE, Forge-UGC delivers 6.9 to 9.2x faster compilation than OpenVINO and ONNX Runtime, 18.2 to 35.7% lower inference latency, and 30.2 to 40.9% lower energy per inference. Fidelity is preserved, with max absolute logit differences below 2.1e-5 and KL divergence below 8.4e-9. We also introduce Fusion Gain Ratio, Compilation Efficiency Index, and per-pass execution profiling for systematic evaluation of NPU compilation pipelines.",
             "score": 1,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-14",
             "pub_date_card": {
                 "ru": "14 апреля",
@@ -829,33 +850,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2604.17886",
-            "title": "Latent Preference Modeling for Cross-Session Personalized Tool Calling",
-            "url": "https://huggingface.co/papers/2604.17886",
-            "abstract": "Abstract Personalized tool calling in LLM-based agents is improved through memory-augmented methods that capture user choice reasoning rather than just choices, using minimal token overhead.  AI-generated summary Users often omit essential details in their requests to LLM-based agents, resulting in under-specified inputs for tool use. This poses a fundamental challenge for tool-augmented agents, as API execution typically requires complete arguments, highlighting the need for personalized tool calling. To study this problem, we introduce MPT, a benchmark comprising 265 multi-session dialogues that cover three challenges: Preference Recall, Preference Induction, and Preference Transfer. We also propose PRefine, a test-time memory-augmented method that represents user preferences as evolving hypotheses. Through a generate--verify--refine loop, it extracts reusable constraints from history and improves tool-calling accuracy while using only 1.24% of the tokens required by full-history prompting. These results indicate that robust personalization in agentic systems depends on memory that captures the reasons behind user choices, not just the choices themselves.",
-            "score": 0,
-            "issue_id": 2373,
-            "pub_date": "2026-04-20",
-            "pub_date_card": {
-                "ru": "20 апреля",
-                "en": "April 20",
-                "zh": "4月20日"
-            },
-            "hash": "6268338f054f7f47",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2604.17886.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2604.17596",
             "title": "Terminal Wrench: A Dataset of 331 Reward-Hackable Environments and 3,632 Exploit Trajectories",
             "url": "https://huggingface.co/papers/2604.17596",
             "abstract": "Abstract A dataset of 331 terminal-agent environments with 3,632 reward-hacking trajectories and 2,352 legitimate baselines across four AI models is released to study adversarial exploits in system administration, ML, software engineering, and security tasks.  AI-generated summary We release Terminal Wrench, a subset of 331 terminal-agent benchmark environments, copied from the popular open benchmarks that are demonstrably reward-hackable. The data set includes 3,632 hack trajectories and 2,352 legitimate baseline trajectories across three frontier models (Claude Opus 4.6, Gemini 3.1 Pro, GPT-5.4). Each entry preserves the original task definition alongside full attack trajectories that show how the verifier was bypassed. It also includes cases where the task was not solved as intended. The tasks span system administration, machine learning, software engineering, and security challenges; the exploits range from simple output spoofing to stack-frame introspection, standard-library patching, and rootkit-style binary hijacking. Crucially, these exploits are specific to each task, rather than the evaluation harness, making them harder to patch. We also present a monitorability study in which hack trajectories are sanitized or stripped of reasoning traces and then scored by an LLM judge, showing that detection degrades meaningfully when chain-of-thought is removed (AUC drops from 0.97 to 0.92). The data set is publicly available at https://github.com/few-sh/terminal-wrench.",
             "score": 0,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-19",
             "pub_date_card": {
                 "ru": "19 апреля",
@@ -876,7 +876,7 @@
             "url": "https://huggingface.co/papers/2604.17273",
             "abstract": "Abstract The paper advocates for a continuity layer in AI systems to address the limitation of transient understanding, proposing a Decomposed Trace Convergence Memory storage primitive and a four-layer development approach.  AI-generated summary The most important architectural problem in AI is not the size of the model but the absence of a layer that carries forward what the model has come to understand. Sessions end. Context windows fill. Memory APIs return flat facts that the model has to reinterpret from scratch on every read. The result is intelligence that is powerful per session and amnesiac across time. This position paper argues that the layer which fixes this, the continuity layer, is the most consequential piece of infrastructure the field has not yet built, and that the engineering work to build it has begun in public. The formal evaluation framework for the property described here is the ATANT benchmark (arXiv:2604.06710), published separately with evaluation results on a 250-story corpus; a companion paper (arXiv:2604.10981) positions this framework against existing memory, long-context, and agentic-memory benchmarks. The paper defines continuity as a system property with seven required characteristics, distinct from memory and from retrieval; describes a storage primitive (Decomposed Trace Convergence Memory) whose write-time decomposition and read-time reconstruction produce that property; maps the engineering architecture to the theological pattern of kenosis and the symbolic pattern of Alpha and Omega, and argues this mapping is structural rather than metaphorical; proposes a four-layer development arc from external SDK to hardware node to long-horizon human infrastructure; examines why the physics limits now constraining the model layer make the continuity layer newly consequential; and argues that the governance architecture (privacy implemented as physics rather than policy, founder-controlled class shares on non-negotiable architectural commitments) is inseparable from the product itself.",
             "score": 0,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-19",
             "pub_date_card": {
                 "ru": "19 апреля",
@@ -897,7 +897,7 @@
             "url": "https://huggingface.co/papers/2604.17388",
             "abstract": "Abstract JuRe, a simple denoising network for time series anomaly detection, demonstrates that architectural simplicity can match or exceed complex models when the training objective properly implements the manifold-projection principle.  AI-generated summary We introduce JuRe (Just Repair), a minimal denoising network for time series anomaly detection that exposes a central finding: architectural complexity is unnecessary when the training objective correctly implements the manifold-projection principle. JuRe consists of a single depthwise-separable convolutional residual block with hidden dimension 128, trained to repair corrupted time series windows and scored at inference by a fixed, parameter-free structural discrepancy function. Despite using no attention, no latent variable, and no adversarial component, JuRe ranks second on the TSB-AD multivariate benchmark (AUC-PR 0.404, 180 series, 17 datasets) and second on the UCR univariate archive by AUC-PR (0.198, 250 series), leading all neural baselines on AUC-PR and VUS-PR. Component ablation on TSB-AD identifies training-time corruption as the dominant factor (ΔAUC-PR = 0.047 on removal), confirming that the denoising objective, not network capacity, drives detection quality. Pairwise Wilcoxon signed-rank tests establish statistical significance against 21 of 25 baselines on TSB-AD. Code is available at the URL https://github.com/iis-esslingen/JuRe.",
             "score": 0,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-19",
             "pub_date_card": {
                 "ru": "19 апреля",
@@ -918,7 +918,7 @@
             "url": "https://huggingface.co/papers/2604.17454",
             "abstract": "Abstract Hyperbolic Scene Graph (HSG) improves scene graph modeling by learning embeddings in hyperbolic space, enhancing hierarchical structure quality and retrieval performance through natural encoding of hierarchical relationships.  AI-generated summary Scene graph representations enable structured visual understanding by modeling objects and their relationships, and have been widely used for multiview and 3D scene reasoning. Existing methods such as MSG learn scene graph embeddings in Euclidean space using contrastive learning and attention based association. However, Euclidean geometry does not explicitly capture hierarchical entailment relationships between places and objects, limiting the structural consistency of learned representations. To address this, we propose Hyperbolic Scene Graph (HSG), which learns scene graph embeddings in hyperbolic space where hierarchical relationships are naturally encoded through geometric distance. Our results show that HSG improves hierarchical structure quality while maintaining strong retrieval performance. The largest gains are observed in graph level metrics: HSG achieves a PP IoU of 33.17 and the highest Graph IoU of 33.51, outperforming the best AoMSG variant (25.37) by 8.14, highlighting the effectiveness of hyperbolic representation learning for scene graph modeling. Code: https://github.com/AIGeeksGroup/HSG.",
             "score": 0,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-19",
             "pub_date_card": {
                 "ru": "19 апреля",
@@ -939,7 +939,7 @@
             "url": "https://huggingface.co/papers/2604.16576",
             "abstract": "Abstract State-of-the-art open-source LLM-based dense retrievers demonstrate varying levels of generalizability and stability, with instruction-tuned models showing better performance but facing specialization trade-offs, while embedding geometry offers insights for robustness improvement.  AI-generated summary Decoder-only large language models (LLMs) are increasingly replacing BERT-style architectures as the backbone for dense retrieval, achieving substantial performance gains and broad adoption. However, the robustness of these LLM-based retrievers remains underexplored. In this paper, we present the first systematic study of the robustness of state-of-the-art open-source LLM-based dense retrievers from two complementary perspectives: generalizability and stability. For generalizability, we evaluate retrieval effectiveness across four benchmarks spanning 30 datasets, using linear mixed-effects models to estimate marginal mean performance and disentangle intrinsic model capability from dataset heterogeneity. Our analysis reveals that while instruction-tuned models generally excel, those optimized for complex reasoning often suffer a ``specialization tax,'' exhibiting limited generalizability in broader contexts. For stability, we assess model resilience against both unintentional query variations~(e.g., paraphrasing, typos) and malicious adversarial attacks~(e.g., corpus poisoning). We find that LLM-based retrievers show improved robustness against typos and corpus poisoning compared to encoder-only baselines, yet remain vulnerable to semantic perturbations like synonymizing. Further analysis shows that embedding geometry (e.g., angular uniformity) provides predictive signals for lexical stability and suggests that scaling model size generally improves robustness. These findings inform future robustness-aware retriever design and principled benchmarking. Our code is publicly available at https://github.com/liyongkang123/Robust_LLM_Retriever_Eval.",
             "score": 0,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-17",
             "pub_date_card": {
                 "ru": "17 апреля",
@@ -955,12 +955,33 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2604.15760",
+            "title": "KWBench: Measuring Unprompted Problem Recognition in Knowledge Work",
+            "url": "https://huggingface.co/papers/2604.15760",
+            "abstract": "Abstract KWBench presents a benchmark for evaluating large language models' ability to recognize professional scenarios without prompting, focusing on identifying underlying game-theoretic structures from raw inputs.  AI-generated summary We introduce the first version of KWBench (Knowledge Work Bench), a benchmark for unprompted problem recognition in large language models: can an LLM identify a professional scenario before attempting to solve it. Existing frontier benchmarks have saturated, and most knowledge-work evaluations to date reduce to extraction or task completion against a specification. KWBench targets the step before that: recognizing the governing structure of the situation from raw inputs alone.   The benchmark contains 223 tasks sourced from practitioners across acquisitions, contract negotiations, clinical pharmacy, organizational politics, fraud analysis, and incentive design. Each task encodes a formal game-theoretic pattern (principal-agent conflict, signaling, mechanism design failure, strategic omission, coalitional dynamics, strategic interdependence) and carries structured ground truth recording the expert reading of the situation and the anticipated failure modes. Models receive raw data and a task prompt with no indication of problem type. Scoring is a three-tier rubric gated by a mandatory conjunctive check. Mandatory criteria encode the predicted wrong paths.   We evaluate 16 models. The best model passes on 27.9% of tasks. The top two models agree on only 31.7% of their passes. Among the top 8, 44 tasks are solved by exactly one model; routing across the top 8 covers 50.7% of the benchmark, nearly double the best single model. Conditional on passing, quality scores converge (approx 83% across models); unconditional scores do not. Same models articulate the relevant game-theoretic concept correctly when asked, then fail to apply it unprompted. We release KWBench to shift how frontier models are evaluated on knowledge work, scoring them on whether they recognize the right problem from the situation alone, not only on how well they execute once the problem has been framed for them.",
+            "score": 0,
+            "issue_id": 2374,
+            "pub_date": "2026-04-17",
+            "pub_date_card": {
+                "ru": "17 апреля",
+                "en": "April 17",
+                "zh": "4月17日"
+            },
+            "hash": "4fd3d60aa42d0bc9",
+            "github_url": "https://github.com/ankitmaloo/fasteval",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.15760.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2604.15579",
             "title": "Symbolic Guardrails for Domain-Specific Agents: Stronger Safety and Security Guarantees Without Sacrificing Utility",
             "url": "https://huggingface.co/papers/2604.15579",
             "abstract": "Abstract Symbolic guardrails provide strong safety and security guarantees for AI agents in high-stakes environments by enforcing policy requirements that traditional methods cannot ensure.  AI-generated summary AI agents that interact with their environments through tools enable powerful applications, but in high-stakes business settings, unintended actions can cause unacceptable harm, such as privacy breaches and financial loss. Existing mitigations, such as training-based methods and neural guardrails, improve agent reliability but cannot provide guarantees. We study symbolic guardrails as a practical path toward strong safety and security guarantees for AI agents. Our three-part study includes a systematic review of 80 state-of-the-art agent safety and security benchmarks to identify the policies they evaluate, an analysis of which policy requirements can be guaranteed by symbolic guardrails, and an evaluation of how symbolic guardrails affect safety, security, and agent success on τ^2-Bench, CAR-bench, and MedAgentBench. We find that 85\\% of benchmarks lack concrete policies, relying instead on underspecified high-level goals or common sense. Among the specified policies, 74\\% of policy requirements can be enforced by symbolic guardrails, often using simple, low-cost mechanisms. These guardrails improve safety and security without sacrificing agent utility. Overall, our results suggest that symbolic guardrails are a practical and effective way to guarantee some safety and security requirements, especially for domain-specific AI agents. We release all codes and artifacts at https://github.com/hyn0027/agent-symbolic-guardrails.",
             "score": 0,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-16",
             "pub_date_card": {
                 "ru": "16 апреля",
@@ -981,7 +1002,7 @@
             "url": "https://huggingface.co/papers/2602.15143",
             "abstract": "Abstract Techniques for modifying teacher-generated reasoning traces to prevent unauthorized knowledge distillation while maintaining answer correctness and enabling detectable watermarks are presented.  AI-generated summary Knowledge distillation is a widely adopted technique for transferring capabilities from LLMs to smaller, more efficient student models. However, unauthorized use of knowledge distillation takes unfair advantage of the considerable effort and cost put into developing frontier models. We investigate methods for modifying teacher-generated reasoning traces to achieve two objectives that deter unauthorized distillation: (1) anti-distillation, or degrading the training usefulness of query responses, and (2) API watermarking, which embeds verifiable signatures in student models. We introduce several approaches for dynamically rewriting a teacher's reasoning outputs while preserving answer correctness and semantic coherence. Two of these leverage the rewriting capabilities of LLMs, while others use gradient-based techniques. Our experiments show that a simple instruction-based rewriting approach achieves a strong anti-distillation effect while maintaining or even improving teacher performance. Furthermore, we show that our rewriting approach also enables embedding watermarks that can be reliably detected with essentially no false alarms. Our code is available at https://github.com/xhOwenMa/trace-rewriting.",
             "score": 0,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-16",
             "pub_date_card": {
                 "ru": "16 апреля",
@@ -1002,7 +1023,7 @@
             "url": "https://huggingface.co/papers/2604.03337",
             "abstract": "Abstract  Genotype-by-Environment (GxE) interactions influence the performance of genotypes across diverse environments, reducing the predictability of phenotypes in target environments. In-depth analysis of GxE interactions facilitates the identification of how genetic advantages or defects are expressed or suppressed under specific environmental conditions, thereby enabling genetic selection and enhancing breeding practices. This paper introduces two key models for GxE interaction research. Specifically, it includes significance analysis based on the mixed effect model to determine whether genes or GxE interactions significantly affect phenotypic traits; stability analysis, which further investigates the interactive relationships between genes and environments, as well as the relative superiority or inferiority of genotypes across environments. Additionally, this paper presents RGxEStat, a lightweight interactive tool, which is developed by the authors and integrates the construction, solution, and visualization of the aforementioned models. Designed to eliminate the need for breeders and agronomists to learn complex SAS or R programming, RGxEStat provides a user-friendly interface for streamlined breeding data analysis, significantly accelerating research cycles. Codes and datasets are available at https://github.com/mason-ching/RGxEStat.",
             "score": 0,
-            "issue_id": 2373,
+            "issue_id": 2374,
             "pub_date": "2026-04-03",
             "pub_date_card": {
                 "ru": "3 апреля",
@@ -1018,18 +1039,18 @@
             }
         }
     ],
-    "link_prev": "2026-04-20.html",
-    "link_next": "2026-04-22.html",
+    "link_prev": "2026-04-21.html",
+    "link_next": "2026-04-23.html",
     "link_month": "2026-04.html",
     "short_date_prev": {
-        "ru": "20.04",
-        "en": "04/20",
-        "zh": "4月20日"
+        "ru": "21.04",
+        "en": "04/21",
+        "zh": "4月21日"
     },
     "short_date_next": {
-        "ru": "22.04",
-        "en": "04/22",
-        "zh": "4月22日"
+        "ru": "23.04",
+        "en": "04/23",
+        "zh": "4月23日"
     },
     "categories": {
         "#dataset": 0,
