@@ -1,0 +1,30 @@
+[22.04.2026 23:46] Read previous papers.
+[22.04.2026 23:46] Generating top page (month).
+[22.04.2026 23:46] Writing top page (month).
+[23.04.2026 01:57] Read previous papers.
+[23.04.2026 01:57] Get feed.
+[23.04.2026 01:57] Extract page data from URL. URL: https://huggingface.co/papers/2604.20779
+[23.04.2026 01:57] Updating GitHub stars.
+[23.04.2026 01:57] Obtaining deleted papers (sometimes HF Daily Papers move some articles from today to past days).
+[23.04.2026 01:57] Downloading and parsing papers (pdf, html). Total: 1.
+[23.04.2026 01:57] Downloading and parsing paper https://huggingface.co/papers/2604.20779.
+[23.04.2026 01:57] Failed to download and parse paper https://huggingface.co/papers/2604.20779: 
+[23.04.2026 01:57] Enriching papers with extra data.
+[23.04.2026 01:57] ********************************************************************************
+[23.04.2026 01:57] Abstract 0. Abstract SWE-chat presents a large-scale dataset of real coding agent interactions that reveals significant inefficiencies and challenges in current AI-assisted development practices.  AI-generated summary AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actu...
+[23.04.2026 01:57] Read previous papers.
+[23.04.2026 01:57] Generating reviews via LLM API.
+[23.04.2026 01:57] Querying the API.
+[23.04.2026 01:57] Gigachat request. Model: GigaChat. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract SWE-chat presents a large-scale dataset of real coding agent interactions that reveals significant inefficiencies and challenges in current AI-assisted development practices.  AI-generated summary AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actually use them and how much of their output is useful in practice. We present SWE-chat, the first large-scale dataset of real coding agent sessions collected from open-source developers in the wild. The dataset currently contains 6,000 sessions, comprising more than 63,000 user prompts and 355,000 agent tool calls. SWE-chat is a living dataset; our collection pipeline automatically and continually discovers and processes sessions from public repositories. Leveraging SWE-chat, we provide an initial empirical characterization of real-world coding agent usage and failure modes. We find that coding patterns are bimodal: in 41% of sessions, agents author virtually all committed code ("vibe coding"), while in 23%, humans write all code themselves. Despite rapidly improving capabilities, coding agents remain inefficient in natural settings. Just 44% of all agent-produced code survives into user commits, and agent-written code introduces more security vulnerabilities than code authored by humans. Furthermore, users push back against agent outputs -- through corrections, failure reports, and interruptions -- in 44% of all turns. By capturing complete interaction traces with human vs. agent code authorship attribution, SWE-chat provides an empirical foundation for moving beyond curated benchmarks towards an evidence-based understanding of how AI agents perform in real developer workflows.
+[23.04.2026 01:57] Error getting data: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[23.04.2026 01:57] Renaming data file.
+[23.04.2026 01:57] Renaming previous data. hf_papers.json to ./d/2026-04-23.json
+[23.04.2026 01:57] Saving new data file.
+[23.04.2026 01:57] Generating page.
+[23.04.2026 01:57] Renaming previous page.
+[23.04.2026 01:57] Renaming previous data. index.html to ./d/2026-04-23.html
+[23.04.2026 01:57] Writing result.
+[23.04.2026 01:57] Renaming log file.
+[23.04.2026 01:57] Renaming previous data. log.txt to ./logs/2026-04-23_last_log.txt
