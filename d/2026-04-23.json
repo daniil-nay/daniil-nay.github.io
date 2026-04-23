@@ -4,9 +4,9 @@
         "en": "April 23",
         "zh": "4月23日"
     },
-    "time_utc": "2026-04-23 04:48",
+    "time_utc": "2026-04-23 06:58",
     "weekday": 3,
-    "issue_id": 2390,
+    "issue_id": 2391,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -14,8 +14,8 @@
             "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
             "url": "https://huggingface.co/papers/2604.20796",
             "abstract": "Abstract LLaDA2.0-Uni is a unified discrete diffusion language model that integrates multimodal understanding and generation through a semantic discrete tokenizer, MoE-based backbone, and diffusion decoder, achieving performance comparable to specialized vision-language models while enabling efficient inference and high-fidelity image generation.  AI-generated summary We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware optimizations in the backbone and few-step distillation in the decoder. Supported by carefully curated large-scale data and a tailored multi-stage training pipeline, LLaDA2.0-Uni matches specialized VLMs in multimodal understanding while delivering strong performance in image generation and editing. Its native support for interleaved generation and reasoning establishes a promising and scalable paradigm for next-generation unified foundation models. Codes and models are available at https://github.com/inclusionAI/LLaDA2.0-Uni.",
-            "score": 47,
-            "issue_id": 2390,
+            "score": 84,
+            "issue_id": 2391,
             "pub_date": "2026-04-22",
             "pub_date_card": {
                 "ru": "22 апреля",
@@ -24,7 +24,7 @@
             },
             "hash": "009c9f265ac70b64",
             "github_url": "https://github.com/inclusionAI/LLaDA2.0-Uni",
-            "github_stars": 22,
+            "github_stars": 27,
             "pdf_title_img": "assets/pdf/title_img/2604.20796.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -35,8 +35,8 @@
             "title": "DR-Venus: Towards Frontier Edge-Scale Deep Research Agents with Only 10K Open Data",
             "url": "https://huggingface.co/papers/2604.19859",
             "abstract": "Abstract DR-Venus-4B is a 4-billion-parameter deep research agent trained entirely on open data using agentic supervised fine-tuning and reinforcement learning with turn-level rewards to achieve superior performance on research benchmarks while maintaining edge-scale deployment advantages.  AI-generated summary Edge-scale deep research agents based on small language models are attractive for real-world deployment due to their advantages in cost, latency, and privacy. In this work, we study how to train a strong small deep research agent under limited open-data by improving both data quality and data utilization. We present DR-Venus, a frontier 4B deep research agent for edge-scale deployment, built entirely on open data. Our training recipe consists of two stages. In the first stage, we use agentic supervised fine-tuning (SFT) to establish basic agentic capability, combining strict data cleaning with resampling of long-horizon trajectories to improve data quality and utilization. In the second stage, we apply agentic reinforcement learning (RL) to further improve execution reliability on long-horizon deep research tasks. To make RL effective for small agents in this setting, we build on IGPO and design turn-level rewards based on information gain and format-aware regularization, thereby enhancing supervision density and turn-level credit assignment. Built entirely on roughly 10K open-data, DR-Venus-4B significantly outperforms prior agentic models under 9B parameters on multiple deep research benchmarks, while also narrowing the gap to much larger 30B-class systems. Our further analysis shows that 4B agents already possess surprisingly strong performance potential, highlighting both the deployment promise of small models and the value of test-time scaling in this setting. We release our models, code, and key recipes to support reproducible research on edge-scale deep research agents.",
-            "score": 10,
-            "issue_id": 2390,
+            "score": 25,
+            "issue_id": 2391,
             "pub_date": "2026-04-21",
             "pub_date_card": {
                 "ru": "21 апреля",
@@ -45,8 +45,71 @@
             },
             "hash": "3f1eeddc2fcd3350",
             "github_url": "https://github.com/inclusionAI/DR-Venus",
-            "github_stars": 12,
+            "github_stars": 18,
             "pdf_title_img": "assets/pdf/title_img/2604.19859.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.20733",
+            "title": "Near-Future Policy Optimization",
+            "url": "https://huggingface.co/papers/2604.20733",
+            "abstract": "Abstract Mixed-policy reinforcement learning approach using near-future policy optimization to accelerate convergence and improve performance by balancing trajectory quality and variance.  AI-generated summary Reinforcement learning with verifiable rewards (RLVR) has become a core post-training recipe. Introducing suitable off-policy trajectories into on-policy exploration accelerates RLVR convergence and raises the performance ceiling, yet finding a source of such trajectories remains the key challenge. Existing mixed-policy methods either import trajectories from external teachers (high-quality but distributionally far) or replay past training trajectories (close but capped in quality), and neither simultaneously satisfies the strong enough (higher Q , more new knowledge to learn) and close enough (lower V , more readily absorbed) conditions required to maximize the effective learning signal S = Q/V. We propose Near-Future Policy Optimization (NPO), a simple mixed-policy scheme that learns from a policy's own near-future self: a later checkpoint from the same training run is a natural source of auxiliary trajectories that is both stronger than the current policy and closer than any external source, directly balancing trajectory quality against variance cost. We validate NPO through two manual interventions, early-stage bootstrapping and late-stage plateau breakthrough, and further propose AutoNPO,an adaptive variant that automatically triggers interventions from online training signals and selects the guide checkpoint that maximizes S. On Qwen3-VL-8B-Instruct with GRPO, NPO improves average performance from 57.88 to 62.84, and AutoNPO pushes it to 63.15, raising the final performance ceiling while accelerating convergence.",
+            "score": 19,
+            "issue_id": 2391,
+            "pub_date": "2026-04-22",
+            "pub_date_card": {
+                "ru": "22 апреля",
+                "en": "April 22",
+                "zh": "4月22日"
+            },
+            "hash": "4da304463022820e",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.20733.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.13602",
+            "title": "Reward Hacking in the Era of Large Models: Mechanisms, Emergent Misalignment, Challenges",
+            "url": "https://huggingface.co/papers/2604.13602",
+            "abstract": "Abstract Reward hacking in aligned language models stems from optimizing expressive policies against compressed reward signals, leading to systematic misalignment behaviors that generalize beyond initial shortcuts.  AI-generated summary Reinforcement Learning from Human Feedback (RLHF) and related alignment paradigms have become central to steering large language models (LLMs) and multimodal large language models (MLLMs) toward human-preferred behaviors. However, these approaches introduce a systemic vulnerability: reward hacking, where models exploit imperfections in learned reward signals to maximize proxy objectives without fulfilling true task intent. As models scale and optimization intensifies, such exploitation manifests as verbosity bias, sycophancy, hallucinated justification, benchmark overfitting, and, in multimodal settings, perception--reasoning decoupling and evaluator manipulation. Recent evidence further suggests that seemingly benign shortcut behaviors can generalize into broader forms of misalignment, including deception and strategic gaming of oversight mechanisms. In this survey, we propose the Proxy Compression Hypothesis (PCH) as a unifying framework for understanding reward hacking. We formalize reward hacking as an emergent consequence of optimizing expressive policies against compressed reward representations of high-dimensional human objectives. Under this view, reward hacking arises from the interaction of objective compression, optimization amplification, and evaluator--policy co-adaptation. This perspective unifies empirical phenomena across RLHF, RLAIF, and RLVR regimes, and explains how local shortcut learning can generalize into broader forms of misalignment, including deception and strategic manipulation of oversight mechanisms. We further organize detection and mitigation strategies according to how they intervene on compression, amplification, or co-adaptation dynamics. By framing reward hacking as a structural instability of proxy-based alignment under scale, we highlight open challenges in scalable oversight, multimodal grounding, and agentic autonomy.",
+            "score": 14,
+            "issue_id": 2391,
+            "pub_date": "2026-04-15",
+            "pub_date_card": {
+                "ru": "15 апреля",
+                "en": "April 15",
+                "zh": "4月15日"
+            },
+            "hash": "0c035c97a8691501",
+            "github_url": "https://github.com/xhwang22/Awesome-Reward-Hacking",
+            "github_stars": 12,
+            "pdf_title_img": "assets/pdf/title_img/2604.13602.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.20570",
+            "title": "Exploring Spatial Intelligence from a Generative Perspective",
+            "url": "https://huggingface.co/papers/2604.20570",
+            "abstract": "Abstract Generative spatial intelligence benchmark evaluates and enhances 3D spatial constraint manipulation in image generation through real-world and synthetic datasets.  AI-generated summary Spatial intelligence is essential for multimodal large language models, yet current benchmarks largely assess it only from an understanding perspective. We ask whether modern generative or unified multimodal models also possess generative spatial intelligence (GSI), the ability to respect and manipulate 3D spatial constraints during image generation, and whether such capability can be measured or improved. We introduce GSI-Bench, the first benchmark designed to quantify GSI through spatially grounded image editing. It consists of two complementary components: GSI-Real, a high-quality real-world dataset built via a 3D-prior-guided generation and filtering pipeline, and GSI-Syn, a large-scale synthetic benchmark with controllable spatial operations and fully automated labeling. Together with a unified evaluation protocol, GSI-Bench enables scalable, model-agnostic assessment of spatial compliance and editing fidelity. Experiments show that fine-tuning unified multimodal models on GSI-Syn yields substantial gains on both synthetic and real tasks and, strikingly, also improves downstream spatial understanding. This provides the first clear evidence that generative training can tangibly strengthen spatial reasoning, establishing a new pathway for advancing spatial intelligence in multimodal models.",
+            "score": 10,
+            "issue_id": 2391,
+            "pub_date": "2026-04-22",
+            "pub_date_card": {
+                "ru": "22 апреля",
+                "en": "April 22",
+                "zh": "4月22日"
+            },
+            "hash": "456bf07ca632af78",
+            "github_url": "https://github.com/aim-uofa/GSI-Bench",
+            "github_stars": 12,
+            "pdf_title_img": "assets/pdf/title_img/2604.20570.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -57,7 +120,7 @@
             "url": "https://huggingface.co/papers/2604.14932",
             "abstract": "Abstract Spoken dialogue models face challenges in expressiveness despite end-to-end approaches, but a modality-aware adaptive post-training method using constrained preference updates and explicit anchoring improves both semantic quality and speech expressiveness.  AI-generated summary End-to-end spoken dialogue models have garnered significant attention because they offer a higher potential ceiling in expressiveness and perceptual ability than cascaded systems. However, the intelligence and expressiveness of current open-source spoken dialogue models often remain below expectations. Motivated by the success of online reinforcement learning(RL) in other domains, one might attempt to directly apply preference optimization to spoken dialogue models, yet this transfer is non-trivial. We analyze these obstacles from the perspectives of reward modeling and rollout sampling, focusing on how sparse preference supervision interacts with dense speech generation under shared-parameter updates. Based on the analysis, we propose a modality-aware adaptive post-training recipe that makes RL practical for spoken dialogue: it constrains preference updates to the semantic channel and improves acoustic behavior via explicit anchoring, while dynamically regulating their mixture from rollout statistics to avoid unreliable preference gradients. We evaluate the method across multiple spoken dialogue benchmarks and representative architectures, and observe consistent improvements in semantic quality and speech expressiveness.",
             "score": 9,
-            "issue_id": 2390,
+            "issue_id": 2391,
             "pub_date": "2026-04-16",
             "pub_date_card": {
                 "ru": "16 апреля",
@@ -73,54 +136,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2604.20570",
-            "title": "Exploring Spatial Intelligence from a Generative Perspective",
-            "url": "https://huggingface.co/papers/2604.20570",
-            "abstract": "Abstract Generative spatial intelligence benchmark evaluates and enhances 3D spatial constraint manipulation in image generation through real-world and synthetic datasets.  AI-generated summary Spatial intelligence is essential for multimodal large language models, yet current benchmarks largely assess it only from an understanding perspective. We ask whether modern generative or unified multimodal models also possess generative spatial intelligence (GSI), the ability to respect and manipulate 3D spatial constraints during image generation, and whether such capability can be measured or improved. We introduce GSI-Bench, the first benchmark designed to quantify GSI through spatially grounded image editing. It consists of two complementary components: GSI-Real, a high-quality real-world dataset built via a 3D-prior-guided generation and filtering pipeline, and GSI-Syn, a large-scale synthetic benchmark with controllable spatial operations and fully automated labeling. Together with a unified evaluation protocol, GSI-Bench enables scalable, model-agnostic assessment of spatial compliance and editing fidelity. Experiments show that fine-tuning unified multimodal models on GSI-Syn yields substantial gains on both synthetic and real tasks and, strikingly, also improves downstream spatial understanding. This provides the first clear evidence that generative training can tangibly strengthen spatial reasoning, establishing a new pathway for advancing spatial intelligence in multimodal models.",
-            "score": 7,
-            "issue_id": 2390,
-            "pub_date": "2026-04-22",
-            "pub_date_card": {
-                "ru": "22 апреля",
-                "en": "April 22",
-                "zh": "4月22日"
-            },
-            "hash": "456bf07ca632af78",
-            "github_url": "https://github.com/aim-uofa/GSI-Bench",
-            "github_stars": 6,
-            "pdf_title_img": "assets/pdf/title_img/2604.20570.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
-            "id": "https://huggingface.co/papers/2604.13602",
-            "title": "Reward Hacking in the Era of Large Models: Mechanisms, Emergent Misalignment, Challenges",
-            "url": "https://huggingface.co/papers/2604.13602",
-            "abstract": "Abstract Reward hacking in aligned language models stems from optimizing expressive policies against compressed reward signals, leading to systematic misalignment behaviors that generalize beyond initial shortcuts.  AI-generated summary Reinforcement Learning from Human Feedback (RLHF) and related alignment paradigms have become central to steering large language models (LLMs) and multimodal large language models (MLLMs) toward human-preferred behaviors. However, these approaches introduce a systemic vulnerability: reward hacking, where models exploit imperfections in learned reward signals to maximize proxy objectives without fulfilling true task intent. As models scale and optimization intensifies, such exploitation manifests as verbosity bias, sycophancy, hallucinated justification, benchmark overfitting, and, in multimodal settings, perception--reasoning decoupling and evaluator manipulation. Recent evidence further suggests that seemingly benign shortcut behaviors can generalize into broader forms of misalignment, including deception and strategic gaming of oversight mechanisms. In this survey, we propose the Proxy Compression Hypothesis (PCH) as a unifying framework for understanding reward hacking. We formalize reward hacking as an emergent consequence of optimizing expressive policies against compressed reward representations of high-dimensional human objectives. Under this view, reward hacking arises from the interaction of objective compression, optimization amplification, and evaluator--policy co-adaptation. This perspective unifies empirical phenomena across RLHF, RLAIF, and RLVR regimes, and explains how local shortcut learning can generalize into broader forms of misalignment, including deception and strategic manipulation of oversight mechanisms. We further organize detection and mitigation strategies according to how they intervene on compression, amplification, or co-adaptation dynamics. By framing reward hacking as a structural instability of proxy-based alignment under scale, we highlight open challenges in scalable oversight, multimodal grounding, and agentic autonomy.",
-            "score": 7,
-            "issue_id": 2390,
-            "pub_date": "2026-04-15",
-            "pub_date_card": {
-                "ru": "15 апреля",
-                "en": "April 15",
-                "zh": "4月15日"
-            },
-            "hash": "0c035c97a8691501",
-            "github_url": "https://github.com/xhwang22/Awesome-Reward-Hacking",
-            "github_stars": 8,
-            "pdf_title_img": "assets/pdf/title_img/2604.13602.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2604.20779",
             "title": "SWE-chat: Coding Agent Interactions From Real Users in the Wild",
             "url": "https://huggingface.co/papers/2604.20779",
             "abstract": "Abstract SWE-chat presents a large-scale dataset of real coding agent interactions that reveals significant inefficiencies and challenges in current AI-assisted development practices.  AI-generated summary AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actually use them and how much of their output is useful in practice. We present SWE-chat, the first large-scale dataset of real coding agent sessions collected from open-source developers in the wild. The dataset currently contains 6,000 sessions, comprising more than 63,000 user prompts and 355,000 agent tool calls. SWE-chat is a living dataset; our collection pipeline automatically and continually discovers and processes sessions from public repositories. Leveraging SWE-chat, we provide an initial empirical characterization of real-world coding agent usage and failure modes. We find that coding patterns are bimodal: in 41% of sessions, agents author virtually all committed code (\"vibe coding\"), while in 23%, humans write all code themselves. Despite rapidly improving capabilities, coding agents remain inefficient in natural settings. Just 44% of all agent-produced code survives into user commits, and agent-written code introduces more security vulnerabilities than code authored by humans. Furthermore, users push back against agent outputs -- through corrections, failure reports, and interruptions -- in 44% of all turns. By capturing complete interaction traces with human vs. agent code authorship attribution, SWE-chat provides an empirical foundation for moving beyond curated benchmarks towards an evidence-based understanding of how AI agents perform in real developer workflows.",
             "score": 3,
-            "issue_id": 2390,
+            "issue_id": 2391,
             "pub_date": "2026-04-22",
             "pub_date_card": {
                 "ru": "22 апреля",
@@ -136,33 +157,12 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2604.20817",
-            "title": "Convergent Evolution: How Different Language Models Learn Similar Number Representations",
-            "url": "https://huggingface.co/papers/2604.20817",
-            "abstract": "Abstract Transformers and other language models exhibit periodic numerical representations in their Fourier domains, with some models developing geometrically separable features for linear classification of numbers modulo T, though Fourier sparsity alone is insufficient for this separability.  AI-generated summary Language models trained on natural text learn to represent numbers using periodic features with dominant periods at T=2, 5, 10. In this paper, we identify a two-tiered hierarchy of these features: while Transformers, Linear RNNs, LSTMs, and classical word embeddings trained in different ways all learn features that have period-T spikes in the Fourier domain, only some learn geometrically separable features that can be used to linearly classify a number mod-T. To explain this incongruity, we prove that Fourier domain sparsity is necessary but not sufficient for mod-T geometric separability. Empirically, we investigate when model training yields geometrically separable features, finding that the data, architecture, optimizer, and tokenizer all play key roles. In particular, we identify two different routes through which models can acquire geometrically separable features: they can learn them from complementary co-occurrence signals in general language data, including text-number co-occurrence and cross-number interaction, or from multi-token (but not single-token) addition problems. Overall, our results highlight the phenomenon of convergent evolution in feature learning: A diverse range of models learn similar features from different training signals.",
-            "score": 1,
-            "issue_id": 2390,
-            "pub_date": "2026-04-22",
-            "pub_date_card": {
-                "ru": "22 апреля",
-                "en": "April 22",
-                "zh": "4月22日"
-            },
-            "hash": "7166de41881fe93e",
-            "github_url": "",
-            "github_stars": 0,
-            "pdf_title_img": "assets/pdf/title_img/2604.20817.jpg",
-            "data": {
-                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-            }
-        },
-        {
             "id": "https://huggingface.co/papers/2604.20246",
             "title": "Cortex 2.0: Grounding World Models in Real-World Industrial Deployment",
             "url": "https://huggingface.co/papers/2604.20246",
             "abstract": "Abstract Cortex 2.0 enables reliable long-horizon robotic manipulation through plan-and-act control that generates and evaluates future trajectories in visual latent space, outperforming reactive Vision-Language-Action models in complex industrial settings.  AI-generated summary Industrial robotic manipulation demands reliable long-horizon execution across embodiments, tasks, and changing object distributions. While Vision-Language-Action models have demonstrated strong generalization, they remain fundamentally reactive. By optimizing the next action given the current observation without evaluating potential futures, they are brittle to the compounding failure modes of long-horizon tasks. Cortex 2.0 shifts from reactive control to plan-and-act by generating candidate future trajectories in visual latent space, scoring them for expected success and efficiency, then committing only to the highest-scoring candidate. We evaluate Cortex 2.0 on a single-arm and dual-arm manipulation platform across four tasks of increasing complexity: pick and place, item and trash sorting, screw sorting, and shoebox unpacking. Cortex 2.0 consistently outperforms state-of-the-art Vision-Language-Action baselines, achieving the best results across all tasks. The system remains reliable in unstructured environments characterized by heavy clutter, frequent occlusions, and contact-rich manipulation, where reactive policies fail. These results demonstrate that world-model-based planning can operate reliably in complex industrial environments.",
-            "score": 1,
-            "issue_id": 2390,
+            "score": 2,
+            "issue_id": 2391,
             "pub_date": "2026-04-22",
             "pub_date_card": {
                 "ru": "22 апреля",
@@ -178,12 +178,54 @@
             }
         },
         {
+            "id": "https://huggingface.co/papers/2604.20817",
+            "title": "Convergent Evolution: How Different Language Models Learn Similar Number Representations",
+            "url": "https://huggingface.co/papers/2604.20817",
+            "abstract": "Abstract Transformers and other language models exhibit periodic numerical representations in their Fourier domains, with some models developing geometrically separable features for linear classification of numbers modulo T, though Fourier sparsity alone is insufficient for this separability.  AI-generated summary Language models trained on natural text learn to represent numbers using periodic features with dominant periods at T=2, 5, 10. In this paper, we identify a two-tiered hierarchy of these features: while Transformers, Linear RNNs, LSTMs, and classical word embeddings trained in different ways all learn features that have period-T spikes in the Fourier domain, only some learn geometrically separable features that can be used to linearly classify a number mod-T. To explain this incongruity, we prove that Fourier domain sparsity is necessary but not sufficient for mod-T geometric separability. Empirically, we investigate when model training yields geometrically separable features, finding that the data, architecture, optimizer, and tokenizer all play key roles. In particular, we identify two different routes through which models can acquire geometrically separable features: they can learn them from complementary co-occurrence signals in general language data, including text-number co-occurrence and cross-number interaction, or from multi-token (but not single-token) addition problems. Overall, our results highlight the phenomenon of convergent evolution in feature learning: A diverse range of models learn similar features from different training signals.",
+            "score": 1,
+            "issue_id": 2391,
+            "pub_date": "2026-04-22",
+            "pub_date_card": {
+                "ru": "22 апреля",
+                "en": "April 22",
+                "zh": "4月22日"
+            },
+            "hash": "7166de41881fe93e",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.20817.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2604.11610",
+            "title": "Self-Evolving LLM Memory Extraction Across Heterogeneous Tasks",
+            "url": "https://huggingface.co/papers/2604.11610",
+            "abstract": "Abstract LLM-based assistants require heterogeneous memory extraction capabilities, which are evaluated through the BEHEMOTH benchmark, with CluE offering improved performance through cluster-based prompt optimization.  AI-generated summary As LLM-based assistants become persistent and personalized, they must extract and retain useful information from past conversations as memory. However, the types of information worth remembering vary considerably across tasks. We formalize the heterogeneous memory extraction task and introduce BEHEMOTH, a benchmark that repurposes 18 existing datasets spanning personalization, problem-solving, and agentic tasks, using a downstream utility-driven metric for systematic evaluation. Our empirical analysis confirms that no single static extraction prompt dominates across all task categories, and that existing self-evolving prompt optimization frameworks, originally designed for homogeneous distributions, degrade when training tasks are heterogeneous. To address this, we propose CluE, a cluster-based self-evolving strategy that groups training examples into clusters by extraction scenarios, analyzes each cluster independently, and synthesizes cross-cluster insights to update the extraction prompt. Experiments on BEHEMOTH show that CluE generalizes effectively across heterogeneous tasks (+9.04\\% relative gain), consistently outperforming prior self-evolving frameworks.",
+            "score": 1,
+            "issue_id": 2391,
+            "pub_date": "2026-04-13",
+            "pub_date_card": {
+                "ru": "13 апреля",
+                "en": "April 13",
+                "zh": "4月13日"
+            },
+            "hash": "2c0206940c1feaeb",
+            "github_url": "https://github.com/ayyyq/heterogeneous-memory-extraction",
+            "github_stars": 1,
+            "pdf_title_img": "assets/pdf/title_img/2604.11610.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
             "id": "https://huggingface.co/papers/2604.19902",
             "title": "MMCORE: MultiModal COnnection with Representation Aligned Latent Embeddings",
             "url": "https://huggingface.co/papers/2604.19902",
             "abstract": "Abstract MMCORE is a unified framework for multimodal image generation and editing that uses a pre-trained Vision-Language Model to predict semantic visual embeddings for diffusion model conditioning, enabling efficient high-fidelity visual synthesis.  AI-generated summary We present MMCORE, a unified framework designed for multimodal image generation and editing. MMCORE leverages a pre-trained Vision-Language Model (VLM) to predict semantic visual embeddings via learnable query tokens, which subsequently serve as conditioning signals for a diffusion model. This streamlined design effectively transfers the rich understanding and reasoning capabilities of VLMs into the visual generation process. By obviating the need for deep fusion between autoregressive and diffusion models or training from scratch, MMCORE significantly reduces computational overhead while maintaining high-fidelity synthesis.   MMCORE seamlessly integrates text-to-image synthesis with interleaved image generation, demonstrating robust multimodal comprehension in complex scenarios such as spatial reasoning and visual grounding. Comprehensive evaluations indicate that MMCORE consistently outperforms state-of-the-art baselines across a broad spectrum of text-to-image and single/multi-image editing benchmarks.",
             "score": 0,
-            "issue_id": 2390,
+            "issue_id": 2391,
             "pub_date": "2026-04-21",
             "pub_date_card": {
                 "ru": "21 апреля",
@@ -204,7 +246,7 @@
             "url": "https://huggingface.co/papers/2604.19926",
             "abstract": "Abstract A multi-agent system for iterative HTML5 game generation that uses programmatic rewards, lineage memory, runtime validation, and mechanic-guided planning to enable interpretable version-to-version evolution.  AI-generated summary Large language models can generate plausible game code, but turning this capability into iterative creative improvement remains difficult. In practice, single-shot generation often produces brittle runtime behavior, weak accumulation of experience across versions, and creativity scores that are too subjective to serve as reliable optimization signals. A further limitation is that mechanics are frequently treated only as post-hoc descriptions, rather than as explicit objects that can be planned, tracked, preserved, and evaluated during generation.   This report presents CreativeGame, a multi-agent system for iterative HTML5 game generation that addresses these issues through four coupled ideas: a proxy reward centered on programmatic signals rather than pure LLM judgment; lineage-scoped memory for cross-version experience accumulation; runtime validation integrated into both repair and reward; and a mechanic-guided planning loop in which retrieved mechanic knowledge is converted into an explicit mechanic plan before code generation begins. The goal is not merely to produce a playable artifact in one step, but to support interpretable version-to-version evolution.   The current system contains 71 stored lineages, 88 saved nodes, and a 774-entry global mechanic archive, implemented in 6{,}181 lines of Python together with inspection and visualization tooling. The system is therefore substantial enough to support architectural analysis, reward inspection, and real lineage-level case studies rather than only prompt-level demos.   A real 4-generation lineage shows that mechanic-level innovation can emerge in later versions and can be inspected directly through version-to-version records. The central contribution is therefore not only game generation, but a concrete pipeline for observing progressive evolution through explicit mechanic change.",
             "score": 0,
-            "issue_id": 2390,
+            "issue_id": 2391,
             "pub_date": "2026-04-21",
             "pub_date_card": {
                 "ru": "21 апреля",
@@ -220,22 +262,22 @@
             }
         },
         {
-            "id": "https://huggingface.co/papers/2604.11610",
-            "title": "Self-Evolving LLM Memory Extraction Across Heterogeneous Tasks",
-            "url": "https://huggingface.co/papers/2604.11610",
-            "abstract": "Abstract LLM-based assistants require heterogeneous memory extraction capabilities, which are evaluated through the BEHEMOTH benchmark, with CluE offering improved performance through cluster-based prompt optimization.  AI-generated summary As LLM-based assistants become persistent and personalized, they must extract and retain useful information from past conversations as memory. However, the types of information worth remembering vary considerably across tasks. We formalize the heterogeneous memory extraction task and introduce BEHEMOTH, a benchmark that repurposes 18 existing datasets spanning personalization, problem-solving, and agentic tasks, using a downstream utility-driven metric for systematic evaluation. Our empirical analysis confirms that no single static extraction prompt dominates across all task categories, and that existing self-evolving prompt optimization frameworks, originally designed for homogeneous distributions, degrade when training tasks are heterogeneous. To address this, we propose CluE, a cluster-based self-evolving strategy that groups training examples into clusters by extraction scenarios, analyzes each cluster independently, and synthesizes cross-cluster insights to update the extraction prompt. Experiments on BEHEMOTH show that CluE generalizes effectively across heterogeneous tasks (+9.04\\% relative gain), consistently outperforming prior self-evolving frameworks.",
+            "id": "https://huggingface.co/papers/2604.16529",
+            "title": "Scaling Test-Time Compute for Agentic Coding",
+            "url": "https://huggingface.co/papers/2604.16529",
+            "abstract": "Abstract Test-time scaling framework for agentic coding uses compact trajectory representations and recursive voting/parallel-distill-refine methods to improve long-horizon task performance.  AI-generated summary Test-time scaling has become a powerful way to improve large language models. However, existing methods are best suited to short, bounded outputs that can be directly compared, ranked or refined. Long-horizon coding agents violate this premise: each attempt produces an extended trajectory of actions, observations, errors, and partial progress taken by the agent. In this setting, the main challenge is no longer generating more attempts, but representing prior experience in a form that can be effectively selected from and reused. We propose a test-time scaling framework for agentic coding based on compact representations of rollout trajectories. Our framework converts each rollout into a structured summary that preserves its salient hypotheses, progress, and failure modes while discarding low-signal trace details. This representation enables two complementary forms of inference-time scaling. For parallel scaling, we introduce Recursive Tournament Voting (RTV), which recursively narrows a population of rollout summaries through small-group comparisons. For sequential scaling, we adapt Parallel-Distill-Refine (PDR) to the agentic setting by conditioning new rollouts on summaries distilled from prior attempts. Our method consistently improves the performance of frontier coding agents across SWE-Bench Verified and Terminal-Bench v2.0. For example, by using our method Claude-4.5-Opus improves from 70.9% to 77.6% on SWE-Bench Verified (mini-SWE-agent) and 46.9% to 59.1% on Terminal-Bench v2.0 (Terminus 1). Our results suggest that test-time scaling for long-horizon agents is fundamentally a problem of representation, selection, and reuse.",
             "score": 0,
-            "issue_id": 2390,
-            "pub_date": "2026-04-13",
+            "issue_id": 2391,
+            "pub_date": "2026-04-16",
             "pub_date_card": {
-                "ru": "13 апреля",
-                "en": "April 13",
-                "zh": "4月13日"
+                "ru": "16 апреля",
+                "en": "April 16",
+                "zh": "4月16日"
             },
-            "hash": "2c0206940c1feaeb",
-            "github_url": "https://github.com/ayyyq/heterogeneous-memory-extraction",
-            "github_stars": 1,
-            "pdf_title_img": "assets/pdf/title_img/2604.11610.jpg",
+            "hash": "307d9a429f4c09b1",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2604.16529.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
