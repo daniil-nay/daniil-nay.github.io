@@ -1,0 +1,35 @@
+[29.04.2026 23:49] Read previous papers.
+[29.04.2026 23:49] Generating top page (month).
+[29.04.2026 23:49] Writing top page (month).
+[30.04.2026 02:11] Read previous papers.
+[30.04.2026 02:11] Get feed.
+[30.04.2026 02:11] Extract page data from URL. URL: https://huggingface.co/papers/2604.26904
+[30.04.2026 02:11] Updating GitHub stars.
+[30.04.2026 02:11] Obtaining deleted papers (sometimes HF Daily Papers move some articles from today to past days).
+[30.04.2026 02:11] Downloading and parsing papers (pdf, html). Total: 1.
+[30.04.2026 02:11] Downloading and parsing paper https://huggingface.co/papers/2604.26904.
+[30.04.2026 02:11] Downloading paper 2604.26904 from https://arxiv.org/pdf/2604.26904v1...
+[30.04.2026 02:11] Extracting affiliations from text.
+[30.04.2026 02:11] Gigachat request. Model: GigaChat. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"6 2 0 2 9 2 ] . [ 1 4 0 9 6 2 . 4 0 6 2 : r ClawGym: Scalable Framework for Building Effective Claw Agents Fei Bai1*, Huatong Song1*, Shuang Sun1*, Daixuan Cheng1, Yike Yang1, Chuan Hao2, Renyuan Li2, Feng Chang2, Yuan Wei2, Ran Tao2, Bryan Dai2, Jian Yang3, Wayne Xin Zhao1 1Gaoling School of Artificial Intelligence, Renmin University of China, 2IQuest Research, 3Beihang University *Equal contributors alphabetically ordered Corresponding Author Email: {feibai,songhuatong123,sunshuang}@ruc.edu.cn, batmanfly@gmail.com "
+[30.04.2026 02:11] Failed to download and parse paper https://huggingface.co/papers/2604.26904: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[30.04.2026 02:11] Enriching papers with extra data.
+[30.04.2026 02:11] ********************************************************************************
+[30.04.2026 02:11] Abstract 0. Abstract ClawGym presents a scalable framework for developing Claw-style personal agents with synthetic training data, verified workspaces, and benchmark evaluation.  AI-generated summary Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. H...
+[30.04.2026 02:11] Read previous papers.
+[30.04.2026 02:11] Generating reviews via LLM API.
+[30.04.2026 02:11] Querying the API.
+[30.04.2026 02:11] Gigachat request. Model: GigaChat. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract ClawGym presents a scalable framework for developing Claw-style personal agents with synthetic training data, verified workspaces, and benchmark evaluation.  AI-generated summary Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially one for synthesizing verifiable training data and integrating it with agent training and diagnostic evaluation. To address this challenge, we present ClawGym, a scalable framework that supports the full lifecycle of Claw-style personal agent development. Concretely, we construct ClawGym-SynData, a diverse dataset of 13.5K filtered tasks synthesized from persona-driven intents and skill-grounded operations, paired with realistic mock workspaces and hybrid verification mechanisms. We then train a family of capable Claw-style models, termed ClawGym-Agents, through supervised fine-tuning on black-box rollout trajectories, and further explore reinforcement learning via a lightweight pipeline that parallelizes rollouts across per-task sandboxes.To support reliable evaluation, we further construct ClawGym-Bench, a benchmark of 200 instances calibrated through automated filtering and human-LLM review. Relevant resources will be soon released at https://github.com/ClawGym.
+[30.04.2026 02:11] Error getting data: 401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+[30.04.2026 02:11] Renaming data file.
+[30.04.2026 02:11] Renaming previous data. hf_papers.json to ./d/2026-04-30.json
+[30.04.2026 02:11] Saving new data file.
+[30.04.2026 02:11] Generating page.
+[30.04.2026 02:11] Renaming previous page.
+[30.04.2026 02:11] Renaming previous data. index.html to ./d/2026-04-30.html
+[30.04.2026 02:11] Writing result.
+[30.04.2026 02:11] Renaming log file.
+[30.04.2026 02:11] Renaming previous data. log.txt to ./logs/2026-04-30_last_log.txt
