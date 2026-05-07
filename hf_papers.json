@@ -4,9 +4,9 @@
         "en": "May 7",
         "zh": "5月7日"
     },
-    "time_utc": "2026-05-07 21:49",
+    "time_utc": "2026-05-07 22:55",
     "weekday": 3,
-    "issue_id": 2594,
+    "issue_id": 2595,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
         {
@@ -15,7 +15,7 @@
             "url": "https://huggingface.co/papers/2605.03849",
             "abstract": "Abstract Stream-R1 improves video diffusion model distillation by adaptively weighting supervision based on reliability and perplexity, enhancing visual quality, motion quality, and text alignment without additional computational overhead.  AI-generated summary Distillation-based acceleration has become foundational for making autoregressive streaming video diffusion models practical, with distribution matching distillation (DMD) as the de facto choice. Existing methods, however, train the student to match the teacher's output indiscriminately, treating every rollout, frame, and pixel as equally reliable supervision. We argue that this caps distilled quality, since it overlooks two complementary axes of variance in DMD supervision: Inter-Reliability across student rollouts whose supervision varies in reliability, and Intra-Perplexity across spatial regions and temporal frames that contribute unequally to where quality can still be improved. The objective thus conflates two questions under a uniform weight: whether to learn from each rollout, and where to concentrate optimization within it. To address this, we propose Stream-R1, a Reliability-Perplexity Aware Reward Distillation framework that adaptively reweights the distillation objective at both rollout and spatiotemporal-element levels through a single shared reward-guided mechanism. At the Inter-Reliability level, Stream-R1 rescales each rollout's loss by an exponential of a pretrained video reward score, so that rollouts with reliable supervision dominate optimization. At the Intra-Perplexity level, it back-propagates the same reward model to extract per-pixel gradient saliency, which is factored into spatial and temporal weights that concentrate optimization pressure on regions and frames where refinement yields the largest expected gain. An adaptive balancing mechanism prevents any single quality axis from dominating across visual quality, motion quality, and text alignment. Stream-R1 attains consistent improvements on all three dimensions over distillation baselines on standard streaming video generation benchmarks, without architectural modification or additional inference cost.",
             "score": 108,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-05",
             "pub_date_card": {
                 "ru": "5 мая",
@@ -24,7 +24,7 @@
             },
             "hash": "54703b738c889d9c",
             "github_url": "https://github.com/FrameX-AI/Stream-R1",
-            "github_stars": 0,
+            "github_stars": 20,
             "pdf_title_img": "assets/pdf/title_img/2605.03849.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -36,7 +36,7 @@
             "url": "https://huggingface.co/papers/2605.04461",
             "abstract": "Abstract Stream-T1 enables efficient test-time video generation through streaming synthesis with temporal guidance, achieving improved consistency and quality over existing diffusion-based methods.  AI-generated summary While Test-Time Scaling (TTS) offers a promising direction to enhance video generation without the surging costs of training, current test-time video generation methods based on diffusion models suffer from exorbitant candidate exploration costs and lack temporal guidance. To address these structural bottlenecks, we propose shifting the focus to streaming video generation. We identify that its chunk-level synthesis and few denoising steps are intrinsically suited for TTS, significantly lowering computational overhead while enabling fine-grained temporal control. Driven by this insight, we introduced Stream-T1, a pioneering comprehensive TTS framework exclusively tailored for streaming video generation. Specifically, Stream-T1 is composed of three units: (1) Stream -Scaled Noise Propagation, which actively refines the initial latent noise of the generating chunk using historically proven, high-quality previous chunk noise, effectively establishes temporal dependency and utilizing the historical Gaussian prior to guide the current generation; (2) Stream -Scaled Reward Pruning, which comprehensively evaluates generated candidates to strike an optimal balance between local spatial aesthetics and global temporal coherence by integrating immediate short-term assessments with sliding-window-based long-term evaluations; (3) Stream-Scaled Memory Sinking, which dynamically routes the context evicted from KV-cache into distinct updating pathways guided by the reward feedback, ensuring that previously generated visual information effectively anchors and guides the subsequent video stream. Evaluated on both 5s and 30s comprehensive video benchmarks, Stream-T1 demonstrates profound superiority, significantly improving temporal consistency, motion smoothness, and frame-level visual quality.",
             "score": 93,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-06",
             "pub_date_card": {
                 "ru": "6 мая",
@@ -45,7 +45,7 @@
             },
             "hash": "ae37cfd589edcf85",
             "github_url": "https://github.com/FrameX-AI/Stream-T1",
-            "github_stars": 0,
+            "github_stars": 20,
             "pdf_title_img": "assets/pdf/title_img/2605.04461.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -56,8 +56,8 @@
             "title": "RLDX-1 Technical Report",
             "url": "https://huggingface.co/papers/2605.03269",
             "abstract": "Abstract RLDX-1 is a general-purpose robotic policy for dexterous manipulation that integrates heterogeneous modalities through a Multi-Stream Action Transformer architecture, demonstrating superior performance in complex real-world tasks compared to existing vision-language-action models.  AI-generated summary While Vision-Language-Action models (VLAs) have shown remarkable progress toward human-like generalist robotic policies through the versatile intelligence (i.e. broad scene understanding and language-conditioned generalization) inherited from pre-trained Vision-Language Models, they still struggle with complex real-world tasks requiring broader functional capabilities (e.g. motion awareness, memory-aware decision making, and physical sensing). To address this, we introduce RLDX-1, a general-purpose robotic policy for dexterous manipulation built on the Multi-Stream Action Transformer (MSAT), an architecture that unifies these capabilities by integrating heterogeneous modalities through modality-specific streams with cross-modal joint self-attention. RLDX-1 further combines this architecture with system-level design choices, including synthesizing training data for rare manipulation scenarios, learning procedures specialized for human-like manipulation, and inference optimizations for real-time deployment. Through empirical evaluation, we show that RLDX-1 consistently outperforms recent frontier VLAs (e.g. π_{0.5} and GR00T N1.6) across both simulation benchmarks and real-world tasks that require broad functional capabilities beyond general versatility. In particular, RLDX-1 shows superiority in ALLEX humanoid tasks by achieving success rates of 86.8% while π_{0.5} and GR00T N1.6 achieve around 40%, highlighting the ability of RLDX-1 to control a high-DoF humanoid robot under diverse functional demands. Together, these results position RLDX-1 as a promising step toward reliable VLAs for complex, contact-rich, and dynamic real-world dexterous manipulation.",
-            "score": 84,
-            "issue_id": 2594,
+            "score": 85,
+            "issue_id": 2595,
             "pub_date": "2026-05-05",
             "pub_date_card": {
                 "ru": "5 мая",
@@ -66,7 +66,7 @@
             },
             "hash": "904eb1c1fa0b489a",
             "github_url": "https://github.com/RLWRLD/RLDX-1",
-            "github_stars": 0,
+            "github_stars": 77,
             "pdf_title_img": "assets/pdf/title_img/2605.03269.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -78,7 +78,7 @@
             "url": "https://huggingface.co/papers/2605.05185",
             "abstract": "Abstract OpenSearch-VL presents an open-source framework for training advanced multimodal search agents using reinforcement learning, featuring specialized data curation, diverse tool environments, and a novel training algorithm that improves performance across multiple benchmarks.  AI-generated summary Deep search has become a crucial capability for frontier multimodal agents, enabling models to solve complex questions through active search, evidence verification, and multi-step reasoning. Despite rapid progress, top-tier multimodal search agents remain difficult to reproduce, largely due to the absence of open high-quality training data, transparent trajectory synthesis pipelines, or detailed training recipes. To this end, we introduce OpenSearch-VL, a fully open-source recipe for training frontier multimodal deep search agents with agentic reinforcement learning. First, we curated a dedicated pipeline to construct high-quality training data through Wikipedia path sampling, fuzzy entity rewriting, and source-anchor visual grounding, which jointly reduce shortcuts and one-step retrieval collapse. Based on this pipeline, we curate two training datasets, SearchVL-SFT-36k for SFT and SearchVL-RL-8k for RL. Besides, we design a diverse tool environment that unifies text search, image search, OCR, cropping, sharpening, super-resolution, and perspective correction, enabling agents to combine active perception with external knowledge acquisition. Finally, we propose a multi-turn fatal-aware GRPO training algorithm that handles cascading tool failures by masking post-failure tokens while preserving useful pre-failure reasoning through one-sided advantage clamping. Built on this recipe, OpenSearch-VL delivers substantial performance gains, with over 10-point average improvements across seven benchmarks, and achieves results comparable to proprietary commercial models on several tasks. We will release all data, code, and models to support open research on multimodal deep search agents.",
             "score": 80,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-06",
             "pub_date_card": {
                 "ru": "6 мая",
@@ -87,7 +87,7 @@
             },
             "hash": "b2e798d16c3874ec",
             "github_url": "https://github.com/shawn0728/OpenSearch-VL",
-            "github_stars": 0,
+            "github_stars": 68,
             "pdf_title_img": "assets/pdf/title_img/2605.05185.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -99,7 +99,7 @@
             "url": "https://huggingface.co/papers/2604.28196",
             "abstract": "Abstract HERMES++ combines 3D scene understanding and future geometry prediction through BEV representation, LLM-enhanced queries, temporal linking, and joint geometric optimization for autonomous driving applications.  AI-generated summary Driving world models serve as a pivotal technology for autonomous driving by simulating environmental dynamics. However, existing approaches predominantly focus on future scene generation, often overlooking comprehensive 3D scene understanding. Conversely, while Large Language Models (LLMs) demonstrate impressive reasoning capabilities, they lack the capacity to predict future geometric evolution, creating a significant disparity between semantic interpretation and physical simulation. To bridge this gap, we propose HERMES++, a unified driving world model that integrates 3D scene understanding and future geometry prediction within a single framework. Our approach addresses the distinct requirements of these tasks through synergistic designs. First, a BEV representation consolidates multi-view spatial information into a structure compatible with LLMs. Second, we introduce LLM-enhanced world queries to facilitate knowledge transfer from the understanding branch. Third, a Current-to-Future Link is designed to bridge the temporal gap, conditioning geometric evolution on semantic context. Finally, to enforce structural integrity, we employ a Joint Geometric Optimization strategy that integrates explicit geometric constraints with implicit latent regularization to align internal representations with geometry-aware priors. Extensive evaluations on multiple benchmarks validate the effectiveness of our method. HERMES++ achieves strong performance, outperforming specialist approaches in both future point cloud prediction and 3D scene understanding tasks. The model and code will be publicly released at https://github.com/H-EmbodVis/HERMESV2.",
             "score": 68,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-04-30",
             "pub_date_card": {
                 "ru": "30 апреля",
@@ -108,7 +108,7 @@
             },
             "hash": "cb4ad7c7749d2733",
             "github_url": "https://github.com/H-EmbodVis/HERMESV2",
-            "github_stars": 0,
+            "github_stars": 40,
             "pdf_title_img": "assets/pdf/title_img/2604.28196.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -120,7 +120,7 @@
             "url": "https://huggingface.co/papers/2605.05163",
             "abstract": "Abstract PhysForge generates interactive 3D assets by combining visual-language modeling for physical planning with a physics-grounded diffusion model that synthesizes detailed geometry and kinematic parameters through a novel injection mechanism.  AI-generated summary Synthesizing physics-grounded 3D assets is a critical bottleneck for interactive virtual worlds and embodied AI. Existing methods predominantly focus on static geometry, overlooking the functional properties essential for interaction. We propose that interactive asset generation must be rooted in functional logic and hierarchical physics. To bridge this gap, we introduce PhysForge, a decoupled two-stage framework supported by PhysDB, a large-scale dataset of 150,000 assets with four-tier physical annotations. First, a VLM acts as a \"physical architect\" to plan a \"Hierarchical Physical Blueprint\" defining material, functional, and kinematic constraints. Second, a physics-grounded diffusion model realizes this blueprint by synthesizing high-fidelity geometry alongside precise kinematic parameters via a novel KineVoxel Injection (KVI) mechanism. Experiments demonstrate that PhysForge produces functionally plausible, simulation-ready assets, providing a robust data engine for interactive 3D content and embodied agents.",
             "score": 30,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-06",
             "pub_date_card": {
                 "ru": "6 мая",
@@ -129,7 +129,7 @@
             },
             "hash": "868b8e112e78ab9a",
             "github_url": "https://github.com/HKU-MMLab/PhysForge",
-            "github_stars": 0,
+            "github_stars": 43,
             "pdf_title_img": "assets/pdf/title_img/2605.05163.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -141,7 +141,7 @@
             "url": "https://huggingface.co/papers/2605.04018",
             "abstract": "Abstract Researchers introduce BRIGHT-Pro, an expanded expert-annotated benchmark for reasoning-intensive retrieval, and RTriever-Synth, an aspect-decomposed synthetic corpus, to improve retriever performance through agentic search evaluation and LoRA fine-tuning.  AI-generated summary Reasoning-intensive retrieval aims to surface evidence that supports downstream reasoning rather than merely matching topical similarity. This capability is increasingly important for agentic search systems, where retrievers must provide complementary evidence across iterative search and synthesis. However, existing work remains limited on both evaluation and training: benchmarks such as BRIGHT provide narrow gold sets and evaluate retrievers in isolation, while synthetic training corpora often optimize single-passage relevance rather than evidence portfolio construction. We introduce BRIGHT-Pro, an expert-annotated benchmark that expands each query with multi-aspect gold evidence and evaluates retrievers under both static and agentic search protocols. We further construct RTriever-Synth, an aspect-decomposed synthetic corpus that generates complementary positives and positive-conditioned hard negatives, and use it to LoRA fine-tune RTriever-4B from Qwen3-Embedding-4B. Experiments across lexical, general-purpose, and reasoning-intensive retrievers show that aspect-aware and agentic evaluation expose behaviors hidden by standard metrics, while RTriever-4B substantially improves over its base model.",
             "score": 27,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-05",
             "pub_date_card": {
                 "ru": "5 мая",
@@ -150,7 +150,7 @@
             },
             "hash": "4ccd5ba06a28a41b",
             "github_url": "https://github.com/yale-nlp/Bright-Pro",
-            "github_stars": 0,
+            "github_stars": 11,
             "pdf_title_img": "assets/pdf/title_img/2605.04018.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -162,7 +162,7 @@
             "url": "https://huggingface.co/papers/2605.05204",
             "abstract": "Abstract A new training approach called D-OPSD enables efficient supervised fine-tuning for diffusion models by leveraging on-policy self-distillation with text and multimodal features while preserving few-step inference capabilities.  AI-generated summary The landscape of high-performance image generation models is currently shifting from the inefficient multi-step ones to the efficient few-step counterparts (e.g, Z-Image-Turbo and FLUX.2-klein). However, these models present significant challenges for directly continuous supervised fine-tuning. For example, applying the commonly used fine-tuning technique would compromises their inherent few-step inference capability. To address this, we propose D-OPSD, a novel training paradigm for step-distilled diffusion models that enables on-policy learning during supervised fine-tuning. We first find that the modern diffusion model where the LLM/VLM serves as the encoder can inherit its encoder's in-context capabilities. This enables us to make the training as an on-policy self-distillation process. Specifically, during training, we make the model acts as both the teacher and the student with different contexts, where the student is conditioned only on the text feature, while the teacher is conditioned on the multimodal feature of both the text prompt and the target image. Training minimizes the two predicted distributions over the student's own roll-outs. By optimized on the model's own trajectory and under it's own supervision, D-OPSD enables the model to learn new concept, style, etc. without sacrificing the original few-step capacity.",
             "score": 19,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-06",
             "pub_date_card": {
                 "ru": "6 мая",
@@ -171,7 +171,7 @@
             },
             "hash": "1d982e70c71cbdcc",
             "github_url": "https://github.com/vvvvvjdy/D-OPSD",
-            "github_stars": 0,
+            "github_stars": 24,
             "pdf_title_img": "assets/pdf/title_img/2605.05204.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -183,7 +183,7 @@
             "url": "https://huggingface.co/papers/2605.04569",
             "abstract": "Abstract In-context sparse attention framework enables efficient video editing with reduced computational costs while maintaining visual quality.  AI-generated summary Video editing has evolved toward In-Context Learning (ICL) paradigms, yet the resulting quadratic attention costs create a critical computational bottleneck. In this work, we propose In-context Sparse Attention (ISA), the first near-lossless empirical sparse framework tailored for ICL video editing. Our design is grounded in two key insights: first, context tokens exhibit significantly lower saliency than source tokens; second, we theoretically prove and empirically validate that Query sharpness correlates with approximation error. Motivated by these findings, ISA implements an efficient pre-selection strategy to prune redundant context, followed by a dynamic query grouping mechanism that routes high-error queries to full attention and low-error ones to a computationally efficient 0-th order Taylor sparse attention. Furthermore, we build \\texttt{LIVEditor} , a novel lightning video editing model via ISA and a proposed video-editing data pipeline that curated a 1.7M high-quality dataset. Extensive experiments demonstrate that LIVEditor achieves a sim60% reduction in attention-module latency while surpassing state-of-the-art methods across EditVerseBench, IVE-Bench, and VIE-Bench, delivering near-lossless acceleration without compromising visual fidelity.",
             "score": 11,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-06",
             "pub_date_card": {
                 "ru": "6 мая",
@@ -204,7 +204,7 @@
             "url": "https://huggingface.co/papers/2605.04128",
             "abstract": "Abstract JoyAI-Image integrates a spatially enhanced MLLM with MMDiT to achieve unified visual understanding, text-to-image generation, and instruction-guided image editing with enhanced spatial intelligence.  AI-generated summary We present JoyAI-Image, a unified multimodal foundation model for visual understanding, text-to-image generation, and instruction-guided image editing. JoyAI-Image couples a spatially enhanced Multimodal Large Language Model (MLLM) with a Multimodal Diffusion Transformer (MMDiT), allowing perception and generation to interact through a shared multimodal interface. Around this architecture, we build a scalable training recipe that combines unified instruction tuning, long-text rendering supervision, spatially grounded data, and both general and spatial editing signals. This design gives the model broad multimodal capability while strengthening geometry-aware reasoning and controllable visual synthesis. Experiments across understanding, generation, long-text rendering, and editing benchmarks show that JoyAI-Image achieves state-of-the-art or highly competitive performance. More importantly, the bidirectional loop between enhanced understanding, controllable spatial editing, and novel-view-assisted reasoning enables the model to move beyond general visual competence toward stronger spatial intelligence. These results suggest a promising path for unified visual models in downstream applications such as vision-language-action systems and world models.",
             "score": 8,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-05",
             "pub_date_card": {
                 "ru": "5 мая",
@@ -213,7 +213,7 @@
             },
             "hash": "57b9f896aa5d217e",
             "github_url": "https://github.com/jd-opensource/JoyAI-Image",
-            "github_stars": 0,
+            "github_stars": 2111,
             "pdf_title_img": "assets/pdf/title_img/2605.04128.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -225,7 +225,7 @@
             "url": "https://huggingface.co/papers/2604.27393",
             "abstract": "Abstract MiniCPM-o 4.5 enables real-time full-duplex multimodal interaction through Omni-Flow, a unified streaming framework that aligns inputs and outputs temporally for simultaneous perception and response.  AI-generated summary Recent progress in multimodal large language models (MLLMs) has brought AI capabilities from static offline data processing to real-time streaming interaction, yet they still remain far from human-level multimodal interaction. The key bottlenecks are no longer modality coverage or latency alone, but the interaction paradigm itself. First, perception and response are still separated into alternating phases, preventing models from incorporating new inputs for timely adjustment during generation. Second, most current models remain reactive, responding only to explicit user requests instead of acting proactively in the evolving multimodal environment. We present MiniCPM-o 4.5, our latest effort towards human-like multimodal interaction, which mitigates these gaps by real-time full-duplex omni-modal interaction. It can see, listen, and speak simultaneously in real-time, while also exhibiting proactive behaviors such as issuing reminders or comments based on its continuous understanding of the live scene. The key technique behind MiniCPM-o 4.5 is Omni-Flow, a unified streaming framework that aligns omni-modal inputs and outputs along a shared temporal axis. This formulation converts conventional turn-based interaction into a full-duplex, time-aligned process, enabling simultaneous perception and response and allowing proactive behavior to arise within the same framework. With a total of 9B parameters, MiniCPM-o 4.5 approaches Gemini 2.5 Flash in vision-language capabilities, delivering state-of-the-art open-source performance at its scale. It also surpasses Qwen3-Omni-30B-A3B in omni-modal understanding and delivers better speech generation, with significantly higher computation efficiency. Driven by its efficient architecture design and inference optimization, the model can perform real-time full-duplex omni-modal interaction on edge devices with less than 12GB RAM cost.",
             "score": 5,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-04-30",
             "pub_date_card": {
                 "ru": "30 апреля",
@@ -234,7 +234,7 @@
             },
             "hash": "12b44aa2967f3abb",
             "github_url": "https://github.com/OpenBMB/MiniCPM-o",
-            "github_stars": 0,
+            "github_stars": 24514,
             "pdf_title_img": "assets/pdf/title_img/2604.27393.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -246,7 +246,7 @@
             "url": "https://huggingface.co/papers/2605.03848",
             "abstract": "Abstract Three methods for multi-view proficiency estimation—SkillFormer, PATS, and ProfVLM—achieve state-of-the-art accuracy on Ego-Exo4D with reduced parameters and training epochs while enabling interpretable feedback generation.  AI-generated summary Estimating how well a person performs an action, rather than which action is performed, is central to coaching, rehabilitation, and talent identification. This task is challenging because proficiency is encoded in subtle differences in timing, balance, body mechanics, and execution, often distributed across multiple views and short temporal events. We discuss three recent contributions to multi-view proficiency estimation on Ego-Exo4D. SkillFormer introduces a parameter-efficient discriminative architecture for selective multi-view fusion; PATS improves temporal sampling by preserving locally dense excerpts of fundamental movements; and ProfVLM reformulates proficiency estimation as conditional language generation, producing both a proficiency label and expert-style feedback through a gated cross-view projector and a compact language backbone. Together, these methods achieve state-of-the-art accuracy on Ego-Exo4D with up to 20x fewer trainable parameters and up to 3x fewer training epochs than video-transformer baselines, while moving from closed-set classification toward interpretable feedback generation. These results highlight a shift toward efficient, multi-view systems that combine selective fusion, proficiency-aware sampling, and actionable generative feedback.",
             "score": 3,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-05",
             "pub_date_card": {
                 "ru": "5 мая",
@@ -267,7 +267,7 @@
             "url": "https://huggingface.co/papers/2605.00380",
             "abstract": "Abstract ResRL improves LLM reasoning by decoupling semantic distributions between positive and negative responses through negative sample projection, maintaining diversity while outperforming existing methods on multiple benchmarks.  AI-generated summary Reinforcement Learning with Verifiable Rewards (RLVR) enhances reasoning of Large Language Models (LLMs) but usually exhibits limited generation diversity due to the over-incentivization of positive rewards. Although methods like Negative Sample Reinforcement (NSR) mitigate this issue by upweighting penalty from negative samples, they may suppress the semantic distributions shared between positive and negative responses. To boost reasoning ability without losing diversity, this paper proposes negative sample projection Residual Reinforcement Learning (ResRL) that decouples similar semantic distributions among positive and negative responses. We theoretically link Lazy Likelihood Displacement (LLD) to negative-positive head-gradient interference and derive a single-forward proxy that upper-bounds representation alignment to guide conservative advantage reweighting. ResRL then projects negative-token hidden representations onto an SVD-based low-rank positive subspace and uses projection residuals to modulate negative gradients, improving reasoning while preserving diversity and outperforming strong baselines on average across twelve benchmarks spanning Mathematics, Code, Agent Tasks, and Function Calling. Notably, ResRL surpasses NSR on mathematical reasoning by 9.4\\% in Avg@16 and 7.0\\% in Pass@128. Code is available at https://github.com/1229095296/ResRL.git.",
             "score": 3,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-01",
             "pub_date_card": {
                 "ru": "1 мая",
@@ -276,7 +276,7 @@
             },
             "hash": "e8b34f82bb1ea8c2",
             "github_url": "https://github.com/1229095296/ResRL",
-            "github_stars": 0,
+            "github_stars": 8,
             "pdf_title_img": "assets/pdf/title_img/2605.00380.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -288,7 +288,7 @@
             "url": "https://huggingface.co/papers/2605.04637",
             "abstract": "Abstract A comprehensive evaluation framework called SWE-WebDev Bench is presented to assess AI-powered application development platforms across multiple dimensions including requirement understanding, architectural decision-making, code quality, and production readiness.  AI-generated summary The emergence of \"vibe coding\" platforms, where users describe applications in natural language and AI agents autonomously generate full-stack software, has created a need for rigorous evaluation beyond code-level benchmarks. In order to assess them as virtual software development agencies on understanding business requirements, making architectural decisions, writing production code, handling iterative modifications, and maintaining business readiness, we introduce SWE-WebDev Bench, a 68-metric evaluation framework spanning 25 primary and 43 diagnostic metrics across seven groups, organized along three dimensions: Interaction Mode (App Creation Request (ACR) vs. App Modification Request (AMR)), Agency Angle (Product Manager (PM), Engineering, Ops), and Complexity Tier (T4 multi-role SaaS, T5 AI-native).   Our evaluation (six platforms, three domains, 18 evaluation cells) reveals four recurring shortcomings in the current generation of AI app builders: (1) A specification bottleneck, where platforms compress rich business requirements into oversimplified technical plans, (2) A pervasive frontend-backend decoupling, where visually polished UIs mask absent or broken backend infrastructure, (3) A steep production-readiness cliff, where no platform scores above 60% on engineering quality and post-generation human effort varies substantially across platforms and (4) Widespread security and infrastructure failures, with no platform exceeding 65% Security Score against a 90% target and concurrency handling as low as 6%. These observations are descriptive of our sample and require larger-scale replication to establish generality. We release SWE-WebDev Bench as a community benchmark to enable such replication and help platform builders identify and address these gaps.   Code and benchmark resources are available at: https://github.com/snowmountainAi/webdevbench and https://webdevbench.com/.",
             "score": 2,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-06",
             "pub_date_card": {
                 "ru": "6 мая",
@@ -297,7 +297,7 @@
             },
             "hash": "281ab2f9b4491a8a",
             "github_url": "https://github.com/snowmountainAi/webdevbench",
-            "github_stars": 0,
+            "github_stars": 8,
             "pdf_title_img": "assets/pdf/title_img/2605.04637.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -309,7 +309,7 @@
             "url": "https://huggingface.co/papers/2605.03395",
             "abstract": "Abstract A large-scale multi-task learning framework for AI-generated music predicts both popularity and aesthetic quality using frozen audio embeddings from a self-supervised music understanding model, demonstrating strong generalization across different generative architectures.  AI-generated summary Music popularity prediction has attracted growing research interest, with relevance to artists, platforms, and recommendation systems. However, the explosive rise of AI-generated music platforms has created an entirely new and largely unexplored landscape, where a surge of songs is produced and consumed daily without the traditional markers of artist reputation or label backing. Key, yet unexplored in this pursuit is aesthetic quality. We propose APEX, the first large-scale multi-task learning framework for AI-generated music, trained on over 211k songs (10k hours of audio) from Suno and Udio, that jointly predicts engagement-based popularity signals - streams and likes scores - alongside five perceptual aesthetic quality dimensions from frozen audio embeddings extracted from MERT, a self-supervised music understanding model. Aesthetic quality and popularity capture complementary aspects of music that together prove valuable: in an out-of-distribution evaluation on the Music Arena dataset, comprising pairwise human preference battles across eleven generative music systems unseen during training, including aesthetic features consistently improves preference prediction, demonstrating strong generalisation of the learned representations across generative architectures.",
             "score": 2,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-05",
             "pub_date_card": {
                 "ru": "5 мая",
@@ -318,7 +318,7 @@
             },
             "hash": "022cfc8de9e44c7c",
             "github_url": "https://github.com/AMAAI-Lab/apex",
-            "github_stars": 0,
+            "github_stars": 5,
             "pdf_title_img": "assets/pdf/title_img/2605.03395.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -330,7 +330,7 @@
             "url": "https://huggingface.co/papers/2604.24575",
             "abstract": "Abstract Pretrained diffusion models can be adapted for semantic and open-vocabulary segmentation tasks through latent space conditioning and text-guided alignment, achieving state-of-the-art performance across diverse domains.  AI-generated summary Diffusion models are primarily trained for image synthesis, yet their denoising trajectories encode rich, spatially aligned visual priors. In this paper, we demonstrate that these priors can be utilized for text-conditioned semantic and open-vocabulary segmentation, and this approach can be generalized to various downstream tasks to make a general-purpose diffusion segmentation framework. Concretely, we introduce DiGSeg (Diffusion Models as a Generalist Segmentation Learner), which repurposes a pretrained diffusion model into a unified segmentation framework. Our approach encodes the input image and ground-truth mask into the latent space and concatenates them as conditioning signals for the diffusion U-Net. A parallel CLIP-aligned text pathway injects language features across multiple scales, enabling the model to align textual queries with evolving visual representations. This design transforms an off-the-shelf diffusion backbone into a universal interface that produces structured segmentation masks conditioned on both appearance and arbitrary text prompts. Extensive experiments demonstrate state-of-the-art performance on standard semantic segmentation benchmarks, as well as strong open-vocabulary generalization and cross-domain transfer to medical, remote sensing, and agricultural scenarios-without domain-specific architectural customization. These results indicate that modern diffusion backbones can serve as generalist segmentation learners rather than pure generators, narrowing the gap between visual generation and visual understanding.",
             "score": 2,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-04-27",
             "pub_date_card": {
                 "ru": "27 апреля",
@@ -351,7 +351,7 @@
             "url": "https://huggingface.co/papers/2604.20441",
             "abstract": "Abstract A domain-specific audit framework for medical research agent skills demonstrates reliable assessment consistency compared to expert review, supporting governance of specialized AI capabilities in healthcare applications.  AI-generated summary Background: Agent skills are increasingly deployed as modular, reusable capability units in AI agent systems. Medical research agent skills require safeguards beyond general-purpose evaluation, including scientific integrity, methodological validity, reproducibility, and boundary safety. This study developed and preliminarily evaluated a domain-specific audit framework for medical research agent skills, with a focus on reliability against expert review. Methods: We developed MedSkillAudit (skill-auditor@1.0), a layered framework assessing skill release readiness before deployment. We evaluated 75 skills across five medical research categories (15 per category). Two experts independently assigned a quality score (0-100), an ordinal release disposition (Production Ready / Limited Release / Beta Only / Reject), and a high-risk failure flag. System-expert agreement was quantified using ICC(2,1) and linearly weighted Cohen's kappa, benchmarked against the human inter-rater baseline. Results: The mean consensus quality score was 72.4 (SD = 13.0); 57.3% of skills fell below the Limited Release threshold. MedSkillAudit achieved ICC(2,1) = 0.449 (95% CI: 0.250-0.610), exceeding the human inter-rater ICC of 0.300. System-consensus score divergence (SD = 9.5) was smaller than inter-expert divergence (SD = 12.4), with no directional bias (Wilcoxon p = 0.613). Protocol Design showed the strongest category-level agreement (ICC = 0.551); Academic Writing showed a negative ICC (-0.567), reflecting a structural rubric-expert mismatch. Conclusions: Domain-specific pre-deployment audit may provide a practical foundation for governing medical research agent skills, complementing general-purpose quality checks with structured audit workflows tailored to scientific use cases.",
             "score": 2,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-04-22",
             "pub_date_card": {
                 "ru": "22 апреля",
@@ -360,7 +360,7 @@
             },
             "hash": "ac396a63dc65de6e",
             "github_url": "https://github.com/aipoch/medical-research-skills",
-            "github_stars": 0,
+            "github_stars": 536,
             "pdf_title_img": "assets/pdf/title_img/2604.20441.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -372,7 +372,7 @@
             "url": "https://huggingface.co/papers/2605.05166",
             "abstract": "Abstract First-token confidence (phi_first) derived from initial token distribution matches or exceeds semantic self-consistency in detecting hallucinations while being more computationally efficient.  AI-generated summary Self-consistency detects hallucinations by generating multiple sampled answers to a question and measuring agreement, but this requires repeated decoding and can be sensitive to lexical variation. Semantic self-consistency improves this by clustering sampled answers by meaning using natural language inference, but it adds both sampling cost and external inference overhead. We show that first-token confidence, phi_first, computed from the normalized entropy of the top-K logits at the first content-bearing answer token of a single greedy decode, matches or modestly exceeds semantic self-consistency on closed-book short-answer factual question answering. Across three 7-8B instruction-tuned models and two benchmarks, phi_first achieves a mean AUROC of 0.820, compared with 0.793 for semantic agreement and 0.791 for standard surface-form self-consistency. A subsumption test shows that phi_first is moderately to strongly correlated with semantic agreement, and combining the two signals yields only a small AUROC improvement over phi_first alone. These results suggest that much of the uncertainty information captured by multi-sample agreement is already available in the model's initial token distribution. We argue that phi_first should be reported as a default low-cost baseline before invoking sampling-based uncertainty estimation.",
             "score": 1,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-06",
             "pub_date_card": {
                 "ru": "6 мая",
@@ -393,7 +393,7 @@
             "url": "https://huggingface.co/papers/2605.03314",
             "abstract": "Abstract Side-by-Side Interleaved Reasoning enables controlled disclosure timing in autoregressive models, improving accuracy and efficiency through interleaved private reasoning and delayed content release.  AI-generated summary In single-stream autoregressive interfaces, the same tokens both update the model state and constitute an irreversible public commitment. This coupling creates a silence tax: additional deliberation postpones the first task-relevant content, while naive early streaming risks premature commitments that bias subsequent generations. We introduce Side-by-Side (SxS) Interleaved Reasoning, which makes disclosure timing a controllable decision within standard autoregressive generation. SxS interleaves partial disclosures with continued private reasoning in the same context, but releases content only when it is supported by the reasoning so far. To learn such pacing without incentivizing filler, we construct entailment-aligned interleaved trajectories by matching answer prefixes to supporting reasoning prefixes, then train with SFT to acquire the dual-action semantics and RL to recover reasoning performance under the new format. Across two Qwen3 architectures/scales (MoE Qwen3-30B-A3B, dense Qwen3-4B) and both in-domain (AIME25) and out-of-domain (GPQA-Diamond) benchmarks, SxS improves accuracy--content-latency Pareto trade-offs under token-level proxies such as inter-update waiting.",
             "score": 1,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-06",
             "pub_date_card": {
                 "ru": "6 мая",
@@ -414,7 +414,7 @@
             "url": "https://huggingface.co/papers/2605.02910",
             "abstract": "Abstract Large language models demonstrate limited creative problem-solving abilities when required to repurpose objects based on affordance reasoning, indicating a gap in current AI capabilities for novel tool usage.  AI-generated summary Recent advances in large language models have led to strong performance on reasoning and environment-interaction tasks, yet their ability for creative problem-solving remains underexplored. We study this capability through the lens of creative tool use, where a model repurposes available objects by reasoning about their affordances and attributes rather than relying on canonical usage. As a first step, we introduce CreativityBench, a benchmark for evaluating affordance-based creativity in LLMs. To this end, we build a large-scale affordance knowledge base (KB) with 4K entities and 150K+ affordance annotations, explicitly linking objects, parts, attributes, and actionable uses. Building on this KB, we generate 14K grounded tasks that require identifying non-obvious yet physically plausible solutions under constraints. Evaluations across 10 state-of-the-art LLMs, including closed and open-source models, show that models can often select a plausible object, but fail to identify the correct parts, their affordances, and the underlying physical mechanism needed to solve the task, leading to a significant drop in performance. Furthermore, improvements from model scaling quickly saturate, strong general reasoning does not reliably translate to creative affordance discovery, and common inference-time strategies such as Chain-of-Thought yield limited gains. These results suggest that creative tool use remains a major challenge for current models, and that CreativityBench provides a useful testbed for studying this missing dimension of intelligence, with potential implications for planning and reasoning modules in future agents.",
             "score": 1,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-06",
             "pub_date_card": {
                 "ru": "6 мая",
@@ -435,7 +435,7 @@
             "url": "https://huggingface.co/papers/2604.25788",
             "abstract": "Abstract KinDER is a benchmark for physical reasoning in robotics that includes procedurally generated environments and baselines spanning multiple learning paradigms to address kinematic and dynamic constraint challenges.  AI-generated summary Robotic systems that interact with the physical world must reason about kinematic and dynamic constraints imposed by their own embodiment, their environment, and the task at hand. We introduce KinDER, a benchmark for Kinematic and Dynamic Embodied Reasoning that targets physical reasoning challenges arising in robot learning and planning. KinDER comprises 25 procedurally generated environments, a Gymnasium-compatible Python library with parameterized skills and demonstrations, and a standardized evaluation suite with 13 implemented baselines spanning task and motion planning, imitation learning, reinforcement learning, and foundation-model-based approaches. The environments are designed to isolate five core physical reasoning challenges: basic spatial relations, nonprehensile multi-object manipulation, tool use, combinatorial geometric constraints, and dynamic constraints, disentangled from perception, language understanding, and application-specific complexity. Empirical evaluation shows that existing methods struggle to solve many of the environments, indicating substantial gaps in current approaches to physical reasoning. We additionally include real-to-sim-to-real experiments on a mobile manipulator to assess the correspondence between simulation and real-world physical interaction. KinDER is fully open-sourced and intended to enable systematic comparison across diverse paradigms for advancing physical reasoning in robotics. Website and code: https://prpl-group.com/kinder-site/",
             "score": 1,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-04",
             "pub_date_card": {
                 "ru": "4 мая",
@@ -444,7 +444,7 @@
             },
             "hash": "a9c6545e09d72dcb",
             "github_url": "https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden",
-            "github_stars": 0,
+            "github_stars": 22,
             "pdf_title_img": "assets/pdf/title_img/2604.25788.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
@@ -456,7 +456,7 @@
             "url": "https://huggingface.co/papers/2605.01234",
             "abstract": "Abstract A novel reconstruction pipeline for table tennis gameplay from monocular broadcast videos achieves high-fidelity 3D ball trajectories and spin estimation through a learned lifting network that operates on unsegmented 2D tracks before time segmentation.  AI-generated summary We present TT4D, a large-scale, high-fidelity table tennis dataset. It provides 140+ hours of reconstructed singles and doubles gameplay from monocular broadcast videos, featuring multimodal annotations like high-quality camera calibrations, precise 3D ball positions, ball spin, time segmentation, and 3D human meshes over time. This rich data provides a new foundation for virtual replay, in-depth player analysis, and robot learning. The dataset's combination of scale and precision is achieved through a novel reconstruction pipeline. Prior methods first partition a game sequence into individual shot segments based on the 2D ball track, and only then attempt reconstruction. However, 2D-based time segmentation collapses under occlusion and varied camera viewpoints, preventing reliable reconstruction. We invert this paradigm by first lifting the entire unsegmented 2D ball track to 3D through a learned lifting network. This 3D trajectory then allows us to reliably perform time segmentation. The learned lifting network also infers the ball's spin, handles unreliable ball detections, and successfully reconstructs the ball trajectory in cases of high occlusion. This lift-first design is necessary, as our pipeline is the only method capable of reconstructing table tennis gameplay from general-view broadcast monocular videos. We demonstrate the dataset's fidelity through two downstream tasks: estimating the racket's pose \\& velocity at impact, and training a generative model of competitive rallies.",
             "score": 1,
-            "issue_id": 2594,
+            "issue_id": 2595,
             "pub_date": "2026-05-02",
             "pub_date_card": {
                 "ru": "2 мая",
