@@ -4,18 +4,81 @@
         "en": "May 7",
         "zh": "5月7日"
     },
-    "time_utc": "2026-05-07 02:08",
+    "time_utc": "2026-05-07 05:55",
     "weekday": 3,
-    "issue_id": 2586,
+    "issue_id": 2587,
     "home_page_url": "https://huggingface.co/papers",
     "papers": [
+        {
+            "id": "https://huggingface.co/papers/2605.03849",
+            "title": "Stream-R1: Reliability-Perplexity Aware Reward Distillation for Streaming Video Generation",
+            "url": "https://huggingface.co/papers/2605.03849",
+            "abstract": "Abstract Stream-R1 improves video diffusion model distillation by adaptively weighting supervision based on reliability and perplexity, enhancing visual quality, motion quality, and text alignment without additional computational overhead.  AI-generated summary Distillation-based acceleration has become foundational for making autoregressive streaming video diffusion models practical, with distribution matching distillation (DMD) as the de facto choice. Existing methods, however, train the student to match the teacher's output indiscriminately, treating every rollout, frame, and pixel as equally reliable supervision. We argue that this caps distilled quality, since it overlooks two complementary axes of variance in DMD supervision: Inter-Reliability across student rollouts whose supervision varies in reliability, and Intra-Perplexity across spatial regions and temporal frames that contribute unequally to where quality can still be improved. The objective thus conflates two questions under a uniform weight: whether to learn from each rollout, and where to concentrate optimization within it. To address this, we propose Stream-R1, a Reliability-Perplexity Aware Reward Distillation framework that adaptively reweights the distillation objective at both rollout and spatiotemporal-element levels through a single shared reward-guided mechanism. At the Inter-Reliability level, Stream-R1 rescales each rollout's loss by an exponential of a pretrained video reward score, so that rollouts with reliable supervision dominate optimization. At the Intra-Perplexity level, it back-propagates the same reward model to extract per-pixel gradient saliency, which is factored into spatial and temporal weights that concentrate optimization pressure on regions and frames where refinement yields the largest expected gain. An adaptive balancing mechanism prevents any single quality axis from dominating across visual quality, motion quality, and text alignment. Stream-R1 attains consistent improvements on all three dimensions over distillation baselines on standard streaming video generation benchmarks, without architectural modification or additional inference cost.",
+            "score": 61,
+            "issue_id": 2587,
+            "pub_date": "2026-05-05",
+            "pub_date_card": {
+                "ru": "5 мая",
+                "en": "May 5",
+                "zh": "5月5日"
+            },
+            "hash": "54703b738c889d9c",
+            "github_url": "https://github.com/FrameX-AI/Stream-R1",
+            "github_stars": 15,
+            "pdf_title_img": "assets/pdf/title_img/2605.03849.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.03269",
+            "title": "RLDX-1 Technical Report",
+            "url": "https://huggingface.co/papers/2605.03269",
+            "abstract": "Abstract RLDX-1 is a general-purpose robotic policy for dexterous manipulation that integrates heterogeneous modalities through a Multi-Stream Action Transformer architecture, demonstrating superior performance in complex real-world tasks compared to existing vision-language-action models.  AI-generated summary While Vision-Language-Action models (VLAs) have shown remarkable progress toward human-like generalist robotic policies through the versatile intelligence (i.e. broad scene understanding and language-conditioned generalization) inherited from pre-trained Vision-Language Models, they still struggle with complex real-world tasks requiring broader functional capabilities (e.g. motion awareness, memory-aware decision making, and physical sensing). To address this, we introduce RLDX-1, a general-purpose robotic policy for dexterous manipulation built on the Multi-Stream Action Transformer (MSAT), an architecture that unifies these capabilities by integrating heterogeneous modalities through modality-specific streams with cross-modal joint self-attention. RLDX-1 further combines this architecture with system-level design choices, including synthesizing training data for rare manipulation scenarios, learning procedures specialized for human-like manipulation, and inference optimizations for real-time deployment. Through empirical evaluation, we show that RLDX-1 consistently outperforms recent frontier VLAs (e.g. π_{0.5} and GR00T N1.6) across both simulation benchmarks and real-world tasks that require broad functional capabilities beyond general versatility. In particular, RLDX-1 shows superiority in ALLEX humanoid tasks by achieving success rates of 86.8% while π_{0.5} and GR00T N1.6 achieve around 40%, highlighting the ability of RLDX-1 to control a high-DoF humanoid robot under diverse functional demands. Together, these results position RLDX-1 as a promising step toward reliable VLAs for complex, contact-rich, and dynamic real-world dexterous manipulation.",
+            "score": 57,
+            "issue_id": 2587,
+            "pub_date": "2026-05-05",
+            "pub_date_card": {
+                "ru": "5 мая",
+                "en": "May 5",
+                "zh": "5月5日"
+            },
+            "hash": "904eb1c1fa0b489a",
+            "github_url": "https://github.com/RLWRLD/RLDX-1",
+            "github_stars": 44,
+            "pdf_title_img": "assets/pdf/title_img/2605.03269.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.04461",
+            "title": "Stream-T1: Test-Time Scaling for Streaming Video Generation",
+            "url": "https://huggingface.co/papers/2605.04461",
+            "abstract": "Abstract Stream-T1 enables efficient test-time video generation through streaming synthesis with temporal guidance, achieving improved consistency and quality over existing diffusion-based methods.  AI-generated summary While Test-Time Scaling (TTS) offers a promising direction to enhance video generation without the surging costs of training, current test-time video generation methods based on diffusion models suffer from exorbitant candidate exploration costs and lack temporal guidance. To address these structural bottlenecks, we propose shifting the focus to streaming video generation. We identify that its chunk-level synthesis and few denoising steps are intrinsically suited for TTS, significantly lowering computational overhead while enabling fine-grained temporal control. Driven by this insight, we introduced Stream-T1, a pioneering comprehensive TTS framework exclusively tailored for streaming video generation. Specifically, Stream-T1 is composed of three units: (1) Stream -Scaled Noise Propagation, which actively refines the initial latent noise of the generating chunk using historically proven, high-quality previous chunk noise, effectively establishes temporal dependency and utilizing the historical Gaussian prior to guide the current generation; (2) Stream -Scaled Reward Pruning, which comprehensively evaluates generated candidates to strike an optimal balance between local spatial aesthetics and global temporal coherence by integrating immediate short-term assessments with sliding-window-based long-term evaluations; (3) Stream-Scaled Memory Sinking, which dynamically routes the context evicted from KV-cache into distinct updating pathways guided by the reward feedback, ensuring that previously generated visual information effectively anchors and guides the subsequent video stream. Evaluated on both 5s and 30s comprehensive video benchmarks, Stream-T1 demonstrates profound superiority, significantly improving temporal consistency, motion smoothness, and frame-level visual quality.",
+            "score": 54,
+            "issue_id": 2587,
+            "pub_date": "2026-05-06",
+            "pub_date_card": {
+                "ru": "6 мая",
+                "en": "May 6",
+                "zh": "5月6日"
+            },
+            "hash": "ae37cfd589edcf85",
+            "github_url": "https://github.com/FrameX-AI/Stream-T1",
+            "github_stars": 15,
+            "pdf_title_img": "assets/pdf/title_img/2605.04461.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
         {
             "id": "https://huggingface.co/papers/2604.28196",
             "title": "HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation",
             "url": "https://huggingface.co/papers/2604.28196",
             "abstract": "Abstract HERMES++ combines 3D scene understanding and future geometry prediction through BEV representation, LLM-enhanced queries, temporal linking, and joint geometric optimization for autonomous driving applications.  AI-generated summary Driving world models serve as a pivotal technology for autonomous driving by simulating environmental dynamics. However, existing approaches predominantly focus on future scene generation, often overlooking comprehensive 3D scene understanding. Conversely, while Large Language Models (LLMs) demonstrate impressive reasoning capabilities, they lack the capacity to predict future geometric evolution, creating a significant disparity between semantic interpretation and physical simulation. To bridge this gap, we propose HERMES++, a unified driving world model that integrates 3D scene understanding and future geometry prediction within a single framework. Our approach addresses the distinct requirements of these tasks through synergistic designs. First, a BEV representation consolidates multi-view spatial information into a structure compatible with LLMs. Second, we introduce LLM-enhanced world queries to facilitate knowledge transfer from the understanding branch. Third, a Current-to-Future Link is designed to bridge the temporal gap, conditioning geometric evolution on semantic context. Finally, to enforce structural integrity, we employ a Joint Geometric Optimization strategy that integrates explicit geometric constraints with implicit latent regularization to align internal representations with geometry-aware priors. Extensive evaluations on multiple benchmarks validate the effectiveness of our method. HERMES++ achieves strong performance, outperforming specialist approaches in both future point cloud prediction and 3D scene understanding tasks. The model and code will be publicly released at https://github.com/H-EmbodVis/HERMESV2.",
-            "score": 7,
-            "issue_id": 2586,
+            "score": 41,
+            "issue_id": 2587,
             "pub_date": "2026-04-30",
             "pub_date_card": {
                 "ru": "30 апреля",
@@ -24,8 +87,155 @@
             },
             "hash": "cb4ad7c7749d2733",
             "github_url": "https://github.com/H-EmbodVis/HERMESV2",
-            "github_stars": 35,
-            "pdf_title_img": "img/title_stub.png",
+            "github_stars": 36,
+            "pdf_title_img": "assets/pdf/title_img/2604.28196.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.05204",
+            "title": "D-OPSD: On-Policy Self-Distillation for Continuously Tuning Step-Distilled Diffusion Models",
+            "url": "https://huggingface.co/papers/2605.05204",
+            "abstract": "Abstract A new training approach called D-OPSD enables efficient supervised fine-tuning for diffusion models by leveraging on-policy self-distillation with text and multimodal features while preserving few-step inference capabilities.  AI-generated summary The landscape of high-performance image generation models is currently shifting from the inefficient multi-step ones to the efficient few-step counterparts (e.g, Z-Image-Turbo and FLUX.2-klein). However, these models present significant challenges for directly continuous supervised fine-tuning. For example, applying the commonly used fine-tuning technique would compromises their inherent few-step inference capability. To address this, we propose D-OPSD, a novel training paradigm for step-distilled diffusion models that enables on-policy learning during supervised fine-tuning. We first find that the modern diffusion model where the LLM/VLM serves as the encoder can inherit its encoder's in-context capabilities. This enables us to make the training as an on-policy self-distillation process. Specifically, during training, we make the model acts as both the teacher and the student with different contexts, where the student is conditioned only on the text feature, while the teacher is conditioned on the multimodal feature of both the text prompt and the target image. Training minimizes the two predicted distributions over the student's own roll-outs. By optimized on the model's own trajectory and under it's own supervision, D-OPSD enables the model to learn new concept, style, etc. without sacrificing the original few-step capacity.",
+            "score": 13,
+            "issue_id": 2587,
+            "pub_date": "2026-05-06",
+            "pub_date_card": {
+                "ru": "6 мая",
+                "en": "May 6",
+                "zh": "5月6日"
+            },
+            "hash": "1d982e70c71cbdcc",
+            "github_url": "https://github.com/vvvvvjdy/D-OPSD",
+            "github_stars": 10,
+            "pdf_title_img": "assets/pdf/title_img/2605.05204.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.04018",
+            "title": "Rethinking Reasoning-Intensive Retrieval: Evaluating and Advancing Retrievers in Agentic Search Systems",
+            "url": "https://huggingface.co/papers/2605.04018",
+            "abstract": "Abstract Researchers introduce BRIGHT-Pro, an expanded expert-annotated benchmark for reasoning-intensive retrieval, and RTriever-Synth, an aspect-decomposed synthetic corpus, to improve retriever performance through agentic search evaluation and LoRA fine-tuning.  AI-generated summary Reasoning-intensive retrieval aims to surface evidence that supports downstream reasoning rather than merely matching topical similarity. This capability is increasingly important for agentic search systems, where retrievers must provide complementary evidence across iterative search and synthesis. However, existing work remains limited on both evaluation and training: benchmarks such as BRIGHT provide narrow gold sets and evaluate retrievers in isolation, while synthetic training corpora often optimize single-passage relevance rather than evidence portfolio construction. We introduce BRIGHT-Pro, an expert-annotated benchmark that expands each query with multi-aspect gold evidence and evaluates retrievers under both static and agentic search protocols. We further construct RTriever-Synth, an aspect-decomposed synthetic corpus that generates complementary positives and positive-conditioned hard negatives, and use it to LoRA fine-tune RTriever-4B from Qwen3-Embedding-4B. Experiments across lexical, general-purpose, and reasoning-intensive retrievers show that aspect-aware and agentic evaluation expose behaviors hidden by standard metrics, while RTriever-4B substantially improves over its base model.",
+            "score": 12,
+            "issue_id": 2587,
+            "pub_date": "2026-05-05",
+            "pub_date_card": {
+                "ru": "5 мая",
+                "en": "May 5",
+                "zh": "5月5日"
+            },
+            "hash": "4ccd5ba06a28a41b",
+            "github_url": "https://github.com/yale-nlp/Bright-Pro",
+            "github_stars": 6,
+            "pdf_title_img": "assets/pdf/title_img/2605.04018.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.05163",
+            "title": "PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World",
+            "url": "https://huggingface.co/papers/2605.05163",
+            "abstract": "Abstract PhysForge generates interactive 3D assets by combining visual-language modeling for physical planning with a physics-grounded diffusion model that synthesizes detailed geometry and kinematic parameters through a novel injection mechanism.  AI-generated summary Synthesizing physics-grounded 3D assets is a critical bottleneck for interactive virtual worlds and embodied AI. Existing methods predominantly focus on static geometry, overlooking the functional properties essential for interaction. We propose that interactive asset generation must be rooted in functional logic and hierarchical physics. To bridge this gap, we introduce PhysForge, a decoupled two-stage framework supported by PhysDB, a large-scale dataset of 150,000 assets with four-tier physical annotations. First, a VLM acts as a \"physical architect\" to plan a \"Hierarchical Physical Blueprint\" defining material, functional, and kinematic constraints. Second, a physics-grounded diffusion model realizes this blueprint by synthesizing high-fidelity geometry alongside precise kinematic parameters via a novel KineVoxel Injection (KVI) mechanism. Experiments demonstrate that PhysForge produces functionally plausible, simulation-ready assets, providing a robust data engine for interactive 3D content and embodied agents.",
+            "score": 11,
+            "issue_id": 2587,
+            "pub_date": "2026-05-06",
+            "pub_date_card": {
+                "ru": "6 мая",
+                "en": "May 6",
+                "zh": "5月6日"
+            },
+            "hash": "868b8e112e78ab9a",
+            "github_url": "https://github.com/HKU-MMLab/PhysForge",
+            "github_stars": 20,
+            "pdf_title_img": "assets/pdf/title_img/2605.05163.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.05185",
+            "title": "OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents",
+            "url": "https://huggingface.co/papers/2605.05185",
+            "abstract": "Abstract OpenSearch-VL presents an open-source framework for training advanced multimodal search agents using reinforcement learning, featuring specialized data curation, diverse tool environments, and a novel training algorithm that improves performance across multiple benchmarks.  AI-generated summary Deep search has become a crucial capability for frontier multimodal agents, enabling models to solve complex questions through active search, evidence verification, and multi-step reasoning. Despite rapid progress, top-tier multimodal search agents remain difficult to reproduce, largely due to the absence of open high-quality training data, transparent trajectory synthesis pipelines, or detailed training recipes. To this end, we introduce OpenSearch-VL, a fully open-source recipe for training frontier multimodal deep search agents with agentic reinforcement learning. First, we curated a dedicated pipeline to construct high-quality training data through Wikipedia path sampling, fuzzy entity rewriting, and source-anchor visual grounding, which jointly reduce shortcuts and one-step retrieval collapse. Based on this pipeline, we curate two training datasets, SearchVL-SFT-36k for SFT and SearchVL-RL-8k for RL. Besides, we design a diverse tool environment that unifies text search, image search, OCR, cropping, sharpening, super-resolution, and perspective correction, enabling agents to combine active perception with external knowledge acquisition. Finally, we propose a multi-turn fatal-aware GRPO training algorithm that handles cascading tool failures by masking post-failure tokens while preserving useful pre-failure reasoning through one-sided advantage clamping. Built on this recipe, OpenSearch-VL delivers substantial performance gains, with over 10-point average improvements across seven benchmarks, and achieves results comparable to proprietary commercial models on several tasks. We will release all data, code, and models to support open research on multimodal deep search agents.",
+            "score": 6,
+            "issue_id": 2587,
+            "pub_date": "2026-05-06",
+            "pub_date_card": {
+                "ru": "6 мая",
+                "en": "May 6",
+                "zh": "5月6日"
+            },
+            "hash": "b2e798d16c3874ec",
+            "github_url": "https://github.com/shawn0728/OpenSearch-VL",
+            "github_stars": 9,
+            "pdf_title_img": "assets/pdf/title_img/2605.05185.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.04128",
+            "title": "Awaking Spatial Intelligence in Unified Multimodal Understanding and Generation",
+            "url": "https://huggingface.co/papers/2605.04128",
+            "abstract": "Abstract JoyAI-Image integrates a spatially enhanced MLLM with MMDiT to achieve unified visual understanding, text-to-image generation, and instruction-guided image editing with enhanced spatial intelligence.  AI-generated summary We present JoyAI-Image, a unified multimodal foundation model for visual understanding, text-to-image generation, and instruction-guided image editing. JoyAI-Image couples a spatially enhanced Multimodal Large Language Model (MLLM) with a Multimodal Diffusion Transformer (MMDiT), allowing perception and generation to interact through a shared multimodal interface. Around this architecture, we build a scalable training recipe that combines unified instruction tuning, long-text rendering supervision, spatially grounded data, and both general and spatial editing signals. This design gives the model broad multimodal capability while strengthening geometry-aware reasoning and controllable visual synthesis. Experiments across understanding, generation, long-text rendering, and editing benchmarks show that JoyAI-Image achieves state-of-the-art or highly competitive performance. More importantly, the bidirectional loop between enhanced understanding, controllable spatial editing, and novel-view-assisted reasoning enables the model to move beyond general visual competence toward stronger spatial intelligence. These results suggest a promising path for unified visual models in downstream applications such as vision-language-action systems and world models.",
+            "score": 4,
+            "issue_id": 2587,
+            "pub_date": "2026-05-05",
+            "pub_date_card": {
+                "ru": "5 мая",
+                "en": "May 5",
+                "zh": "5月5日"
+            },
+            "hash": "57b9f896aa5d217e",
+            "github_url": "https://github.com/jd-opensource/JoyAI-Image",
+            "github_stars": 2102,
+            "pdf_title_img": "assets/pdf/title_img/2605.04128.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.04569",
+            "title": "Lightning Unified Video Editing via In-Context Sparse Attention",
+            "url": "https://huggingface.co/papers/2605.04569",
+            "abstract": "Abstract In-context sparse attention framework enables efficient video editing with reduced computational costs while maintaining visual quality.  AI-generated summary Video editing has evolved toward In-Context Learning (ICL) paradigms, yet the resulting quadratic attention costs create a critical computational bottleneck. In this work, we propose In-context Sparse Attention (ISA), the first near-lossless empirical sparse framework tailored for ICL video editing. Our design is grounded in two key insights: first, context tokens exhibit significantly lower saliency than source tokens; second, we theoretically prove and empirically validate that Query sharpness correlates with approximation error. Motivated by these findings, ISA implements an efficient pre-selection strategy to prune redundant context, followed by a dynamic query grouping mechanism that routes high-error queries to full attention and low-error ones to a computationally efficient 0-th order Taylor sparse attention. Furthermore, we build \\texttt{LIVEditor} , a novel lightning video editing model via ISA and a proposed video-editing data pipeline that curated a 1.7M high-quality dataset. Extensive experiments demonstrate that LIVEditor achieves a sim60% reduction in attention-module latency while surpassing state-of-the-art methods across EditVerseBench, IVE-Bench, and VIE-Bench, delivering near-lossless acceleration without compromising visual fidelity.",
+            "score": 1,
+            "issue_id": 2587,
+            "pub_date": "2026-05-06",
+            "pub_date_card": {
+                "ru": "6 мая",
+                "en": "May 6",
+                "zh": "5月6日"
+            },
+            "hash": "ac2d883b3fc40eff",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2605.04569.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.03395",
+            "title": "APEX: Large-scale Multi-task Aesthetic-Informed Popularity Prediction for AI-Generated Music",
+            "url": "https://huggingface.co/papers/2605.03395",
+            "abstract": "Abstract A large-scale multi-task learning framework for AI-generated music predicts both popularity and aesthetic quality using frozen audio embeddings from a self-supervised music understanding model, demonstrating strong generalization across different generative architectures.  AI-generated summary Music popularity prediction has attracted growing research interest, with relevance to artists, platforms, and recommendation systems. However, the explosive rise of AI-generated music platforms has created an entirely new and largely unexplored landscape, where a surge of songs is produced and consumed daily without the traditional markers of artist reputation or label backing. Key, yet unexplored in this pursuit is aesthetic quality. We propose APEX, the first large-scale multi-task learning framework for AI-generated music, trained on over 211k songs (10k hours of audio) from Suno and Udio, that jointly predicts engagement-based popularity signals - streams and likes scores - alongside five perceptual aesthetic quality dimensions from frozen audio embeddings extracted from MERT, a self-supervised music understanding model. Aesthetic quality and popularity capture complementary aspects of music that together prove valuable: in an out-of-distribution evaluation on the Music Arena dataset, comprising pairwise human preference battles across eleven generative music systems unseen during training, including aesthetic features consistently improves preference prediction, demonstrating strong generalisation of the learned representations across generative architectures.",
+            "score": 1,
+            "issue_id": 2587,
+            "pub_date": "2026-05-05",
+            "pub_date_card": {
+                "ru": "5 мая",
+                "en": "May 5",
+                "zh": "5月5日"
+            },
+            "hash": "022cfc8de9e44c7c",
+            "github_url": "https://github.com/AMAAI-Lab/apex",
+            "github_stars": 5,
+            "pdf_title_img": "assets/pdf/title_img/2605.03395.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
@@ -35,8 +245,8 @@
             "title": "MedSkillAudit: A Domain-Specific Audit Framework for Medical Research Agent Skills",
             "url": "https://huggingface.co/papers/2604.20441",
             "abstract": "Abstract A domain-specific audit framework for medical research agent skills demonstrates reliable assessment consistency compared to expert review, supporting governance of specialized AI capabilities in healthcare applications.  AI-generated summary Background: Agent skills are increasingly deployed as modular, reusable capability units in AI agent systems. Medical research agent skills require safeguards beyond general-purpose evaluation, including scientific integrity, methodological validity, reproducibility, and boundary safety. This study developed and preliminarily evaluated a domain-specific audit framework for medical research agent skills, with a focus on reliability against expert review. Methods: We developed MedSkillAudit (skill-auditor@1.0), a layered framework assessing skill release readiness before deployment. We evaluated 75 skills across five medical research categories (15 per category). Two experts independently assigned a quality score (0-100), an ordinal release disposition (Production Ready / Limited Release / Beta Only / Reject), and a high-risk failure flag. System-expert agreement was quantified using ICC(2,1) and linearly weighted Cohen's kappa, benchmarked against the human inter-rater baseline. Results: The mean consensus quality score was 72.4 (SD = 13.0); 57.3% of skills fell below the Limited Release threshold. MedSkillAudit achieved ICC(2,1) = 0.449 (95% CI: 0.250-0.610), exceeding the human inter-rater ICC of 0.300. System-consensus score divergence (SD = 9.5) was smaller than inter-expert divergence (SD = 12.4), with no directional bias (Wilcoxon p = 0.613). Protocol Design showed the strongest category-level agreement (ICC = 0.551); Academic Writing showed a negative ICC (-0.567), reflecting a structural rubric-expert mismatch. Conclusions: Domain-specific pre-deployment audit may provide a practical foundation for governing medical research agent skills, complementing general-purpose quality checks with structured audit workflows tailored to scientific use cases.",
-            "score": 0,
-            "issue_id": 2586,
+            "score": 1,
+            "issue_id": 2587,
             "pub_date": "2026-04-22",
             "pub_date_card": {
                 "ru": "22 апреля",
@@ -45,8 +255,29 @@
             },
             "hash": "ac396a63dc65de6e",
             "github_url": "https://github.com/aipoch/medical-research-skills",
-            "github_stars": 515,
-            "pdf_title_img": "img/title_stub.png",
+            "github_stars": 518,
+            "pdf_title_img": "assets/pdf/title_img/2604.20441.jpg",
+            "data": {
+                "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+            }
+        },
+        {
+            "id": "https://huggingface.co/papers/2605.03848",
+            "title": "Parameter-Efficient Multi-View Proficiency Estimation: From Discriminative Classification to Generative Feedback",
+            "url": "https://huggingface.co/papers/2605.03848",
+            "abstract": "Abstract Three methods for multi-view proficiency estimation—SkillFormer, PATS, and ProfVLM—achieve state-of-the-art accuracy on Ego-Exo4D with reduced parameters and training epochs while enabling interpretable feedback generation.  AI-generated summary Estimating how well a person performs an action, rather than which action is performed, is central to coaching, rehabilitation, and talent identification. This task is challenging because proficiency is encoded in subtle differences in timing, balance, body mechanics, and execution, often distributed across multiple views and short temporal events. We discuss three recent contributions to multi-view proficiency estimation on Ego-Exo4D. SkillFormer introduces a parameter-efficient discriminative architecture for selective multi-view fusion; PATS improves temporal sampling by preserving locally dense excerpts of fundamental movements; and ProfVLM reformulates proficiency estimation as conditional language generation, producing both a proficiency label and expert-style feedback through a gated cross-view projector and a compact language backbone. Together, these methods achieve state-of-the-art accuracy on Ego-Exo4D with up to 20x fewer trainable parameters and up to 3x fewer training epochs than video-transformer baselines, while moving from closed-set classification toward interpretable feedback generation. These results highlight a shift toward efficient, multi-view systems that combine selective fusion, proficiency-aware sampling, and actionable generative feedback.",
+            "score": 0,
+            "issue_id": 2587,
+            "pub_date": "2026-05-05",
+            "pub_date_card": {
+                "ru": "5 мая",
+                "en": "May 5",
+                "zh": "5月5日"
+            },
+            "hash": "eae6e2df55947f2e",
+            "github_url": "",
+            "github_stars": 0,
+            "pdf_title_img": "assets/pdf/title_img/2605.03848.jpg",
             "data": {
                 "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
             }
