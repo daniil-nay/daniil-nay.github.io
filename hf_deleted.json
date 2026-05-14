@@ -155,5 +155,26 @@
         "data": {
             "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
         }
+    },
+    {
+        "id": "https://huggingface.co/papers/2605.08703",
+        "title": "RewardHarness: Self-Evolving Agentic Post-Training",
+        "url": "https://huggingface.co/papers/2605.08703",
+        "abstract": "Abstract RewardHarness is a self-evolving framework that improves image edit evaluation by iteratively developing tools and skills from limited human demonstrations, achieving superior performance compared to existing models.  AI-generated summary Evaluating instruction-guided image edits requires rewards that reflect subtle human preferences, yet current reward models typically depend on large-scale preference annotation and additional model training. This creates a data-efficiency gap: humans can often infer the target evaluation criteria from only a few examples, while models are usually trained on hundreds of thousands of comparisons. We present RewardHarness, a self-evolving agentic reward framework that reframes reward modeling as context evolution rather than weight optimization. Instead of learning from large-scale annotations, RewardHarness aligns with human preferences by iteratively evolving a library of tools and skills from as few as 100 preference demonstrations. Given a source image, candidate edited images, and an editing instruction, an Orchestrator selects the most relevant subset of tools and skills from the maintained library, and a frozen Sub-Agent uses them to construct a reasoning chain that produces a preference judgment. By comparing predicted judgments with ground-truth preferences and analyzing successes and failures in the reasoning process, the Orchestrator automatically refines its library of tools and skills without additional human annotation. Using only 0.05% of the EditReward preference data, RewardHarness achieves 47.4% average accuracy on image-editing evaluation benchmarks, surpassing GPT-5 by 5.3 points. When used as a reward signal for GRPO fine-tuning, RL-tuned models achieve 3.52 on ImgEdit-Bench. Project page: https://rewardharness.com.",
+        "score": 0,
+        "issue_id": 2679,
+        "pub_date": "2026-05-09",
+        "pub_date_card": {
+            "ru": "9 мая",
+            "en": "May 9",
+            "zh": "5月9日"
+        },
+        "hash": "14a1f971529b05de",
+        "github_url": "https://github.com/TIGER-AI-Lab/RewardHarness",
+        "github_stars": 0,
+        "pdf_title_img": "assets/pdf/title_img/2605.08703.jpg",
+        "data": {
+            "error": "401 Client Error: Unauthorized for url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+        }
     }
 ]
