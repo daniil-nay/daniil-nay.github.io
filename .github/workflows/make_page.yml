@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  models: read
 
 concurrency:
   group: publish-main
@@ -15,15 +16,6 @@ concurrency:
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
-
-    env:
-      GIGACHAT_BASIC_AUTH: ${{ secrets.GIGACHAT_BASIC_AUTH }}
-      GIGACHAT_SCOPE: ${{ secrets.GIGACHAT_SCOPE }}
-      GIGACHAT_TOKEN_URL: ${{ secrets.GIGACHAT_TOKEN_URL }}
-      GIGACHAT_API_BASE: ${{ secrets.GIGACHAT_API_BASE }}
-      GIGACHAT_MODEL: ${{ secrets.GIGACHAT_MODEL }}
-      GIGACHAT_EMBEDDING_MODEL: ${{ secrets.GIGACHAT_EMBEDDING_MODEL }}
-      GIGACHAT_VERIFY: ${{ secrets.GIGACHAT_VERIFY }}
 
     steps:
       - name: Checkout repository content
@@ -43,6 +35,12 @@ jobs:
 
       - name: Run generator script
         run: python main.py
+        env:
+          # GitHub Models (OpenAI-совместимый). Встроенного GITHUB_TOKEN хватает
+          # благодаря permissions: models: read выше — отдельные секреты не нужны.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LLM_API: github
+          GITHUB_MODELS_MODEL: openai/gpt-4o-mini
 
       - name: Commit and push changes
         run: |

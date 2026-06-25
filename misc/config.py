@@ -29,8 +29,12 @@ class GigaChatConfig:
     verify: bool
 
     def __post_init__(self):
+        # GigaChat теперь опционален: основной провайдер — GitHub Models.
+        # Не падаем при отсутствии кредов, чтобы пайплайн работал без GigaChat.
         if not self.basic_auth:
-            raise ConfigError("GIGACHAT_BASIC_AUTH не задан")
+            logger.info(
+                "GIGACHAT_BASIC_AUTH не задан — GigaChat отключён (используется GitHub Models)."
+            )
 
 
 @lru_cache(maxsize=1)

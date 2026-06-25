@@ -2,6 +2,7 @@ import io
 import json
 import os
 import re
+import time
 import uuid
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -28,6 +29,80 @@ GIGACHAT_VERIFY = cfg.verify
 
 _gigachat_token = None
 _gigachat_token_expiry = None
+
+
+# --- GitHub Models (OpenAI-совместимый REST) ---
+# Бесплатно на gh-токене, доступно из РФ без VPN.
+# В GitHub Actions хватает встроенного GITHUB_TOKEN при permissions: models: read.
+GITHUB_MODELS_TOKEN = (
+    os.getenv("GITHUB_TOKEN") or os.getenv("GH_TOKEN") or os.getenv("MODELS_TOKEN") or ""
+)
+GITHUB_MODELS_BASE = os.getenv(
+    "GITHUB_MODELS_BASE", "https://models.github.ai/inference"
+)
+GITHUB_MODELS_MODEL = os.getenv("GITHUB_MODELS_MODEL", "openai/gpt-4o-mini")
+# Провайдер по умолчанию для всех LLM-вызовов: "github" | "gigachat".
+DEFAULT_LLM_API = os.getenv("LLM_API", "github")
+
+
+def github_chat_completion(messages, model=None, temperature=0.5, max_tokens=2048):
+    """Чат-комплишн через GitHub Models (OpenAI-совместимый эндпоинт)."""
+    if not GITHUB_MODELS_TOKEN:
+        raise RuntimeError("GITHUB_TOKEN/GH_TOKEN отсутствует для GitHub Models")
+    url = f"{GITHUB_MODELS_BASE}/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {GITHUB_MODELS_TOKEN}",
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+    payload = {
+        "model": model or GITHUB_MODELS_MODEL,
+        "messages": messages,
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+    }
+    last_err = None
+    for attempt in range(4):
+        try:
+            response = requests.post(url, headers=headers, json=payload, timeout=60)
+            if response.status_code == 429:
+                wait = 0
+                try:
+                    wait = int(response.headers.get("retry-after", "0"))
+                except Exception:
+                    wait = 0
+                wait = wait or 5 * (attempt + 1)
+                log(f"GitHub Models 429 (rate limit). Ждём {wait}s, попытка {attempt + 1}/4.")
+                time.sleep(wait)
+                continue
+            response.raise_for_status()
+            data = response.json()
+            return data["choices"][0]["message"]["content"]
+        except Exception as e:
+            last_err = e
+            log(f"GitHub Models ошибка (попытка {attempt + 1}/4): {e}")
+            time.sleep(3 * (attempt + 1))
+    raise last_err
+
+
+def _resolve_provider(api):
+    """Выбираем эффективного провайдера. Если просят GigaChat, но он не
+    сконфигурирован — откатываемся на GitHub Models."""
+    provider = api or DEFAULT_LLM_API
+    if provider == "gigachat" and (
+        not GIGACHAT_BASIC_AUTH or GIGACHAT_BASIC_AUTH == "MISSING_BASIC_AUTH"
+    ):
+        provider = "github"
+    return provider
+
+
+def _resolve_model(model, provider):
+    """Чиним модель под провайдера: id GitHub Models неймспейснутые (openai/...)."""
+    if provider == "github":
+        if model and "/" in model:
+            return model
+        return GITHUB_MODELS_MODEL
+    return model or GIGACHAT_MODEL
 
 
 class Article(BaseModel):
@@ -206,16 +281,21 @@ def get_text(
     temperature=0.5,
     system_prompt="You are a helpful assistant.",
 ):
-    if api != "gigachat":
-        log(f"Warning. Unknown API '{api}', falling back to Gigachat.")
-    log(f"Gigachat request. Model: {model}. Prompt: {prompt}")
+    provider = _resolve_provider(api)
+    model = _resolve_model(model, provider)
+    log(f"{provider} request. Model: {model}. Prompt: {prompt}")
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": prompt},
     ]
-    text = gigachat_chat_completion(
-        messages, model=model, temperature=temperature, max_tokens=2048 #1024
-    )
+    if provider == "github":
+        text = github_chat_completion(
+            messages, model=model, temperature=temperature, max_tokens=2048
+        )
+    else:
+        text = gigachat_chat_completion(
+            messages, model=model, temperature=temperature, max_tokens=2048 #1024
+        )
 
     log(f"Response: {text}")
     if any([x in text for x in con.RENAME_TERMS.keys()]):
