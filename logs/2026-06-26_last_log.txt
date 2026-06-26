@@ -1,197 +1,229 @@
-[26.06.2026 07:36] Read previous papers.
-[26.06.2026 07:36] Generating top page (month).
-[26.06.2026 07:36] Writing top page (month).
-[26.06.2026 09:24] Read previous papers.
-[26.06.2026 09:24] Get feed.
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.27377
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.27377
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.27313
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.27313
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26907
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26907
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26790
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26790
-[26.06.2026 09:24] Extract page data from URL. URL: https://huggingface.co/papers/2606.18394
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26300
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26300
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26027
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26027
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.24551
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.24551
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26904
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26904
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26025
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26025
-[26.06.2026 09:24] Extract page data from URL. URL: https://huggingface.co/papers/2606.21795
-[26.06.2026 09:24] Extract page data from URL. URL: https://huggingface.co/papers/2606.16613
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.27364
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.27364
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26217
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26217
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.21959
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.21959
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.27326
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.27326
-[26.06.2026 09:24] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26299
-[26.06.2026 09:24] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26299
-[26.06.2026 09:24] Extract page data from URL. URL: https://huggingface.co/papers/2606.16517
-[26.06.2026 09:24] Updating GitHub stars.
-[26.06.2026 09:24] Obtaining deleted papers (sometimes HF Daily Papers move some articles from today to past days).
-[26.06.2026 09:24] No deleted papers detected.
-[26.06.2026 09:24] Downloading and parsing papers (pdf, html). Total: 18.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.27377.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.27377.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.27377.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.27313.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.27313.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.27313.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.26907.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.26907.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.26907.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.26790.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.26790.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.26790.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.18394.
-[26.06.2026 09:24] Downloading paper 2606.18394 from https://arxiv.org/pdf/2606.18394v3...
-[26.06.2026 09:24] Extracting affiliations from text.
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+[26.06.2026 09:25] Read previous papers.
+[26.06.2026 09:25] Generating top page (month).
+[26.06.2026 09:25] Writing top page (month).
+[26.06.2026 14:23] Read previous papers.
+[26.06.2026 14:23] Get feed.
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.27377
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.27377
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.27313
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.27313
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26790
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26790
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26907
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26907
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26300
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26300
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.18394
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.18394
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26027
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26027
+[26.06.2026 14:23] Extract page data from URL. URL: https://huggingface.co/papers/2606.14397
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26904
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26904
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.24551
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.24551
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26025
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26025
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.16613
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.16613
+[26.06.2026 14:23] Extract page data from URL. URL: https://huggingface.co/papers/2606.27192
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26217
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26217
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.27364
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.27364
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.21795
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.21795
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.27326
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.27326
+[26.06.2026 14:23] Extract page data from URL. URL: https://huggingface.co/papers/2606.27288
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.26299
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.26299
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.21959
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.21959
+[26.06.2026 14:23] Get page data from previous paper. URL: https://huggingface.co/papers/2606.16517
+[26.06.2026 14:23] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.16517
+[26.06.2026 14:23] Updating GitHub stars.
+[26.06.2026 14:23] Obtaining deleted papers (sometimes HF Daily Papers move some articles from today to past days).
+[26.06.2026 14:23] No deleted papers detected.
+[26.06.2026 14:23] Downloading and parsing papers (pdf, html). Total: 21.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.27377.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.27377.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.27377.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.27313.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.27313.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.27313.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.26790.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.26790.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.26790.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.26907.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.26907.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.26907.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.26300.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.26300.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.26300.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.18394.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.18394.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.18394.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.26027.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.26027.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.26027.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.14397.
+[26.06.2026 14:23] Downloading paper 2606.14397 from https://arxiv.org/pdf/2606.14397v2...
+[26.06.2026 14:23] Extracting affiliations from text.
+[26.06.2026 14:23] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
 
-Text:"6 2 0 2 5 2 ] . [ 3 4 9 3 8 1 . 6 0 6 2 : r JETSPEC: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting Lanxiang Hu1 Zhaoxiang Feng1 Yulun Wu2 Haoran Yuan3 Yujie Zhao1 Yu-Yang Qian4 Bojun Wang5 Peng Zhao4 Daxin Jiang5 Yibo Zhu5 Tajana Rosing1 Hao Zhang1 1UC San Diego 2 Zhejiang University 3UIUC 4Nanjing University 5StepFun "
-[26.06.2026 09:24] Response: ```python
-["UC San Diego", "Zhejiang University", "UIUC", "Nanjing University", "StepFun"]
+Text:"6 2 0 2 5 2 ] . [ 2 7 9 3 4 1 . 6 0 6 2 : r Running the Gauntlet: Re-evaluating the Mykola Vysotskyi2,8 Runqi Lin1 Grzegorz Biziel2 Michal Zakrzewski2 Damian Rynczak2 Sebastian Montagna2 Shreyansh Padarha1 Kumail Alhamoud3 Zihao Fu4 William Lugoloobi1 Kai Rawal1 Hanna Yershova2 Fazl Barez Xander Davies1,5 Arkadiusz Drohomirecki2 Taras Rumezhak2 Guohao Li6 Yarin Gal1 Baoyuan Wu7 Chris Russell1 Christopher Summerﬁeld Volodymyr Karpiv2 Philip Torr1 Adam Mahdi1 Adel Bibi1 1University of Oxford 2SoftServe 3Massachusetts Institute of Technology 4The Chinese University of Hong Kong 7The Chinese University of Hong Kong, Shenzhen 5UK AI Security Institute 6Eigent.AI 8Ukrainian Catholic University "
+[26.06.2026 14:23] Response: ```python
+[
+    "University of Oxford",
+    "SoftServe",
+    "Massachusetts Institute of Technology",
+    "The Chinese University of Hong Kong",
+    "The Chinese University of Hong Kong, Shenzhen",
+    "UK AI Security Institute",
+    "Eigent.AI",
+    "Ukrainian Catholic University"
+]
 ```
-[26.06.2026 09:24] Deleting PDF ./assets/pdf/2606.18394.pdf.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.26300.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.26300.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.26300.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.26027.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.26027.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.26027.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.24551.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.24551.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.24551.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.26904.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.26904.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.26904.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.26025.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.26025.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.26025.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.21795.
-[26.06.2026 09:24] Downloading paper 2606.21795 from https://arxiv.org/pdf/2606.21795v1...
-[26.06.2026 09:24] Extracting affiliations from text.
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+[26.06.2026 14:23] Deleting PDF ./assets/pdf/2606.14397.pdf.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.26904.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.26904.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.26904.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.24551.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.24551.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.24551.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.26025.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.26025.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.26025.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.16613.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.16613.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.16613.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.27192.
+[26.06.2026 14:23] Downloading paper 2606.27192 from https://arxiv.org/pdf/2606.27192v1...
+[26.06.2026 14:23] Extracting affiliations from text.
+[26.06.2026 14:23] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
 
-Text:"6 2 0 2 9 1 ] . [ 1 5 9 7 1 2 . 6 0 6 2 : r Discretizing Reward Models Vijay Viswanathan1,, Shiqi Wang2, Devamanyu Hazarika2, Chirag Nagpal2, Tongshuang Wu1, Graham Neubig1, Yuning Mao2 1Carnegie Mellon University, 2Meta Superintelligence Labs Work done at Meta Despite their widespread use, the role of reward models in shaping reinforcement learning is poorly understood. Reward models offer tempting promise: they automatically estimate response quality in the absence of verifiers or human judges. Unlike verifiable rewards which typically produce binary scores, reward models typically produce continuous scores, allowing them to be sensitive to fine-grained differences in responses. However, we show this apparent strength is serious weakness: many popular reward models are oversensitive, assigning different scores to equally good responses. Theoretically, we show that seemingly perfect reward models can be highly oversensitive; empirically, this oversensitivity can lead to bad policies. In place of existing notions of reward model accuracy, we propose evaluating reward models using distinct measures of discriminative ability and specificity (the complement of oversensitivity). As solution, we describe training-free algorithm that uses Monte Carlo dropout on any neural reward model to produce discrete reward clusters. Theoretically, we prove there exist discretizations that reduce oversensitivity at minimal expense of discriminative ability; empirically we show, in both controlled and natural RL settings, that discretizing rewards leads to less reward hacking and better policies than training on the original rewards. Date: June 23, 2026 Correspondence: Vijay Viswanathan at vijayv@cs.cmu.edu Reinforcement learnings central characteristic is the use of rewards to rate model behavior instead of explicit demonstrations. Reinforcement learning has proven most reliable on verifiable problems, where program can grade any response (DeepSeek-AI et al., 2025; Lambert et al., 202"
-[26.06.2026 09:24] Response: ```python
-["Carnegie Mellon University", "Meta Superintelligence Labs"]
+Text:"6 2 0 2 5 2 ] . [ 1 2 9 1 7 2 . 6 0 6 2 : r a LISA: LIKELIHOOD SCORE ALIGNMENT FOR VISUALCONDITION CONTROLLABLE GENERATION Yanghao Wang1 Hongxu Chen1 Rui Liu2 Zhen Wang1 Long Chen1 1The Hong Kong University of Science and Technology 2Huawei Research {ywangtg,hchenej,jliugj,zheci}@connect.ust.hk ruiliu011@gmail.com {zhenwang,longchen}@ust.hk Jiazhen Liu1 Zhenqi He "
+[26.06.2026 14:23] Response: ```python
+["The Hong Kong University of Science and Technology", "Huawei Research"]
 ```
-[26.06.2026 09:24] Deleting PDF ./assets/pdf/2606.21795.pdf.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.16613.
-[26.06.2026 09:24] Downloading paper 2606.16613 from https://arxiv.org/pdf/2606.16613v1...
-[26.06.2026 09:24] Extracting affiliations from text.
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+[26.06.2026 14:23] Deleting PDF ./assets/pdf/2606.27192.pdf.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.26217.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.26217.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.26217.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.27364.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.27364.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.27364.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.21795.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.21795.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.21795.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.27326.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.27326.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.27326.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.27288.
+[26.06.2026 14:23] Downloading paper 2606.27288 from https://arxiv.org/pdf/2606.27288v1...
+[26.06.2026 14:23] Extracting affiliations from text.
+[26.06.2026 14:23] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
 
-Text:"16 June 2026 CoffeeBench: Benchmarking Long-Horizon LLM Agents in Heterogeneous Multi-Agent Economies Issa Sugiura1, Daichi Hattori2, Kazuo Araragi2, Keita Ogawa2, Shota Onose2, Taro Makino1, Teppei Usuki2 and Takashi Ishida1 1Sakana AI, 2KPMG AZSA LLC As LLM agents become capable of increasingly long-horizon tasks, evaluating their performance in economic systems is becoming increasingly important. Unlike existing benchmarks that primarily evaluate single agent interacting with passive environment, economic systems are inherently multi-agent, requiring autonomous agents to communicate, negotiate, and transact while pursuing their own objectives over extended periods. We introduce CoffeeBench, benchmark for evaluating LLM agents in long-horizon multi-agent economy composed of heterogeneous firms. In CoffeeBench, two farmers, two roasters, and two retailers autonomously operate their businesses over 90-day simulation, each seeking to maximize cumulative net income through communication and transactions while managing cash, inventory, and pricing. The evaluated model controls one coffee roaster, while the remaining firms are controlled by fixed reference agents. Across several recent openweight and proprietary LLMs, all models outperform passive baseline that takes no actions, with most achieving positive net income. Analysis of agent behavior reveals substantial differences in long-horizon economic interaction: higher-performing models communicate more actively with other firms, whereas Claude Haiku 4.5 exhibits an idle-drift failure mode, repeatedly choosing inaction despite producing coherent assessments and plans. We release our code and agent trajectories to support future research. Code: github.com/SakanaAI/CoffeeBench Trajectories: pub.sakana.ai/coffeebench/trajectories 6 2 0 J 5 1 ] . [ 1 3 1 6 6 1 . 6 0 6 2 : r Figure 1 Overview of CoffeeBench. Six LLM agents operate firms in simulated coffee supply chain over 90-day period, each seeking to maximize its own c"
-[26.06.2026 09:24] Response: ```python
-["Sakana AI", "KPMG AZSA LLC"]
+Text:"6 2 0 2 5 2 ] . [ 1 8 8 2 7 2 . 6 0 6 2 : r When Does Combining Language Models Help? Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models Josef Chen KAIKAKU josef@kaikaku.ai June 26, 2026 Abstract Multi-model LLM systems, including routing, voting, cascades, fusion, and mixture-of-agents (MoA), are increasingly used to push accuracy beyond any single model. We show that the achievable gain has ceiling, fixed by quantity other than the one the field usually reports. For any policy whose output is one of the member models answers, such as router, majority vote, or cascade, accuracy cannot exceed 1 β, where β is the rate at which every model is wrong on the same query. Practice instead reports the average pairwise error correlation ρ, and we prove that ρ cannot identify β: error laws with identical marginals and identical pairwise correlations can still differ in β. ClopperPearson bound on β turns one graded, held-out query set into $0 certificate on the largest gain any such policy could deliver, before router is trained. Across 67 frontier models from 21 providers, among them GPT-5.5, Claude Opus 4.8, Gemini 3.1 Pro, Grok-4.3, DeepSeek V4, Qwen3.7-Max, and Kimi K2.7, correctly (tetrachoric) calibrated single-factor model still underprices the all-wrong tail, by margin that widens with the size of the pool: about 2.5 times on open-ended mathematics (90% CI 1.7 to 3.4, = 17), holding under the full 67-model Gaussian copula (β = 0.052 versus predicted 0.023) and recurring on execution-graded code (β = 0.079). At matched quality, diverse low-ρ ensemble beats high-ρ Self-MoA one. Re-asking the same GPQA-Diamond questions in free-response rather than multiple-choice form reopens the tail (β = 0.127; five-judge LLM panel, κ from 0.73 to 0.92), locating the effect in task format rather than subject. On our pool, and on tasks where answers can be checked, combining models rarely beats the single best model without strong query-level routing "
+[26.06.2026 14:23] Response: ```python
+["KAIKAKU"]
 ```
-[26.06.2026 09:24] Deleting PDF ./assets/pdf/2606.16613.pdf.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.27364.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.27364.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.27364.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.26217.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.26217.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.26217.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.21959.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.21959.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.21959.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.27326.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.27326.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.27326.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.26299.
-[26.06.2026 09:24] Extra JSON file exists (./assets/json/2606.26299.json), skip PDF parsing.
-[26.06.2026 09:24] Paper image links file exists (./assets/img_data/2606.26299.json), skip HTML parsing.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Downloading and parsing paper https://huggingface.co/papers/2606.16517.
-[26.06.2026 09:24] Downloading paper 2606.16517 from https://arxiv.org/pdf/2606.16517v1...
-[26.06.2026 09:24] Extracting affiliations from text.
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+[26.06.2026 14:23] Deleting PDF ./assets/pdf/2606.27288.pdf.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.26299.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.26299.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.26299.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.21959.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.21959.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.21959.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Downloading and parsing paper https://huggingface.co/papers/2606.16517.
+[26.06.2026 14:23] Extra JSON file exists (./assets/json/2606.16517.json), skip PDF parsing.
+[26.06.2026 14:23] Paper image links file exists (./assets/img_data/2606.16517.json), skip HTML parsing.
+[26.06.2026 14:23] Success.
+[26.06.2026 14:23] Enriching papers with extra data.
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 0. Abstract A novel on-policy generative field distillation framework called DanceOPD is proposed to unify text-to-image generation, local editing, and global editing capabilities in flow-matching models through capability-specific routing and velocity-based training.  Generated by Qwen/Qwen2.5-Coder-3...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 1. Abstract ViQ presents a visual quantization framework that balances semantic richness and detail preservation in discrete representations, enabling efficient multimodal training with native-resolution inputs.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct A unified representation for text and vision ...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 2. Abstract On-policy skill distillation framework extracts dense hindsight supervision from completed trajectories to improve language agent training efficiency and performance.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Outcome-based reinforcement learning provides a stable optimization backbone f...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 3. Abstract A unified agentic framework called Qwen-Image-Agent is proposed to address the context gap in text-to-image generation by progressively constructing complete generation context through planning, reasoning, searching, and memory mechanisms.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct While...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 4. Abstract Verification challenges in AI agents arise from the difficulty of aligning proxy signals with human intent, requiring adaptive verification systems that evolve alongside generative capabilities.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct A classical intuition holds that verifying a solut...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 5. Abstract JetSpec is a speculative decoding framework that combines efficient forward drafting with causal conditioning to improve LLM inference speed and acceptance rates across various benchmarks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding (SD) accelerates autoregressive Lar...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 6. Abstract Research investigates how different supervisory signals and training strategies improve the stability and performance of large language models in tool-use tasks, addressing issues like catastrophic collapse and format sensitivity through interleaved supervised fine-tuning and reinforcement ...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 7. Abstract A web-based benchmark evaluates agent generalization across challenging scenarios, revealing significant gaps between current agentic systems and human performance in temporal perception, graphical understanding, and 3D reasoning.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As agentic sys...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 8. Abstract Robust-TO addresses the Blind Trust Problem in video reasoning by integrating per-frame trustworthiness into an agentic framework that improves accuracy under realistic perturbations through calibrated evidence weighting and reliability-aware reasoning.  Generated by Qwen/Qwen2.5-Coder-32B-...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 9. Abstract  Computer-use agents can execute software tasks through either graphical interfaces or programmatic command interfaces, but existing evaluations confound interaction modality with differences in tasks, initial states, verifiers, and permitted actions. We introduce a matched execution-layer ...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 10. Abstract ICWM enables robot policies to infer system variables from self-generated interactions, allowing adaptation to novel configurations without parameter updates by treating system identification as an in-context adaptation problem.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Modern Vision-La...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 11. Abstract CoffeeBench evaluates LLM agents in a multi-agent economic simulation where firms interact over 90 days to maximize profits, revealing differences in communication patterns and performance among various models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As LLM agents become capable of in...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 12. Abstract Score-based generative modeling reveals that side networks contribute likelihood scores to conditional control, leading to improved training efficiency through likelihood score alignment regularization.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct The prevalent dual-branch paradigm, i.e., ...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 13. Abstract Fast-LeWM accelerates visual planning by replacing autoregressive rollout with parallel action-prefix prediction, reducing computational costs and latency accumulation during long-horizon predictions.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Joint-Embedding Predictive Architectures (JE...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 14. Abstract PhysiFormer uses coordinate-space diffusion to generate physically-plausible 3D object motions without explicit inductive biases, enabling efficient multi-object reasoning and generalization to complex materials and geometries.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct We present PhysiF...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 15. Abstract Reward models in reinforcement learning suffer from oversensitivity issues where they assign different scores to equally good responses, leading to poor policy learning, but this can be mitigated through discretization techniques that maintain discriminative ability while reducing oversensi...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 16. Abstract World models exhibit hallucinations in low-data regions of state-action space, which can be detected and mitigated using data-centric signals and coverage-aware sampling techniques.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Modern generative world models render increasingly realistic ac...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 17. Abstract Multi-model systems face fundamental accuracy limits determined by the rate at which all models fail simultaneously, regardless of their individual correlations or ensemble strategies.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Multi-model LLM systems such as routing, voting, cascades, f...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 18. Abstract A computational origami system generates crease patterns from natural language using AI-driven optimization and aesthetic evaluation, enabling human-AI collaboration in mathematically constrained design.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct While generative AI has achieved remarkab...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 19. Abstract A new biomedical benchmark evaluates agentic models' ability to verify sources and avoid false citations by testing unsolved research questions with no answer keys, revealing significant failures in retrieval-grounded reasoning and tool usage.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct A...
+[26.06.2026 14:23] ********************************************************************************
+[26.06.2026 14:23] Abstract 20. Abstract Post-training stages in biological reasoning models differently affect generalization, with continued pre-training aligning models with biological language, supervised fine-tuning improving in-domain performance but reducing out-of-domain generalization, and reinforcement learning recoverin...
+[26.06.2026 14:23] Read previous papers.
+[26.06.2026 14:23] Generating reviews via LLM API.
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#architecture", "#training", "#multimodal"], "emoji": "✨", "ru": {"title": "Объединяем возможности: генерация и редактирование изображений в одном!", "desc": "В статье предлагается новая система под названием DanceOPD, которая объединяет генерацию изображений из текста и редактирова
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#optimization", "#multimodal", "#training", "#inference", "#games"], "emoji": "🖼️", "ru": {"title": "Баланс семантики и деталей в визуальной квантизации", "desc": "Статья представляет новую структуру визуальной квантизации под названием ViQ, которая балансирует между семантическим б
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#optimization", "#agent_memory", "#agents", "#rlhf", "#training", "#rl"], "emoji": "📈", "ru": {"title": "Улучшение обучения агентов с помощью извлечения навыков", "desc": "В данной работе представлена архитектура OPID (On-Policy Skill Distillation), которая улучшает обучение языковы
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#reasoning", "#benchmark", "#agents", "#memory", "#agent_memory"], "emoji": "🖼️", "ru": {"title": "Новый подход к генерации изображений из текста", "desc": "В данной статье предложен унифицированный агентный фреймворк Qwen-Image-Agent, который решает проблему контекстного разрыва в 
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#reasoning", "#benchmark", "#optimization", "#agents", "#alignment", "#rlhf", "#training"], "emoji": "🤖", "ru": {"title": "Верификация и человеческие намерения в мире AI", "desc": "В статье обсуждаются проблемы верификации в AI-агентах, связанные с необходимостью согласования сигнал
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#training", "#benchmark", "#optimization", "#architecture", "#inference"], "emoji": "⚡️", "ru": {"title": "Ускорение вывода LLM с помощью JetSpec", "desc": "JetSpec — это фреймворк для спекулятивного декодирования, который сочетает в себе эффективное предварительное формирование и п
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#optimization", "#tool_use", "#training", "#reinforcement_learning", "#rl"], "emoji": "🛠️", "ru": {"title": "Стабильность LLM через разнообразные сигналы управления", "desc": "В этой работе исследуется, как различные сигналы управления и стратегии обучения могут улучшить стабильност
+[26.06.2026 14:23] Querying the API.
+[26.06.2026 14:23] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
 
-Text:"6 2 0 2 5 1 ] . [ 1 7 1 5 6 1 . 6 0 6 2 : r How Post-Training Shapes Biological Reasoning Models Lukas Fesser Harvard University lukas_fesser@g.harvard.edu Hanlin Zhang Harvard University hanlinzhang@g.harvard.edu Michelle M. Li Harvard University michelleli@g.harvard.edu Eric Wang Google DeepMind ericzwang@google.com Bryan Perozzi Google Research bperozzi@google.com Shekoofeh Azizi Google DeepMind shekazizi@google.com Sham M. Kakade Harvard University sham@seas.harvard.edu Marinka Zitnik Harvard University marinka@hms.harvard.edu "
-[26.06.2026 09:24] Response: ```python
-["Harvard University", "Google DeepMind", "Google Research"]
-```
-[26.06.2026 09:24] Deleting PDF ./assets/pdf/2606.16517.pdf.
-[26.06.2026 09:24] Success.
-[26.06.2026 09:24] Enriching papers with extra data.
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 0. Abstract A novel on-policy generative field distillation framework called DanceOPD is proposed to unify text-to-image generation, local editing, and global editing capabilities in flow-matching models through capability-specific routing and velocity-based training.  Generated by Qwen/Qwen2.5-Coder-3...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 1. Abstract ViQ presents a visual quantization framework that balances semantic richness and detail preservation in discrete representations, enabling efficient multimodal training with native-resolution inputs.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct A unified representation for text and vision ...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 2. Abstract A unified agentic framework called Qwen-Image-Agent is proposed to address the context gap in text-to-image generation by progressively constructing complete generation context through planning, reasoning, searching, and memory mechanisms.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct While...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 3. Abstract On-policy skill distillation framework extracts dense hindsight supervision from completed trajectories to improve language agent training efficiency and performance.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Outcome-based reinforcement learning provides a stable optimization backbone f...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 4. Abstract JetSpec is a speculative decoding framework that combines efficient forward drafting with causal conditioning to improve LLM inference speed and acceptance rates across various benchmarks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding (SD) accelerates autoregressive Lar...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 5. Abstract Verification challenges in AI agents arise from the difficulty of aligning proxy signals with human intent, requiring adaptive verification systems that evolve alongside generative capabilities.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct A classical intuition holds that verifying a solut...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 6. Abstract Research investigates how different supervisory signals and training strategies improve the stability and performance of large language models in tool-use tasks, addressing issues like catastrophic collapse and format sensitivity through interleaved supervised fine-tuning and reinforcement ...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 7. Abstract  Computer-use agents can execute software tasks through either graphical interfaces or programmatic command interfaces, but existing evaluations confound interaction modality with differences in tasks, initial states, verifiers, and permitted actions. We introduce a matched execution-layer ...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 8. Abstract Robust-TO addresses the Blind Trust Problem in video reasoning by integrating per-frame trustworthiness into an agentic framework that improves accuracy under realistic perturbations through calibrated evidence weighting and reliability-aware reasoning.  Generated by Qwen/Qwen2.5-Coder-32B-...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 9. Abstract ICWM enables robot policies to infer system variables from self-generated interactions, allowing adaptation to novel configurations without parameter updates by treating system identification as an in-context adaptation problem.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Modern Vision-La...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 10. Abstract Reward models in reinforcement learning suffer from oversensitivity issues where they assign different scores to equally good responses, leading to poor policy learning, but this can be mitigated through discretization techniques that maintain discriminative ability while reducing oversensi...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 11. Abstract CoffeeBench evaluates LLM agents in a multi-agent economic simulation where firms interact over 90 days to maximize profits, revealing differences in communication patterns and performance among various models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As LLM agents become capable of in...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 12. Abstract PhysiFormer uses coordinate-space diffusion to generate physically-plausible 3D object motions without explicit inductive biases, enabling efficient multi-object reasoning and generalization to complex materials and geometries.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct We present PhysiF...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 13. Abstract Fast-LeWM accelerates visual planning by replacing autoregressive rollout with parallel action-prefix prediction, reducing computational costs and latency accumulation during long-horizon predictions.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Joint-Embedding Predictive Architectures (JE...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 14. Abstract A new biomedical benchmark evaluates agentic models' ability to verify sources and avoid false citations by testing unsolved research questions with no answer keys, revealing significant failures in retrieval-grounded reasoning and tool usage.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct A...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 15. Abstract World models exhibit hallucinations in low-data regions of state-action space, which can be detected and mitigated using data-centric signals and coverage-aware sampling techniques.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Modern generative world models render increasingly realistic ac...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 16. Abstract A computational origami system generates crease patterns from natural language using AI-driven optimization and aesthetic evaluation, enabling human-AI collaboration in mathematically constrained design.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct While generative AI has achieved remarkab...
-[26.06.2026 09:24] ********************************************************************************
-[26.06.2026 09:24] Abstract 17. Abstract Post-training stages in biological reasoning models differently affect generalization, with continued pre-training aligning models with biological language, supervised fine-tuning improving in-domain performance but reducing out-of-domain generalization, and reinforcement learning recoverin...
-[26.06.2026 09:24] Read previous papers.
-[26.06.2026 09:24] Generating reviews via LLM API.
-[26.06.2026 09:24] Using data from previous issue: {"categories": ["#architecture", "#training", "#multimodal"], "emoji": "✨", "ru": {"title": "Объединяем возможности: генерация и редактирование изображений в одном!", "desc": "В статье предлагается новая система под названием DanceOPD, которая объединяет генерацию изображений из текста и редактирова
-[26.06.2026 09:24] Using data from previous issue: {"categories": ["#optimization", "#multimodal", "#training", "#inference", "#games"], "emoji": "🖼️", "ru": {"title": "Баланс семантики и деталей в визуальной квантизации", "desc": "Статья представляет новую структуру визуальной квантизации под названием ViQ, которая балансирует между семантическим б
-[26.06.2026 09:24] Using data from previous issue: {"categories": ["#reasoning", "#benchmark", "#agents", "#memory", "#agent_memory"], "emoji": "🖼️", "ru": {"title": "Новый подход к генерации изображений из текста", "desc": "В данной статье предложен унифицированный агентный фреймворк Qwen-Image-Agent, который решает проблему контекстного разрыва в 
-[26.06.2026 09:24] Using data from previous issue: {"categories": ["#optimization", "#agent_memory", "#agents", "#rlhf", "#training", "#rl"], "emoji": "📈", "ru": {"title": "Улучшение обучения агентов с помощью извлечения навыков", "desc": "В данной работе представлена архитектура OPID (On-Policy Skill Distillation), которая улучшает обучение языковы
-[26.06.2026 09:24] Querying the API.
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
-
-Abstract JetSpec is a speculative decoding framework that combines efficient forward drafting with causal conditioning to improve LLM inference speed and acceptance rates across various benchmarks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding (SD) accelerates autoregressive Large Language Models (LLMs) by drafting multiple tokens and verifying them in parallel, but it faces a scaling limitation: increasing the draft budget improves speed only when acceptance remains high and drafting overhead stays low. This ceiling has been difficult to break because prior head-based SD methods face a causality-efficiency dilemma. Autoregressive drafters produce path-conditioned candidates that are effective for tree speculative decoding with higher acceptance length, but their drafting cost grows with tree depth. Bidirectional block-diffusion drafters generate all positions in one pass, but their branch-agnostic marginals can form individually plausible yet mutually inconsistent trees, wasting budget and reducing acceptance. We propose JetSpec, a head-based SD framework that combines one-forward drafting efficiency with branch-wise causal conditioning. JetSpec trains a causal parallel draft head over fused hidden states from the frozen target model, producing candidate trees whose scores align with the target model's autoregressive factorization. This enables JetSpec to convert larger draft budgets into longer accepted prefixes and higher end-to-end speedup. Across math, coding, and chat benchmarks on dense and MoE Qwen3 models, JetSpec consistently outperforms bidirectional-head and tree-based SD baselines. On H100 GPUs, JetSpec achieves up to 9.64x speedup on MATH-500 and 4.58x on open-ended conversational workloads, with further latency gains demonstrated through vLLM integration under realistic serving loads. Our code and models are available at https://github.com/hao-ai-lab/JetSpec.
-[26.06.2026 09:24] Response: {
-  "desc": "JetSpec — это фреймворк для спекулятивного декодирования, который сочетает в себе эффективное предварительное формирование и причинную кондиционирование для улучшения скорости вывода LLM. Этот метод ускоряет автогенерацию текстов, позволяя одновременно генерировать несколько токенов и проверять их, что повышает процент принятия. JetSpec преодолевает ограничения предыдущих методов, используя эффективность однонаправленного формирователя и причинную обработку по ветвям. Он показывает выдающиеся результаты на различных тестах, достигая значительного ускорения в сравнении с другими подходами.",
-  "emoji": "⚡️",
-  "title": "Ускорение вывода LLM с помощью JetSpec"
+Abstract A web-based benchmark evaluates agent generalization across challenging scenarios, revealing significant gaps between current agentic systems and human performance in temporal perception, graphical understanding, and 3D reasoning.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As agentic systems continue to evolve and are widely deployed in real-world scenarios, there is a growing demand to faithfully evaluate their capabilities. However, current benchmarks are typically built on popular applications with relatively simple tasks and focus on a narrow set of capabilities while overlooking broader dimensions, resulting in saturated performance on modern agents and failing to probe their limitations. To this end, we introduce GauntletBench, a web-based benchmark for evaluating agent generalisation in challenging scenarios, focusing on three underexplored capabilities (temporal perception, graphical understanding, and 3D reasoning), across five less-covered professional applications (Video Editor, Workflow Builder, 3D Modeller, Flight Analyser, and Circuit Designer), each with 20 vision-intensive tasks (100 in total). Our benchmark provides a modular pipeline that comprises an environment compatible with both open- and closed-source agent frameworks, a controlled web-based application, a well-structured task suite, and an automated evaluation engine with diverse metrics. Contrary to widespread expectations, our empirical results reveal that frontier agentic systems remain far from achieving human-level performance. Even the state-of-the-art agent achieves only a 19.1% success rate on our GauntletBench, highlighting the limitations in these overlooked capabilities and generalisation. By comparison, non-expert human annotators achieve over 80% success on our challenging yet feasible tasks, revealing the substantial gap between current agent capabilities and those required for complex real-world scenarios.
+[26.06.2026 14:23] Response: ```json
+{
+  "desc": "В статье представлен GauntletBench — веб-бенчмарк для оценки обобщения агентов в сложных сценариях. Он исследует три недоученные способности: временное восприятие, графическое понимание и 3D-рассуждение. Результаты показывают, что современные агентные системы все еще далеки от человеческого уровня, достигая всего лишь 19,1% успеха, тогда как неэкспертные аннотаторы справляются с более чем 80% задач. Это подчеркивает значительный разрыв между возможностями агентов и требованиями для сложных реальных сценариев.",
+  "emoji": "🧠",
+  "title": "Оценка возможностей агентов: непреодолимый разрыв с человеком"
 }
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+```
+[26.06.2026 14:23] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
 
 Topics:
 
@@ -235,12 +267,12 @@ Return only a Python flat list of topics that match the given text.
 
 Paper text to classify:
 
-"Abstract JetSpec is a speculative decoding framework that combines efficient forward drafting with causal conditioning to improve LLM inference speed and acceptance rates across various benchmarks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding (SD) accelerates autoregressive Large Language Models (LLMs) by drafting multiple tokens and verifying them in parallel, but it faces a scaling limitation: increasing the draft budget improves speed only when acceptance remains high and drafting overhead stays low. This ceiling has been difficult to break because prior head-based SD methods face a causality-efficiency dilemma. Autoregressive drafters produce path-conditioned candidates that are effective for tree speculative decoding with higher acceptance length, but their drafting cost grows with tree depth. Bidirectional block-diffusion drafters generate all positions in one pass, but their branch-agnostic marginals can form individually plausible yet mutually inconsistent trees, wasting budget and reducing acceptance. We propose JetSpec, a head-based SD framework that combines one-forward drafting efficiency with branch-wise causal conditioning. JetSpec trains a causal parallel draft head over fused hidden states from the frozen target model, producing candidate trees whose scores align with the target model's autoregressive factorization. This enables JetSpec to convert larger draft budgets into longer accepted prefixes and higher end-to-end speedup. Across math, coding, and chat benchmarks on dense and MoE Qwen3 models, JetSpec consistently outperforms bidirectional-head and tree-based SD baselines. On H100 GPUs, JetSpec achieves up to 9.64x speedup on MATH-500 and 4.58x on open-ended conversational workloads, with further latency gains demonstrated through vLLM integration under realistic serving loads. Our code and models are available at https://github.com/hao-ai-lab/JetSpec."
+"Abstract A web-based benchmark evaluates agent generalization across challenging scenarios, revealing significant gaps between current agentic systems and human performance in temporal perception, graphical understanding, and 3D reasoning.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As agentic systems continue to evolve and are widely deployed in real-world scenarios, there is a growing demand to faithfully evaluate their capabilities. However, current benchmarks are typically built on popular applications with relatively simple tasks and focus on a narrow set of capabilities while overlooking broader dimensions, resulting in saturated performance on modern agents and failing to probe their limitations. To this end, we introduce GauntletBench, a web-based benchmark for evaluating agent generalisation in challenging scenarios, focusing on three underexplored capabilities (temporal perception, graphical understanding, and 3D reasoning), across five less-covered professional applications (Video Editor, Workflow Builder, 3D Modeller, Flight Analyser, and Circuit Designer), each with 20 vision-intensive tasks (100 in total). Our benchmark provides a modular pipeline that comprises an environment compatible with both open- and closed-source agent frameworks, a controlled web-based application, a well-structured task suite, and an automated evaluation engine with diverse metrics. Contrary to widespread expectations, our empirical results reveal that frontier agentic systems remain far from achieving human-level performance. Even the state-of-the-art agent achieves only a 19.1% success rate on our GauntletBench, highlighting the limitations in these overlooked capabilities and generalisation. By comparison, non-expert human annotators achieve over 80% success on our challenging yet feasible tasks, revealing the substantial gap between current agent capabilities and those required for complex real-world scenarios."
 
-[26.06.2026 09:24] Response: ```python
-["INFERENCE", "BENCHMARK", "TRAINING", "ARCHITECTURE"]
+[26.06.2026 14:23] Response: ```python
+['BENCHMARK', 'AGENTS', '3D']
 ```
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+[26.06.2026 14:23] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
 
 Topics:
 
@@ -283,37 +315,157 @@ Return only a Python flat list of topics that match the given text.
 
 Paper text to classify:
 
-"Abstract JetSpec is a speculative decoding framework that combines efficient forward drafting with causal conditioning to improve LLM inference speed and acceptance rates across various benchmarks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding (SD) accelerates autoregressive Large Language Models (LLMs) by drafting multiple tokens and verifying them in parallel, but it faces a scaling limitation: increasing the draft budget improves speed only when acceptance remains high and drafting overhead stays low. This ceiling has been difficult to break because prior head-based SD methods face a causality-efficiency dilemma. Autoregressive drafters produce path-conditioned candidates that are effective for tree speculative decoding with higher acceptance length, but their drafting cost grows with tree depth. Bidirectional block-diffusion drafters generate all positions in one pass, but their branch-agnostic marginals can form individually plausible yet mutually inconsistent trees, wasting budget and reducing acceptance. We propose JetSpec, a head-based SD framework that combines one-forward drafting efficiency with branch-wise causal conditioning. JetSpec trains a causal parallel draft head over fused hidden states from the frozen target model, producing candidate trees whose scores align with the target model's autoregressive factorization. This enables JetSpec to convert larger draft budgets into longer accepted prefixes and higher end-to-end speedup. Across math, coding, and chat benchmarks on dense and MoE Qwen3 models, JetSpec consistently outperforms bidirectional-head and tree-based SD baselines. On H100 GPUs, JetSpec achieves up to 9.64x speedup on MATH-500 and 4.58x on open-ended conversational workloads, with further latency gains demonstrated through vLLM integration under realistic serving loads. Our code and models are available at https://github.com/hao-ai-lab/JetSpec."
+"Abstract A web-based benchmark evaluates agent generalization across challenging scenarios, revealing significant gaps between current agentic systems and human performance in temporal perception, graphical understanding, and 3D reasoning.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As agentic systems continue to evolve and are widely deployed in real-world scenarios, there is a growing demand to faithfully evaluate their capabilities. However, current benchmarks are typically built on popular applications with relatively simple tasks and focus on a narrow set of capabilities while overlooking broader dimensions, resulting in saturated performance on modern agents and failing to probe their limitations. To this end, we introduce GauntletBench, a web-based benchmark for evaluating agent generalisation in challenging scenarios, focusing on three underexplored capabilities (temporal perception, graphical understanding, and 3D reasoning), across five less-covered professional applications (Video Editor, Workflow Builder, 3D Modeller, Flight Analyser, and Circuit Designer), each with 20 vision-intensive tasks (100 in total). Our benchmark provides a modular pipeline that comprises an environment compatible with both open- and closed-source agent frameworks, a controlled web-based application, a well-structured task suite, and an automated evaluation engine with diverse metrics. Contrary to widespread expectations, our empirical results reveal that frontier agentic systems remain far from achieving human-level performance. Even the state-of-the-art agent achieves only a 19.1% success rate on our GauntletBench, highlighting the limitations in these overlooked capabilities and generalisation. By comparison, non-expert human annotators achieve over 80% success on our challenging yet feasible tasks, revealing the substantial gap between current agent capabilities and those required for complex real-world scenarios."
 
-[26.06.2026 09:24] Response: ```python
-["OPTIMIZATION"]
+[26.06.2026 14:23] Response: ```python
+["AGI", "REASONING", "GAMES"]
 ```
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+[26.06.2026 14:23] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
 
-Abstract JetSpec is a speculative decoding framework that combines efficient forward drafting with causal conditioning to improve LLM inference speed and acceptance rates across various benchmarks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding (SD) accelerates autoregressive Large Language Models (LLMs) by drafting multiple tokens and verifying them in parallel, but it faces a scaling limitation: increasing the draft budget improves speed only when acceptance remains high and drafting overhead stays low. This ceiling has been difficult to break because prior head-based SD methods face a causality-efficiency dilemma. Autoregressive drafters produce path-conditioned candidates that are effective for tree speculative decoding with higher acceptance length, but their drafting cost grows with tree depth. Bidirectional block-diffusion drafters generate all positions in one pass, but their branch-agnostic marginals can form individually plausible yet mutually inconsistent trees, wasting budget and reducing acceptance. We propose JetSpec, a head-based SD framework that combines one-forward drafting efficiency with branch-wise causal conditioning. JetSpec trains a causal parallel draft head over fused hidden states from the frozen target model, producing candidate trees whose scores align with the target model's autoregressive factorization. This enables JetSpec to convert larger draft budgets into longer accepted prefixes and higher end-to-end speedup. Across math, coding, and chat benchmarks on dense and MoE Qwen3 models, JetSpec consistently outperforms bidirectional-head and tree-based SD baselines. On H100 GPUs, JetSpec achieves up to 9.64x speedup on MATH-500 and 4.58x on open-ended conversational workloads, with further latency gains demonstrated through vLLM integration under realistic serving loads. Our code and models are available at https://github.com/hao-ai-lab/JetSpec.
+Abstract A web-based benchmark evaluates agent generalization across challenging scenarios, revealing significant gaps between current agentic systems and human performance in temporal perception, graphical understanding, and 3D reasoning.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As agentic systems continue to evolve and are widely deployed in real-world scenarios, there is a growing demand to faithfully evaluate their capabilities. However, current benchmarks are typically built on popular applications with relatively simple tasks and focus on a narrow set of capabilities while overlooking broader dimensions, resulting in saturated performance on modern agents and failing to probe their limitations. To this end, we introduce GauntletBench, a web-based benchmark for evaluating agent generalisation in challenging scenarios, focusing on three underexplored capabilities (temporal perception, graphical understanding, and 3D reasoning), across five less-covered professional applications (Video Editor, Workflow Builder, 3D Modeller, Flight Analyser, and Circuit Designer), each with 20 vision-intensive tasks (100 in total). Our benchmark provides a modular pipeline that comprises an environment compatible with both open- and closed-source agent frameworks, a controlled web-based application, a well-structured task suite, and an automated evaluation engine with diverse metrics. Contrary to widespread expectations, our empirical results reveal that frontier agentic systems remain far from achieving human-level performance. Even the state-of-the-art agent achieves only a 19.1% success rate on our GauntletBench, highlighting the limitations in these overlooked capabilities and generalisation. By comparison, non-expert human annotators achieve over 80% success on our challenging yet feasible tasks, revealing the substantial gap between current agent capabilities and those required for complex real-world scenarios.
 
 Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
-[26.06.2026 09:24] Response: {
-  "desc": "JetSpec is a new framework designed to speed up the inference of Large Language Models (LLMs) by using a method called speculative decoding. It combines efficient forward drafting with causal conditioning to improve the acceptance rates of generated tokens. This approach allows for better use of draft budgets, leading to longer accepted outputs and faster processing times. JetSpec outperforms existing methods in various benchmarks, achieving significant speedups in tasks like math and coding.",
-  "title": "Accelerating LLM Inference with JetSpec"
+[26.06.2026 14:23] Response: {
+  "desc": "This paper introduces GauntletBench, a web-based benchmark designed to evaluate the generalization capabilities of agentic systems in complex scenarios. It focuses on three critical areas: temporal perception, graphical understanding, and 3D reasoning, which are often overlooked in existing benchmarks. The study reveals that even state-of-the-art agents perform significantly below human levels, achieving only a 19.1% success rate compared to over 80% for non-expert humans. This highlights the limitations of current agentic systems and the need for more comprehensive evaluation methods in real-world applications.",
+  "title": "Bridging the Gap: Evaluating Agentic Systems Beyond Simple Tasks"
 }
-[26.06.2026 09:24] Using data from previous issue: {"categories": ["#reasoning", "#benchmark", "#optimization", "#agents", "#alignment", "#rlhf", "#training"], "emoji": "🤖", "ru": {"title": "Верификация и человеческие намерения в мире AI", "desc": "В статье обсуждаются проблемы верификации в AI-агентах, связанные с необходимостью согласования сигнал
-[26.06.2026 09:24] Using data from previous issue: {"categories": ["#optimization", "#tool_use", "#training", "#reinforcement_learning", "#rl"], "emoji": "🛠️", "ru": {"title": "Стабильность LLM через разнообразные сигналы управления", "desc": "В этой работе исследуется, как различные сигналы управления и стратегии обучения могут улучшить стабильност
-[26.06.2026 09:24] Using data from previous issue: {"categories": ["#agent_memory", "#benchmark", "#agents", "#session_memory"], "emoji": "🖥️", "ru": {"title": "Сравнение эффективности GUI и CLI агентов в выполнении задач", "desc": "В данной статье представлено исследование производительности агентов, использующих графические и программные интерфейс
-[26.06.2026 09:24] Using data from previous issue: {"categories": ["#reasoning", "#benchmark", "#security", "#agents", "#open_source", "#rl", "#agent_memory"], "emoji": "🎥", "ru": {"title": "Надежное видео reasoning: точность с учетом доверия", "desc": "Статья посвящена решению проблемы слепого доверия в виде reasoning, предлагая подход Robust-TO. Э
-[26.06.2026 09:24] Using data from previous issue: {"categories": ["#optimization", "#agents", "#robotics", "#transfer_learning", "#inference", "#long_context"], "emoji": "🤖", "ru": {"title": "Адаптация роботов без обновления параметров", "desc": "В этой работе представлен новый подход, называемый In-Context World Modeling (ICWM), который позволяет 
-[26.06.2026 09:24] Querying the API.
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#reasoning", "#benchmark", "#security", "#agents", "#open_source", "#rl", "#agent_memory"], "emoji": "🎥", "ru": {"title": "Надежное видео reasoning: точность с учетом доверия", "desc": "Статья посвящена решению проблемы слепого доверия в виде reasoning, предлагая подход Robust-TO. Э
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#agent_memory", "#benchmark", "#agents", "#session_memory"], "emoji": "🖥️", "ru": {"title": "Сравнение эффективности GUI и CLI агентов в выполнении задач", "desc": "В данной статье представлено исследование производительности агентов, использующих графические и программные интерфейс
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#optimization", "#agents", "#robotics", "#transfer_learning", "#inference", "#long_context"], "emoji": "🤖", "ru": {"title": "Адаптация роботов без обновления параметров", "desc": "В этой работе представлен новый подход, называемый In-Context World Modeling (ICWM), который позволяет 
+[26.06.2026 14:23] Using data from previous issue: {"categories": ["#benchmark", "#open_source", "#agents", "#long_context", "#agent_memory"], "emoji": "☕", "ru": {"title": "CoffeeBench: Оценка агентов в многопользовательской экономике", "desc": "Статья представляет CoffeeBench, новый бенчмарк для оценки LLM-агентов в многопользовательской экономиче
+[26.06.2026 14:23] Querying the API.
+[26.06.2026 14:23] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
 
-Abstract Reward models in reinforcement learning suffer from oversensitivity issues where they assign different scores to equally good responses, leading to poor policy learning, but this can be mitigated through discretization techniques that maintain discriminative ability while reducing oversensitivity.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Despite their widespread use, the role of reward models in shaping reinforcement learning is poorly understood. Reward models offer a tempting promise: they automatically estimate response quality in the absence of verifiers or human judges. Unlike "verifiable rewards" which typically produce binary scores, reward models typically produce continuous scores, allowing them to be sensitive to fine-grained differences in responses. However, we show this apparent strength is a serious weakness: many popular reward models are oversensitive, assigning different scores to equally good responses. Theoretically, we show that seemingly perfect reward models can be highly oversensitive; empirically, this oversensitivity can lead to bad policies. In place of existing notions of "reward model accuracy," we propose evaluating reward models using distinct measures of "discriminative ability" and "specificity" (the complement of oversensitivity). As a solution, we describe a training-free algorithm that uses Monte Carlo dropout on any neural reward model to produce discrete reward clusters. Theoretically, we prove there exist discretizations that reduce oversensitivity at minimal expense of discriminative ability; empirically we show, in both controlled and natural RL settings, that discretizing rewards leads to less reward hacking and better policies than training on the original rewards.
-[26.06.2026 09:24] Response: ```json
+Abstract Score-based generative modeling reveals that side networks contribute likelihood scores to conditional control, leading to improved training efficiency through likelihood score alignment regularization.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct The prevalent dual-branch paradigm, i.e., training a side network to encode visual conditions and fusing its intermediate-layer features to a frozen pretrained main network, has shown remarkable success in visual-condition controllable generation. Despite its widespread adoption, the role of the side branch and its training efficiency remain underexplored. In this paper, we first revisit this mainstream paradigm through the lens of score-based generative modeling: 1) The main network preserves visual perceptual quality by providing a prior unconditional score. 2) The side network steers conditional control by implicitly contributing a likelihood score. Guided by this perspective, we propose LIkelihood Score Alignment (LISA), an effective regularization method that explicitly aligns the intermediate feature of the side network with an approximated likelihood score. Specifically, we first hook features from a designated layer of the side network and project them into the score latent space by a lightweight decoder. Then, we construct an approximated likelihood score target and calculate the distance between the decoder's output and this target as an additional regularization loss. Finally, we jointly optimize the side network and decoder with both standard diffusion loss and our regularization loss. Experiments across various image/video tasks, architectures, and diffusion/flow models demonstrated that LISA can not only consistently accelerate the training convergence and improve final synthetic results, but also encourage the side network's features to be more disentangled for conditional modeling with negligible additional training cost and zero extra inference cost.
+[26.06.2026 14:24] Response: ```json
 {
-  "desc": "Модели вознаграждений в обучении с подкреплением могут страдать от избыточной чувствительности, из-за чего они присваивают разные оценки одинаково хорошим ответам, что приводит к плохому обучению политик. Это можно смягчить с помощью техник дискретизации, которые сохраняют возможность различения при снижении избыточной чувствительности. Мы предлагаем оценивать модели вознаграждений с помощью мер 'различительной способности' и 'специфичности', вместо традиционной 'точности моделей вознаграждений'. Предложенный алгоритм позволяет обнаруживать дискретные кластеры вознаграждений без дополнительного обучения и доказано снижает избыточную чувствительность.",
+  "desc": "В данной статье рассматривается модель генерации на основе оценки вероятности, где боковые сети помогают в управлении условиями генерации. Мы предлагаем новый метод регуляризации, называемый LISA, который улучшает эффективность обучения путем согласования признаков боковой сети с приближенными оценками вероятности. Этот подход ускоряет сходимость обучения и улучшает качество сгенерированных изображений и видео. Эксперименты показывают, что LISA способствует лучшей разделяемости признаков в боковой сети без дополнительных затрат на обучение и вывод.",
+  "emoji": "🎨",
+  "title": "Улучшение генерации через согласование оценок вероятности"
+}
+```
+[26.06.2026 14:24] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract Score-based generative modeling reveals that side networks contribute likelihood scores to conditional control, leading to improved training efficiency through likelihood score alignment regularization.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct The prevalent dual-branch paradigm, i.e., training a side network to encode visual conditions and fusing its intermediate-layer features to a frozen pretrained main network, has shown remarkable success in visual-condition controllable generation. Despite its widespread adoption, the role of the side branch and its training efficiency remain underexplored. In this paper, we first revisit this mainstream paradigm through the lens of score-based generative modeling: 1) The main network preserves visual perceptual quality by providing a prior unconditional score. 2) The side network steers conditional control by implicitly contributing a likelihood score. Guided by this perspective, we propose LIkelihood Score Alignment (LISA), an effective regularization method that explicitly aligns the intermediate feature of the side network with an approximated likelihood score. Specifically, we first hook features from a designated layer of the side network and project them into the score latent space by a lightweight decoder. Then, we construct an approximated likelihood score target and calculate the distance between the decoder's output and this target as an additional regularization loss. Finally, we jointly optimize the side network and decoder with both standard diffusion loss and our regularization loss. Experiments across various image/video tasks, architectures, and diffusion/flow models demonstrated that LISA can not only consistently accelerate the training convergence and improve final synthetic results, but also encourage the side network's features to be more disentangled for conditional modeling with negligible additional training cost and zero extra inference cost."
+
+[26.06.2026 14:24] Response: ```python
+["TRAINING", "ARCHITECTURE"]
+```
+[26.06.2026 14:24] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract Score-based generative modeling reveals that side networks contribute likelihood scores to conditional control, leading to improved training efficiency through likelihood score alignment regularization.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct The prevalent dual-branch paradigm, i.e., training a side network to encode visual conditions and fusing its intermediate-layer features to a frozen pretrained main network, has shown remarkable success in visual-condition controllable generation. Despite its widespread adoption, the role of the side branch and its training efficiency remain underexplored. In this paper, we first revisit this mainstream paradigm through the lens of score-based generative modeling: 1) The main network preserves visual perceptual quality by providing a prior unconditional score. 2) The side network steers conditional control by implicitly contributing a likelihood score. Guided by this perspective, we propose LIkelihood Score Alignment (LISA), an effective regularization method that explicitly aligns the intermediate feature of the side network with an approximated likelihood score. Specifically, we first hook features from a designated layer of the side network and project them into the score latent space by a lightweight decoder. Then, we construct an approximated likelihood score target and calculate the distance between the decoder's output and this target as an additional regularization loss. Finally, we jointly optimize the side network and decoder with both standard diffusion loss and our regularization loss. Experiments across various image/video tasks, architectures, and diffusion/flow models demonstrated that LISA can not only consistently accelerate the training convergence and improve final synthetic results, but also encourage the side network's features to be more disentangled for conditional modeling with negligible additional training cost and zero extra inference cost."
+
+[26.06.2026 14:24] Response: ```python
+["DIFFUSION", "OPTIMIZATION"]
+```
+[26.06.2026 14:24] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract Score-based generative modeling reveals that side networks contribute likelihood scores to conditional control, leading to improved training efficiency through likelihood score alignment regularization.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct The prevalent dual-branch paradigm, i.e., training a side network to encode visual conditions and fusing its intermediate-layer features to a frozen pretrained main network, has shown remarkable success in visual-condition controllable generation. Despite its widespread adoption, the role of the side branch and its training efficiency remain underexplored. In this paper, we first revisit this mainstream paradigm through the lens of score-based generative modeling: 1) The main network preserves visual perceptual quality by providing a prior unconditional score. 2) The side network steers conditional control by implicitly contributing a likelihood score. Guided by this perspective, we propose LIkelihood Score Alignment (LISA), an effective regularization method that explicitly aligns the intermediate feature of the side network with an approximated likelihood score. Specifically, we first hook features from a designated layer of the side network and project them into the score latent space by a lightweight decoder. Then, we construct an approximated likelihood score target and calculate the distance between the decoder's output and this target as an additional regularization loss. Finally, we jointly optimize the side network and decoder with both standard diffusion loss and our regularization loss. Experiments across various image/video tasks, architectures, and diffusion/flow models demonstrated that LISA can not only consistently accelerate the training convergence and improve final synthetic results, but also encourage the side network's features to be more disentangled for conditional modeling with negligible additional training cost and zero extra inference cost.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[26.06.2026 14:24] Response: {
+  "desc": "This paper explores the dual-branch paradigm in score-based generative modeling, where a side network enhances conditional control by contributing likelihood scores. It introduces a new regularization method called LIkelihood Score Alignment (LISA) that aligns features from the side network with an approximated likelihood score. By optimizing both the side network and a lightweight decoder, LISA improves training efficiency and the quality of generated images and videos. The results show that LISA accelerates convergence and enhances feature disentanglement without adding extra costs during inference.",
+  "title": "Enhancing Conditional Control with LISA in Generative Models"
+}
+[26.06.2026 14:24] Using data from previous issue: {"categories": ["#optimization", "#agents", "#training", "#rl", "#games"], "emoji": "🚀", "ru": {"title": "Ускорение визуального планирования с помощью Fast-LeWM", "desc": "Статья представляет Fast-LeWM, модель, ускоряющую визуальное планирование за счет замены автогрегрессивного роллаута параллельны
+[26.06.2026 14:24] Using data from previous issue: {"categories": ["#reasoning", "#optimization", "#open_source", "#robotics", "#diffusion", "#3d"], "emoji": "⚙️", "ru": {"title": "Физически правдоподобные движения 3D объектов", "desc": "Статья представляет модель PhysiFormer, которая использует диффузию в координатном пространстве для генерации физ
+[26.06.2026 14:24] Using data from previous issue: {"categories": ["#training", "#rl", "#reasoning", "#optimization", "#rlhf"], "emoji": "📊", "ru": {"title": "Снижение избыточной чувствительности моделей вознаграждений", "desc": "Модели вознаграждений в обучении с подкреплением могут страдать от избыточной чувствительности, из-за чего они присваиваю
+[26.06.2026 14:24] Using data from previous issue: {"categories": ["#benchmark", "#low_resource", "#data", "#dataset", "#training", "#hallucinations"], "emoji": "🌍", "ru": {"title": "Галлюцинации моделей мира: решение через данные", "desc": "В данной статье рассматривается проблема галлюцинаций в моделях мира, которые возникают в областях пространст
+[26.06.2026 14:24] Querying the API.
+[26.06.2026 14:24] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract Multi-model systems face fundamental accuracy limits determined by the rate at which all models fail simultaneously, regardless of their individual correlations or ensemble strategies.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Multi-model LLM systems such as routing, voting, cascades, fusion, and mixture-of-agents are used to beat single-model accuracy. We show that their gain is capped by a quantity the field rarely reports. For any policy whose output is one member model answer, accuracy cannot exceed one minus beta, where beta is the rate at which every model is wrong on the same query. In contrast, the usual diagnostic, average pairwise error correlation rho, cannot identify beta: error laws with identical marginals and pairwise correlations can have different all-wrong rates. A Clopper-Pearson bound on beta gives a finite-sample certificate on the largest gain any router, vote, or cascade could deliver before training a router.   Across 67 models from 21 providers, a tetrachoric-calibrated single-factor model still underprices the all-wrong tail: on open-ended mathematics, observed beta is 0.052 versus 0.023 under the full 67-model Gaussian copula, about 2.5 times underpricing, with 90 percent CI 1.7 to 3.4 and k equals 17. The effect recurs on execution-graded code, where beta is 0.079. Re-asking the same GPQA-Diamond questions in free-response rather than multiple-choice form reopens the tail, with beta 0.127 and a five-judge panel with kappa 0.73 to 0.92, locating co-failure in answer format rather than subject. At matched quality, low-rho heterogeneous ensembles beat high-rho Self-MoA, but on checkable tasks in our pool, combining models rarely beats the single best model without a strong query-level routing signal. Gains come from models failing on different questions, not from adding more models.
+[26.06.2026 14:24] Response: ```json
+{
+  "desc": "Много-модельные системы сталкиваются с фундаментальными ограничениями точности, связанными с тем, как часто все модели одновременно ошибаются. Являясь вариацией различных подходов, таких как голосование и каскады, они могут быть бесполезными, если единственный ответ модели не может превысить определенный предел точности. Исследование показывает, что для повышения эффективности моделей необходимо учитывать уровень их ошибок на одинаковых запросах. В подобных условиях сочетание различных моделей не всегда приводит к улучшению результатов без четкой маршрутизации запросов.",
   "emoji": "📊",
-  "title": "Снижение избыточной чувствительности моделей вознаграждений"
+  "title": "Пределы точности много-модельных систем"
 }
 ```
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+[26.06.2026 14:24] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
 
 Topics:
 
@@ -357,12 +509,12 @@ Return only a Python flat list of topics that match the given text.
 
 Paper text to classify:
 
-"Abstract Reward models in reinforcement learning suffer from oversensitivity issues where they assign different scores to equally good responses, leading to poor policy learning, but this can be mitigated through discretization techniques that maintain discriminative ability while reducing oversensitivity.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Despite their widespread use, the role of reward models in shaping reinforcement learning is poorly understood. Reward models offer a tempting promise: they automatically estimate response quality in the absence of verifiers or human judges. Unlike "verifiable rewards" which typically produce binary scores, reward models typically produce continuous scores, allowing them to be sensitive to fine-grained differences in responses. However, we show this apparent strength is a serious weakness: many popular reward models are oversensitive, assigning different scores to equally good responses. Theoretically, we show that seemingly perfect reward models can be highly oversensitive; empirically, this oversensitivity can lead to bad policies. In place of existing notions of "reward model accuracy," we propose evaluating reward models using distinct measures of "discriminative ability" and "specificity" (the complement of oversensitivity). As a solution, we describe a training-free algorithm that uses Monte Carlo dropout on any neural reward model to produce discrete reward clusters. Theoretically, we prove there exist discretizations that reduce oversensitivity at minimal expense of discriminative ability; empirically we show, in both controlled and natural RL settings, that discretizing rewards leads to less reward hacking and better policies than training on the original rewards."
+"Abstract Multi-model systems face fundamental accuracy limits determined by the rate at which all models fail simultaneously, regardless of their individual correlations or ensemble strategies.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Multi-model LLM systems such as routing, voting, cascades, fusion, and mixture-of-agents are used to beat single-model accuracy. We show that their gain is capped by a quantity the field rarely reports. For any policy whose output is one member model answer, accuracy cannot exceed one minus beta, where beta is the rate at which every model is wrong on the same query. In contrast, the usual diagnostic, average pairwise error correlation rho, cannot identify beta: error laws with identical marginals and pairwise correlations can have different all-wrong rates. A Clopper-Pearson bound on beta gives a finite-sample certificate on the largest gain any router, vote, or cascade could deliver before training a router.   Across 67 models from 21 providers, a tetrachoric-calibrated single-factor model still underprices the all-wrong tail: on open-ended mathematics, observed beta is 0.052 versus 0.023 under the full 67-model Gaussian copula, about 2.5 times underpricing, with 90 percent CI 1.7 to 3.4 and k equals 17. The effect recurs on execution-graded code, where beta is 0.079. Re-asking the same GPQA-Diamond questions in free-response rather than multiple-choice form reopens the tail, with beta 0.127 and a five-judge panel with kappa 0.73 to 0.92, locating co-failure in answer format rather than subject. At matched quality, low-rho heterogeneous ensembles beat high-rho Self-MoA, but on checkable tasks in our pool, combining models rarely beats the single best model without a strong query-level routing signal. Gains come from models failing on different questions, not from adding more models."
 
-[26.06.2026 09:24] Response: ```python
-['RL', 'RLHF', 'TRAINING']
+[26.06.2026 14:24] Response: ```python
+["BENCHMARK", "MULTIMODAL"]
 ```
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+[26.06.2026 14:24] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
 
 Topics:
 
@@ -405,267 +557,29 @@ Return only a Python flat list of topics that match the given text.
 
 Paper text to classify:
 
-"Abstract Reward models in reinforcement learning suffer from oversensitivity issues where they assign different scores to equally good responses, leading to poor policy learning, but this can be mitigated through discretization techniques that maintain discriminative ability while reducing oversensitivity.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Despite their widespread use, the role of reward models in shaping reinforcement learning is poorly understood. Reward models offer a tempting promise: they automatically estimate response quality in the absence of verifiers or human judges. Unlike "verifiable rewards" which typically produce binary scores, reward models typically produce continuous scores, allowing them to be sensitive to fine-grained differences in responses. However, we show this apparent strength is a serious weakness: many popular reward models are oversensitive, assigning different scores to equally good responses. Theoretically, we show that seemingly perfect reward models can be highly oversensitive; empirically, this oversensitivity can lead to bad policies. In place of existing notions of "reward model accuracy," we propose evaluating reward models using distinct measures of "discriminative ability" and "specificity" (the complement of oversensitivity). As a solution, we describe a training-free algorithm that uses Monte Carlo dropout on any neural reward model to produce discrete reward clusters. Theoretically, we prove there exist discretizations that reduce oversensitivity at minimal expense of discriminative ability; empirically we show, in both controlled and natural RL settings, that discretizing rewards leads to less reward hacking and better policies than training on the original rewards."
+"Abstract Multi-model systems face fundamental accuracy limits determined by the rate at which all models fail simultaneously, regardless of their individual correlations or ensemble strategies.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Multi-model LLM systems such as routing, voting, cascades, fusion, and mixture-of-agents are used to beat single-model accuracy. We show that their gain is capped by a quantity the field rarely reports. For any policy whose output is one member model answer, accuracy cannot exceed one minus beta, where beta is the rate at which every model is wrong on the same query. In contrast, the usual diagnostic, average pairwise error correlation rho, cannot identify beta: error laws with identical marginals and pairwise correlations can have different all-wrong rates. A Clopper-Pearson bound on beta gives a finite-sample certificate on the largest gain any router, vote, or cascade could deliver before training a router.   Across 67 models from 21 providers, a tetrachoric-calibrated single-factor model still underprices the all-wrong tail: on open-ended mathematics, observed beta is 0.052 versus 0.023 under the full 67-model Gaussian copula, about 2.5 times underpricing, with 90 percent CI 1.7 to 3.4 and k equals 17. The effect recurs on execution-graded code, where beta is 0.079. Re-asking the same GPQA-Diamond questions in free-response rather than multiple-choice form reopens the tail, with beta 0.127 and a five-judge panel with kappa 0.73 to 0.92, locating co-failure in answer format rather than subject. At matched quality, low-rho heterogeneous ensembles beat high-rho Self-MoA, but on checkable tasks in our pool, combining models rarely beats the single best model without a strong query-level routing signal. Gains come from models failing on different questions, not from adding more models."
 
-[26.06.2026 09:24] Response: ```python
-["REASONING", "OPTIMIZATION"]
+[26.06.2026 14:24] Response: ```python
+["OPTIMIZATION", "AGGREGATION"]
 ```
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+[26.06.2026 14:24] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
 
-Abstract Reward models in reinforcement learning suffer from oversensitivity issues where they assign different scores to equally good responses, leading to poor policy learning, but this can be mitigated through discretization techniques that maintain discriminative ability while reducing oversensitivity.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Despite their widespread use, the role of reward models in shaping reinforcement learning is poorly understood. Reward models offer a tempting promise: they automatically estimate response quality in the absence of verifiers or human judges. Unlike "verifiable rewards" which typically produce binary scores, reward models typically produce continuous scores, allowing them to be sensitive to fine-grained differences in responses. However, we show this apparent strength is a serious weakness: many popular reward models are oversensitive, assigning different scores to equally good responses. Theoretically, we show that seemingly perfect reward models can be highly oversensitive; empirically, this oversensitivity can lead to bad policies. In place of existing notions of "reward model accuracy," we propose evaluating reward models using distinct measures of "discriminative ability" and "specificity" (the complement of oversensitivity). As a solution, we describe a training-free algorithm that uses Monte Carlo dropout on any neural reward model to produce discrete reward clusters. Theoretically, we prove there exist discretizations that reduce oversensitivity at minimal expense of discriminative ability; empirically we show, in both controlled and natural RL settings, that discretizing rewards leads to less reward hacking and better policies than training on the original rewards.
+Abstract Multi-model systems face fundamental accuracy limits determined by the rate at which all models fail simultaneously, regardless of their individual correlations or ensemble strategies.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Multi-model LLM systems such as routing, voting, cascades, fusion, and mixture-of-agents are used to beat single-model accuracy. We show that their gain is capped by a quantity the field rarely reports. For any policy whose output is one member model answer, accuracy cannot exceed one minus beta, where beta is the rate at which every model is wrong on the same query. In contrast, the usual diagnostic, average pairwise error correlation rho, cannot identify beta: error laws with identical marginals and pairwise correlations can have different all-wrong rates. A Clopper-Pearson bound on beta gives a finite-sample certificate on the largest gain any router, vote, or cascade could deliver before training a router.   Across 67 models from 21 providers, a tetrachoric-calibrated single-factor model still underprices the all-wrong tail: on open-ended mathematics, observed beta is 0.052 versus 0.023 under the full 67-model Gaussian copula, about 2.5 times underpricing, with 90 percent CI 1.7 to 3.4 and k equals 17. The effect recurs on execution-graded code, where beta is 0.079. Re-asking the same GPQA-Diamond questions in free-response rather than multiple-choice form reopens the tail, with beta 0.127 and a five-judge panel with kappa 0.73 to 0.92, locating co-failure in answer format rather than subject. At matched quality, low-rho heterogeneous ensembles beat high-rho Self-MoA, but on checkable tasks in our pool, combining models rarely beats the single best model without a strong query-level routing signal. Gains come from models failing on different questions, not from adding more models.
 
 Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
-[26.06.2026 09:24] Response: {
-  "desc": "This paper addresses the problem of oversensitivity in reward models used in reinforcement learning, where models assign different scores to equally good responses. This issue can hinder effective policy learning, as it leads to inconsistent evaluations. The authors propose using discretization techniques to create discrete reward clusters that maintain the model's ability to differentiate between responses while reducing oversensitivity. Their approach, validated through theoretical proofs and empirical results, shows that discretized rewards can lead to improved policy performance and less reward hacking compared to traditional continuous scoring methods.",
-  "title": "Discretizing Rewards to Combat Oversensitivity in Reinforcement Learning"
+[26.06.2026 14:24] Response: {
+  "desc": "This paper discusses the limitations of multi-model systems in machine learning, particularly how their accuracy is constrained by the simultaneous failure rate of all models involved. It introduces the concept of beta, which represents the rate at which all models provide incorrect answers, and shows that accuracy cannot exceed one minus beta. The authors highlight that traditional measures like average pairwise error correlation do not effectively capture this all-wrong rate. Through empirical analysis, they demonstrate that combining models often does not outperform the best single model unless there is a strong routing signal based on the specific queries.",
+  "title": "Understanding the Limits of Multi-Model Accuracy"
 }
-[26.06.2026 09:24] Querying the API.
-[26.06.2026 09:24] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
-
-Abstract CoffeeBench evaluates LLM agents in a multi-agent economic simulation where firms interact over 90 days to maximize profits, revealing differences in communication patterns and performance among various models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As LLM agents become capable of increasingly long-horizon tasks, evaluating their performance in economic systems is becoming increasingly important. Unlike existing benchmarks that primarily evaluate a single agent interacting with a passive environment, economic systems are inherently multi-agent, requiring autonomous agents to communicate, negotiate, and transact while pursuing their own objectives over extended periods. We introduce CoffeeBench, a benchmark for evaluating LLM agents in a long-horizon multi-agent economy composed of heterogeneous firms. In CoffeeBench, two farmers, two roasters, and two retailers autonomously operate their businesses over a 90-day simulation, each seeking to maximize cumulative net income through communication and transactions while managing cash, inventory, and pricing. The evaluated model controls one coffee roaster, while the remaining firms are controlled by fixed reference agents. Across several recent open-weight and proprietary LLMs, all models outperform a passive baseline that takes no actions, with most achieving positive net income. Analysis of agent behavior reveals substantial differences in long-horizon economic interaction: higher-performing models communicate more actively with other firms, whereas Claude~Haiku~4.5 exhibits an idle-drift failure mode, repeatedly choosing inaction despite producing coherent assessments and plans. We release our code and agent trajectories to support future research.
-[26.06.2026 09:25] Response: ```json
-{
-  "desc": "Статья представляет CoffeeBench, новый бенчмарк для оценки LLM-агентов в многопользовательской экономической симуляции. В симуляции участвуют две фермы, две обжарочные компании и два ритейлера, каждый из которых стремится максимизировать свою прибыль за 90 дней. Результаты показывают, что более высокоэффективные модели активнее общаются с другими участниками, в то время как у некоторых моделей наблюдается неактивность. Исследование подчеркивает важность оценки взаимодействий между агентами в долгосрочных экономических системах.",
-  "emoji": "☕",
-  "title": "CoffeeBench: Оценка агентов в многопользовательской экономике"
-}
-```
-[26.06.2026 09:25] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
-
-Topics:
-
-DATASET: Papers that introduce new datasets or make significant modifications to existing ones
-DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
-BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
-AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
-RL: Papers investigating reinforcement learning theory or applications
-RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
-RAG: Papers advancing retrieval-augmented generation techniques
-PLP: Papers about Programming Language Processing models or programming benchmarks
-INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
-3D: Papers on 3D content generation, processing, or understanding
-AUDIO: Papers advancing speech/audio processing or generation
-MULTIMODAL: Papers combining multiple input/output modalities
-MATH: Papers focused on mathematical theory and algorithms
-MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
-ARCHITECTURE: Papers proposing novel neural architectures or components
-HEALTHCARE: Papers applying ML to medical/healthcare domains
-TRAINING: Papers improving model training or fine-tuning methods
-ROBOTICS: Papers on robotic systems and embodied AI
-SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
-MEMORY: Works on internal/external memory for LLMs
-AGENT_MEMORY: Memory and long-term context in agents
-SESSION_MEMORY: Dialogue/session memory across turns
-RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
-RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
-PROMPTING: Prompt engineering, CoT/ToT, self-consistency
-PROMPT_CACHING: KV/response caching for long sessions
-CONTEXT_WINDOW: Techniques to extend/pack context
-COMPRESSION: Context compression/summarization/chunking for memory
-MEMORIZATION: On-the-fly learning/continual memorization
-CONTINUAL_LEARNING: Continual learning without forgetting
-KNOWLEDGE_GRAPHS: Knowledge storage via graphs
-TOOL_USE: Using external tools as memory/extension
-OPEN_SOURCE: Papers that contribute to open-source projects
-SCIENCE: Papers on scientific applications of ML
-LOW_RESOURCE: Papers mentioning low-resource settings or languages
-
-Return only a Python flat list of topics that match the given text.
-
-Paper text to classify:
-
-"Abstract CoffeeBench evaluates LLM agents in a multi-agent economic simulation where firms interact over 90 days to maximize profits, revealing differences in communication patterns and performance among various models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As LLM agents become capable of increasingly long-horizon tasks, evaluating their performance in economic systems is becoming increasingly important. Unlike existing benchmarks that primarily evaluate a single agent interacting with a passive environment, economic systems are inherently multi-agent, requiring autonomous agents to communicate, negotiate, and transact while pursuing their own objectives over extended periods. We introduce CoffeeBench, a benchmark for evaluating LLM agents in a long-horizon multi-agent economy composed of heterogeneous firms. In CoffeeBench, two farmers, two roasters, and two retailers autonomously operate their businesses over a 90-day simulation, each seeking to maximize cumulative net income through communication and transactions while managing cash, inventory, and pricing. The evaluated model controls one coffee roaster, while the remaining firms are controlled by fixed reference agents. Across several recent open-weight and proprietary LLMs, all models outperform a passive baseline that takes no actions, with most achieving positive net income. Analysis of agent behavior reveals substantial differences in long-horizon economic interaction: higher-performing models communicate more actively with other firms, whereas Claude~Haiku~4.5 exhibits an idle-drift failure mode, repeatedly choosing inaction despite producing coherent assessments and plans. We release our code and agent trajectories to support future research."
-
-[26.06.2026 09:25] Response: ```python
-['BENCHMARK', 'AGENTS']
-```
-[26.06.2026 09:25] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
-
-Topics:
-
-AGI: Papers discussing artificial general intelligence concepts
-GAMES: Papers applying ML to games or game development
-INTERPRETABILITY: Papers analyzing model behavior and explanations
-REASONING: Papers enhancing logical reasoning capabilities
-TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
-GRAPHS: Papers advancing graph neural networks and applications
-ETHICS: Papers addressing AI ethics, fairness, and bias
-SECURITY: Papers on model security and adversarial robustness
-OPTIMIZATION: Papers advancing training optimization methods
-SURVEY: Papers comprehensively reviewing research areas
-DIFFUSION: Papers on diffusion-based generative models
-ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
-STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
-HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
-LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
-SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
-TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
-LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
-OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
-SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
-LOW_RESOURCE: Papers that mention low-resource languages
-MEMORY: Works on internal/external memory for LLMs
-AGENT_MEMORY: Memory and long-term context in agents
-SESSION_MEMORY: Dialogue/session memory across turns
-RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
-RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
-PROMPTING: Prompt engineering, CoT/ToT, self-consistency
-PROMPT_CACHING: KV/response caching for long sessions
-CONTEXT_WINDOW: Techniques to extend/pack context
-COMPRESSION: Context compression/summarization/chunking for memory
-MEMORIZATION: On-the-fly learning/continual memorization
-CONTINUAL_LEARNING: Continual learning without forgetting
-KNOWLEDGE_GRAPHS: Knowledge storage via graphs
-TOOL_USE: Using external tools as memory/extension
-
-Return only a Python flat list of topics that match the given text.
-
-Paper text to classify:
-
-"Abstract CoffeeBench evaluates LLM agents in a multi-agent economic simulation where firms interact over 90 days to maximize profits, revealing differences in communication patterns and performance among various models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As LLM agents become capable of increasingly long-horizon tasks, evaluating their performance in economic systems is becoming increasingly important. Unlike existing benchmarks that primarily evaluate a single agent interacting with a passive environment, economic systems are inherently multi-agent, requiring autonomous agents to communicate, negotiate, and transact while pursuing their own objectives over extended periods. We introduce CoffeeBench, a benchmark for evaluating LLM agents in a long-horizon multi-agent economy composed of heterogeneous firms. In CoffeeBench, two farmers, two roasters, and two retailers autonomously operate their businesses over a 90-day simulation, each seeking to maximize cumulative net income through communication and transactions while managing cash, inventory, and pricing. The evaluated model controls one coffee roaster, while the remaining firms are controlled by fixed reference agents. Across several recent open-weight and proprietary LLMs, all models outperform a passive baseline that takes no actions, with most achieving positive net income. Analysis of agent behavior reveals substantial differences in long-horizon economic interaction: higher-performing models communicate more actively with other firms, whereas Claude~Haiku~4.5 exhibits an idle-drift failure mode, repeatedly choosing inaction despite producing coherent assessments and plans. We release our code and agent trajectories to support future research."
-
-[26.06.2026 09:25] Response: ```python
-['AGENT_MEMORY', 'LONG_CONTEXT', 'OPEN_SOURCE']
-```
-[26.06.2026 09:25] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
-
-Abstract CoffeeBench evaluates LLM agents in a multi-agent economic simulation where firms interact over 90 days to maximize profits, revealing differences in communication patterns and performance among various models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct As LLM agents become capable of increasingly long-horizon tasks, evaluating their performance in economic systems is becoming increasingly important. Unlike existing benchmarks that primarily evaluate a single agent interacting with a passive environment, economic systems are inherently multi-agent, requiring autonomous agents to communicate, negotiate, and transact while pursuing their own objectives over extended periods. We introduce CoffeeBench, a benchmark for evaluating LLM agents in a long-horizon multi-agent economy composed of heterogeneous firms. In CoffeeBench, two farmers, two roasters, and two retailers autonomously operate their businesses over a 90-day simulation, each seeking to maximize cumulative net income through communication and transactions while managing cash, inventory, and pricing. The evaluated model controls one coffee roaster, while the remaining firms are controlled by fixed reference agents. Across several recent open-weight and proprietary LLMs, all models outperform a passive baseline that takes no actions, with most achieving positive net income. Analysis of agent behavior reveals substantial differences in long-horizon economic interaction: higher-performing models communicate more actively with other firms, whereas Claude~Haiku~4.5 exhibits an idle-drift failure mode, repeatedly choosing inaction despite producing coherent assessments and plans. We release our code and agent trajectories to support future research.
-
-Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
-[26.06.2026 09:25] GitHub Models 429 (rate limit). Ждём 12s, попытка 1/4.
-[26.06.2026 09:25] GitHub Models 429 (rate limit). Ждём 10s, попытка 2/4.
-[26.06.2026 09:25] Response: {
-  "desc": "CoffeeBench is a benchmark designed to evaluate large language model (LLM) agents in a multi-agent economic simulation where firms compete over 90 days to maximize profits. Unlike traditional benchmarks that focus on single-agent interactions, CoffeeBench emphasizes the importance of communication, negotiation, and transactions among multiple autonomous agents. The study reveals that higher-performing models engage more actively with other firms, while some models, like Claude Haiku 4.5, struggle with inaction despite having coherent strategies. This research highlights the need for effective long-horizon evaluations in economic systems and provides resources for further exploration.",
-  "title": "Evaluating LLM Agents in a Competitive Economic Landscape"
-}
-[26.06.2026 09:25] Using data from previous issue: {"categories": ["#reasoning", "#optimization", "#open_source", "#robotics", "#diffusion", "#3d"], "emoji": "⚙️", "ru": {"title": "Физически правдоподобные движения 3D объектов", "desc": "Статья представляет модель PhysiFormer, которая использует диффузию в координатном пространстве для генерации физ
-[26.06.2026 09:25] Using data from previous issue: {"categories": ["#optimization", "#agents", "#training", "#rl", "#games"], "emoji": "🚀", "ru": {"title": "Ускорение визуального планирования с помощью Fast-LeWM", "desc": "Статья представляет Fast-LeWM, модель, ускоряющую визуальное планирование за счет замены автогрегрессивного роллаута параллельны
-[26.06.2026 09:25] Using data from previous issue: {"categories": ["#retrieval", "#benchmark", "#tool_use", "#agents", "#agent_memory"], "emoji": "🧬", "ru": {"title": "Проверка надежности биомедицинских источников", "desc": "В статье представлено новое биомедицинское тестирование, которое оценивает способности агентов к проверке источников и предотв
-[26.06.2026 09:25] Using data from previous issue: {"categories": ["#benchmark", "#low_resource", "#data", "#dataset", "#training", "#hallucinations"], "emoji": "🌍", "ru": {"title": "Галлюцинации моделей мира: решение через данные", "desc": "В данной статье рассматривается проблема галлюцинаций в моделях мира, которые возникают в областях пространст
-[26.06.2026 09:25] Using data from previous issue: {"categories": ["#optimization", "#agi", "#multimodal", "#agents", "#rl", "#games"], "emoji": "🦋", "ru": {"title": "AI в помощь творчеству: вычислительное оригами", "desc": "В данной статье представлен подход к созданию систем вычислительного оригами, который использует AI для генерации рисунков скл
-[26.06.2026 09:25] Querying the API.
-[26.06.2026 09:25] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
-
-Abstract Post-training stages in biological reasoning models differently affect generalization, with continued pre-training aligning models with biological language, supervised fine-tuning improving in-domain performance but reducing out-of-domain generalization, and reinforcement learning recovering out-of-domain performance when applied to well-aligned checkpoints.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Scientific reasoning models for biology combine language models with foundation models trained on multimodal biological data, including DNA, RNA, and proteins. These models are built through post-training, yet how each stage shapes reasoning and generalization remains poorly understood. We study when post-training improves performance and when it induces over-specialization. Across genomics, transcriptomics, and proteins, we train and evaluate more than 100 biological reasoning models under controlled variation in backbone, continued pre-training (CPT), supervised fine-tuning (SFT), and reinforcement learning (RL), measuring both in-domain (ID) and out-of-domain (OOD) performance. We find that each post-training stage reshapes generalization in a distinct way rather than contributing uniform gains. CPT improves downstream performance by aligning models with biological language. SFT consistently increases ID performance but causes OOD performance to peak early and decline as models fit the training distribution. RL, when applied to strong SFT checkpoints with aligned rewards, improves OOD performance and partially recovers generalization. These results show that biological reasoning does not improve monotonically with additional supervision or compute. Instead, performance depends on how training stages are composed. Under fixed post-training budgets, the strongest ID-OOD trade-off comes from brief SFT, larger RL allocations, and asymmetric adaptation capacity across stages.
-[26.06.2026 09:25] Response: ```json
-{
-  "desc": "В данной статье исследуются этапы постобучения моделей биологического рассуждения и их влияние на обобщение. Выясняется, что продолжение предварительного обучения помогает лучше подстраивать модели под биологический язык, в то время как супервайзинг улучшает производительность в обучающем наборе, но снижает показатели вне него. Использование обучения с подкреплением восстанавливает производительность вне обучающего набора при работе с хорошо подобранными контрольными моментами. Результаты показывают, что улучшение в биологическом рассуждении зависит от компоновки этапов обучения.",
-  "emoji": "🧬",
-  "title": "Этапы постобучения в биологических моделях: баланс между специальностью и обобщением"
-}
-```
-[26.06.2026 09:25] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
-
-Topics:
-
-DATASET: Papers that introduce new datasets or make significant modifications to existing ones
-DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
-BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
-AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
-RL: Papers investigating reinforcement learning theory or applications
-RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
-RAG: Papers advancing retrieval-augmented generation techniques
-PLP: Papers about Programming Language Processing models or programming benchmarks
-INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
-3D: Papers on 3D content generation, processing, or understanding
-AUDIO: Papers advancing speech/audio processing or generation
-MULTIMODAL: Papers combining multiple input/output modalities
-MATH: Papers focused on mathematical theory and algorithms
-MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
-ARCHITECTURE: Papers proposing novel neural architectures or components
-HEALTHCARE: Papers applying ML to medical/healthcare domains
-TRAINING: Papers improving model training or fine-tuning methods
-ROBOTICS: Papers on robotic systems and embodied AI
-SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
-MEMORY: Works on internal/external memory for LLMs
-AGENT_MEMORY: Memory and long-term context in agents
-SESSION_MEMORY: Dialogue/session memory across turns
-RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
-RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
-PROMPTING: Prompt engineering, CoT/ToT, self-consistency
-PROMPT_CACHING: KV/response caching for long sessions
-CONTEXT_WINDOW: Techniques to extend/pack context
-COMPRESSION: Context compression/summarization/chunking for memory
-MEMORIZATION: On-the-fly learning/continual memorization
-CONTINUAL_LEARNING: Continual learning without forgetting
-KNOWLEDGE_GRAPHS: Knowledge storage via graphs
-TOOL_USE: Using external tools as memory/extension
-OPEN_SOURCE: Papers that contribute to open-source projects
-SCIENCE: Papers on scientific applications of ML
-LOW_RESOURCE: Papers mentioning low-resource settings or languages
-
-Return only a Python flat list of topics that match the given text.
-
-Paper text to classify:
-
-"Abstract Post-training stages in biological reasoning models differently affect generalization, with continued pre-training aligning models with biological language, supervised fine-tuning improving in-domain performance but reducing out-of-domain generalization, and reinforcement learning recovering out-of-domain performance when applied to well-aligned checkpoints.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Scientific reasoning models for biology combine language models with foundation models trained on multimodal biological data, including DNA, RNA, and proteins. These models are built through post-training, yet how each stage shapes reasoning and generalization remains poorly understood. We study when post-training improves performance and when it induces over-specialization. Across genomics, transcriptomics, and proteins, we train and evaluate more than 100 biological reasoning models under controlled variation in backbone, continued pre-training (CPT), supervised fine-tuning (SFT), and reinforcement learning (RL), measuring both in-domain (ID) and out-of-domain (OOD) performance. We find that each post-training stage reshapes generalization in a distinct way rather than contributing uniform gains. CPT improves downstream performance by aligning models with biological language. SFT consistently increases ID performance but causes OOD performance to peak early and decline as models fit the training distribution. RL, when applied to strong SFT checkpoints with aligned rewards, improves OOD performance and partially recovers generalization. These results show that biological reasoning does not improve monotonically with additional supervision or compute. Instead, performance depends on how training stages are composed. Under fixed post-training budgets, the strongest ID-OOD trade-off comes from brief SFT, larger RL allocations, and asymmetric adaptation capacity across stages."
-
-[26.06.2026 09:25] Response: ```python
-['RL', 'TRAINING', 'HEALTHCARE', 'MULTIMODAL']
-```
-[26.06.2026 09:25] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
-
-Topics:
-
-AGI: Papers discussing artificial general intelligence concepts
-GAMES: Papers applying ML to games or game development
-INTERPRETABILITY: Papers analyzing model behavior and explanations
-REASONING: Papers enhancing logical reasoning capabilities
-TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
-GRAPHS: Papers advancing graph neural networks and applications
-ETHICS: Papers addressing AI ethics, fairness, and bias
-SECURITY: Papers on model security and adversarial robustness
-OPTIMIZATION: Papers advancing training optimization methods
-SURVEY: Papers comprehensively reviewing research areas
-DIFFUSION: Papers on diffusion-based generative models
-ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
-STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
-HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
-LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
-SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
-TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
-LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
-OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
-SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
-LOW_RESOURCE: Papers that mention low-resource languages
-MEMORY: Works on internal/external memory for LLMs
-AGENT_MEMORY: Memory and long-term context in agents
-SESSION_MEMORY: Dialogue/session memory across turns
-RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
-RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
-PROMPTING: Prompt engineering, CoT/ToT, self-consistency
-PROMPT_CACHING: KV/response caching for long sessions
-CONTEXT_WINDOW: Techniques to extend/pack context
-COMPRESSION: Context compression/summarization/chunking for memory
-MEMORIZATION: On-the-fly learning/continual memorization
-CONTINUAL_LEARNING: Continual learning without forgetting
-KNOWLEDGE_GRAPHS: Knowledge storage via graphs
-TOOL_USE: Using external tools as memory/extension
-
-Return only a Python flat list of topics that match the given text.
-
-Paper text to classify:
-
-"Abstract Post-training stages in biological reasoning models differently affect generalization, with continued pre-training aligning models with biological language, supervised fine-tuning improving in-domain performance but reducing out-of-domain generalization, and reinforcement learning recovering out-of-domain performance when applied to well-aligned checkpoints.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Scientific reasoning models for biology combine language models with foundation models trained on multimodal biological data, including DNA, RNA, and proteins. These models are built through post-training, yet how each stage shapes reasoning and generalization remains poorly understood. We study when post-training improves performance and when it induces over-specialization. Across genomics, transcriptomics, and proteins, we train and evaluate more than 100 biological reasoning models under controlled variation in backbone, continued pre-training (CPT), supervised fine-tuning (SFT), and reinforcement learning (RL), measuring both in-domain (ID) and out-of-domain (OOD) performance. We find that each post-training stage reshapes generalization in a distinct way rather than contributing uniform gains. CPT improves downstream performance by aligning models with biological language. SFT consistently increases ID performance but causes OOD performance to peak early and decline as models fit the training distribution. RL, when applied to strong SFT checkpoints with aligned rewards, improves OOD performance and partially recovers generalization. These results show that biological reasoning does not improve monotonically with additional supervision or compute. Instead, performance depends on how training stages are composed. Under fixed post-training budgets, the strongest ID-OOD trade-off comes from brief SFT, larger RL allocations, and asymmetric adaptation capacity across stages."
-
-[26.06.2026 09:25] Response: ```python
-["REASONING", "CONTINUAL_LEARNING", "OPTIMIZATION"]
-```
-[26.06.2026 09:25] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
-
-Abstract Post-training stages in biological reasoning models differently affect generalization, with continued pre-training aligning models with biological language, supervised fine-tuning improving in-domain performance but reducing out-of-domain generalization, and reinforcement learning recovering out-of-domain performance when applied to well-aligned checkpoints.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Scientific reasoning models for biology combine language models with foundation models trained on multimodal biological data, including DNA, RNA, and proteins. These models are built through post-training, yet how each stage shapes reasoning and generalization remains poorly understood. We study when post-training improves performance and when it induces over-specialization. Across genomics, transcriptomics, and proteins, we train and evaluate more than 100 biological reasoning models under controlled variation in backbone, continued pre-training (CPT), supervised fine-tuning (SFT), and reinforcement learning (RL), measuring both in-domain (ID) and out-of-domain (OOD) performance. We find that each post-training stage reshapes generalization in a distinct way rather than contributing uniform gains. CPT improves downstream performance by aligning models with biological language. SFT consistently increases ID performance but causes OOD performance to peak early and decline as models fit the training distribution. RL, when applied to strong SFT checkpoints with aligned rewards, improves OOD performance and partially recovers generalization. These results show that biological reasoning does not improve monotonically with additional supervision or compute. Instead, performance depends on how training stages are composed. Under fixed post-training budgets, the strongest ID-OOD trade-off comes from brief SFT, larger RL allocations, and asymmetric adaptation capacity across stages.
-
-Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
-[26.06.2026 09:25] Response: {
-  "desc": "This paper investigates how different post-training stages affect the generalization of biological reasoning models. It finds that continued pre-training aligns models with biological language, while supervised fine-tuning enhances in-domain performance but can hurt out-of-domain generalization. Reinforcement learning can recover out-of-domain performance when applied to well-aligned models. The study emphasizes that the effectiveness of training stages varies and is not simply improved by adding more supervision or computational resources.",
-  "title": "Optimizing Biological Reasoning: The Power of Post-Training Stages"
-}
-[26.06.2026 09:25] Renaming data file.
-[26.06.2026 09:25] Renaming previous data. hf_papers.json to ./d/2026-06-26.json
-[26.06.2026 09:25] Saving new data file.
-[26.06.2026 09:25] Generating page.
-[26.06.2026 09:25] Renaming previous page.
-[26.06.2026 09:25] Renaming previous data. index.html to ./d/2026-06-26.html
-[26.06.2026 09:25] Writing result.
-[26.06.2026 09:25] Renaming log file.
-[26.06.2026 09:25] Renaming previous data. log.txt to ./logs/2026-06-26_last_log.txt
+[26.06.2026 14:24] Using data from previous issue: {"categories": ["#optimization", "#agi", "#multimodal", "#agents", "#rl", "#games"], "emoji": "🦋", "ru": {"title": "AI в помощь творчеству: вычислительное оригами", "desc": "В данной статье представлен подход к созданию систем вычислительного оригами, который использует AI для генерации рисунков скл
+[26.06.2026 14:24] Using data from previous issue: {"categories": ["#retrieval", "#benchmark", "#tool_use", "#agents", "#agent_memory"], "emoji": "🧬", "ru": {"title": "Проверка надежности биомедицинских источников", "desc": "В статье представлено новое биомедицинское тестирование, которое оценивает способности агентов к проверке источников и предотв
+[26.06.2026 14:24] Using data from previous issue: {"categories": ["#rl", "#training", "#healthcare", "#reasoning", "#optimization", "#continual_learning", "#multimodal"], "emoji": "🧬", "ru": {"title": "Этапы постобучения в биологических моделях: баланс между специальностью и обобщением", "desc": "В данной статье исследуются этапы постобучения модел
+[26.06.2026 14:24] Renaming data file.
+[26.06.2026 14:24] Renaming previous data. hf_papers.json to ./d/2026-06-26.json
+[26.06.2026 14:24] Saving new data file.
+[26.06.2026 14:24] Generating page.
+[26.06.2026 14:24] Renaming previous page.
+[26.06.2026 14:24] Renaming previous data. index.html to ./d/2026-06-26.html
+[26.06.2026 14:24] Writing result.
+[26.06.2026 14:24] Renaming log file.
+[26.06.2026 14:24] Renaming previous data. log.txt to ./logs/2026-06-26_last_log.txt
