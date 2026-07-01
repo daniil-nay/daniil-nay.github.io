@@ -1,0 +1,1326 @@
+[30.06.2026 04:04] Read previous papers.
+[30.06.2026 04:04] Generating top page (month).
+[30.06.2026 04:04] Writing top page (month).
+[01.07.2026 03:34] Read previous papers.
+[01.07.2026 03:34] Get feed.
+[01.07.2026 03:34] Get page data from previous paper. URL: https://huggingface.co/papers/2606.30534
+[01.07.2026 03:34] Refreshing page data for GitHub info. URL: https://huggingface.co/papers/2606.30534
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.31315
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.28436
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.30626
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.29082
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.31734
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.30811
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.30673
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.31410
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.30319
+[01.07.2026 03:34] Extract page data from URL. URL: https://huggingface.co/papers/2606.30697
+[01.07.2026 03:34] Updating GitHub stars.
+[01.07.2026 03:34] Obtaining deleted papers (sometimes HF Daily Papers move some articles from today to past days).
+[01.07.2026 03:34] Detected 15 deleted papers. Writing to hf_deleted.json
+[01.07.2026 03:34] Downloading and parsing papers (pdf, html). Total: 11.
+[01.07.2026 03:34] Downloading and parsing paper https://huggingface.co/papers/2606.30534.
+[01.07.2026 03:35] Downloading paper 2606.30534 from https://arxiv.org/pdf/2606.30534v2...
+[01.07.2026 03:35] Extracting affiliations from text.
+[01.07.2026 03:35] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"Orca: The World is in Your Mind Orca Team, Beijing Academy of Artificial Intelligence Website https://orca-wm.github.io "
+[01.07.2026 03:35] GitHub Models 429 (rate limit). Ждём 541s, попытка 1/4.
+[01.07.2026 03:44] Response: ```python
+["Beijing Academy of Artificial Intelligence"]
+```
+[01.07.2026 03:44] Deleting PDF ./assets/pdf/2606.30534.pdf.
+[01.07.2026 03:44] Extra parsing timeout. (https://huggingface.co/papers/2606.30534): Function execution timed out after 300 seconds.
+[01.07.2026 03:44] Downloading and parsing paper https://huggingface.co/papers/2606.31315.
+[01.07.2026 03:45] Failed to download and parse paper https://huggingface.co/papers/2606.31315: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=&id_list=2606.31315&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+[01.07.2026 03:45] Downloading and parsing paper https://huggingface.co/papers/2606.28436.
+[01.07.2026 03:45] Failed to download and parse paper https://huggingface.co/papers/2606.28436: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=&id_list=2606.28436&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+[01.07.2026 03:45] Downloading and parsing paper https://huggingface.co/papers/2606.30626.
+[01.07.2026 03:46] Downloading paper 2606.30626 from https://arxiv.org/pdf/2606.30626v1...
+[01.07.2026 03:46] Extracting affiliations from text.
+[01.07.2026 03:46] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"DOPD: Dual On-policy Distillation Xinlei Yu1,2,4, Gen Li4, Qingyi Si4, Guibin Zhang1, Yuqi Xu4, Congcong Wang4, Shuai Dong4, Kaiwen Tuo4, Xiangyu Zeng4, Kaituo Feng2, Qunzhong Wang2, Yang Shi3, Xiaobin Hu1,Q, Xiangyu Yue2, Jiaqi Wang4, Shuicheng Yan "
+[01.07.2026 03:46] Response: []
+[01.07.2026 03:46] Extracting affiliations from text.
+[01.07.2026 03:46] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"DOPD: Dual On-policy Distillation Xinlei Yu1,2,4, Gen Li4, Qingyi Si4, Guibin Zhang1, Yuqi Xu4, Congcong Wang4, Shuai Dong4, Kaiwen Tuo4, Xiangyu Zeng4, Kaituo Feng2, Qunzhong Wang2, Yang Shi3, Xiaobin Hu1,Q, Xiangyu Yue2, Jiaqi Wang4, Shuicheng YanOn-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajectories with dense token-level signals. To furnish high-quality supervision sources and thereby elevate the performance frontier of distillation, an intuitive direction is to infuse privileged information to either teacher or student itself. However, this additional input induces potential failure mode we dub privilege illusion: pattern that conflates the transferable capability gap that students are meant to close, and the information asymmetry gap that can only be mimicked but never replicated. This issue is further amplified by the inherent non-uniformity of token-level supervision, where only small subset of tokens carries pivotal capability-bearing signals. To this end, we propose DOPD, an advantage-aware dual distillation paradigm that dynamically routes token-level supervision between privileged teacher and privileged student policies based on their advantage gap and relative probabilities. Each token receives supervision of different strength, objective, and strategy from either teacher or student itself, which transfers credible capability while simultaneously receiving auxiliary signals, to alleviate privilege illusion. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that DOPD consistently outperforms Vanilla OPD and other counterparts. Further results on stability, robustness, continual learning, and out-of-distribution tasks validate its superiority. 6 2 0 2 9 2 ] . [ 1 6 2 6 0 3 . 6 0 6 2 : r Figure 1 Performance comparison of our DOPD with competing approaches across eight benchmarks in terms of average across all benchmarks (upper bigger bars) and individual values of each benchmark (lower small bars).Distillation, as powerful paradigm for transferring the capabilities of high-performing teacher policy into suboptimal student policy, typically relies on off-policy trajectories, which may expose the student to state distributions that are misaligned with its own evolving behavior [13, 18, 32, 52, 56]. By contrast, recent OPD paradigms address this limitation by rolling out from the current student policy and using the teacher to provide token-level supervisory signals [23, 35, 42, 44]. This formulation not only mitigates distribution shift, but also delivers dense per-token teacher supervision via student-sampled on-policy trajectories, yielding higher distillation efficiency and superior performance. Although OPD has emerged as an effective post-training paradigm, its achievable upper bound is fundamentally constrained by the quality of the supervision source [7, 22, 25]. As demonstrated in Figure 2, for standard strong-to-weak distillation [12, 17, 21, 23, 40, 51, 53, 60], the student is encouraged to imitate stronger teacher; for self distillation [15, 30, 34, 36, 61], i.e., self-as-teacher pattern, the model improves by regularizing itself under different contexts or conditions. In both cases, the effectiveness of OPD implicitly relies on the assumption: the supervision signals should reflect learnable capability beyond the current student policy. However, this assumption might be fragile [25, 35, 49], especially when privileged information is introduced. Privileged information, such as verified reasoning hints for LLMs [15, 30, 49, 61] or structured visual annotations for VLMs [28, 57], can indeed improve the prediction distribution of teacher policy and raise the apparent ceiling of distillation. Nevertheless, the theoretical gains afforded by privileged information training do not necessarily translate into transferable supervisory signals. Rather, they may stem from hitherto uncharacterized failure mode, i.e., privilege illusion: the ostensible performance gap between teacher and student in fact conflates two fundamentally distinct components. The first is the intrinsic teacher-student capability gap, which is expected to close through distillation; the second is gap driven by information asymmetry, which arises from the access to privileged inputs that remain almost unlearnable. Indiscriminately distilling such teacher distribution may therefore cause the student to fit privileged outcomes rather than acquire transferable ability. To summarize, adding privileged inputs theoretically improves the ceiling, but the gains may stem from privilege illusion rather than capability optimization, resulting in rapid entropy collapse, reduced exploration, and ultimately poor distillation effectiveness. As the distillation signals are highly non-uniform across tokens, the concern of privileged illusion becomes more pronounced. For realistic trajectories, only small subset of tokens may encode decisive branches, grounded evidence, critical preferences and other capacity-centric information [18, 46], while many others might provide low-value supervision, which might be privilege-dependent. However, the vanilla and most variants of OPD methods often optimize all tokens with the same supervision source and objective form, implicitly assuming that each token contributes equally to capability transfer [23, 25, 35]. When incorporating privileged inputs, part of the teacher-student performance advantage originates from information gap rather than transferable capability. In this case, dense supervision might bias the student toward learning privilegerelated shortcuts that are easier to fit than the underlying transferable capabilities, thereby amplifying the information-asymmetry component of the teacher-student gap. Thus, indiscriminately and uniformly distilling all tokens from one monolithic policy might intensify the privilege illusion. Based on these insights, we propose an advantage-aware dual distillation paradigm, termed as DOPD, exploiting the complementary properties of teacher-based and self-based supervision under the privileged contexts to dynamically route token-level supervision between teacher and student policy according to the privilege advantage gap and their relative predicted probabilities. For tokens where the privileged teacher demonstrates credible capability advantage, we apply stronger teacher distillation to transfer high-value privilegeconditione"
+[01.07.2026 03:46] Response: ```python
+[]
+```
+[01.07.2026 03:46] Deleting PDF ./assets/pdf/2606.30626.pdf.
+[01.07.2026 03:46] Success.
+[01.07.2026 03:46] Downloading and parsing paper https://huggingface.co/papers/2606.29082.
+[01.07.2026 03:47] Failed to download and parse paper https://huggingface.co/papers/2606.29082: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=&id_list=2606.29082&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+[01.07.2026 03:47] Downloading and parsing paper https://huggingface.co/papers/2606.31734.
+[01.07.2026 03:47] Downloading paper 2606.31734 from https://arxiv.org/pdf/2606.31734v1...
+[01.07.2026 03:48] Extracting affiliations from text.
+[01.07.2026 03:48] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"6 2 0 2 0 3 ] . [ 1 4 3 7 1 3 . 6 0 6 2 : r MemLearner: Learning to Query Context Memory for Video World Models Jiwen Yu1, Jianxiong Gao2, Jianhong Bai3, Yiran Qin1, Kaiyi Huang1, Quande Liu4, Xintao Wang4, Pengfei Wan4, Kun Gai4, and Xihui Liu1 1 The University of Hong Kong 2 Fudan University 3 Zhejiang University 4 Kuaishou Technology Fig. 1: Teaser Demonstration. We propose novel memory mechanism for video world models through learning-based adaptive context querying. Compared to prior rule-based context retrieval methods [36, 58, 66], our approach handles scenes with occlusions and dynamic objects. This figure highlights dynamic objects, representative occluders, video generation trajectory, and key frames. Abstract. Video World Models are interactive video generation models that predict future world states based on user actions and history video frames. critical challenge in video world models is the lack of memory, causing inconsistent generated scenes over extended durations. Previous methods explored rule-based context frame retrieval as memory, but they fail to generalize in scenarios with scene occlusions and dynamic objects. We propose MemLearner, learning-based adaptive context query method using query tokens to bridge context and predicted tokens. By leveraging the video generation model itself for context querying, MemLearner exploits pre-trained visual priors without training additional modules from scratch, and incorporates efficient strategies for training and inference. We collect dataset of long videos with scene occlusions and dynamic objects, paired with camera pose annotations, and propose Work done during an internship at Kling Team, Kuaishou Technology. Corresponding authors. Project page: https://yujiwen.github.io/memlearner/. 2 J. Yu et al. multi-dataset training strategy leveraging both annotated rendered and unannotated real-world videos. Extensive experiments demonstrate that MemLearner significantly outperforms prior video world models "
+[01.07.2026 03:48] Response: ```python
+[
+    "The University of Hong Kong",
+    "Fudan University",
+    "Zhejiang University",
+    "Kuaishou Technology"
+]
+```
+[01.07.2026 03:48] Deleting PDF ./assets/pdf/2606.31734.pdf.
+[01.07.2026 03:48] Success.
+[01.07.2026 03:48] Downloading and parsing paper https://huggingface.co/papers/2606.30811.
+[01.07.2026 03:48] Downloading paper 2606.30811 from https://arxiv.org/pdf/2606.30811v1...
+[01.07.2026 03:48] Extracting affiliations from text.
+[01.07.2026 03:48] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"6 2 0 2 9 2 ] . [ 1 1 1 8 0 3 . 6 0 6 2 : r AVTok: 1D Unified Tokenization for Holistic Audio-Video Generation Kien T. Pham1 , Chieh Chen1 , Qifeng Chen1 , and Long Chen1 The Hong Kong University of Science and Technology {tkpham,icchen}@connect.ust.hk, {cqf,longchen}@ust.hk Project Page: https://hkust-longgroup.github.io/AVTok/ Fig. 1: Highlights. (a) We propose AVTok, novel unified tokenizer with dual-stream transformer-based architecture, capable of jointly encoding an audio-video pair into single compact 1D latent representation. (b) AVTok achieves competitive performance compared to state-of-the-art unimodal 1D video tokenizers (top) and audio codecs (bottom). (c) From left to right, AVTok can be integrated into AR generative models to achieve audio-to-video, video-to-audio, and joint audio-video generation. Abstract. Audio-video generation has recently gained unprecedented research attention, aiming to synthesize high-quality sounding video content with fine-grained synchronization and semantic alignment between the auditory and visual components. The preceding methods predominantly adopt dual-branch design with separate tokenization and generation modules per modality, neglecting the representation gap while Corresponding author. 2 K. Pham et al. necessitating intensive computational resources for proper training. Inspired by recent advancements in one-dimensional visual tokenization, we present AVTok, novel unified tokenizer designated for holistic audio-video generation. AVTok features dual-stream transformer-based architecture with shared encoder-decoder and modal-specific learnable queries to efficiently and effectively encode an audio-video pair into compact one-dimensional latent representation with unified codebook. To cope with the heterogeneous information imbalance that hinders AVTok from exploiting aligned audio-visual information, we devise hierarchical training strategy to progressively realize reconstruction capabilities for each modality. Exten"
+[01.07.2026 03:48] Response: ```python
+["The Hong Kong University of Science and Technology"]
+```
+[01.07.2026 03:48] Deleting PDF ./assets/pdf/2606.30811.pdf.
+[01.07.2026 03:48] Success.
+[01.07.2026 03:48] Downloading and parsing paper https://huggingface.co/papers/2606.30673.
+[01.07.2026 03:48] Downloading paper 2606.30673 from https://arxiv.org/pdf/2606.30673v1...
+[01.07.2026 03:48] Extracting affiliations from text.
+[01.07.2026 03:48] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"6 2 0 2 5 2 ] . [ 1 3 7 6 0 3 . 6 0 6 2 : r Tencent Hunyuan PolyFlow: Continuous Topology Embedding Flow Matching for Artist-style Mesh Generation Chunshi Wang1,2,, Haohan Weng2,, Junliang Ye2,3,, Biwen Lei2, Yang Li2, Zibo Zhao2, Zeqiang Lai4,2, Kaiyi Zhang5,2, Yunhan Yang6,2, Zhuo Chen2, Chunchao Guo2,, Yawei Luo1, 1ZJU 2Tencent 3THU 4CUHK 5HKUST 6HKU Fig. 1: PolyFlow generates meshes with clean, artist-like topology conditioned on point clouds. By denoising vertex positions, normals, and continuous topology embeddings in parallel via flow matching, PolyFlow produces high-quality meshes in seconds with exact vertex-count control. "
+[01.07.2026 03:48] Response: ```python
+["ZJU", "Tencent", "THU", "CUHK", "HKUST", "HKU"]
+```
+[01.07.2026 03:48] Deleting PDF ./assets/pdf/2606.30673.pdf.
+[01.07.2026 03:48] Success.
+[01.07.2026 03:48] Downloading and parsing paper https://huggingface.co/papers/2606.31410.
+[01.07.2026 03:49] Downloading paper 2606.31410 from https://arxiv.org/pdf/2606.31410v1...
+[01.07.2026 03:49] Extracting affiliations from text.
+[01.07.2026 03:49] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"6 2 0 2 0 3 ] . [ 1 0 1 4 1 3 . 6 0 6 2 : r Xiaomi-GUI-0 Technical Report See Contributions and Acknowledgments section for full author list. "
+[01.07.2026 03:49] Response: []
+[01.07.2026 03:49] Extracting affiliations from text.
+[01.07.2026 03:49] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"6 2 0 2 0 3 ] . [ 1 0 1 4 1 3 . 6 0 6 2 : r Xiaomi-GUI-0 Technical ReportSee Contributions and Acknowledgments section for full author list.Graphical user interface (GUI) agents build on vision-language models (VLMs) to complete user tasks end-to-end in real applications through interface-level actions such as tapping, swiping, text entry, and page navigation. However, the training and evaluation of existing GUI agents still rely largely on offline success trajectories, simulated environments, and standardized benchmarks. Although useful for measuring fundamental perception and task execution, these resources differ substantially from real applications in interface layout, interaction logic, and the distribution of abnormal states, and thus cannot faithfully characterize execution stability under real-world usage. On real devices, factors such as account states, permission dialogs, payment authentication, and risk-control mechanisms continually reshape the state distribution encountered during execution, opening persistent gap between high benchmark scores and real-world usability. To close this gap, we propose Xiaomi-GUI-0, native end-to-end multimodal GUI agent for real mobile environments, trained and evaluated within real-device closed loop. At its core is real-device-dominant hybrid infrastructure, in which physical devices serve as the primary execution environment and sandboxes provide auxiliary support, ensuring that data collection, model training, online rollout, and evaluation share an execution distribution that closely approximates real deployment. Building on this infrastructure, we construct multi-source training data, comprising high-frequency task data for head user tasks, high-generalization data for long-tail intents, and agent-capability enhancement data that strengthens core capabilities such as reflection and memory. We further introduce an error-driven data flywheel that converts failure trajectories exposed during rollouts into corrected actions, reflective explanations, and recovery demonstrations, providing direct supervision for abnormal-state recognition and self-recovery. For training, the model follows progressive three-stage pipeline of supervised fine-tuning (SFT), step-level reinforcement learning (Step RL), and agentic reinforcement learning (Agentic RL), which incrementally develops basic interface operation, long-horizon planning, and error recovery. For evaluation, we assess the model on both public benchmarks and our in-house real-device benchmark RealMobile, measuring end-to-end task completion and robustness under real applications, account states, and abnormal pages. Experiments show that Xiaomi-GUI-0 achieves 72.0% success rate on RealMobile and 78.9% on AndroidWorld, while substantially enhancing execution stability and abnormal-state recognition in real-world tasks. Homepage: https://seerray-lab.github.io/Xiaomi-GUI-0/1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .Appendix . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 5 5 5 6 7 8 8 8 10 10 11 13 13 14 14 15 16 17 17 17 17 19 19 20 22 22 22 23 25 26 31Graphical user interface (GUI) agents, such as Mobile-Agent-v3.5 [51], UI-TARS-2 [38], and UI-Venus-1.5 [36], are designed to perceive screen observations, interpret natural-language instructions, and accomplish user tasks through interface-level actions such as tapping, swiping, text entry, and page navigation. In contrast to agents that depend on application programming interfaces (APIs) or function calling [24, 28], GUI agents do not require application providers to expose backend interfaces. Instead, they act directly upon graphical interaction surfaces, which in principle grants them broad applicability to existing "
+[01.07.2026 03:49] Response: ```python
+[]
+```
+[01.07.2026 03:49] Deleting PDF ./assets/pdf/2606.31410.pdf.
+[01.07.2026 03:49] Success.
+[01.07.2026 03:49] Downloading and parsing paper https://huggingface.co/papers/2606.30319.
+[01.07.2026 03:49] Downloading paper 2606.30319 from https://arxiv.org/pdf/2606.30319v1...
+[01.07.2026 03:49] Extracting affiliations from text.
+[01.07.2026 03:49] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"BrainJanus: Unified Model for Understanding and Generation across Brain, Vision, and Language Haitao Wu 1 2 Qirui Zhang 1 Zhouheng Yao 2 Shangquan Sun 2 Qihao Zheng 2 Mianxin Liu 2 Chi Zhang 2 Wanli Ouyang 2 3 Chunfeng Song 2 Changqing Zhang 1 Jiamin Wu "
+[01.07.2026 03:49] Response: []
+[01.07.2026 03:49] Extracting affiliations from text.
+[01.07.2026 03:49] github request. Model: openai/gpt-4o-mini. Prompt: I give you a contaminated text with start of ML paper. Extract all authors affiliations as a single institute, firm, company, etc. Return items as a Python plain list only with affiliations. Do not provide commentaries. If there are no affiliations return empty list.
+
+Text:"BrainJanus: Unified Model for Understanding and Generation across Brain, Vision, and Language Haitao Wu 1 2 Qirui Zhang 1 Zhouheng Yao 2 Shangquan Sun 2 Qihao Zheng 2 Mianxin Liu 2 Chi Zhang 2 Wanli Ouyang 2 3 Chunfeng Song 2 Changqing Zhang 1 Jiamin Wu1. Introduction 6 2 0 2 9 2 ] . [ 1 9 1 3 0 3 . 6 0 6 2 : r Modeling the bidirectional correspondence between external sensory stimuli and internal neural activity has emerged as critical frontier in neuroscience. However, existing approaches predominantly treat brain encoding and decoding as isolated tasks, relying heavily on unimodal alignment and external priors while overlooking the brains intrinsic nature as multimodal integration system. To address these limitations, we propose BrainJanus, the first unified brain model that integrates brain, vision, and language within single framework. Specifically, we introduce Unified Brain Tokenizer to quantize continuous neural dynamics into discrete tokens aligned with visual and linguistic representations in shared Omni space. Building on this, we utilize an All-in-One autoregressive architecture that leverages nexttoken prediction to enable seamless any-to-any generation, which encompasses image-to-brain and text-to-brain encoding, and brain-to-image and brain-to-text decoding. Extensive experiments demonstrate that BrainJanus achieves superior performance across diverse benchmarks. Furthermore, our framework exhibits zero-shot generalization and preserves interpretable biological topography, highlighting its potential as general-purpose brain modeling paradigm. The code is available at GitHub. This work was done during his internship at Shanghai Ar1School of Artificial Intellitificial Intelligence Laboratory. gence, Tianjin University, Tianjin, China 2Shanghai Artificial Intelligence Laboratory, Shanghai, China 3The Chinese University of Hong Kong, Hong Kong, China. Correspondence to: Changqing Zhang <zhangchangqing@tju.edu.cn>, Jiamin Wu <wujiamin1@pjlab.org.cn>. Proceedings of the 43 rd International Conference on Machine Learning, Seoul, South Korea. PMLR 306, 2026. Copyright 2026 by the author(s). 1 Neuroscience once inspired the rise of deep learning, and now deep learning is in turn advancing our understanding of the brain, reflecting cyclical inspiration between the two fields. In this context, modeling the relationship between external sensory stimuli and internal neural activity has become increasingly feasible (Horikawa & Kamitani, 2017; Shen et al., 2019; Takagi & Nishimoto, 2023; Allen et al., 2022), particularly for visual perception, and is essential for advancing brain-computer interfaces (Lorach et al., 2023). Specifically, this relationship can be studied from two complementary directions. Brain encoding seeks to characterize how information from the external world is encoded in neural activity by learning models that predict brain responses from visual inputs (image brain; Bao et al., 2025; Mai et al., 2025). Conversely, brain decoding aims to investigate how stimulus-related information can be inferred from neural activity, reconstructing perceived images (brain image ; Scotti et al., 2024; Takagi & Nishimoto, 2023) or generating textual descriptions (brain text; Xia et al., 2024; Qiu et al., 2025) from neural signals. Despite recent advancements, achieving high fidelity in these tasks necessitates deeper understanding of neural representations. critical gap exists between human perception mechanisms and current network paradigms. Neuroscientific studies (Huth et al., 2016; Ralph et al., 2017) indicate that the human brain is intrinsically system of multimodal integration: semantic representations tile the entire cortex, extending from regions processing low-level visual features to higher-order conceptual domains. Thus, visual stimulus elicits not only visual responses but also associated linguistic and semantic concepts (Binder et al., 2009). However, existing methods largely overlook this interplay. They predominantly rely on unimodal brain alignment with CLIP (Radford et al., 2021) visual features (Scotti et al., 2024; Lin et al., 2022; Bao et al., 2025) for both brain encoding and decoding, causing insufficient exploitation of multimodal semantics embedded in brain signals. Moreover, current methods typically treat brain visual encoding and decoding as isolated tasks with task-specific neural representations (Scotti et al., 2024; Wang et al., 2024b), despite BrainJanus: Unified Model for Understanding and Generation across Brain, Vision, and Language Figure 1. Illustration of the biological nature and the proposed modeling paradigm. (a) Biological Nature: The brain processes visual stimuli by projecting them into unified multimodal space (Huth et al., 2016) that integrates both low-level pixel information and high-level semantic features. (b) Modeling Paradigm: Comparison between previous approaches and ours. Unlike previous task-specific, unidirectional pipelines that rely on separate aligners (e.g., CLIP) and generative models, our method employs unified bidirectional autoregressive framework capable of performing both brain encoding and decoding within single model. the shared neural semantics inherent in bidirectional neuralstimuli correspondence. Consequently, this lossy modeling of neural signals necessitates an over-reliance on largescale external priors (e.g., frozen pretrained CLIP, Latent Diffusion Models like Stable Diffusion (Rombach et al., 2022), or large language models such as LLaMA (Touvron et al., 2023) and GIT (Wang et al., 2022)) to compensate for the limited semantic content decoded from brain activity. These observations motivate us to raise critical question: Can we build an omni model that unifies encoding and decoding across brain, vision, and language modalities? As illustrated in Figure 1 (a), we posit that neural activity, vision, and language encode the same underlying semantics in different representational forms. To bridge these modalities, we propose BrainJanus, the first unified brain model capable of learning unified token space across biological and digital domains. BrainJanus features novel architecture comprising: (1) Unified Brain Tokenizer: We design brain tokenizer trained from scratch to quantize continuous neural dynamics into discrete tokens. By aligning these with vision and language tokens, we map all modality signals into shared Omni space; and (2) All-in-One Autoregressive Model: We utilize single Transformer ba"
+[01.07.2026 03:49] Response: ```python
+[
+    "Shanghai Artificial Intelligence Laboratory, Shanghai, China",
+    "Tianjin University, Tianjin, China",
+    "The Chinese University of Hong Kong, Hong Kong, China"
+]
+```
+[01.07.2026 03:49] Deleting PDF ./assets/pdf/2606.30319.pdf.
+[01.07.2026 03:49] Success.
+[01.07.2026 03:49] Downloading and parsing paper https://huggingface.co/papers/2606.30697.
+[01.07.2026 03:51] Failed to download and parse paper https://huggingface.co/papers/2606.30697: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=&id_list=2606.30697&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+[01.07.2026 03:51] Enriching papers with extra data.
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 0. Abstract Orca establishes a unified world latent space through next-state-prediction modeling using multimodal data and demonstrates superior performance in downstream tasks compared to specialized baselines.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct We introduce Orca, an initial instantiation o...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 1. Abstract Speculative decoding with adaptive block size selection improves inference efficiency by predicting optimal block sizes from prefilling representations, achieving significant speedup with minimal overhead.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding accelerates infere...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 2. Abstract A Dockerless environment-free agentic patch verifier improves code patch evaluation accuracy and enables effective post-training without execution-based verification costs.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Program verifiers play a central role in training coding agents, includi...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 3. Abstract DOPD addresses privilege illusion in on-policy distillation by dynamically routing token-level supervision between teacher and student policies based on advantage gaps and probabilities, improving capability transfer in large and vision-language models.  Generated by Qwen/Qwen2.5-Coder-32B-...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 4. Abstract Evolutionary fine-tuning enables large language models to develop cross-task problem-solving capabilities by learning from search trajectories, demonstrating improved performance on mathematical conjectures and optimization tasks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Would experien...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 5. Abstract MemLearner improves video world models by using learning-based adaptive context querying with query tokens to enhance scene consistency and memory in long video sequences with occlusions and dynamic objects.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Video World Models are interactive vi...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 6. Abstract AVTok is a unified tokenizer for audio-video generation that uses a dual-stream transformer architecture with shared encoder-decoder and modal-specific queries to create compact one-dimensional latent representations.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Audio-video generation has ...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 7. Abstract PolyFlow introduces a continuous mesh representation using a topology embedder and applies flow-matching with Transformers for parallel mesh generation, achieving faster inference and precise resolution control compared to autoregressive methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruc...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 8. Abstract A native multimodal GUI agent trained in real-device environments demonstrates superior performance and stability compared to traditional benchmark-based approaches.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Graphical user interface (GUI) agents build on vision-language models to comple...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 9. Abstract BrainJanus represents the first unified brain model integrating brain, vision, and language through a shared Omni space, enabling bidirectional mapping between neural activity and sensory stimuli via a tokenized representation and autoregressive architecture.  Generated by Qwen/Qwen2.5-Code...
+[01.07.2026 03:51] ********************************************************************************
+[01.07.2026 03:51] Abstract 10. Abstract LUMOS provides a semantic interaction layer that converts operating system metadata into machine-readable formats, enabling AI agents to interact more efficiently with computer interfaces than through traditional visual methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Current operatin...
+[01.07.2026 03:51] Read previous papers.
+[01.07.2026 03:51] Generating reviews via LLM API.
+[01.07.2026 03:51] Using data from previous issue: {"categories": ["#games", "#optimization", "#training", "#dataset", "#agi", "#multimodal"], "emoji": "🌍", "ru": {"title": "Единое латентное пространство для понимания мира", "desc": "Статья описывает модель Orca, которая создает единое латентное пространство мира через предсказание следующего состоя
+[01.07.2026 03:51] Querying the API.
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract Speculative decoding with adaptive block size selection improves inference efficiency by predicting optimal block sizes from prefilling representations, achieving significant speedup with minimal overhead.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding accelerates inference by using a lightweight draft model to generate candidate tokens in parallel, and are then verified by the target model, enabling lossless acceleration. Recently, diffusion-based speculative decoding further improves parallelism by generating multiple tokens per forward pass via block-level diffusion, achieving state-of-the-art (SOTA) performance. However, existing methods adopt a fixed inference block size and assume a uniform optimal decoding strategy across all inputs. In this paper, we show that this assumption is suboptimal, as the optimal block size varies across samples and plays a critical role in speculative decoding performance. Moreover, these values exhibit a clear local structure, concentrating around the training block size, which reduces the problem to a low-dimensional and structured decision space. Based on these insights, we propose BlockPilot, a sample-adaptive policy that predicts the optimal block size from the prefilling representation. Specifically, we formulate block size selection as a lightweight policy learning problem and propose an instance-adaptive decision mechanism that predicts the optimal block size based on the representation of the prefilling stage. The prediction is performed only once after prefilling, allowing for seamless integration. Extensive experiments demonstrate that our method is plug-and-play, introduces minimal overhead, and consistently improves efficiency, achieving an acceptance length of 5.92 and a 4.20times speedup on Qwen3-4B under temperature T=1.
+[01.07.2026 03:51] Response: {
+    "desc": "В статье обсуждается метод спекулятивного декодирования с адаптивным выбором размера блока, который улучшает эффективность вывода. Авторы предлагают использовать предсказания оптимальных размеров блоков на основе представлений, что позволяет значительно ускорить процесс с минимальными затратами. Модель BlockPilot адаптирует размер блока для каждого примера, учитывая его локальную структуру, что делает выбор более точным. Результаты экспериментов показывают впечатляющее улучшение скорости и эффективности, что подтверждает работоспособность предложенного подхода.",
+    "emoji": "⚡",
+    "title": "Адаптивный размер блока для ускорения вывода"
+}
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract Speculative decoding with adaptive block size selection improves inference efficiency by predicting optimal block sizes from prefilling representations, achieving significant speedup with minimal overhead.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding accelerates inference by using a lightweight draft model to generate candidate tokens in parallel, and are then verified by the target model, enabling lossless acceleration. Recently, diffusion-based speculative decoding further improves parallelism by generating multiple tokens per forward pass via block-level diffusion, achieving state-of-the-art (SOTA) performance. However, existing methods adopt a fixed inference block size and assume a uniform optimal decoding strategy across all inputs. In this paper, we show that this assumption is suboptimal, as the optimal block size varies across samples and plays a critical role in speculative decoding performance. Moreover, these values exhibit a clear local structure, concentrating around the training block size, which reduces the problem to a low-dimensional and structured decision space. Based on these insights, we propose BlockPilot, a sample-adaptive policy that predicts the optimal block size from the prefilling representation. Specifically, we formulate block size selection as a lightweight policy learning problem and propose an instance-adaptive decision mechanism that predicts the optimal block size based on the representation of the prefilling stage. The prediction is performed only once after prefilling, allowing for seamless integration. Extensive experiments demonstrate that our method is plug-and-play, introduces minimal overhead, and consistently improves efficiency, achieving an acceptance length of 5.92 and a 4.20times speedup on Qwen3-4B under temperature T=1."
+
+[01.07.2026 03:51] Response: ```python
+["INFERENCE", "TRAINING"]
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract Speculative decoding with adaptive block size selection improves inference efficiency by predicting optimal block sizes from prefilling representations, achieving significant speedup with minimal overhead.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding accelerates inference by using a lightweight draft model to generate candidate tokens in parallel, and are then verified by the target model, enabling lossless acceleration. Recently, diffusion-based speculative decoding further improves parallelism by generating multiple tokens per forward pass via block-level diffusion, achieving state-of-the-art (SOTA) performance. However, existing methods adopt a fixed inference block size and assume a uniform optimal decoding strategy across all inputs. In this paper, we show that this assumption is suboptimal, as the optimal block size varies across samples and plays a critical role in speculative decoding performance. Moreover, these values exhibit a clear local structure, concentrating around the training block size, which reduces the problem to a low-dimensional and structured decision space. Based on these insights, we propose BlockPilot, a sample-adaptive policy that predicts the optimal block size from the prefilling representation. Specifically, we formulate block size selection as a lightweight policy learning problem and propose an instance-adaptive decision mechanism that predicts the optimal block size based on the representation of the prefilling stage. The prediction is performed only once after prefilling, allowing for seamless integration. Extensive experiments demonstrate that our method is plug-and-play, introduces minimal overhead, and consistently improves efficiency, achieving an acceptance length of 5.92 and a 4.20times speedup on Qwen3-4B under temperature T=1."
+
+[01.07.2026 03:51] Response: ```python
+["OPTIMIZATION", "DIFFUSION"]
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract Speculative decoding with adaptive block size selection improves inference efficiency by predicting optimal block sizes from prefilling representations, achieving significant speedup with minimal overhead.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Speculative decoding accelerates inference by using a lightweight draft model to generate candidate tokens in parallel, and are then verified by the target model, enabling lossless acceleration. Recently, diffusion-based speculative decoding further improves parallelism by generating multiple tokens per forward pass via block-level diffusion, achieving state-of-the-art (SOTA) performance. However, existing methods adopt a fixed inference block size and assume a uniform optimal decoding strategy across all inputs. In this paper, we show that this assumption is suboptimal, as the optimal block size varies across samples and plays a critical role in speculative decoding performance. Moreover, these values exhibit a clear local structure, concentrating around the training block size, which reduces the problem to a low-dimensional and structured decision space. Based on these insights, we propose BlockPilot, a sample-adaptive policy that predicts the optimal block size from the prefilling representation. Specifically, we formulate block size selection as a lightweight policy learning problem and propose an instance-adaptive decision mechanism that predicts the optimal block size based on the representation of the prefilling stage. The prediction is performed only once after prefilling, allowing for seamless integration. Extensive experiments demonstrate that our method is plug-and-play, introduces minimal overhead, and consistently improves efficiency, achieving an acceptance length of 5.92 and a 4.20times speedup on Qwen3-4B under temperature T=1.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:51] Response: {
+  "desc": "This paper introduces BlockPilot, a method that enhances speculative decoding by adapting the block size used during inference. It identifies that the optimal block size varies for different inputs, which can significantly impact performance. By predicting the best block size from prefilling representations, BlockPilot allows for efficient and effective decoding. The approach is lightweight, integrates easily into existing systems, and achieves notable speed improvements with minimal overhead.",
+  "title": "Adaptive Block Size for Faster Inference"
+}
+[01.07.2026 03:51] Querying the API.
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract A Dockerless environment-free agentic patch verifier improves code patch evaluation accuracy and enables effective post-training without execution-based verification costs.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Program verifiers play a central role in training coding agents, including selecting trajectories for supervised fine-tuning (SFT) and providing rewards for reinforcement learning (RL). Standard execution-based verification requires running unit tests inside per-repository environments such as Docker images, incurring substantial environment setup costs. We propose Dockerless, an environment-free agentic patch verifier that evaluates generated code patches without executing them. Rather than simply matching candidate patches to references, Dockerless judges patch correctness using evidence gathered through agentic repository exploration. On a verifier evaluation benchmark, Dockerless outperforms the strongest open-source verifier by 14.3 AUC points. Using Dockerless as both the SFT trajectory filter and the RL reward enables a fully environment-free post-training pipeline. The resulting model reaches 62.0%, 50.0%, and 35.2% resolve rate on SWE-bench Verified, Multilingual, and Pro, respectively. It surpasses the Qwen3.5-9B baseline by 2.4, 8.7, and 2.9 points, matching environment-based post-training.
+[01.07.2026 03:51] Response: {
+  "desc": "Статья предлагает новый метод проверки кодовых патчей без использования Docker, что значительно повышает точность оценки. Предложенный инструмент, названный Dockerless, позволяет проверить правильность патчей, анализируя их в процессе исследования репозитория, а не только сопоставляя их с эталонами. Это избавляет от затрат на настройку окружения, необходимые для выполнения тестов. В итоге, модель, использующая Dockerless, достигает высоких показателей разрешения в различных бенчмарках.",
+  "emoji": "🚀",
+  "title": "Инновации в проверке кодовых патчей без Docker"
+}
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract A Dockerless environment-free agentic patch verifier improves code patch evaluation accuracy and enables effective post-training without execution-based verification costs.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Program verifiers play a central role in training coding agents, including selecting trajectories for supervised fine-tuning (SFT) and providing rewards for reinforcement learning (RL). Standard execution-based verification requires running unit tests inside per-repository environments such as Docker images, incurring substantial environment setup costs. We propose Dockerless, an environment-free agentic patch verifier that evaluates generated code patches without executing them. Rather than simply matching candidate patches to references, Dockerless judges patch correctness using evidence gathered through agentic repository exploration. On a verifier evaluation benchmark, Dockerless outperforms the strongest open-source verifier by 14.3 AUC points. Using Dockerless as both the SFT trajectory filter and the RL reward enables a fully environment-free post-training pipeline. The resulting model reaches 62.0%, 50.0%, and 35.2% resolve rate on SWE-bench Verified, Multilingual, and Pro, respectively. It surpasses the Qwen3.5-9B baseline by 2.4, 8.7, and 2.9 points, matching environment-based post-training."
+
+[01.07.2026 03:51] Response: ```python
+['AGENTS', 'RL', 'TRAINING', 'BENCHMARK', 'OPEN_SOURCE']
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract A Dockerless environment-free agentic patch verifier improves code patch evaluation accuracy and enables effective post-training without execution-based verification costs.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Program verifiers play a central role in training coding agents, including selecting trajectories for supervised fine-tuning (SFT) and providing rewards for reinforcement learning (RL). Standard execution-based verification requires running unit tests inside per-repository environments such as Docker images, incurring substantial environment setup costs. We propose Dockerless, an environment-free agentic patch verifier that evaluates generated code patches without executing them. Rather than simply matching candidate patches to references, Dockerless judges patch correctness using evidence gathered through agentic repository exploration. On a verifier evaluation benchmark, Dockerless outperforms the strongest open-source verifier by 14.3 AUC points. Using Dockerless as both the SFT trajectory filter and the RL reward enables a fully environment-free post-training pipeline. The resulting model reaches 62.0%, 50.0%, and 35.2% resolve rate on SWE-bench Verified, Multilingual, and Pro, respectively. It surpasses the Qwen3.5-9B baseline by 2.4, 8.7, and 2.9 points, matching environment-based post-training."
+
+[01.07.2026 03:51] Response: ```python
+["AGENT_MEMORY", "OPTIMIZATION", "OPEN_SOURCE"]
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract A Dockerless environment-free agentic patch verifier improves code patch evaluation accuracy and enables effective post-training without execution-based verification costs.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Program verifiers play a central role in training coding agents, including selecting trajectories for supervised fine-tuning (SFT) and providing rewards for reinforcement learning (RL). Standard execution-based verification requires running unit tests inside per-repository environments such as Docker images, incurring substantial environment setup costs. We propose Dockerless, an environment-free agentic patch verifier that evaluates generated code patches without executing them. Rather than simply matching candidate patches to references, Dockerless judges patch correctness using evidence gathered through agentic repository exploration. On a verifier evaluation benchmark, Dockerless outperforms the strongest open-source verifier by 14.3 AUC points. Using Dockerless as both the SFT trajectory filter and the RL reward enables a fully environment-free post-training pipeline. The resulting model reaches 62.0%, 50.0%, and 35.2% resolve rate on SWE-bench Verified, Multilingual, and Pro, respectively. It surpasses the Qwen3.5-9B baseline by 2.4, 8.7, and 2.9 points, matching environment-based post-training.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:51] Response: {
+  "desc": "This paper introduces Dockerless, an innovative patch verifier that enhances the accuracy of code patch evaluations without the need for execution-based verification. By utilizing agentic repository exploration, Dockerless assesses the correctness of code patches based on gathered evidence rather than simply matching them to references. This approach eliminates the significant setup costs associated with traditional Docker environments, allowing for a more efficient post-training process. The results show that Dockerless outperforms existing verifiers and enables a fully environment-free training pipeline for coding agents.",
+  "title": "Revolutionizing Code Verification with Dockerless"
+}
+[01.07.2026 03:51] Querying the API.
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract DOPD addresses privilege illusion in on-policy distillation by dynamically routing token-level supervision between teacher and student policies based on advantage gaps and probabilities, improving capability transfer in large and vision-language models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajectories with dense token-level signals. To furnish high-quality supervision sources and thereby elevate the performance frontier of distillation, an intuitive direction is to infuse privileged information to either teacher or student itself. However, this additional input induces a potential failure mode we dub privilege illusion: a pattern that conflates the transferable capability gap that students are meant to close, and the information asymmetry gap that can only be mimicked but never replicated. This issue is further amplified by the inherent non-uniformity of token-level supervision, where only a small subset of tokens carries pivotal capability-bearing signals. To this end, we propose DOPD, an advantage-aware dual distillation paradigm that dynamically routes token-level supervision between privileged teacher and privileged student policies based on their advantage gap and relative probabilities. Each token receives supervision of different strength, objective, and strategy from either teacher or student itself, which transfers credible capability while simultaneously receiving auxiliary signals, to alleviate privilege illusion. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that DOPD consistently outperforms Vanilla OPD and other counterparts. Further results on stability, robustness, continual learning, and out-of-distribution tasks validate its superiority.
+[01.07.2026 03:51] Response: ```json
+{
+  "desc": "Статья предлагает новый подход под названием DOPD для решения проблемы иллюзии привилегий в методом on-policy distillation (OPD). Этот метод динамически направляет уровень контроля на уровне токенов между учителем и студентом в зависимости от их преимуществ и вероятностей. Такой подход повышает качество передачи способностей в больших языковых моделях и моделях, объединяющих текст и изображение. Эксперименты показывают, что DOPD превосходит традиционные методы, улучшая стабильность и эффективность обучения.",
+  "emoji": "🎓",
+  "title": "Новый подход к обучению моделей - DOPD"
+}
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract DOPD addresses privilege illusion in on-policy distillation by dynamically routing token-level supervision between teacher and student policies based on advantage gaps and probabilities, improving capability transfer in large and vision-language models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajectories with dense token-level signals. To furnish high-quality supervision sources and thereby elevate the performance frontier of distillation, an intuitive direction is to infuse privileged information to either teacher or student itself. However, this additional input induces a potential failure mode we dub privilege illusion: a pattern that conflates the transferable capability gap that students are meant to close, and the information asymmetry gap that can only be mimicked but never replicated. This issue is further amplified by the inherent non-uniformity of token-level supervision, where only a small subset of tokens carries pivotal capability-bearing signals. To this end, we propose DOPD, an advantage-aware dual distillation paradigm that dynamically routes token-level supervision between privileged teacher and privileged student policies based on their advantage gap and relative probabilities. Each token receives supervision of different strength, objective, and strategy from either teacher or student itself, which transfers credible capability while simultaneously receiving auxiliary signals, to alleviate privilege illusion. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that DOPD consistently outperforms Vanilla OPD and other counterparts. Further results on stability, robustness, continual learning, and out-of-distribution tasks validate its superiority."
+
+[01.07.2026 03:51] Response: ```python
+['TRAINING', 'RL', 'CONTINUAL_LEARNING']
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract DOPD addresses privilege illusion in on-policy distillation by dynamically routing token-level supervision between teacher and student policies based on advantage gaps and probabilities, improving capability transfer in large and vision-language models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajectories with dense token-level signals. To furnish high-quality supervision sources and thereby elevate the performance frontier of distillation, an intuitive direction is to infuse privileged information to either teacher or student itself. However, this additional input induces a potential failure mode we dub privilege illusion: a pattern that conflates the transferable capability gap that students are meant to close, and the information asymmetry gap that can only be mimicked but never replicated. This issue is further amplified by the inherent non-uniformity of token-level supervision, where only a small subset of tokens carries pivotal capability-bearing signals. To this end, we propose DOPD, an advantage-aware dual distillation paradigm that dynamically routes token-level supervision between privileged teacher and privileged student policies based on their advantage gap and relative probabilities. Each token receives supervision of different strength, objective, and strategy from either teacher or student itself, which transfers credible capability while simultaneously receiving auxiliary signals, to alleviate privilege illusion. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that DOPD consistently outperforms Vanilla OPD and other counterparts. Further results on stability, robustness, continual learning, and out-of-distribution tasks validate its superiority."
+
+[01.07.2026 03:51] Response: ```python
+['TRANSFER_LEARNING', 'OPTIMIZATION', 'CONTINUAL_LEARNING']
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract DOPD addresses privilege illusion in on-policy distillation by dynamically routing token-level supervision between teacher and student policies based on advantage gaps and probabilities, improving capability transfer in large and vision-language models.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajectories with dense token-level signals. To furnish high-quality supervision sources and thereby elevate the performance frontier of distillation, an intuitive direction is to infuse privileged information to either teacher or student itself. However, this additional input induces a potential failure mode we dub privilege illusion: a pattern that conflates the transferable capability gap that students are meant to close, and the information asymmetry gap that can only be mimicked but never replicated. This issue is further amplified by the inherent non-uniformity of token-level supervision, where only a small subset of tokens carries pivotal capability-bearing signals. To this end, we propose DOPD, an advantage-aware dual distillation paradigm that dynamically routes token-level supervision between privileged teacher and privileged student policies based on their advantage gap and relative probabilities. Each token receives supervision of different strength, objective, and strategy from either teacher or student itself, which transfers credible capability while simultaneously receiving auxiliary signals, to alleviate privilege illusion. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that DOPD consistently outperforms Vanilla OPD and other counterparts. Further results on stability, robustness, continual learning, and out-of-distribution tasks validate its superiority.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:51] Response: {
+  "desc": "The paper introduces DOPD, a method that improves on-policy distillation by addressing the issue of privilege illusion in machine learning models. It dynamically routes token-level supervision between teacher and student policies based on their advantage gaps and probabilities, enhancing the transfer of capabilities. This approach allows for more effective supervision, as each token receives tailored guidance, which helps mitigate the risks associated with information asymmetry. Experiments show that DOPD outperforms traditional methods in various settings, demonstrating its effectiveness in large language and vision-language models.",
+  "title": "Dynamic Routing for Enhanced Capability Transfer"
+}
+[01.07.2026 03:51] Querying the API.
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract Evolutionary fine-tuning enables large language models to develop cross-task problem-solving capabilities by learning from search trajectories, demonstrating improved performance on mathematical conjectures and optimization tasks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Would experience designing faster GPU kernels also help close in on a long-standing open mathematical conjecture? Large Language Models (LLMs) integrated into evolutionary search have recently produced state-of-the-art solutions on optimization tasks, including open mathematical conjectures, GPU kernel design, scientific law discovery, and combinatorial puzzles. To achieve this, prior work applied search scaffolds to one target task at a time, so every new problem is approached from scratch and the experience accumulated during search is discarded once the model finishes its attempt. This leaves the capability of iteratively evolving a solution (e.g., knowing which part to mutate and how, deciding when to backtrack) entirely in the scaffold rather than in the model itself. Whether the model itself could acquire this capability and reuse it across different tasks has been largely unexamined. To address this, we introduce Evolution Fine-Tuning (EFT), a mid-training paradigm that teaches LLMs to evolve solutions across tasks by converting evolutionary search trajectories into supervision. We construct Finch Collection, a 156K-trajectory dataset spanning 10 domains and 371 optimization tasks, and fine-tune open-source LLMs from 2B to 9B parameters. Empirically, EFT confers cross-task generalization: across 22 held-out tasks, our models surpass their base counterparts by 10.22% on average. Furthermore, when paired with test-time RL, our model matches state-of-the-art performance on two circle-packing tasks and outperforms its base-model counterpart on the Erdős minimum-overlap problem. EFT thus serves as a "practice phase" for general-purpose discovery agents that do not solve new problems from scratch.
+[01.07.2026 03:51] Response: ```json
+{
+  "desc": "Эволюционное дообучение (EFT) позволяет большим языковым моделям (LLM) развивать навыки решения различных задач, обучаясь на траекториях поиска. Это улучшает их производительность в математических предположениях и задачах оптимизации. В исследовании используется набор данных Finch Collection, содержащий 156 тысяч траекторий по 10 доменам и 371 задаче оптимизации. В результате, модели, прошедшие EFT, показали среднее повышение производительности на 10.22% по сравнению с базовыми моделями.",
+  "emoji": "🧠",
+  "title": "Эволюция решений для разных задач"
+}
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract Evolutionary fine-tuning enables large language models to develop cross-task problem-solving capabilities by learning from search trajectories, demonstrating improved performance on mathematical conjectures and optimization tasks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Would experience designing faster GPU kernels also help close in on a long-standing open mathematical conjecture? Large Language Models (LLMs) integrated into evolutionary search have recently produced state-of-the-art solutions on optimization tasks, including open mathematical conjectures, GPU kernel design, scientific law discovery, and combinatorial puzzles. To achieve this, prior work applied search scaffolds to one target task at a time, so every new problem is approached from scratch and the experience accumulated during search is discarded once the model finishes its attempt. This leaves the capability of iteratively evolving a solution (e.g., knowing which part to mutate and how, deciding when to backtrack) entirely in the scaffold rather than in the model itself. Whether the model itself could acquire this capability and reuse it across different tasks has been largely unexamined. To address this, we introduce Evolution Fine-Tuning (EFT), a mid-training paradigm that teaches LLMs to evolve solutions across tasks by converting evolutionary search trajectories into supervision. We construct Finch Collection, a 156K-trajectory dataset spanning 10 domains and 371 optimization tasks, and fine-tune open-source LLMs from 2B to 9B parameters. Empirically, EFT confers cross-task generalization: across 22 held-out tasks, our models surpass their base counterparts by 10.22% on average. Furthermore, when paired with test-time RL, our model matches state-of-the-art performance on two circle-packing tasks and outperforms its base-model counterpart on the Erdős minimum-overlap problem. EFT thus serves as a "practice phase" for general-purpose discovery agents that do not solve new problems from scratch."
+
+[01.07.2026 03:51] Response: ```python
+["DATASET", "TRAINING", "RL", "MATH", "AGENTS"]
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract Evolutionary fine-tuning enables large language models to develop cross-task problem-solving capabilities by learning from search trajectories, demonstrating improved performance on mathematical conjectures and optimization tasks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Would experience designing faster GPU kernels also help close in on a long-standing open mathematical conjecture? Large Language Models (LLMs) integrated into evolutionary search have recently produced state-of-the-art solutions on optimization tasks, including open mathematical conjectures, GPU kernel design, scientific law discovery, and combinatorial puzzles. To achieve this, prior work applied search scaffolds to one target task at a time, so every new problem is approached from scratch and the experience accumulated during search is discarded once the model finishes its attempt. This leaves the capability of iteratively evolving a solution (e.g., knowing which part to mutate and how, deciding when to backtrack) entirely in the scaffold rather than in the model itself. Whether the model itself could acquire this capability and reuse it across different tasks has been largely unexamined. To address this, we introduce Evolution Fine-Tuning (EFT), a mid-training paradigm that teaches LLMs to evolve solutions across tasks by converting evolutionary search trajectories into supervision. We construct Finch Collection, a 156K-trajectory dataset spanning 10 domains and 371 optimization tasks, and fine-tune open-source LLMs from 2B to 9B parameters. Empirically, EFT confers cross-task generalization: across 22 held-out tasks, our models surpass their base counterparts by 10.22% on average. Furthermore, when paired with test-time RL, our model matches state-of-the-art performance on two circle-packing tasks and outperforms its base-model counterpart on the Erdős minimum-overlap problem. EFT thus serves as a "practice phase" for general-purpose discovery agents that do not solve new problems from scratch."
+
+[01.07.2026 03:51] Response: ```python
+["OPTIMIZATION", "AGI", "CONTINUAL_LEARNING"]
+```
+[01.07.2026 03:51] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract Evolutionary fine-tuning enables large language models to develop cross-task problem-solving capabilities by learning from search trajectories, demonstrating improved performance on mathematical conjectures and optimization tasks.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Would experience designing faster GPU kernels also help close in on a long-standing open mathematical conjecture? Large Language Models (LLMs) integrated into evolutionary search have recently produced state-of-the-art solutions on optimization tasks, including open mathematical conjectures, GPU kernel design, scientific law discovery, and combinatorial puzzles. To achieve this, prior work applied search scaffolds to one target task at a time, so every new problem is approached from scratch and the experience accumulated during search is discarded once the model finishes its attempt. This leaves the capability of iteratively evolving a solution (e.g., knowing which part to mutate and how, deciding when to backtrack) entirely in the scaffold rather than in the model itself. Whether the model itself could acquire this capability and reuse it across different tasks has been largely unexamined. To address this, we introduce Evolution Fine-Tuning (EFT), a mid-training paradigm that teaches LLMs to evolve solutions across tasks by converting evolutionary search trajectories into supervision. We construct Finch Collection, a 156K-trajectory dataset spanning 10 domains and 371 optimization tasks, and fine-tune open-source LLMs from 2B to 9B parameters. Empirically, EFT confers cross-task generalization: across 22 held-out tasks, our models surpass their base counterparts by 10.22% on average. Furthermore, when paired with test-time RL, our model matches state-of-the-art performance on two circle-packing tasks and outperforms its base-model counterpart on the Erdős minimum-overlap problem. EFT thus serves as a "practice phase" for general-purpose discovery agents that do not solve new problems from scratch.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:51] GitHub Models 429 (rate limit). Ждём 21s, попытка 1/4.
+[01.07.2026 03:52] Response: {
+  "desc": "This paper introduces Evolution Fine-Tuning (EFT), a method that allows large language models (LLMs) to learn from previous problem-solving experiences across different tasks. By converting evolutionary search trajectories into supervision, EFT enables models to iteratively evolve solutions rather than starting from scratch for each new problem. The authors present the Finch Collection, a dataset with 156K trajectories across various optimization tasks, which helps fine-tune LLMs to improve their performance. Empirical results show that models using EFT achieve significant improvements in cross-task generalization and outperform their base models on specific optimization challenges.",
+  "title": "Evolving Solutions: Cross-Task Learning for Language Models"
+}
+[01.07.2026 03:52] Querying the API.
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract MemLearner improves video world models by using learning-based adaptive context querying with query tokens to enhance scene consistency and memory in long video sequences with occlusions and dynamic objects.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Video World Models are interactive video generation models that predict future world states based on user actions and history video frames. A critical challenge in video world models is the lack of memory, causing inconsistent generated scenes over extended durations. Previous methods explored rule-based context frame retrieval as memory, but they fail to generalize in scenarios with scene occlusions and dynamic objects. We propose MemLearner, a learning-based adaptive context query method using query tokens to bridge context and predicted tokens. By leveraging the video generation model itself for context querying, MemLearner exploits pre-trained visual priors without training additional modules from scratch, and incorporates efficient strategies for training and inference. We collect a dataset of long videos with scene occlusions and dynamic objects, paired with camera pose annotations, and propose a multi-dataset training strategy leveraging both annotated rendered and unannotated real-world videos. Extensive experiments demonstrate that MemLearner significantly outperforms prior video world models in terms of scene consistency and memory, particularly under challenging occlusion and dynamic scenarios.
+[01.07.2026 03:52] Response: ```json
+{
+  "desc": "В статье представлено новое решение MemLearner для улучшения видео-мировых моделей с использованием адаптивного контекстного запроса и токенов запроса. Это позволяет улучшить согласованность сцен и запоминание в длинных видеопоследовательностях, особенно в условиях затенения и динамических объектов. MemLearner использует предобученные визуальные приоритеты и не требует тренировки дополнительных модулей с нуля. Эксперименты показывают, что MemLearner значительно превосходит предыдущие модели по согласованности сцен и памяти.",
+  "emoji": "🎥",
+  "title": "MemLearner: улучшение видео-мировых моделей для стабильности сцен"
+}
+```
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract MemLearner improves video world models by using learning-based adaptive context querying with query tokens to enhance scene consistency and memory in long video sequences with occlusions and dynamic objects.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Video World Models are interactive video generation models that predict future world states based on user actions and history video frames. A critical challenge in video world models is the lack of memory, causing inconsistent generated scenes over extended durations. Previous methods explored rule-based context frame retrieval as memory, but they fail to generalize in scenarios with scene occlusions and dynamic objects. We propose MemLearner, a learning-based adaptive context query method using query tokens to bridge context and predicted tokens. By leveraging the video generation model itself for context querying, MemLearner exploits pre-trained visual priors without training additional modules from scratch, and incorporates efficient strategies for training and inference. We collect a dataset of long videos with scene occlusions and dynamic objects, paired with camera pose annotations, and propose a multi-dataset training strategy leveraging both annotated rendered and unannotated real-world videos. Extensive experiments demonstrate that MemLearner significantly outperforms prior video world models in terms of scene consistency and memory, particularly under challenging occlusion and dynamic scenarios."
+
+[01.07.2026 03:52] Response: ```python
+['DATASET', 'MEMORY', 'TRAINING']
+```
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract MemLearner improves video world models by using learning-based adaptive context querying with query tokens to enhance scene consistency and memory in long video sequences with occlusions and dynamic objects.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Video World Models are interactive video generation models that predict future world states based on user actions and history video frames. A critical challenge in video world models is the lack of memory, causing inconsistent generated scenes over extended durations. Previous methods explored rule-based context frame retrieval as memory, but they fail to generalize in scenarios with scene occlusions and dynamic objects. We propose MemLearner, a learning-based adaptive context query method using query tokens to bridge context and predicted tokens. By leveraging the video generation model itself for context querying, MemLearner exploits pre-trained visual priors without training additional modules from scratch, and incorporates efficient strategies for training and inference. We collect a dataset of long videos with scene occlusions and dynamic objects, paired with camera pose annotations, and propose a multi-dataset training strategy leveraging both annotated rendered and unannotated real-world videos. Extensive experiments demonstrate that MemLearner significantly outperforms prior video world models in terms of scene consistency and memory, particularly under challenging occlusion and dynamic scenarios."
+
+[01.07.2026 03:52] Response: ```python
+['MEMORY', 'LONG_CONTEXT', 'OPTIMIZATION']
+```
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract MemLearner improves video world models by using learning-based adaptive context querying with query tokens to enhance scene consistency and memory in long video sequences with occlusions and dynamic objects.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Video World Models are interactive video generation models that predict future world states based on user actions and history video frames. A critical challenge in video world models is the lack of memory, causing inconsistent generated scenes over extended durations. Previous methods explored rule-based context frame retrieval as memory, but they fail to generalize in scenarios with scene occlusions and dynamic objects. We propose MemLearner, a learning-based adaptive context query method using query tokens to bridge context and predicted tokens. By leveraging the video generation model itself for context querying, MemLearner exploits pre-trained visual priors without training additional modules from scratch, and incorporates efficient strategies for training and inference. We collect a dataset of long videos with scene occlusions and dynamic objects, paired with camera pose annotations, and propose a multi-dataset training strategy leveraging both annotated rendered and unannotated real-world videos. Extensive experiments demonstrate that MemLearner significantly outperforms prior video world models in terms of scene consistency and memory, particularly under challenging occlusion and dynamic scenarios.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:52] Response: {
+  "desc": "MemLearner enhances video world models by using a learning-based method for adaptive context querying with query tokens. This approach improves scene consistency and memory in long video sequences, especially when dealing with occlusions and dynamic objects. Unlike previous methods that relied on rule-based context retrieval, MemLearner effectively utilizes the video generation model itself for context querying, leveraging pre-trained visual knowledge. Extensive experiments show that MemLearner outperforms earlier models in maintaining scene consistency and memory across challenging scenarios.",
+  "title": "Enhancing Video World Models with Adaptive Context Querying"
+}
+[01.07.2026 03:52] Querying the API.
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract AVTok is a unified tokenizer for audio-video generation that uses a dual-stream transformer architecture with shared encoder-decoder and modal-specific queries to create compact one-dimensional latent representations.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Audio-video generation has recently gained unprecedented research attention, aiming to synthesize high-quality sounding video content with fine-grained synchronization and semantic alignment between the auditory and visual components. The preceding methods predominantly adopt a dual-branch design with separate tokenization and generation modules per modality, neglecting the representation gap while necessitating intensive computational resources for proper training. Inspired by recent advancements in one-dimensional visual tokenization, we present AVTok, a novel unified tokenizer designated for holistic audio-video generation. AVTok features a dual-stream transformer-based architecture with shared encoder-decoder and modal-specific learnable queries to efficiently and effectively encode an audio-video pair into a compact one-dimensional latent representation with a unified codebook. To cope with the heterogeneous information imbalance that hinders AVTok from exploiting aligned audio-visual information, we devise a hierarchical training strategy to progressively realize reconstruction capabilities for each modality. Extensive experiments demonstrate that AVTok excels both in audio-video reconstruction and when integrated into downstream pipelines for audio-to-video, video-to-audio, and class-conditional joint audio-video generation. AVTok paves the way for the challenge of joint audio-video tokenization and provides a potential direction to build unified large multimodal models for audio-video generation.
+[01.07.2026 03:52] Response: {
+  "desc": "AVTok представляет собой объединённый токенизатор для генерации аудио-видео, который использует архитектуру трансформера в два потока для создания компактных одноразмерных латентных представлений. Этот метод синхронизирует аудиовизуальные компоненты с высокой степенью согласованности, преодолевая ограничения предыдущих подходов, которые разделяли токенизацию для каждой модальности. AVTok использует иерархическую стратегию обучения для эффективной переработки информации из аудио и видео, что позволяет добиться высокой точности в реконтрукции содержимого. Результаты экспериментов показывают, что AVTok превосходит другие методы как в восстановлении аудио-видео, так и при интеграции в последующие задачи генерации.",
+  "emoji": "🎥",
+  "title": "Объединенный токенизатор для аудио-видео генерации"
+}
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract AVTok is a unified tokenizer for audio-video generation that uses a dual-stream transformer architecture with shared encoder-decoder and modal-specific queries to create compact one-dimensional latent representations.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Audio-video generation has recently gained unprecedented research attention, aiming to synthesize high-quality sounding video content with fine-grained synchronization and semantic alignment between the auditory and visual components. The preceding methods predominantly adopt a dual-branch design with separate tokenization and generation modules per modality, neglecting the representation gap while necessitating intensive computational resources for proper training. Inspired by recent advancements in one-dimensional visual tokenization, we present AVTok, a novel unified tokenizer designated for holistic audio-video generation. AVTok features a dual-stream transformer-based architecture with shared encoder-decoder and modal-specific learnable queries to efficiently and effectively encode an audio-video pair into a compact one-dimensional latent representation with a unified codebook. To cope with the heterogeneous information imbalance that hinders AVTok from exploiting aligned audio-visual information, we devise a hierarchical training strategy to progressively realize reconstruction capabilities for each modality. Extensive experiments demonstrate that AVTok excels both in audio-video reconstruction and when integrated into downstream pipelines for audio-to-video, video-to-audio, and class-conditional joint audio-video generation. AVTok paves the way for the challenge of joint audio-video tokenization and provides a potential direction to build unified large multimodal models for audio-video generation."
+
+[01.07.2026 03:52] Response: ```python
+['MULTIMODAL', 'AUDIO']
+```
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract AVTok is a unified tokenizer for audio-video generation that uses a dual-stream transformer architecture with shared encoder-decoder and modal-specific queries to create compact one-dimensional latent representations.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Audio-video generation has recently gained unprecedented research attention, aiming to synthesize high-quality sounding video content with fine-grained synchronization and semantic alignment between the auditory and visual components. The preceding methods predominantly adopt a dual-branch design with separate tokenization and generation modules per modality, neglecting the representation gap while necessitating intensive computational resources for proper training. Inspired by recent advancements in one-dimensional visual tokenization, we present AVTok, a novel unified tokenizer designated for holistic audio-video generation. AVTok features a dual-stream transformer-based architecture with shared encoder-decoder and modal-specific learnable queries to efficiently and effectively encode an audio-video pair into a compact one-dimensional latent representation with a unified codebook. To cope with the heterogeneous information imbalance that hinders AVTok from exploiting aligned audio-visual information, we devise a hierarchical training strategy to progressively realize reconstruction capabilities for each modality. Extensive experiments demonstrate that AVTok excels both in audio-video reconstruction and when integrated into downstream pipelines for audio-to-video, video-to-audio, and class-conditional joint audio-video generation. AVTok paves the way for the challenge of joint audio-video tokenization and provides a potential direction to build unified large multimodal models for audio-video generation."
+
+[01.07.2026 03:52] Response: ```python
+["GAMES", "SYNTHETIC"]
+```
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract AVTok is a unified tokenizer for audio-video generation that uses a dual-stream transformer architecture with shared encoder-decoder and modal-specific queries to create compact one-dimensional latent representations.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Audio-video generation has recently gained unprecedented research attention, aiming to synthesize high-quality sounding video content with fine-grained synchronization and semantic alignment between the auditory and visual components. The preceding methods predominantly adopt a dual-branch design with separate tokenization and generation modules per modality, neglecting the representation gap while necessitating intensive computational resources for proper training. Inspired by recent advancements in one-dimensional visual tokenization, we present AVTok, a novel unified tokenizer designated for holistic audio-video generation. AVTok features a dual-stream transformer-based architecture with shared encoder-decoder and modal-specific learnable queries to efficiently and effectively encode an audio-video pair into a compact one-dimensional latent representation with a unified codebook. To cope with the heterogeneous information imbalance that hinders AVTok from exploiting aligned audio-visual information, we devise a hierarchical training strategy to progressively realize reconstruction capabilities for each modality. Extensive experiments demonstrate that AVTok excels both in audio-video reconstruction and when integrated into downstream pipelines for audio-to-video, video-to-audio, and class-conditional joint audio-video generation. AVTok paves the way for the challenge of joint audio-video tokenization and provides a potential direction to build unified large multimodal models for audio-video generation.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:52] Response: {
+  "desc": "AVTok is a new tokenizer designed for generating audio and video together using a dual-stream transformer architecture. It combines audio and visual data into a single, compact representation, improving efficiency and reducing the need for separate processing. The model addresses the challenges of aligning audio and video by using a hierarchical training strategy that enhances the reconstruction of both modalities. AVTok shows strong performance in tasks like audio-to-video and video-to-audio generation, paving the way for future multimodal models.",
+  "title": "Unified Tokenization for Seamless Audio-Video Generation"
+}
+[01.07.2026 03:52] Querying the API.
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract PolyFlow introduces a continuous mesh representation using a topology embedder and applies flow-matching with Transformers for parallel mesh generation, achieving faster inference and precise resolution control compared to autoregressive methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Autoregressive Transformers dominate high-quality mesh generation by producing artist-worthy topologies, yet their inherent sequential decoding induces substantial computational overhead, falling orders of magnitude slower than parallel generative models. On the other hand, while continuous diffusion and flow-matching methods support efficient parallel synthesis across a variety of domains, they cannot be directly applied to meshes: mesh connectivity is inherently discrete and incompatible with standard continuous noise injection and denoising operations. To resolve this fundamental incompatibility, we introduce a compact topology embedder that projects discrete mesh vertex positions and normals into continuous per-vertex embeddings, where the original discrete adjacency information can be faithfully recovered via spacetime distance thresholding. After pretraining and freezing this embedder, any raw mesh can be fully converted into a continuous per-vertex state space unifying position, normal, and implicit topological attributes. Built upon this novel continuous mesh representation, we present PolyFlow, a Transformer-based flow-matching framework that achieves fully parallel vertex state denoising conditioned on extracted point-cloud features. During inference, our model completes generation rapidly via an ODE solver, and supports explicit, precise control over output mesh resolution by directly specifying the target vertex count. Extensive evaluations on the Toys4K benchmark demonstrate that PolyFlow surpasses state-of-the-art autoregressive baselines in both Chamfer Distance and Hausdorff Distance.
+[01.07.2026 03:52] Response: ```json
+{
+  "desc": "Статья представляет новый метод генерации мешей под названием PolyFlow, который использует непрерывное представление меша с помощью топологического встраивателя и метод соответствия потока на основе Transformers. Этот метод позволяет ускорить вывод и точно контролировать разрешение меша по сравнению с авторегрессионными подходами. PolyFlow решает проблему несовместимости дискретной структуры меша с непрерывными методами синтеза, проецируя дискретные координаты вершин в непрерывное пространственное представление. Результаты показывают, что PolyFlow превосходит существующие авторегрессионные методы по метрикам качественной генерации мешей.",
+  "emoji": "✨",
+  "title": "Быстрая и точная генерация мешей с PolyFlow"
+}
+```
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract PolyFlow introduces a continuous mesh representation using a topology embedder and applies flow-matching with Transformers for parallel mesh generation, achieving faster inference and precise resolution control compared to autoregressive methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Autoregressive Transformers dominate high-quality mesh generation by producing artist-worthy topologies, yet their inherent sequential decoding induces substantial computational overhead, falling orders of magnitude slower than parallel generative models. On the other hand, while continuous diffusion and flow-matching methods support efficient parallel synthesis across a variety of domains, they cannot be directly applied to meshes: mesh connectivity is inherently discrete and incompatible with standard continuous noise injection and denoising operations. To resolve this fundamental incompatibility, we introduce a compact topology embedder that projects discrete mesh vertex positions and normals into continuous per-vertex embeddings, where the original discrete adjacency information can be faithfully recovered via spacetime distance thresholding. After pretraining and freezing this embedder, any raw mesh can be fully converted into a continuous per-vertex state space unifying position, normal, and implicit topological attributes. Built upon this novel continuous mesh representation, we present PolyFlow, a Transformer-based flow-matching framework that achieves fully parallel vertex state denoising conditioned on extracted point-cloud features. During inference, our model completes generation rapidly via an ODE solver, and supports explicit, precise control over output mesh resolution by directly specifying the target vertex count. Extensive evaluations on the Toys4K benchmark demonstrate that PolyFlow surpasses state-of-the-art autoregressive baselines in both Chamfer Distance and Hausdorff Distance."
+
+[01.07.2026 03:52] Response: ```python
+["3D", "BENCHMARK", "ARCHITECTURE"]
+```
+[01.07.2026 03:52] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract PolyFlow introduces a continuous mesh representation using a topology embedder and applies flow-matching with Transformers for parallel mesh generation, achieving faster inference and precise resolution control compared to autoregressive methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Autoregressive Transformers dominate high-quality mesh generation by producing artist-worthy topologies, yet their inherent sequential decoding induces substantial computational overhead, falling orders of magnitude slower than parallel generative models. On the other hand, while continuous diffusion and flow-matching methods support efficient parallel synthesis across a variety of domains, they cannot be directly applied to meshes: mesh connectivity is inherently discrete and incompatible with standard continuous noise injection and denoising operations. To resolve this fundamental incompatibility, we introduce a compact topology embedder that projects discrete mesh vertex positions and normals into continuous per-vertex embeddings, where the original discrete adjacency information can be faithfully recovered via spacetime distance thresholding. After pretraining and freezing this embedder, any raw mesh can be fully converted into a continuous per-vertex state space unifying position, normal, and implicit topological attributes. Built upon this novel continuous mesh representation, we present PolyFlow, a Transformer-based flow-matching framework that achieves fully parallel vertex state denoising conditioned on extracted point-cloud features. During inference, our model completes generation rapidly via an ODE solver, and supports explicit, precise control over output mesh resolution by directly specifying the target vertex count. Extensive evaluations on the Toys4K benchmark demonstrate that PolyFlow surpasses state-of-the-art autoregressive baselines in both Chamfer Distance and Hausdorff Distance."
+
+[01.07.2026 03:52] GitHub Models 429 (rate limit). Ждём 60s, попытка 1/4.
+[01.07.2026 03:53] Response: ```python
+["DIFFUSION", "OPTIMIZATION", "GAMES"]
+```
+[01.07.2026 03:53] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract PolyFlow introduces a continuous mesh representation using a topology embedder and applies flow-matching with Transformers for parallel mesh generation, achieving faster inference and precise resolution control compared to autoregressive methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Autoregressive Transformers dominate high-quality mesh generation by producing artist-worthy topologies, yet their inherent sequential decoding induces substantial computational overhead, falling orders of magnitude slower than parallel generative models. On the other hand, while continuous diffusion and flow-matching methods support efficient parallel synthesis across a variety of domains, they cannot be directly applied to meshes: mesh connectivity is inherently discrete and incompatible with standard continuous noise injection and denoising operations. To resolve this fundamental incompatibility, we introduce a compact topology embedder that projects discrete mesh vertex positions and normals into continuous per-vertex embeddings, where the original discrete adjacency information can be faithfully recovered via spacetime distance thresholding. After pretraining and freezing this embedder, any raw mesh can be fully converted into a continuous per-vertex state space unifying position, normal, and implicit topological attributes. Built upon this novel continuous mesh representation, we present PolyFlow, a Transformer-based flow-matching framework that achieves fully parallel vertex state denoising conditioned on extracted point-cloud features. During inference, our model completes generation rapidly via an ODE solver, and supports explicit, precise control over output mesh resolution by directly specifying the target vertex count. Extensive evaluations on the Toys4K benchmark demonstrate that PolyFlow surpasses state-of-the-art autoregressive baselines in both Chamfer Distance and Hausdorff Distance.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:53] Response: {
+  "desc": "PolyFlow presents a new way to represent meshes continuously using a topology embedder, allowing for faster and more precise mesh generation with Transformers. Unlike traditional autoregressive methods that generate meshes sequentially and slowly, PolyFlow utilizes flow-matching for parallel processing, significantly reducing computational time. The innovative topology embedder converts discrete mesh data into continuous embeddings, enabling effective denoising and control over mesh resolution. Evaluations show that PolyFlow outperforms existing autoregressive models in generating high-quality meshes, as measured by Chamfer and Hausdorff distances.",
+  "title": "Revolutionizing Mesh Generation with PolyFlow"
+}
+[01.07.2026 03:53] Querying the API.
+[01.07.2026 03:53] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract A native multimodal GUI agent trained in real-device environments demonstrates superior performance and stability compared to traditional benchmark-based approaches.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Graphical user interface (GUI) agents build on vision-language models to complete user tasks end-to-end in real applications through interface actions such as tapping, swiping, text entry, and navigation. However, existing GUI agents are trained and evaluated largely on offline trajectories, simulated environments, and standardized benchmarks. These differ substantially from real applications in interface layout, interaction logic, and abnormal-state distribution, and cannot faithfully characterize execution stability in real-world use, where account states, permission dialogs, payment authentication, and risk control continually reshape the state distribution and open a persistent gap between benchmark scores and real usability. To close this gap, we propose Xiaomi-GUI-0, a native multimodal GUI agent for real mobile environments, trained and evaluated within a real-device closed loop. At its core is a real-device-dominant hybrid infrastructure, where physical devices are the primary execution environment and sandboxes provide auxiliary support, so that data collection, training, rollout, and evaluation share an execution distribution close to real deployment. We construct multi-source training data spanning high-frequency head tasks, high-generalization data for long-tail intents, and capability-enhancement data for reflection and memory, and introduce an error-driven data flywheel that turns failure trajectories into corrected actions, reflective explanations, and recovery demonstrations. The model is trained through a progressive three-stage pipeline of supervised fine-tuning, step-level reinforcement learning, and agentic reinforcement learning. Evaluated on public benchmarks and our in-house RealMobile, Xiaomi-GUI-0 achieves 72.0% success on RealMobile and 78.9% on AndroidWorld, while substantially improving execution stability and abnormal-state recognition in real-world tasks.
+[01.07.2026 03:53] Response: {
+  "desc": "В данной статье рассматривается новый мультимодальный агент пользовательского интерфейса (GUI), обученный в реальных условиях. Этот агент демонстрирует лучшее выполнение задач и стабильность по сравнению с традиционными методами, основанными на стандартизированных тестах. Для его обучения использовались данные из реальной среды, что позволило улучшить адаптацию к реальным сценариям работы с интерфейсом. Агент Xiaomi-GUI-0 показывает высокую эффективность в популярных приложениях, достигая 72,0% успеха на платформе RealMobile.",
+  "emoji": "📱",
+  "title": "Новый уровень взаимодействия: мультимодальный GUI-агент для реальных приложений"
+}
+[01.07.2026 03:53] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract A native multimodal GUI agent trained in real-device environments demonstrates superior performance and stability compared to traditional benchmark-based approaches.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Graphical user interface (GUI) agents build on vision-language models to complete user tasks end-to-end in real applications through interface actions such as tapping, swiping, text entry, and navigation. However, existing GUI agents are trained and evaluated largely on offline trajectories, simulated environments, and standardized benchmarks. These differ substantially from real applications in interface layout, interaction logic, and abnormal-state distribution, and cannot faithfully characterize execution stability in real-world use, where account states, permission dialogs, payment authentication, and risk control continually reshape the state distribution and open a persistent gap between benchmark scores and real usability. To close this gap, we propose Xiaomi-GUI-0, a native multimodal GUI agent for real mobile environments, trained and evaluated within a real-device closed loop. At its core is a real-device-dominant hybrid infrastructure, where physical devices are the primary execution environment and sandboxes provide auxiliary support, so that data collection, training, rollout, and evaluation share an execution distribution close to real deployment. We construct multi-source training data spanning high-frequency head tasks, high-generalization data for long-tail intents, and capability-enhancement data for reflection and memory, and introduce an error-driven data flywheel that turns failure trajectories into corrected actions, reflective explanations, and recovery demonstrations. The model is trained through a progressive three-stage pipeline of supervised fine-tuning, step-level reinforcement learning, and agentic reinforcement learning. Evaluated on public benchmarks and our in-house RealMobile, Xiaomi-GUI-0 achieves 72.0% success on RealMobile and 78.9% on AndroidWorld, while substantially improving execution stability and abnormal-state recognition in real-world tasks."
+
+[01.07.2026 03:53] Response: ```python
+["AGENTS", "MULTIMODAL", "TRAINING", "RL"]
+```
+[01.07.2026 03:53] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract A native multimodal GUI agent trained in real-device environments demonstrates superior performance and stability compared to traditional benchmark-based approaches.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Graphical user interface (GUI) agents build on vision-language models to complete user tasks end-to-end in real applications through interface actions such as tapping, swiping, text entry, and navigation. However, existing GUI agents are trained and evaluated largely on offline trajectories, simulated environments, and standardized benchmarks. These differ substantially from real applications in interface layout, interaction logic, and abnormal-state distribution, and cannot faithfully characterize execution stability in real-world use, where account states, permission dialogs, payment authentication, and risk control continually reshape the state distribution and open a persistent gap between benchmark scores and real usability. To close this gap, we propose Xiaomi-GUI-0, a native multimodal GUI agent for real mobile environments, trained and evaluated within a real-device closed loop. At its core is a real-device-dominant hybrid infrastructure, where physical devices are the primary execution environment and sandboxes provide auxiliary support, so that data collection, training, rollout, and evaluation share an execution distribution close to real deployment. We construct multi-source training data spanning high-frequency head tasks, high-generalization data for long-tail intents, and capability-enhancement data for reflection and memory, and introduce an error-driven data flywheel that turns failure trajectories into corrected actions, reflective explanations, and recovery demonstrations. The model is trained through a progressive three-stage pipeline of supervised fine-tuning, step-level reinforcement learning, and agentic reinforcement learning. Evaluated on public benchmarks and our in-house RealMobile, Xiaomi-GUI-0 achieves 72.0% success on RealMobile and 78.9% on AndroidWorld, while substantially improving execution stability and abnormal-state recognition in real-world tasks."
+
+[01.07.2026 03:53] Response: ```python
+["AGENT_MEMORY", "MEMORY", "OPTIMIZATION"]
+```
+[01.07.2026 03:53] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract A native multimodal GUI agent trained in real-device environments demonstrates superior performance and stability compared to traditional benchmark-based approaches.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Graphical user interface (GUI) agents build on vision-language models to complete user tasks end-to-end in real applications through interface actions such as tapping, swiping, text entry, and navigation. However, existing GUI agents are trained and evaluated largely on offline trajectories, simulated environments, and standardized benchmarks. These differ substantially from real applications in interface layout, interaction logic, and abnormal-state distribution, and cannot faithfully characterize execution stability in real-world use, where account states, permission dialogs, payment authentication, and risk control continually reshape the state distribution and open a persistent gap between benchmark scores and real usability. To close this gap, we propose Xiaomi-GUI-0, a native multimodal GUI agent for real mobile environments, trained and evaluated within a real-device closed loop. At its core is a real-device-dominant hybrid infrastructure, where physical devices are the primary execution environment and sandboxes provide auxiliary support, so that data collection, training, rollout, and evaluation share an execution distribution close to real deployment. We construct multi-source training data spanning high-frequency head tasks, high-generalization data for long-tail intents, and capability-enhancement data for reflection and memory, and introduce an error-driven data flywheel that turns failure trajectories into corrected actions, reflective explanations, and recovery demonstrations. The model is trained through a progressive three-stage pipeline of supervised fine-tuning, step-level reinforcement learning, and agentic reinforcement learning. Evaluated on public benchmarks and our in-house RealMobile, Xiaomi-GUI-0 achieves 72.0% success on RealMobile and 78.9% on AndroidWorld, while substantially improving execution stability and abnormal-state recognition in real-world tasks.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:53] Response: {
+  "desc": "This paper presents Xiaomi-GUI-0, a multimodal GUI agent designed for real mobile environments, which outperforms traditional benchmark-based agents. Unlike previous models that rely on simulated environments, Xiaomi-GUI-0 is trained and evaluated in real-device settings, ensuring better execution stability and usability. The agent utilizes a hybrid infrastructure that combines physical devices with supportive sandboxes for data collection and training. It employs a three-stage training process, including supervised fine-tuning and reinforcement learning, to enhance its ability to handle diverse user tasks and abnormal states effectively.",
+  "title": "Revolutionizing GUI Agents with Real-World Training"
+}
+[01.07.2026 03:53] Querying the API.
+[01.07.2026 03:53] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract BrainJanus represents the first unified brain model integrating brain, vision, and language through a shared Omni space, enabling bidirectional mapping between neural activity and sensory stimuli via a tokenized representation and autoregressive architecture.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Modeling the bidirectional correspondence between external sensory stimuli and internal neural activity has emerged as a critical frontier in neuroscience. However, existing approaches predominantly treat brain encoding and decoding as isolated tasks, relying heavily on unimodal alignment and external priors while overlooking the brain's intrinsic nature as a multimodal integration system. To address these limitations, we propose BrainJanus, the first unified brain model that integrates brain, vision, and language within a single framework. Specifically, we introduce a Unified Brain Tokenizer to quantize continuous neural dynamics into discrete tokens aligned with visual and linguistic representations in a shared Omni space. Building on this, we utilize an All-in-One autoregressive architecture that leverages next-token prediction to enable seamless any-to-any generation, which encompasses image-to-brain and text-to-brain encoding, and brain-to-image and brain-to-text decoding. Extensive experiments demonstrate that BrainJanus achieves superior performance across diverse benchmarks. Furthermore, our framework exhibits zero-shot generalization and preserves interpretable biological topography, highlighting its potential as a general-purpose brain modeling paradigm. The code is available at https://github.com/HaitaoWuTJU/BrainJanus{GitHub}.
+[01.07.2026 03:53] Response: {
+  "desc": "BrainJanus представляет собой первую интегрированную модель мозга, которая объединяет информацию о мозге, зрении и языке в едином пространстве. Это позволяет осуществлять двустороннее сопоставление между нейронной активностью и внешними сенсорными стимулами с помощью токенизированной репрезентации. Модель использует автогрессивную архитектуру для предсказания токенов, что обеспечивает гибкость и возможность генерации различных типов информации. Эксперименты показывают, что BrainJanus превосходит существующие подходы и демонстрирует возможности обобщения без обучения на новых данных.",
+  "emoji": "🧠",
+  "title": "Интеграция мозга, зрения и языка в единой модели"
+}
+[01.07.2026 03:53] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract BrainJanus represents the first unified brain model integrating brain, vision, and language through a shared Omni space, enabling bidirectional mapping between neural activity and sensory stimuli via a tokenized representation and autoregressive architecture.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Modeling the bidirectional correspondence between external sensory stimuli and internal neural activity has emerged as a critical frontier in neuroscience. However, existing approaches predominantly treat brain encoding and decoding as isolated tasks, relying heavily on unimodal alignment and external priors while overlooking the brain's intrinsic nature as a multimodal integration system. To address these limitations, we propose BrainJanus, the first unified brain model that integrates brain, vision, and language within a single framework. Specifically, we introduce a Unified Brain Tokenizer to quantize continuous neural dynamics into discrete tokens aligned with visual and linguistic representations in a shared Omni space. Building on this, we utilize an All-in-One autoregressive architecture that leverages next-token prediction to enable seamless any-to-any generation, which encompasses image-to-brain and text-to-brain encoding, and brain-to-image and brain-to-text decoding. Extensive experiments demonstrate that BrainJanus achieves superior performance across diverse benchmarks. Furthermore, our framework exhibits zero-shot generalization and preserves interpretable biological topography, highlighting its potential as a general-purpose brain modeling paradigm. The code is available at https://github.com/HaitaoWuTJU/BrainJanus{GitHub}."
+
+[01.07.2026 03:53] Response: ```python
+['MULTIMODAL', 'ARCHITECTURE', 'BENCHMARK']
+```
+[01.07.2026 03:53] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract BrainJanus represents the first unified brain model integrating brain, vision, and language through a shared Omni space, enabling bidirectional mapping between neural activity and sensory stimuli via a tokenized representation and autoregressive architecture.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Modeling the bidirectional correspondence between external sensory stimuli and internal neural activity has emerged as a critical frontier in neuroscience. However, existing approaches predominantly treat brain encoding and decoding as isolated tasks, relying heavily on unimodal alignment and external priors while overlooking the brain's intrinsic nature as a multimodal integration system. To address these limitations, we propose BrainJanus, the first unified brain model that integrates brain, vision, and language within a single framework. Specifically, we introduce a Unified Brain Tokenizer to quantize continuous neural dynamics into discrete tokens aligned with visual and linguistic representations in a shared Omni space. Building on this, we utilize an All-in-One autoregressive architecture that leverages next-token prediction to enable seamless any-to-any generation, which encompasses image-to-brain and text-to-brain encoding, and brain-to-image and brain-to-text decoding. Extensive experiments demonstrate that BrainJanus achieves superior performance across diverse benchmarks. Furthermore, our framework exhibits zero-shot generalization and preserves interpretable biological topography, highlighting its potential as a general-purpose brain modeling paradigm. The code is available at https://github.com/HaitaoWuTJU/BrainJanus{GitHub}."
+
+[01.07.2026 03:53] Response: ```python
+["AGI", "INTERPRETABILITY", "TRANSFER_LEARNING"]
+```
+[01.07.2026 03:53] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract BrainJanus represents the first unified brain model integrating brain, vision, and language through a shared Omni space, enabling bidirectional mapping between neural activity and sensory stimuli via a tokenized representation and autoregressive architecture.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Modeling the bidirectional correspondence between external sensory stimuli and internal neural activity has emerged as a critical frontier in neuroscience. However, existing approaches predominantly treat brain encoding and decoding as isolated tasks, relying heavily on unimodal alignment and external priors while overlooking the brain's intrinsic nature as a multimodal integration system. To address these limitations, we propose BrainJanus, the first unified brain model that integrates brain, vision, and language within a single framework. Specifically, we introduce a Unified Brain Tokenizer to quantize continuous neural dynamics into discrete tokens aligned with visual and linguistic representations in a shared Omni space. Building on this, we utilize an All-in-One autoregressive architecture that leverages next-token prediction to enable seamless any-to-any generation, which encompasses image-to-brain and text-to-brain encoding, and brain-to-image and brain-to-text decoding. Extensive experiments demonstrate that BrainJanus achieves superior performance across diverse benchmarks. Furthermore, our framework exhibits zero-shot generalization and preserves interpretable biological topography, highlighting its potential as a general-purpose brain modeling paradigm. The code is available at https://github.com/HaitaoWuTJU/BrainJanus{GitHub}.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:54] Response: {
+  "desc": "BrainJanus is a groundbreaking model that integrates brain activity with vision and language in a unified framework. It uses a Unified Brain Tokenizer to convert neural dynamics into discrete tokens that correspond with visual and linguistic inputs. The model employs an autoregressive architecture for flexible encoding and decoding across different modalities, allowing for seamless interactions between brain signals and sensory stimuli. Experimental results show that BrainJanus outperforms existing methods and demonstrates strong generalization capabilities while maintaining biological interpretability.",
+  "title": "Unifying Brain, Vision, and Language in One Model"
+}
+[01.07.2026 03:54] Querying the API.
+[01.07.2026 03:54] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper in Russian (4 sentences), use correct machine learning terms. 'emoji': emoji that will reflect the theme of an article somehow, only one emoji. 'title': a slogan of a main idea of the article in Russian. Return only JSON and nothing else.
+
+Abstract LUMOS provides a semantic interaction layer that converts operating system metadata into machine-readable formats, enabling AI agents to interact more efficiently with computer interfaces than through traditional visual methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Current operating systems expose interfaces optimized for human users but not for AI agents. Humans benefit from pixels, icons, windows, visual grouping, mouse movement, and keyboard shortcuts; AI agents instead need compact semantic state, grounded actions, and reliable feedback. As a result, many computer-use agents are forced to interpret screenshots, OCR output, and visual crops, introducing high token costs, visual ambiguity, latency, and coordinate uncertainty. This paper introduces LUMOS (Language Model Unified Machine-Readable Operating-System Semantics), a semantic interaction layer between AI agents and operating systems. LUMOS converts native accessibility metadata and browser UI structures into machine readable semantic blueprints with stable identifiers, roles, names, values, bounds, and action affordances. It also supports live semantic pointer grounding by querying the UI element under or near the cursor through operating-system automation APIs. An LLM then acts through an accessibility grounded observe act loop using constrained visible-UI primitives rather than application-specific scripts. LUMOS does not claim to replace visual agents; instead, it reduces dependence on screenshots when operating systems already provide semantic structure. These results suggest a path toward AI-native operating systems and machine-readable interaction layers.
+[01.07.2026 03:54] Response: {
+  "desc": "Статья описывает LUMOS — семантический слой взаимодействия, который преобразует метаданные операционной системы в удобные для машин форматы. Это позволяет AI-агентам эффективнее взаимодействовать с компьютерными интерфейсами, чем через традиционные визуальные методы. LUMOS использует метаданные доступности и структуры пользовательского интерфейса для создания машинно-читаемых семантических чертежей с надежными идентификаторами и действиями. Результаты исследования показывают потенциал для создания операционных систем, оптимизированных для AI.",
+  "emoji": "💻",
+  "title": "Новый подход к взаимодействию AI с операционными системами"
+}
+[01.07.2026 03:54] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+DATASET: Papers that introduce new datasets or make significant modifications to existing ones
+DATA: Papers focusing on data processing, cleaning, collection, or curation methodologies
+BENCHMARK: Papers proposing or analyzing model evaluation frameworks and benchmarks
+AGENTS: Papers exploring autonomous agents, web agents, or agent-based architectures
+RL: Papers investigating reinforcement learning theory or applications
+RLHF: Papers specifically about human feedback in RL (PPO, DPO, etc.)
+RAG: Papers advancing retrieval-augmented generation techniques
+PLP: Papers about Programming Language Processing models or programming benchmarks
+INFERENCE: Papers optimizing model deployment (quantization, pruning, etc.)
+3D: Papers on 3D content generation, processing, or understanding
+AUDIO: Papers advancing speech/audio processing or generation
+MULTIMODAL: Papers combining multiple input/output modalities
+MATH: Papers focused on mathematical theory and algorithms
+MULTILINGUAL: Papers addressing multiple languages or cross-lingual capabilities, including all non English models
+ARCHITECTURE: Papers proposing novel neural architectures or components
+HEALTHCARE: Papers applying ML to medical/healthcare domains
+TRAINING: Papers improving model training or fine-tuning methods
+ROBOTICS: Papers on robotic systems and embodied AI
+SMALL_MODELS: Papers that describe models considering small, below 1 billion parameters or similar
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+OPEN_SOURCE: Papers that contribute to open-source projects
+SCIENCE: Papers on scientific applications of ML
+LOW_RESOURCE: Papers mentioning low-resource settings or languages
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract LUMOS provides a semantic interaction layer that converts operating system metadata into machine-readable formats, enabling AI agents to interact more efficiently with computer interfaces than through traditional visual methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Current operating systems expose interfaces optimized for human users but not for AI agents. Humans benefit from pixels, icons, windows, visual grouping, mouse movement, and keyboard shortcuts; AI agents instead need compact semantic state, grounded actions, and reliable feedback. As a result, many computer-use agents are forced to interpret screenshots, OCR output, and visual crops, introducing high token costs, visual ambiguity, latency, and coordinate uncertainty. This paper introduces LUMOS (Language Model Unified Machine-Readable Operating-System Semantics), a semantic interaction layer between AI agents and operating systems. LUMOS converts native accessibility metadata and browser UI structures into machine readable semantic blueprints with stable identifiers, roles, names, values, bounds, and action affordances. It also supports live semantic pointer grounding by querying the UI element under or near the cursor through operating-system automation APIs. An LLM then acts through an accessibility grounded observe act loop using constrained visible-UI primitives rather than application-specific scripts. LUMOS does not claim to replace visual agents; instead, it reduces dependence on screenshots when operating systems already provide semantic structure. These results suggest a path toward AI-native operating systems and machine-readable interaction layers."
+
+[01.07.2026 03:54] Response: ```python
+['AGENTS', 'MULTIMODAL']
+```
+[01.07.2026 03:54] github request. Model: openai/gpt-4o-mini. Prompt: Analyze the following research paper text and classify it into one or more relevant topics from the list below. Consider only information from the provided text. Don't add a tag if the topic is not directly related to the article.
+
+Topics:
+
+AGI: Papers discussing artificial general intelligence concepts
+GAMES: Papers applying ML to games or game development
+INTERPRETABILITY: Papers analyzing model behavior and explanations
+REASONING: Papers enhancing logical reasoning capabilities
+TRANSFER_LEARNING: Papers on knowledge transfer between models/domains
+GRAPHS: Papers advancing graph neural networks and applications
+ETHICS: Papers addressing AI ethics, fairness, and bias
+SECURITY: Papers on model security and adversarial robustness
+OPTIMIZATION: Papers advancing training optimization methods
+SURVEY: Papers comprehensively reviewing research areas
+DIFFUSION: Papers on diffusion-based generative models
+ALIGNMENT: Papers about aligning language models with human values, preferences, and intended behavior
+STORY_GENERATION: Papers on story generation, including plot generation and author style adaptation
+HALLUCINATIONS: Papers about the hallucinations, hallucinations analysis and mitigation
+LONG_CONTEXT: Papers about long context handling, including techniques to extend context length
+SYNTHETIC: Papers about using synthetic data for training, including methods for generating and leveraging artificial data
+TRANSLATION: Papers on machine translation, including techniques, data and applications for translating between languages
+LEAKAGE: Papers about data leakage, including issues of unintended data exposure and methods to detect or prevent it
+OPEN_SOURCE: Papers that contribute to open-source projects by releasing models, datasets, or frameworks to the public
+SCIENCE: Papers on scientific applications of LM including understanding of science articles and research automatization
+LOW_RESOURCE: Papers that mention low-resource languages
+MEMORY: Works on internal/external memory for LLMs
+AGENT_MEMORY: Memory and long-term context in agents
+SESSION_MEMORY: Dialogue/session memory across turns
+RETRIEVAL: Retrieval models and retrievers (distinct from full RAG)
+RETRIEVAL_EVAL: Benchmarks/metrics for retrieval robustness
+PROMPTING: Prompt engineering, CoT/ToT, self-consistency
+PROMPT_CACHING: KV/response caching for long sessions
+CONTEXT_WINDOW: Techniques to extend/pack context
+COMPRESSION: Context compression/summarization/chunking for memory
+MEMORIZATION: On-the-fly learning/continual memorization
+CONTINUAL_LEARNING: Continual learning without forgetting
+KNOWLEDGE_GRAPHS: Knowledge storage via graphs
+TOOL_USE: Using external tools as memory/extension
+
+Return only a Python flat list of topics that match the given text.
+
+Paper text to classify:
+
+"Abstract LUMOS provides a semantic interaction layer that converts operating system metadata into machine-readable formats, enabling AI agents to interact more efficiently with computer interfaces than through traditional visual methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Current operating systems expose interfaces optimized for human users but not for AI agents. Humans benefit from pixels, icons, windows, visual grouping, mouse movement, and keyboard shortcuts; AI agents instead need compact semantic state, grounded actions, and reliable feedback. As a result, many computer-use agents are forced to interpret screenshots, OCR output, and visual crops, introducing high token costs, visual ambiguity, latency, and coordinate uncertainty. This paper introduces LUMOS (Language Model Unified Machine-Readable Operating-System Semantics), a semantic interaction layer between AI agents and operating systems. LUMOS converts native accessibility metadata and browser UI structures into machine readable semantic blueprints with stable identifiers, roles, names, values, bounds, and action affordances. It also supports live semantic pointer grounding by querying the UI element under or near the cursor through operating-system automation APIs. An LLM then acts through an accessibility grounded observe act loop using constrained visible-UI primitives rather than application-specific scripts. LUMOS does not claim to replace visual agents; instead, it reduces dependence on screenshots when operating systems already provide semantic structure. These results suggest a path toward AI-native operating systems and machine-readable interaction layers."
+
+[01.07.2026 03:54] Response: ```python
+["AGENT_MEMORY", "TOOL_USE"]
+```
+[01.07.2026 03:54] github request. Model: openai/gpt-4o-mini. Prompt: Read an abstract of the ML paper and return a JSON with fields: 'desc': explanation of the paper (4 sentences), use correct machine learning terms. 'title': a slogan of a main idea of the article. Return only JSON and nothing else.
+
+Abstract LUMOS provides a semantic interaction layer that converts operating system metadata into machine-readable formats, enabling AI agents to interact more efficiently with computer interfaces than through traditional visual methods.  Generated by Qwen/Qwen2.5-Coder-32B-Instruct Current operating systems expose interfaces optimized for human users but not for AI agents. Humans benefit from pixels, icons, windows, visual grouping, mouse movement, and keyboard shortcuts; AI agents instead need compact semantic state, grounded actions, and reliable feedback. As a result, many computer-use agents are forced to interpret screenshots, OCR output, and visual crops, introducing high token costs, visual ambiguity, latency, and coordinate uncertainty. This paper introduces LUMOS (Language Model Unified Machine-Readable Operating-System Semantics), a semantic interaction layer between AI agents and operating systems. LUMOS converts native accessibility metadata and browser UI structures into machine readable semantic blueprints with stable identifiers, roles, names, values, bounds, and action affordances. It also supports live semantic pointer grounding by querying the UI element under or near the cursor through operating-system automation APIs. An LLM then acts through an accessibility grounded observe act loop using constrained visible-UI primitives rather than application-specific scripts. LUMOS does not claim to replace visual agents; instead, it reduces dependence on screenshots when operating systems already provide semantic structure. These results suggest a path toward AI-native operating systems and machine-readable interaction layers.
+
+Return JSON that matches this schema: {"properties": {"desc": {"title": "Desc", "type": "string"}, "title": {"title": "Title", "type": "string"}}, "required": ["desc", "title"], "title": "Article", "type": "object"}. Respond with JSON only.
+[01.07.2026 03:54] Response: {
+  "desc": "LUMOS introduces a semantic interaction layer that transforms operating system metadata into formats that AI agents can understand. This allows AI to interact with computer interfaces more effectively than traditional visual methods, which often rely on interpreting images and screenshots. By providing machine-readable semantic blueprints, LUMOS reduces the ambiguity and latency associated with visual processing. The system enhances AI capabilities by enabling a more direct and efficient communication with operating systems, paving the way for AI-native environments.",
+  "title": "Empowering AI with Semantic Interaction for Operating Systems"
+}
+[01.07.2026 03:54] Renaming data file.
+[01.07.2026 03:54] Renaming previous data. hf_papers.json to ./d/2026-07-01.json
+[01.07.2026 03:54] Saving new data file.
+[01.07.2026 03:54] Generating page.
+[01.07.2026 03:54] Renaming previous page.
+[01.07.2026 03:54] Renaming previous data. index.html to ./d/2026-07-01.html
+[01.07.2026 03:54] Writing result.
+[01.07.2026 03:54] Renaming log file.
+[01.07.2026 03:54] Renaming previous data. log.txt to ./logs/2026-07-01_last_log.txt
